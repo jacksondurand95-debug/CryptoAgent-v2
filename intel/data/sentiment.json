@@ -65,7 +65,7 @@
       {
         "name": "BTC Bull Token",
         "symbol": "BTCBULL",
-        "market_cap_rank": 636,
+        "market_cap_rank": 725,
         "score": 0
       },
       {
@@ -75,27 +75,27 @@
         "score": 1
       },
       {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 37,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 153,
         "score": 2
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 152,
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
         "score": 3
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 4
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 4
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 5
       },
       {
@@ -105,27 +105,28 @@
         "score": 6
       },
       {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 45,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 7
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 300,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 45,
         "score": 8
       },
       {
-        "name": "Canton",
-        "symbol": "CC",
-        "market_cap_rank": 17,
+        "name": "Zcash",
+        "symbol": "ZEC",
+        "market_cap_rank": 29,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL"
+      "SOL",
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -185,10 +186,17 @@
       "fgi": 11,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-02-28T22:10:10.437493+00:00",
+      "ts": 1772316610,
+      "fgi": 11,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T22:05:54.450514+00:00",
-    "updated_ts": 1772316354
+    "updated_at": "2026-02-28T22:10:10.437522+00:00",
+    "updated_ts": 1772316610
   }
 }
