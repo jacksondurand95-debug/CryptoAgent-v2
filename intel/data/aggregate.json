@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 7.6,
+        "age_min": 3.9,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 2.1,
+        "age_min": 14.3,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 20,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 24.1,
+        "age_min": 36.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 20.1,
+        "age_min": 32.3,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -50,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 23.8,
+        "age_min": 0.2,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 36 articles, score=-250"
+          "reason": "News sentiment: 36 articles, score=-350"
         },
         {
           "bias": "neutral",
@@ -121,17 +121,17 @@
     },
     {
       "type": "news",
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "title": "Bitcoin price crash today: $128B wiped out in 1 hour as Israel strikes Iran \u2014 is BTC recovery now on a dan - The Economic Times",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
-        "ETH"
+        "BTC"
       ]
     }
   ],
-  "timestamp": "2026-02-28T22:30:17.591648+00:00",
+  "timestamp": "2026-02-28T22:42:27.770998+00:00",
   "_meta": {
-    "updated_at": "2026-02-28T22:30:17.592491+00:00",
-    "updated_ts": 1772317817
+    "updated_at": "2026-02-28T22:42:27.771596+00:00",
+    "updated_ts": 1772318547
   }
 }
