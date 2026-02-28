@@ -1,21 +1,27 @@
 {
   "aggregate": {
-    "score": 0,
+    "score": 9,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.0,
-    "available_sources": 0,
+    "confidence": 0.8,
+    "available_sources": 4,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "missing",
+        "status": "fresh",
         "score": 0,
-        "bias": "neutral"
+        "bias": "neutral",
+        "strength": "weak",
+        "age_min": 0.3,
+        "effective_weight": 3.0
       },
       "whales": {
-        "status": "missing",
+        "status": "fresh",
         "score": 0,
-        "bias": "neutral"
+        "bias": "neutral",
+        "strength": "weak",
+        "age_min": 2.4,
+        "effective_weight": 2.5
       },
       "onchain": {
         "status": "missing",
@@ -23,27 +29,53 @@
         "bias": "neutral"
       },
       "sentiment": {
-        "status": "missing",
-        "score": 0,
-        "bias": "neutral"
+        "status": "fresh",
+        "score": 80,
+        "bias": "bullish",
+        "strength": "strong",
+        "age_min": 2.1,
+        "effective_weight": 1.5
       },
       "news": {
-        "status": "missing",
-        "score": 0,
-        "bias": "neutral"
+        "status": "fresh",
+        "score": -47,
+        "bias": "bearish",
+        "strength": "moderate",
+        "age_min": 2.4,
+        "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 0
+      "score": -36,
+      "bias": "bearish",
+      "signals": 2,
+      "details": [
+        {
+          "bias": "bearish",
+          "reason": "News sentiment: 37 articles, score=-290"
+        },
+        {
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (1 large txs)"
+        }
+      ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 0
+      "score": -53,
+      "bias": "bearish",
+      "signals": 2,
+      "details": [
+        {
+          "bias": "bearish",
+          "reason": "News sentiment: 17 articles, score=-140"
+        },
+        {
+          "bias": "neutral",
+          "reason": "No Etherscan key \u2014 ETH whale data unavailable"
+        }
+      ]
     },
     "SOL": {
       "score": 0,
@@ -51,10 +83,50 @@
       "signals": 0
     }
   },
-  "alpha_events": [],
-  "timestamp": "2026-02-28T17:25:42.186457+00:00",
+  "alpha_events": [
+    {
+      "type": "news",
+      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
+      "sentiment": "bearish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
+      "sentiment": "bearish",
+      "importance": "critical",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
+      "sentiment": "bearish",
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "type": "news",
+      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "type": "news",
+      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": []
+    }
+  ],
+  "timestamp": "2026-02-28T17:29:14.837189+00:00",
   "_meta": {
-    "updated_at": "2026-02-28T17:25:42.186789+00:00",
-    "updated_ts": 1772299542
+    "updated_at": "2026-02-28T17:29:14.837842+00:00",
+    "updated_ts": 1772299754
   }
 }
