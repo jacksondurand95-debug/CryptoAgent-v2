@@ -21,12 +21,12 @@
       "entry_price": 1853.96,
       "qty": 0.02564693749488898,
       "usd_amount": 47.548396238024374,
-      "stop_loss": 1816.32,
+      "stop_loss": 1847.97,
       "take_profit": 1912.76,
       "initial_stop": 1816.32,
-      "highest_price": 1872.63,
+      "highest_price": 1873.19,
       "lowest_price": 1851.3,
-      "trailing_active": false,
+      "trailing_active": true,
       "opened_at": 1772271564.856829,
       "opened_at_str": "2026-02-28 09:39 UTC"
     },
@@ -50,5 +50,5 @@
   "pending_orders": [],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772276572.0856879
+  "last_updated": 1772277354.6323953
 }
