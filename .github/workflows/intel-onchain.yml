@@ -1,0 +1,59 @@
+name: Intel — On-Chain Agent
+
+on:
+  schedule:
+    # Every 6 hours at minute 15
+    - cron: '15 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: intel-onchain
+  cancel-in-progress: true
+
+jobs:
+  onchain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-intel-${{ hashFiles('requirements-intel.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-intel-
+
+      - name: Install dependencies
+        run: pip install -q requests
+
+      - name: Run On-Chain Agent
+        env:
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
+        run: python intel/onchain_agent.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add intel/data/onchain.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "intel: onchain update $(date -u +%Y-%m-%dT%H:%M)"
+            git pull --rebase origin main || true
+            git push
+          fi

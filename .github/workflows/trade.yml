@@ -1,4 +1,5 @@
 name: CryptoAgent v2
+
 on:
   schedule:
     - cron: '*/10 * * * *'
@@ -7,24 +8,55 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: trading-agent
+  cancel-in-progress: false  # Don't cancel active trades
+
 jobs:
   trade:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 12
+
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          python-version: '3.11'
-          cache: 'pip'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
 
-      - run: pip install -r requirements.txt
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-trading-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-trading-
+
+      - name: Install dependencies
+        run: pip install -q -r requirements.txt
+
+      - name: Pull latest intel data
+        run: |
+          git pull --rebase origin main || true
+          echo "=== Intel data files ==="
+          ls -la intel/data/ 2>/dev/null || echo "No intel data yet (sub-agents haven't run)"
+          echo "========================"
+
+      - name: Run Intel Aggregator
+        run: python intel/aggregator.py || echo "Aggregator not critical — continuing"
 
       - name: Write Coinbase key
         run: echo '${{ secrets.COINBASE_KEY_JSON }}' > coinbase_key.json
 
-      - name: Run agent
+      - name: Run Trading Agent
+        env:
+          CRYPTOPANIC_API_KEY: ${{ secrets.CRYPTOPANIC_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python agent.py
 
       - name: Cleanup secrets
@@ -34,8 +66,13 @@ jobs:
       - name: Commit state
         if: always()
         run: |
-          git config user.name "CryptoAgent"
-          git config user.email "agent@jrdcompanies.com"
-          git add state.json 2>/dev/null || true
-          git diff --cached --quiet || git commit -m "state: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git push || true
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state.json intel/data/aggregate.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "agent: trade cycle $(date -u +%Y-%m-%dT%H:%M)"
+            git pull --rebase origin main || true
+            git push
+          fi

@@ -1,0 +1,80 @@
+# PRIVATE REPO ALTERNATIVE: Single workflow that runs all intel agents sequentially.
+# Use this INSTEAD of the individual intel-*.yml workflows if on private repo.
+# Saves runner startup overhead by combining all agents into one job.
+#
+# To use: disable the individual intel-*.yml files, enable this one.
+# To switch: rename individual files to .yml.disabled, rename this to .yml
+#
+# RECOMMENDED: Make repo public for unlimited minutes and use individual workflows.
+# Secrets (API keys, Coinbase credentials) are SAFE in GitHub Secrets regardless.
+
+name: Intel — Combined (Private Repo)
+
+on:
+  schedule:
+    # Every 2 hours — fits ~2000 min/month budget with trading agent
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: intel-combined
+  cancel-in-progress: true
+
+jobs:
+  intel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -q requests
+
+      - name: Run Liquidation Agent
+        run: python intel/liquidation_agent.py
+
+      - name: Run Sentiment Agent
+        env:
+          CRYPTOPANIC_API_KEY: ${{ secrets.CRYPTOPANIC_API_KEY }}
+        run: python intel/sentiment_agent.py
+
+      - name: Run Whale Agent
+        env:
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
+        run: python intel/whale_agent.py
+
+      - name: Run On-Chain Agent
+        env:
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
+        run: python intel/onchain_agent.py
+
+      - name: Run News Agent
+        run: python intel/news_agent.py
+
+      - name: Run Aggregator
+        run: python intel/aggregator.py
+
+      - name: Commit all results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add intel/data/*.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "intel: combined update $(date -u +%Y-%m-%dT%H:%M)"
+            git pull --rebase origin main || true
+            git push
+          fi

@@ -1,22 +1,24 @@
-"""Portfolio tracking — positions, P&L, trailing stops, trade log.
+"""Portfolio tracking — positions, P&L, dynamic trailing stops, trade log.
 
-v2: No file I/O. Accept state dict, return modified state dict.
-The caller handles persistence (GitHub Gist).
+v2.1: AdaptiveTrend-style dynamic trailing stops (2.5x ATR).
+Wider stops, longer holds, fewer but bigger wins.
 """
 import logging
 import time
 
+import config
+
 log = logging.getLogger("portfolio")
 
-# v2: Ultra aggressive — minimal restrictions
-MIN_HOLD_MINUTES = 5
-REENTRY_COOLDOWN_MINUTES = 5
-ROUND_TRIP_FEE_PCT = 0.008  # Limit order fees
+# From config (single source of truth)
+MIN_HOLD_MINUTES = config.MIN_HOLD_MINUTES
+REENTRY_COOLDOWN_MINUTES = config.REENTRY_COOLDOWN_MINUTES
+ROUND_TRIP_FEE_PCT = config.ROUND_TRIP_FEE_PCT
 
-# Trailing stop config
-TRAILING_ACTIVATION_R = 0.5   # Activate at 0.5R profit
-TRAILING_STOP_RATIO = 0.67   # Trail at 67% of initial risk distance from peak
-TIME_STOP_HOURS = 24          # Cut losers after 24h if < 0.5R
+# Trailing stop config — from AdaptiveTrend paper (2.5x ATR optimal)
+TRAILING_ACTIVATION_R = config.TRAILING_ACTIVATION_R
+TRAILING_ATR_MULT = config.TRAILING_STOP_ATR_MULT
+TIME_STOP_HOURS = config.TIME_STOP_HOURS
 
 
 def new_state():
@@ -26,10 +28,11 @@ def new_state():
         "trades": [],
         "starting_value": None,
         "pending_orders": [],
+        "peak_value": None,
     }
 
 
-def open_position(state, pair, side, entry_price, qty, usd_amount, stop_loss, take_profit):
+def open_position(state, pair, side, entry_price, qty, usd_amount, stop_loss, take_profit, atr=None):
     """Record a new position. Returns updated state."""
     pos = {
         "pair": pair,
@@ -40,6 +43,8 @@ def open_position(state, pair, side, entry_price, qty, usd_amount, stop_loss, ta
         "stop_loss": stop_loss,
         "take_profit": take_profit,
         "initial_stop": stop_loss,
+        "initial_risk": abs(entry_price - stop_loss),
+        "atr": atr or abs(entry_price - stop_loss) / TRAILING_ATR_MULT,
         "highest_price": entry_price,
         "lowest_price": entry_price,
         "trailing_active": False,
@@ -49,7 +54,7 @@ def open_position(state, pair, side, entry_price, qty, usd_amount, stop_loss, ta
     state["positions"].append(pos)
     log.info(
         f"OPEN: {side} {qty:.6f} {pair} @ ${entry_price:,.2f} "
-        f"SL=${stop_loss:,.2f} TP=${take_profit:,.2f}"
+        f"SL=${stop_loss:,.2f} TP=${take_profit:,.2f} ATR=${pos['atr']:,.2f}"
     )
     return state
 
@@ -99,7 +104,6 @@ def close_position(state, pair, exit_price, reason="signal"):
         "duration_min": round((time.time() - pos["opened_at"]) / 60, 1),
     }
 
-    # Keep last 500 trades
     state["trades"].append(trade)
     if len(state["trades"]) > 500:
         state["trades"] = state["trades"][-500:]
@@ -114,11 +118,10 @@ def close_position(state, pair, exit_price, reason="signal"):
 
 
 def check_stops(state, get_price_fn):
-    """Check all positions for stop loss, take profit, trailing stops, and time stops.
+    """Check all positions for stop loss, take profit, dynamic trailing stops, and time stops.
 
-    Args:
-        state: The portfolio state dict
-        get_price_fn: Callable(pair) -> float or None
+    Uses AdaptiveTrend-style dynamic trailing:
+        trailing_stop = max(prev_stop, current_price - 2.5 * ATR)
 
     Returns:
         (updated_state, list_of_closed_trades)
@@ -133,10 +136,16 @@ def check_stops(state, get_price_fn):
 
         entry = pos["entry_price"]
         side = pos.get("side", "long")
-        initial_risk = abs(entry - pos["initial_stop"])
+        atr = pos.get("atr", entry * 0.025)
+        initial_risk = pos.get("initial_risk", abs(entry - pos["initial_stop"]))
 
         if initial_risk <= 0:
-            initial_risk = entry * 0.02  # Fallback: 2% risk
+            initial_risk = entry * 0.02
+
+        # Check minimum hold time
+        hold_minutes = (now - pos["opened_at"]) / 60
+        if hold_minutes < MIN_HOLD_MINUTES:
+            continue
 
         # Update highest/lowest price seen
         if price > pos.get("highest_price", entry):
@@ -144,29 +153,27 @@ def check_stops(state, get_price_fn):
         if price < pos.get("lowest_price", entry):
             pos["lowest_price"] = price
 
-        # ── TRAILING STOP LOGIC ──
+        # ── DYNAMIC TRAILING STOP (AdaptiveTrend style) ──
         if side == "long":
-            # Activate trailing stop after price moves enough in our favor
+            # Activate trailing after reaching activation threshold
             if not pos.get("trailing_active"):
                 profit_r = (price - entry) / initial_risk
                 if profit_r >= TRAILING_ACTIVATION_R:
                     pos["trailing_active"] = True
-                    log.info(f"[TRAIL] {pos['pair']}: Trailing stop activated at {profit_r:.1f}R")
+                    log.info(f"[TRAIL] {pos['pair']}: Trailing activated at {profit_r:.1f}R")
 
-            # Update trailing stop (long)
+            # Dynamic trailing: stop = max(prev_stop, price - 2.5 * ATR)
             if pos.get("trailing_active"):
-                highest = pos.get("highest_price", price)
-                trail_distance = initial_risk * TRAILING_STOP_RATIO
-                new_stop = round(highest - trail_distance, 2)
+                new_stop = round(price - TRAILING_ATR_MULT * atr, 2)
                 if new_stop > pos["stop_loss"]:
                     old_stop = pos["stop_loss"]
                     pos["stop_loss"] = new_stop
                     log.info(
-                        f"[TRAIL] {pos['pair']}: Stop raised ${old_stop:,.2f} -> ${new_stop:,.2f} "
-                        f"(highest=${highest:,.2f})"
+                        f"[TRAIL] {pos['pair']}: Stop ${old_stop:,.2f} -> ${new_stop:,.2f} "
+                        f"(price=${price:,.2f} ATR=${atr:,.2f})"
                     )
 
-            # ── STOP LOSS (long) ──
+            # STOP LOSS
             if price <= pos["stop_loss"]:
                 reason = "trailing_stop" if pos.get("trailing_active") else "stop_loss"
                 state, trade = close_position(state, pos["pair"], price, reason=reason)
@@ -174,7 +181,7 @@ def check_stops(state, get_price_fn):
                     closed.append(trade)
                 continue
 
-            # ── TAKE PROFIT (long) ──
+            # TAKE PROFIT
             if price >= pos["take_profit"]:
                 state, trade = close_position(state, pos["pair"], price, reason="take_profit")
                 if trade:
@@ -187,21 +194,17 @@ def check_stops(state, get_price_fn):
                 profit_r = (entry - price) / initial_risk
                 if profit_r >= TRAILING_ACTIVATION_R:
                     pos["trailing_active"] = True
-                    log.info(f"[TRAIL] {pos['pair']}: Short trailing stop activated at {profit_r:.1f}R")
+                    log.info(f"[TRAIL] {pos['pair']}: Short trailing activated at {profit_r:.1f}R")
 
             if pos.get("trailing_active"):
-                lowest = pos.get("lowest_price", price)
-                trail_distance = initial_risk * TRAILING_STOP_RATIO
-                new_stop = round(lowest + trail_distance, 2)
+                new_stop = round(price + TRAILING_ATR_MULT * atr, 2)
                 if new_stop < pos["stop_loss"]:
                     old_stop = pos["stop_loss"]
                     pos["stop_loss"] = new_stop
                     log.info(
-                        f"[TRAIL] {pos['pair']}: Short stop lowered ${old_stop:,.2f} -> ${new_stop:,.2f} "
-                        f"(lowest=${lowest:,.2f})"
+                        f"[TRAIL] {pos['pair']}: Short stop ${old_stop:,.2f} -> ${new_stop:,.2f}"
                     )
 
-            # Stop loss (short)
             if price >= pos["stop_loss"]:
                 reason = "trailing_stop" if pos.get("trailing_active") else "stop_loss"
                 state, trade = close_position(state, pos["pair"], price, reason=reason)
@@ -209,14 +212,13 @@ def check_stops(state, get_price_fn):
                     closed.append(trade)
                 continue
 
-            # Take profit (short)
             if price <= pos["take_profit"]:
                 state, trade = close_position(state, pos["pair"], price, reason="take_profit")
                 if trade:
                     closed.append(trade)
                 continue
 
-        # ── TIME STOP (both sides) ──
+        # ── TIME STOP ──
         hours_held = (now - pos["opened_at"]) / 3600
         if hours_held > TIME_STOP_HOURS:
             if side == "long":
@@ -265,6 +267,9 @@ def get_stats(trades):
 
     loss_total = sum(t["pnl_usd"] for t in losses)
 
+    # Average hold time
+    avg_hold = sum(t["duration_min"] for t in trades) / len(trades) if trades else 0
+
     return {
         "total_trades": len(trades),
         "wins": len(wins),
@@ -274,6 +279,7 @@ def get_stats(trades):
         "total_fees_usd": round(total_fees, 2),
         "avg_win_usd": round(avg_win, 2),
         "avg_loss_usd": round(avg_loss, 2),
+        "avg_hold_min": round(avg_hold, 0),
         "best_trade": round(max(t["pnl_usd"] for t in trades), 2),
         "worst_trade": round(min(t["pnl_usd"] for t in trades), 2),
         "profit_factor": round(

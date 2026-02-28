@@ -1,7 +1,12 @@
-"""Technical analysis indicators for trading signals.
+"""Technical analysis indicators — v2 with Keltner Squeeze + Momentum.
 
-Ported from CryptoAgent v1 — standalone, no external config imports.
+Includes:
+- Standard indicators (RSI, MACD, EMA, BB, ATR, ADX, StochRSI, VWAP)
+- Keltner Channel + Squeeze detection (BB inside KC)
+- Time-series momentum (AdaptiveTrend paper)
+- Multi-timeframe confluence scoring
 """
+import numpy as np
 import pandas as pd
 import ta
 
@@ -47,11 +52,11 @@ def compute_all(candles):
     df["bb_upper"] = bb.bollinger_hband()
     df["bb_middle"] = bb.bollinger_mavg()
     df["bb_lower"] = bb.bollinger_lband()
-    df["bb_pct"] = bb.bollinger_pband()  # 0-1 position within bands
+    df["bb_pct"] = bb.bollinger_pband()
 
     # ATR (14-period)
-    atr = ta.volatility.AverageTrueRange(high, low, close, window=14)
-    df["atr"] = atr.average_true_range()
+    atr_ind = ta.volatility.AverageTrueRange(high, low, close, window=14)
+    df["atr"] = atr_ind.average_true_range()
 
     # ADX (14-period)
     adx = ta.trend.ADXIndicator(high, low, close, window=14)
@@ -67,6 +72,44 @@ def compute_all(candles):
     stoch = ta.momentum.StochRSIIndicator(close, window=14, smooth1=3, smooth2=3)
     df["stoch_rsi_k"] = stoch.stochrsi_k()
     df["stoch_rsi_d"] = stoch.stochrsi_d()
+
+    # ── KELTNER CHANNEL (EMA20 + 1.5x ATR) ──
+    kc_ema = ta.trend.EMAIndicator(close, window=20).ema_indicator()
+    kc_atr = ta.volatility.AverageTrueRange(high, low, close, window=20).average_true_range()
+    df["kc_upper"] = kc_ema + 1.5 * kc_atr
+    df["kc_lower"] = kc_ema - 1.5 * kc_atr
+    df["kc_middle"] = kc_ema
+
+    # ── SQUEEZE DETECTION: BB inside KC ──
+    df["squeeze"] = (df["bb_upper"] < df["kc_upper"]) & (df["bb_lower"] > df["kc_lower"])
+
+    # Count consecutive squeeze bars
+    squeeze_count = 0
+    squeeze_counts = []
+    for val in df["squeeze"]:
+        if val:
+            squeeze_count += 1
+        else:
+            squeeze_count = 0
+        squeeze_counts.append(squeeze_count)
+    df["squeeze_bars"] = squeeze_counts
+
+    # ── TIME-SERIES MOMENTUM (AdaptiveTrend) ──
+    # Momentum over lookback period
+    for lb in [7, 14, 28]:
+        if len(df) > lb:
+            df[f"momentum_{lb}"] = (close - close.shift(lb)) / close.shift(lb)
+        else:
+            df[f"momentum_{lb}"] = 0.0
+
+    # Rolling Sharpe ratio (proxy for trend quality)
+    returns = close.pct_change()
+    if len(df) >= 28:
+        df["rolling_sharpe_28"] = (
+            returns.rolling(28).mean() / returns.rolling(28).std()
+        ) * np.sqrt(365 * 4)  # Annualized for 6H candles
+    else:
+        df["rolling_sharpe_28"] = 0.0
 
     # Get latest values
     latest = df.iloc[-1]
@@ -93,6 +136,7 @@ def compute_all(candles):
         ),
         "bb_upper": round(latest["bb_upper"], 2) if pd.notna(latest["bb_upper"]) else None,
         "bb_lower": round(latest["bb_lower"], 2) if pd.notna(latest["bb_lower"]) else None,
+        "bb_middle": round(latest["bb_middle"], 2) if pd.notna(latest["bb_middle"]) else None,
         "bb_pct": round(latest["bb_pct"], 3) if pd.notna(latest["bb_pct"]) else None,
         "atr": round(latest["atr"], 2) if pd.notna(latest["atr"]) else None,
         "atr_pct": round(latest["atr"] / latest["close"] * 100, 2) if pd.notna(latest["atr"]) else None,
@@ -108,13 +152,24 @@ def compute_all(candles):
         "vol_ratio": round(latest["vol_ratio"], 2) if pd.notna(latest["vol_ratio"]) else None,
         "stoch_rsi_k": round(latest["stoch_rsi_k"], 2) if pd.notna(latest["stoch_rsi_k"]) else None,
         "stoch_rsi_d": round(latest["stoch_rsi_d"], 2) if pd.notna(latest["stoch_rsi_d"]) else None,
+        # Keltner Channel
+        "kc_upper": round(latest["kc_upper"], 2) if pd.notna(latest["kc_upper"]) else None,
+        "kc_lower": round(latest["kc_lower"], 2) if pd.notna(latest["kc_lower"]) else None,
+        "kc_middle": round(latest["kc_middle"], 2) if pd.notna(latest["kc_middle"]) else None,
+        # Squeeze
+        "squeeze": bool(latest["squeeze"]) if pd.notna(latest["squeeze"]) else False,
+        "squeeze_bars": int(latest["squeeze_bars"]),
+        "squeeze_releasing": bool(prev["squeeze"] and not latest["squeeze"]),
+        # Momentum (AdaptiveTrend)
+        "momentum_7": round(float(latest["momentum_7"]), 4) if pd.notna(latest["momentum_7"]) else 0,
+        "momentum_14": round(float(latest["momentum_14"]), 4) if pd.notna(latest["momentum_14"]) else 0,
+        "momentum_28": round(float(latest["momentum_28"]), 4) if pd.notna(latest["momentum_28"]) else 0,
+        "rolling_sharpe": round(float(latest["rolling_sharpe_28"]), 2) if pd.notna(latest["rolling_sharpe_28"]) else 0,
         # Price action
         "24h_change_pct": round((latest["close"] - df.iloc[-24]["close"]) / df.iloc[-24]["close"] * 100, 2) if len(df) >= 24 else None,
         "high_24h": round(df["high"].tail(24).max(), 2) if len(df) >= 24 else None,
         "low_24h": round(df["low"].tail(24).min(), 2) if len(df) >= 24 else None,
     }
-    # BB middle (for mean reversion targets)
-    result["bb_middle"] = round(latest["bb_middle"], 2) if pd.notna(latest["bb_middle"]) else None
 
     # VWAP (24h rolling volume-weighted average price)
     try:
@@ -137,8 +192,6 @@ def compute_all(candles):
 
     return result
 
-
-# --- Advanced Strategy Signals ---
 
 def confluence_score(indicators):
     """Compute directional confluence score from -100 to +100."""
@@ -196,12 +249,16 @@ def confluence_score(indicators):
         elif bb_pct > 0.9:
             score -= 15
 
-    stoch_k = indicators.get("stoch_rsi_k")
-    if stoch_k is not None:
-        if stoch_k < 0.1:
-            score += 10
-        elif stoch_k > 0.9:
-            score -= 10
+    # Momentum boost
+    mom = indicators.get("momentum_28", 0)
+    if mom > 0.05:
+        score += 15
+    elif mom < -0.05:
+        score -= 15
+
+    # Squeeze release boost
+    if indicators.get("squeeze_releasing"):
+        score = int(score * 1.3)
 
     return max(-100, min(100, score))
 
@@ -216,15 +273,15 @@ def multi_tf_confluence(candles_1h, candles_6h, candles_1d):
     score_6h = confluence_score(ind_6h) if ind_6h else 0
     score_1d = confluence_score(ind_1d) if ind_1d else 0
 
-    signs = [score_1h > 0, score_6h > 0, score_1d > 0]
-    agreement = sum(signs)
+    # 6H is primary, 1D is trend filter, 1H is timing
+    weighted = score_6h * 0.5 + score_1d * 0.3 + score_1h * 0.2
 
-    if agreement >= 2 and score_1h > 30:
+    if weighted > 25:
         direction = "bullish"
-        confidence = min(0.5 + (score_1h / 200), 0.95)
-    elif (3 - agreement) >= 2 and score_1h < -30:
+        confidence = min(0.5 + (weighted / 150), 0.95)
+    elif weighted < -25:
         direction = "bearish"
-        confidence = min(0.5 + (abs(score_1h) / 200), 0.95)
+        confidence = min(0.5 + (abs(weighted) / 150), 0.95)
     else:
         direction = "neutral"
         confidence = 0.3
@@ -233,183 +290,8 @@ def multi_tf_confluence(candles_1h, candles_6h, candles_1d):
         "direction": direction,
         "confidence": round(confidence, 2),
         "scores": {"1h": score_1h, "6h": score_6h, "1d": score_1d},
+        "weighted_score": round(weighted, 1),
         "indicators_1h": ind_1h,
         "indicators_6h": ind_6h,
         "indicators_1d": ind_1d,
     }
-
-
-def mean_reversion_signal(indicators):
-    """Generate mean reversion signal for range-bound markets (ADX < 25)."""
-    adx = indicators.get("adx")
-    rsi = indicators.get("rsi")
-    bb_pct = indicators.get("bb_pct")
-    stoch_k = indicators.get("stoch_rsi_k")
-    price = indicators.get("price")
-    bb_middle = indicators.get("bb_middle")
-    atr = indicators.get("atr")
-    vol_ratio = indicators.get("vol_ratio", 1.0)
-
-    if not all(v is not None for v in [rsi, bb_pct, stoch_k, price, atr]):
-        return None
-
-    # LONG: oversold at lower BB
-    if bb_pct < 0.1 and rsi < 35 and stoch_k < 0.2:
-        confidence = 0.65
-        if rsi < 25: confidence += 0.05
-        if bb_pct < 0.0: confidence += 0.05
-        if stoch_k < 0.05: confidence += 0.05
-        if adx is not None and adx < 20: confidence += 0.05  # Range-bound = better for MR
-
-        target = bb_middle if bb_middle else price * 1.025
-        return {
-            "action": "buy",
-            "confidence": min(confidence, 0.90),
-            "entry_price": price,
-            "stop_loss": round(price - (atr * 1.2), 2),
-            "take_profit": round(target, 2),
-            "strategy": "mean_reversion",
-            "reasoning": f"Mean reversion BUY: BB%={bb_pct:.3f} RSI={rsi:.0f} StochK={stoch_k:.2f} ADX={adx}",
-        }
-
-    # SHORT: overbought at upper BB
-    if bb_pct > 0.9 and rsi > 65 and stoch_k > 0.8:
-        confidence = 0.65
-        if rsi > 75: confidence += 0.05
-        if bb_pct > 1.0: confidence += 0.05
-        if stoch_k > 0.95: confidence += 0.05
-
-        target = bb_middle if bb_middle else price * 0.975
-        return {
-            "action": "sell",
-            "confidence": min(confidence, 0.90),
-            "entry_price": price,
-            "stop_loss": round(price + (atr * 1.2), 2),
-            "take_profit": round(target, 2),
-            "strategy": "mean_reversion",
-            "reasoning": f"Mean reversion SELL: BB%={bb_pct:.3f} RSI={rsi:.0f} StochK={stoch_k:.2f}",
-        }
-
-    return None
-
-
-def detect_liquidation_cascade(candles_1h, current_indicators):
-    """Detect liquidation cascade reversal using price action as proxy."""
-    import numpy as np
-
-    if len(candles_1h) < 24:
-        return None
-
-    closes = [c["close"] for c in candles_1h]
-    volumes = [c["volume"] for c in candles_1h]
-
-    price_now = closes[-1]
-    price_4h_ago = closes[-4] if len(closes) >= 4 else closes[0]
-    move_4h_pct = abs(price_now - price_4h_ago) / price_4h_ago * 100
-
-    atr_pct = current_indicators.get("atr_pct", 2.0)
-
-    vol_mean = np.mean(volumes[-20:]) if len(volumes) >= 20 else np.mean(volumes)
-    vol_current = volumes[-1]
-    vol_spike = vol_current / vol_mean if vol_mean > 0 else 1.0
-
-    is_cascade = move_4h_pct > atr_pct * 2 and vol_spike > 2.5
-
-    if not is_cascade:
-        return None
-
-    cascade_direction = "down" if price_now < price_4h_ago else "up"
-
-    last_candle = candles_1h[-1]
-    if cascade_direction == "down":
-        reversal = last_candle["close"] > last_candle["open"]
-    else:
-        reversal = last_candle["close"] < last_candle["open"]
-
-    if not reversal:
-        return None
-
-    total_vp = sum(c["close"] * c["volume"] for c in candles_1h[-24:])
-    total_v = sum(c["volume"] for c in candles_1h[-24:])
-    vwap_24h = total_vp / total_v if total_v > 0 else price_now
-
-    atr = current_indicators.get("atr", price_now * 0.02)
-
-    if cascade_direction == "down":
-        return {
-            "action": "buy",
-            "confidence": 0.75,
-            "size_pct": 10,
-            "entry_price": price_now,
-            "stop_loss": round(min(c["low"] for c in candles_1h[-4:]) - atr * 0.5, 2),
-            "take_profit": round(vwap_24h, 2),
-            "strategy": "liquidation_reversal",
-            "reasoning": f"Cascade reversal: {move_4h_pct:.1f}% drop, vol {vol_spike:.1f}x, "
-                        f"reversal candle. Target VWAP ${vwap_24h:,.0f}",
-        }
-    else:
-        return {
-            "action": "sell",
-            "confidence": 0.70,
-            "strategy": "liquidation_reversal",
-            "reasoning": f"Squeeze exhaustion: {move_4h_pct:.1f}% pump, vol {vol_spike:.1f}x",
-        }
-
-
-def quick_signal(indicators):
-    """Generate a quick technical signal summary (bullish/bearish/neutral)."""
-    if not indicators:
-        return "neutral", 0.5
-
-    score = 0
-    factors = 0
-
-    rsi = indicators.get("rsi")
-    if rsi is not None:
-        factors += 1
-        if rsi < 30:
-            score += 1  # Oversold = bullish
-        elif rsi > 70:
-            score -= 1  # Overbought = bearish
-
-    macd_cross = indicators.get("macd_crossover")
-    if macd_cross == "bullish":
-        score += 1.5
-        factors += 1
-    elif macd_cross == "bearish":
-        score -= 1.5
-        factors += 1
-    else:
-        factors += 1
-
-    ema_trend = indicators.get("ema_trend")
-    if ema_trend == "bullish":
-        score += 1
-        factors += 1
-    elif ema_trend == "bearish":
-        score -= 1
-        factors += 1
-    else:
-        factors += 1
-
-    bb_pct = indicators.get("bb_pct")
-    if bb_pct is not None:
-        factors += 1
-        if bb_pct < 0.1:
-            score += 0.5  # Near lower band
-        elif bb_pct > 0.9:
-            score -= 0.5  # Near upper band
-
-    vol_ratio = indicators.get("vol_ratio")
-    if vol_ratio is not None and vol_ratio > 1.5:
-        score *= 1.2  # High volume amplifies signal
-
-    if factors == 0:
-        return "neutral", 0.5
-
-    normalized = score / (factors * 1.5)  # Normalize to -1 to 1
-    if normalized > 0.2:
-        return "bullish", min(0.5 + normalized * 0.5, 1.0)
-    elif normalized < -0.2:
-        return "bearish", min(0.5 + abs(normalized) * 0.5, 1.0)
-    return "neutral", 0.5

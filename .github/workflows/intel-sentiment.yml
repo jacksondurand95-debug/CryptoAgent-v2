@@ -1,0 +1,59 @@
+name: Intel — Sentiment Agent
+
+on:
+  schedule:
+    # Every hour at minute 5
+    - cron: '5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: intel-sentiment
+  cancel-in-progress: true
+
+jobs:
+  sentiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-intel-${{ hashFiles('requirements-intel.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-intel-
+
+      - name: Install dependencies
+        run: pip install -q requests
+
+      - name: Run Sentiment Agent
+        env:
+          CRYPTOPANIC_API_KEY: ${{ secrets.CRYPTOPANIC_API_KEY }}
+        run: python intel/sentiment_agent.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add intel/data/sentiment.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "intel: sentiment update $(date -u +%Y-%m-%dT%H:%M)"
+            git pull --rebase origin main || true
+            git push
+          fi

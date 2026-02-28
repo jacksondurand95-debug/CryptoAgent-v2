@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
-"""CryptoAgent v2 — Ultra Aggressive Serverless Trading Agent.
+"""CryptoAgent v2.1 — Proven Algorithm Serverless Trading Agent.
 
 Runs as a single shot from GitHub Actions every 10 minutes.
-State persisted to GitHub Gist between runs.
+State persisted to state.json (committed by Actions workflow).
+
+Based on:
+- AdaptiveTrend (arXiv 2602.11708): Sharpe 2.41, 6H timeframe
+- Bollinger-Keltner Squeeze: fewer but bigger trades
+- Multi-source intel sub-agents for confidence overlay
 """
 import base64
 import json
@@ -26,6 +31,13 @@ from portfolio import (
     new_state, open_position, close_position, check_stops,
     has_position, can_reenter, get_stats,
 )
+
+# Intel sub-agent integration
+try:
+    from intel.aggregator import get_intel_brief
+    INTEL_AVAILABLE = True
+except ImportError:
+    INTEL_AVAILABLE = False
 
 # ─── LOGGING ──────────────────────────────────────────────────────
 
@@ -107,7 +119,6 @@ def load_state():
             state = json.loads(STATE_FILE.read_text())
             log.info(f"Loaded state: {len(state.get('positions', []))} positions, "
                      f"{len(state.get('trades', []))} trades")
-            # Ensure all keys exist
             for key in ("positions", "trades", "pending_orders"):
                 state.setdefault(key, [])
             state.setdefault("starting_value", None)
@@ -163,14 +174,14 @@ def get_price(pair):
     return None
 
 
-def get_candles(pair, granularity="ONE_HOUR", limit=100):
+def get_candles(pair, granularity="SIX_HOUR", limit=100):
     """Get OHLCV candles from Coinbase public endpoint."""
     end = datetime.now(timezone.utc)
     gran_seconds = {
         "ONE_MINUTE": 60, "FIVE_MINUTE": 300, "FIFTEEN_MINUTE": 900,
         "ONE_HOUR": 3600, "SIX_HOUR": 21600, "ONE_DAY": 86400,
     }
-    secs = gran_seconds.get(granularity, 3600)
+    secs = gran_seconds.get(granularity, 21600)
     start = end - timedelta(seconds=secs * limit)
 
     try:
@@ -185,7 +196,7 @@ def get_candles(pair, granularity="ONE_HOUR", limit=100):
         )
         resp = r.json()
     except Exception as e:
-        log.error(f"Candle fetch error {pair}: {e}")
+        log.error(f"Candle fetch error {pair} {granularity}: {e}")
         return []
 
     candles = []
@@ -255,26 +266,17 @@ def get_best_bid_ask(auth, pair):
 
 
 def place_limit_order(auth, pair, side, price, usd_amount):
-    """Place a limit order. Returns order dict or None."""
+    """Place a post_only limit order (guaranteed maker fee). Returns order dict or None."""
     order_id = str(uuid.uuid4())
-    base = pair.split("-")[0]
 
-    if side == "BUY":
-        qty = usd_amount / price
-        order_config = {
-            "limit_limit_gtc": {
-                "base_size": str(round(qty, 8)),
-                "limit_price": str(round(price, 2)),
-            }
+    qty = usd_amount / price
+    order_config = {
+        "limit_limit_gtc": {
+            "base_size": str(round(qty, 8)),
+            "limit_price": str(round(price, 2)),
+            "post_only": True,  # MAKER FEE GUARANTEED — reject if would be taker
         }
-    else:
-        # For sell, we need the base amount
-        order_config = {
-            "limit_limit_gtc": {
-                "base_size": str(round(usd_amount / price, 8)),
-                "limit_price": str(round(price, 2)),
-            }
-        }
+    }
 
     try:
         resp = auth.post("/api/v3/brokerage/orders", json_data={
@@ -283,7 +285,7 @@ def place_limit_order(auth, pair, side, price, usd_amount):
             "side": side,
             "order_configuration": order_config,
         })
-        log.info(f"LIMIT {side} order placed: {pair} @ ${price:,.2f} ({usd_amount:.2f} USD)")
+        log.info(f"LIMIT {side} order placed: {pair} @ ${price:,.2f} ({usd_amount:.2f} USD) [post_only]")
         return {
             "id": resp.get("success_response", {}).get("order_id", order_id),
             "client_order_id": order_id,
@@ -291,7 +293,7 @@ def place_limit_order(auth, pair, side, price, usd_amount):
             "side": side.lower(),
             "type": "limit",
             "price": price,
-            "qty": usd_amount / price,
+            "qty": qty,
             "usd": usd_amount,
             "placed_at": time.time(),
             "status": "pending",
@@ -329,8 +331,7 @@ def check_order_status(auth, order_id):
     try:
         resp = auth.get(f"/api/v3/brokerage/orders/historical/{order_id}")
         order = resp.get("order", {})
-        status = order.get("status", "UNKNOWN")
-        return status  # FILLED, PENDING, CANCELLED, EXPIRED, etc.
+        return order.get("status", "UNKNOWN")
     except Exception as e:
         log.warning(f"Order status check failed: {e}")
         return "UNKNOWN"
@@ -367,13 +368,13 @@ def fetch_okx_data(pair):
             rate = float(resp["data"][0].get("fundingRate", 0))
             next_rate = float(resp["data"][0].get("nextFundingRate", 0))
             data["funding"] = {
-                "current": rate * 100,  # Convert to percentage
+                "current": rate * 100,
                 "next": next_rate * 100,
                 "signal": {
                     "bias": "bullish" if rate < -0.0001 else "bearish" if rate > 0.0003 else "neutral",
                     "strength": "strong" if abs(rate) > 0.0005 else "moderate" if abs(rate) > 0.0002 else "weak",
                 },
-                "negative_streak": 0,  # Would need historical data
+                "negative_streak": 0,
                 "positive_streak": 0,
             }
     except Exception as e:
@@ -391,7 +392,7 @@ def fetch_okx_data(pair):
             oi_val = float(resp["data"][0].get("oi", 0))
             data["open_interest"] = {
                 "current": oi_val,
-                "change_2h_pct": 0,  # Would need historical comparison
+                "change_2h_pct": 0,
                 "change_4h_pct": 0,
             }
     except Exception as e:
@@ -462,27 +463,38 @@ def fetch_okx_data(pair):
     return data
 
 
+def fetch_fear_greed():
+    """Fetch Fear & Greed Index (free, no auth)."""
+    try:
+        r = requests.get("https://api.alternative.me/fng/?limit=1", timeout=10)
+        data = r.json()
+        if data.get("data"):
+            val = int(data["data"][0].get("value", 50))
+            classification = data["data"][0].get("value_classification", "Neutral")
+            return {"value": val, "classification": classification}
+    except Exception:
+        pass
+    return None
+
+
 def fetch_tradingview_analysis(pair):
     """Fetch TradingView technical analysis summary."""
     try:
         from tradingview_ta import TA_Handler, Interval
 
         base = pair.split("-")[0]
-
-        # Map to TradingView symbol
         tv_map = {
             "BTC": ("BTCUSD", "COINBASE"),
             "ETH": ("ETHUSD", "COINBASE"),
             "SOL": ("SOLUSD", "COINBASE"),
         }
-
         symbol, exchange = tv_map.get(base, (f"{base}USD", "COINBASE"))
 
         handler = TA_Handler(
             symbol=symbol,
             screener="crypto",
             exchange=exchange,
-            interval=Interval.INTERVAL_1_HOUR,
+            interval=Interval.INTERVAL_4_HOURS,  # 4H for better signal quality
         )
         analysis = handler.get_analysis()
         summary = analysis.summary
@@ -504,7 +516,7 @@ def process_pending_orders(state, auth):
     """Check pending limit orders from previous runs.
 
     If filled: update positions.
-    If pending for > 2 runs (20 min): cancel and use market order.
+    If pending for > 30 min: cancel (wider window for bigger moves).
     """
     if "pending_orders" not in state:
         state["pending_orders"] = []
@@ -521,7 +533,6 @@ def process_pending_orders(state, auth):
         age_minutes = (now - order.get("placed_at", now)) / 60
 
         if status in ("FILLED", "COMPLETED"):
-            # Order filled — open position
             log.info(f"ORDER FILLED: {order['side']} {order['pair']} @ ${order['price']:,.2f}")
             pair = order["pair"]
             price = order["price"]
@@ -529,40 +540,22 @@ def process_pending_orders(state, auth):
             usd = order.get("usd", 0)
 
             if order["side"] == "buy":
-                # Calculate stop/take_profit from the signal that created this order
-                atr_est = price * 0.025  # Estimate ATR as 2.5% if not stored
-                stop = order.get("stop_loss", round(price - atr_est * 1.5, 2))
-                target = order.get("take_profit", round(price + atr_est * 3.0, 2))
+                atr_est = order.get("atr") or price * 0.025
+                stop = order.get("stop_loss", round(price - atr_est * config.STOP_LOSS_ATR_MULT, 2))
+                target = order.get("take_profit", round(price + atr_est * config.TAKE_PROFIT_ATR_MULT, 2))
                 state = open_position(
-                    state, pair, "long", price, qty, usd, stop, target
+                    state, pair, "long", price, qty, usd, stop, target, atr=atr_est
                 )
 
         elif status in ("CANCELLED", "EXPIRED", "FAILED"):
             log.info(f"ORDER {status}: {order['pair']} — removing")
 
-        elif age_minutes > 20:
-            # Pending for >20 min (2 runs) — cancel and market order
+        elif age_minutes > 30:
+            # Post_only orders that haven't filled in 30 min — cancel
             log.info(f"ORDER STALE ({age_minutes:.0f}min): cancelling {order['pair']}")
             cancel_order(auth, order_id)
 
-            if order["side"] == "buy":
-                # Fall back to market order
-                usd = order.get("usd", 0)
-                if usd > 5:
-                    log.info(f"Falling back to MARKET BUY {order['pair']} ${usd:.2f}")
-                    result = place_market_order(auth, order["pair"], "BUY", usd_amount=usd)
-                    if result:
-                        price = get_price(order["pair"])
-                        if price:
-                            qty = usd / price
-                            atr_est = price * 0.025
-                            stop = order.get("stop_loss", round(price - atr_est * 1.5, 2))
-                            target = order.get("take_profit", round(price + atr_est * 3.0, 2))
-                            state = open_position(
-                                state, order["pair"], "long", price, qty, usd, stop, target
-                            )
         else:
-            # Still waiting
             still_pending.append(order)
             log.info(f"ORDER PENDING: {order['pair']} ({age_minutes:.0f}min old)")
 
@@ -576,10 +569,10 @@ def run():
     """Single-shot agent execution."""
     start_time = time.time()
     log.info("=" * 60)
-    log.info("CryptoAgent v2 — Ultra Aggressive")
+    log.info("CryptoAgent v2.1 — Proven Algorithms (AdaptiveTrend/Squeeze)")
     log.info("=" * 60)
 
-    # 1. Load state from Gist
+    # 1. Load state
     state = load_state()
 
     # 2. Initialize exchange auth
@@ -618,12 +611,33 @@ def run():
             f"EXIT: {trade['pair']} {trade['reason']} | "
             f"P&L: {sign}${trade['pnl_usd']:,.2f} ({sign}{trade['pnl_pct']:.1f}%)"
         )
-        # If we need to actually sell on exchange
         if trade["side"] == "long":
             try:
                 place_market_order(auth, trade["pair"], "SELL", base_amount=trade["qty"])
             except Exception as e:
                 log.error(f"Exit sell failed for {trade['pair']}: {e}")
+
+    # 5b. Load intel sub-agent data
+    intel_brief = None
+    if INTEL_AVAILABLE:
+        try:
+            intel_brief = get_intel_brief()
+            agg = intel_brief.get("aggregate", {})
+            log.info(f"INTEL: score={agg.get('score', 0)} bias={agg.get('bias', 'N/A')} "
+                     f"strength={agg.get('strength', 'N/A')} "
+                     f"confidence={agg.get('confidence', 0):.0%} "
+                     f"({agg.get('available_sources', 0)}/{agg.get('total_sources', 0)} sources)")
+            for evt in intel_brief.get("alpha_events", [])[:3]:
+                log.info(f"  ALPHA [{evt.get('importance')}]: {evt.get('title', '')[:70]}")
+        except Exception as e:
+            log.warning(f"Intel load failed (non-fatal): {e}")
+    else:
+        log.info("INTEL: sub-agents not available — running without intel overlay")
+
+    # 5c. Fear & Greed Index
+    fgi = fetch_fear_greed()
+    if fgi:
+        log.info(f"Fear & Greed: {fgi['value']} ({fgi['classification']})")
 
     # 6. Collect market data and run strategies for each pair
     signals_found = []
@@ -632,21 +646,27 @@ def run():
     for pair in config.TRADING_PAIRS:
         log.info(f"--- {pair} ---")
 
-        # Get candles
-        candles_1h = get_candles(pair, "ONE_HOUR", 100)
-        if not candles_1h or len(candles_1h) < 30:
-            log.warning(f"  Insufficient candle data for {pair}")
+        # Get candles at multiple timeframes (PRIMARY: 6H)
+        candles_6h = get_candles(pair, config.PRIMARY_TIMEFRAME, 100)
+        candles_1d = get_candles(pair, config.TREND_TIMEFRAME, 60)
+
+        if not candles_6h or len(candles_6h) < 30:
+            log.warning(f"  Insufficient 6H candle data for {pair} ({len(candles_6h) if candles_6h else 0})")
             continue
 
-        # Compute indicators
-        indicators = compute_all(candles_1h)
-        if not indicators:
+        # Compute indicators on 6H (primary) and 1D (trend filter)
+        ind_6h = compute_all(candles_6h)
+        ind_1d = compute_all(candles_1d) if candles_1d and len(candles_1d) >= 30 else {}
+
+        if not ind_6h:
             log.warning(f"  No indicators for {pair}")
             continue
 
-        price = indicators.get("price", 0)
-        log.info(f"  Price: ${price:,.2f} | RSI={indicators.get('rsi', '?')} "
-                 f"ADX={indicators.get('adx', '?')} BB%={indicators.get('bb_pct', '?')}")
+        price = ind_6h.get("price", 0)
+        squeeze_str = f"SQ={ind_6h.get('squeeze_bars', 0)}bars" if ind_6h.get("squeeze") else "no-sq"
+        mom_str = f"MOM28={ind_6h.get('momentum_28', 0):+.3f}"
+        log.info(f"  Price: ${price:,.2f} | RSI={ind_6h.get('rsi', '?')} "
+                 f"ADX={ind_6h.get('adx', '?')} {squeeze_str} {mom_str}")
 
         # Fetch on-chain data
         onchain = fetch_okx_data(pair)
@@ -663,14 +683,50 @@ def run():
                 log.info(f"  TV: {tv_analysis['RECOMMENDATION']} "
                          f"({tv_analysis['BUY']}B/{tv_analysis['SELL']}S/{tv_analysis['NEUTRAL']}N)")
 
-        # Run all strategies
-        signal = analyze(pair, indicators, onchain, tv_analysis)
+        # Run ALL strategies (now uses 6H + 1D multi-timeframe)
+        signal = analyze(pair, ind_6h, ind_1d, onchain, tv_analysis)
 
         if signal is None:
             log.info(f"  No signal for {pair}")
             continue
 
-        # Check minimum confidence
+        # Apply intel overlay — boost or dampen confidence
+        if intel_brief:
+            coin = pair.split("-")[0]
+            coin_intel = intel_brief.get("coins", {}).get(coin, {})
+            intel_bias = coin_intel.get("bias", "neutral")
+            master_bias = intel_brief.get("aggregate", {}).get("bias", "neutral")
+            master_score = intel_brief.get("aggregate", {}).get("score", 0)
+
+            original_conf = signal["confidence"]
+
+            # Boost: signal aligns with intel
+            if signal["action"] == "buy" and master_bias == "bullish":
+                signal["confidence"] = min(signal["confidence"] + 0.05, 0.95)
+            elif signal["action"] == "sell" and master_bias == "bearish":
+                signal["confidence"] = min(signal["confidence"] + 0.05, 0.95)
+
+            # Per-coin boost
+            if signal["action"] == "buy" and intel_bias == "bullish":
+                signal["confidence"] = min(signal["confidence"] + 0.03, 0.95)
+
+            # Dampen: signal conflicts with strong intel
+            if signal["action"] == "buy" and master_score < -50:
+                signal["confidence"] *= 0.85
+            elif signal["action"] == "sell" and master_score > 50:
+                signal["confidence"] *= 0.85
+
+            # Fear & Greed contrarian overlay
+            if fgi:
+                if signal["action"] == "buy" and fgi["value"] < 25:
+                    signal["confidence"] = min(signal["confidence"] + 0.03, 0.95)
+                elif signal["action"] == "buy" and fgi["value"] > 80:
+                    signal["confidence"] *= 0.90
+
+            if signal["confidence"] != original_conf:
+                log.info(f"  OVERLAY adj: {original_conf:.2f} -> {signal['confidence']:.2f}")
+
+        # Check minimum confidence (already filtered in analyze(), but double-check)
         if signal["confidence"] < config.MIN_CONFIDENCE:
             log.info(f"  Signal below min confidence: {signal['confidence']:.2f} < {config.MIN_CONFIDENCE}")
             continue
@@ -692,49 +748,48 @@ def run():
             log.info(f"  Max positions reached ({config.MAX_OPEN_POSITIONS})")
             continue
 
+        # Check pending buy orders (don't double up)
+        pending_pairs = {o["pair"] for o in state.get("pending_orders", []) if o["side"] == "buy"}
+        if signal["action"] == "buy" and pair in pending_pairs:
+            log.info(f"  Already have pending buy for {pair}")
+            continue
+
         # 7. Execute signal
         if signal["action"] == "buy":
-            # Calculate position size
-            size_pct = signal.get("size_pct", 20) / 100.0
+            size_pct = signal.get("size_pct", 25) / 100.0
             max_size = config.MAX_POSITION_PCT
             size_pct = min(size_pct, max_size)
             usd_amount = total_value * size_pct
 
-            # Check available USD
             balances = get_balances(auth)
             available_usd = balances.get("USD", 0)
             if usd_amount > available_usd:
-                usd_amount = available_usd * 0.95  # 5% buffer
+                usd_amount = available_usd * 0.95
             if usd_amount < 5:
                 log.warning(f"  Insufficient USD: ${available_usd:.2f}")
                 continue
 
-            # Get best bid for limit order (maker fee!)
+            # Get best bid for limit order (maker fee with post_only!)
             bid_ask = get_best_bid_ask(auth, pair)
             limit_price = bid_ask.get("bid") or price
 
-            # Place limit order
             order = place_limit_order(auth, pair, "BUY", limit_price, usd_amount)
             if order:
-                # Store stop/take_profit with the pending order
                 order["stop_loss"] = signal.get("stop_loss")
                 order["take_profit"] = signal.get("take_profit")
+                order["atr"] = signal.get("atr")
                 state.setdefault("pending_orders", []).append(order)
                 actions_taken.append(
-                    f"LIMIT BUY {pair} ${usd_amount:.2f} @ ${limit_price:,.2f}"
+                    f"LIMIT BUY {pair} ${usd_amount:.2f} @ ${limit_price:,.2f} "
+                    f"[{signal['strategy']}]"
                 )
-            else:
-                log.warning(f"  Limit order failed for {pair}")
 
         elif signal["action"] == "sell":
-            # Sell existing position
             if has_position(state, pair):
                 exit_price = get_price(pair)
                 if exit_price:
-                    # Find position qty for exchange sell
                     for pos in state["positions"]:
                         if pos["pair"] == pair:
-                            # Get best ask for limit sell (maker fee!)
                             bid_ask = get_best_bid_ask(auth, pair)
                             limit_price = bid_ask.get("ask") or exit_price
 
@@ -751,11 +806,9 @@ def run():
                             )
                             if trade:
                                 actions_taken.append(
-                                    f"SELL {pair} P&L: ${trade['pnl_usd']:+,.2f}"
+                                    f"SELL {pair} P&L: ${trade['pnl_usd']:+,.2f} [{signal['strategy']}]"
                                 )
                             break
-            else:
-                log.info(f"  SELL signal but no position in {pair}")
 
     # 8. Save state
     save_state(state)
@@ -771,12 +824,11 @@ def run():
         best = signals_found[0]
         best_signal_str = (
             f"{best['action'].upper()} {best['pair'].split('-')[0]} "
-            f"@ {best['confidence']:.2f} conf"
+            f"@ {best['confidence']:.2f} [{best['strategy']}]"
         )
 
     action_str = " | ".join(actions_taken) if actions_taken else "HOLD"
 
-    # Stats
     stats = get_stats(state.get("trades", []))
     pnl_str = f"${stats.get('total_pnl_usd', 0):+,.2f}" if stats.get("total_trades", 0) > 0 else "$0"
     wr_str = f"{stats.get('win_rate', 0):.0f}%" if stats.get("total_trades", 0) > 0 else "N/A"
