@@ -1,0 +1,41 @@
+name: CryptoAgent v2
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Write Coinbase key
+        run: echo '${{ secrets.COINBASE_KEY_JSON }}' > coinbase_key.json
+
+      - name: Run agent
+        run: python agent.py
+
+      - name: Cleanup secrets
+        if: always()
+        run: rm -f coinbase_key.json
+
+      - name: Commit state
+        if: always()
+        run: |
+          git config user.name "CryptoAgent"
+          git config user.email "agent@jrdcompanies.com"
+          git add state.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "state: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push || true

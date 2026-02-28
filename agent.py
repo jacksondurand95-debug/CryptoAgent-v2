@@ -95,53 +95,37 @@ class CoinbaseAuth:
         return self.request("POST", path, json_data=json_data)
 
 
-# ─── GITHUB GIST STATE PERSISTENCE ───────────────────────────────
+# ─── FILE-BASED STATE PERSISTENCE ────────────────────────────────
+
+STATE_FILE = config.PROJECT_DIR / "state.json"
+
 
 def load_state():
-    """Load state from GitHub Gist."""
-    gist_id = config.GIST_ID
-    token = config.GITHUB_TOKEN
-
-    if not gist_id or not token:
-        log.warning("No GIST_ID or GH_PAT — starting fresh state")
-        return new_state()
-
-    try:
-        r = requests.get(
-            f"https://api.github.com/gists/{gist_id}",
-            headers={"Authorization": f"token {token}"},
-            timeout=10,
-        )
-        r.raise_for_status()
-        gist = r.json()
-        content = gist["files"]["state.json"]["content"]
-        state = json.loads(content)
-        log.info(f"Loaded state: {len(state.get('positions', []))} positions, "
-                 f"{len(state.get('trades', []))} trades")
-        return state
-    except Exception as e:
-        log.warning(f"Failed to load gist state: {e} — starting fresh")
-        return new_state()
+    """Load state from state.json in the repo."""
+    if STATE_FILE.exists():
+        try:
+            state = json.loads(STATE_FILE.read_text())
+            log.info(f"Loaded state: {len(state.get('positions', []))} positions, "
+                     f"{len(state.get('trades', []))} trades")
+            # Ensure all keys exist
+            for key in ("positions", "trades", "pending_orders"):
+                state.setdefault(key, [])
+            state.setdefault("starting_value", None)
+            state.setdefault("peak_value", None)
+            return state
+        except Exception as e:
+            log.warning(f"Failed to load state: {e} — starting fresh")
+    return new_state()
 
 
 def save_state(state):
-    """Save state to GitHub Gist."""
-    gist_id = config.GIST_ID
-    token = config.GITHUB_TOKEN
-
-    if not gist_id or not token:
-        log.warning("No GIST_ID or GH_PAT — state not saved")
-        return
-
+    """Save state to state.json in the repo (committed by Actions workflow)."""
+    if "trades" in state:
+        state["trades"] = state["trades"][-200:]
+    state["last_updated"] = time.time()
     try:
-        r = requests.patch(
-            f"https://api.github.com/gists/{gist_id}",
-            headers={"Authorization": f"token {token}"},
-            json={"files": {"state.json": {"content": json.dumps(state, indent=2)}}},
-            timeout=10,
-        )
-        r.raise_for_status()
-        log.info("State saved to gist")
+        STATE_FILE.write_text(json.dumps(state, indent=2))
+        log.info("State saved to state.json")
     except Exception as e:
         log.error(f"Failed to save state: {e}")
 

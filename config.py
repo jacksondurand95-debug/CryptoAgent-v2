@@ -36,9 +36,8 @@ DAILY_MAX_LOSS_PCT = 1.0        # Effectively disabled (100%)
 MAX_CONSECUTIVE_LOSSES = 999    # Effectively disabled
 COOLDOWN_AFTER_STOP_SEC = 10    # 10 seconds, basically nothing
 
-# State
-GIST_ID = os.environ.get("STATE_GIST_ID", "")
-GITHUB_TOKEN = os.environ.get("GH_PAT", "")
+# State (file-based, committed by Actions workflow)
+STATE_FILE = PROJECT_DIR / "state.json"
 
 # AI
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
