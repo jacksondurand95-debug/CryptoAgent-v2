@@ -1,8 +1,51 @@
 {
   "positions": [],
   "trades": [],
-  "pending_orders": [],
+  "pending_orders": [
+    {
+      "id": "b101d513-6f8e-4483-a804-809832881264",
+      "client_order_id": "1eb671f0-d0ec-4c63-89e4-3477fce413f0",
+      "pair": "BTC-USD",
+      "side": "buy",
+      "type": "limit",
+      "price": 63562.05,
+      "qty": 0.000748062660628856,
+      "usd": 47.548396238024374,
+      "placed_at": 1772270023.5733898,
+      "status": "pending",
+      "stop_loss": 62664.07,
+      "take_profit": 65263.22
+    },
+    {
+      "id": "afd107b2-758c-4004-be4d-81ee2d4f6d2a",
+      "client_order_id": "afd107b2-758c-4004-be4d-81ee2d4f6d2a",
+      "pair": "ETH-USD",
+      "side": "buy",
+      "type": "limit",
+      "price": 1852.43,
+      "qty": 0.025668120381350103,
+      "usd": 47.548396238024374,
+      "placed_at": 1772270025.510978,
+      "status": "pending",
+      "stop_loss": 1816.32,
+      "take_profit": 1912.76
+    },
+    {
+      "id": "1726e638-8a39-4d08-ad3b-7b187ee33610",
+      "client_order_id": "1726e638-8a39-4d08-ad3b-7b187ee33610",
+      "pair": "SOL-USD",
+      "side": "buy",
+      "type": "limit",
+      "price": 78.13,
+      "qty": 0.6085805226932597,
+      "usd": 47.548396238024374,
+      "placed_at": 1772270027.5608568,
+      "status": "pending",
+      "stop_loss": 76.43,
+      "take_profit": 81.04
+    }
+  ],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772269882.4954028
+  "last_updated": 1772270027.560871
 }
