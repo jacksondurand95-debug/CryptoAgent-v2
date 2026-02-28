@@ -8,15 +8,15 @@
   "okx": {
     "BTC": {
       "funding": {
-        "current_pct": 0.003,
+        "current_pct": 0.0023,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 2789899.4099999997,
-        "usd": 1868169653.02479,
-        "usd_m": 1868.2
+        "contracts": 2758767.130000001,
+        "usd": 1863599612.8904705,
+        "usd_m": 1863.6
       },
       "funding_history": [
         -0.0014,
@@ -33,24 +33,24 @@
       "neg_funding_streak": 1,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 67337708.0,
-        "sell_vol": 50675147.0,
-        "ratio": 1.329,
-        "aggressive_buyers": true,
-        "aggressive_sellers": false
+        "buy_vol": 58981297.0,
+        "sell_vol": 75875840.0,
+        "ratio": 0.777,
+        "aggressive_buyers": false,
+        "aggressive_sellers": true
       }
     },
     "ETH": {
       "funding": {
-        "current_pct": 0.0004,
+        "current_pct": 0.0003,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 6032957.830000021,
-        "usd": 1187280067.986174,
-        "usd_m": 1187.3
+        "contracts": 6012597.730000019,
+        "usd": 1189033289.2916138,
+        "usd_m": 1189.0
       },
       "funding_history": [
         -0.0012,
@@ -67,24 +67,24 @@
       "neg_funding_streak": 2,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 45324393.0,
-        "sell_vol": 46057032.0,
-        "ratio": 0.984,
+        "buy_vol": 58709692.0,
+        "sell_vol": 86577234.0,
+        "ratio": 0.678,
         "aggressive_buyers": false,
-        "aggressive_sellers": false
+        "aggressive_sellers": true
       }
     },
     "SOL": {
       "funding": {
-        "current_pct": -0.0034,
+        "current_pct": -0.0031,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 2641714.31,
-        "usd": 224202293.48970002,
-        "usd_m": 224.2
+        "contracts": 2603267.6500000004,
+        "usd": 221694273.07400003,
+        "usd_m": 221.7
       },
       "funding_history": [
         -0.0141,
@@ -101,9 +101,9 @@
       "neg_funding_streak": 2,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 5681660.0,
-        "sell_vol": 6392420.0,
-        "ratio": 0.889,
+        "buy_vol": 6320415.0,
+        "sell_vol": 7025199.0,
+        "ratio": 0.9,
         "aggressive_buyers": false,
         "aggressive_sellers": false
       }
@@ -112,68 +112,68 @@
   "bybit": {},
   "liquidation_levels": {
     "BTC": {
-      "price": 67031.9,
-      "high_24h": 67137.7,
+      "price": 67437.5,
+      "high_24h": 67726.7,
       "low_24h": 62975.6,
       "long_liquidations": {
-        "3x": 48115.35,
-        "5x": 55724.29,
-        "10x": 61431.0,
-        "25x": 64855.02,
-        "50x": 65996.36,
-        "100x": 66567.03
+        "3x": 48537.47,
+        "5x": 56213.16,
+        "10x": 61969.93,
+        "25x": 65423.99,
+        "50x": 66575.35,
+        "100x": 67151.02
       },
       "short_liquidations": {
         "3x": 80818.69,
         "5x": 73681.45,
         "10x": 68328.53
       },
-      "nearest_long_liq": 66567.03,
+      "nearest_long_liq": 67151.02,
       "nearest_short_liq": 68328.53,
       "magnet_direction": "none",
       "magnet_target": 0,
       "magnet_distance_pct": 100
     },
     "ETH": {
-      "price": 1966.79,
-      "high_24h": 1972.37,
+      "price": 1974.83,
+      "high_24h": 1984.58,
       "low_24h": 1833.21,
       "long_liquidations": {
-        "3x": 1413.53,
-        "5x": 1637.07,
-        "10x": 1804.72,
-        "25x": 1905.31,
-        "50x": 1938.84,
-        "100x": 1955.6
+        "3x": 1422.28,
+        "5x": 1647.2,
+        "10x": 1815.89,
+        "25x": 1917.1,
+        "50x": 1950.84,
+        "100x": 1967.71
       },
       "short_liquidations": {
         "3x": 2352.62,
         "5x": 2144.86,
         "10x": 1989.03
       },
-      "nearest_long_liq": 1955.6,
+      "nearest_long_liq": 1967.71,
       "nearest_short_liq": 1989.03,
       "magnet_direction": "none",
       "magnet_target": 0,
       "magnet_distance_pct": 100
     },
     "SOL": {
-      "price": 84.77,
-      "high_24h": 84.98,
+      "price": 84.98,
+      "high_24h": 85.62,
       "low_24h": 77.04,
       "long_liquidations": {
-        "3x": 60.9,
-        "5x": 70.53,
-        "10x": 77.76,
-        "25x": 82.09,
-        "50x": 83.54,
-        "100x": 84.26
+        "3x": 61.36,
+        "5x": 71.06,
+        "10x": 78.34,
+        "25x": 82.71,
+        "50x": 84.16,
+        "100x": 84.89
       },
       "short_liquidations": {
         "3x": 98.87,
         "5x": 90.14
       },
-      "nearest_long_liq": 84.26,
+      "nearest_long_liq": 84.89,
       "nearest_short_liq": 90.14,
       "magnet_direction": "none",
       "magnet_target": 0,
@@ -182,16 +182,16 @@
   },
   "cascade_risk": {
     "BTC": {
-      "risk_score": 15,
-      "risk_level": "low",
-      "risk_factors": [
-        "Taker ratio=1.33 (imbalanced)"
-      ]
-    },
-    "ETH": {
       "risk_score": 0,
       "risk_level": "low",
       "risk_factors": []
+    },
+    "ETH": {
+      "risk_score": 15,
+      "risk_level": "low",
+      "risk_factors": [
+        "Taker ratio=0.68 (imbalanced)"
+      ]
     },
     "SOL": {
       "risk_score": 0,
@@ -463,10 +463,21 @@
         "ETH": 0,
         "SOL": 0
       }
+    },
+    {
+      "timestamp": "2026-02-28T22:38:31.586319+00:00",
+      "ts": 1772318311,
+      "score": 0,
+      "bias": "neutral",
+      "cascade_risks": {
+        "BTC": 0,
+        "ETH": 15,
+        "SOL": 0
+      }
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T22:22:43.320588+00:00",
-    "updated_ts": 1772317363
+    "updated_at": "2026-02-28T22:38:31.586360+00:00",
+    "updated_ts": 1772318311
   }
 }
