@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -47,
+    "score": -50,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 40,
-    "negative_score": -770
+    "scored_articles": 15,
+    "positive_score": 0,
+    "negative_score": -750
   },
   "alpha_events": [
     {
@@ -59,17 +59,6 @@
       ]
     },
     {
-      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "crash"
-      ]
-    },
-    {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
@@ -98,13 +87,13 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
-      "score": -290,
+      "articles": 36,
+      "score": -330,
       "bias": "bearish"
     },
     "ETH": {
       "articles": 17,
-      "score": -140,
+      "score": -170,
       "bias": "bearish"
     },
     "SOL": {
@@ -151,14 +140,6 @@
       "coins": []
     },
     {
-      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
@@ -199,16 +180,6 @@
       ]
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -237,6 +208,16 @@
       "coins": []
     },
     {
+      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -253,12 +234,22 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - theblock.co",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Bitcoin is stuck in a rut but JPMorgan says new legislation could be the ultimate spark",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Iran crisis puts the regime's $7.8 billion crypto shadow economy in spotlight",
@@ -392,10 +383,10 @@
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
-    "Decrypt": 20,
     "CoinDesk": 20,
-    "Google News": 30
+    "Google News": 30,
+    "CoinTelegraph": 20,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -418,10 +409,17 @@
       "score": -47,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-02-28T20:07:04.442162+00:00",
+      "ts": 1772309224,
+      "score": -50,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T18:48:24.429264+00:00",
-    "updated_ts": 1772304504
+    "updated_at": "2026-02-28T20:07:04.442236+00:00",
+    "updated_ts": 1772309224
   }
 }

@@ -63,63 +63,63 @@
   "trending": {
     "trending": [
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 154,
-        "score": 0
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 109,
-        "score": 1
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 2
-      },
-      {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 37,
-        "score": 3
-      },
-      {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 49,
-        "score": 4
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 113,
-        "score": 5
+        "score": 0
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
-        "score": 6
+        "score": 1
       },
       {
-        "name": "XRP",
-        "symbol": "XRP",
-        "market_cap_rank": 5,
-        "score": 7
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
+        "score": 2
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 155,
+        "score": 3
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 4
+      },
+      {
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 46,
+        "score": 5
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
+        "score": 6
+      },
+      {
+        "name": "Virtuals Protocol",
+        "symbol": "VIRTUAL",
+        "market_cap_rank": 105,
+        "score": 7
+      },
+      {
+        "name": "dogwifhat",
+        "symbol": "WIF",
+        "market_cap_rank": 177,
         "score": 8
       },
       {
-        "name": "Sui",
-        "symbol": "SUI",
-        "market_cap_rank": 30,
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 35,
         "score": 9
       }
     ],
@@ -157,10 +157,17 @@
       "fgi": 11,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-02-28T20:06:28.473262+00:00",
+      "ts": 1772309188,
+      "fgi": 11,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T19:10:53.486082+00:00",
-    "updated_ts": 1772305853
+    "updated_at": "2026-02-28T20:06:28.473300+00:00",
+    "updated_ts": 1772309188
   }
 }
