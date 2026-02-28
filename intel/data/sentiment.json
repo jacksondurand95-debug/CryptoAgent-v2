@@ -63,21 +63,21 @@
   "trending": {
     "trending": [
       {
-        "name": "BTC Bull Token",
-        "symbol": "BTCBULL",
-        "market_cap_rank": 725,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
         "score": 0
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 1
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 153,
+        "market_cap_rank": 152,
         "score": 2
       },
       {
@@ -87,39 +87,39 @@
         "score": 3
       },
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
-        "score": 4
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 5
-      },
-      {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 6
+        "score": 4
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
+        "score": 5
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
+        "score": 6
+      },
+      {
+        "name": "Sui",
+        "symbol": "SUI",
+        "market_cap_rank": 30,
         "score": 7
+      },
+      {
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 35,
+        "score": 8
       },
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "market_cap_rank": 45,
-        "score": 8
-      },
-      {
-        "name": "Zcash",
-        "symbol": "ZEC",
-        "market_cap_rank": 29,
+        "market_cap_rank": 44,
         "score": 9
       }
     ],
@@ -193,10 +193,17 @@
       "fgi": 11,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-02-28T23:10:13.308437+00:00",
+      "ts": 1772320213,
+      "fgi": 11,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T22:10:10.437522+00:00",
-    "updated_ts": 1772316610
+    "updated_at": "2026-02-28T23:10:13.308471+00:00",
+    "updated_ts": 1772320213
   }
 }
