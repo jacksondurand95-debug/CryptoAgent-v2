@@ -1,51 +1,54 @@
 {
-  "positions": [],
-  "trades": [],
-  "pending_orders": [
+  "positions": [
     {
-      "id": "b101d513-6f8e-4483-a804-809832881264",
-      "client_order_id": "1eb671f0-d0ec-4c63-89e4-3477fce413f0",
       "pair": "BTC-USD",
-      "side": "buy",
-      "type": "limit",
-      "price": 63562.05,
+      "side": "long",
+      "entry_price": 63562.05,
       "qty": 0.000748062660628856,
-      "usd": 47.548396238024374,
-      "placed_at": 1772270023.5733898,
-      "status": "pending",
+      "usd_amount": 47.548396238024374,
       "stop_loss": 62664.07,
-      "take_profit": 65263.22
+      "take_profit": 65263.22,
+      "initial_stop": 62664.07,
+      "highest_price": 63645.99,
+      "lowest_price": 63562.05,
+      "trailing_active": false,
+      "opened_at": 1772271560.369612,
+      "opened_at_str": "2026-02-28 09:39 UTC"
     },
     {
-      "id": "afd107b2-758c-4004-be4d-81ee2d4f6d2a",
-      "client_order_id": "afd107b2-758c-4004-be4d-81ee2d4f6d2a",
       "pair": "ETH-USD",
-      "side": "buy",
-      "type": "limit",
-      "price": 1852.43,
-      "qty": 0.025668120381350103,
-      "usd": 47.548396238024374,
-      "placed_at": 1772270025.510978,
-      "status": "pending",
+      "side": "long",
+      "entry_price": 1853.96,
+      "qty": 0.02564693749488898,
+      "usd_amount": 47.548396238024374,
       "stop_loss": 1816.32,
-      "take_profit": 1912.76
+      "take_profit": 1912.76,
+      "initial_stop": 1816.32,
+      "highest_price": 1854.21,
+      "lowest_price": 1853.96,
+      "trailing_active": false,
+      "opened_at": 1772271564.856829,
+      "opened_at_str": "2026-02-28 09:39 UTC"
     },
     {
-      "id": "1726e638-8a39-4d08-ad3b-7b187ee33610",
-      "client_order_id": "1726e638-8a39-4d08-ad3b-7b187ee33610",
       "pair": "SOL-USD",
-      "side": "buy",
-      "type": "limit",
-      "price": 78.13,
-      "qty": 0.6085805226932597,
-      "usd": 47.548396238024374,
-      "placed_at": 1772270027.5608568,
-      "status": "pending",
+      "side": "long",
+      "entry_price": 78.36,
+      "qty": 0.6067942347884683,
+      "usd_amount": 47.548396238024374,
       "stop_loss": 76.43,
-      "take_profit": 81.04
+      "take_profit": 81.04,
+      "initial_stop": 76.43,
+      "highest_price": 78.36,
+      "lowest_price": 78.36,
+      "trailing_active": false,
+      "opened_at": 1772271569.3504667,
+      "opened_at_str": "2026-02-28 09:39 UTC"
     }
   ],
+  "trades": [],
+  "pending_orders": [],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772270503.0470228
+  "last_updated": 1772271576.389412
 }
