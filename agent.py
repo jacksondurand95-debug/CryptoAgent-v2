@@ -397,11 +397,11 @@ def fetch_okx_data(pair):
     except Exception as e:
         log.debug(f"OKX OI error: {e}")
 
-    # Long/Short ratio (top traders)
+    # Long/Short ratio (global)
     try:
         r = requests.get(
-            "https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio/{base}",
-            params={"ccy": base, "period": "1H"},
+            f"https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio/{base}",
+            params={"period": "1H"},
             timeout=10,
         )
         resp = r.json()
@@ -419,8 +419,8 @@ def fetch_okx_data(pair):
     # Top trader position ratio
     try:
         r = requests.get(
-            "https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio/{base}",
-            params={"ccy": base, "period": "1H"},
+            f"https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio-contract-top-trader/{base}",
+            params={"period": "1H"},
             timeout=10,
         )
         resp = r.json()

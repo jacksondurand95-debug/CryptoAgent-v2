@@ -627,19 +627,19 @@ def strategy_mean_reversion_extreme(pair, indicators_1h, onchain_data, tv_analys
     if not all(v is not None for v in [price, atr, bb_pct, rsi, stoch_k]):
         return None
 
-    # STRONG BUY: BB% < 0.05 + RSI < 25 + StochRSI < 0.10
-    if bb_pct < 0.05 and rsi < 25 and stoch_k < 0.10:
+    # STRONG BUY: BB% < 0.10 + RSI < 35 + StochRSI < 0.20 (AGGRESSIVE)
+    if bb_pct < 0.10 and rsi < 35 and stoch_k < 0.20:
         confidence = 0.60
 
         # Extreme oversold boosts
-        if bb_pct < 0.0:
+        if bb_pct < 0.02:
             confidence += 0.08
-        if rsi < 20:
+        if rsi < 25:
             confidence += 0.07
-        if stoch_k < 0.05:
+        if stoch_k < 0.10:
             confidence += 0.05
-        if bb_pct < -0.05:
-            confidence += 0.05  # Way below lower band
+        if bb_pct < 0.0:
+            confidence += 0.05  # Below lower band
 
         confidence = min(confidence, 0.85)
 
