@@ -627,8 +627,9 @@ def strategy_mean_reversion_extreme(pair, indicators_1h, onchain_data, tv_analys
     if not all(v is not None for v in [price, atr, bb_pct, rsi, stoch_k]):
         return None
 
-    # STRONG BUY: BB% < 0.10 + RSI < 35 + StochRSI < 0.20 (AGGRESSIVE)
-    if bb_pct < 0.10 and rsi < 35 and stoch_k < 0.20:
+    # STRONG BUY: 2 of 3 oversold conditions (ULTRA AGGRESSIVE)
+    oversold_hits = (1 if bb_pct < 0.10 else 0) + (1 if rsi < 35 else 0) + (1 if stoch_k < 0.30 else 0)
+    if oversold_hits >= 2 and (bb_pct < 0.10 or rsi < 30):
         confidence = 0.60
 
         # Extreme oversold boosts
