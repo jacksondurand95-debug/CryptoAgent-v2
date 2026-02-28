@@ -1,0 +1,415 @@
+{
+  "aggregate": {
+    "score": -47,
+    "bias": "bearish",
+    "strength": "moderate",
+    "total_articles": 90,
+    "scored_articles": 16,
+    "positive_score": 40,
+    "negative_score": -770
+  },
+  "alpha_events": [
+    {
+      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -140,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "hack",
+        "bankruptcy"
+      ]
+    },
+    {
+      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -90,
+      "importance": "critical",
+      "coins": [
+        "ETH"
+      ],
+      "keywords": [
+        "crypto ban"
+      ]
+    },
+    {
+      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "bankruptcy"
+      ]
+    },
+    {
+      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
+      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    }
+  ],
+  "coin_sentiment": {
+    "BTC": {
+      "articles": 37,
+      "score": -290,
+      "bias": "bearish"
+    },
+    "ETH": {
+      "articles": 17,
+      "score": -140,
+      "bias": "bearish"
+    },
+    "SOL": {
+      "articles": 10,
+      "score": 0,
+      "bias": "neutral"
+    }
+  },
+  "top_articles": [
+    {
+      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -140,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -90,
+      "importance": "critical",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "Bitcoin sets up potential short squeeze as 'funding rate' plunges to three month low",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Here\u2019s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin manipulation claims face pushback as ETFs snap 5-week outflow run: Finance Redefined",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Trump Orders Federal Agencies to Dump 'Woke' Anthropic AI After Pentagon Dispute",
+      "source": "Decrypt",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Former Mt. Gox CEO proposed a rewrite of bitcoin's code to recover $5 billion in stolen funds. Gets quickly shutdown",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Suspected insiders make over $1.2 million on Polymarket by betting on U.S.'s Iran strike",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "XRP tumbles 9% as break below $1.36 wipes out relief rally",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin's five-month slide: why BTC is set for worst losing streak since 2018",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "title": "Bitcoin could see further downside risks as Iran attacks U.S. bases across Middle East",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Oil-linked futures on Hyperliquid surge 5% after U.S.-Israel strike on Iran",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin nears $63,000 as U.S. and Israel launch strikes on Iran",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin slides to $65,000 in weekend sell-off, with solana, XRP, dogecoin down 6%",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
+    },
+    {
+      "title": "U.S. Senate Democrats asked Treasury, DOJ to probe Binance's illicit finance controls",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Coinbase\u2019s head of litigation says states are 'gaslighting' on prediction markets",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Citi and Morgan Stanley expand bitcoin and crypto custody, trading and tokenization efforts",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin's rebound cancelled as U.S. stocks fall, gold surges, amid mounting macro risks",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Vitalik Buterin reveals his bold new plan to fix Ethereum\u2019s scaling problem",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "Barclays looks for tech provider for new blockchain settlement engine: Bloomberg",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    }
+  ],
+  "sources": {
+    "Decrypt": 20,
+    "CoinTelegraph": 20,
+    "Google News": 30,
+    "CoinDesk": 20
+  },
+  "history": [
+    {
+      "timestamp": "2026-02-28T17:26:53.727764+00:00",
+      "ts": 1772299613,
+      "score": -47,
+      "bias": "bearish",
+      "alpha_count": 7
+    }
+  ],
+  "_meta": {
+    "updated_at": "2026-02-28T17:26:53.727829+00:00",
+    "updated_ts": 1772299613
+  }
+}
