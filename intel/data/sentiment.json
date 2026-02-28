@@ -1,0 +1,145 @@
+{
+  "aggregate": {
+    "score": 80,
+    "bias": "bullish",
+    "strength": "strong",
+    "signals": [
+      {
+        "bias": "bullish",
+        "score": 80,
+        "reason": "Extreme Fear (11) \u2014 contrarian BUY"
+      }
+    ]
+  },
+  "fear_greed": {
+    "current": 11,
+    "classification": "Extreme Fear",
+    "avg_7d": 9.7,
+    "avg_30d": 10.5,
+    "fear_streak": 30,
+    "greed_streak": 0,
+    "history_30d": [
+      11,
+      13,
+      11,
+      11,
+      8,
+      5,
+      9,
+      8,
+      7,
+      9,
+      8,
+      10,
+      12,
+      8,
+      9,
+      9,
+      5,
+      11,
+      9,
+      14,
+      7,
+      6,
+      9,
+      12,
+      14,
+      17,
+      14,
+      14,
+      20,
+      16
+    ],
+    "trend": "declining",
+    "signal": {
+      "bias": "bullish",
+      "score": 80,
+      "weight": 2.0,
+      "reason": "Extreme Fear (11) \u2014 contrarian BUY"
+    }
+  },
+  "news": null,
+  "reddit": null,
+  "trending": {
+    "trending": [
+      {
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 36,
+        "score": 0
+      },
+      {
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 111,
+        "score": 1
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
+        "score": 2
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 3
+      },
+      {
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 35,
+        "score": 4
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 154,
+        "score": 5
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 6
+      },
+      {
+        "name": "Terra Luna Classic",
+        "symbol": "LUNC",
+        "market_cap_rank": 159,
+        "score": 7
+      },
+      {
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 5,
+        "score": 8
+      },
+      {
+        "name": "pippin",
+        "symbol": "PIPPIN",
+        "market_cap_rank": 90,
+        "score": 9
+      }
+    ],
+    "our_coins_trending": [
+      "BTC",
+      "SOL"
+    ],
+    "market_attention": "high"
+  },
+  "history": [
+    {
+      "timestamp": "2026-02-28T17:27:10.145315+00:00",
+      "ts": 1772299630,
+      "fgi": 11,
+      "score": 80,
+      "bias": "bullish"
+    }
+  ],
+  "_meta": {
+    "updated_at": "2026-02-28T17:27:10.145347+00:00",
+    "updated_ts": 1772299630
+  }
+}
