@@ -56,48 +56,8 @@
       "duration_min": 145.2
     }
   ],
-  "pending_orders": [
-    {
-      "id": "3bd650be-dac6-4da1-a8c5-4931dd5fb48a",
-      "client_order_id": "6ff2c66a-e020-4013-9bdc-349d31bb7d1f",
-      "pair": "BTC-USD",
-      "side": "sell",
-      "type": "limit",
-      "price": 63886.57,
-      "qty": 0.000748062660628856,
-      "usd": 47.79115753265165,
-      "placed_at": 1772280274.8107038,
-      "status": "pending",
-      "base_qty": 0.000748062660628856
-    },
-    {
-      "id": "cd3fc167-91e7-41d5-9cc3-d4aca7d8cf28",
-      "client_order_id": "0c1c71f4-385d-4169-a3e8-cbbf4e519e27",
-      "pair": "ETH-USD",
-      "side": "sell",
-      "type": "limit",
-      "price": 1866.24,
-      "qty": 0.02564693749488898,
-      "usd": 47.86334063046161,
-      "placed_at": 1772280277.2487872,
-      "status": "pending",
-      "base_qty": 0.02564693749488898
-    },
-    {
-      "id": "a37a6f93-bece-443a-b697-fe771ca03266",
-      "client_order_id": "a660c0d2-1e16-4e74-967c-823d7cc06f3e",
-      "pair": "SOL-USD",
-      "side": "sell",
-      "type": "limit",
-      "price": 78.8,
-      "qty": 0.6067942347884683,
-      "usd": 47.8153857013313,
-      "placed_at": 1772280279.566395,
-      "status": "pending",
-      "base_qty": 0.6067942347884683
-    }
-  ],
+  "pending_orders": [],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772280279.5664835
+  "last_updated": 1772281106.1069725
 }
