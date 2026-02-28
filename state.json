@@ -1,54 +1,103 @@
 {
-  "positions": [
+  "positions": [],
+  "trades": [
     {
       "pair": "BTC-USD",
       "side": "long",
       "entry_price": 63562.05,
+      "exit_price": 63885.79,
       "qty": 0.000748062660628856,
       "usd_amount": 47.548396238024374,
-      "stop_loss": 63608.04,
-      "take_profit": 65263.22,
-      "initial_stop": 62664.07,
-      "highest_price": 64209.69,
-      "lowest_price": 63542.16,
-      "trailing_active": true,
+      "pnl_pct": 0.51,
+      "pnl_usd": -0.14,
+      "fees_usd": 0.38,
+      "reason": "tv_consensus",
+      "trailing_was_active": true,
+      "highest_price_seen": 64209.69,
       "opened_at": 1772271560.369612,
-      "opened_at_str": "2026-02-28 09:39 UTC"
+      "closed_at": 1772280274.8107293,
+      "closed_at_str": "2026-02-28 12:04 UTC",
+      "duration_min": 145.2
     },
     {
       "pair": "ETH-USD",
       "side": "long",
       "entry_price": 1853.96,
+      "exit_price": 1866.04,
       "qty": 0.02564693749488898,
       "usd_amount": 47.548396238024374,
-      "stop_loss": 1850.79,
-      "take_profit": 1912.76,
-      "initial_stop": 1816.32,
-      "highest_price": 1876.01,
-      "lowest_price": 1851.3,
-      "trailing_active": true,
+      "pnl_pct": 0.65,
+      "pnl_usd": -0.07,
+      "fees_usd": 0.38,
+      "reason": "tv_consensus",
+      "trailing_was_active": true,
+      "highest_price_seen": 1876.01,
       "opened_at": 1772271564.856829,
-      "opened_at_str": "2026-02-28 09:39 UTC"
+      "closed_at": 1772280277.2488134,
+      "closed_at_str": "2026-02-28 12:04 UTC",
+      "duration_min": 145.2
     },
     {
       "pair": "SOL-USD",
       "side": "long",
       "entry_price": 78.36,
+      "exit_price": 78.8,
       "qty": 0.6067942347884683,
       "usd_amount": 47.548396238024374,
-      "stop_loss": 76.43,
-      "take_profit": 81.04,
-      "initial_stop": 76.43,
-      "highest_price": 79.31,
-      "lowest_price": 78.11,
-      "trailing_active": false,
+      "pnl_pct": 0.56,
+      "pnl_usd": -0.11,
+      "fees_usd": 0.38,
+      "reason": "tv_consensus",
+      "trailing_was_active": false,
+      "highest_price_seen": 79.31,
       "opened_at": 1772271569.3504667,
-      "opened_at_str": "2026-02-28 09:39 UTC"
+      "closed_at": 1772280279.5664213,
+      "closed_at_str": "2026-02-28 12:04 UTC",
+      "duration_min": 145.2
     }
   ],
-  "trades": [],
-  "pending_orders": [],
+  "pending_orders": [
+    {
+      "id": "3bd650be-dac6-4da1-a8c5-4931dd5fb48a",
+      "client_order_id": "6ff2c66a-e020-4013-9bdc-349d31bb7d1f",
+      "pair": "BTC-USD",
+      "side": "sell",
+      "type": "limit",
+      "price": 63886.57,
+      "qty": 0.000748062660628856,
+      "usd": 47.79115753265165,
+      "placed_at": 1772280274.8107038,
+      "status": "pending",
+      "base_qty": 0.000748062660628856
+    },
+    {
+      "id": "cd3fc167-91e7-41d5-9cc3-d4aca7d8cf28",
+      "client_order_id": "0c1c71f4-385d-4169-a3e8-cbbf4e519e27",
+      "pair": "ETH-USD",
+      "side": "sell",
+      "type": "limit",
+      "price": 1866.24,
+      "qty": 0.02564693749488898,
+      "usd": 47.86334063046161,
+      "placed_at": 1772280277.2487872,
+      "status": "pending",
+      "base_qty": 0.02564693749488898
+    },
+    {
+      "id": "a37a6f93-bece-443a-b697-fe771ca03266",
+      "client_order_id": "a660c0d2-1e16-4e74-967c-823d7cc06f3e",
+      "pair": "SOL-USD",
+      "side": "sell",
+      "type": "limit",
+      "price": 78.8,
+      "qty": 0.6067942347884683,
+      "usd": 47.8153857013313,
+      "placed_at": 1772280279.566395,
+      "status": "pending",
+      "base_qty": 0.6067942347884683
+    }
+  ],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772279628.163234
+  "last_updated": 1772280279.5664835
 }
