@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 19,
+    "score": 11,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 11.2,
+        "age_min": 6.7,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 31,
-        "bias": "bullish",
+        "score": 0,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 46.6,
+        "age_min": 1.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 20,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 50.5,
+        "age_min": 63.0,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 5.4,
+        "age_min": 17.9,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,15 +44,15 @@
         "score": -47,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 27.9,
+        "age_min": 40.4,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 5,
-      "bias": "neutral",
+      "score": -36,
+      "bias": "bearish",
       "signals": 2,
       "details": [
         {
@@ -60,8 +60,8 @@
           "reason": "News sentiment: 35 articles, score=-290"
         },
         {
-          "bias": "bullish",
-          "reason": "BTC whale distribution (4 txs) \u2014 accumulation"
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (4 large txs)"
         }
       ]
     },
@@ -127,9 +127,9 @@
       "coins": []
     }
   ],
-  "timestamp": "2026-02-28T19:16:18.131254+00:00",
+  "timestamp": "2026-02-28T19:28:49.681225+00:00",
   "_meta": {
-    "updated_at": "2026-02-28T19:16:18.131919+00:00",
-    "updated_ts": 1772306178
+    "updated_at": "2026-02-28T19:28:49.681934+00:00",
+    "updated_ts": 1772306929
   }
 }
