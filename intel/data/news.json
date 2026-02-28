@@ -4,9 +4,9 @@
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 13,
+    "scored_articles": 15,
     "positive_score": 0,
-    "negative_score": -670
+    "negative_score": -770
   },
   "alpha_events": [
     {
@@ -59,6 +59,32 @@
       ]
     },
     {
+      "title": "Bitcoin price crash today: $128B wiped out in 1 hour as Israel strikes Iran \u2014 is BTC recovery now on a dan - The Economic Times",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
@@ -75,7 +101,7 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 36,
-      "score": -250,
+      "score": -350,
       "bias": "bearish"
     },
     "ETH": {
@@ -125,6 +151,26 @@
       "score": -50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Bitcoin price crash today: $128B wiped out in 1 hour as Israel strikes Iran \u2014 is BTC recovery now on a dan - The Economic Times",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
@@ -347,32 +393,12 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin's rebound cancelled as U.S. stocks fall, gold surges, amid mounting macro risks",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Vitalik Buterin reveals his bold new plan to fix Ethereum\u2019s scaling problem",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "ETH"
-      ]
     }
   ],
   "sources": {
     "Google News": 30,
-    "Decrypt": 20,
     "CoinDesk": 20,
+    "Decrypt": 20,
     "CoinTelegraph": 20
   },
   "history": [
@@ -417,10 +443,17 @@
       "score": -50,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-02-28T22:42:18.672245+00:00",
+      "ts": 1772318538,
+      "score": -50,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T22:06:29.356491+00:00",
-    "updated_ts": 1772316389
+    "updated_at": "2026-02-28T22:42:18.672328+00:00",
+    "updated_ts": 1772318538
   }
 }
