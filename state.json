@@ -10,7 +10,7 @@
       "take_profit": 65263.22,
       "initial_stop": 62664.07,
       "highest_price": 63680.0,
-      "lowest_price": 63562.05,
+      "lowest_price": 63542.16,
       "trailing_active": false,
       "opened_at": 1772271560.369612,
       "opened_at_str": "2026-02-28 09:39 UTC"
@@ -40,7 +40,7 @@
       "take_profit": 81.04,
       "initial_stop": 76.43,
       "highest_price": 78.453,
-      "lowest_price": 78.28,
+      "lowest_price": 78.11,
       "trailing_active": false,
       "opened_at": 1772271569.3504667,
       "opened_at_str": "2026-02-28 09:39 UTC"
@@ -50,5 +50,5 @@
   "pending_orders": [],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772272656.9830797
+  "last_updated": 1772273298.9019868
 }
