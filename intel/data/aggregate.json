@@ -1,0 +1,60 @@
+{
+  "aggregate": {
+    "score": 0,
+    "bias": "neutral",
+    "strength": "weak",
+    "confidence": 0.0,
+    "available_sources": 0,
+    "total_sources": 5,
+    "per_source": {
+      "liquidations": {
+        "status": "missing",
+        "score": 0,
+        "bias": "neutral"
+      },
+      "whales": {
+        "status": "missing",
+        "score": 0,
+        "bias": "neutral"
+      },
+      "onchain": {
+        "status": "missing",
+        "score": 0,
+        "bias": "neutral"
+      },
+      "sentiment": {
+        "status": "missing",
+        "score": 0,
+        "bias": "neutral"
+      },
+      "news": {
+        "status": "missing",
+        "score": 0,
+        "bias": "neutral"
+      }
+    }
+  },
+  "coins": {
+    "BTC": {
+      "score": 0,
+      "bias": "neutral",
+      "signals": 0
+    },
+    "ETH": {
+      "score": 0,
+      "bias": "neutral",
+      "signals": 0
+    },
+    "SOL": {
+      "score": 0,
+      "bias": "neutral",
+      "signals": 0
+    }
+  },
+  "alpha_events": [],
+  "timestamp": "2026-02-28T17:25:42.186457+00:00",
+  "_meta": {
+    "updated_at": "2026-02-28T17:25:42.186789+00:00",
+    "updated_ts": 1772299542
+  }
+}
