@@ -98,17 +98,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
+      "articles": 35,
       "score": -290,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 16,
+      "articles": 17,
       "score": -140,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 8,
+      "articles": 9,
       "score": 0,
       "bias": "neutral"
     }
@@ -261,6 +261,14 @@
       "coins": []
     },
     {
+      "title": "Iran crisis puts the regime's $7.8 billion crypto shadow economy in spotlight",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
       "title": "The 'stablecoin sandwich' is dead: Why the next phase of crypto payments is all about the user relationship",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -381,22 +389,12 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Vitalik Buterin reveals his bold new plan to fix Ethereum\u2019s scaling problem",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "ETH"
-      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
     "CoinTelegraph": 20,
     "Decrypt": 20,
+    "CoinDesk": 20,
     "Google News": 30
   },
   "history": [
@@ -413,10 +411,17 @@
       "score": -47,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-02-28T18:48:24.429186+00:00",
+      "ts": 1772304504,
+      "score": -47,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T18:08:29.536814+00:00",
-    "updated_ts": 1772302109
+    "updated_at": "2026-02-28T18:48:24.429264+00:00",
+    "updated_ts": 1772304504
   }
 }
