@@ -39,7 +39,7 @@
       "stop_loss": 76.43,
       "take_profit": 81.04,
       "initial_stop": 76.43,
-      "highest_price": 78.96,
+      "highest_price": 79.02,
       "lowest_price": 78.11,
       "trailing_active": false,
       "opened_at": 1772271569.3504667,
@@ -50,5 +50,5 @@
   "pending_orders": [],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772274906.4668908
+  "last_updated": 1772275574.9666612
 }
