@@ -1,0 +1,79 @@
+{
+  "aggregate": {
+    "score": 0,
+    "bias": "neutral",
+    "strength": "weak",
+    "signals": [
+      {
+        "bias": "neutral",
+        "score": 0,
+        "reason": "BTC whale activity normal (1 large txs)"
+      },
+      {
+        "bias": "neutral",
+        "score": 0,
+        "reason": "No Etherscan key \u2014 ETH whale data unavailable"
+      },
+      {
+        "bias": "neutral",
+        "score": 0,
+        "reason": "Bridge volume normal"
+      }
+    ]
+  },
+  "btc_whales": {
+    "large_txs": [
+      {
+        "hash": "5f49eab101f0169b...",
+        "btc": 129.49,
+        "type": "transfer",
+        "inputs": 3,
+        "outputs": 2,
+        "block": 938744,
+        "time": 1772298627
+      }
+    ],
+    "total_whale_btc": 129.49,
+    "count": 1,
+    "consolidations": 0,
+    "distributions": 0,
+    "blocks_scanned": 3,
+    "signal": {
+      "bias": "neutral",
+      "score": 0,
+      "weight": 0.5,
+      "reason": "BTC whale activity normal (1 large txs)"
+    }
+  },
+  "eth_whales": {
+    "note": "No ETHERSCAN_API_KEY \u2014 limited data",
+    "signal": {
+      "bias": "neutral",
+      "score": 0,
+      "weight": 0.1,
+      "reason": "No Etherscan key \u2014 ETH whale data unavailable"
+    }
+  },
+  "exchange_flows": {
+    "bridge_volume_24h_m": 0.0,
+    "top_bridges": [],
+    "signal": {
+      "bias": "neutral",
+      "score": 0,
+      "weight": 0.3,
+      "reason": "Bridge volume normal"
+    }
+  },
+  "history": [
+    {
+      "timestamp": "2026-02-28T17:26:52.017625+00:00",
+      "ts": 1772299612,
+      "score": 0,
+      "bias": "neutral"
+    }
+  ],
+  "_meta": {
+    "updated_at": "2026-02-28T17:26:52.017659+00:00",
+    "updated_ts": 1772299612
+  }
+}
