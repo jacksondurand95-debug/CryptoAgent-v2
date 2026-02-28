@@ -67,7 +67,11 @@ def fetch_stablecoin_flows():
             recent = history[-30:]
             mcaps = []
             for d in recent:
-                total = sum(v.get("peggedUSD", 0) for v in d.get("totalCirculating", {}).values())
+                circ = d.get("totalCirculating", {})
+                total = sum(
+                    (v.get("peggedUSD", 0) if isinstance(v, dict) else v)
+                    for v in (circ.values() if isinstance(circ, dict) else [circ])
+                )
                 mcaps.append(total)
 
             if len(mcaps) >= 7:

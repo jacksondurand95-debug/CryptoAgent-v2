@@ -51,8 +51,8 @@ def fetch_okx_funding_oi():
         if r:
             data = r.json().get("data", [])
             if data:
-                rate = float(data[0].get("fundingRate", 0))
-                next_rate = float(data[0].get("nextFundingRate", 0))
+                rate = float(data[0].get("fundingRate", 0) or 0)
+                next_rate = float(data[0].get("nextFundingRate", 0) or 0)
                 pair_data["funding"] = {
                     "current_pct": round(rate * 100, 4),
                     "next_pct": round(next_rate * 100, 4),
