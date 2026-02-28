@@ -171,18 +171,18 @@ def fetch_dex_volume():
         return None
 
     data = r.json()
-    total_24h = data.get("total24h", 0)
-    total_7d = data.get("total7d", 0)
-    change_1d = data.get("change_1d", 0)
-    change_7d = data.get("change_7d", 0)
+    total_24h = data.get("total24h") or 0
+    total_7d = data.get("total7d") or 0
+    change_1d = data.get("change_1d") or 0
+    change_7d = data.get("change_7d") or 0
 
     # Top protocols by volume
     protocols = []
     for p in data.get("protocols", [])[:10]:
         protocols.append({
             "name": p.get("name", ""),
-            "volume_24h": round(p.get("total24h", 0) / 1e6, 1),
-            "change_1d": round(p.get("change_1d", 0) or 0, 1),
+            "volume_24h": round((p.get("total24h") or 0) / 1e6, 1),
+            "change_1d": round(p.get("change_1d") or 0, 1),
         })
 
     result = {
