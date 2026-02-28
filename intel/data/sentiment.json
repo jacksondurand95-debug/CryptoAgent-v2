@@ -65,37 +65,37 @@
       {
         "name": "BTC Bull Token",
         "symbol": "BTCBULL",
-        "market_cap_rank": 797,
+        "market_cap_rank": 636,
         "score": 0
-      },
-      {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
-        "score": 1
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 107,
-        "score": 2
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 3
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 153,
-        "score": 4
+        "score": 1
       },
       {
         "name": "PAX Gold",
         "symbol": "PAXG",
         "market_cap_rank": 37,
+        "score": 2
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 152,
+        "score": 3
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 4
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
         "score": 5
       },
       {
@@ -105,28 +105,27 @@
         "score": 6
       },
       {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
-        "score": 7
-      },
-      {
         "name": "Bittensor",
         "symbol": "TAO",
         "market_cap_rank": 45,
+        "score": 7
+      },
+      {
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 300,
         "score": 8
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "Canton",
+        "symbol": "CC",
+        "market_cap_rank": 17,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL",
-      "ETH"
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -179,10 +178,17 @@
       "fgi": 11,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-02-28T22:05:54.450485+00:00",
+      "ts": 1772316354,
+      "fgi": 11,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T21:09:59.629631+00:00",
-    "updated_ts": 1772312999
+    "updated_at": "2026-02-28T22:05:54.450514+00:00",
+    "updated_ts": 1772316354
   }
 }

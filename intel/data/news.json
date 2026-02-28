@@ -4,9 +4,9 @@
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 14,
+    "scored_articles": 13,
     "positive_score": 0,
-    "negative_score": -720
+    "negative_score": -670
   },
   "alpha_events": [
     {
@@ -59,19 +59,6 @@
       ]
     },
     {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "crash"
-      ]
-    },
-    {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
@@ -87,17 +74,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 37,
-      "score": -330,
+      "articles": 36,
+      "score": -250,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 16,
-      "score": -140,
+      "articles": 17,
+      "score": -170,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 9,
+      "articles": 8,
       "score": 0,
       "bias": "neutral"
     }
@@ -140,16 +127,6 @@
       "coins": []
     },
     {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
@@ -190,22 +167,22 @@
       ]
     },
     {
-      "title": "Bitcoin manipulation claims face pushback as ETFs snap 5-week outflow run: Finance Redefined",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Trump Orders Federal Agencies to Dump 'Woke' Anthropic AI After Pentagon Dispute",
       "source": "Decrypt",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
     },
     {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
@@ -230,6 +207,16 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Here's how bitcoin's price rise could be fueled by job-stealing AI software",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Bitcoin is stuck in a rut but JPMorgan says new legislation could be the ultimate spark",
@@ -383,10 +370,10 @@
     }
   ],
   "sources": {
-    "CoinDesk": 20,
+    "Google News": 30,
     "Decrypt": 20,
-    "CoinTelegraph": 20,
-    "Google News": 30
+    "CoinDesk": 20,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -423,10 +410,17 @@
       "score": -50,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-02-28T22:06:29.356419+00:00",
+      "ts": 1772316389,
+      "score": -50,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T20:42:46.508458+00:00",
-    "updated_ts": 1772311366
+    "updated_at": "2026-02-28T22:06:29.356491+00:00",
+    "updated_ts": 1772316389
   }
 }

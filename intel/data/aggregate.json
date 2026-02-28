@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 1.6,
+        "age_min": 1.1,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 35.5,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 20,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 117.1,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 53.9,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -50,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 81.1,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 37 articles, score=-330"
+          "reason": "News sentiment: 36 articles, score=-250"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (7 large txs)"
+          "reason": "BTC whale activity normal (4 large txs)"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 16 articles, score=-140"
+          "reason": "News sentiment: 17 articles, score=-170"
         },
         {
           "bias": "neutral",
@@ -121,17 +121,17 @@
     },
     {
       "type": "news",
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
-        "BTC"
+        "ETH"
       ]
     }
   ],
-  "timestamp": "2026-02-28T22:03:52.184684+00:00",
+  "timestamp": "2026-02-28T22:06:29.499464+00:00",
   "_meta": {
-    "updated_at": "2026-02-28T22:03:52.185499+00:00",
-    "updated_ts": 1772316232
+    "updated_at": "2026-02-28T22:06:29.500253+00:00",
+    "updated_ts": 1772316389
   }
 }
