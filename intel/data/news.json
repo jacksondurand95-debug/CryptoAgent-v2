@@ -98,17 +98,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 37,
+      "articles": 36,
       "score": -290,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 17,
+      "articles": 16,
       "score": -140,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 10,
+      "articles": 8,
       "score": 0,
       "bias": "neutral"
     }
@@ -261,6 +261,14 @@
       "coins": []
     },
     {
+      "title": "The 'stablecoin sandwich' is dead: Why the next phase of crypto payments is all about the user relationship",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
       "title": "Former Mt. Gox CEO proposed a rewrite of bitcoin's code to recover $5 billion in stolen funds. Gets quickly shutdown",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -383,21 +391,13 @@
       "coins": [
         "ETH"
       ]
-    },
-    {
-      "title": "Barclays looks for tech provider for new blockchain settlement engine: Bloomberg",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "Decrypt": 20,
+    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Google News": 30,
-    "CoinDesk": 20
+    "Decrypt": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -406,10 +406,17 @@
       "score": -47,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-02-28T18:08:29.536735+00:00",
+      "ts": 1772302109,
+      "score": -47,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T17:26:53.727829+00:00",
-    "updated_ts": 1772299613
+    "updated_at": "2026-02-28T18:08:29.536814+00:00",
+    "updated_ts": 1772302109
   }
 }

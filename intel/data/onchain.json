@@ -12,7 +12,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "TVL stable (-3.3%)"
+        "reason": "TVL stable (-2.1%)"
       },
       {
         "bias": "neutral",
@@ -22,7 +22,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC fees low (3 sat/vB) \u2014 quiet network"
+        "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
       },
       {
         "bias": "bullish",
@@ -35,7 +35,7 @@
     "total_mcap_b": 263.58,
     "breakdown": {
       "Tether": 183.59,
-      "USD Coin": 75.22,
+      "USD Coin": 75.21,
       "Dai": 4.39,
       "First Digital USD": 0.38
     },
@@ -50,9 +50,9 @@
     }
   },
   "tvl": {
-    "total_tvl_b": 92.04,
-    "week_change_pct": -3.32,
-    "month_change_pct": -20.67,
+    "total_tvl_b": 92.29,
+    "week_change_pct": -2.08,
+    "month_change_pct": -18.99,
     "top_chains": {
       "Harmony": 0.0,
       "Kava": 0.06,
@@ -60,7 +60,7 @@
       "Ink": 0.4,
       "Mantle": 0.75,
       "TAC": 0.0,
-      "Plasma": 2.22,
+      "Plasma": 2.23,
       "Etherlink": 0.03,
       "Celo": 0.02,
       "Unichain": 0.05
@@ -70,24 +70,24 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "TVL stable (-3.3%)"
+      "reason": "TVL stable (-2.1%)"
     }
   },
   "dex_volume": {
-    "total_24h_m": 7848.2,
-    "total_7d_m": 52023.8,
+    "total_24h_m": 7848.3,
+    "total_7d_m": 52023.9,
     "change_1d_pct": -1.3,
     "change_7d_pct": -2.8,
     "top_protocols": [
       {
         "name": "Curve DEX",
-        "volume_24h": 115.8,
-        "change_1d": -32.5
+        "volume_24h": 114.0,
+        "change_1d": -33.5
       },
       {
         "name": "Balancer V1",
         "volume_24h": 0.1,
-        "change_1d": -32.5
+        "change_1d": -32.1
       },
       {
         "name": "SushiSwap",
@@ -117,12 +117,12 @@
       {
         "name": "Bancor V2.1",
         "volume_24h": 0.1,
-        "change_1d": 48.6
+        "change_1d": 55.1
       },
       {
         "name": "WanSwap Dex",
         "volume_24h": 0.0,
-        "change_1d": -14.3
+        "change_1d": 0.4
       },
       {
         "name": "PancakeSwap AMM",
@@ -139,7 +139,7 @@
   },
   "btc_onchain": {
     "btc_fees": {
-      "fastest": 3,
+      "fastest": 1,
       "half_hour": 1,
       "hour": 1,
       "economy": 1,
@@ -149,14 +149,14 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.3,
-      "reason": "BTC fees low (3 sat/vB) \u2014 quiet network"
+      "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 29581,
-      "vsize": 16795448,
-      "total_fee": 5420893
+      "count": 27546,
+      "vsize": 18753510,
+      "total_fee": 3125565
     },
-    "btc_hashrate": 947507018509.0,
+    "btc_hashrate": 940328935035.0,
     "hashrate_trend": {
       "current_eh": 1019.7,
       "avg_7d_eh": 1058.7,
@@ -265,10 +265,18 @@
       "bias": "neutral",
       "stablecoin_mcap_b": 263.58,
       "tvl_b": 92.04
+    },
+    {
+      "timestamp": "2026-02-28T18:08:12.698817+00:00",
+      "ts": 1772302092,
+      "score": 20,
+      "bias": "neutral",
+      "stablecoin_mcap_b": 263.58,
+      "tvl_b": 92.29
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T17:30:11.124167+00:00",
-    "updated_ts": 1772299811
+    "updated_at": "2026-02-28T18:08:12.698866+00:00",
+    "updated_ts": 1772302092
   }
 }

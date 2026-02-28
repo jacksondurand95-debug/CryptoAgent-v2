@@ -69,45 +69,45 @@
         "score": 0
       },
       {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 154,
+        "score": 1
+      },
+      {
         "name": "Power Protocol",
         "symbol": "POWER",
         "market_cap_rank": 111,
-        "score": 1
+        "score": 2
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 2
+        "score": 3
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 110,
+        "score": 4
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 3
-      },
-      {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
-        "score": 4
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 154,
         "score": 5
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 309,
         "score": 6
       },
       {
-        "name": "Terra Luna Classic",
-        "symbol": "LUNC",
-        "market_cap_rank": 159,
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "market_cap_rank": 93,
         "score": 7
       },
       {
@@ -117,9 +117,9 @@
         "score": 8
       },
       {
-        "name": "pippin",
-        "symbol": "PIPPIN",
-        "market_cap_rank": 90,
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 9
       }
     ],
@@ -136,10 +136,17 @@
       "fgi": 11,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-02-28T18:07:49.221904+00:00",
+      "ts": 1772302069,
+      "fgi": 11,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T17:27:10.145347+00:00",
-    "updated_ts": 1772299630
+    "updated_at": "2026-02-28T18:07:49.221935+00:00",
+    "updated_ts": 1772302069
   }
 }

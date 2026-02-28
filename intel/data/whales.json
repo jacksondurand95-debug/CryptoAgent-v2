@@ -7,7 +7,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC whale activity normal (1 large txs)"
+        "reason": "BTC whale activity normal (5 large txs)"
       },
       {
         "bias": "neutral",
@@ -24,25 +24,61 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "5f49eab101f0169b...",
-        "btc": 129.49,
+        "hash": "19d03f8bc1d3d640...",
+        "btc": 1535.02,
         "type": "transfer",
-        "inputs": 3,
+        "inputs": 2,
+        "outputs": 3,
+        "block": 938748,
+        "time": 1772300771
+      },
+      {
+        "hash": "2c1b97271d9534fd...",
+        "btc": 327.5,
+        "type": "transfer",
+        "inputs": 1,
         "outputs": 2,
-        "block": 938744,
-        "time": 1772298627
+        "block": 938747,
+        "time": 1772300071
+      },
+      {
+        "hash": "da60115f639c9e93...",
+        "btc": 257.26,
+        "type": "distribution",
+        "inputs": 1,
+        "outputs": 11,
+        "block": 938749,
+        "time": 1772301243
+      },
+      {
+        "hash": "34443cef617acf16...",
+        "btc": 170.05,
+        "type": "transfer",
+        "inputs": 1,
+        "outputs": 2,
+        "block": 938749,
+        "time": 1772300791
+      },
+      {
+        "hash": "f187a416ea631e58...",
+        "btc": 104.09,
+        "type": "distribution",
+        "inputs": 1,
+        "outputs": 20,
+        "block": 938749,
+        "time": 1772301594
       }
     ],
-    "total_whale_btc": 129.49,
-    "count": 1,
+    "total_whale_btc": 2393.92,
+    "count": 5,
     "consolidations": 0,
-    "distributions": 0,
+    "distributions": 2,
     "blocks_scanned": 3,
     "signal": {
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "BTC whale activity normal (1 large txs)"
+      "reason": "BTC whale activity normal (5 large txs)"
     }
   },
   "eth_whales": {
@@ -70,10 +106,16 @@
       "ts": 1772299612,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-02-28T18:08:01.350576+00:00",
+      "ts": 1772302081,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T17:26:52.017659+00:00",
-    "updated_ts": 1772299612
+    "updated_at": "2026-02-28T18:08:01.350609+00:00",
+    "updated_ts": 1772302081
   }
 }
