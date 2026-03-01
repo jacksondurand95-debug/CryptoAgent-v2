@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -50,
+    "score": -47,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 15,
-    "positive_score": 0,
-    "negative_score": -770
+    "scored_articles": 14,
+    "positive_score": 40,
+    "negative_score": -690
   },
   "alpha_events": [
     {
@@ -72,19 +72,6 @@
       ]
     },
     {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "crash"
-      ]
-    },
-    {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
@@ -101,12 +88,12 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 36,
-      "score": -350,
+      "score": -260,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 17,
-      "score": -170,
+      "articles": 15,
+      "score": -140,
       "bias": "bearish"
     },
     "SOL": {
@@ -163,16 +150,6 @@
       ]
     },
     {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
@@ -203,6 +180,16 @@
       ]
     },
     {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -221,16 +208,6 @@
       "coins": []
     },
     {
-      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -247,7 +224,7 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - theblock.co",
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -393,13 +370,23 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Bitcoin's rebound cancelled as U.S. stocks fall, gold surges, amid mounting macro risks",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "Google News": 30,
-    "CoinDesk": 20,
     "Decrypt": 20,
-    "CoinTelegraph": 20
+    "CoinTelegraph": 20,
+    "CoinDesk": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -450,10 +437,17 @@
       "score": -50,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-01T01:02:00.044446+00:00",
+      "ts": 1772326920,
+      "score": -47,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T22:42:18.672328+00:00",
-    "updated_ts": 1772318538
+    "updated_at": "2026-03-01T01:02:00.044513+00:00",
+    "updated_ts": 1772326920
   }
 }
