@@ -4,9 +4,9 @@
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 16,
+    "scored_articles": 18,
     "positive_score": 80,
-    "negative_score": -700
+    "negative_score": -760
   },
   "alpha_events": [
     {
@@ -92,8 +92,8 @@
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 16,
-      "score": -140,
+      "articles": 18,
+      "score": -170,
       "bias": "bearish"
     },
     "SOL": {
@@ -218,6 +218,16 @@
       "coins": []
     },
     {
+      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -227,6 +237,14 @@
     },
     {
       "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -365,31 +383,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Oil-linked futures on Hyperliquid surge 5% after U.S.-Israel strike on Iran",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin nears $63,000 as U.S. and Israel launch strikes on Iran",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "Google News": 30,
+    "CoinTelegraph": 20,
     "Decrypt": 20,
-    "CoinTelegraph": 20
+    "CoinDesk": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -538,10 +538,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-01T14:44:02.435812+00:00",
+      "ts": 1772376242,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T14:07:36.523870+00:00",
-    "updated_ts": 1772374056
+    "updated_at": "2026-03-01T14:44:02.435883+00:00",
+    "updated_ts": 1772376242
   }
 }
