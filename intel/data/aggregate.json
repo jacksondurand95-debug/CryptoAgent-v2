@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 0.7,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 34.9,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 116.2,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 52.4,
+        "age_min": 0.7,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -44,
+        "score": -40,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 79.3,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 36 articles, score=-230"
+          "reason": "News sentiment: 35 articles, score=-130"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (11 large txs)"
+          "reason": "BTC whale activity normal (8 large txs)"
         }
       ]
     },
@@ -81,21 +81,18 @@
       ]
     },
     "SOL": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 0
+      "score": 40,
+      "bias": "bullish",
+      "signals": 1,
+      "details": [
+        {
+          "bias": "bullish",
+          "reason": "News sentiment: 7 articles, score=40"
+        }
+      ]
     }
   },
   "alpha_events": [
-    {
-      "type": "news",
-      "title": "Mt. Gox\u2019s former CEO floats hard fork to recover 80K hacked Bitcoin",
-      "sentiment": "bearish",
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
     {
       "type": "news",
       "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
@@ -121,6 +118,15 @@
     },
     {
       "type": "news",
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "type": "news",
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "sentiment": "bearish",
       "importance": "high",
@@ -129,9 +135,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-01T22:03:06.515544+00:00",
+  "timestamp": "2026-03-01T22:06:54.537249+00:00",
   "_meta": {
-    "updated_at": "2026-03-01T22:03:06.516235+00:00",
-    "updated_ts": 1772402586
+    "updated_at": "2026-03-01T22:06:54.537747+00:00",
+    "updated_ts": 1772402814
   }
 }

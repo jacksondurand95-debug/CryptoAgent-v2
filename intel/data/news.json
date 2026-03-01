@@ -1,28 +1,14 @@
 {
   "aggregate": {
-    "score": -44,
+    "score": -40,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
     "scored_articles": 16,
-    "positive_score": 80,
-    "negative_score": -700
+    "positive_score": 120,
+    "negative_score": -600
   },
   "alpha_events": [
-    {
-      "title": "Mt. Gox\u2019s former CEO floats hard fork to recover 80K hacked Bitcoin",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -140,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "hack",
-        "bankruptcy"
-      ]
-    },
     {
       "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
       "source": "Decrypt",
@@ -59,6 +45,19 @@
       ]
     },
     {
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
@@ -87,8 +86,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
-      "score": -230,
+      "articles": 35,
+      "score": -130,
       "bias": "bearish"
     },
     "ETH": {
@@ -97,22 +96,12 @@
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 6,
-      "score": 0,
-      "bias": "neutral"
+      "articles": 7,
+      "score": 40,
+      "bias": "bullish"
     }
   },
   "top_articles": [
-    {
-      "title": "Mt. Gox\u2019s former CEO floats hard fork to recover 80K hacked Bitcoin",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -140,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
     {
       "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
       "source": "Decrypt",
@@ -138,6 +127,16 @@
       "score": -50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
@@ -177,6 +176,16 @@
       "importance": "medium",
       "coins": [
         "BTC"
+      ]
+    },
+    {
+      "title": "Kalshi founder provides update on Iran's Khamenei market carveout",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "SOL"
       ]
     },
     {
@@ -240,16 +249,6 @@
       "score": -30,
       "importance": "medium",
       "coins": []
-    },
-    {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 crash creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -10,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     },
     {
       "title": "Bitcoin losing trillions in value hasn't stopped traditional giants' interest in digital assets sector",
@@ -385,10 +384,10 @@
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "Google News": 30,
+    "CoinTelegraph": 20,
     "Decrypt": 20,
-    "CoinTelegraph": 20
+    "Google News": 30,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -586,10 +585,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-01T22:06:54.405942+00:00",
+      "ts": 1772402814,
+      "score": -40,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T20:43:46.785592+00:00",
-    "updated_ts": 1772397826
+    "updated_at": "2026-03-01T22:06:54.406011+00:00",
+    "updated_ts": 1772402814
   }
 }

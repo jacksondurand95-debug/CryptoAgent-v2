@@ -63,21 +63,21 @@
   "trending": {
     "trending": [
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 0
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 110,
         "score": 1
       },
       {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 36,
+        "name": "River",
+        "symbol": "RIVER",
+        "market_cap_rank": 136,
         "score": 2
       },
       {
@@ -89,43 +89,43 @@
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 145,
+        "market_cap_rank": 143,
         "score": 4
+      },
+      {
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
+        "score": 5
       },
       {
         "name": "Grass",
         "symbol": "GRASS",
-        "market_cap_rank": 218,
-        "score": 5
-      },
-      {
-        "name": "River",
-        "symbol": "RIVER",
-        "market_cap_rank": 136,
+        "market_cap_rank": 214,
         "score": 6
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 159,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 7
       },
       {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 47,
+        "name": "Kinesis Silver",
+        "symbol": "KAG",
+        "market_cap_rank": 885,
         "score": 8
       },
       {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 33,
+        "name": "Pepe",
+        "symbol": "PEPE",
+        "market_cap_rank": 54,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "SOL",
-      "BTC"
+      "BTC",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -416,10 +416,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T22:06:14.204907+00:00",
+      "ts": 1772402774,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T21:10:41.062427+00:00",
-    "updated_ts": 1772399441
+    "updated_at": "2026-03-01T22:06:14.204944+00:00",
+    "updated_ts": 1772402774
   }
 }
