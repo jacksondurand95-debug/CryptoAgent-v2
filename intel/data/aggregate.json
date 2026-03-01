@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 7.4,
+        "age_min": 4.9,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 18.3,
+        "age_min": 27.9,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 40.1,
+        "age_min": 49.7,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 36.3,
+        "age_min": 45.9,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -40,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 3.0,
+        "age_min": 12.6,
         "effective_weight": 1.0
       }
     }
@@ -135,9 +135,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-01T22:46:43.262965+00:00",
+  "timestamp": "2026-03-01T22:56:20.232167+00:00",
   "_meta": {
-    "updated_at": "2026-03-01T22:46:43.263790+00:00",
-    "updated_ts": 1772405203
+    "updated_at": "2026-03-01T22:56:20.233032+00:00",
+    "updated_ts": 1772405780
   }
 }
