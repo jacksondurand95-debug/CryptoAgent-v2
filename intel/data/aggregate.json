@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 8,
+    "score": 16,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 10.6,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 0,
-        "bias": "neutral",
+        "score": 31,
+        "bias": "bullish",
         "strength": "weak",
-        "age_min": 26.1,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 91.0,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,23 +36,23 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 35.7,
+        "age_min": 0.7,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -41,
+        "score": -44,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 65.6,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -36,
-      "bias": "bearish",
+      "score": 5,
+      "bias": "neutral",
       "signals": 2,
       "details": [
         {
@@ -60,8 +60,8 @@
           "reason": "News sentiment: 35 articles, score=-230"
         },
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (6 large txs)"
+          "bias": "bullish",
+          "reason": "BTC whale distribution (7 txs) \u2014 accumulation"
         }
       ]
     },
@@ -121,7 +121,7 @@
     },
     {
       "type": "news",
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
@@ -129,9 +129,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-01T13:57:47.551060+00:00",
+  "timestamp": "2026-03-01T14:07:36.666640+00:00",
   "_meta": {
-    "updated_at": "2026-03-01T13:57:47.551827+00:00",
-    "updated_ts": 1772373467
+    "updated_at": "2026-03-01T14:07:36.667408+00:00",
+    "updated_ts": 1772374056
   }
 }

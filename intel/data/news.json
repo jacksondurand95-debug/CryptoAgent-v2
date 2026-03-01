@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -41,
+    "score": -44,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 17,
-    "positive_score": 120,
-    "negative_score": -740
+    "scored_articles": 16,
+    "positive_score": 80,
+    "negative_score": -700
   },
   "alpha_events": [
     {
@@ -54,19 +54,6 @@
       "score": -50,
       "importance": "high",
       "coins": [],
-      "keywords": [
-        "crash"
-      ]
-    },
-    {
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
       "keywords": [
         "crash"
       ]
@@ -153,16 +140,6 @@
       "coins": []
     },
     {
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
@@ -223,16 +200,6 @@
       ]
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -273,6 +240,26 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 crash creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -10,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "SpaceX\u2019s $780 million bitcoin stack now down to about $545 million ahead of IPO filing",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Ether, solana, xrp surge up to 10% as majors recover Saturday's war-driven losses",
@@ -399,9 +386,9 @@
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "Google News": 30,
     "CoinDesk": 20,
+    "Google News": 30,
+    "Decrypt": 20,
     "CoinTelegraph": 20
   },
   "history": [
@@ -544,10 +531,17 @@
       "score": -41,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-01T14:07:36.523795+00:00",
+      "ts": 1772374056,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T12:52:13.820032+00:00",
-    "updated_ts": 1772369533
+    "updated_at": "2026-03-01T14:07:36.523870+00:00",
+    "updated_ts": 1772374056
   }
 }

@@ -63,15 +63,15 @@
   "trending": {
     "trending": [
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
-        "score": 0
-      },
-      {
         "name": "Grass",
         "symbol": "GRASS",
         "market_cap_rank": 229,
+        "score": 0
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 1
       },
       {
@@ -81,51 +81,52 @@
         "score": 2
       },
       {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 3
+      },
+      {
         "name": "PAX Gold",
         "symbol": "PAXG",
         "market_cap_rank": 38,
-        "score": 3
+        "score": 4
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
-        "score": 4
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
         "score": 5
       },
       {
-        "name": "Aethir",
-        "symbol": "ATH",
-        "market_cap_rank": 237,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 6
       },
       {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 5,
         "score": 7
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 150,
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 49,
         "score": 8
       },
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 113,
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 52,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH"
+      "ETH",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -332,10 +333,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T14:06:56.812405+00:00",
+      "ts": 1772374016,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T13:22:08.087082+00:00",
-    "updated_ts": 1772371328
+    "updated_at": "2026-03-01T14:06:56.812441+00:00",
+    "updated_ts": 1772374016
   }
 }
