@@ -113,17 +113,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 37,
+      "articles": 36,
       "score": -320,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 14,
+      "articles": 16,
       "score": -140,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 8,
+      "articles": 9,
       "score": 0,
       "bias": "neutral"
     }
@@ -272,14 +272,6 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
@@ -288,7 +280,27 @@
       "coins": []
     },
     {
-      "title": "U.S.-Iran war attracts $600 million bets on Polymarket",
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Ether, solana, xrp surge up to 10% as majors recover Saturday's war-driven losses",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "ETH",
+        "SOL"
+      ]
+    },
+    {
+      "title": "Polymarket attracts record trading 'world' volumes as U.S.-Iran bets top $529 million",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -397,24 +409,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin slides to $65,000 in weekend sell-off, with solana, XRP, dogecoin down 6%",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
+    "Google News": 30,
     "CoinDesk": 20,
-    "Decrypt": 20,
-    "Google News": 30
+    "CoinTelegraph": 20,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -514,10 +515,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-01T08:08:52.143919+00:00",
+      "ts": 1772352532,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T06:51:56.750677+00:00",
-    "updated_ts": 1772347916
+    "updated_at": "2026-03-01T08:08:52.143998+00:00",
+    "updated_ts": 1772352532
   }
 }

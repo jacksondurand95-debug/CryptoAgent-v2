@@ -63,33 +63,33 @@
   "trending": {
     "trending": [
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 1
+        "score": 0
       },
       {
         "name": "Grass",
         "symbol": "GRASS",
-        "market_cap_rank": 225,
-        "score": 2
+        "market_cap_rank": 228,
+        "score": 1
       },
       {
         "name": "PAX Gold",
         "symbol": "PAXG",
         "market_cap_rank": 38,
-        "score": 3
+        "score": 2
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 155,
+        "market_cap_rank": 152,
+        "score": 3
+      },
+      {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 51,
         "score": 4
       },
       {
@@ -99,27 +99,27 @@
         "score": 5
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 156,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
         "score": 6
-      },
-      {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
-        "score": 7
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
+        "score": 7
+      },
+      {
+        "name": "Terra Luna Classic",
+        "symbol": "LUNC",
+        "market_cap_rank": 155,
         "score": 8
       },
       {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 51,
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 4,
         "score": 9
       }
     ],
@@ -270,10 +270,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T08:08:18.143301+00:00",
+      "ts": 1772352498,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T07:20:52.028058+00:00",
-    "updated_ts": 1772349652
+    "updated_at": "2026-03-01T08:08:18.143343+00:00",
+    "updated_ts": 1772352498
   }
 }
