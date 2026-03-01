@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -47,
+    "score": -44,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
     "scored_articles": 17,
-    "positive_score": 40,
-    "negative_score": -820
+    "positive_score": 80,
+    "negative_score": -790
   },
   "alpha_events": [
     {
@@ -113,8 +113,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
-      "score": -360,
+      "articles": 37,
+      "score": -320,
       "bias": "bearish"
     },
     "ETH": {
@@ -226,6 +226,16 @@
       ]
     },
     {
+      "title": "Bitcoin recovers to $68K following death of Iranian Supreme Leader",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
       "source": "Google News",
       "sentiment": "bearish",
@@ -262,14 +272,6 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
@@ -278,7 +280,7 @@
       "coins": []
     },
     {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -410,9 +412,9 @@
   ],
   "sources": {
     "Decrypt": 20,
-    "CoinDesk": 20,
     "Google News": 30,
-    "CoinTelegraph": 20
+    "CoinTelegraph": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -491,10 +493,17 @@
       "score": -47,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-01T05:07:23.138380+00:00",
+      "ts": 1772341643,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T04:41:22.214981+00:00",
-    "updated_ts": 1772340082
+    "updated_at": "2026-03-01T05:07:23.138451+00:00",
+    "updated_ts": 1772341643
   }
 }
