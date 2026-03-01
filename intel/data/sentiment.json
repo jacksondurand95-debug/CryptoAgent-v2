@@ -63,69 +63,69 @@
   "trending": {
     "trending": [
       {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 218,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 0
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 1
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 2
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 3
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 109,
-        "score": 4
+        "score": 1
       },
       {
         "name": "PAX Gold",
         "symbol": "PAXG",
-        "market_cap_rank": 37,
-        "score": 5
+        "market_cap_rank": 36,
+        "score": 2
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 3
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
         "market_cap_rank": 145,
-        "score": 6
+        "score": 4
       },
       {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
-        "score": 7
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 218,
+        "score": 5
       },
       {
         "name": "River",
         "symbol": "RIVER",
-        "market_cap_rank": 134,
+        "market_cap_rank": 136,
+        "score": 6
+      },
+      {
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 159,
+        "score": 7
+      },
+      {
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 47,
         "score": 8
       },
       {
-        "name": "Aave",
-        "symbol": "AAVE",
-        "market_cap_rank": 46,
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 33,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
-      "SOL"
+      "SOL",
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -409,10 +409,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T21:10:41.062394+00:00",
+      "ts": 1772399441,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T20:11:48.723881+00:00",
-    "updated_ts": 1772395908
+    "updated_at": "2026-03-01T21:10:41.062427+00:00",
+    "updated_ts": 1772399441
   }
 }
