@@ -75,33 +75,33 @@
         "score": 1
       },
       {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
-        "score": 2
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
-        "score": 3
-      },
-      {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
-        "score": 4
+        "score": 2
+      },
+      {
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 35,
+        "score": 3
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 5
+        "score": 4
       },
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "market_cap_rank": 43,
+        "market_cap_rank": 44,
+        "score": 5
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
         "score": 6
       },
       {
@@ -111,15 +111,15 @@
         "score": 7
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 301,
+        "name": "Polkadot",
+        "symbol": "DOT",
+        "market_cap_rank": 36,
         "score": 8
       },
       {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 38,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 113,
         "score": 9
       }
     ],
@@ -220,10 +220,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T03:13:38.385307+00:00",
+      "ts": 1772334818,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T03:05:36.721688+00:00",
-    "updated_ts": 1772334336
+    "updated_at": "2026-03-01T03:13:38.385337+00:00",
+    "updated_ts": 1772334818
   }
 }
