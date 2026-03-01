@@ -4,9 +4,9 @@
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 17,
+    "scored_articles": 19,
     "positive_score": 80,
-    "negative_score": -730
+    "negative_score": -790
   },
   "alpha_events": [
     {
@@ -87,17 +87,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
+      "articles": 34,
       "score": -230,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 16,
-      "score": -140,
+      "articles": 19,
+      "score": -200,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 8,
+      "articles": 6,
       "score": 0,
       "bias": "neutral"
     }
@@ -218,6 +218,26 @@
       "coins": []
     },
     {
+      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "The Impact of the GENIUS Act on Ethereum and Stablecoin Regulation - OKX",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -258,6 +278,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Strategy lifts STRC dividend to 11.5% as MSTR extends monthly losing streak to 8",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
     },
     {
       "title": "Stablecoin yield rewards (likely won't be) banned under OCC proposal: State of Crypto",
@@ -352,41 +380,12 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Suspected insiders make over $1.2 million on Polymarket by betting on U.S.'s Iran strike",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "XRP tumbles 9% as break below $1.36 wipes out relief rally",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin's five-month slide: why BTC is set for worst losing streak since 2018",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
     }
   ],
   "sources": {
+    "CoinDesk": 20,
     "Decrypt": 20,
     "CoinTelegraph": 20,
-    "CoinDesk": 20,
     "Google News": 30
   },
   "history": [
@@ -550,10 +549,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-01T16:45:11.972908+00:00",
+      "ts": 1772383511,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T16:08:00.259934+00:00",
-    "updated_ts": 1772381280
+    "updated_at": "2026-03-01T16:45:11.972984+00:00",
+    "updated_ts": 1772383511
   }
 }
