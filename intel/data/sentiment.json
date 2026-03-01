@@ -63,70 +63,69 @@
   "trending": {
     "trending": [
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 0
-      },
-      {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 228,
-        "score": 1
-      },
-      {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 38,
-        "score": 2
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 152,
-        "score": 3
-      },
-      {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 51,
-        "score": 4
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 1
+      },
+      {
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 228,
+        "score": 2
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 151,
+        "score": 3
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
+        "score": 4
+      },
+      {
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 38,
         "score": 5
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 51,
         "score": 6
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "LayerZero",
+        "symbol": "ZRO",
+        "market_cap_rank": 116,
         "score": 7
+      },
+      {
+        "name": "Espresso",
+        "symbol": "ESP",
+        "market_cap_rank": 349,
+        "score": 8
       },
       {
         "name": "Terra Luna Classic",
         "symbol": "LUNC",
-        "market_cap_rank": 155,
-        "score": 8
-      },
-      {
-        "name": "XRP",
-        "symbol": "XRP",
-        "market_cap_rank": 4,
+        "market_cap_rank": 153,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
       "SOL",
-      "ETH"
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -284,10 +283,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T09:14:41.298745+00:00",
+      "ts": 1772356481,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T08:15:40.023751+00:00",
-    "updated_ts": 1772352940
+    "updated_at": "2026-03-01T09:14:41.298771+00:00",
+    "updated_ts": 1772356481
   }
 }
