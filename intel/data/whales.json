@@ -7,7 +7,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC whale activity normal (1 large txs)"
+        "reason": "BTC whale activity normal (4 large txs)"
       },
       {
         "bias": "neutral",
@@ -24,25 +24,52 @@
   "btc_whales": {
     "large_txs": [
       {
+        "hash": "43b0714e80375ead...",
+        "btc": 598.54,
+        "type": "transfer",
+        "inputs": 2,
+        "outputs": 2,
+        "block": 938868,
+        "time": 1772366953
+      },
+      {
+        "hash": "f1c1874cf84d26b1...",
+        "btc": 396.54,
+        "type": "distribution",
+        "inputs": 3,
+        "outputs": 19,
+        "block": 938868,
+        "time": 1772366882
+      },
+      {
+        "hash": "4b6c65f72e675f19...",
+        "btc": 244.05,
+        "type": "transfer",
+        "inputs": 2,
+        "outputs": 2,
+        "block": 938868,
+        "time": 1772366877
+      },
+      {
         "hash": "9ca17c2847bf3469...",
         "btc": 103.25,
         "type": "consolidation",
         "inputs": 6,
         "outputs": 2,
         "block": 938867,
-        "time": 1772366342
+        "time": 1772366335
       }
     ],
-    "total_whale_btc": 103.25,
-    "count": 1,
+    "total_whale_btc": 1342.38,
+    "count": 4,
     "consolidations": 1,
-    "distributions": 0,
+    "distributions": 1,
     "blocks_scanned": 3,
     "signal": {
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "BTC whale activity normal (1 large txs)"
+      "reason": "BTC whale activity normal (4 large txs)"
     }
   },
   "eth_whales": {
@@ -226,10 +253,16 @@
       "ts": 1772366997,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-01T12:30:34.448004+00:00",
+      "ts": 1772368234,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T12:09:57.287646+00:00",
-    "updated_ts": 1772366997
+    "updated_at": "2026-03-01T12:30:34.448035+00:00",
+    "updated_ts": 1772368234
   }
 }
