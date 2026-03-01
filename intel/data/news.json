@@ -4,13 +4,13 @@
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 19,
+    "scored_articles": 17,
     "positive_score": 80,
-    "negative_score": -790
+    "negative_score": -730
   },
   "alpha_events": [
     {
-      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
+      "title": "Mt. Gox\u2019s former CEO floats hard fork to recover 80K hacked Bitcoin",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -140,
@@ -87,24 +87,24 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 34,
+      "articles": 36,
       "score": -230,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 19,
-      "score": -200,
+      "articles": 18,
+      "score": -170,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 6,
+      "articles": 7,
       "score": 0,
       "bias": "neutral"
     }
   },
   "top_articles": [
     {
-      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
+      "title": "Mt. Gox\u2019s former CEO floats hard fork to recover 80K hacked Bitcoin",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -140,
@@ -228,16 +228,6 @@
       ]
     },
     {
-      "title": "The Impact of the GENIUS Act on Ethereum and Stablecoin Regulation - OKX",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -262,18 +252,20 @@
       "coins": []
     },
     {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 crash creates a market-wide bloodbath - CoinDesk",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -10,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin losing trillions in value hasn't stopped traditional giants' interest in digital assets sector",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
       "importance": "low",
       "coins": [
         "BTC"
@@ -364,6 +356,16 @@
       "coins": []
     },
     {
+      "title": "Buyouts and bitcoin: Inside the messy boardroom fight at a treasury company that may span to others",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "The 'stablecoin sandwich' is dead: Why the next phase of crypto payments is all about the user relationship",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -383,9 +385,9 @@
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "Decrypt": 20,
     "CoinTelegraph": 20,
+    "Decrypt": 20,
+    "CoinDesk": 20,
     "Google News": 30
   },
   "history": [
@@ -556,10 +558,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-01T18:08:44.992374+00:00",
+      "ts": 1772388524,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T16:45:11.972984+00:00",
-    "updated_ts": 1772383511
+    "updated_at": "2026-03-01T18:08:44.992445+00:00",
+    "updated_ts": 1772388524
   }
 }

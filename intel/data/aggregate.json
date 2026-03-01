@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 36.4,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 116.6,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 52.8,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -44,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 79.1,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 34 articles, score=-230"
+          "reason": "News sentiment: 36 articles, score=-230"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (7 large txs)"
+          "reason": "BTC whale activity normal (10 large txs)"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 19 articles, score=-200"
+          "reason": "News sentiment: 18 articles, score=-170"
         },
         {
           "bias": "neutral",
@@ -89,7 +89,7 @@
   "alpha_events": [
     {
       "type": "news",
-      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
+      "title": "Mt. Gox\u2019s former CEO floats hard fork to recover 80K hacked Bitcoin",
       "sentiment": "bearish",
       "importance": "critical",
       "coins": [
@@ -129,9 +129,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-01T18:04:19.673734+00:00",
+  "timestamp": "2026-03-01T18:08:45.135914+00:00",
   "_meta": {
-    "updated_at": "2026-03-01T18:04:19.674383+00:00",
-    "updated_ts": 1772388259
+    "updated_at": "2026-03-01T18:08:45.136722+00:00",
+    "updated_ts": 1772388525
   }
 }
