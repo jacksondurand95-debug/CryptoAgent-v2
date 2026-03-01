@@ -272,7 +272,7 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -280,7 +280,7 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -411,10 +411,10 @@
     }
   ],
   "sources": {
-    "Google News": 30,
-    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Decrypt": 20
+    "CoinDesk": 20,
+    "Decrypt": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -507,10 +507,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-01T06:51:56.750605+00:00",
+      "ts": 1772347916,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T06:17:50.349218+00:00",
-    "updated_ts": 1772345870
+    "updated_at": "2026-03-01T06:51:56.750677+00:00",
+    "updated_ts": 1772347916
   }
 }
