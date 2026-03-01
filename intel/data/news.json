@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -47,
+    "score": -50,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
     "scored_articles": 14,
-    "positive_score": 40,
-    "negative_score": -690
+    "positive_score": 0,
+    "negative_score": -740
   },
   "alpha_events": [
     {
@@ -72,6 +72,19 @@
       ]
     },
     {
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
@@ -87,8 +100,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
-      "score": -260,
+      "articles": 35,
+      "score": -350,
       "bias": "bearish"
     },
     "ETH": {
@@ -150,6 +163,16 @@
       ]
     },
     {
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
@@ -174,16 +197,6 @@
       "source": "Google News",
       "sentiment": "bearish",
       "score": -40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -383,10 +396,10 @@
     }
   ],
   "sources": {
+    "Google News": 30,
     "Decrypt": 20,
-    "CoinTelegraph": 20,
     "CoinDesk": 20,
-    "Google News": 30
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -444,10 +457,17 @@
       "score": -47,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-01T03:06:12.043421+00:00",
+      "ts": 1772334372,
+      "score": -50,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T01:02:00.044513+00:00",
-    "updated_ts": 1772326920
+    "updated_at": "2026-03-01T03:06:12.043493+00:00",
+    "updated_ts": 1772334372
   }
 }
