@@ -385,10 +385,10 @@
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "Decrypt": 20,
     "CoinDesk": 20,
-    "Google News": 30
+    "Google News": 30,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -565,10 +565,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-01T18:49:18.962439+00:00",
+      "ts": 1772390958,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T18:08:44.992445+00:00",
-    "updated_ts": 1772388524
+    "updated_at": "2026-03-01T18:49:18.962512+00:00",
+    "updated_ts": 1772390958
   }
 }
