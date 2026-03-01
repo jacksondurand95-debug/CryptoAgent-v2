@@ -4,9 +4,9 @@
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 17,
+    "scored_articles": 16,
     "positive_score": 80,
-    "negative_score": -730
+    "negative_score": -700
   },
   "alpha_events": [
     {
@@ -92,12 +92,12 @@
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 18,
-      "score": -170,
+      "articles": 14,
+      "score": -140,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 7,
+      "articles": 6,
       "score": 0,
       "bias": "neutral"
     }
@@ -216,16 +216,6 @@
       "score": -30,
       "importance": "medium",
       "coins": []
-    },
-    {
-      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
     },
     {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
@@ -382,13 +372,23 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Suspected insiders make over $1.2 million on Polymarket by betting on U.S.'s Iran strike",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "CoinDesk": 20,
     "Google News": 30,
-    "CoinTelegraph": 20
+    "CoinDesk": 20,
+    "CoinTelegraph": 20,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -572,10 +572,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-01T20:07:14.481352+00:00",
+      "ts": 1772395634,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T18:49:18.962512+00:00",
-    "updated_ts": 1772390958
+    "updated_at": "2026-03-01T20:07:14.481425+00:00",
+    "updated_ts": 1772395634
   }
 }
