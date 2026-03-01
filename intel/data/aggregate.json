@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 17.4,
+        "age_min": 3.5,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 11.2,
+        "age_min": 26.3,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 33.2,
+        "age_min": 48.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 28.9,
+        "age_min": 43.9,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -45,
+        "score": -42,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 33.0,
+        "age_min": 11.0,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 37 articles, score=-320"
+          "reason": "News sentiment: 36 articles, score=-230"
         },
         {
           "bias": "neutral",
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 19 articles, score=-170"
+          "reason": "News sentiment: 18 articles, score=-170"
         },
         {
           "bias": "neutral",
@@ -121,7 +121,7 @@
     },
     {
       "type": "news",
-      "title": "Bitcoin price crash today: $128B wiped out in 1 hour as Israel strikes Iran \u2014 is BTC recovery now on a dan - The Economic Times",
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
@@ -129,9 +129,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-01T10:40:22.673529+00:00",
+  "timestamp": "2026-03-01T10:55:26.558985+00:00",
   "_meta": {
-    "updated_at": "2026-03-01T10:40:22.674378+00:00",
-    "updated_ts": 1772361622
+    "updated_at": "2026-03-01T10:55:26.559746+00:00",
+    "updated_ts": 1772362526
   }
 }
