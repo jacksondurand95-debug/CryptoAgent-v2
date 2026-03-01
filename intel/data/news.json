@@ -267,7 +267,7 @@
       "coins": []
     },
     {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -399,9 +399,9 @@
     }
   ],
   "sources": {
-    "CoinDesk": 20,
     "Decrypt": 20,
     "Google News": 30,
+    "CoinDesk": 20,
     "CoinTelegraph": 20
   },
   "history": [
@@ -537,10 +537,17 @@
       "score": -41,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-01T12:52:13.819928+00:00",
+      "ts": 1772369533,
+      "score": -41,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T12:10:23.655931+00:00",
-    "updated_ts": 1772367023
+    "updated_at": "2026-03-01T12:52:13.820032+00:00",
+    "updated_ts": 1772369533
   }
 }
