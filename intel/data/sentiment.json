@@ -69,57 +69,57 @@
         "score": 0
       },
       {
-        "name": "River",
-        "symbol": "RIVER",
-        "market_cap_rank": 136,
-        "score": 1
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 2
-      },
-      {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 110,
-        "score": 3
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 143,
-        "score": 4
+        "score": 1
       },
       {
         "name": "PAX Gold",
         "symbol": "PAXG",
         "market_cap_rank": 37,
-        "score": 5
+        "score": 2
       },
       {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 214,
-        "score": 6
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 143,
+        "score": 3
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 7
+        "score": 4
       },
       {
-        "name": "WAR",
-        "symbol": "WAR",
-        "market_cap_rank": 864,
-        "score": 8
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 214,
+        "score": 5
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
+        "score": 6
+      },
+      {
+        "name": "River",
+        "symbol": "RIVER",
+        "market_cap_rank": 137,
+        "score": 7
+      },
+      {
+        "name": "Hedera",
+        "symbol": "HBAR",
+        "market_cap_rank": 26,
+        "score": 8
+      },
+      {
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 159,
         "score": 9
       }
     ],
@@ -431,10 +431,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T23:11:49.631986+00:00",
+      "ts": 1772406709,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T22:10:27.126950+00:00",
-    "updated_ts": 1772403027
+    "updated_at": "2026-03-01T23:11:49.632014+00:00",
+    "updated_ts": 1772406709
   }
 }
