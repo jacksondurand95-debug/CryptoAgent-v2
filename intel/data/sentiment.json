@@ -69,21 +69,21 @@
         "score": 0
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 110,
-        "score": 1
-      },
-      {
         "name": "River",
         "symbol": "RIVER",
         "market_cap_rank": 136,
-        "score": 2
+        "score": 1
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
+        "score": 2
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 110,
         "score": 3
       },
       {
@@ -111,21 +111,22 @@
         "score": 7
       },
       {
-        "name": "Kinesis Silver",
-        "symbol": "KAG",
-        "market_cap_rank": 885,
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 864,
         "score": 8
       },
       {
-        "name": "Pepe",
-        "symbol": "PEPE",
-        "market_cap_rank": 54,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL"
+      "SOL",
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -423,10 +424,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T22:10:27.126916+00:00",
+      "ts": 1772403027,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T22:06:14.204944+00:00",
-    "updated_ts": 1772402774
+    "updated_at": "2026-03-01T22:10:27.126950+00:00",
+    "updated_ts": 1772403027
   }
 }
