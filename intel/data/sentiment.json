@@ -81,27 +81,27 @@
         "score": 2
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 3
-      },
-      {
         "name": "PAX Gold",
         "symbol": "PAXG",
         "market_cap_rank": 38,
-        "score": 4
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 5
+        "score": 3
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
+        "score": 4
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 5
+      },
+      {
+        "name": "Aethir",
+        "symbol": "ATH",
+        "market_cap_rank": 237,
         "score": 6
       },
       {
@@ -111,21 +111,20 @@
         "score": 7
       },
       {
-        "name": "LayerZero",
-        "symbol": "ZRO",
-        "market_cap_rank": 116,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 150,
         "score": 8
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 153,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 113,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL",
       "ETH"
     ],
     "market_attention": "high"
@@ -326,10 +325,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T13:22:08.087052+00:00",
+      "ts": 1772371328,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T12:18:15.447261+00:00",
-    "updated_ts": 1772367495
+    "updated_at": "2026-03-01T13:22:08.087082+00:00",
+    "updated_ts": 1772371328
   }
 }
