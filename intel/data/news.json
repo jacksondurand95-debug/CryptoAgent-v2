@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -42,
+    "score": -41,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 19,
+    "scored_articles": 17,
     "positive_score": 120,
-    "negative_score": -800
+    "negative_score": -740
   },
   "alpha_events": [
     {
@@ -100,13 +100,13 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
+      "articles": 35,
       "score": -230,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 18,
-      "score": -170,
+      "articles": 16,
+      "score": -140,
       "bias": "bearish"
     },
     "SOL": {
@@ -251,16 +251,6 @@
       "coins": []
     },
     {
-      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -277,15 +267,7 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
+      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -396,12 +378,30 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Oil-linked futures on Hyperliquid surge 5% after U.S.-Israel strike on Iran",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin nears $63,000 as U.S. and Israel launch strikes on Iran",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "Google News": 30,
-    "Decrypt": 20,
     "CoinDesk": 20,
+    "Decrypt": 20,
+    "Google News": 30,
     "CoinTelegraph": 20
   },
   "history": [
@@ -530,10 +530,17 @@
       "score": -42,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-01T12:10:23.655859+00:00",
+      "ts": 1772367023,
+      "score": -41,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T10:44:26.071164+00:00",
-    "updated_ts": 1772361866
+    "updated_at": "2026-03-01T12:10:23.655931+00:00",
+    "updated_ts": 1772367023
   }
 }

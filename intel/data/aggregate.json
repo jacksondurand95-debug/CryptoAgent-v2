@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 2.5,
+        "age_min": 1.1,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 38.1,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 118.7,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 55.5,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -42,
+        "score": -41,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 81.5,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 36 articles, score=-230"
+          "reason": "News sentiment: 35 articles, score=-230"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (2 large txs)"
+          "reason": "BTC whale activity normal (1 large txs)"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 18 articles, score=-170"
+          "reason": "News sentiment: 16 articles, score=-140"
         },
         {
           "bias": "neutral",
@@ -129,9 +129,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-01T12:05:53.932959+00:00",
+  "timestamp": "2026-03-01T12:10:23.801494+00:00",
   "_meta": {
-    "updated_at": "2026-03-01T12:05:53.933777+00:00",
-    "updated_ts": 1772366753
+    "updated_at": "2026-03-01T12:10:23.802147+00:00",
+    "updated_ts": 1772367023
   }
 }

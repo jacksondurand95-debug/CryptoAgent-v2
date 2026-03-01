@@ -75,51 +75,51 @@
         "score": 1
       },
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 229,
         "score": 2
       },
       {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 228,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
         "score": 3
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 4
-      },
-      {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
-        "score": 5
       },
       {
         "name": "PAX Gold",
         "symbol": "PAXG",
         "market_cap_rank": 38,
-        "score": 6
+        "score": 4
       },
       {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 54,
-        "score": 7
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 5
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
+        "score": 6
+      },
+      {
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 35,
+        "score": 7
+      },
+      {
+        "name": "LayerZero",
+        "symbol": "ZRO",
+        "market_cap_rank": 115,
         "score": 8
       },
       {
-        "name": "Sui",
-        "symbol": "SUI",
-        "market_cap_rank": 30,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 153,
         "score": 9
       }
     ],
@@ -312,10 +312,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T12:09:50.151655+00:00",
+      "ts": 1772366990,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T11:10:22.039321+00:00",
-    "updated_ts": 1772363422
+    "updated_at": "2026-03-01T12:09:50.151683+00:00",
+    "updated_ts": 1772366990
   }
 }
