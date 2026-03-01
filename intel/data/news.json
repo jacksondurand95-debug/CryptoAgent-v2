@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -45,
+    "score": -42,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
     "scored_articles": 19,
-    "positive_score": 80,
-    "negative_score": -850
+    "positive_score": 120,
+    "negative_score": -800
   },
   "alpha_events": [
     {
@@ -59,19 +59,6 @@
       ]
     },
     {
-      "title": "Bitcoin price crash today: $128B wiped out in 1 hour as Israel strikes Iran \u2014 is BTC recovery now on a dan - The Economic Times",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "crash"
-      ]
-    },
-    {
       "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
       "source": "Google News",
       "sentiment": "bearish",
@@ -113,12 +100,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 37,
-      "score": -320,
+      "articles": 36,
+      "score": -230,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 19,
+      "articles": 18,
       "score": -170,
       "bias": "bearish"
     },
@@ -164,16 +151,6 @@
       "score": -50,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Bitcoin price crash today: $128B wiped out in 1 hour as Israel strikes Iran \u2014 is BTC recovery now on a dan - The Economic Times",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
     },
     {
       "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
@@ -240,6 +217,16 @@
       "source": "Google News",
       "sentiment": "bearish",
       "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -412,10 +399,10 @@
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
+    "Google News": 30,
     "Decrypt": 20,
     "CoinDesk": 20,
-    "Google News": 30
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -536,10 +523,17 @@
       "score": -45,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-01T10:44:26.071090+00:00",
+      "ts": 1772361866,
+      "score": -42,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T10:07:25.754038+00:00",
-    "updated_ts": 1772359645
+    "updated_at": "2026-03-01T10:44:26.071164+00:00",
+    "updated_ts": 1772361866
   }
 }
