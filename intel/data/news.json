@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -42,
+    "score": -45,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 18,
-    "positive_score": 120,
-    "negative_score": -790
+    "scored_articles": 19,
+    "positive_score": 80,
+    "negative_score": -850
   },
   "alpha_events": [
     {
@@ -113,17 +113,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
-      "score": -280,
+      "articles": 37,
+      "score": -320,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 15,
-      "score": -140,
+      "articles": 19,
+      "score": -170,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 9,
+      "articles": 8,
       "score": 0,
       "bias": "neutral"
     }
@@ -246,16 +246,6 @@
       ]
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -274,7 +264,25 @@
       "coins": []
     },
     {
+      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -290,7 +298,7 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -401,21 +409,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Oil-linked futures on Hyperliquid surge 5% after U.S.-Israel strike on Iran",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
+    "CoinTelegraph": 20,
     "Decrypt": 20,
     "CoinDesk": 20,
-    "Google News": 30,
-    "CoinTelegraph": 20
+    "Google News": 30
   },
   "history": [
     {
@@ -529,10 +529,17 @@
       "score": -42,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-01T10:07:25.753968+00:00",
+      "ts": 1772359645,
+      "score": -45,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T08:46:47.315179+00:00",
-    "updated_ts": 1772354807
+    "updated_at": "2026-03-01T10:07:25.754038+00:00",
+    "updated_ts": 1772359645
   }
 }

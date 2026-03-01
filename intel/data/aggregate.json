@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 8,
+    "score": 16,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 4.7,
+        "age_min": 1.1,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 0,
-        "bias": "neutral",
+        "score": 31,
+        "bias": "bullish",
         "strength": "weak",
-        "age_min": 28.1,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 108.8,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,32 +36,32 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 42.7,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -42,
+        "score": -45,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 70.6,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -36,
-      "bias": "bearish",
+      "score": 5,
+      "bias": "neutral",
       "signals": 2,
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 36 articles, score=-280"
+          "reason": "News sentiment: 37 articles, score=-320"
         },
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (4 large txs)"
+          "bias": "bullish",
+          "reason": "BTC whale distribution (6 txs) \u2014 accumulation"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 15 articles, score=-140"
+          "reason": "News sentiment: 19 articles, score=-170"
         },
         {
           "bias": "neutral",
@@ -129,9 +129,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-01T09:57:25.374059+00:00",
+  "timestamp": "2026-03-01T10:07:25.896452+00:00",
   "_meta": {
-    "updated_at": "2026-03-01T09:57:25.374832+00:00",
-    "updated_ts": 1772359045
+    "updated_at": "2026-03-01T10:07:25.897076+00:00",
+    "updated_ts": 1772359645
   }
 }

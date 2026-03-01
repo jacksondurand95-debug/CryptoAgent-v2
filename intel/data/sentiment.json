@@ -63,27 +63,27 @@
   "trending": {
     "trending": [
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 228,
         "score": 0
+      },
+      {
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 38,
+        "score": 1
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 1
-      },
-      {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 228,
         "score": 2
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 151,
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 52,
         "score": 3
       },
       {
@@ -93,39 +93,40 @@
         "score": 4
       },
       {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 38,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 5
       },
       {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 51,
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 35,
         "score": 6
       },
       {
-        "name": "LayerZero",
-        "symbol": "ZRO",
-        "market_cap_rank": 116,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 150,
         "score": 7
       },
       {
-        "name": "Espresso",
-        "symbol": "ESP",
-        "market_cap_rank": 349,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 47,
         "score": 8
       },
       {
-        "name": "Terra Luna Classic",
-        "symbol": "LUNC",
-        "market_cap_rank": 153,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "SOL",
-      "BTC"
+      "BTC",
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -290,10 +291,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T10:06:50.148054+00:00",
+      "ts": 1772359610,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T09:14:41.298771+00:00",
-    "updated_ts": 1772356481
+    "updated_at": "2026-03-01T10:06:50.148085+00:00",
+    "updated_ts": 1772359610
   }
 }
