@@ -4,9 +4,9 @@
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 18,
+    "scored_articles": 17,
     "positive_score": 80,
-    "negative_score": -760
+    "negative_score": -730
   },
   "alpha_events": [
     {
@@ -92,8 +92,8 @@
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 18,
-      "score": -170,
+      "articles": 16,
+      "score": -140,
       "bias": "bearish"
     },
     "SOL": {
@@ -218,16 +218,6 @@
       "coins": []
     },
     {
-      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -264,6 +254,24 @@
       "source": "Google News",
       "sentiment": "neutral",
       "score": -10,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Stablecoin yield rewards (likely won't be) banned under OCC proposal: State of Crypto",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin market bottom may be nearing, at least if measured against gold, analyst says",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
       "importance": "low",
       "coins": [
         "BTC"
@@ -373,21 +381,11 @@
         "BTC",
         "ETH"
       ]
-    },
-    {
-      "title": "Bitcoin could see further downside risks as Iran attacks U.S. bases across Middle East",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "Decrypt": 20,
+    "CoinTelegraph": 20,
     "CoinDesk": 20,
     "Google News": 30
   },
@@ -545,10 +543,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-01T16:08:00.259856+00:00",
+      "ts": 1772381280,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T14:44:02.435883+00:00",
-    "updated_ts": 1772376242
+    "updated_at": "2026-03-01T16:08:00.259934+00:00",
+    "updated_ts": 1772381280
   }
 }
