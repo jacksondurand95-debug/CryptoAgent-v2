@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -44,
+    "score": -42,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 17,
-    "positive_score": 80,
+    "scored_articles": 18,
+    "positive_score": 120,
     "negative_score": -790
   },
   "alpha_events": [
@@ -114,11 +114,11 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 36,
-      "score": -320,
+      "score": -280,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 16,
+      "articles": 15,
       "score": -140,
       "bias": "bearish"
     },
@@ -240,6 +240,16 @@
       "source": "Google News",
       "sentiment": "bearish",
       "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -399,23 +409,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Bitcoin nears $63,000 as U.S. and Israel launch strikes on Iran",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Google News": 30,
+    "Decrypt": 20,
     "CoinDesk": 20,
-    "CoinTelegraph": 20,
-    "Decrypt": 20
+    "Google News": 30,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -522,10 +522,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-01T08:46:47.315111+00:00",
+      "ts": 1772354807,
+      "score": -42,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T08:08:52.143998+00:00",
-    "updated_ts": 1772352532
+    "updated_at": "2026-03-01T08:46:47.315179+00:00",
+    "updated_ts": 1772354807
   }
 }
