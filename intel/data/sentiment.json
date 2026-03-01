@@ -63,69 +63,70 @@
   "trending": {
     "trending": [
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 0
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
         "score": 1
       },
       {
         "name": "Grass",
         "symbol": "GRASS",
-        "market_cap_rank": 226,
+        "market_cap_rank": 225,
         "score": 2
       },
       {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 38,
         "score": 3
-      },
-      {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 156,
-        "score": 4
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 150,
-        "score": 5
-      },
-      {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 44,
-        "score": 6
-      },
-      {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 303,
-        "score": 7
-      },
-      {
-        "name": "Virtuals Protocol",
-        "symbol": "VIRTUAL",
-        "market_cap_rank": 102,
-        "score": 8
+        "market_cap_rank": 155,
+        "score": 4
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 5
+      },
+      {
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 156,
+        "score": 6
+      },
+      {
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 35,
+        "score": 7
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
+        "score": 8
+      },
+      {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 51,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL"
+      "SOL",
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -262,10 +263,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T07:20:52.028030+00:00",
+      "ts": 1772349652,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T06:24:39.592444+00:00",
-    "updated_ts": 1772346279
+    "updated_at": "2026-03-01T07:20:52.028058+00:00",
+    "updated_ts": 1772349652
   }
 }
