@@ -7,7 +7,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC whale activity normal (4 large txs)"
+        "reason": "BTC whale activity normal (5 large txs)"
       },
       {
         "bias": "neutral",
@@ -33,22 +33,22 @@
         "time": 1772344076
       },
       {
-        "hash": "5d1c426277765553...",
-        "btc": 370.65,
-        "type": "consolidation",
-        "inputs": 21,
-        "outputs": 1,
-        "block": 938827,
-        "time": 1772343711
-      },
-      {
-        "hash": "ef177eeacfb34f2e...",
-        "btc": 300.53,
+        "hash": "ae065ac58fc80588...",
+        "btc": 299.41,
         "type": "transfer",
         "inputs": 3,
         "outputs": 2,
-        "block": 938827,
-        "time": 1772343423
+        "block": 938830,
+        "time": 1772345298
+      },
+      {
+        "hash": "a534d8236f586055...",
+        "btc": 236.68,
+        "type": "consolidation",
+        "inputs": 11,
+        "outputs": 2,
+        "block": 938830,
+        "time": 1772345204
       },
       {
         "hash": "9ed58bcd340bfdfc...",
@@ -58,10 +58,19 @@
         "outputs": 2,
         "block": 938828,
         "time": 1772344120
+      },
+      {
+        "hash": "3c7cec04492f2474...",
+        "btc": 147.0,
+        "type": "transfer",
+        "inputs": 2,
+        "outputs": 2,
+        "block": 938830,
+        "time": 1772344929
       }
     ],
-    "total_whale_btc": 5347.93,
-    "count": 4,
+    "total_whale_btc": 5359.84,
+    "count": 5,
     "consolidations": 1,
     "distributions": 0,
     "blocks_scanned": 3,
@@ -69,7 +78,7 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "BTC whale activity normal (4 large txs)"
+      "reason": "BTC whale activity normal (5 large txs)"
     }
   },
   "eth_whales": {
@@ -199,10 +208,16 @@
       "ts": 1772345845,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-01T06:31:27.026257+00:00",
+      "ts": 1772346687,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T06:17:25.771167+00:00",
-    "updated_ts": 1772345845
+    "updated_at": "2026-03-01T06:31:27.026288+00:00",
+    "updated_ts": 1772346687
   }
 }
