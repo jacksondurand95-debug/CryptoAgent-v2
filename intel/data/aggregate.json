@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 10,
+    "score": 8,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.8,
-    "available_sources": 4,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 22.2,
-        "effective_weight": 0.9
+        "age_min": 1.1,
+        "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 19.5,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 77.8,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 27.5,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -44,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 51.5,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -61,7 +61,7 @@
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (2 large txs)"
+          "reason": "BTC whale activity normal (4 large txs)"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 15 articles, score=-140"
+          "reason": "News sentiment: 14 articles, score=-140"
         },
         {
           "bias": "neutral",
@@ -129,9 +129,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-01T05:58:53.191756+00:00",
+  "timestamp": "2026-03-01T06:17:50.490173+00:00",
   "_meta": {
-    "updated_at": "2026-03-01T05:58:53.192511+00:00",
-    "updated_ts": 1772344733
+    "updated_at": "2026-03-01T06:17:50.490805+00:00",
+    "updated_ts": 1772345870
   }
 }
