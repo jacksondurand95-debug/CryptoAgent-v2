@@ -69,21 +69,21 @@
         "score": 0
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 1
-      },
-      {
         "name": "Grass",
         "symbol": "GRASS",
         "market_cap_rank": 229,
-        "score": 2
+        "score": 1
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 2
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 3
       },
       {
@@ -113,7 +113,7 @@
       {
         "name": "LayerZero",
         "symbol": "ZRO",
-        "market_cap_rank": 115,
+        "market_cap_rank": 116,
         "score": 8
       },
       {
@@ -319,10 +319,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T12:18:15.447232+00:00",
+      "ts": 1772367495,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T12:09:50.151683+00:00",
-    "updated_ts": 1772366990
+    "updated_at": "2026-03-01T12:18:15.447261+00:00",
+    "updated_ts": 1772367495
   }
 }
