@@ -63,63 +63,63 @@
   "trending": {
     "trending": [
       {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 226,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 0
+      },
+      {
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 229,
         "score": 1
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 2
-      },
-      {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
-        "score": 3
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 4
+        "score": 2
       },
       {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 44,
-        "score": 5
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
-        "score": 6
-      },
-      {
-        "name": "XRP",
-        "symbol": "XRP",
-        "market_cap_rank": 4,
-        "score": 7
-      },
-      {
-        "name": "Polkadot",
-        "symbol": "DOT",
-        "market_cap_rank": 36,
-        "score": 8
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 3
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
         "market_cap_rank": 113,
+        "score": 4
+      },
+      {
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 35,
+        "score": 5
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
+        "score": 6
+      },
+      {
+        "name": "Dogecoin",
+        "symbol": "DOGE",
+        "market_cap_rank": 9,
+        "score": 7
+      },
+      {
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 46,
+        "score": 8
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 49,
         "score": 9
       }
     ],
@@ -227,10 +227,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-01T04:40:45.565169+00:00",
+      "ts": 1772340045,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T03:13:38.385337+00:00",
-    "updated_ts": 1772334818
+    "updated_at": "2026-03-01T04:40:45.565199+00:00",
+    "updated_ts": 1772340045
   }
 }

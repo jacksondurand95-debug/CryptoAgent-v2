@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -50,
+    "score": -47,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 14,
-    "positive_score": 0,
-    "negative_score": -740
+    "scored_articles": 17,
+    "positive_score": 40,
+    "negative_score": -820
   },
   "alpha_events": [
     {
@@ -85,6 +85,19 @@
       ]
     },
     {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
@@ -100,8 +113,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
-      "score": -350,
+      "articles": 36,
+      "score": -360,
       "bias": "bearish"
     },
     "ETH": {
@@ -173,6 +186,16 @@
       ]
     },
     {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
@@ -180,6 +203,16 @@
       "importance": "high",
       "coins": [
         "ETH"
+      ]
+    },
+    {
+      "title": "Bitcoin tops $68,000 after Iran confirms leader killed in U.S., Israel airstrikes",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -229,6 +262,14 @@
       "coins": []
     },
     {
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
@@ -237,11 +278,19 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "U.S.-Iran war attracts $600 million bets on Polymarket",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -357,49 +406,13 @@
         "BTC",
         "SOL"
       ]
-    },
-    {
-      "title": "U.S. Senate Democrats asked Treasury, DOJ to probe Binance's illicit finance controls",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Coinbase\u2019s head of litigation says states are 'gaslighting' on prediction markets",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Citi and Morgan Stanley expand bitcoin and crypto custody, trading and tokenization efforts",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin's rebound cancelled as U.S. stocks fall, gold surges, amid mounting macro risks",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
+    "Decrypt": 20,
     "CoinDesk": 20,
-    "CoinTelegraph": 20,
     "Google News": 30,
-    "Decrypt": 20
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -471,10 +484,17 @@
       "score": -50,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-01T04:41:22.214917+00:00",
+      "ts": 1772340082,
+      "score": -47,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T03:33:30.243460+00:00",
-    "updated_ts": 1772336010
+    "updated_at": "2026-03-01T04:41:22.214981+00:00",
+    "updated_ts": 1772340082
   }
 }

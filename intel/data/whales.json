@@ -24,46 +24,46 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "976059da14422d32...",
-        "btc": 354.09,
+        "hash": "be180232019fc4ac...",
+        "btc": 4527.83,
+        "type": "transfer",
+        "inputs": 2,
+        "outputs": 2,
+        "block": 938817,
+        "time": 1772339513
+      },
+      {
+        "hash": "fd1d00a86eb31d6f...",
+        "btc": 150.0,
+        "type": "transfer",
+        "inputs": 1,
+        "outputs": 2,
+        "block": 938816,
+        "time": 1772339322
+      },
+      {
+        "hash": "e4293d29fafde2d9...",
+        "btc": 104.72,
+        "type": "transfer",
+        "inputs": 4,
+        "outputs": 3,
+        "block": 938818,
+        "time": 1772339694
+      },
+      {
+        "hash": "8d21c69411f4d8ae...",
+        "btc": 104.56,
         "type": "consolidation",
-        "inputs": 21,
-        "outputs": 1,
-        "block": 938802,
-        "time": 1772332981
-      },
-      {
-        "hash": "27386ed1cff646a3...",
-        "btc": 137.53,
-        "type": "transfer",
-        "inputs": 1,
+        "inputs": 10,
         "outputs": 2,
-        "block": 938804,
-        "time": 1772333733
-      },
-      {
-        "hash": "10af940274cdb6df...",
-        "btc": 133.97,
-        "type": "transfer",
-        "inputs": 1,
-        "outputs": 2,
-        "block": 938802,
-        "time": 1772332176
-      },
-      {
-        "hash": "7073cd29621711bb...",
-        "btc": 119.79,
-        "type": "distribution",
-        "inputs": 1,
-        "outputs": 13,
-        "block": 938802,
-        "time": 1772332404
+        "block": 938816,
+        "time": 1772339252
       }
     ],
-    "total_whale_btc": 745.38,
+    "total_whale_btc": 4887.11,
     "count": 4,
     "consolidations": 1,
-    "distributions": 1,
+    "distributions": 0,
     "blocks_scanned": 3,
     "signal": {
       "bias": "neutral",
@@ -175,10 +175,16 @@
       "ts": 1772335384,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-01T04:40:53.697762+00:00",
+      "ts": 1772340053,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T03:23:04.972167+00:00",
-    "updated_ts": 1772335384
+    "updated_at": "2026-03-01T04:40:53.697793+00:00",
+    "updated_ts": 1772340053
   }
 }
