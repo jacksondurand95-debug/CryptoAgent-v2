@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 8,
+    "score": 10,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 1.0,
-    "available_sources": 5,
+    "confidence": 0.8,
+    "available_sources": 4,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "fresh",
+        "status": "stale",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 2.4,
-        "effective_weight": 3.0
+        "age_min": 29.0,
+        "effective_weight": 0.9
       },
       "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 11.7,
+        "age_min": 38.3,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 28.7,
+        "age_min": 55.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 23.7,
+        "age_min": 5.0,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -44,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 2.4,
+        "age_min": 29.0,
         "effective_weight": 1.0
       }
     }
@@ -129,9 +129,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-01T05:09:45.203053+00:00",
+  "timestamp": "2026-03-01T05:36:22.558078+00:00",
   "_meta": {
-    "updated_at": "2026-03-01T05:09:45.203816+00:00",
-    "updated_ts": 1772341785
+    "updated_at": "2026-03-01T05:36:22.558827+00:00",
+    "updated_ts": 1772343382
   }
 }
