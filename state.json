@@ -1,5 +1,23 @@
 {
-  "positions": [],
+  "positions": [
+    {
+      "pair": "BTC-USD",
+      "side": "long",
+      "entry_price": 69438.05,
+      "qty": 0.0017702814897480052,
+      "usd_amount": 122.92489459919648,
+      "stop_loss": 65091.39,
+      "take_profit": 78125.19,
+      "initial_stop": 65091.39,
+      "initial_risk": 4346.6600000000035,
+      "atr": 1737.84,
+      "highest_price": 69438.05,
+      "lowest_price": 69438.05,
+      "trailing_active": false,
+      "opened_at": 1772488735.3722668,
+      "opened_at_str": "2026-03-02 21:58 UTC"
+    }
+  ],
   "trades": [
     {
       "pair": "BTC-USD",
@@ -56,24 +74,8 @@
       "duration_min": 145.2
     }
   ],
-  "pending_orders": [
-    {
-      "id": "8047c41c-796f-43bb-90b6-80a3734ecd90",
-      "client_order_id": "6b8ac21c-ddf7-43f2-8e33-02cfaa303cff",
-      "pair": "BTC-USD",
-      "side": "buy",
-      "type": "limit",
-      "price": 69438.05,
-      "qty": 0.0017702814897480052,
-      "usd": 122.92489459919648,
-      "placed_at": 1772487844.7664287,
-      "status": "pending",
-      "stop_loss": 65091.39,
-      "take_profit": 78125.19,
-      "atr": 1737.84
-    }
-  ],
+  "pending_orders": [],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772487848.2127624
+  "last_updated": 1772488741.9495862
 }
