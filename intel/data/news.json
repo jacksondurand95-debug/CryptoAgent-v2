@@ -244,7 +244,7 @@
       ]
     },
     {
-      "title": "HYPE jumps 5% as token burn offsets $316 Million unlock, JUP gains weekly on supply freeze",
+      "title": "Hyperliquid's HYPE token jumps 5% as Iran war brings windfall revenue, JUP gains on supply freeze",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -367,10 +367,10 @@
     }
   ],
   "sources": {
+    "Decrypt": 20,
     "CoinDesk": 20,
     "Google News": 30,
-    "CoinTelegraph": 20,
-    "Decrypt": 20
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -617,10 +617,17 @@
       "score": -35,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-02T05:05:27.253152+00:00",
+      "ts": 1772427927,
+      "score": -35,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T04:37:46.500736+00:00",
-    "updated_ts": 1772426266
+    "updated_at": "2026-03-02T05:05:27.253226+00:00",
+    "updated_ts": 1772427927
   }
 }
