@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 15.4,
+        "age_min": 9.5,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 15.4,
+        "age_min": 36.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 29.1,
+        "age_min": 50.1,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 23.9,
+        "age_min": 44.9,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -41,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 28.8,
+        "age_min": 18.2,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 36 articles, score=-300"
+          "reason": "News sentiment: 35 articles, score=-260"
         },
         {
           "bias": "neutral",
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 13 articles, score=-170"
+          "reason": "News sentiment: 12 articles, score=-170"
         },
         {
           "bias": "neutral",
@@ -81,15 +81,9 @@
       ]
     },
     "SOL": {
-      "score": 40,
-      "bias": "bullish",
-      "signals": 1,
-      "details": [
-        {
-          "bias": "bullish",
-          "reason": "News sentiment: 7 articles, score=40"
-        }
-      ]
+      "score": 0,
+      "bias": "neutral",
+      "signals": 0
     }
   },
   "alpha_events": [
@@ -137,9 +131,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-02T14:48:40.241675+00:00",
+  "timestamp": "2026-03-02T15:09:39.323592+00:00",
   "_meta": {
-    "updated_at": "2026-03-02T14:48:40.242305+00:00",
-    "updated_ts": 1772462920
+    "updated_at": "2026-03-02T15:09:39.324409+00:00",
+    "updated_ts": 1772464179
   }
 }
