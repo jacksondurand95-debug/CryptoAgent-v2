@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 9,
+    "score": 0,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 18.7,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 0,
-        "bias": "neutral",
+        "score": -31,
+        "bias": "bearish",
         "strength": "weak",
-        "age_min": 25.4,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 100.4,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,32 +36,32 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 33.8,
+        "age_min": 0.7,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -29,
+        "score": -41,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 74.7,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -36,
+      "score": -46,
       "bias": "bearish",
       "signals": 2,
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 37 articles, score=-120"
+          "reason": "News sentiment: 36 articles, score=-300"
         },
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (11 large txs)"
+          "bias": "bearish",
+          "reason": "BTC whale consolidation (5 txs) \u2014 potential selling"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 13 articles, score=-120"
+          "reason": "News sentiment: 13 articles, score=-170"
         },
         {
           "bias": "neutral",
@@ -105,6 +105,13 @@
     },
     {
       "type": "news",
+      "title": "White hat helps recover $1.8M after $2.3M Foom Cash exploit",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "type": "news",
       "title": "February crypto losses hit lowest level since March 2025, says PeckShield",
       "sentiment": "bearish",
       "importance": "high",
@@ -112,26 +119,27 @@
     },
     {
       "type": "news",
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "title": "Will Bitcoin crash if oil prices hit $100 per barrel?",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Morning Minute: Bitcoin Crashes, Rebounds as Iran War Begins",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "type": "news",
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
     }
   ],
-  "timestamp": "2026-03-02T14:07:53.944389+00:00",
+  "timestamp": "2026-03-02T14:19:52.550143+00:00",
   "_meta": {
-    "updated_at": "2026-03-02T14:07:53.944839+00:00",
-    "updated_ts": 1772460473
+    "updated_at": "2026-03-02T14:19:52.550756+00:00",
+    "updated_ts": 1772461192
   }
 }

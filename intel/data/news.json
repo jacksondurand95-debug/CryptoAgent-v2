@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -29,
+    "score": -41,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 190,
-    "negative_score": -460
+    "scored_articles": 18,
+    "positive_score": 110,
+    "negative_score": -650
   },
   "alpha_events": [
     {
@@ -24,6 +24,17 @@
       ]
     },
     {
+      "title": "White hat helps recover $1.8M after $2.3M Foom Cash exploit",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
       "title": "February crypto losses hit lowest level since March 2025, says PeckShield",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -32,6 +43,33 @@
       "coins": [],
       "keywords": [
         "hack"
+      ]
+    },
+    {
+      "title": "Will Bitcoin crash if oil prices hit $100 per barrel?",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
+      "title": "Morning Minute: Bitcoin Crashes, Rebounds as Iran War Begins",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "crash"
       ]
     },
     {
@@ -63,13 +101,13 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 37,
-      "score": -120,
+      "articles": 36,
+      "score": -300,
       "bias": "bearish"
     },
     "ETH": {
       "articles": 13,
-      "score": -120,
+      "score": -170,
       "bias": "bearish"
     },
     "SOL": {
@@ -91,12 +129,41 @@
       ]
     },
     {
+      "title": "White hat helps recover $1.8M after $2.3M Foom Cash exploit",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
       "title": "February crypto losses hit lowest level since March 2025, says PeckShield",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -60,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Will Bitcoin crash if oil prices hit $100 per barrel?",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "title": "Morning Minute: Bitcoin Crashes, Rebounds as Iran War Begins",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
@@ -137,16 +204,6 @@
       "coins": []
     },
     {
-      "title": "Bitcoin tops $68,000 after Iran confirms leader killed in U.S., Israel airstrikes",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Kalshi founder provides update on Iran's Khamenei market carveout",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
@@ -167,10 +224,10 @@
       ]
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
+      "title": "Here\u2019s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -181,16 +238,6 @@
       "source": "CoinTelegraph",
       "sentiment": "neutral",
       "score": 30,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Here\u2019s what happened in crypto today",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -227,6 +274,68 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "SEC and CFTC relaunch \u2018Project Crypto\u2019 to harmonize digital asset regulation - JD Supra",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "SOL"
+      ]
+    },
+    {
+      "title": "Iranian crypto outflows jump 700% minutes after U.S.-Israeli airstrikes, Elliptic says",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Turkey's ruling party unveils 10% crypto income tax proposal",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Strategy purchased more than $200 million in bitcoin last week",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "South Korea investigates seed phrase leak in photo leading to $4.8 million crypto theft from tax authority",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Anthony Pompliano\u2019s ProCap Financial buys 450 bitcoin, steps up share buybacks",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Battered bitcoin could find solace in war-led 'debasement' trade",
@@ -284,88 +393,12 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin losing trillions in value hasn't stopped traditional giants' interest in digital assets sector",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Strategy lifts STRC dividend to 11.5% as MSTR extends monthly losing streak to 8",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Stablecoin yield rewards (likely won't be) banned under OCC proposal: State of Crypto",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin market bottom may be nearing, at least if measured against gold, analyst says",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "SpaceX\u2019s $780 million bitcoin stack now down to about $545 million ahead of IPO filing",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Ether, solana, xrp surge up to 10% as majors recover Saturday's war-driven losses",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH",
-        "SOL"
-      ]
-    },
-    {
-      "title": "Polymarket attracts record trading 'world' volumes as U.S.-Iran bets top $529 million",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Here's how bitcoin's price rise could be fueled by job-stealing AI software",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
+    "Decrypt": 20,
     "CoinDesk": 20,
     "Google News": 30,
-    "Decrypt": 20,
     "CoinTelegraph": 20
   },
   "history": [
@@ -676,10 +709,17 @@
       "score": -29,
       "bias": "bearish",
       "alpha_count": 4
+    },
+    {
+      "timestamp": "2026-03-02T14:19:52.406759+00:00",
+      "ts": 1772461192,
+      "score": -41,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T12:53:11.141171+00:00",
-    "updated_ts": 1772455991
+    "updated_at": "2026-03-02T14:19:52.406848+00:00",
+    "updated_ts": 1772461192
   }
 }

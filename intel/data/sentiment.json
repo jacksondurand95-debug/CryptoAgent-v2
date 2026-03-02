@@ -63,69 +63,68 @@
   "trending": {
     "trending": [
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 109,
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 195,
         "score": 0
       },
       {
         "name": "Fabric Protocol",
         "symbol": "ROBO",
-        "market_cap_rank": 256,
+        "market_cap_rank": 253,
         "score": 1
-      },
-      {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 195,
-        "score": 2
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 3
+        "score": 2
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
         "market_cap_rank": 140,
-        "score": 4
-      },
-      {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 37,
-        "score": 5
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 6
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 7
+        "score": 3
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
+        "score": 4
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 5
+      },
+      {
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
+        "score": 6
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
+        "score": 7
+      },
+      {
+        "name": "Uniswap",
+        "symbol": "UNI",
+        "market_cap_rank": 39,
         "score": 8
       },
       {
-        "name": "Ondo",
-        "symbol": "ONDO",
-        "market_cap_rank": 59,
+        "name": "Espresso",
+        "symbol": "ESP",
+        "market_cap_rank": 366,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL",
       "ETH"
     ],
     "market_attention": "high"
@@ -578,10 +577,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T14:19:12.918477+00:00",
+      "ts": 1772461152,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T13:34:05.563217+00:00",
-    "updated_ts": 1772458445
+    "updated_at": "2026-03-02T14:19:12.918507+00:00",
+    "updated_ts": 1772461152
   }
 }
