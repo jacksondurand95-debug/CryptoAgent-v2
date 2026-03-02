@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -46,
+    "score": -43,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
     "scored_articles": 16,
-    "positive_score": 40,
-    "negative_score": -650
+    "positive_score": 80,
+    "negative_score": -590
   },
   "alpha_events": [
     {
@@ -32,17 +32,6 @@
       "coins": [],
       "keywords": [
         "exploit"
-      ]
-    },
-    {
-      "title": "February crypto losses hit lowest level since March 2025, says PeckShield",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "hack"
       ]
     },
     {
@@ -101,8 +90,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 34,
-      "score": -330,
+      "articles": 35,
+      "score": -290,
       "bias": "bearish"
     },
     "ETH": {
@@ -130,14 +119,6 @@
     },
     {
       "title": "White hat helps recover $1.8M after $2.3M Foom Cash exploit",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "February crypto losses hit lowest level since March 2025, says PeckShield",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -60,
@@ -214,6 +195,16 @@
       ]
     },
     {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -262,6 +253,27 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Battle for Bitcoin's soul opens as first block supporting 'clean-up' proposal is mined",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Weekend warriors: How HyperLiquid became retail\u2019s bear market playground",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
     },
     {
       "title": "Crypto world faces growing pressure to relent on stablecoin rewards to win bigger prize",
@@ -371,29 +383,13 @@
         "BTC",
         "SOL"
       ]
-    },
-    {
-      "title": "Hong Kong links up with Shanghai trade authorities to put cargo data on blockchain",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Riot Platforms, Core Scientific earnings, U.S. jobs report: Crypto Week Ahead",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
     "Decrypt": 20,
-    "Google News": 30,
+    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "CoinDesk": 20
+    "Google News": 30
   },
   "history": [
     {
@@ -731,10 +727,17 @@
       "score": -46,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-02T18:16:43.931280+00:00",
+      "ts": 1772475403,
+      "score": -43,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T16:52:37.778398+00:00",
-    "updated_ts": 1772470357
+    "updated_at": "2026-03-02T18:16:43.931387+00:00",
+    "updated_ts": 1772475403
   }
 }
