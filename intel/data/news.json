@@ -101,19 +101,19 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
-      "score": -300,
+      "articles": 35,
+      "score": -260,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 13,
+      "articles": 12,
       "score": -170,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 7,
-      "score": 40,
-      "bias": "bullish"
+      "articles": 6,
+      "score": 0,
+      "bias": "neutral"
     }
   },
   "top_articles": [
@@ -204,20 +204,20 @@
       "coins": []
     },
     {
-      "title": "Kalshi founder provides update on Iran's Khamenei market carveout",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "SOL"
-      ]
-    },
-    {
       "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
       "source": "Google News",
       "sentiment": "bearish",
       "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -281,6 +281,14 @@
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "EU banks\u2019 euro-pegged stablecoin in talks with crypto exchanges to ensure liquidity",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -383,23 +391,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Hyperliquid's HYPE token jumps 5% as Iran war brings windfall revenue, JUP gains on supply freeze",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "CoinDesk": 20,
     "Google News": 30,
-    "CoinTelegraph": 20
+    "CoinTelegraph": 20,
+    "CoinDesk": 20,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -716,10 +714,17 @@
       "score": -41,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-02T14:51:28.908390+00:00",
+      "ts": 1772463088,
+      "score": -41,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T14:19:52.406848+00:00",
-    "updated_ts": 1772461192
+    "updated_at": "2026-03-02T14:51:28.908462+00:00",
+    "updated_ts": 1772463088
   }
 }
