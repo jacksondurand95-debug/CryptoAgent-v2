@@ -8,15 +8,15 @@
   "okx": {
     "BTC": {
       "funding": {
-        "current_pct": -0.0046,
+        "current_pct": -0.0042,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 3022451.2100000195,
-        "usd": 2080050922.7220132,
-        "usd_m": 2080.1
+        "contracts": 3013878.400000019,
+        "usd": 2074877459.574413,
+        "usd_m": 2074.9
       },
       "funding_history": [
         -0.0008,
@@ -33,24 +33,24 @@
       "neg_funding_streak": 1,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 87179655.0,
-        "sell_vol": 49897985.0,
-        "ratio": 1.747,
+        "buy_vol": 78724905.0,
+        "sell_vol": 66891325.0,
+        "ratio": 1.177,
         "aggressive_buyers": true,
         "aggressive_sellers": false
       }
     },
     "ETH": {
       "funding": {
-        "current_pct": 0.0037,
+        "current_pct": 0.0038,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 6293274.260000007,
-        "usd": 1277849338.4930015,
-        "usd_m": 1277.8
+        "contracts": 6294748.510000008,
+        "usd": 1277953547.7516916,
+        "usd_m": 1278.0
       },
       "funding_history": [
         -0.0,
@@ -67,24 +67,24 @@
       "neg_funding_streak": 0,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 81527306.0,
-        "sell_vol": 49379306.0,
-        "ratio": 1.651,
+        "buy_vol": 106135573.0,
+        "sell_vol": 75762222.0,
+        "ratio": 1.401,
         "aggressive_buyers": true,
         "aggressive_sellers": false
       }
     },
     "SOL": {
       "funding": {
-        "current_pct": 0.0004,
+        "current_pct": -0.0001,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 2645708.84,
-        "usd": 229012557.19039997,
-        "usd_m": 229.0
+        "contracts": 2640994.8299999996,
+        "usd": 228842202.0195,
+        "usd_m": 228.8
       },
       "funding_history": [
         0.0062,
@@ -101,9 +101,9 @@
       "neg_funding_streak": 0,
       "pos_funding_streak": 1,
       "taker_30m": {
-        "buy_vol": 15266666.0,
-        "sell_vol": 8132787.0,
-        "ratio": 1.877,
+        "buy_vol": 21354965.0,
+        "sell_vol": 11389181.0,
+        "ratio": 1.875,
         "aggressive_buyers": true,
         "aggressive_sellers": false
       }
@@ -112,7 +112,7 @@
   "bybit": {},
   "liquidation_levels": {
     "BTC": {
-      "price": 68785.7,
+      "price": 68866.0,
       "high_24h": 70077.4,
       "low_24h": 65209.5,
       "long_liquidations": {
@@ -133,7 +133,7 @@
       "magnet_distance_pct": 100
     },
     "ETH": {
-      "price": 2030.71,
+      "price": 2030.46,
       "high_24h": 2090.73,
       "low_24h": 1917.0,
       "long_liquidations": {
@@ -154,7 +154,7 @@
       "magnet_distance_pct": 100
     },
     "SOL": {
-      "price": 86.51,
+      "price": 86.66,
       "high_24h": 90.27,
       "low_24h": 82.31,
       "long_liquidations": {
@@ -176,17 +176,15 @@
   },
   "cascade_risk": {
     "BTC": {
-      "risk_score": 15,
+      "risk_score": 0,
       "risk_level": "low",
-      "risk_factors": [
-        "Taker ratio=1.75 (imbalanced)"
-      ]
+      "risk_factors": []
     },
     "ETH": {
       "risk_score": 15,
       "risk_level": "low",
       "risk_factors": [
-        "Taker ratio=1.65 (imbalanced)"
+        "Taker ratio=1.40 (imbalanced)"
       ]
     },
     "SOL": {
@@ -2276,10 +2274,21 @@
         "ETH": 15,
         "SOL": 15
       }
+    },
+    {
+      "timestamp": "2026-03-02T23:51:58.187919+00:00",
+      "ts": 1772495518,
+      "score": 0,
+      "bias": "neutral",
+      "cascade_risks": {
+        "BTC": 0,
+        "ETH": 15,
+        "SOL": 15
+      }
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T23:39:43.052646+00:00",
-    "updated_ts": 1772494783
+    "updated_at": "2026-03-02T23:51:58.187962+00:00",
+    "updated_ts": 1772495518
   }
 }
