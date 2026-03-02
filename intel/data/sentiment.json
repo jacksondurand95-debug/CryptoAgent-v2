@@ -63,9 +63,9 @@
   "trending": {
     "trending": [
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 136,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 109,
         "score": 0
       },
       {
@@ -75,56 +75,57 @@
         "score": 1
       },
       {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 51,
+        "name": "Kyber Network Crystal",
+        "symbol": "KNC",
+        "market_cap_rank": 650,
         "score": 2
       },
       {
-        "name": "MANTRA [Old]",
-        "symbol": "OM",
-        "market_cap_rank": 316,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 136,
         "score": 3
-      },
-      {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 207,
-        "score": 4
-      },
-      {
-        "name": "Sahara AI",
-        "symbol": "SAHARA",
-        "market_cap_rank": 338,
-        "score": 5
-      },
-      {
-        "name": "Kyber Network Crystal",
-        "symbol": "KNC",
-        "market_cap_rank": 637,
-        "score": 6
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
+        "score": 4
+      },
+      {
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
+        "score": 5
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 6
+      },
+      {
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 32,
         "score": 7
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 290,
+        "name": "MANTRA [Old]",
+        "symbol": "OM",
+        "market_cap_rank": 313,
         "score": 8
       },
       {
-        "name": "WAR",
-        "symbol": "WAR",
-        "market_cap_rank": 897,
+        "name": "Kaspa",
+        "symbol": "KAS",
+        "market_cap_rank": 74,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC"
+      "BTC",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -506,10 +507,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T07:29:19.003674+00:00",
+      "ts": 1772436559,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T06:30:53.720396+00:00",
-    "updated_ts": 1772433053
+    "updated_at": "2026-03-02T07:29:19.003703+00:00",
+    "updated_ts": 1772436559
   }
 }
