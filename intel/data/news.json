@@ -86,12 +86,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
+      "articles": 36,
       "score": -130,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 15,
+      "articles": 17,
       "score": -140,
       "bias": "bearish"
     },
@@ -384,10 +384,10 @@
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
-    "Google News": 30,
     "CoinDesk": 20,
-    "Decrypt": 20
+    "CoinTelegraph": 20,
+    "Decrypt": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -606,10 +606,17 @@
       "score": -40,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-02T00:56:06.839919+00:00",
+      "ts": 1772412966,
+      "score": -40,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T00:24:41.911674+00:00",
-    "updated_ts": 1772411081
+    "updated_at": "2026-03-02T00:56:06.839999+00:00",
+    "updated_ts": 1772412966
   }
 }
