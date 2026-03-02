@@ -69,15 +69,15 @@
         "score": 0
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
         "score": 1
       },
       {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 38,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 2
       },
       {
@@ -87,33 +87,33 @@
         "score": 3
       },
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 34,
         "score": 4
       },
       {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 33,
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 49,
         "score": 5
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 38,
         "score": 6
-      },
-      {
-        "name": "River",
-        "symbol": "RIVER",
-        "market_cap_rank": 142,
-        "score": 7
       },
       {
         "name": "Centrifuge",
         "symbol": "CFG",
-        "market_cap_rank": 301,
+        "market_cap_rank": 292,
+        "score": 7
+      },
+      {
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 211,
         "score": 8
       },
       {
@@ -125,7 +125,6 @@
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL",
       "ETH"
     ],
     "market_attention": "high"
@@ -452,10 +451,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T01:42:20.676157+00:00",
+      "ts": 1772415740,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T00:48:40.357356+00:00",
-    "updated_ts": 1772412520
+    "updated_at": "2026-03-02T01:42:20.676186+00:00",
+    "updated_ts": 1772415740
   }
 }
