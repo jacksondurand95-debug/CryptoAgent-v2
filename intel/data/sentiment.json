@@ -63,63 +63,63 @@
   "trending": {
     "trending": [
       {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 195,
-        "score": 0
-      },
-      {
         "name": "Fabric Protocol",
         "symbol": "ROBO",
-        "market_cap_rank": 253,
-        "score": 1
-      },
-      {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
-        "score": 2
+        "market_cap_rank": 240,
+        "score": 0
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 140,
+        "market_cap_rank": 138,
+        "score": 1
+      },
+      {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 48,
+        "score": 2
+      },
+      {
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 195,
         "score": 3
-      },
-      {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
-        "score": 4
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 5
-      },
-      {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 37,
-        "score": 6
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 108,
+        "score": 4
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
+        "score": 5
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
+        "score": 6
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 7
       },
       {
-        "name": "Uniswap",
-        "symbol": "UNI",
-        "market_cap_rank": 39,
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 38,
         "score": 8
       },
       {
-        "name": "Espresso",
-        "symbol": "ESP",
-        "market_cap_rank": 366,
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 34,
         "score": 9
       }
     ],
@@ -591,10 +591,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T15:23:14.488989+00:00",
+      "ts": 1772464994,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T14:24:44.638664+00:00",
-    "updated_ts": 1772461484
+    "updated_at": "2026-03-02T15:23:14.489019+00:00",
+    "updated_ts": 1772464994
   }
 }
