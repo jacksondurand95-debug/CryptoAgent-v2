@@ -63,7 +63,7 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
+      "articles": 37,
       "score": -120,
       "bias": "bearish"
     },
@@ -73,7 +73,7 @@
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 6,
+      "articles": 7,
       "score": 40,
       "bias": "bullish"
     }
@@ -229,6 +229,17 @@
       "coins": []
     },
     {
+      "title": "Battered bitcoin could find solace in war-led 'debasement' trade",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
+    },
+    {
       "title": "Hong Kong links up with Shanghai trade authorities to put cargo data on blockchain",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -349,23 +360,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin is stuck in a rut but JPMorgan says new legislation could be the ultimate spark",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
     "CoinDesk": 20,
-    "CoinTelegraph": 20,
-    "Google News": 30
+    "Google News": 30,
+    "Decrypt": 20,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -668,10 +669,17 @@
       "score": -29,
       "bias": "bearish",
       "alpha_count": 4
+    },
+    {
+      "timestamp": "2026-03-02T12:53:11.141063+00:00",
+      "ts": 1772455991,
+      "score": -29,
+      "bias": "bearish",
+      "alpha_count": 4
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T12:14:09.418286+00:00",
-    "updated_ts": 1772453649
+    "updated_at": "2026-03-02T12:53:11.141171+00:00",
+    "updated_ts": 1772455991
   }
 }
