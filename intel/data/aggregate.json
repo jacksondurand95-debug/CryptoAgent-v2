@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 11,
+    "score": 9,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.8,
-    "available_sources": 4,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 57.7,
-        "effective_weight": 0.9
+        "age_min": 1.2,
+        "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 29.9,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 98.0,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 47.2,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -40,
+        "score": -36,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 93.5,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 36 articles, score=-130"
+          "reason": "News sentiment: 35 articles, score=-60"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (3 large txs)"
+          "reason": "BTC whale activity normal (16 large txs)"
         }
       ]
     },
@@ -118,7 +118,7 @@
     },
     {
       "type": "news",
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
@@ -127,17 +127,17 @@
     },
     {
       "type": "news",
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
-        "BTC"
+        "ETH"
       ]
     }
   ],
-  "timestamp": "2026-03-02T02:29:33.064624+00:00",
+  "timestamp": "2026-03-02T03:01:50.847893+00:00",
   "_meta": {
-    "updated_at": "2026-03-02T02:29:33.065465+00:00",
-    "updated_ts": 1772418573
+    "updated_at": "2026-03-02T03:01:50.848649+00:00",
+    "updated_ts": 1772420510
   }
 }

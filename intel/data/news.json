@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -40,
+    "score": -36,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 120,
-    "negative_score": -600
+    "scored_articles": 17,
+    "positive_score": 150,
+    "negative_score": -560
   },
   "alpha_events": [
     {
@@ -45,19 +45,6 @@
       ]
     },
     {
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "crash"
-      ]
-    },
-    {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
@@ -86,8 +73,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
-      "score": -130,
+      "articles": 35,
+      "score": -60,
       "bias": "bearish"
     },
     "ETH": {
@@ -127,16 +114,6 @@
       "score": -50,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
     },
     {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
@@ -209,6 +186,16 @@
       ]
     },
     {
+      "title": "Trump Media could spin out Truth Social amid crypto push",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": 30,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -249,6 +236,16 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 crash creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -10,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Bitcoin losing trillions in value hasn't stopped traditional giants' interest in digital assets sector",
@@ -371,23 +368,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Suspected insiders make over $1.2 million on Polymarket by betting on U.S.'s Iran strike",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
     "CoinDesk": 20,
-    "CoinTelegraph": 20,
+    "Google News": 30,
     "Decrypt": 20,
-    "Google News": 30
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -613,10 +600,17 @@
       "score": -40,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-02T03:01:50.703640+00:00",
+      "ts": 1772420510,
+      "score": -36,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T00:56:06.839999+00:00",
-    "updated_ts": 1772412966
+    "updated_at": "2026-03-02T03:01:50.703702+00:00",
+    "updated_ts": 1772420510
   }
 }
