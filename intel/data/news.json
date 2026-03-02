@@ -1,23 +1,26 @@
 {
   "aggregate": {
-    "score": -35,
+    "score": -34,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 17,
+    "scored_articles": 16,
     "positive_score": 150,
-    "negative_score": -530
+    "negative_score": -480
   },
   "alpha_events": [
     {
-      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
-      "source": "Decrypt",
+      "title": "Over $9 billion flees bitcoin and ether ETFs in four months",
+      "source": "CoinDesk",
       "sentiment": "bearish",
-      "score": -80,
-      "importance": "critical",
-      "coins": [],
+      "score": -70,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
       "keywords": [
-        "bankruptcy"
+        "collapse"
       ]
     },
     {
@@ -71,13 +74,13 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
-      "score": -60,
+      "articles": 35,
+      "score": -90,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 15,
-      "score": -50,
+      "articles": 16,
+      "score": -120,
       "bias": "bearish"
     },
     "SOL": {
@@ -88,12 +91,15 @@
   },
   "top_articles": [
     {
-      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
-      "source": "Decrypt",
+      "title": "Over $9 billion flees bitcoin and ether ETFs in four months",
+      "source": "CoinDesk",
       "sentiment": "bearish",
-      "score": -80,
-      "importance": "critical",
-      "coins": []
+      "score": -70,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
     },
     {
       "title": "February crypto losses hit lowest level since March 2025: PeckShield",
@@ -136,16 +142,6 @@
       "source": "CoinDesk",
       "sentiment": "bullish",
       "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin sets up potential short squeeze as 'funding rate' plunges to three month low",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -238,6 +234,16 @@
       "source": "Google News",
       "sentiment": "neutral",
       "score": -10,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin, cryptos under pressure as oil spikes 6% and global markets price in U.S.-Iran conflict",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
       "importance": "low",
       "coins": [
         "BTC"
@@ -367,10 +373,10 @@
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "CoinDesk": 20,
+    "CoinTelegraph": 20,
     "Google News": 30,
-    "CoinTelegraph": 20
+    "Decrypt": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -624,10 +630,17 @@
       "score": -35,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-02T06:22:09.443616+00:00",
+      "ts": 1772432529,
+      "score": -34,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T05:05:27.253226+00:00",
-    "updated_ts": 1772427927
+    "updated_at": "2026-03-02T06:22:09.443689+00:00",
+    "updated_ts": 1772432529
   }
 }

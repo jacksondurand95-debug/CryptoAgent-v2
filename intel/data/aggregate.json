@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 6.0,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 29.1,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 91.9,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 38.3,
+        "age_min": 0.7,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -35,
+        "score": -34,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 63.9,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 36 articles, score=-60"
+          "reason": "News sentiment: 35 articles, score=-90"
         },
         {
           "bias": "neutral",
@@ -66,13 +66,13 @@
       ]
     },
     "ETH": {
-      "score": -44,
+      "score": -53,
       "bias": "bearish",
       "signals": 2,
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 15 articles, score=-50"
+          "reason": "News sentiment: 16 articles, score=-120"
         },
         {
           "bias": "neutral",
@@ -95,10 +95,13 @@
   "alpha_events": [
     {
       "type": "news",
-      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
+      "title": "Over $9 billion flees bitcoin and ether ETFs in four months",
       "sentiment": "bearish",
-      "importance": "critical",
-      "coins": []
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
     },
     {
       "type": "news",
@@ -133,9 +136,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-02T06:09:20.798417+00:00",
+  "timestamp": "2026-03-02T06:22:09.591373+00:00",
   "_meta": {
-    "updated_at": "2026-03-02T06:09:20.799226+00:00",
-    "updated_ts": 1772431760
+    "updated_at": "2026-03-02T06:22:09.592046+00:00",
+    "updated_ts": 1772432529
   }
 }

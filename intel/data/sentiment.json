@@ -69,63 +69,62 @@
         "score": 0
       },
       {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 33,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
         "score": 1
-      },
-      {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 295,
-        "score": 2
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 109,
+        "score": 2
+      },
+      {
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 291,
         "score": 3
+      },
+      {
+        "name": "MANTRA [Old]",
+        "symbol": "OM",
+        "market_cap_rank": 316,
+        "score": 4
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
-        "score": 4
+        "score": 5
+      },
+      {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 51,
+        "score": 6
+      },
+      {
+        "name": "Sahara AI",
+        "symbol": "SAHARA",
+        "market_cap_rank": 336,
+        "score": 7
+      },
+      {
+        "name": "Kyber Network Crystal",
+        "symbol": "KNC",
+        "market_cap_rank": 623,
+        "score": 8
       },
       {
         "name": "PAX Gold",
         "symbol": "PAXG",
         "market_cap_rank": 38,
-        "score": 5
-      },
-      {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 205,
-        "score": 6
-      },
-      {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
-        "score": 7
-      },
-      {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
-        "score": 8
-      },
-      {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 47,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
-      "ETH"
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -493,10 +492,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T06:21:29.176570+00:00",
+      "ts": 1772432489,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T05:31:05.114872+00:00",
-    "updated_ts": 1772429465
+    "updated_at": "2026-03-02T06:21:29.176600+00:00",
+    "updated_ts": 1772432489
   }
 }
