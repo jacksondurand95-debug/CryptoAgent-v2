@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -22,
+    "score": -29,
     "bias": "bearish",
-    "strength": "weak",
+    "strength": "moderate",
     "total_articles": 90,
     "scored_articles": 16,
-    "positive_score": 230,
-    "negative_score": -420
+    "positive_score": 190,
+    "negative_score": -460
   },
   "alpha_events": [
     {
@@ -64,11 +64,11 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 35,
-      "score": -40,
+      "score": -120,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 12,
+      "articles": 13,
       "score": -120,
       "bias": "bearish"
     },
@@ -119,6 +119,16 @@
       ]
     },
     {
+      "title": "Bitcoin outperforms equities in risk-off session as Iran conflict enters third day",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "U.S. equity futures fall in pre-market trading as oil, gold retreat from highs",
       "source": "CoinDesk",
       "sentiment": "bullish",
@@ -144,16 +154,6 @@
       "importance": "medium",
       "coins": [
         "SOL"
-      ]
-    },
-    {
-      "title": "Bitcoin recovers to $68K following death of Iranian Supreme Leader",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -661,10 +661,17 @@
       "score": -22,
       "bias": "bearish",
       "alpha_count": 4
+    },
+    {
+      "timestamp": "2026-03-02T12:14:09.418215+00:00",
+      "ts": 1772453649,
+      "score": -29,
+      "bias": "bearish",
+      "alpha_count": 4
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T10:51:29.184870+00:00",
-    "updated_ts": 1772448689
+    "updated_at": "2026-03-02T12:14:09.418286+00:00",
+    "updated_ts": 1772453649
   }
 }
