@@ -7,18 +7,19 @@
       {
         "bias": "bullish",
         "score": 80,
-        "reason": "Extreme Fear (14) \u2014 contrarian BUY"
+        "reason": "Extreme Fear (10) \u2014 contrarian BUY"
       }
     ]
   },
   "fear_greed": {
-    "current": 14,
+    "current": 10,
     "classification": "Extreme Fear",
-    "avg_7d": 10.4,
-    "avg_30d": 10.5,
+    "avg_7d": 11.1,
+    "avg_30d": 10.1,
     "fear_streak": 30,
     "greed_streak": 0,
     "history_30d": [
+      10,
       14,
       11,
       13,
@@ -47,15 +48,14 @@
       14,
       17,
       14,
-      14,
-      20
+      14
     ],
-    "trend": "declining",
+    "trend": "improving",
     "signal": {
       "bias": "bullish",
       "score": 80,
       "weight": 2.0,
-      "reason": "Extreme Fear (14) \u2014 contrarian BUY"
+      "reason": "Extreme Fear (10) \u2014 contrarian BUY"
     }
   },
   "news": null,
@@ -63,27 +63,27 @@
   "trending": {
     "trending": [
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
-        "score": 0
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 110,
-        "score": 1
-      },
-      {
         "name": "PAX Gold",
         "symbol": "PAXG",
-        "market_cap_rank": 37,
-        "score": 2
+        "market_cap_rank": 36,
+        "score": 0
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 143,
+        "market_cap_rank": 139,
+        "score": 1
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 109,
+        "score": 2
+      },
+      {
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 34,
         "score": 3
       },
       {
@@ -93,40 +93,38 @@
         "score": 4
       },
       {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 214,
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 5
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 47,
         "score": 6
       },
       {
-        "name": "River",
-        "symbol": "RIVER",
-        "market_cap_rank": 137,
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 816,
         "score": 7
       },
       {
-        "name": "Hedera",
-        "symbol": "HBAR",
-        "market_cap_rank": 26,
+        "name": "Aster",
+        "symbol": "ASTER",
+        "market_cap_rank": 44,
         "score": 8
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 159,
+        "name": "Sui",
+        "symbol": "SUI",
+        "market_cap_rank": 30,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
-      "SOL",
-      "ETH"
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -438,10 +436,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T00:24:00.264795+00:00",
+      "ts": 1772411040,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-01T23:11:49.632014+00:00",
-    "updated_ts": 1772406709
+    "updated_at": "2026-03-02T00:24:00.264832+00:00",
+    "updated_ts": 1772411040
   }
 }
