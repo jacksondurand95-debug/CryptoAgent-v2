@@ -6,21 +6,20 @@
     "total_articles": 90,
     "scored_articles": 16,
     "positive_score": 80,
-    "negative_score": -590
+    "negative_score": -580
   },
   "alpha_events": [
     {
-      "title": "Over $9 billion flees bitcoin and ether ETFs in four months",
+      "title": "Vitalik Buterin unveils plan to curb Ethereum block builder centralization",
       "source": "CoinDesk",
       "sentiment": "bearish",
-      "score": -70,
+      "score": -60,
       "importance": "high",
       "coins": [
-        "BTC",
         "ETH"
       ],
       "keywords": [
-        "collapse"
+        "exploit"
       ]
     },
     {
@@ -90,13 +89,13 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
-      "score": -290,
+      "articles": 34,
+      "score": -220,
       "bias": "bearish"
     },
     "ETH": {
       "articles": 13,
-      "score": -170,
+      "score": -160,
       "bias": "bearish"
     },
     "SOL": {
@@ -107,13 +106,12 @@
   },
   "top_articles": [
     {
-      "title": "Over $9 billion flees bitcoin and ether ETFs in four months",
+      "title": "Vitalik Buterin unveils plan to curb Ethereum block builder centralization",
       "source": "CoinDesk",
       "sentiment": "bearish",
-      "score": -70,
+      "score": -60,
       "importance": "high",
       "coins": [
-        "BTC",
         "ETH"
       ]
     },
@@ -386,10 +384,10 @@
     }
   ],
   "sources": {
-    "Decrypt": 20,
+    "Google News": 30,
     "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Google News": 30
+    "Decrypt": 20
   },
   "history": [
     {
@@ -734,10 +732,17 @@
       "score": -43,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-02T18:52:34.740705+00:00",
+      "ts": 1772477554,
+      "score": -43,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T18:16:43.931387+00:00",
-    "updated_ts": 1772475403
+    "updated_at": "2026-03-02T18:52:34.740780+00:00",
+    "updated_ts": 1772477554
   }
 }
