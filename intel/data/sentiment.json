@@ -63,9 +63,9 @@
   "trending": {
     "trending": [
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 109,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 138,
         "score": 0
       },
       {
@@ -75,57 +75,58 @@
         "score": 1
       },
       {
-        "name": "Kyber Network Crystal",
-        "symbol": "KNC",
-        "market_cap_rank": 650,
-        "score": 2
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 136,
-        "score": 3
-      },
-      {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
-        "score": 4
-      },
-      {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 37,
-        "score": 5
+        "score": 2
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 6
+        "score": 3
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 110,
+        "score": 4
       },
       {
         "name": "Tether Gold",
         "symbol": "XAUT",
-        "market_cap_rank": 32,
-        "score": 7
+        "market_cap_rank": 33,
+        "score": 5
       },
       {
         "name": "MANTRA [Old]",
         "symbol": "OM",
         "market_cap_rank": 313,
+        "score": 6
+      },
+      {
+        "name": "Kava",
+        "symbol": "KAVA",
+        "market_cap_rank": 350,
+        "score": 7
+      },
+      {
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 204,
         "score": 8
       },
       {
-        "name": "Kaspa",
-        "symbol": "KAS",
-        "market_cap_rank": 74,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL"
+      "SOL",
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -514,10 +515,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T08:15:21.714689+00:00",
+      "ts": 1772439321,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T07:29:19.003703+00:00",
-    "updated_ts": 1772436559
+    "updated_at": "2026-03-02T08:15:21.714718+00:00",
+    "updated_ts": 1772439321
   }
 }

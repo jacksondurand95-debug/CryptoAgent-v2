@@ -74,12 +74,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
+      "articles": 37,
       "score": -90,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 16,
+      "articles": 15,
       "score": -120,
       "bias": "bearish"
     },
@@ -240,6 +240,16 @@
       ]
     },
     {
+      "title": "Bitcoin slips below $66,000, U.S. stock futures bleed as Iran hits Saudi oil refinery",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Bitcoin, cryptos under pressure as oil spikes 6% and global markets price in U.S.-Iran conflict",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -362,21 +372,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "The 'stablecoin sandwich' is dead: Why the next phase of crypto payments is all about the user relationship",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
+    "CoinTelegraph": 20,
     "CoinDesk": 20,
     "Google News": 30,
-    "Decrypt": 20,
-    "CoinTelegraph": 20
+    "Decrypt": 20
   },
   "history": [
     {
@@ -644,10 +646,17 @@
       "score": -34,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-02T08:15:55.682879+00:00",
+      "ts": 1772439355,
+      "score": -34,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T06:53:12.501154+00:00",
-    "updated_ts": 1772434392
+    "updated_at": "2026-03-02T08:15:55.682949+00:00",
+    "updated_ts": 1772439355
   }
 }
