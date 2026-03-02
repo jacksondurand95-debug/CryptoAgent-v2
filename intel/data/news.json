@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -44,
+    "score": -46,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 17,
-    "positive_score": 70,
+    "scored_articles": 16,
+    "positive_score": 40,
     "negative_score": -650
   },
   "alpha_events": [
@@ -101,17 +101,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
-      "score": -300,
+      "articles": 34,
+      "score": -330,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 14,
+      "articles": 13,
       "score": -170,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 5,
+      "articles": 4,
       "score": 0,
       "bias": "neutral"
     }
@@ -224,16 +224,6 @@
       ]
     },
     {
-      "title": "Trump Media weighs Truth Social spinoff as crypto expansion accelerates",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": 30,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Trump Orders Federal Agencies to Dump 'Woke' Anthropic AI After Pentagon Dispute",
       "source": "Decrypt",
       "sentiment": "neutral",
@@ -266,11 +256,27 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC relaunch \u2018Project Crypto\u2019 to harmonize digital asset regulation - JD Supra",
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Crypto world faces growing pressure to relent on stablecoin rewards to win bigger prize",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Nasdaq follows Cboe joining world of 'binary bets' as prediction market craze hits Wall Street",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -381,21 +387,11 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Bitcoin slips below $66,000, U.S. stock futures bleed as Iran hits Saudi oil refinery",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Google News": 30,
     "Decrypt": 20,
+    "Google News": 30,
     "CoinTelegraph": 20,
     "CoinDesk": 20
   },
@@ -728,10 +724,17 @@
       "score": -44,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-02T16:52:37.778335+00:00",
+      "ts": 1772470357,
+      "score": -46,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T16:15:43.411681+00:00",
-    "updated_ts": 1772468143
+    "updated_at": "2026-03-02T16:52:37.778398+00:00",
+    "updated_ts": 1772470357
   }
 }
