@@ -24,7 +24,7 @@
       ]
     },
     {
-      "title": "February crypto losses hit lowest level since March 2025: PeckShield",
+      "title": "February crypto losses hit lowest level since March 2025, says PeckShield",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -60,
@@ -74,7 +74,7 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
+      "articles": 36,
       "score": -90,
       "bias": "bearish"
     },
@@ -84,7 +84,7 @@
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 7,
+      "articles": 6,
       "score": 40,
       "bias": "bullish"
     }
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "title": "February crypto losses hit lowest level since March 2025: PeckShield",
+      "title": "February crypto losses hit lowest level since March 2025, says PeckShield",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -60,
@@ -178,7 +178,7 @@
       ]
     },
     {
-      "title": "Trump Media could spin out Truth Social amid crypto push",
+      "title": "Trump Media weighs Truth Social spinoff as crypto expansion accelerates",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
       "score": 30,
@@ -373,10 +373,10 @@
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
+    "CoinDesk": 20,
     "Google News": 30,
     "Decrypt": 20,
-    "CoinDesk": 20
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -637,10 +637,17 @@
       "score": -34,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-02T06:53:12.501047+00:00",
+      "ts": 1772434392,
+      "score": -34,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T06:22:09.443689+00:00",
-    "updated_ts": 1772432529
+    "updated_at": "2026-03-02T06:53:12.501154+00:00",
+    "updated_ts": 1772434392
   }
 }
