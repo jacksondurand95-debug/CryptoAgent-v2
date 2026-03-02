@@ -81,52 +81,51 @@
         "score": 2
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 3
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 110,
-        "score": 4
-      },
-      {
         "name": "Tether Gold",
         "symbol": "XAUT",
         "market_cap_rank": 33,
-        "score": 5
+        "score": 3
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 4
       },
       {
         "name": "MANTRA [Old]",
         "symbol": "OM",
         "market_cap_rank": 313,
-        "score": 6
+        "score": 5
       },
       {
         "name": "Kava",
         "symbol": "KAVA",
-        "market_cap_rank": 350,
-        "score": 7
+        "market_cap_rank": 347,
+        "score": 6
       },
       {
         "name": "Grass",
         "symbol": "GRASS",
         "market_cap_rank": 204,
+        "score": 7
+      },
+      {
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
         "score": 8
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 110,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL",
-      "ETH"
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -522,10 +521,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T08:23:19.706285+00:00",
+      "ts": 1772439799,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T08:15:21.714718+00:00",
-    "updated_ts": 1772439321
+    "updated_at": "2026-03-02T08:23:19.706314+00:00",
+    "updated_ts": 1772439799
   }
 }
