@@ -65,7 +65,7 @@
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 127,
+        "market_cap_rank": 126,
         "score": 0
       },
       {
@@ -75,15 +75,15 @@
         "score": 1
       },
       {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 48,
-        "score": 2
-      },
-      {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 107,
+        "score": 2
+      },
+      {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 48,
         "score": 3
       },
       {
@@ -101,25 +101,25 @@
       {
         "name": "Grass",
         "symbol": "GRASS",
-        "market_cap_rank": 197,
+        "market_cap_rank": 200,
         "score": 6
+      },
+      {
+        "name": "Freysa AI",
+        "symbol": "FAI",
+        "market_cap_rank": 743,
+        "score": 7
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 7
+        "score": 8
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
-        "score": 8
-      },
-      {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 44,
         "score": 9
       }
     ],
@@ -627,10 +627,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T18:23:52.432983+00:00",
+      "ts": 1772475832,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T18:16:05.934400+00:00",
-    "updated_ts": 1772475365
+    "updated_at": "2026-03-02T18:23:52.433014+00:00",
+    "updated_ts": 1772475832
   }
 }
