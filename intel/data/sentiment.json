@@ -75,51 +75,51 @@
         "score": 1
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 109,
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 51,
         "score": 2
-      },
-      {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 291,
-        "score": 3
       },
       {
         "name": "MANTRA [Old]",
         "symbol": "OM",
         "market_cap_rank": 316,
+        "score": 3
+      },
+      {
+        "name": "Grass",
+        "symbol": "GRASS",
+        "market_cap_rank": 207,
         "score": 4
+      },
+      {
+        "name": "Sahara AI",
+        "symbol": "SAHARA",
+        "market_cap_rank": 338,
+        "score": 5
+      },
+      {
+        "name": "Kyber Network Crystal",
+        "symbol": "KNC",
+        "market_cap_rank": 637,
+        "score": 6
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
-        "score": 5
-      },
-      {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 51,
-        "score": 6
-      },
-      {
-        "name": "Sahara AI",
-        "symbol": "SAHARA",
-        "market_cap_rank": 336,
         "score": 7
       },
       {
-        "name": "Kyber Network Crystal",
-        "symbol": "KNC",
-        "market_cap_rank": 623,
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 290,
         "score": 8
       },
       {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 38,
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 897,
         "score": 9
       }
     ],
@@ -499,10 +499,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T06:30:53.720368+00:00",
+      "ts": 1772433053,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T06:21:29.176600+00:00",
-    "updated_ts": 1772432489
+    "updated_at": "2026-03-02T06:30:53.720396+00:00",
+    "updated_ts": 1772433053
   }
 }
