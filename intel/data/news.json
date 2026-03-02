@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -34,
+    "score": -29,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
     "scored_articles": 16,
-    "positive_score": 150,
-    "negative_score": -480
+    "positive_score": 190,
+    "negative_score": -470
   },
   "alpha_events": [
     {
@@ -74,8 +74,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 37,
-      "score": -90,
+      "articles": 36,
+      "score": -40,
       "bias": "bearish"
     },
     "ETH": {
@@ -178,6 +178,16 @@
       ]
     },
     {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Trump Media weighs Truth Social spinoff as crypto expansion accelerates",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -222,22 +232,12 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
+      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
       "coins": []
-    },
-    {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 crash creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -10,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     },
     {
       "title": "Bitcoin slips below $66,000, U.S. stock futures bleed as Iran hits Saudi oil refinery",
@@ -375,10 +375,10 @@
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "CoinDesk": 20,
-    "Google News": 30,
-    "Decrypt": 20
+    "Decrypt": 20,
+    "CoinTelegraph": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -653,10 +653,17 @@
       "score": -34,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-02T08:51:57.074121+00:00",
+      "ts": 1772441517,
+      "score": -29,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T08:15:55.682949+00:00",
-    "updated_ts": 1772439355
+    "updated_at": "2026-03-02T08:51:57.074192+00:00",
+    "updated_ts": 1772441517
   }
 }
