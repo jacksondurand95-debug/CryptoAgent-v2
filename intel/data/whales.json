@@ -1,13 +1,13 @@
 {
   "aggregate": {
-    "score": -31,
-    "bias": "bearish",
+    "score": 0,
+    "bias": "neutral",
     "strength": "weak",
     "signals": [
       {
-        "bias": "bearish",
-        "score": 40,
-        "reason": "BTC whale consolidation (4 txs) \u2014 potential selling"
+        "bias": "neutral",
+        "score": 0,
+        "reason": "BTC whale activity normal (12 large txs)"
       },
       {
         "bias": "neutral",
@@ -24,13 +24,22 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "d62adf9bfaeb5034...",
-        "btc": 1133.92,
+        "hash": "b19e810e792ff43c...",
+        "btc": 20227.53,
         "type": "transfer",
-        "inputs": 5,
+        "inputs": 2,
         "outputs": 2,
-        "block": 938994,
-        "time": 1772450632
+        "block": 938997,
+        "time": 1772453557
+      },
+      {
+        "hash": "f9bf0c03ead9458f...",
+        "btc": 3016.81,
+        "type": "transfer",
+        "inputs": 3,
+        "outputs": 3,
+        "block": 938997,
+        "time": 1772453529
       },
       {
         "hash": "0bb2ac1e70965191...",
@@ -42,31 +51,13 @@
         "time": 1772451200
       },
       {
-        "hash": "24f908631d6160f4...",
-        "btc": 783.37,
+        "hash": "66346704cb1fd8b0...",
+        "btc": 346.65,
         "type": "transfer",
-        "inputs": 5,
+        "inputs": 4,
         "outputs": 2,
-        "block": 938994,
-        "time": 1772450660
-      },
-      {
-        "hash": "2d960f27c0ee63d5...",
-        "btc": 320.0,
-        "type": "consolidation",
-        "inputs": 16,
-        "outputs": 2,
-        "block": 938994,
-        "time": 1772450808
-      },
-      {
-        "hash": "42b5b0bbf785fc0a...",
-        "btc": 320.0,
-        "type": "consolidation",
-        "inputs": 17,
-        "outputs": 2,
-        "block": 938994,
-        "time": 1772450780
+        "block": 938997,
+        "time": 1772453854
       },
       {
         "hash": "6d77ba3646e0b049...",
@@ -76,15 +67,6 @@
         "outputs": 3,
         "block": 938995,
         "time": 1772452330
-      },
-      {
-        "hash": "6508e81386e6c5d3...",
-        "btc": 300.0,
-        "type": "consolidation",
-        "inputs": 15,
-        "outputs": 1,
-        "block": 938994,
-        "time": 1772450865
       },
       {
         "hash": "db99f1d186bbef43...",
@@ -150,16 +132,16 @@
         "time": 1772451256
       }
     ],
-    "total_whale_btc": 5361.46,
-    "count": 14,
-    "consolidations": 4,
+    "total_whale_btc": 26095.16,
+    "count": 12,
+    "consolidations": 1,
     "distributions": 1,
     "blocks_scanned": 3,
     "signal": {
-      "bias": "bearish",
-      "score": 40,
-      "weight": 1.5,
-      "reason": "BTC whale consolidation (4 txs) \u2014 potential selling"
+      "bias": "neutral",
+      "score": 0,
+      "weight": 0.5,
+      "reason": "BTC whale activity normal (12 large txs)"
     }
   },
   "eth_whales": {
@@ -559,10 +541,16 @@
       "ts": 1772453622,
       "score": -31,
       "bias": "bearish"
+    },
+    {
+      "timestamp": "2026-03-02T12:31:30.396416+00:00",
+      "ts": 1772454690,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T12:13:42.531383+00:00",
-    "updated_ts": 1772453622
+    "updated_at": "2026-03-02T12:31:30.396452+00:00",
+    "updated_ts": 1772454690
   }
 }
