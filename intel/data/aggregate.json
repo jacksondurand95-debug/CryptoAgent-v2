@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 18.2,
+        "age_min": 19.3,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 31,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 14.0,
+        "age_min": 35.9,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 17.2,
+        "age_min": 39.1,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 21.8,
+        "age_min": 43.7,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -43,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 29.0,
+        "age_min": 15.0,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 35 articles, score=-290"
+          "reason": "News sentiment: 34 articles, score=-220"
         },
         {
           "bias": "bullish",
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 13 articles, score=-170"
+          "reason": "News sentiment: 13 articles, score=-160"
         },
         {
           "bias": "neutral",
@@ -89,11 +89,10 @@
   "alpha_events": [
     {
       "type": "news",
-      "title": "Over $9 billion flees bitcoin and ether ETFs in four months",
+      "title": "Vitalik Buterin unveils plan to curb Ethereum block builder centralization",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
-        "BTC",
         "ETH"
       ]
     },
@@ -133,9 +132,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-02T18:45:40.927415+00:00",
+  "timestamp": "2026-03-02T19:07:34.763157+00:00",
   "_meta": {
-    "updated_at": "2026-03-02T18:45:40.927993+00:00",
-    "updated_ts": 1772477140
+    "updated_at": "2026-03-02T19:07:34.763649+00:00",
+    "updated_ts": 1772478454
   }
 }
