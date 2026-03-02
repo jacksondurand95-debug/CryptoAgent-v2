@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 9,
+    "score": 11,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 1.0,
-    "available_sources": 5,
+    "confidence": 0.8,
+    "available_sources": 4,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "fresh",
+        "status": "stale",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 12.5,
-        "effective_weight": 3.0
+        "age_min": 26.2,
+        "effective_weight": 0.9
       },
       "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 11.8,
+        "age_min": 22.9,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 11.6,
+        "age_min": 24.9,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 2.5,
+        "age_min": 29.3,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -34,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 11.3,
+        "age_min": 6.9,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 35 articles, score=-90"
+          "reason": "News sentiment: 36 articles, score=-90"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (7 large txs)"
+          "reason": "BTC whale activity normal (11 large txs)"
         }
       ]
     },
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 7 articles, score=40"
+          "reason": "News sentiment: 6 articles, score=40"
         }
       ]
     }
@@ -105,7 +105,7 @@
     },
     {
       "type": "news",
-      "title": "February crypto losses hit lowest level since March 2025: PeckShield",
+      "title": "February crypto losses hit lowest level since March 2025, says PeckShield",
       "sentiment": "bearish",
       "importance": "high",
       "coins": []
@@ -136,9 +136,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-02T06:33:25.098587+00:00",
+  "timestamp": "2026-03-02T07:00:08.716407+00:00",
   "_meta": {
-    "updated_at": "2026-03-02T06:33:25.099452+00:00",
-    "updated_ts": 1772433205
+    "updated_at": "2026-03-02T07:00:08.716993+00:00",
+    "updated_ts": 1772434808
   }
 }
