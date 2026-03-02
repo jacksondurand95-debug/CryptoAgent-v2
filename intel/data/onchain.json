@@ -22,7 +22,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
+        "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
       },
       {
         "bias": "bullish",
@@ -50,9 +50,9 @@
     }
   },
   "tvl": {
-    "total_tvl_b": 92.84,
-    "week_change_pct": 1.46,
-    "month_change_pct": -13.69,
+    "total_tvl_b": 92.88,
+    "week_change_pct": 1.5,
+    "month_change_pct": -13.66,
     "top_chains": {
       "Harmony": 0.0,
       "Ink": 0.41,
@@ -74,10 +74,10 @@
     }
   },
   "dex_volume": {
-    "total_24h_m": 9110.9,
-    "total_7d_m": 53623.8,
-    "change_1d_pct": 3.6,
-    "change_7d_pct": 69.6,
+    "total_24h_m": 9119.4,
+    "total_7d_m": 53632.3,
+    "change_1d_pct": 3.7,
+    "change_7d_pct": 69.8,
     "top_protocols": [
       {
         "name": "Curve DEX",
@@ -139,7 +139,7 @@
   },
   "btc_onchain": {
     "btc_fees": {
-      "fastest": 1,
+      "fastest": 2,
       "half_hour": 1,
       "hour": 1,
       "economy": 1,
@@ -149,17 +149,17 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.3,
-      "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
+      "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 27147,
-      "vsize": 15382153,
-      "total_fee": 3153886
+      "count": 26143,
+      "vsize": 15429931,
+      "total_fee": 3671156
     },
-    "btc_hashrate": 961863185456.0,
+    "btc_hashrate": 940328935035.0,
     "hashrate_trend": {
-      "current_eh": 1029.6,
-      "avg_7d_eh": 1071.1,
+      "current_eh": 1056.6,
+      "avg_7d_eh": 1069.0,
       "rising": false
     }
   },
@@ -425,10 +425,18 @@
       "bias": "neutral",
       "stablecoin_mcap_b": 263.65,
       "tvl_b": 92.84
+    },
+    {
+      "timestamp": "2026-03-02T00:51:36.225855+00:00",
+      "ts": 1772412696,
+      "score": 4,
+      "bias": "neutral",
+      "stablecoin_mcap_b": 263.65,
+      "tvl_b": 92.88
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T00:24:25.208806+00:00",
-    "updated_ts": 1772411065
+    "updated_at": "2026-03-02T00:51:36.225929+00:00",
+    "updated_ts": 1772412696
   }
 }
