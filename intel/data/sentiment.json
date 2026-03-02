@@ -65,7 +65,7 @@
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 133,
+        "market_cap_rank": 125,
         "score": 0
       },
       {
@@ -81,51 +81,51 @@
         "score": 2
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 231,
-        "score": 3
-      },
-      {
         "name": "NEAR Protocol",
         "symbol": "NEAR",
         "market_cap_rank": 48,
+        "score": 3
+      },
+      {
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 226,
         "score": 4
       },
       {
         "name": "Grass",
         "symbol": "GRASS",
-        "market_cap_rank": 190,
+        "market_cap_rank": 205,
         "score": 5
-      },
-      {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
-        "score": 6
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
+        "score": 6
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 7
       },
       {
-        "name": "Jupiter",
-        "symbol": "JUP",
-        "market_cap_rank": 89,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 44,
         "score": 8
       },
       {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 38,
+        "name": "Diem",
+        "symbol": "DIEM",
+        "market_cap_rank": 611,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH"
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -612,10 +612,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T17:23:57.209114+00:00",
+      "ts": 1772472237,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T16:22:45.896606+00:00",
-    "updated_ts": 1772468565
+    "updated_at": "2026-03-02T17:23:57.209144+00:00",
+    "updated_ts": 1772472237
   }
 }
