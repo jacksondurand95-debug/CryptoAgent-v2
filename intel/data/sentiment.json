@@ -65,19 +65,19 @@
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 122,
+        "market_cap_rank": 120,
         "score": 0
-      },
-      {
-        "name": "Freysa AI",
-        "symbol": "FAI",
-        "market_cap_rank": 622,
-        "score": 1
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 108,
+        "score": 1
+      },
+      {
+        "name": "Freysa AI",
+        "symbol": "FAI",
+        "market_cap_rank": 599,
         "score": 2
       },
       {
@@ -93,39 +93,39 @@
         "score": 4
       },
       {
-        "name": "Virtuals Protocol",
-        "symbol": "VIRTUAL",
-        "market_cap_rank": 99,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 5
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 225,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 44,
         "score": 6
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 100,
-        "score": 7
       },
       {
         "name": "XRP",
         "symbol": "XRP",
         "market_cap_rank": 5,
+        "score": 7
+      },
+      {
+        "name": "Virtuals Protocol",
+        "symbol": "VIRTUAL",
+        "market_cap_rank": 99,
         "score": 8
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 104,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL"
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -654,10 +654,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T21:17:25.241858+00:00",
+      "ts": 1772486245,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T20:16:31.269102+00:00",
-    "updated_ts": 1772482591
+    "updated_at": "2026-03-02T21:17:25.241893+00:00",
+    "updated_ts": 1772486245
   }
 }
