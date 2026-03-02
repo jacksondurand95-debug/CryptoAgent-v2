@@ -71,61 +71,61 @@
       {
         "name": "Freysa AI",
         "symbol": "FAI",
-        "market_cap_rank": 611,
+        "market_cap_rank": 622,
         "score": 1
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
-        "market_cap_rank": 107,
+        "market_cap_rank": 108,
         "score": 2
-      },
-      {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 48,
-        "score": 3
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 4
+        "score": 3
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 229,
-        "score": 5
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 47,
+        "score": 4
       },
       {
         "name": "Virtuals Protocol",
         "symbol": "VIRTUAL",
         "market_cap_rank": 99,
+        "score": 5
+      },
+      {
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 225,
         "score": 6
       },
       {
-        "name": "Canton",
-        "symbol": "CC",
-        "market_cap_rank": 19,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 100,
         "score": 7
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 5,
         "score": 8
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH"
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -640,10 +640,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T20:10:45.747152+00:00",
+      "ts": 1772482245,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T19:21:51.080392+00:00",
-    "updated_ts": 1772479311
+    "updated_at": "2026-03-02T20:10:45.747184+00:00",
+    "updated_ts": 1772482245
   }
 }

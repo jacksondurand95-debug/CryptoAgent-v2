@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -43,
+    "score": -38,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 80,
-    "negative_score": -580
+    "scored_articles": 15,
+    "positive_score": 120,
+    "negative_score": -520
   },
   "alpha_events": [
     {
@@ -89,17 +89,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 34,
+      "articles": 37,
       "score": -220,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 13,
+      "articles": 14,
       "score": -160,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 4,
+      "articles": 5,
       "score": 0,
       "bias": "neutral"
     }
@@ -203,6 +203,14 @@
       ]
     },
     {
+      "title": "Clarifying the CLARITY Act: What To Know About the House Crypto Market Structure Bill and Its Path to Law - Arnold & Porter",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -211,14 +219,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Trump Orders Federal Agencies to Dump 'Woke' Anthropic AI After Pentagon Dispute",
-      "source": "Decrypt",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
     },
     {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
@@ -237,7 +237,7 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
+      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -245,12 +245,14 @@
       "coins": []
     },
     {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
-      "source": "Google News",
+      "title": "Bitcoin\u2019s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst.",
+      "source": "CoinDesk",
       "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Battle for Bitcoin's soul opens as first block supporting 'clean-up' proposal is mined",
@@ -384,10 +386,10 @@
     }
   ],
   "sources": {
-    "Google News": 30,
-    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Decrypt": 20
+    "Decrypt": 20,
+    "Google News": 30,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -739,10 +741,17 @@
       "score": -43,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-02T20:11:22.141850+00:00",
+      "ts": 1772482282,
+      "score": -38,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T18:52:34.740780+00:00",
-    "updated_ts": 1772477554
+    "updated_at": "2026-03-02T20:11:22.141924+00:00",
+    "updated_ts": 1772482282
   }
 }
