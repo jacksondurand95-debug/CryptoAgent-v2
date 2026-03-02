@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -46,
+    "score": -47,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 16,
+    "scored_articles": 18,
     "positive_score": 40,
-    "negative_score": -600
+    "negative_score": -690
   },
   "alpha_events": [
     {
@@ -20,6 +20,19 @@
       ],
       "keywords": [
         "exploit"
+      ]
+    },
+    {
+      "title": "US authorities seek to recover $327K USDt from romance fraud scheme",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ],
+      "keywords": [
+        "fraud"
       ]
     },
     {
@@ -89,17 +102,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 37,
-      "score": -310,
+      "articles": 36,
+      "score": -340,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 14,
-      "score": -160,
+      "articles": 16,
+      "score": -220,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 5,
+      "articles": 6,
       "score": 0,
       "bias": "neutral"
     }
@@ -108,6 +121,16 @@
     {
       "title": "Vitalik Buterin unveils plan to curb Ethereum block builder centralization",
       "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "US authorities seek to recover $327K USDt from romance fraud scheme",
+      "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -60,
       "importance": "high",
@@ -165,7 +188,7 @@
       ]
     },
     {
-      "title": "Bitcoin\u2019s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst.",
+      "title": "Bitcoin\u2019s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst",
       "source": "CoinDesk",
       "sentiment": "bearish",
       "score": -40,
@@ -229,7 +252,17 @@
       "coins": []
     },
     {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "title": "SEC Clarifies Crypto Regulation: Allows Security Tokens to Trade with Bitcoin - CoinCentral",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -253,6 +286,22 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "PayPay, 40% owner of Binance Japan, seeks up to $1.1 billion in Nasdaq IPO",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Core Scientific turns lower after Q4 results disappoint",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
     },
     {
       "title": "Battle for Bitcoin's soul opens as first block supporting 'clean-up' proposal is mined",
@@ -344,52 +393,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Strategy purchased more than $200 million in bitcoin last week",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "South Korea investigates seed phrase leak in photo leading to $4.8 million crypto theft from tax authority",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Anthony Pompliano\u2019s ProCap Financial buys 450 bitcoin, steps up share buybacks",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Battered bitcoin could find solace in war-led 'debasement' trade",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
     }
   ],
   "sources": {
-    "Google News": 30,
+    "CoinDesk": 20,
     "Decrypt": 20,
     "CoinTelegraph": 20,
-    "CoinDesk": 20
+    "Google News": 30
   },
   "history": [
     {
@@ -755,10 +765,17 @@
       "score": -46,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-02T22:46:49.298287+00:00",
+      "ts": 1772491609,
+      "score": -47,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T20:49:49.811691+00:00",
-    "updated_ts": 1772484589
+    "updated_at": "2026-03-02T22:46:49.298355+00:00",
+    "updated_ts": 1772491609
   }
 }
