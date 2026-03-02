@@ -81,39 +81,39 @@
         "score": 2
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 254,
-        "score": 3
-      },
-      {
-        "name": "Aptos",
-        "symbol": "APT",
-        "market_cap_rank": 82,
-        "score": 4
-      },
-      {
         "name": "PAX Gold",
         "symbol": "PAXG",
         "market_cap_rank": 37,
-        "score": 5
+        "score": 3
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 6
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 257,
+        "score": 4
       },
       {
         "name": "Grass",
         "symbol": "GRASS",
         "market_cap_rank": 189,
-        "score": 7
+        "score": 5
       },
       {
         "name": "Tether Gold",
         "symbol": "XAUT",
         "market_cap_rank": 33,
+        "score": 6
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 7
+      },
+      {
+        "name": "Aptos",
+        "symbol": "APT",
+        "market_cap_rank": 82,
         "score": 8
       },
       {
@@ -564,10 +564,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T12:23:41.056710+00:00",
+      "ts": 1772454221,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T12:13:32.526389+00:00",
-    "updated_ts": 1772453612
+    "updated_at": "2026-03-02T12:23:41.056738+00:00",
+    "updated_ts": 1772454221
   }
 }
