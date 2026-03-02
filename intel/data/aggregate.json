@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 0,
+    "score": 8,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 9.3,
+        "age_min": 15.4,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": -31,
-        "bias": "bearish",
+        "score": 0,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 8.6,
+        "age_min": 15.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 8.4,
+        "age_min": 29.1,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 3.3,
+        "age_min": 23.9,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,14 +44,14 @@
         "score": -41,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 8.1,
+        "age_min": 28.8,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -46,
+      "score": -36,
       "bias": "bearish",
       "signals": 2,
       "details": [
@@ -60,8 +60,8 @@
           "reason": "News sentiment: 36 articles, score=-300"
         },
         {
-          "bias": "bearish",
-          "reason": "BTC whale consolidation (5 txs) \u2014 potential selling"
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (35 large txs)"
         }
       ]
     },
@@ -137,9 +137,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-02T14:28:00.190533+00:00",
+  "timestamp": "2026-03-02T14:48:40.241675+00:00",
   "_meta": {
-    "updated_at": "2026-03-02T14:28:00.191291+00:00",
-    "updated_ts": 1772461680
+    "updated_at": "2026-03-02T14:48:40.242305+00:00",
+    "updated_ts": 1772462920
   }
 }
