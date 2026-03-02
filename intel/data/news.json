@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -41,
+    "score": -44,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 18,
-    "positive_score": 110,
+    "scored_articles": 17,
+    "positive_score": 70,
     "negative_score": -650
   },
   "alpha_events": [
@@ -102,16 +102,16 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 35,
-      "score": -260,
+      "score": -300,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 12,
+      "articles": 14,
       "score": -170,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 6,
+      "articles": 5,
       "score": 0,
       "bias": "neutral"
     }
@@ -214,16 +214,6 @@
       ]
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -282,6 +272,26 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Bitcoin surges above $68,000 amid muted stock market reaction to Iran war",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Tom Lee's Bitmine boosts ether holdings to 4.47 million tokens with  $98 million ETH purchase",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "ETH"
+      ]
     },
     {
       "title": "EU banks\u2019 euro-pegged stablecoin in talks with crypto exchanges to ensure liquidity",
@@ -381,23 +391,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin, cryptos under pressure as oil spikes 6% and global markets price in U.S.-Iran conflict",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
     "Google News": 30,
+    "Decrypt": 20,
     "CoinTelegraph": 20,
-    "CoinDesk": 20,
-    "Decrypt": 20
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -721,10 +721,17 @@
       "score": -41,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-02T16:15:43.411602+00:00",
+      "ts": 1772468143,
+      "score": -44,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T14:51:28.908462+00:00",
-    "updated_ts": 1772463088
+    "updated_at": "2026-03-02T16:15:43.411681+00:00",
+    "updated_ts": 1772468143
   }
 }
