@@ -74,12 +74,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
+      "articles": 34,
       "score": -40,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 15,
+      "articles": 14,
       "score": -120,
       "bias": "bearish"
     },
@@ -232,11 +232,27 @@
       "coins": []
     },
     {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Hong Kong links up with Shanghai trade authorities to put cargo data on blockchain",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Riot Platforms, Core Scientific earnings, U.S. jobs report: Crypto Week Ahead",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -354,31 +370,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Iran crisis puts the regime's $7.8 billion crypto shadow economy in spotlight",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Buyouts and bitcoin: Inside the messy boardroom fight at a treasury company that may span to others",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
+    "Google News": 30,
     "CoinDesk": 20,
-    "Decrypt": 20,
     "CoinTelegraph": 20,
-    "Google News": 30
+    "Decrypt": 20
   },
   "history": [
     {
@@ -660,10 +658,17 @@
       "score": -29,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-02T10:19:46.346760+00:00",
+      "ts": 1772446786,
+      "score": -29,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T08:51:57.074192+00:00",
-    "updated_ts": 1772441517
+    "updated_at": "2026-03-02T10:19:46.346831+00:00",
+    "updated_ts": 1772446786
   }
 }
