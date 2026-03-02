@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -38,
+    "score": -46,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 15,
-    "positive_score": 120,
-    "negative_score": -520
+    "scored_articles": 16,
+    "positive_score": 40,
+    "negative_score": -600
   },
   "alpha_events": [
     {
@@ -90,7 +90,7 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 37,
-      "score": -220,
+      "score": -310,
       "bias": "bearish"
     },
     "ETH": {
@@ -165,6 +165,16 @@
       ]
     },
     {
+      "title": "Bitcoin\u2019s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst.",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Bitcoin outperforms equities in risk-off session as Iran conflict enters third day",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -191,24 +201,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Clarifying the CLARITY Act: What To Know About the House Crypto Market Structure Bill and Its Path to Law - Arnold & Porter",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": []
     },
     {
       "title": "Here\u2019s what happened in crypto today",
@@ -245,10 +237,18 @@
       "coins": []
     },
     {
-      "title": "Bitcoin\u2019s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst.",
-      "source": "CoinDesk",
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
+      "source": "Google News",
       "sentiment": "neutral",
-      "score": 0,
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 crash creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -10,
       "importance": "low",
       "coins": [
         "BTC"
@@ -386,9 +386,9 @@
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
-    "Decrypt": 20,
     "Google News": 30,
+    "Decrypt": 20,
+    "CoinTelegraph": 20,
     "CoinDesk": 20
   },
   "history": [
@@ -748,10 +748,17 @@
       "score": -38,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-02T20:49:49.811615+00:00",
+      "ts": 1772484589,
+      "score": -46,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T20:11:22.141924+00:00",
-    "updated_ts": 1772482282
+    "updated_at": "2026-03-02T20:49:49.811691+00:00",
+    "updated_ts": 1772484589
   }
 }
