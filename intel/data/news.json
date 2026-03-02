@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -29,
+    "score": -22,
     "bias": "bearish",
-    "strength": "moderate",
+    "strength": "weak",
     "total_articles": 90,
     "scored_articles": 16,
-    "positive_score": 190,
-    "negative_score": -470
+    "positive_score": 230,
+    "negative_score": -420
   },
   "alpha_events": [
     {
@@ -32,17 +32,6 @@
       "coins": [],
       "keywords": [
         "hack"
-      ]
-    },
-    {
-      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "crash"
       ]
     },
     {
@@ -74,12 +63,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 34,
+      "articles": 35,
       "score": -40,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 14,
+      "articles": 12,
       "score": -120,
       "bias": "bearish"
     },
@@ -110,14 +99,6 @@
       "coins": []
     },
     {
-      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
@@ -136,6 +117,14 @@
       "coins": [
         "ETH"
       ]
+    },
+    {
+      "title": "U.S. equity futures fall in pre-market trading as oil, gold retreat from highs",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
     },
     {
       "title": "Bitcoin tops $68,000 after Iran confirms leader killed in U.S., Israel airstrikes",
@@ -373,10 +362,10 @@
     }
   ],
   "sources": {
-    "Google News": 30,
+    "Decrypt": 20,
     "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Decrypt": 20
+    "Google News": 30
   },
   "history": [
     {
@@ -665,10 +654,17 @@
       "score": -29,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-02T10:51:29.184798+00:00",
+      "ts": 1772448689,
+      "score": -22,
+      "bias": "bearish",
+      "alpha_count": 4
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T10:19:46.346831+00:00",
-    "updated_ts": 1772446786
+    "updated_at": "2026-03-02T10:51:29.184870+00:00",
+    "updated_ts": 1772448689
   }
 }
