@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 10,
+    "score": 15,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.8,
-    "available_sources": 4,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
-        "score": 0,
-        "bias": "neutral",
-        "strength": "weak",
-        "age_min": 20.7,
-        "effective_weight": 0.9
-      },
-      "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 56.2,
+        "age_min": 18.4,
+        "effective_weight": 3.0
+      },
+      "whales": {
+        "status": "fresh",
+        "score": 31,
+        "bias": "bullish",
+        "strength": "weak",
+        "age_min": 15.0,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 72.5,
+        "age_min": 93.7,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 3.9,
+        "age_min": 25.2,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,15 +44,15 @@
         "score": -46,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 35.3,
+        "age_min": 56.5,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -36,
-      "bias": "bearish",
+      "score": 5,
+      "bias": "neutral",
       "signals": 2,
       "details": [
         {
@@ -60,8 +60,8 @@
           "reason": "News sentiment: 34 articles, score=-330"
         },
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (44 large txs)"
+          "bias": "bullish",
+          "reason": "BTC whale distribution (5 txs) \u2014 accumulation"
         }
       ]
     },
@@ -131,9 +131,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-02T17:27:53.434298+00:00",
+  "timestamp": "2026-03-02T17:49:08.748275+00:00",
   "_meta": {
-    "updated_at": "2026-03-02T17:27:53.435027+00:00",
-    "updated_ts": 1772472473
+    "updated_at": "2026-03-02T17:49:08.748838+00:00",
+    "updated_ts": 1772473748
   }
 }
