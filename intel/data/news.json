@@ -1,27 +1,14 @@
 {
   "aggregate": {
-    "score": -26,
+    "score": -35,
     "bias": "bearish",
     "strength": "moderate",
-    "total_articles": 60,
-    "scored_articles": 10,
+    "total_articles": 90,
+    "scored_articles": 17,
     "positive_score": 150,
-    "negative_score": -320
+    "negative_score": -530
   },
   "alpha_events": [
-    {
-      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -90,
-      "importance": "critical",
-      "coins": [
-        "ETH"
-      ],
-      "keywords": [
-        "crypto ban"
-      ]
-    },
     {
       "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
       "source": "Decrypt",
@@ -34,6 +21,17 @@
       ]
     },
     {
+      "title": "February crypto losses hit lowest level since March 2025: PeckShield",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "hack"
+      ]
+    },
+    {
       "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -43,36 +41,52 @@
       "keywords": [
         "crash"
       ]
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ],
+      "keywords": [
+        "crash"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 27,
-      "score": 40,
-      "bias": "bullish"
+      "articles": 36,
+      "score": -60,
+      "bias": "bearish"
     },
     "ETH": {
-      "articles": 10,
-      "score": -90,
+      "articles": 15,
+      "score": -50,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 5,
+      "articles": 7,
       "score": 40,
       "bias": "bullish"
     }
   },
   "top_articles": [
-    {
-      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -90,
-      "importance": "critical",
-      "coins": [
-        "ETH"
-      ]
-    },
     {
       "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
       "source": "Decrypt",
@@ -82,12 +96,40 @@
       "coins": []
     },
     {
+      "title": "February crypto losses hit lowest level since March 2025: PeckShield",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
       "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
       "source": "CoinDesk",
       "sentiment": "bearish",
       "score": -50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
     },
     {
       "title": "Bitcoin tops $68,000 after Iran confirms leader killed in U.S., Israel airstrikes",
@@ -130,6 +172,16 @@
       ]
     },
     {
+      "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Trump Media could spin out Truth Social amid crypto push",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -156,6 +208,50 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 crash creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -10,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "HYPE jumps 5% as token burn offsets $316 Million unlock, JUP gains weekly on supply freeze",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Bitcoin losing trillions in value hasn't stopped traditional giants' interest in digital assets sector",
@@ -268,87 +364,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Former Mt. Gox CEO proposed a rewrite of bitcoin's code to recover $5 billion in stolen funds. Gets quickly shutdown",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Suspected insiders make over $1.2 million on Polymarket by betting on U.S.'s Iran strike",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "XRP tumbles 9% as break below $1.36 wipes out relief rally",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin's five-month slide: why BTC is set for worst losing streak since 2018",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "Bitcoin could see further downside risks as Iran attacks U.S. bases across Middle East",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "X to label paid promotions but prohibits crypto promos in EU, UK",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin undervalued relative to gold signals potential rally: Analyst",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Strategy boosts monthly STRC preferred dividend to 11.5% for March 2026",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "Decrypt": 20,
+    "CoinDesk": 20,
+    "Google News": 30,
     "CoinTelegraph": 20,
-    "CoinDesk": 20
+    "Decrypt": 20
   },
   "history": [
     {
@@ -588,10 +610,17 @@
       "score": -26,
       "bias": "bearish",
       "alpha_count": 3
+    },
+    {
+      "timestamp": "2026-03-02T04:37:46.500677+00:00",
+      "ts": 1772426266,
+      "score": -35,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T03:26:01.919610+00:00",
-    "updated_ts": 1772421961
+    "updated_at": "2026-03-02T04:37:46.500736+00:00",
+    "updated_ts": 1772426266
   }
 }

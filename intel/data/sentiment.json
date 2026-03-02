@@ -65,68 +65,66 @@
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 136,
+        "market_cap_rank": 135,
         "score": 0
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 109,
-        "score": 1
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 1
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 2
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 109,
         "score": 3
       },
       {
         "name": "Fabric Protocol",
         "symbol": "ROBO",
-        "market_cap_rank": 294,
+        "market_cap_rank": 293,
         "score": 4
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 38,
         "score": 5
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 49,
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 51,
         "score": 6
       },
       {
         "name": "Grass",
         "symbol": "GRASS",
-        "market_cap_rank": 211,
+        "market_cap_rank": 210,
         "score": 7
       },
       {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 34,
+        "name": "Aerodrome Finance",
+        "symbol": "AERO",
+        "market_cap_rank": 130,
         "score": 8
       },
       {
-        "name": "Espresso",
-        "symbol": "ESP",
-        "market_cap_rank": 344,
+        "name": "Ondo",
+        "symbol": "ONDO",
+        "market_cap_rank": 59,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
-      "ETH",
-      "SOL"
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -473,10 +471,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-02T04:37:12.905362+00:00",
+      "ts": 1772426232,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T03:09:29.529277+00:00",
-    "updated_ts": 1772420969
+    "updated_at": "2026-03-02T04:37:12.905399+00:00",
+    "updated_ts": 1772426232
   }
 }
