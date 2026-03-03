@@ -69,21 +69,21 @@
         "score": 0
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 138,
+        "name": "River",
+        "symbol": "RIVER",
+        "market_cap_rank": 119,
         "score": 1
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 216,
+        "market_cap_rank": 218,
         "score": 2
       },
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 140,
         "score": 3
       },
       {
@@ -93,39 +93,38 @@
         "score": 4
       },
       {
-        "name": "River",
-        "symbol": "RIVER",
-        "market_cap_rank": 120,
+        "name": "Jupiter",
+        "symbol": "JUP",
+        "market_cap_rank": 87,
         "score": 5
-      },
-      {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
-        "score": 6
       },
       {
         "name": "NEAR Protocol",
         "symbol": "NEAR",
-        "market_cap_rank": 44,
+        "market_cap_rank": 43,
+        "score": 6
+      },
+      {
+        "name": "GIZA",
+        "symbol": "GIZA",
+        "market_cap_rank": 950,
         "score": 7
       },
       {
-        "name": "Sui",
-        "symbol": "SUI",
-        "market_cap_rank": 30,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
         "score": 8
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
-      "SOL"
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -850,10 +849,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-03T18:17:15.518511+00:00",
+      "ts": 1772561835,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T17:23:17.132654+00:00",
-    "updated_ts": 1772558597
+    "updated_at": "2026-03-03T18:17:15.518545+00:00",
+    "updated_ts": 1772561835
   }
 }

@@ -4,11 +4,22 @@
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 280,
-    "negative_score": -370
+    "scored_articles": 17,
+    "positive_score": 300,
+    "negative_score": -400
   },
   "alpha_events": [
+    {
+      "title": "Circle shares boosted by Middle East tensions, rising oil, fading rate cut hopes, says Mizuho",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "+rate cut"
+      ]
+    },
     {
       "title": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
       "source": "CoinTelegraph",
@@ -62,9 +73,9 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 33,
-      "score": 0,
-      "bias": "neutral"
+      "articles": 29,
+      "score": -40,
+      "bias": "bearish"
     },
     "ETH": {
       "articles": 14,
@@ -72,12 +83,20 @@
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 2,
+      "articles": 3,
       "score": -50,
       "bias": "bearish"
     }
   },
   "top_articles": [
+    {
+      "title": "Circle shares boosted by Middle East tensions, rising oil, fading rate cut hopes, says Mizuho",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
     {
       "title": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
       "source": "CoinTelegraph",
@@ -181,14 +200,12 @@
       ]
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
+      "title": "Why Bermuda is testing a fully onchain economy instead of crypto mandates",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
       "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
+      "coins": []
     },
     {
       "title": "Here\u2019s what happened in crypto today",
@@ -223,6 +240,50 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "International finance watchdog warns stablecoins are increasingly used in sanctions evasion and money laundering",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "AI agents will be primary users of blockchain, NEAR co-founder says",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Aave governance rift deepens as major governance group exits $26 billion DeFi protocol",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Eric Trump\u2019s American Bitcoin buys 11,298 ASIC miners, increasing mining capacity by 12%",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bank of Japan expands blockchain settlement sandbox and says CBDC efforts are ongoing",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "ETH"
+      ]
     },
     {
       "title": "Bitcoin attempting to make a stand as global stock markets melt down on Iran war",
@@ -298,69 +359,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Dollar surge pressures crypto markets after escalation in Iran conflict",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "\u2018Scam token\u2019 case against Uniswap dismissed by U.S. district judge in NYC",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin falls below $67,000 as U.S. equities slide and oil pushes higher",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "OKX jumps into AI agent race with new OnchainOS toolkit",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Core Scientific sells $175 million in bitcoin as AI pivot accelerates",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin supply approaching 20 million: The final million will take another 114 years to mine",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Google News": 30,
+    "CoinDesk": 20,
     "Decrypt": 20,
-    "CoinTelegraph": 20,
-    "CoinDesk": 20
+    "Google News": 30,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -852,10 +857,17 @@
       "score": -12,
       "bias": "neutral",
       "alpha_count": 4
+    },
+    {
+      "timestamp": "2026-03-03T18:17:53.267295+00:00",
+      "ts": 1772561873,
+      "score": -12,
+      "bias": "neutral",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T16:52:35.369178+00:00",
-    "updated_ts": 1772556755
+    "updated_at": "2026-03-03T18:17:53.267371+00:00",
+    "updated_ts": 1772561873
   }
 }
