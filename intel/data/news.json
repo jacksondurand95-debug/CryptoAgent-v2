@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -19,
+    "score": -17,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 20,
-    "positive_score": 300,
-    "negative_score": -490
+    "scored_articles": 16,
+    "positive_score": 260,
+    "negative_score": -400
   },
   "alpha_events": [
     {
@@ -73,14 +73,14 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 29,
+      "articles": 30,
       "score": -40,
       "bias": "bearish"
     },
     "ETH": {
       "articles": 16,
-      "score": -40,
-      "bias": "bearish"
+      "score": -10,
+      "bias": "neutral"
     },
     "SOL": {
       "articles": 2,
@@ -164,14 +164,6 @@
       ]
     },
     {
-      "title": "BitMEX co-founder pledges $27M to London maths institute after Trump pardon",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "Four Headwinds Stalling Bitcoin's $70K Breakout",
       "source": "Decrypt",
       "sentiment": "bullish",
@@ -218,24 +210,6 @@
       ]
     },
     {
-      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -260,11 +234,11 @@
       "coins": []
     },
     {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
-      "source": "Google News",
+      "title": "Donald Trump's crypto legacy in two words: Paul Atkins",
+      "source": "CoinDesk",
       "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -357,12 +331,40 @@
       "score": 0,
       "importance": "low",
       "coins": []
+    },
+    {
+      "title": "Visa and Bridge plan stablecoin-linked card expansion to over 100 countries",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin could slide further on liquidity squeeze, but long-term bull case intact: Sygnum CIO",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Oil shock and inflation fears drag down bitcoin",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
     "Decrypt": 20,
-    "CoinDesk": 20,
     "CoinTelegraph": 20,
+    "CoinDesk": 20,
     "Google News": 30
   },
   "history": [
@@ -869,10 +871,17 @@
       "score": -19,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-03T20:10:56.599776+00:00",
+      "ts": 1772568656,
+      "score": -17,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T18:54:23.191834+00:00",
-    "updated_ts": 1772564063
+    "updated_at": "2026-03-03T20:10:56.599840+00:00",
+    "updated_ts": 1772568656
   }
 }
