@@ -88,7 +88,7 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 29,
+      "articles": 28,
       "score": -190,
       "bias": "bearish"
     },
@@ -98,7 +98,7 @@
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 6,
+      "articles": 5,
       "score": 0,
       "bias": "neutral"
     }
@@ -199,7 +199,7 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
+      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -223,6 +223,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "NEAR token jumps 17% after \u2018Confidential Intents\u2019 launch, outpaces privacy tokens sector",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
     },
     {
       "title": "U.S. Senate housing bill includes CBDC ban",
@@ -364,23 +372,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Anthony Pompliano\u2019s ProCap Financial buys 450 bitcoin, steps up share buybacks",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
     "CoinTelegraph": 20,
-    "Google News": 30,
     "CoinDesk": 20,
-    "Decrypt": 20
+    "Decrypt": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -788,10 +786,17 @@
       "score": -50,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-03T05:04:24.809186+00:00",
+      "ts": 1772514264,
+      "score": -50,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T04:37:10.710600+00:00",
-    "updated_ts": 1772512630
+    "updated_at": "2026-03-03T05:04:24.809241+00:00",
+    "updated_ts": 1772514264
   }
 }
