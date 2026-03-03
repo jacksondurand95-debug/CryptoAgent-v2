@@ -93,7 +93,7 @@
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 14,
+      "articles": 15,
       "score": -170,
       "bias": "bearish"
     },
@@ -377,10 +377,10 @@
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Google News": 30
+    "Decrypt": 20,
+    "Google News": 30,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -774,10 +774,17 @@
       "score": -50,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-03T03:27:37.468897+00:00",
+      "ts": 1772508457,
+      "score": -50,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T03:03:48.920031+00:00",
-    "updated_ts": 1772507028
+    "updated_at": "2026-03-03T03:27:37.468962+00:00",
+    "updated_ts": 1772508457
   }
 }
