@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -32,
+    "score": -34,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 17,
+    "scored_articles": 19,
     "positive_score": 200,
-    "negative_score": -570
+    "negative_score": -660
   },
   "alpha_events": [
     {
@@ -31,6 +31,17 @@
       ],
       "keywords": [
         "exploit"
+      ]
+    },
+    {
+      "title": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "fraud"
       ]
     },
     {
@@ -104,7 +115,7 @@
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 17,
+      "articles": 18,
       "score": -130,
       "bias": "bearish"
     },
@@ -132,6 +143,14 @@
       "coins": [
         "ETH"
       ]
+    },
+    {
+      "title": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
     },
     {
       "title": "\u2018ClickFix\u2019 hackers pose as VCs, hijack QuickLens in latest crypto attacks",
@@ -272,6 +291,24 @@
       "coins": []
     },
     {
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Oil shock and inflation fears drag down bitcoin",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Dollar surge pressures crypto markets after escalation in Iran conflict",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -360,38 +397,12 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Core Scientific turns lower after Q4 results disappoint",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Australia could unlock A$24 billion in digital finance gains, is on track for just A$1 billion",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Battle for Bitcoin's soul opens as first block supporting 'clean-up' proposal is mined",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
+    "Google News": 30,
     "CoinDesk": 20,
     "Decrypt": 20,
-    "Google News": 30,
     "CoinTelegraph": 20
   },
   "history": [
@@ -856,10 +867,17 @@
       "score": -32,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-03T12:53:03.363443+00:00",
+      "ts": 1772542383,
+      "score": -34,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T12:13:51.124731+00:00",
-    "updated_ts": 1772540031
+    "updated_at": "2026-03-03T12:53:03.363511+00:00",
+    "updated_ts": 1772542383
   }
 }
