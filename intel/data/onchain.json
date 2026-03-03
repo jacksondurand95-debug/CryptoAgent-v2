@@ -12,7 +12,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "TVL stable (+3.4%)"
+        "reason": "TVL stable (-2.0%)"
       },
       {
         "bias": "neutral",
@@ -22,20 +22,20 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+        "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
       },
       {
         "bias": "bullish",
         "score": 20,
-        "reason": "DeFi yields depressed (2.4%) \u2014 capitulation"
+        "reason": "DeFi yields depressed (2.6%) \u2014 capitulation"
       }
     ]
   },
   "stablecoins": {
-    "total_mcap_b": 264.87,
+    "total_mcap_b": 264.76,
     "breakdown": {
-      "Tether": 183.72,
-      "USD Coin": 76.31,
+      "Tether": 183.7,
+      "USD Coin": 76.21,
       "Dai": 4.47,
       "First Digital USD": 0.38
     },
@@ -50,49 +50,49 @@
     }
   },
   "tvl": {
-    "total_tvl_b": 94.23,
-    "week_change_pct": 3.39,
-    "month_change_pct": -9.21,
+    "total_tvl_b": 94.05,
+    "week_change_pct": -2.01,
+    "month_change_pct": -10.54,
     "top_chains": {
       "Harmony": 0.0,
-      "Mantle": 0.77,
-      "Stable": 0.0,
-      "Unichain": 0.05,
-      "Ink": 0.46,
-      "Etherlink": 0.03,
-      "Kava": 0.07,
       "Aurora": 0.0,
-      "Corn": 0.0,
-      "Celo": 0.03
+      "Stable": 0.0,
+      "TAC": 0.0,
+      "Ink": 0.46,
+      "Plasma": 2.19,
+      "Sonic": 0.04,
+      "Etherlink": 0.03,
+      "X Layer": 0.02,
+      "Kava": 0.07
     },
-    "trend": "growing",
+    "trend": "shrinking",
     "signal": {
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "TVL stable (+3.4%)"
+      "reason": "TVL stable (-2.0%)"
     }
   },
   "dex_volume": {
-    "total_24h_m": 9704.5,
-    "total_7d_m": 59828.6,
-    "change_1d_pct": 17.8,
+    "total_24h_m": 9704.6,
+    "total_7d_m": 59840.7,
+    "change_1d_pct": 17.7,
     "change_7d_pct": 15.2,
     "top_protocols": [
       {
         "name": "Curve DEX",
-        "volume_24h": 227.8,
-        "change_1d": 100.4
+        "volume_24h": 215.3,
+        "change_1d": 89.4
       },
       {
         "name": "Balancer V1",
         "volume_24h": 0.2,
-        "change_1d": 23.4
+        "change_1d": 21.3
       },
       {
         "name": "SushiSwap",
-        "volume_24h": 0.8,
-        "change_1d": -55.2
+        "volume_24h": 0.7,
+        "change_1d": -62.2
       },
       {
         "name": "KyberSwap Classic",
@@ -117,12 +117,12 @@
       {
         "name": "Bancor V2.1",
         "volume_24h": 0.1,
-        "change_1d": -14.3
+        "change_1d": -10.6
       },
       {
         "name": "WanSwap Dex",
         "volume_24h": 0.0,
-        "change_1d": -32.1
+        "change_1d": -29.2
       },
       {
         "name": "PancakeSwap AMM",
@@ -139,7 +139,7 @@
   },
   "btc_onchain": {
     "btc_fees": {
-      "fastest": 2,
+      "fastest": 1,
       "half_hour": 1,
       "hour": 1,
       "economy": 1,
@@ -149,14 +149,14 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.3,
-      "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+      "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 30165,
-      "vsize": 28444890,
-      "total_fee": 5380562
+      "count": 30042,
+      "vsize": 26181921,
+      "total_fee": 3815717
     },
-    "btc_hashrate": 861370016826.0,
+    "btc_hashrate": 918794684615.0,
     "hashrate_trend": {
       "current_eh": 977.3,
       "avg_7d_eh": 1055.4,
@@ -165,15 +165,15 @@
   },
   "eth_onchain": {},
   "yields": {
-    "avg_stable_apy": 2.37,
-    "median_stable_apy": 2.75,
+    "avg_stable_apy": 2.63,
+    "median_stable_apy": 3.5,
     "top_pools": [
       {
         "pool": "43641cf5-a92e-416b-bce9-27113d3c0db6",
         "project": "maple",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 3147.6,
+        "tvl_m": 3140.6,
         "apy": 4.56
       },
       {
@@ -181,7 +181,7 @@
         "project": "aave-v3",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 2082.4,
+        "tvl_m": 2079.4,
         "apy": 1.89
       },
       {
@@ -189,7 +189,7 @@
         "project": "maple",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 1489.6,
+        "tvl_m": 1486.8,
         "apy": 4.37
       },
       {
@@ -197,15 +197,15 @@
         "project": "aave-v3",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 1344.0,
-        "apy": 2.02
+        "tvl_m": 1337.0,
+        "apy": 2.03
       },
       {
         "pool": "a87bbade-7728-43d9-bc23-2538812be3cc",
         "project": "merkl",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 926.4,
+        "tvl_m": 911.7,
         "apy": 0.24
       },
       {
@@ -213,7 +213,7 @@
         "project": "jupiter-lend",
         "chain": "Solana",
         "symbol": "USDC",
-        "tvl_m": 530.1,
+        "tvl_m": 530.3,
         "apy": 4.11
       },
       {
@@ -229,7 +229,7 @@
         "project": "merkl",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 393.8,
+        "tvl_m": 383.4,
         "apy": 0.06
       },
       {
@@ -245,8 +245,8 @@
         "project": "merkl",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 341.9,
-        "apy": 0.5
+        "tvl_m": 342.3,
+        "apy": 0.51
       }
     ],
     "pool_count": 282,
@@ -254,7 +254,7 @@
       "bias": "bullish",
       "score": 20,
       "weight": 0.5,
-      "reason": "DeFi yields depressed (2.4%) \u2014 capitulation"
+      "reason": "DeFi yields depressed (2.6%) \u2014 capitulation"
     }
   },
   "history": [
@@ -649,10 +649,18 @@
       "bias": "neutral",
       "stablecoin_mcap_b": 264.87,
       "tvl_b": 94.23
+    },
+    {
+      "timestamp": "2026-03-03T22:08:35.366130+00:00",
+      "ts": 1772575715,
+      "score": 4,
+      "bias": "neutral",
+      "stablecoin_mcap_b": 264.76,
+      "tvl_b": 94.05
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T20:10:38.935622+00:00",
-    "updated_ts": 1772568638
+    "updated_at": "2026-03-03T22:08:35.366176+00:00",
+    "updated_ts": 1772575715
   }
 }

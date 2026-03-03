@@ -65,43 +65,43 @@
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 177,
+        "market_cap_rank": 455,
         "score": 0
       },
       {
         "name": "PHALA",
         "symbol": "PHA",
-        "market_cap_rank": 559,
+        "market_cap_rank": 567,
         "score": 1
-      },
-      {
-        "name": "Aave",
-        "symbol": "AAVE",
-        "market_cap_rank": 48,
-        "score": 2
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
         "market_cap_rank": 148,
+        "score": 2
+      },
+      {
+        "name": "River",
+        "symbol": "RIVER",
+        "market_cap_rank": 121,
         "score": 3
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
+        "name": "Aave",
+        "symbol": "AAVE",
+        "market_cap_rank": 48,
         "score": 4
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
+        "score": 5
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 5
-      },
-      {
-        "name": "River",
-        "symbol": "RIVER",
-        "market_cap_rank": 119,
         "score": 6
       },
       {
@@ -111,22 +111,22 @@
         "score": 7
       },
       {
-        "name": "XRP",
-        "symbol": "XRP",
-        "market_cap_rank": 5,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
         "score": 8
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
         "score": 9
       }
     ],
     "our_coins_trending": [
+      "ETH",
       "BTC",
-      "SOL",
-      "ETH"
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -893,10 +893,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-03T22:08:14.717692+00:00",
+      "ts": 1772575694,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T21:17:02.017483+00:00",
-    "updated_ts": 1772572622
+    "updated_at": "2026-03-03T22:08:14.717729+00:00",
+    "updated_ts": 1772575694
   }
 }

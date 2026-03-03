@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -17,
+    "score": -25,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 16,
-    "positive_score": 260,
-    "negative_score": -400
+    "positive_score": 220,
+    "negative_score": -440
   },
   "alpha_events": [
     {
@@ -73,14 +73,14 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 29,
-      "score": -40,
+      "articles": 28,
+      "score": -80,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 16,
-      "score": -10,
-      "bias": "neutral"
+      "articles": 14,
+      "score": -50,
+      "bias": "bearish"
     },
     "SOL": {
       "articles": 3,
@@ -144,20 +144,10 @@
       "coins": []
     },
     {
-      "title": "Tether taps Deloitte for first USAT reserve report",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Bitcoin price chart \u2018death cross\u2019 is back, reviving late-cycle fears",
+      "title": "MARA exec pushes back on Bitcoin treasury sell-off narrative",
       "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 40,
+      "sentiment": "bearish",
+      "score": -40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -186,6 +176,16 @@
       "source": "Google News",
       "sentiment": "bearish",
       "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -231,6 +231,14 @@
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "JP Morgan CEO Jamie Dimon says stablecoin issuers paying interest should be regulated as banks",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -349,23 +357,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Oil shock and inflation fears drag down bitcoin",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
+    "CoinTelegraph": 20,
     "CoinDesk": 20,
     "Google News": 30,
-    "Decrypt": 20,
-    "CoinTelegraph": 20
+    "Decrypt": 20
   },
   "history": [
     {
@@ -885,10 +883,17 @@
       "score": -17,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-03T22:08:52.944910+00:00",
+      "ts": 1772575732,
+      "score": -25,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T20:47:46.470225+00:00",
-    "updated_ts": 1772570866
+    "updated_at": "2026-03-03T22:08:52.944979+00:00",
+    "updated_ts": 1772575732
   }
 }
