@@ -4,9 +4,9 @@
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 17,
+    "scored_articles": 14,
     "positive_score": 0,
-    "negative_score": -690
+    "negative_score": -570
   },
   "alpha_events": [
     {
@@ -44,20 +44,6 @@
       "coins": [],
       "keywords": [
         "exploit"
-      ]
-    },
-    {
-      "title": "Will Bitcoin crash if oil prices hit $100 per barrel?",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ],
-      "keywords": [
-        "crash"
       ]
     },
     {
@@ -102,13 +88,13 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
-      "score": -340,
+      "articles": 33,
+      "score": -220,
       "bias": "bearish"
     },
     "ETH": {
       "articles": 15,
-      "score": -220,
+      "score": -170,
       "bias": "bearish"
     },
     "SOL": {
@@ -147,17 +133,6 @@
       "coins": []
     },
     {
-      "title": "Will Bitcoin crash if oil prices hit $100 per barrel?",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
       "title": "Morning Minute: Bitcoin Crashes, Rebounds as Iran War Begins",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -189,16 +164,6 @@
     },
     {
       "title": "Bitcoin\u2019s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin outperforms equities in risk-off session as Iran conflict enters third day",
       "source": "CoinDesk",
       "sentiment": "bearish",
       "score": -40,
@@ -244,16 +209,6 @@
       "coins": []
     },
     {
-      "title": "SEC Clarifies Crypto Regulation: Allows Security Tokens to Trade with Bitcoin - CoinCentral",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
@@ -297,6 +252,14 @@
     },
     {
       "title": "Core Scientific turns lower after Q4 results disappoint",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Australia could unlock A$24 billion in digital finance gains, is on track for just A$1 billion",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -393,13 +356,31 @@
       "score": 0,
       "importance": "low",
       "coins": []
+    },
+    {
+      "title": "Strategy purchased more than $200 million in bitcoin last week",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "South Korea investigates seed phrase leak in photo leading to $4.8 million crypto theft from tax authority",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
     }
   ],
   "sources": {
     "CoinTelegraph": 20,
-    "CoinDesk": 20,
     "Google News": 30,
-    "Decrypt": 20
+    "Decrypt": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -779,10 +760,17 @@
       "score": -50,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-03T00:57:06.222022+00:00",
+      "ts": 1772499426,
+      "score": -50,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T00:26:08.438195+00:00",
-    "updated_ts": 1772497568
+    "updated_at": "2026-03-03T00:57:06.222099+00:00",
+    "updated_ts": 1772499426
   }
 }
