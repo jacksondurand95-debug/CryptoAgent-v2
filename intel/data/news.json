@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -12,
-    "bias": "neutral",
+    "score": -19,
+    "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 17,
+    "scored_articles": 20,
     "positive_score": 300,
-    "negative_score": -400
+    "negative_score": -490
   },
   "alpha_events": [
     {
@@ -78,12 +78,12 @@
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 14,
-      "score": -10,
-      "bias": "neutral"
+      "articles": 16,
+      "score": -40,
+      "bias": "bearish"
     },
     "SOL": {
-      "articles": 3,
+      "articles": 2,
       "score": -50,
       "bias": "bearish"
     }
@@ -218,6 +218,24 @@
       ]
     },
     {
+      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -234,7 +252,15 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
+      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -331,41 +357,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Visa and Bridge plan stablecoin-linked card expansion to over 100 countries",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin could slide further on liquidity squeeze, but long-term bull case intact: Sygnum CIO",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Oil shock and inflation fears drag down bitcoin",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
     "Decrypt": 20,
-    "Google News": 30,
-    "CoinTelegraph": 20
+    "CoinDesk": 20,
+    "CoinTelegraph": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -864,10 +862,17 @@
       "score": -12,
       "bias": "neutral",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-03T18:54:23.191766+00:00",
+      "ts": 1772564063,
+      "score": -19,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T18:17:53.267371+00:00",
-    "updated_ts": 1772561873
+    "updated_at": "2026-03-03T18:54:23.191834+00:00",
+    "updated_ts": 1772564063
   }
 }
