@@ -63,63 +63,63 @@
   "trending": {
     "trending": [
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
+        "name": "Aave",
+        "symbol": "AAVE",
+        "market_cap_rank": 48,
         "score": 0
+      },
+      {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 47,
+        "score": 1
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 1
-      },
-      {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 46,
         "score": 2
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 131,
+        "market_cap_rank": 136,
         "score": 3
+      },
+      {
+        "name": "River",
+        "symbol": "RIVER",
+        "market_cap_rank": 126,
+        "score": 4
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
+        "score": 5
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 4
+        "score": 6
       },
       {
         "name": "Fabric Protocol",
         "symbol": "ROBO",
-        "market_cap_rank": 262,
-        "score": 5
+        "market_cap_rank": 266,
+        "score": 7
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 6
+        "name": "Morpho",
+        "symbol": "MORPHO",
+        "market_cap_rank": 64,
+        "score": 8
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
         "market_cap_rank": 113,
-        "score": 7
-      },
-      {
-        "name": "Aave",
-        "symbol": "AAVE",
-        "market_cap_rank": 45,
-        "score": 8
-      },
-      {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 47,
         "score": 9
       }
     ],
@@ -794,10 +794,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-03T12:13:15.616876+00:00",
+      "ts": 1772539995,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T11:18:15.384529+00:00",
-    "updated_ts": 1772536695
+    "updated_at": "2026-03-03T12:13:15.616908+00:00",
+    "updated_ts": 1772539995
   }
 }

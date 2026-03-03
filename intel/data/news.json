@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -39,
+    "score": -32,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 15,
-    "positive_score": 120,
+    "scored_articles": 17,
+    "positive_score": 200,
     "negative_score": -570
   },
   "alpha_events": [
@@ -99,8 +99,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 30,
-      "score": -130,
+      "articles": 28,
+      "score": -50,
       "bias": "bearish"
     },
     "ETH": {
@@ -109,7 +109,7 @@
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 3,
+      "articles": 2,
       "score": -50,
       "bias": "bearish"
     }
@@ -202,12 +202,32 @@
       ]
     },
     {
+      "title": "Bitcoin price chart \u2018death cross\u2019 is back, reviving late-cycle fears",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "BitMEX co-founder pledges $27M to London maths institute after Trump pardon",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
       "score": 40,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Four Headwinds Stalling Bitcoin's $70K Breakout",
+      "source": "Decrypt",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Circle Stock Extends Double-Digit Gains Amid Broader Crypto Rally",
@@ -249,6 +269,22 @@
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Dollar surge pressures crypto markets after escalation in Iran conflict",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "\u2018Scam token\u2019 case against Uniswap dismissed by U.S. district judge in NYC",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -350,50 +386,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Weekend warriors: How HyperLiquid became retail\u2019s bear market playground",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "Crypto world faces growing pressure to relent on stablecoin rewards to win bigger prize",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Nasdaq follows Cboe joining world of 'binary bets' as prediction market craze hits Wall Street",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin surges above $68,000 amid muted stock market reaction to Iran war",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "CoinDesk": 20,
     "Decrypt": 20,
-    "Google News": 30
+    "Google News": 30,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -850,10 +849,17 @@
       "score": -39,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-03T12:13:51.124665+00:00",
+      "ts": 1772540031,
+      "score": -32,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T10:51:12.768602+00:00",
-    "updated_ts": 1772535072
+    "updated_at": "2026-03-03T12:13:51.124731+00:00",
+    "updated_ts": 1772540031
   }
 }
