@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -47,
+    "score": -50,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 18,
-    "positive_score": 40,
+    "scored_articles": 17,
+    "positive_score": 0,
     "negative_score": -690
   },
   "alpha_events": [
@@ -107,7 +107,7 @@
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 16,
+      "articles": 15,
       "score": -220,
       "bias": "bearish"
     },
@@ -208,14 +208,6 @@
       ]
     },
     {
-      "title": "U.S. equity futures fall in pre-market trading as oil, gold retreat from highs",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
       "source": "Google News",
       "sentiment": "bearish",
@@ -286,6 +278,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "U.S. Senate housing bill includes CBDC ban",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
     },
     {
       "title": "PayPay, 40% owner of Binance Japan, seeks up to $1.1 billion in Nasdaq IPO",
@@ -396,10 +396,10 @@
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "Decrypt": 20,
     "CoinTelegraph": 20,
-    "Google News": 30
+    "CoinDesk": 20,
+    "Google News": 30,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -772,10 +772,17 @@
       "score": -47,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-03T00:26:08.438098+00:00",
+      "ts": 1772497568,
+      "score": -50,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T22:46:49.298355+00:00",
-    "updated_ts": 1772491609
+    "updated_at": "2026-03-03T00:26:08.438195+00:00",
+    "updated_ts": 1772497568
   }
 }

@@ -7,18 +7,19 @@
       {
         "bias": "bullish",
         "score": 80,
-        "reason": "Extreme Fear (10) \u2014 contrarian BUY"
+        "reason": "Extreme Fear (14) \u2014 contrarian BUY"
       }
     ]
   },
   "fear_greed": {
-    "current": 10,
+    "current": 14,
     "classification": "Extreme Fear",
-    "avg_7d": 11.1,
+    "avg_7d": 12.0,
     "avg_30d": 10.1,
     "fear_streak": 30,
     "greed_streak": 0,
     "history_30d": [
+      14,
       10,
       14,
       11,
@@ -47,7 +48,6 @@
       12,
       14,
       17,
-      14,
       14
     ],
     "trend": "improving",
@@ -55,7 +55,7 @@
       "bias": "bullish",
       "score": 80,
       "weight": 2.0,
-      "reason": "Extreme Fear (10) \u2014 contrarian BUY"
+      "reason": "Extreme Fear (14) \u2014 contrarian BUY"
     }
   },
   "news": null,
@@ -65,43 +65,43 @@
       {
         "name": "Freysa AI",
         "symbol": "FAI",
-        "market_cap_rank": 614,
+        "market_cap_rank": 674,
         "score": 0
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 128,
+        "market_cap_rank": 129,
         "score": 1
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
-        "score": 2
-      },
-      {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
-        "score": 3
       },
       {
         "name": "NEAR Protocol",
         "symbol": "NEAR",
         "market_cap_rank": 46,
+        "score": 2
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
+        "score": 3
+      },
+      {
+        "name": "GIZA",
+        "symbol": "GIZA",
+        "market_cap_rank": 968,
         "score": 4
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
         "score": 5
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 113,
         "score": 6
       },
       {
@@ -113,20 +113,19 @@
       {
         "name": "Monad",
         "symbol": "MON",
-        "market_cap_rank": 160,
+        "market_cap_rank": 161,
         "score": 8
       },
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 113,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH",
-      "SOL"
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -676,10 +675,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-03T00:25:26.390312+00:00",
+      "ts": 1772497526,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-02T23:12:27.796143+00:00",
-    "updated_ts": 1772493147
+    "updated_at": "2026-03-03T00:25:26.390341+00:00",
+    "updated_ts": 1772497526
   }
 }
