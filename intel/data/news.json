@@ -805,10 +805,17 @@
       "score": -46,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-03T08:14:15.912800+00:00",
+      "ts": 1772525655,
+      "score": -46,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T06:52:29.620819+00:00",
-    "updated_ts": 1772520749
+    "updated_at": "2026-03-03T08:14:15.912875+00:00",
+    "updated_ts": 1772525655
   }
 }
