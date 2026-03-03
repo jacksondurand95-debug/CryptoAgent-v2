@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 1.1,
+        "age_min": 0.9,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 0.4,
+        "age_min": 39.9,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 1.0,
+        "age_min": 40.4,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 4.1,
+        "age_min": 43.5,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -50,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 27.3,
+        "age_min": 35.8,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 36 articles, score=-340"
+          "reason": "News sentiment: 33 articles, score=-220"
         },
         {
           "bias": "neutral",
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 15 articles, score=-220"
+          "reason": "News sentiment: 15 articles, score=-170"
         },
         {
           "bias": "neutral",
@@ -114,17 +114,16 @@
     },
     {
       "type": "news",
-      "title": "Will Bitcoin crash if oil prices hit $100 per barrel?",
+      "title": "Morning Minute: Bitcoin Crashes, Rebounds as Iran War Begins",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
-        "BTC",
-        "ETH"
+        "BTC"
       ]
     },
     {
       "type": "news",
-      "title": "Morning Minute: Bitcoin Crashes, Rebounds as Iran War Begins",
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
@@ -132,9 +131,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-03T00:53:24.556309+00:00",
+  "timestamp": "2026-03-03T01:32:52.150240+00:00",
   "_meta": {
-    "updated_at": "2026-03-03T00:53:24.557011+00:00",
-    "updated_ts": 1772499204
+    "updated_at": "2026-03-03T01:32:52.150893+00:00",
+    "updated_ts": 1772501572
   }
 }
