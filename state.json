@@ -12,7 +12,7 @@
       "initial_risk": 4346.6600000000035,
       "atr": 1737.84,
       "highest_price": 69438.05,
-      "lowest_price": 67870.65,
+      "lowest_price": 67859.88,
       "trailing_active": false,
       "opened_at": 1772488735.3722668,
       "opened_at_str": "2026-03-02 21:58 UTC"
@@ -77,5 +77,5 @@
   "pending_orders": [],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772519302.7519066
+  "last_updated": 1772520609.8014195
 }
