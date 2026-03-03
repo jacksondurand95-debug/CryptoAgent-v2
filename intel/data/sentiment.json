@@ -63,68 +63,69 @@
   "trending": {
     "trending": [
       {
-        "name": "Freysa AI",
-        "symbol": "FAI",
-        "market_cap_rank": 636,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 130,
         "score": 0
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
+        "name": "Freysa AI",
+        "symbol": "FAI",
+        "market_cap_rank": 679,
         "score": 1
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 128,
-        "score": 2
-      },
-      {
-        "name": "GIZA",
-        "symbol": "GIZA",
-        "market_cap_rank": 944,
-        "score": 3
-      },
-      {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 46,
-        "score": 4
-      },
-      {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 240,
-        "score": 5
-      },
-      {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 161,
-        "score": 6
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 2
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
+        "score": 3
+      },
+      {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 44,
+        "score": 4
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 5
+      },
+      {
+        "name": "GIZA",
+        "symbol": "GIZA",
+        "market_cap_rank": 952,
+        "score": 6
+      },
+      {
+        "name": "BNB",
+        "symbol": "BNB",
+        "market_cap_rank": 4,
         "score": 7
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
+        "name": "Virtuals Protocol",
+        "symbol": "VIRTUAL",
+        "market_cap_rank": 99,
         "score": 8
       },
       {
-        "name": "Diem",
-        "symbol": "DIEM",
-        "market_cap_rank": 668,
+        "name": "pippin",
+        "symbol": "PIPPIN",
+        "market_cap_rank": 94,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC"
+      "BTC",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -688,10 +689,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-03T01:42:24.614592+00:00",
+      "ts": 1772502144,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T00:49:21.119114+00:00",
-    "updated_ts": 1772498961
+    "updated_at": "2026-03-03T01:42:24.614619+00:00",
+    "updated_ts": 1772502144
   }
 }
