@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 4.5,
+        "age_min": 3.4,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 31,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 17.6,
+        "age_min": 28.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 38.3,
+        "age_min": 49.2,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 33.4,
+        "age_min": 44.3,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -25,
+        "score": -17,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 38.0,
+        "age_min": 10.8,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 28 articles, score=-80"
+          "reason": "News sentiment: 30 articles, score=-80"
         },
         {
           "bias": "bullish",
@@ -81,15 +81,9 @@
       ]
     },
     "SOL": {
-      "score": -50,
-      "bias": "bearish",
-      "signals": 1,
-      "details": [
-        {
-          "bias": "bearish",
-          "reason": "News sentiment: 3 articles, score=-50"
-        }
-      ]
+      "score": 0,
+      "bias": "neutral",
+      "signals": 0
     }
   },
   "alpha_events": [
@@ -109,12 +103,10 @@
     },
     {
       "type": "news",
-      "title": "Japan prime minister Sanae Takaichi disavows Solana meme coin after it crashes by 75%",
-      "sentiment": "bearish",
+      "title": "Trump urges passage of U.S. Clarity Act, attacks banks for 'undercutting' GENIUS",
+      "sentiment": "bullish",
       "importance": "high",
-      "coins": [
-        "SOL"
-      ]
+      "coins": []
     },
     {
       "type": "news",
@@ -135,9 +127,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-03T22:46:52.783609+00:00",
+  "timestamp": "2026-03-03T22:57:46.197990+00:00",
   "_meta": {
-    "updated_at": "2026-03-03T22:46:52.784340+00:00",
-    "updated_ts": 1772578012
+    "updated_at": "2026-03-03T22:57:46.198802+00:00",
+    "updated_ts": 1772578666
   }
 }
