@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -46,
+    "score": -39,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 13,
-    "positive_score": 40,
-    "negative_score": -530
+    "scored_articles": 16,
+    "positive_score": 120,
+    "negative_score": -580
   },
   "alpha_events": [
     {
@@ -86,17 +86,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 29,
-      "score": -140,
+      "articles": 28,
+      "score": -90,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 14,
-      "score": -170,
+      "articles": 16,
+      "score": -200,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 4,
+      "articles": 3,
       "score": 0,
       "bias": "neutral"
     }
@@ -169,6 +169,14 @@
       ]
     },
     {
+      "title": "BitMEX co-founder pledges $27M to London maths institute after Trump pardon",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "Circle Stock Extends Double-Digit Gains Amid Broader Crypto Rally",
       "source": "Decrypt",
       "sentiment": "bullish",
@@ -184,6 +192,34 @@
       "importance": "medium",
       "coins": [
         "BTC"
+      ]
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "ETH"
       ]
     },
     {
@@ -211,10 +247,10 @@
       "coins": []
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 crash creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
+      "title": "Bitcoin supply approaching 20 million: The final million will take another 114 years to mine",
+      "source": "CoinDesk",
       "sentiment": "neutral",
-      "score": -10,
+      "score": 0,
       "importance": "low",
       "coins": [
         "BTC"
@@ -334,49 +370,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "SOL"
-      ]
-    },
-    {
-      "title": "Iranian crypto outflows jump 700% minutes after U.S.-Israeli airstrikes, Elliptic says",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Turkey's ruling party unveils 10% crypto income tax proposal",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Strategy purchased more than $200 million in bitcoin last week",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "Decrypt": 20,
-    "Google News": 30,
-    "CoinDesk": 20
+    "CoinDesk": 20,
+    "CoinTelegraph": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -812,10 +812,17 @@
       "score": -46,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-03T08:51:37.471037+00:00",
+      "ts": 1772527897,
+      "score": -39,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T08:14:15.912875+00:00",
-    "updated_ts": 1772525655
+    "updated_at": "2026-03-03T08:51:37.471104+00:00",
+    "updated_ts": 1772527897
   }
 }
