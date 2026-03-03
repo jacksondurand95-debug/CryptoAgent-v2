@@ -7,7 +7,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC whale activity normal (4 large txs)"
+        "reason": "BTC whale activity normal (6 large txs)"
       },
       {
         "bias": "neutral",
@@ -30,7 +30,7 @@
         "inputs": 1,
         "outputs": 2,
         "block": 939078,
-        "time": 1772506616
+        "time": 1772506615
       },
       {
         "hash": "ec393dcd990345f7...",
@@ -42,6 +42,15 @@
         "time": 1772506514
       },
       {
+        "hash": "2b8900fd13abcb2e...",
+        "btc": 458.41,
+        "type": "transfer",
+        "inputs": 1,
+        "outputs": 2,
+        "block": 939079,
+        "time": 1772507796
+      },
+      {
         "hash": "1da9ca104d26fa43...",
         "btc": 236.57,
         "type": "transfer",
@@ -49,6 +58,15 @@
         "outputs": 2,
         "block": 939077,
         "time": 1772506355
+      },
+      {
+        "hash": "7ed8066417b6832d...",
+        "btc": 230.8,
+        "type": "transfer",
+        "inputs": 3,
+        "outputs": 2,
+        "block": 939079,
+        "time": 1772508045
       },
       {
         "hash": "231de23f79240b5c...",
@@ -60,8 +78,8 @@
         "time": 1772506757
       }
     ],
-    "total_whale_btc": 3117.99,
-    "count": 4,
+    "total_whale_btc": 3807.2,
+    "count": 6,
     "consolidations": 0,
     "distributions": 0,
     "blocks_scanned": 3,
@@ -69,7 +87,7 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "BTC whale activity normal (4 large txs)"
+      "reason": "BTC whale activity normal (6 large txs)"
     }
   },
   "eth_whales": {
@@ -595,10 +613,16 @@
       "ts": 1772507834,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-03T04:04:30.036243+00:00",
+      "ts": 1772510670,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T03:17:14.050487+00:00",
-    "updated_ts": 1772507834
+    "updated_at": "2026-03-03T04:04:30.036275+00:00",
+    "updated_ts": 1772510670
   }
 }
