@@ -63,68 +63,71 @@
   "trending": {
     "trending": [
       {
-        "name": "Aave",
-        "symbol": "AAVE",
-        "market_cap_rank": 48,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 294,
         "score": 0
       },
       {
-        "name": "Jupiter",
-        "symbol": "JUP",
-        "market_cap_rank": 87,
+        "name": "Aave",
+        "symbol": "AAVE",
+        "market_cap_rank": 48,
         "score": 1
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
+        "score": 2
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
-        "score": 2
+        "score": 3
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 142,
-        "score": 3
+        "market_cap_rank": 143,
+        "score": 4
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
+        "score": 5
       },
       {
         "name": "River",
         "symbol": "RIVER",
-        "market_cap_rank": 120,
-        "score": 4
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 226,
-        "score": 5
-      },
-      {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 43,
+        "market_cap_rank": 119,
         "score": 6
       },
       {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 45,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 7
       },
       {
-        "name": "Plasma",
-        "symbol": "XPL",
-        "market_cap_rank": 153,
+        "name": "Jupiter",
+        "symbol": "JUP",
+        "market_cap_rank": 87,
         "score": 8
       },
       {
-        "name": "Sky",
-        "symbol": "SKY",
-        "market_cap_rank": 50,
+        "name": "Morpho",
+        "symbol": "MORPHO",
+        "market_cap_rank": 65,
         "score": 9
       }
     ],
-    "our_coins_trending": [],
-    "market_attention": "normal"
+    "our_coins_trending": [
+      "BTC",
+      "SOL"
+    ],
+    "market_attention": "high"
   },
   "history": [
     {
@@ -861,10 +864,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-03T19:22:36.707831+00:00",
+      "ts": 1772565756,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T18:25:08.932707+00:00",
-    "updated_ts": 1772562308
+    "updated_at": "2026-03-03T19:22:36.707872+00:00",
+    "updated_ts": 1772565756
   }
 }
