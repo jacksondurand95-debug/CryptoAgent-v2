@@ -63,63 +63,63 @@
   "trending": {
     "trending": [
       {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 47,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 1
+        "score": 0
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 131,
-        "score": 2
+        "market_cap_rank": 134,
+        "score": 1
       },
       {
-        "name": "Freysa AI",
-        "symbol": "FAI",
-        "market_cap_rank": 734,
-        "score": 3
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 45,
+        "score": 2
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 108,
-        "score": 4
-      },
-      {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 250,
-        "score": 5
+        "score": 3
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 6
+        "score": 4
+      },
+      {
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 249,
+        "score": 5
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
+        "score": 6
+      },
+      {
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 47,
         "score": 7
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 5,
         "score": 8
       },
       {
-        "name": "Grass",
-        "symbol": "GRASS",
-        "market_cap_rank": 201,
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 34,
         "score": 9
       }
     ],
@@ -767,10 +767,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-03T09:22:52.338385+00:00",
+      "ts": 1772529772,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T08:21:09.082779+00:00",
-    "updated_ts": 1772526069
+    "updated_at": "2026-03-03T09:22:52.338415+00:00",
+    "updated_ts": 1772529772
   }
 }
