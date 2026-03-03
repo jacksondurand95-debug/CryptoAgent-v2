@@ -4,11 +4,22 @@
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 14,
+    "scored_articles": 13,
     "positive_score": 0,
-    "negative_score": -570
+    "negative_score": -550
   },
   "alpha_events": [
+    {
+      "title": "Uniswap beats class action alleging it assisted crypto \u2018rug pulls\u2019",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "rug pull"
+      ]
+    },
     {
       "title": "Vitalik Buterin unveils plan to curb Ethereum block builder centralization",
       "source": "CoinDesk",
@@ -33,17 +44,6 @@
       ],
       "keywords": [
         "fraud"
-      ]
-    },
-    {
-      "title": "White hat helps recover $1.8M after $2.3M Foom Cash exploit",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "exploit"
       ]
     },
     {
@@ -88,12 +88,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 33,
-      "score": -220,
+      "articles": 29,
+      "score": -190,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 15,
+      "articles": 14,
       "score": -170,
       "bias": "bearish"
     },
@@ -104,6 +104,14 @@
     }
   },
   "top_articles": [
+    {
+      "title": "Uniswap beats class action alleging it assisted crypto \u2018rug pulls\u2019",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": []
+    },
     {
       "title": "Vitalik Buterin unveils plan to curb Ethereum block builder centralization",
       "source": "CoinDesk",
@@ -123,14 +131,6 @@
       "coins": [
         "ETH"
       ]
-    },
-    {
-      "title": "White hat helps recover $1.8M after $2.3M Foom Cash exploit",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
     },
     {
       "title": "Morning Minute: Bitcoin Crashes, Rebounds as Iran War Begins",
@@ -177,16 +177,6 @@
       "source": "Google News",
       "sentiment": "bearish",
       "score": -40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Here\u2019s what happened in crypto today",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -374,13 +364,23 @@
       "score": 0,
       "importance": "low",
       "coins": []
+    },
+    {
+      "title": "Anthony Pompliano\u2019s ProCap Financial buys 450 bitcoin, steps up share buybacks",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
     "CoinTelegraph": 20,
-    "Decrypt": 20,
     "Google News": 30,
-    "CoinDesk": 20
+    "CoinDesk": 20,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -781,10 +781,17 @@
       "score": -50,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-03T04:37:10.710519+00:00",
+      "ts": 1772512630,
+      "score": -50,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T03:27:37.468962+00:00",
-    "updated_ts": 1772508457
+    "updated_at": "2026-03-03T04:37:10.710600+00:00",
+    "updated_ts": 1772512630
   }
 }
