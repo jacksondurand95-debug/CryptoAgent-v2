@@ -75,21 +75,21 @@
         "score": 1
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
-        "score": 2
-      },
-      {
         "name": "Freysa AI",
         "symbol": "FAI",
-        "market_cap_rank": 667,
-        "score": 3
+        "market_cap_rank": 656,
+        "score": 2
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 3
+      },
+      {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 45,
         "score": 4
       },
       {
@@ -99,27 +99,27 @@
         "score": 5
       },
       {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 45,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 6
-      },
-      {
-        "name": "LayerZero",
-        "symbol": "ZRO",
-        "market_cap_rank": 117,
-        "score": 7
       },
       {
         "name": "Fabric Protocol",
         "symbol": "ROBO",
-        "market_cap_rank": 255,
-        "score": 8
+        "market_cap_rank": 257,
+        "score": 7
       },
       {
         "name": "Virtuals Protocol",
         "symbol": "VIRTUAL",
-        "market_cap_rank": 100,
+        "market_cap_rank": 99,
+        "score": 8
+      },
+      {
+        "name": "ETHGas",
+        "symbol": "GWEI",
+        "market_cap_rank": 348,
         "score": 9
       }
     ],
@@ -703,10 +703,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-03T03:11:05.067348+00:00",
+      "ts": 1772507465,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T03:03:04.008626+00:00",
-    "updated_ts": 1772506984
+    "updated_at": "2026-03-03T03:11:05.067384+00:00",
+    "updated_ts": 1772507465
   }
 }
