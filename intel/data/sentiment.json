@@ -63,15 +63,15 @@
   "trending": {
     "trending": [
       {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 46,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 0
+      },
+      {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap_rank": 46,
         "score": 1
       },
       {
@@ -93,33 +93,33 @@
         "score": 4
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
-        "score": 5
-      },
-      {
         "name": "MANTRA [Old]",
         "symbol": "OM",
         "market_cap_rank": 128,
+        "score": 5
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 6
+      },
+      {
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 258,
+        "score": 7
       },
       {
         "name": "Bittensor",
         "symbol": "TAO",
         "market_cap_rank": 47,
-        "score": 7
+        "score": 8
       },
       {
         "name": "Virtuals Protocol",
         "symbol": "VIRTUAL",
         "market_cap_rank": 101,
-        "score": 8
-      },
-      {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 253,
         "score": 9
       }
     ],
@@ -781,10 +781,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-03T10:21:40.149719+00:00",
+      "ts": 1772533300,
+      "fgi": 14,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T10:15:35.480656+00:00",
-    "updated_ts": 1772532935
+    "updated_at": "2026-03-03T10:21:40.149755+00:00",
+    "updated_ts": 1772533300
   }
 }
