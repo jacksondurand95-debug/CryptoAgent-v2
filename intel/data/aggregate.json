@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 0,
+    "score": 8,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 3.8,
+        "age_min": 1.1,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": -31,
-        "bias": "bearish",
+        "score": 0,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 28.6,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 89.4,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,32 +36,32 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 36.6,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -50,
+        "score": -46,
         "bias": "bearish",
         "strength": "moderate",
-        "age_min": 61.9,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -46,
+      "score": -36,
       "bias": "bearish",
       "signals": 2,
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 28 articles, score=-190"
+          "reason": "News sentiment: 29 articles, score=-140"
         },
         {
-          "bias": "bearish",
-          "reason": "BTC whale consolidation (9 txs) \u2014 potential selling"
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (1 large txs)"
         }
       ]
     },
@@ -105,20 +105,18 @@
     },
     {
       "type": "news",
+      "title": "\u2018ClickFix\u2019 hackers pose as VCs, hijack QuickLens in latest crypto attacks",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "type": "news",
       "title": "US authorities seek to recover $327K USDt from romance fraud scheme",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
         "ETH"
-      ]
-    },
-    {
-      "type": "news",
-      "title": "Morning Minute: Bitcoin Crashes, Rebounds as Iran War Begins",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -131,9 +129,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-03T06:06:15.521858+00:00",
+  "timestamp": "2026-03-03T06:19:30.708667+00:00",
   "_meta": {
-    "updated_at": "2026-03-03T06:06:15.522378+00:00",
-    "updated_ts": 1772517975
+    "updated_at": "2026-03-03T06:19:30.709474+00:00",
+    "updated_ts": 1772518770
   }
 }
