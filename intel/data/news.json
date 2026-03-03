@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -24,
-    "bias": "bearish",
+    "score": -12,
+    "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 17,
-    "positive_score": 240,
-    "negative_score": -470
+    "scored_articles": 16,
+    "positive_score": 280,
+    "negative_score": -370
   },
   "alpha_events": [
     {
@@ -18,17 +18,6 @@
       "coins": [],
       "keywords": [
         "fraud"
-      ]
-    },
-    {
-      "title": "\u2018ClickFix\u2019 hackers pose as VCs, hijack QuickLens in latest crypto attacks",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "hack"
       ]
     },
     {
@@ -73,9 +62,9 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 28,
-      "score": -40,
-      "bias": "bearish"
+      "articles": 33,
+      "score": 0,
+      "bias": "neutral"
     },
     "ETH": {
       "articles": 14,
@@ -91,14 +80,6 @@
   "top_articles": [
     {
       "title": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "\u2018ClickFix\u2019 hackers pose as VCs, hijack QuickLens in latest crypto attacks",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -60,
@@ -136,6 +117,14 @@
       ]
     },
     {
+      "title": "CFTC chief Selig to clear path for U.S. perpetual futures in coming weeks",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "Tether taps Deloitte for first USAT reserve report",
       "source": "CoinDesk",
       "sentiment": "bullish",
@@ -143,16 +132,6 @@
       "importance": "medium",
       "coins": [
         "ETH"
-      ]
-    },
-    {
-      "title": "Bitcoin\u2019s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -238,12 +217,43 @@
       "coins": []
     },
     {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Bitcoin attempting to make a stand as global stock markets melt down on Iran war",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "End of bitcoin 'HODL': public miners going all-in on AI, signaling more BTC selling",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Here is why Harvard trimmed bitcoin and bought ether and why the move is bullish for crypto",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
     },
     {
       "title": "CoinDesk 20 performance update: AAVE plunges 10%, leading index lower",
@@ -344,30 +354,12 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin climbs as BTC ETFs post one of the quarter\u2019s biggest inflow days amid Iran volatility",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "NEAR token jumps 17% after \u2018Confidential Intents\u2019 launch, outpaces privacy tokens sector",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "Google News": 30,
     "Decrypt": 20,
+    "CoinTelegraph": 20,
     "CoinDesk": 20
   },
   "history": [
@@ -853,10 +845,17 @@
       "score": -24,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-03T16:52:35.369121+00:00",
+      "ts": 1772556755,
+      "score": -12,
+      "bias": "neutral",
+      "alpha_count": 4
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T14:52:08.994008+00:00",
-    "updated_ts": 1772549528
+    "updated_at": "2026-03-03T16:52:35.369178+00:00",
+    "updated_ts": 1772556755
   }
 }
