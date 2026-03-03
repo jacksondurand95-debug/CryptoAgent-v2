@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -39,
+    "score": -34,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 120,
-    "negative_score": -580
+    "scored_articles": 15,
+    "positive_score": 160,
+    "negative_score": -520
   },
   "alpha_events": [
     {
@@ -86,17 +86,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 28,
+      "articles": 30,
       "score": -90,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 16,
-      "score": -200,
+      "articles": 15,
+      "score": -130,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 3,
+      "articles": 2,
       "score": 0,
       "bias": "neutral"
     }
@@ -159,6 +159,16 @@
       ]
     },
     {
+      "title": "Tether taps Deloitte for first USAT reserve report",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "Bitcoin\u2019s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -205,24 +215,6 @@
       ]
     },
     {
-      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -245,6 +237,36 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Bitcoin falls below $67,000 as U.S. equities slide and oil pushes higher",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "OKX jumps into AI agent race with new OnchainOS toolkit",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "Core Scientific sells $175 million in bitcoin as AI pivot accelerates",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Bitcoin supply approaching 20 million: The final million will take another 114 years to mine",
@@ -352,31 +374,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Tom Lee's Bitmine boosts ether holdings to 4.47 million tokens with  $98 million ETH purchase",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "EU banks\u2019 euro-pegged stablecoin in talks with crypto exchanges to ensure liquidity",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Google News": 30
+    "CoinDesk": 20,
+    "Google News": 30,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -819,10 +823,17 @@
       "score": -39,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-03T10:16:11.305272+00:00",
+      "ts": 1772532971,
+      "score": -34,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T08:51:37.471104+00:00",
-    "updated_ts": 1772527897
+    "updated_at": "2026-03-03T10:16:11.305340+00:00",
+    "updated_ts": 1772532971
   }
 }
