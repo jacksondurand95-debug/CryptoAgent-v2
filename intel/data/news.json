@@ -73,7 +73,7 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 30,
+      "articles": 29,
       "score": -40,
       "bias": "bearish"
     },
@@ -83,7 +83,7 @@
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 2,
+      "articles": 3,
       "score": -50,
       "bias": "bearish"
     }
@@ -226,7 +226,7 @@
       "coins": []
     },
     {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -362,10 +362,10 @@
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "CoinTelegraph": 20,
     "CoinDesk": 20,
-    "Google News": 30
+    "Google News": 30,
+    "Decrypt": 20,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -878,10 +878,17 @@
       "score": -17,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-03T20:47:46.470163+00:00",
+      "ts": 1772570866,
+      "score": -17,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T20:10:56.599840+00:00",
-    "updated_ts": 1772568656
+    "updated_at": "2026-03-03T20:47:46.470225+00:00",
+    "updated_ts": 1772570866
   }
 }
