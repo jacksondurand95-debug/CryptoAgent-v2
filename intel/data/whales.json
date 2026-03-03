@@ -24,16 +24,16 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "145df78d45c5f5e2...",
-        "btc": 20198.26,
+        "hash": "f6686563fc72c0ba...",
+        "btc": 348.82,
         "type": "transfer",
         "inputs": 1,
         "outputs": 2,
-        "block": 939096,
-        "time": 1772518297
+        "block": 939100,
+        "time": 1772519039
       }
     ],
-    "total_whale_btc": 20198.26,
+    "total_whale_btc": 348.82,
     "count": 1,
     "consolidations": 0,
     "distributions": 0,
@@ -598,10 +598,16 @@
       "ts": 1772518744,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-03T06:33:43.868692+00:00",
+      "ts": 1772519623,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T06:19:04.800061+00:00",
-    "updated_ts": 1772518744
+    "updated_at": "2026-03-03T06:33:43.868720+00:00",
+    "updated_ts": 1772519623
   }
 }
