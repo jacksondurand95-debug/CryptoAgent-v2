@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -22,
+    "score": -24,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 16,
+    "scored_articles": 17,
     "positive_score": 240,
-    "negative_score": -440
+    "negative_score": -470
   },
   "alpha_events": [
     {
@@ -73,12 +73,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 27,
-      "score": -10,
-      "bias": "neutral"
+      "articles": 28,
+      "score": -40,
+      "bias": "bearish"
     },
     "ETH": {
-      "articles": 16,
+      "articles": 14,
       "score": -10,
       "bias": "neutral"
     },
@@ -206,6 +206,16 @@
       "source": "Google News",
       "sentiment": "bullish",
       "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Here\u2019s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -352,20 +362,12 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "U.S. Senate housing bill includes CBDC ban",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "Decrypt": 20,
     "CoinTelegraph": 20,
     "Google News": 30,
+    "Decrypt": 20,
     "CoinDesk": 20
   },
   "history": [
@@ -844,10 +846,17 @@
       "score": -22,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-03T14:52:08.993942+00:00",
+      "ts": 1772549528,
+      "score": -24,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T14:19:17.259186+00:00",
-    "updated_ts": 1772547557
+    "updated_at": "2026-03-03T14:52:08.994008+00:00",
+    "updated_ts": 1772549528
   }
 }
