@@ -1,38 +1,14 @@
 {
   "aggregate": {
-    "score": -34,
+    "score": -22,
     "bias": "bearish",
-    "strength": "moderate",
+    "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 19,
-    "positive_score": 200,
-    "negative_score": -660
+    "scored_articles": 16,
+    "positive_score": 240,
+    "negative_score": -440
   },
   "alpha_events": [
-    {
-      "title": "Uniswap beats class action alleging it assisted crypto \u2018rug pulls\u2019",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -70,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "rug pull"
-      ]
-    },
-    {
-      "title": "Vitalik Buterin unveils plan to curb Ethereum block builder centralization",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ],
-      "keywords": [
-        "exploit"
-      ]
-    },
     {
       "title": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
       "source": "CoinTelegraph",
@@ -53,19 +29,6 @@
       "coins": [],
       "keywords": [
         "hack"
-      ]
-    },
-    {
-      "title": "US authorities seek to recover $327K USDt from romance fraud scheme",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ],
-      "keywords": [
-        "fraud"
       ]
     },
     {
@@ -110,14 +73,14 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 28,
-      "score": -50,
-      "bias": "bearish"
+      "articles": 27,
+      "score": -10,
+      "bias": "neutral"
     },
     "ETH": {
-      "articles": 18,
-      "score": -130,
-      "bias": "bearish"
+      "articles": 16,
+      "score": -10,
+      "bias": "neutral"
     },
     "SOL": {
       "articles": 2,
@@ -126,24 +89,6 @@
     }
   },
   "top_articles": [
-    {
-      "title": "Uniswap beats class action alleging it assisted crypto \u2018rug pulls\u2019",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -70,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Vitalik Buterin unveils plan to curb Ethereum block builder centralization",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
     {
       "title": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
       "source": "CoinTelegraph",
@@ -159,16 +104,6 @@
       "score": -60,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "US authorities seek to recover $327K USDt from romance fraud scheme",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
     },
     {
       "title": "Japan prime minister Sanae Takaichi disavows Solana meme coin after it crashes by 75%",
@@ -267,6 +202,16 @@
       ]
     },
     {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -291,12 +236,38 @@
       "coins": []
     },
     {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
-      "source": "Google News",
+      "title": "CoinDesk 20 performance update: AAVE plunges 10%, leading index lower",
+      "source": "CoinDesk",
       "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
+      "score": 0,
+      "importance": "low",
       "coins": []
+    },
+    {
+      "title": "Ondo Finance tokenized stocks platform on Binance wins regulatory approval in Abu Dhabi",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Visa and Bridge plan stablecoin-linked card expansion to over 100 countries",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin could slide further on liquidity squeeze, but long-term bull case intact: Sygnum CIO",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Oil shock and inflation fears drag down bitcoin",
@@ -389,21 +360,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "PayPay, 40% owner of Binance Japan, seeks up to $1.1 billion in Nasdaq IPO",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "Google News": 30,
-    "CoinDesk": 20,
     "Decrypt": 20,
-    "CoinTelegraph": 20
+    "CoinTelegraph": 20,
+    "Google News": 30,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -874,10 +837,17 @@
       "score": -34,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-03T14:19:17.259108+00:00",
+      "ts": 1772547557,
+      "score": -22,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T12:53:03.363511+00:00",
-    "updated_ts": 1772542383
+    "updated_at": "2026-03-03T14:19:17.259186+00:00",
+    "updated_ts": 1772547557
   }
 }

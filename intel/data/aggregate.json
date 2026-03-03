@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 17,
+    "score": 10,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 11.9,
+        "age_min": 1.1,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 31,
-        "bias": "bullish",
+        "score": 0,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 18.7,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 92.7,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,44 +36,36 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 28.1,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -34,
+        "score": -22,
         "bias": "bearish",
-        "strength": "moderate",
-        "age_min": 67.4,
+        "strength": "weak",
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 8,
+      "score": 0,
       "bias": "neutral",
-      "signals": 2,
+      "signals": 1,
       "details": [
         {
-          "bias": "bearish",
-          "reason": "News sentiment: 28 articles, score=-50"
-        },
-        {
-          "bias": "bullish",
-          "reason": "BTC whale distribution (5 txs) \u2014 accumulation"
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (19 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": -53,
-      "bias": "bearish",
-      "signals": 2,
+      "score": 0,
+      "bias": "neutral",
+      "signals": 1,
       "details": [
-        {
-          "bias": "bearish",
-          "reason": "News sentiment: 18 articles, score=-130"
-        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -95,22 +87,6 @@
   "alpha_events": [
     {
       "type": "news",
-      "title": "Uniswap beats class action alleging it assisted crypto \u2018rug pulls\u2019",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "type": "news",
-      "title": "Vitalik Buterin unveils plan to curb Ethereum block builder centralization",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "type": "news",
       "title": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
       "sentiment": "bearish",
       "importance": "high",
@@ -125,7 +101,25 @@
     },
     {
       "type": "news",
-      "title": "US authorities seek to recover $327K USDt from romance fraud scheme",
+      "title": "Japan prime minister Sanae Takaichi disavows Solana meme coin after it crashes by 75%",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "sentiment": "bearish",
       "importance": "high",
       "coins": [
@@ -133,9 +127,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-03T14:00:26.575302+00:00",
+  "timestamp": "2026-03-03T14:19:17.417720+00:00",
   "_meta": {
-    "updated_at": "2026-03-03T14:00:26.576087+00:00",
-    "updated_ts": 1772546426
+    "updated_at": "2026-03-03T14:19:17.418302+00:00",
+    "updated_ts": 1772547557
   }
 }
