@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -34,
+    "score": -39,
     "bias": "bearish",
     "strength": "moderate",
     "total_articles": 90,
     "scored_articles": 15,
-    "positive_score": 160,
-    "negative_score": -520
+    "positive_score": 120,
+    "negative_score": -570
   },
   "alpha_events": [
     {
@@ -58,6 +58,19 @@
       ]
     },
     {
+      "title": "Japan prime minister Sanae Takaichi disavows Solana meme coin after it crashes by 75%",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
@@ -87,18 +100,18 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 30,
-      "score": -90,
+      "score": -130,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 15,
+      "articles": 17,
       "score": -130,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 2,
-      "score": 0,
-      "bias": "neutral"
+      "articles": 3,
+      "score": -50,
+      "bias": "bearish"
     }
   },
   "top_articles": [
@@ -136,6 +149,16 @@
       "importance": "high",
       "coins": [
         "ETH"
+      ]
+    },
+    {
+      "title": "Japan prime minister Sanae Takaichi disavows Solana meme coin after it crashes by 75%",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "SOL"
       ]
     },
     {
@@ -199,16 +222,6 @@
       "source": "Google News",
       "sentiment": "bearish",
       "score": -40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -379,8 +392,8 @@
   "sources": {
     "CoinTelegraph": 20,
     "CoinDesk": 20,
-    "Google News": 30,
-    "Decrypt": 20
+    "Decrypt": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -830,10 +843,17 @@
       "score": -34,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-03T10:51:12.768544+00:00",
+      "ts": 1772535072,
+      "score": -39,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T10:16:11.305340+00:00",
-    "updated_ts": 1772532971
+    "updated_at": "2026-03-03T10:51:12.768602+00:00",
+    "updated_ts": 1772535072
   }
 }
