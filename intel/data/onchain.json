@@ -22,7 +22,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+        "reason": "BTC fees low (3 sat/vB) \u2014 quiet network"
       },
       {
         "bias": "bullish",
@@ -32,7 +32,7 @@
     ]
   },
   "stablecoins": {
-    "total_mcap_b": 265.37,
+    "total_mcap_b": 265.36,
     "breakdown": {
       "Tether": 183.78,
       "USD Coin": 76.75,
@@ -139,7 +139,7 @@
   },
   "btc_onchain": {
     "btc_fees": {
-      "fastest": 2,
+      "fastest": 3,
       "half_hour": 1,
       "hour": 1,
       "economy": 1,
@@ -149,12 +149,12 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.3,
-      "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+      "reason": "BTC fees low (3 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 24093,
-      "vsize": 27336947,
-      "total_fee": 4627697
+      "count": 30082,
+      "vsize": 28744928,
+      "total_fee": 7253681
     },
     "btc_hashrate": 882904267247.0,
     "hashrate_trend": {
@@ -173,7 +173,7 @@
         "project": "maple",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 3095.6,
+        "tvl_m": 3095.9,
         "apy": 4.57
       },
       {
@@ -181,15 +181,15 @@
         "project": "aave-v3",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 2051.5,
-        "apy": 1.92
+        "tvl_m": 2023.9,
+        "apy": 1.95
       },
       {
         "pool": "8edfdf02-cdbb-43f7-bca6-954e5fe56813",
         "project": "maple",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 1532.5,
+        "tvl_m": 1531.7,
         "apy": 4.33
       },
       {
@@ -197,7 +197,7 @@
         "project": "aave-v3",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 1358.7,
+        "tvl_m": 1362.0,
         "apy": 1.99
       },
       {
@@ -205,31 +205,31 @@
         "project": "merkl",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 928.6,
-        "apy": 0.24
+        "tvl_m": 925.5,
+        "apy": 0.23
       },
       {
         "pool": "d783c8df-e2ed-44b4-8317-161ccc1b5f06",
         "project": "jupiter-lend",
         "chain": "Solana",
         "symbol": "USDC",
-        "tvl_m": 543.4,
-        "apy": 3.95
+        "tvl_m": 543.9,
+        "apy": 4.07
       },
       {
         "pool": "e338c687-a5d8-4abf-bc04-127990811b0a",
         "project": "aave-v3",
         "chain": "Plasma",
         "symbol": "USDT0",
-        "tvl_m": 452.1,
-        "apy": 2.75
+        "tvl_m": 450.5,
+        "apy": 2.76
       },
       {
         "pool": "811da684-855f-434f-9bfd-52679f9707b9",
         "project": "merkl",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 386.7,
+        "tvl_m": 383.4,
         "apy": 0.06
       },
       {
@@ -237,19 +237,19 @@
         "project": "merkl",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 359.2,
+        "tvl_m": 357.0,
         "apy": 0.48
       },
       {
-        "pool": "a5d67f7e-5b51-4a9d-969d-caf051a7f5a4",
-        "project": "spark-savings",
-        "chain": "Ethereum",
-        "symbol": "USDT",
-        "tvl_m": 342.0,
-        "apy": 3.46
+        "pool": "712ce948-bd9e-4f4a-8916-b72c447f7578",
+        "project": "usd-ai",
+        "chain": "Arbitrum",
+        "symbol": "SUSDAI",
+        "tvl_m": 339.1,
+        "apy": 6.34
       }
     ],
-    "pool_count": 292,
+    "pool_count": 289,
     "signal": {
       "bias": "bullish",
       "score": 20,
@@ -761,10 +761,18 @@
       "bias": "neutral",
       "stablecoin_mcap_b": 265.37,
       "tvl_b": 98.65
+    },
+    {
+      "timestamp": "2026-03-04T18:29:27.348835+00:00",
+      "ts": 1772648967,
+      "score": 4,
+      "bias": "neutral",
+      "stablecoin_mcap_b": 265.36,
+      "tvl_b": 98.65
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T18:16:17.465290+00:00",
-    "updated_ts": 1772648177
+    "updated_at": "2026-03-04T18:29:27.348882+00:00",
+    "updated_ts": 1772648967
   }
 }
