@@ -63,70 +63,70 @@
   "trending": {
     "trending": [
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
-        "score": 0
-      },
-      {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 532,
-        "score": 1
+        "market_cap_rank": 567,
+        "score": 0
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 149,
-        "score": 2
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 3
+        "market_cap_rank": 152,
+        "score": 1
       },
       {
         "name": "PHALA",
         "symbol": "PHA",
-        "market_cap_rank": 603,
+        "market_cap_rank": 600,
+        "score": 2
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
+        "score": 3
+      },
+      {
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 240,
         "score": 4
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 5
-      },
-      {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 43,
-        "score": 6
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
+        "score": 5
+      },
+      {
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 5,
+        "score": 6
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
         "score": 7
       },
       {
-        "name": "pippin",
-        "symbol": "PIPPIN",
-        "market_cap_rank": 118,
+        "name": "MANTRA",
+        "symbol": "MANTRA",
+        "market_cap_rank": 341,
         "score": 8
       },
       {
-        "name": "Plume",
-        "symbol": "PLUME",
-        "market_cap_rank": 455,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL",
-      "ETH"
+      "ETH",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -935,10 +935,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-04T02:58:26.490090+00:00",
+      "ts": 1772593106,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T01:41:15.441487+00:00",
-    "updated_ts": 1772588475
+    "updated_at": "2026-03-04T02:58:26.490126+00:00",
+    "updated_ts": 1772593106
   }
 }

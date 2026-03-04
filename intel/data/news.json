@@ -60,7 +60,7 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 30,
+      "articles": 31,
       "score": -80,
       "bias": "bearish"
     },
@@ -70,7 +70,7 @@
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 2,
+      "articles": 1,
       "score": 0,
       "bias": "neutral"
     }
@@ -203,7 +203,7 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
+      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -211,7 +211,7 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC relaunch \u2018Project Crypto\u2019 to harmonize digital asset regulation - JD Supra",
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -345,10 +345,10 @@
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "CoinDesk": 20,
     "Google News": 30,
-    "CoinTelegraph": 20
+    "CoinTelegraph": 20,
+    "Decrypt": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -896,10 +896,17 @@
       "score": -12,
       "bias": "neutral",
       "alpha_count": 4
+    },
+    {
+      "timestamp": "2026-03-04T02:59:03.536149+00:00",
+      "ts": 1772593143,
+      "score": -12,
+      "bias": "neutral",
+      "alpha_count": 4
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T00:55:06.317430+00:00",
-    "updated_ts": 1772585706
+    "updated_at": "2026-03-04T02:59:03.536208+00:00",
+    "updated_ts": 1772593143
   }
 }
