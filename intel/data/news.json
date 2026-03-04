@@ -4,7 +4,7 @@
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 19,
+    "scored_articles": 18,
     "positive_score": 360,
     "negative_score": -500
   },
@@ -24,14 +24,15 @@
       ]
     },
     {
-      "title": "Indiana governor signs bill allowing crypto in retirement plans",
-      "source": "CoinTelegraph",
+      "title": "Apple iPhone Hacking Kit Used By Spies, Crypto Scams Could Have US Intelligence Origins",
+      "source": "Decrypt",
       "sentiment": "bearish",
-      "score": -90,
+      "score": -120,
       "importance": "critical",
       "coins": [],
       "keywords": [
-        "ban crypto"
+        "hack",
+        "exploit"
       ]
     },
     {
@@ -79,12 +80,12 @@
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 11,
+      "articles": 13,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 3,
+      "articles": 4,
       "score": 0,
       "bias": "neutral"
     }
@@ -101,10 +102,10 @@
       ]
     },
     {
-      "title": "Indiana governor signs bill allowing crypto in retirement plans",
-      "source": "CoinTelegraph",
+      "title": "Apple iPhone Hacking Kit Used By Spies, Crypto Scams Could Have US Intelligence Origins",
+      "source": "Decrypt",
       "sentiment": "bearish",
-      "score": -90,
+      "score": -120,
       "importance": "critical",
       "coins": []
     },
@@ -235,14 +236,6 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
@@ -251,7 +244,7 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC relaunch \u2018Project Crypto\u2019 to harmonize digital asset regulation - JD Supra",
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -259,7 +252,7 @@
       "coins": []
     },
     {
-      "title": "Exodus or firewall? Blockchain analysts clash over Iran\u2019s crypto outflows",
+      "title": "Billions in crypto are moving in Iran. Analysts can't agree if it's war-time panic or business as usual",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -357,13 +350,23 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Bitcoin hits one-month high near $72,000 as haven demand rises",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "Google News": 30,
-    "CoinTelegraph": 20,
     "Decrypt": 20,
-    "CoinDesk": 20
+    "CoinDesk": 20,
+    "Google News": 30,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -1016,10 +1019,17 @@
       "score": -14,
       "bias": "neutral",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-04T16:52:06.130315+00:00",
+      "ts": 1772643126,
+      "score": -14,
+      "bias": "neutral",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T16:18:56.998273+00:00",
-    "updated_ts": 1772641136
+    "updated_at": "2026-03-04T16:52:06.130380+00:00",
+    "updated_ts": 1772643126
   }
 }
