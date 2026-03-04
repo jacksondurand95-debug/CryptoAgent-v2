@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -12,
+    "score": -10,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 270,
-    "negative_score": -360
+    "scored_articles": 18,
+    "positive_score": 310,
+    "negative_score": -390
   },
   "alpha_events": [
     {
@@ -61,7 +61,7 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 33,
-      "score": -120,
+      "score": -80,
       "bias": "bearish"
     },
     "ETH": {
@@ -169,6 +169,16 @@
       ]
     },
     {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -181,6 +191,14 @@
     {
       "title": "Why Bermuda is testing a fully onchain economy instead of crypto mandates",
       "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
+      "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
@@ -216,6 +234,14 @@
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Polymarket shelves nuclear detonation markets after outcry",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -319,35 +345,11 @@
         "BTC",
         "ETH"
       ]
-    },
-    {
-      "title": "CoinDesk 20 performance update: AAVE plunges 10%, leading index lower",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Ondo Finance tokenized stocks platform on Binance wins regulatory approval in Abu Dhabi",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Visa and Bridge plan stablecoin-linked card expansion to over 100 countries",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "CoinDesk": 20,
     "CoinTelegraph": 20,
+    "CoinDesk": 20,
     "Decrypt": 20,
     "Google News": 30
   },
@@ -911,10 +913,17 @@
       "score": -12,
       "bias": "neutral",
       "alpha_count": 4
+    },
+    {
+      "timestamp": "2026-03-04T04:35:44.255389+00:00",
+      "ts": 1772598944,
+      "score": -10,
+      "bias": "neutral",
+      "alpha_count": 4
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T03:23:27.971465+00:00",
-    "updated_ts": 1772594607
+    "updated_at": "2026-03-04T04:35:44.255468+00:00",
+    "updated_ts": 1772598944
   }
 }
