@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 11,
+    "score": 14,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 1.0,
-    "available_sources": 5,
+    "confidence": 0.8,
+    "available_sources": 4,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "fresh",
+        "status": "stale",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 1.2,
-        "effective_weight": 3.0
+        "age_min": 24.9,
+        "effective_weight": 0.9
       },
       "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 0.4,
+        "age_min": 10.1,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 0.3,
+        "age_min": 24.0,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 0.6,
+        "age_min": 16.8,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -12,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 0.0,
+        "age_min": 23.7,
         "effective_weight": 1.0
       }
     }
@@ -61,7 +61,7 @@
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (3 large txs)"
+          "reason": "BTC whale activity normal (2 large txs)"
         }
       ]
     },
@@ -120,9 +120,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-04T02:59:03.683484+00:00",
+  "timestamp": "2026-03-04T03:22:45.166321+00:00",
   "_meta": {
-    "updated_at": "2026-03-04T02:59:03.684105+00:00",
-    "updated_ts": 1772593143
+    "updated_at": "2026-03-04T03:22:45.166913+00:00",
+    "updated_ts": 1772594565
   }
 }
