@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -24,
+    "score": -18,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 20,
-    "positive_score": 300,
+    "scored_articles": 21,
+    "positive_score": 370,
     "negative_score": -590
   },
   "alpha_events": [
@@ -30,6 +30,19 @@
       "coins": [],
       "keywords": [
         "crypto ban"
+      ]
+    },
+    {
+      "title": "Trump's press on policy combining with institutional adoption for new crypto bull market: Clear Street",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+institutional adoption"
       ]
     },
     {
@@ -73,8 +86,8 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 31,
-      "score": 0,
-      "bias": "neutral"
+      "score": 70,
+      "bias": "bullish"
     },
     "ETH": {
       "articles": 16,
@@ -103,6 +116,16 @@
       "score": -90,
       "importance": "critical",
       "coins": []
+    },
+    {
+      "title": "Trump's press on policy combining with institutional adoption for new crypto bull market: Clear Street",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "RedStone launches Stellar price feeds after $10M exploit highlights oracle risks",
@@ -259,7 +282,7 @@
       "coins": []
     },
     {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
+      "title": "SEC and CFTC relaunch \u2018Project Crypto\u2019 to harmonize digital asset regulation - JD Supra",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -350,23 +373,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin 'air pocket' above $72,000 could mean quick run to $80,000",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
     "Google News": 30,
-    "CoinTelegraph": 20,
-    "Decrypt": 20
+    "CoinDesk": 20,
+    "Decrypt": 20,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -1047,10 +1060,17 @@
       "score": -24,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-04T20:47:48.351193+00:00",
+      "ts": 1772657268,
+      "score": -18,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T20:11:55.839944+00:00",
-    "updated_ts": 1772655115
+    "updated_at": "2026-03-04T20:47:48.351262+00:00",
+    "updated_ts": 1772657268
   }
 }
