@@ -33,7 +33,7 @@
       ]
     },
     {
-      "title": "Trump's press on policy combining with institutional adoption for new crypto bull market: Clear Street",
+      "title": "Crypto's new run 'has legs' says analyst citing Trump's press on policy, institutional adoption",
       "source": "CoinDesk",
       "sentiment": "bullish",
       "score": 70,
@@ -85,8 +85,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 31,
-      "score": 70,
+      "articles": 34,
+      "score": 30,
       "bias": "bullish"
     },
     "ETH": {
@@ -95,7 +95,7 @@
       "bias": "bullish"
     },
     "SOL": {
-      "articles": 5,
+      "articles": 7,
       "score": 40,
       "bias": "bullish"
     }
@@ -118,7 +118,7 @@
       "coins": []
     },
     {
-      "title": "Trump's press on policy combining with institutional adoption for new crypto bull market: Clear Street",
+      "title": "Crypto's new run 'has legs' says analyst citing Trump's press on policy, institutional adoption",
       "source": "CoinDesk",
       "sentiment": "bullish",
       "score": 70,
@@ -186,14 +186,12 @@
       "coins": []
     },
     {
-      "title": "Three Bitcoin signals show $80K is next BTC price target for bulls",
-      "source": "CoinTelegraph",
+      "title": "Google's Gemini AI Pushed Florida Man to Suicide Amid 'Collapsing Reality', Lawsuit Alleges",
+      "source": "Decrypt",
       "sentiment": "bullish",
       "score": 40,
       "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
+      "coins": []
     },
     {
       "title": "Cathie Wood's Ark Invest Buys the Dip on Coinbase and Robinhood\u2014Both Now Surging",
@@ -282,11 +280,19 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC relaunch \u2018Project Crypto\u2019 to harmonize digital asset regulation - JD Supra",
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "How this week's rout in Korean stocks might have triggered crypto's surge higher",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -363,22 +369,12 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Coinbase, Strategy lead crypto stocks higher as bitcoin spikes above $72,000",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
+    "Decrypt": 20,
     "Google News": 30,
     "CoinDesk": 20,
-    "Decrypt": 20,
     "CoinTelegraph": 20
   },
   "history": [
@@ -1067,10 +1063,17 @@
       "score": -18,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-04T22:48:30.520957+00:00",
+      "ts": 1772664510,
+      "score": -18,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T20:47:48.351262+00:00",
-    "updated_ts": 1772657268
+    "updated_at": "2026-03-04T22:48:30.521028+00:00",
+    "updated_ts": 1772664510
   }
 }
