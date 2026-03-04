@@ -65,67 +65,67 @@
       {
         "name": "Definitive",
         "symbol": "EDGE",
-        "market_cap_rank": 324,
+        "market_cap_rank": 349,
         "score": 0
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 531,
+        "market_cap_rank": 517,
         "score": 1
-      },
-      {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 233,
-        "score": 2
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 107,
-        "score": 3
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 147,
-        "score": 4
+        "score": 2
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 5
+        "score": 3
       },
       {
         "name": "PHALA",
         "symbol": "PHA",
-        "market_cap_rank": 619,
+        "market_cap_rank": 630,
+        "score": 4
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 49,
+        "score": 5
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 6
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 140,
         "score": 7
       },
       {
-        "name": "Centrifuge",
-        "symbol": "CFG",
-        "market_cap_rank": 300,
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 34,
         "score": 8
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 252,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL"
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -983,10 +983,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-04T07:23:19.238692+00:00",
+      "ts": 1772608999,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T06:25:24.103367+00:00",
-    "updated_ts": 1772605524
+    "updated_at": "2026-03-04T07:23:19.238720+00:00",
+    "updated_ts": 1772608999
   }
 }
