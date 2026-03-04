@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -14,
+    "score": -13,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 18,
-    "positive_score": 360,
-    "negative_score": -500
+    "scored_articles": 21,
+    "positive_score": 430,
+    "negative_score": -590
   },
   "alpha_events": [
     {
@@ -33,6 +33,17 @@
       "keywords": [
         "hack",
         "exploit"
+      ]
+    },
+    {
+      "title": "Banking Groups Slam Crypto Bank Kraken\u2019s Fed Approval as Improper, Dangerous",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -90,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "crypto ban"
       ]
     },
     {
@@ -75,19 +86,19 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 34,
-      "score": 80,
+      "articles": 31,
+      "score": 120,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 13,
-      "score": -10,
-      "bias": "neutral"
+      "articles": 15,
+      "score": 30,
+      "bias": "bullish"
     },
     "SOL": {
       "articles": 4,
-      "score": 0,
-      "bias": "neutral"
+      "score": 40,
+      "bias": "bullish"
     }
   },
   "top_articles": [
@@ -106,6 +117,14 @@
       "source": "Decrypt",
       "sentiment": "bearish",
       "score": -120,
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "title": "Banking Groups Slam Crypto Bank Kraken\u2019s Fed Approval as Improper, Dangerous",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -90,
       "importance": "critical",
       "coins": []
     },
@@ -135,6 +154,18 @@
       "importance": "high",
       "coins": [
         "ETH"
+      ]
+    },
+    {
+      "title": "Bitcoin just cleared $73,000, but skeptical traders are already bracing for a 'bull trap'",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC",
+        "ETH",
+        "SOL"
       ]
     },
     {
@@ -202,6 +233,14 @@
       ]
     },
     {
+      "title": "MEXC expands tokenized stock offerings with new Ondo Finance listings",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": 30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -236,6 +275,14 @@
       "coins": []
     },
     {
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
@@ -244,15 +291,74 @@
       "coins": []
     },
     {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
-      "source": "Google News",
+      "title": "Ethereum Foundation wants the network to be the trust layer for AI",
+      "source": "CoinDesk",
       "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "CEO of crypto investment firm Keyrock says bitcoin is undervalued, entering \u2018transition year\u2019",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Brian Armstrong met with Trump before the president slammed banks over crypto bill",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
-      "title": "Billions in crypto are moving in Iran. Analysts can't agree if it's war-time panic or business as usual",
+      "title": "Crypto campaign PAC Fairshake marks first wins in 2026 U.S. congressional primaries",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Institutional investors may be buying the dip as traders pour $1.7 billion into spot bitcoin ETFs",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Crypto Long & Short: Why bitcoin's quantum fears will pass just like the climate panic",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "The Protocol: New Ethereum scaling plans",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "title": "Billions in crypto are moving in Iran. Analysts can't agree if it's war-time panic or business as usual.",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -268,105 +374,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin 'air pocket' above $72,000 could mean quick run to $80,000",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "CoinDesk 20 performance update: Solana (SOL) gains 5.6%, leading index higher",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "SOL"
-      ]
-    },
-    {
-      "title": "Ex-Binance communications lead joins stablecoin specialist KAST",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Sui\u2019s native stablecoin goes live with promise of Treasury yield going back to the network",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Stablecoin giant Tether invests $50 million in sleep technology startup Eight Sleep",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Trump\u2019s crypto adviser rejects Jamie Dimon on treating yield-bearing stablecoins like banks",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Market infrastructure firms warn tokenized securities face higher costs, split liquidity without interoperability",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Here's why bitcoin climbed through $71,000",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Morgan Stanley taps Coinbase and BNY for custody in proposed Bitcoin ETF",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin hits one-month high near $72,000 as haven demand rises",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
+    "CoinTelegraph": 20,
     "CoinDesk": 20,
     "Google News": 30,
-    "CoinTelegraph": 20
+    "Decrypt": 20
   },
   "history": [
     {
@@ -1026,10 +1040,17 @@
       "score": -14,
       "bias": "neutral",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:16:34.313809+00:00",
+      "ts": 1772648194,
+      "score": -13,
+      "bias": "neutral",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T16:52:06.130380+00:00",
-    "updated_ts": 1772643126
+    "updated_at": "2026-03-04T18:16:34.313892+00:00",
+    "updated_ts": 1772648194
   }
 }

@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 12.2,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 31,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 30.6,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 103.1,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 40.1,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -14,
+        "score": -13,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 69.7,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,19 +57,23 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 34 articles, score=80"
+          "reason": "News sentiment: 31 articles, score=120"
         },
         {
           "bias": "bullish",
-          "reason": "BTC whale distribution (8 txs) \u2014 accumulation"
+          "reason": "BTC whale distribution (4 txs) \u2014 accumulation"
         }
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 1,
+      "score": 26,
+      "bias": "bullish",
+      "signals": 2,
       "details": [
+        {
+          "bias": "bullish",
+          "reason": "News sentiment: 15 articles, score=30"
+        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -77,9 +81,15 @@
       ]
     },
     "SOL": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 0
+      "score": 40,
+      "bias": "bullish",
+      "signals": 1,
+      "details": [
+        {
+          "bias": "bullish",
+          "reason": "News sentiment: 4 articles, score=40"
+        }
+      ]
     }
   },
   "alpha_events": [
@@ -101,6 +111,13 @@
     },
     {
       "type": "news",
+      "title": "Banking Groups Slam Crypto Bank Kraken\u2019s Fed Approval as Improper, Dangerous",
+      "sentiment": "bearish",
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "type": "news",
       "title": "RedStone launches Stellar price feeds after $10M exploit highlights oracle risks",
       "sentiment": "bearish",
       "importance": "high",
@@ -114,20 +131,11 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "type": "news",
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
     }
   ],
-  "timestamp": "2026-03-04T18:01:45.816694+00:00",
+  "timestamp": "2026-03-04T18:16:34.442951+00:00",
   "_meta": {
-    "updated_at": "2026-03-04T18:01:45.817457+00:00",
-    "updated_ts": 1772647305
+    "updated_at": "2026-03-04T18:16:34.443593+00:00",
+    "updated_ts": 1772648194
   }
 }
