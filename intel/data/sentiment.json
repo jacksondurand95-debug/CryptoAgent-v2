@@ -77,13 +77,13 @@
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 569,
+        "market_cap_rank": 572,
         "score": 2
       },
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
-        "market_cap_rank": 264,
+        "market_cap_rank": 266,
         "score": 3
       },
       {
@@ -95,7 +95,7 @@
       {
         "name": "PHALA",
         "symbol": "PHA",
-        "market_cap_rank": 520,
+        "market_cap_rank": 506,
         "score": 5
       },
       {
@@ -105,21 +105,21 @@
         "score": 6
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 285,
-        "score": 7
-      },
-      {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
+        "score": 7
+      },
+      {
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 284,
         "score": 8
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 156,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 151,
         "score": 9
       }
     ],
@@ -1103,10 +1103,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-04T18:23:59.166704+00:00",
+      "ts": 1772648639,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T18:15:56.435792+00:00",
-    "updated_ts": 1772648156
+    "updated_at": "2026-03-04T18:23:59.166732+00:00",
+    "updated_ts": 1772648639
   }
 }
