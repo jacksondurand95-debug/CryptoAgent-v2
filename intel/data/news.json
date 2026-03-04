@@ -60,17 +60,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 31,
-      "score": -80,
+      "articles": 33,
+      "score": -120,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 12,
-      "score": -50,
-      "bias": "bearish"
+      "articles": 13,
+      "score": -10,
+      "bias": "neutral"
     },
     "SOL": {
-      "articles": 1,
+      "articles": 2,
       "score": 0,
       "bias": "neutral"
     }
@@ -131,6 +131,16 @@
       ]
     },
     {
+      "title": "Corporates and Exchanges Rush to Stake Ethereum Instead of Selling",
+      "source": "Decrypt",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "Four Headwinds Stalling Bitcoin's $70K Breakout",
       "source": "Decrypt",
       "sentiment": "bullish",
@@ -153,16 +163,6 @@
       "source": "Google News",
       "sentiment": "bearish",
       "score": -40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -217,6 +217,17 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Bitcoin rebounds toward $70,000 as ETFs pull in $1.45 billion in five days",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
     },
     {
       "title": "JP Morgan CEO Jamie Dimon says stablecoin issuers paying interest should be regulated as banks",
@@ -332,23 +343,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Bitcoin could slide further on liquidity squeeze, but long-term bull case intact: Sygnum CIO",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Google News": 30,
+    "CoinDesk": 20,
     "CoinTelegraph": 20,
     "Decrypt": 20,
-    "CoinDesk": 20
+    "Google News": 30
   },
   "history": [
     {
@@ -903,10 +904,17 @@
       "score": -12,
       "bias": "neutral",
       "alpha_count": 4
+    },
+    {
+      "timestamp": "2026-03-04T03:23:27.971369+00:00",
+      "ts": 1772594607,
+      "score": -12,
+      "bias": "neutral",
+      "alpha_count": 4
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T02:59:03.536208+00:00",
-    "updated_ts": 1772593143
+    "updated_at": "2026-03-04T03:23:27.971465+00:00",
+    "updated_ts": 1772594607
   }
 }
