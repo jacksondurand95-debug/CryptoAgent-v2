@@ -77,49 +77,49 @@
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
-        "market_cap_rank": 261,
+        "market_cap_rank": 263,
         "score": 2
-      },
-      {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
-        "score": 3
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 572,
-        "score": 4
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 5
+        "market_cap_rank": 570,
+        "score": 3
       },
       {
         "name": "Dogecoin",
         "symbol": "DOGE",
         "market_cap_rank": 9,
-        "score": 6
+        "score": 4
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 7
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
+        "score": 5
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 6
       },
       {
         "name": "Bittensor",
         "symbol": "TAO",
         "market_cap_rank": 43,
+        "score": 7
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 8
       },
       {
-        "name": "Kaspa",
-        "symbol": "KAS",
-        "market_cap_rank": 73,
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 156,
         "score": 9
       }
     ],
@@ -1131,10 +1131,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-04T21:16:18.792113+00:00",
+      "ts": 1772658978,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T20:16:33.897559+00:00",
-    "updated_ts": 1772655393
+    "updated_at": "2026-03-04T21:16:18.792141+00:00",
+    "updated_ts": 1772658978
   }
 }
