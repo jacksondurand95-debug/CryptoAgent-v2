@@ -1,14 +1,25 @@
 {
   "aggregate": {
-    "score": -10,
-    "bias": "neutral",
+    "score": -17,
+    "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 18,
-    "positive_score": 310,
-    "negative_score": -390
+    "scored_articles": 16,
+    "positive_score": 270,
+    "negative_score": -420
   },
   "alpha_events": [
+    {
+      "title": "Indiana governor signs bill allowing crypto in retirement plans",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -90,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "ban crypto"
+      ]
+    },
     {
       "title": "Circle shares boosted by Middle East tensions, rising oil, fading rate cut hopes, says Mizuho",
       "source": "CoinDesk",
@@ -60,22 +71,30 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 32,
-      "score": -80,
+      "articles": 31,
+      "score": -120,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 13,
+      "articles": 14,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 2,
+      "articles": 4,
       "score": 0,
       "bias": "neutral"
     }
   },
   "top_articles": [
+    {
+      "title": "Indiana governor signs bill allowing crypto in retirement plans",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -90,
+      "importance": "critical",
+      "coins": []
+    },
     {
       "title": "Circle shares boosted by Middle East tensions, rising oil, fading rate cut hopes, says Mizuho",
       "source": "CoinDesk",
@@ -169,16 +188,6 @@
       ]
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -191,14 +200,6 @@
     {
       "title": "Why Bermuda is testing a fully onchain economy instead of crypto mandates",
       "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
-      "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
@@ -229,12 +230,26 @@
       "coins": []
     },
     {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
-      "source": "Google News",
+      "title": "Over a billion flows into bitcoin ETFs, yet the price isn\u2019t rising \u2014 an analyst explains why",
+      "source": "CoinDesk",
       "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin holds, ether, solana slide as Mideast woes drag Asian equities to multi-year lows",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "ETH",
+        "SOL"
+      ]
     },
     {
       "title": "Ripple expands payments platform into end-to-end stablecoin infrastructure as processed volume tops $100 billion",
@@ -345,10 +360,10 @@
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "Decrypt": 20,
+    "Google News": 30,
     "CoinTelegraph": 20,
-    "Google News": 30
+    "Decrypt": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -924,10 +939,17 @@
       "score": -10,
       "bias": "neutral",
       "alpha_count": 4
+    },
+    {
+      "timestamp": "2026-03-04T06:17:27.135270+00:00",
+      "ts": 1772605047,
+      "score": -17,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T05:00:50.900718+00:00",
-    "updated_ts": 1772600450
+    "updated_at": "2026-03-04T06:17:27.135341+00:00",
+    "updated_ts": 1772605047
   }
 }
