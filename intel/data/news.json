@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -17,
-    "bias": "bearish",
+    "score": -10,
+    "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 16,
-    "positive_score": 270,
-    "negative_score": -420
+    "positive_score": 310,
+    "negative_score": -390
   },
   "alpha_events": [
     {
@@ -71,7 +71,7 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 31,
+      "articles": 32,
       "score": -120,
       "bias": "bearish"
     },
@@ -140,6 +140,14 @@
       "coins": []
     },
     {
+      "title": "Cathie Wood\u2019s Ark loads up on Coinbase, Robinhood as stocks slide on Iran conflict",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "MARA exec pushes back on Bitcoin treasury sell-off narrative",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -198,14 +206,6 @@
       ]
     },
     {
-      "title": "Why Bermuda is testing a fully onchain economy instead of crypto mandates",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -228,6 +228,16 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Ray Dalio says 'there is only one gold' as bitcoin outperforms gold during worst geopolitical crisis in years",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Over a billion flows into bitcoin ETFs, yet the price isn\u2019t rising \u2014 an analyst explains why",
@@ -347,23 +357,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "End of bitcoin 'HODL': public miners going all-in on AI, signaling more BTC selling",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
     "CoinDesk": 20,
-    "Google News": 30,
+    "CoinTelegraph": 20,
     "Decrypt": 20,
-    "CoinTelegraph": 20
+    "Google News": 30
   },
   "history": [
     {
@@ -953,10 +953,17 @@
       "score": -17,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-04T08:12:35.033630+00:00",
+      "ts": 1772611955,
+      "score": -10,
+      "bias": "neutral",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T06:52:11.020402+00:00",
-    "updated_ts": 1772607131
+    "updated_at": "2026-03-04T08:12:35.033710+00:00",
+    "updated_ts": 1772611955
   }
 }
