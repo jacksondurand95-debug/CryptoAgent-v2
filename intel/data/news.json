@@ -1,28 +1,14 @@
 {
   "aggregate": {
-    "score": -13,
-    "bias": "neutral",
+    "score": -24,
+    "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 21,
-    "positive_score": 430,
+    "scored_articles": 20,
+    "positive_score": 300,
     "negative_score": -590
   },
   "alpha_events": [
-    {
-      "title": "US spot Bitcoin ETFs add $225M as BlackRock\u2019s IBIT offsets redemptions",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 120,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+blackrock",
-        "+fidelity"
-      ]
-    },
     {
       "title": "Apple iPhone Hacking Kit Used By Spies, Crypto Scams Could Have US Intelligence Origins",
       "source": "Decrypt",
@@ -87,31 +73,21 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 31,
-      "score": 120,
-      "bias": "bullish"
+      "score": 0,
+      "bias": "neutral"
     },
     "ETH": {
-      "articles": 15,
+      "articles": 16,
       "score": 30,
       "bias": "bullish"
     },
     "SOL": {
-      "articles": 4,
+      "articles": 5,
       "score": 40,
       "bias": "bullish"
     }
   },
   "top_articles": [
-    {
-      "title": "US spot Bitcoin ETFs add $225M as BlackRock\u2019s IBIT offsets redemptions",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 120,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
     {
       "title": "Apple iPhone Hacking Kit Used By Spies, Crypto Scams Could Have US Intelligence Origins",
       "source": "Decrypt",
@@ -197,14 +173,6 @@
       ]
     },
     {
-      "title": "Cathie Wood\u2019s Ark loads up on Coinbase, Robinhood as stocks slide on Iran conflict",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "Cathie Wood's Ark Invest Buys the Dip on Coinbase and Robinhood\u2014Both Now Surging",
       "source": "Decrypt",
       "sentiment": "bullish",
@@ -231,6 +199,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Tradeweb backs crypto ECN Crossover Markets in $31M funding round",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": 30,
+      "importance": "medium",
+      "coins": []
     },
     {
       "title": "MEXC expands tokenized stock offerings with new Ondo Finance listings",
@@ -275,7 +251,7 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -283,7 +259,7 @@
       "coins": []
     },
     {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -374,12 +350,22 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Bitcoin 'air pocket' above $72,000 could mean quick run to $80,000",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
+    "CoinDesk": 20,
     "Google News": 30,
     "CoinTelegraph": 20,
-    "CoinDesk": 20,
     "Decrypt": 20
   },
   "history": [
@@ -1054,10 +1040,17 @@
       "score": -13,
       "bias": "neutral",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-04T20:11:55.839855+00:00",
+      "ts": 1772655115,
+      "score": -24,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T18:52:42.132212+00:00",
-    "updated_ts": 1772650362
+    "updated_at": "2026-03-04T20:11:55.839944+00:00",
+    "updated_ts": 1772655115
   }
 }
