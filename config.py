@@ -49,7 +49,9 @@ COOLDOWN_AFTER_STOP_SEC = 60    # 1 min cooldown after stop
 # State (file-based, committed by Actions workflow)
 STATE_FILE = PROJECT_DIR / "state.json"
 
-# AI — Grok Brain (xAI, unrestricted)
+# AI — Dual Brain (Claude primary, Grok fallback)
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6-20250514")
 XAI_API_KEY = os.environ.get("XAI_API_KEY", "")
 XAI_MODEL = os.environ.get("XAI_MODEL", "grok-4-0709")
 

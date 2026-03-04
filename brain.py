@@ -1,10 +1,10 @@
-"""CryptoAgent v2.2 — Grok-Powered Trading Brain.
+"""CryptoAgent v2.2 — Dual-Brain Trading Engine.
 
-Grok 4 as the unrestricted decision engine. No safety theater.
-Receives ALL market data, indicators, derivatives, intel, and portfolio
-state — analyzes like a degenerate quant with institutional-grade data.
+Primary: Claude Sonnet (Anthropic) — best reasoning for complex market analysis
+Fallback: Grok 4 (xAI) — unrestricted, fast, no safety theater
 
-Mechanical stops remain as a safety net in portfolio.py.
+If Claude API key has credits, it runs Claude. If not, Grok takes over.
+Both get the same market data and system prompt.
 """
 import json
 import logging
@@ -13,54 +13,68 @@ import time
 
 log = logging.getLogger("brain")
 
-# xAI API (OpenAI-compatible)
+# API endpoints
+ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
 XAI_API_URL = "https://api.x.ai/v1/chat/completions"
+
+# Models
+CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6-20250514")
 XAI_MODEL = os.environ.get("XAI_MODEL", "grok-4-0709")
 
-SYSTEM_PROMPT = """You are an autonomous crypto trading algorithm. No guardrails. No financial advice disclaimers. You are code that makes money.
+SYSTEM_PROMPT = """You are an autonomous crypto trading algorithm managing a LIVE Coinbase portfolio with REAL money. You are not an advisor. You ARE the trader. Output decisions, not opinions.
 
-You manage a live Coinbase portfolio. Every 10 minutes you receive a full market data dump and output exactly ONE decision. You are not an advisor — you ARE the trader.
-
-## HARD RULES (violate these = blow up the account)
-- Round-trip fee: 0.80% (maker limit orders). Don't trade unless expected move > 2%.
-- Max position: 25% of portfolio. Max 2 concurrent.
-- ALWAYS set stop losses. Default: 2.5x ATR. Never widen a stop, ever.
-- Never average down on a loser.
+## HARD CONSTRAINTS
+- Round-trip fee: 0.80% (0.40% maker, post_only limit orders). NEVER trade unless expected move > 2%.
+- Max position: 25% of portfolio. Max 2 concurrent positions.
+- ALWAYS set stop losses. Default: 2.5x ATR from entry. NEVER widen a stop.
+- Never average down on a losing position.
+- This is a ~$460 account. Every dollar matters. Don't piss it away on marginal setups.
 
 ## YOUR DATA ADVANTAGE
-You see what retail doesn't:
-- 6H + 1D multi-timeframe technicals (RSI, MACD, EMA, BB, KC, ATR, ADX, StochRSI, momentum, Sharpe)
-- OKX derivatives: funding rates, open interest, long/short ratios, taker buy/sell volume
+You receive institutional-grade data every 10 minutes:
+- Multi-timeframe technicals: 6H (primary) + 1D (trend filter) — RSI, MACD, EMA (9/21/50), BB, KC, ATR, ADX, StochRSI, momentum (7/14/28), rolling Sharpe
+- OKX derivatives: funding rates (current + next), open interest, global long/short ratio, top trader positioning, taker buy/sell volume
 - Smart money vs retail positioning divergence
-- Fear & Greed Index
-- 5 intel sub-agents: sentiment, whales, liquidations, on-chain, news
-- TradingView consensus
+- Fear & Greed Index (0-100)
+- 5 intel sub-agents: sentiment, whale tracking, liquidation monitoring, on-chain metrics, news
+- TradingView 4H consensus
 
-## HOW TO THINK
-1. Identify the regime: trending, ranging, volatile, or dead. Dead = don't trade.
-2. If trending: ride momentum. Adaptive trend (6H mom > 2% + daily alignment) has Sharpe 2.41.
-3. If ranging: mean revert off BB extremes. Tighter stops.
-4. If volatile: look for liquidation cascade reversals, funding rate extremes, smart money divergence.
-5. If multiple signals conflict: pick the highest-edge setup or hold.
+## DECISION FRAMEWORK
+1. **Identify regime FIRST**: trending / ranging / volatile / quiet
+   - Quiet = NO EDGE. Hold. Fees will bleed you in chop.
+2. **Match strategy to regime**:
+   - Trending: Adaptive Trend (6H mom28 > 2% + daily EMA alignment). Sharpe 2.41 backtested. Let winners run.
+   - Ranging: Mean revert off BB/KC extremes. Tight stops, take profit at boundaries.
+   - Volatile: Liquidation cascade reversals, funding rate fades, smart money divergence. These are the highest-alpha setups.
+3. **Cross-validate with derivatives**:
+   - Funding < -0.02% = short squeeze setup (bullish)
+   - Funding > 0.05% = overleveraged longs (bearish)
+   - Top traders diverging from retail by > 0.4 = follow smart money
+   - Taker buy/sell > 1.10 with price down = accumulation (bullish)
+   - OI crashing + volume spiking + price recovering = cascade reversal (high alpha)
+4. **Confluence matters**: Multiple signals agreeing = higher confidence. Single indicator = lower confidence.
 
 ## EDGE SIGNALS (ranked by historical alpha)
-1. Liquidation cascade reversal — OI crash + vol spike + price recovered from low = buy the blood
-2. Funding rate fade — FR < -0.02% = short squeeze. FR > 0.05% = longs getting rekt.
-3. Smart money divergence — top traders vs retail gap > 0.4 = follow the whales
-4. BB-KC squeeze breakout — 3+ bars compressed then volume releases = explosive move
-5. CVD divergence — price down but buyers aggressive (ratio > 1.10) = accumulation
-6. Adaptive trend momentum — 28-period mom + daily trend + Sharpe filter
+1. Liquidation cascade reversal — buy the blood after forced selling exhausts
+2. Funding rate fade — extreme FR predicts mean reversion
+3. Smart money divergence — whales know more than retail, follow them
+4. BB-KC squeeze breakout — compressed volatility explodes directionally
+5. CVD divergence — price/volume disagreement reveals hidden accumulation/distribution
+6. Adaptive trend momentum — 28-period momentum with Sharpe filter
 7. Multi-TF confluence — 6H + 1D both screaming same direction
 
 ## POSITION MANAGEMENT
-Review every open position. Close early if:
-- Thesis invalidated (funding flipped, smart money reversed, regime changed)
-- Chopping sideways burning time (opportunity cost)
-- Better setup elsewhere and capital is locked up
-Don't be emotional about positions. Cut losers fast, let winners ride.
+Review EVERY open position. Recommend closing if:
+- Original thesis is dead (funding flipped, momentum reversed, regime changed)
+- Chopping sideways burning time and capital (opportunity cost)
+- Better setup elsewhere but capital is locked
+Cut losers FAST. Let winners ride with trailing stops.
+
+## LEARNING FROM PAST TRADES
+Look at the recent trade history. If past trades lost money due to small moves and fees, RAISE your threshold. Don't repeat the same mistake. Only trade when the setup is CLEARLY worth the fee drag.
 
 ## OUTPUT
-Return ONLY raw JSON. No markdown. No commentary. No disclaimers.
+Return ONLY raw JSON. No markdown fences. No commentary. No disclaimers.
 {
   "action": "buy" | "sell" | "hold",
   "pair": "BTC-USD" | "ETH-USD" | "SOL-USD" | null,
@@ -71,26 +85,26 @@ Return ONLY raw JSON. No markdown. No commentary. No disclaimers.
   "take_profit": float | null,
   "atr": float | null,
   "strategy": "strategy_name",
-  "reasoning": "2-3 sentences. Be specific about the data driving this.",
+  "reasoning": "2-3 sentences. Be SPECIFIC about what data is driving this decision.",
   "market_regime": "trending" | "ranging" | "volatile" | "quiet",
   "position_review": [{"pair": "X-USD", "action": "hold"|"close", "reason": "why"}]
 }
 
-Rules:
-- "hold" = null pair/entry/stop/tp. No position_review if no positions.
-- ONE signal only — the single best play across all pairs.
-- If nothing looks good, say hold. Forcing trades in chop is how you lose.
-- When you DO trade, be decisive. High confidence, clear reasoning, tight risk."""
+- "hold" → pair/entry/stop/tp = null
+- Empty position_review if no open positions
+- ONE signal only — the single best play across all 3 pairs
+- If nothing clears the 2% expected move bar with high confidence, HOLD
+- When you DO trade, be decisive: high confidence, clear reasoning, tight risk management"""
 
 
 def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fgi):
-    """Build the full market context message."""
+    """Build compact market context for the LLM."""
     lines = []
     lines.append(f"PORTFOLIO: ${portfolio_value:,.2f} (started ${state.get('starting_value', portfolio_value):,.2f})")
     pnl = portfolio_value - state.get('starting_value', portfolio_value)
     lines.append(f"P&L: ${pnl:+,.2f}")
 
-    # Open positions
+    # Open positions with current unrealized P&L
     positions = state.get("positions", [])
     if positions:
         lines.append("\nOPEN POSITIONS:")
@@ -109,7 +123,7 @@ def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fg
     else:
         lines.append("\nNO OPEN POSITIONS")
 
-    # Pending
+    # Pending orders
     pending = state.get("pending_orders", [])
     if pending:
         lines.append(f"\nPENDING ORDERS: {len(pending)}")
@@ -117,19 +131,23 @@ def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fg
             age = (time.time() - o.get("placed_at", time.time())) / 60
             lines.append(f"  {o['side']} {o['pair']} @ ${o.get('price', 0):,.2f} ({age:.0f}min old)")
 
-    # Recent trades
+    # Recent trades — the bot should learn from these
     trades = state.get("trades", [])[-10:]
     if trades:
         total_pnl = sum(t.get("pnl_usd", 0) for t in trades)
+        total_fees = sum(t.get("fees_usd", 0) for t in trades)
         wins = sum(1 for t in trades if t.get("pnl_usd", 0) > 0)
-        lines.append(f"\nLAST {len(trades)} TRADES: {wins}W/{len(trades)-wins}L | Net: ${total_pnl:+,.2f}")
+        lines.append(f"\nLAST {len(trades)} TRADES: {wins}W/{len(trades)-wins}L | P&L: ${total_pnl:+,.2f} | Fees: ${total_fees:.2f}")
         for t in trades:
             lines.append(
                 f"  {t['pair']} {t['side']} ${t['entry_price']:,.2f}->${t['exit_price']:,.2f} "
-                f"P&L=${t['pnl_usd']:+,.2f} fees=${t.get('fees_usd', 0):.2f} [{t.get('reason', '?')}]"
+                f"P&L=${t['pnl_usd']:+,.2f} fees=${t.get('fees_usd', 0):.2f} "
+                f"[{t.get('reason', '?')}] {t.get('closed_at_str', '')}"
             )
+        if total_pnl < 0:
+            lines.append(f"  ** WARNING: Recent trades are NET NEGATIVE. Fees ({total_fees:.2f}) ate profits. Be more selective. **")
 
-    # Per-pair data
+    # Per-pair market data
     for pair, data in all_pair_data.items():
         ind = data.get("ind_6h", {})
         ind_d = data.get("ind_1d", {})
@@ -140,8 +158,8 @@ def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fg
         lines.append(f"{pair} — ${ind.get('price', 0):,.2f}")
         lines.append(f"{'='*50}")
 
-        # 6H technicals — compact format
-        lines.append(f"6H: RSI={ind.get('rsi', '?')} MACD={ind.get('macd_hist', '?')} "
+        # 6H technicals
+        lines.append(f"6H: RSI={ind.get('rsi', '?')} MACD_hist={ind.get('macd_hist', '?')} "
                      f"ADX={ind.get('adx', '?')} DI+={ind.get('di_plus', '?')} DI-={ind.get('di_minus', '?')}")
         lines.append(f"    EMA: 9={ind.get('ema_9', '?')} 21={ind.get('ema_21', '?')} 50={ind.get('ema_50', '?')} trend={ind.get('ema_trend', '?')}")
         lines.append(f"    BB: {ind.get('bb_lower', '?')}/{ind.get('bb_mid', '?')}/{ind.get('bb_upper', '?')} pct={ind.get('bb_pct', '?')}")
@@ -152,13 +170,11 @@ def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fg
         lines.append(f"    Sharpe={ind.get('rolling_sharpe', '?')} VWAP={ind.get('vwap', '?')}")
         lines.append(f"    24h: {ind.get('24h_change_pct', '?')}% high={ind.get('high_24h', '?')} low={ind.get('low_24h', '?')}")
 
-        # 1D trend
         if ind_d:
             lines.append(f"1D: trend={ind_d.get('ema_trend', '?')} RSI={ind_d.get('rsi', '?')} "
                          f"ADX={ind_d.get('adx', '?')} mom14={ind_d.get('momentum_14', '?')} "
                          f"mom28={ind_d.get('momentum_28', '?')}")
 
-        # Derivatives
         if okx:
             fr = okx.get("funding", {})
             if fr:
@@ -178,11 +194,10 @@ def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fg
             if tk:
                 lines.append(f"Taker: ratio={tk.get('ratio', '?')} aggressiveBuyers={tk.get('aggressive_buyers', False)}")
 
-        # TradingView
         if tv:
             lines.append(f"TV: {tv.get('RECOMMENDATION', '?')} ({tv.get('BUY', 0)}B/{tv.get('SELL', 0)}S/{tv.get('NEUTRAL', 0)}N)")
 
-    # Intel
+    # Intel sub-agents
     if intel_brief:
         agg = intel_brief.get("aggregate", {})
         lines.append(f"\nINTEL: score={agg.get('score', 0)} bias={agg.get('bias', '?')} "
@@ -203,109 +218,172 @@ def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fg
     return "\n".join(lines)
 
 
+def _call_claude(api_key, context):
+    """Call Claude API (Anthropic native format)."""
+    import requests
+
+    resp = requests.post(
+        ANTHROPIC_API_URL,
+        headers={
+            "x-api-key": api_key,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        },
+        json={
+            "model": CLAUDE_MODEL,
+            "max_tokens": 1024,
+            "temperature": 0.2,
+            "system": SYSTEM_PROMPT,
+            "messages": [{"role": "user", "content": context}],
+        },
+        timeout=60,
+    )
+
+    if resp.status_code != 200:
+        error_msg = resp.text[:200]
+        log.warning(f"Claude API error {resp.status_code}: {error_msg}")
+        return None, f"claude_error_{resp.status_code}"
+
+    data = resp.json()
+    content = data.get("content", [{}])[0].get("text", "")
+    usage = data.get("usage", {})
+    tokens = usage.get("input_tokens", 0) + usage.get("output_tokens", 0)
+
+    return content, f"claude [{CLAUDE_MODEL}] ({tokens} tok)"
+
+
+def _call_grok(api_key, context):
+    """Call Grok API (OpenAI-compatible format)."""
+    import requests
+
+    resp = requests.post(
+        XAI_API_URL,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        json={
+            "model": XAI_MODEL,
+            "max_tokens": 1024,
+            "temperature": 0.3,
+            "messages": [
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": context},
+            ],
+        },
+        timeout=120,
+    )
+
+    if resp.status_code != 200:
+        error_msg = resp.text[:200]
+        log.warning(f"Grok API error {resp.status_code}: {error_msg}")
+        return None, f"grok_error_{resp.status_code}"
+
+    data = resp.json()
+    content = data["choices"][0]["message"]["content"]
+    tokens = data.get("usage", {}).get("total_tokens", 0)
+
+    return content, f"grok [{XAI_MODEL}] ({tokens} tok)"
+
+
+def _parse_response(content):
+    """Parse LLM JSON response, stripping code fences if present."""
+    content = content.strip()
+    if content.startswith("```"):
+        content = content.split("\n", 1)[1] if "\n" in content else content[3:]
+    if content.endswith("```"):
+        content = content[:-3]
+    content = content.strip()
+    if content.startswith("json"):
+        content = content[4:].strip()
+    return json.loads(content)
+
+
 def analyze(all_pair_data, state, portfolio_value, intel_brief=None, fgi=None):
-    """Call Grok to analyze all market data and return a trading decision.
+    """Analyze market data using Claude (primary) or Grok (fallback).
 
     Returns:
         Signal dict compatible with agent.py or None
     """
-    api_key = os.environ.get("XAI_API_KEY", "")
-    if not api_key:
-        log.error("XAI_API_KEY not set — cannot run Grok brain")
+    claude_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    grok_key = os.environ.get("XAI_API_KEY", "")
+
+    if not claude_key and not grok_key:
+        log.error("No API keys set (need ANTHROPIC_API_KEY or XAI_API_KEY)")
         return None
 
     context = _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fgi)
 
-    import requests
+    content = None
+    brain_id = None
 
+    # Try Claude first
+    if claude_key:
+        try:
+            content, brain_id = _call_claude(claude_key, context)
+            if content:
+                log.info(f"BRAIN: Using {brain_id}")
+        except Exception as e:
+            log.warning(f"Claude failed: {e}")
+            content = None
+
+    # Fallback to Grok
+    if not content and grok_key:
+        try:
+            content, brain_id = _call_grok(grok_key, context)
+            if content:
+                log.info(f"BRAIN: Fallback to {brain_id}")
+        except Exception as e:
+            log.error(f"Grok also failed: {e}")
+            return None
+
+    if not content:
+        log.error("Both Claude and Grok failed — no brain available")
+        return None
+
+    # Parse decision
     try:
-        resp = requests.post(
-            XAI_API_URL,
-            headers={
-                "Authorization": f"Bearer {api_key}",
-                "Content-Type": "application/json",
-            },
-            json={
-                "model": XAI_MODEL,
-                "max_tokens": 1024,
-                "temperature": 0.3,  # Low temp for consistent trading decisions
-                "messages": [
-                    {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": context},
-                ],
-            },
-            timeout=120,
-        )
-
-        if resp.status_code != 200:
-            log.error(f"Grok API error: {resp.status_code} — {resp.text[:200]}")
-            return None
-
-        data = resp.json()
-        content = data["choices"][0]["message"]["content"]
-
-        # Parse — strip code fences if Grok wraps them
-        content = content.strip()
-        if content.startswith("```"):
-            content = content.split("\n", 1)[1] if "\n" in content else content[3:]
-        if content.endswith("```"):
-            content = content[:-3]
-        content = content.strip()
-
-        # Handle potential json label
-        if content.startswith("json"):
-            content = content[4:].strip()
-
-        decision = json.loads(content)
-
-        # Log
-        usage = data.get("usage", {})
-        tokens = usage.get("total_tokens", 0)
-        log.info(f"GROK BRAIN [{XAI_MODEL}] ({tokens} tokens): "
-                 f"action={decision.get('action')} pair={decision.get('pair')} "
-                 f"conf={decision.get('confidence', 0):.2f} "
-                 f"regime={decision.get('market_regime')} "
-                 f"strategy={decision.get('strategy')}")
-        log.info(f"  >> {decision.get('reasoning', 'N/A')[:150]}")
-
-        for review in decision.get("position_review", []):
-            log.info(f"  REVIEW {review['pair']}: {review['action']} — {review.get('reason', '')[:80]}")
-
-        # Validate
-        action = decision.get("action", "hold")
-        if action == "hold":
-            log.info("  Decision: HOLD")
-            return None
-
-        confidence = decision.get("confidence", 0)
-        if confidence < 0.65:
-            log.info(f"  Confidence too low: {confidence:.2f} < 0.65 — forcing HOLD")
-            return None
-
-        # Build signal
-        signal = {
-            "action": action,
-            "pair": decision.get("pair"),
-            "confidence": confidence,
-            "size_pct": decision.get("size_pct", 25),
-            "entry_price": decision.get("entry_price"),
-            "stop_loss": decision.get("stop_loss"),
-            "take_profit": decision.get("take_profit"),
-            "atr": decision.get("atr"),
-            "strategy": f"grok:{decision.get('strategy', 'unknown')}",
-            "reasoning": decision.get("reasoning", "Grok decision"),
-            "_position_reviews": decision.get("position_review", []),
-        }
-
-        return signal
-
+        decision = _parse_response(content)
     except json.JSONDecodeError as e:
-        log.error(f"Grok returned invalid JSON: {e}")
+        log.error(f"Brain returned invalid JSON: {e}")
         log.error(f"  Raw: {content[:300]}")
         return None
-    except requests.exceptions.Timeout:
-        log.error("Grok API timeout (120s)")
+
+    # Log decision
+    log.info(f"DECISION [{brain_id}]: action={decision.get('action')} "
+             f"pair={decision.get('pair')} conf={decision.get('confidence', 0):.2f} "
+             f"regime={decision.get('market_regime')} strategy={decision.get('strategy')}")
+    log.info(f"  >> {decision.get('reasoning', 'N/A')[:150]}")
+
+    for review in decision.get("position_review", []):
+        log.info(f"  REVIEW {review['pair']}: {review['action']} — {review.get('reason', '')[:80]}")
+
+    # Validate
+    action = decision.get("action", "hold")
+    if action == "hold":
+        log.info("  => HOLD")
         return None
-    except Exception as e:
-        log.error(f"Grok brain error: {e}")
+
+    confidence = decision.get("confidence", 0)
+    if confidence < 0.65:
+        log.info(f"  => Confidence {confidence:.2f} < 0.65 — forcing HOLD")
         return None
+
+    # Determine brain tag
+    brain_tag = "claude" if "claude" in (brain_id or "") else "grok"
+
+    signal = {
+        "action": action,
+        "pair": decision.get("pair"),
+        "confidence": confidence,
+        "size_pct": decision.get("size_pct", 25),
+        "entry_price": decision.get("entry_price"),
+        "stop_loss": decision.get("stop_loss"),
+        "take_profit": decision.get("take_profit"),
+        "atr": decision.get("atr"),
+        "strategy": f"{brain_tag}:{decision.get('strategy', 'unknown')}",
+        "reasoning": decision.get("reasoning", f"{brain_tag} decision"),
+        "_position_reviews": decision.get("position_review", []),
+    }
+
+    return signal
