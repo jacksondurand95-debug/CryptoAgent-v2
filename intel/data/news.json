@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -2,
+    "score": -3,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 17,
-    "positive_score": 390,
-    "negative_score": -410
+    "scored_articles": 15,
+    "positive_score": 350,
+    "negative_score": -380
   },
   "alpha_events": [
     {
@@ -86,16 +86,16 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 35,
-      "score": 80,
+      "score": 40,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 12,
+      "articles": 11,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 3,
+      "articles": 4,
       "score": 0,
       "bias": "neutral"
     }
@@ -184,16 +184,6 @@
       ]
     },
     {
-      "title": "Four Headwinds Stalling Bitcoin's $70K Breakout",
-      "source": "Decrypt",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
       "source": "Google News",
       "sentiment": "bearish",
@@ -212,14 +202,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
     },
     {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
@@ -252,6 +234,16 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Here's why bitcoin climbed through $71,000",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Morgan Stanley taps Coinbase and BNY Mellon for custody in proposed Bitcoin ETF",
@@ -375,13 +367,21 @@
       "score": 0,
       "importance": "low",
       "coins": []
+    },
+    {
+      "title": "International finance watchdog warns stablecoins are increasingly used in sanctions evasion and money laundering",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
     }
   ],
   "sources": {
-    "Google News": 30,
     "Decrypt": 20,
     "CoinTelegraph": 20,
-    "CoinDesk": 20
+    "CoinDesk": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -1006,10 +1006,17 @@
       "score": -2,
       "bias": "neutral",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-04T12:52:56.550126+00:00",
+      "ts": 1772628776,
+      "score": -3,
+      "bias": "neutral",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T12:13:30.750610+00:00",
-    "updated_ts": 1772626410
+    "updated_at": "2026-03-04T12:52:56.550196+00:00",
+    "updated_ts": 1772628776
   }
 }
