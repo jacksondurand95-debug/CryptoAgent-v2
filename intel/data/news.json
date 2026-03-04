@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 1,
+    "score": -2,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 18,
-    "positive_score": 430,
-    "negative_score": -420
+    "scored_articles": 17,
+    "positive_score": 390,
+    "negative_score": -410
   },
   "alpha_events": [
     {
@@ -86,16 +86,16 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 35,
-      "score": 0,
-      "bias": "neutral"
+      "score": 80,
+      "bias": "bullish"
     },
     "ETH": {
-      "articles": 13,
+      "articles": 12,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 4,
+      "articles": 3,
       "score": 0,
       "bias": "neutral"
     }
@@ -156,12 +156,14 @@
       ]
     },
     {
-      "title": "CFTC chief Selig to clear path for U.S. perpetual futures in coming weeks",
-      "source": "CoinDesk",
+      "title": "Three Bitcoin signals show $80K is next BTC price target for bulls",
+      "source": "CoinTelegraph",
       "sentiment": "bullish",
       "score": 40,
       "importance": "medium",
-      "coins": []
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Cathie Wood\u2019s Ark loads up on Coinbase, Robinhood as stocks slide on Iran conflict",
@@ -170,16 +172,6 @@
       "score": 40,
       "importance": "medium",
       "coins": []
-    },
-    {
-      "title": "MARA exec pushes back on Bitcoin treasury sell-off narrative",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
     },
     {
       "title": "Corporates and Exchanges Rush to Stake Ethereum Instead of Selling",
@@ -202,14 +194,6 @@
       ]
     },
     {
-      "title": "Circle Stock Extends Double-Digit Gains Amid Broader Crypto Rally",
-      "source": "Decrypt",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
       "source": "Google News",
       "sentiment": "bearish",
@@ -228,6 +212,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
     },
     {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
@@ -260,6 +252,44 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Morgan Stanley taps Coinbase and BNY Mellon for custody in proposed Bitcoin ETF",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin hits one-month high near $72,000 as haven demand rises",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Kraken becomes first crypto company to secure Fed master account access: WSJ",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Strategy\u2019s STRC stock signals 1,000 BTC purchase in biggest-one day issuance since debut",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Bitcoin jumps above $71,000, building on its resilience to Middle East conflict",
@@ -345,37 +375,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "International finance watchdog warns stablecoins are increasingly used in sanctions evasion and money laundering",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "AI agents will be primary users of blockchain, NEAR co-founder says",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Aave governance rift deepens as major governance group exits $26 billion DeFi protocol",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "CoinTelegraph": 20,
     "Google News": 30,
-    "Decrypt": 20
+    "Decrypt": 20,
+    "CoinTelegraph": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -993,10 +999,17 @@
       "score": 1,
       "bias": "neutral",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-04T12:13:30.750545+00:00",
+      "ts": 1772626410,
+      "score": -2,
+      "bias": "neutral",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T10:50:19.634103+00:00",
-    "updated_ts": 1772621419
+    "updated_at": "2026-03-04T12:13:30.750610+00:00",
+    "updated_ts": 1772626410
   }
 }
