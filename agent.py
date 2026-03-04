@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-"""CryptoAgent v2.1 — Proven Algorithm Serverless Trading Agent.
+"""CryptoAgent v2.2 — Claude-Powered Serverless Trading Agent.
 
 Runs as a single shot from GitHub Actions every 10 minutes.
 State persisted to state.json (committed by Actions workflow).
 
-Based on:
-- AdaptiveTrend (arXiv 2602.11708): Sharpe 2.41, 6H timeframe
-- Bollinger-Keltner Squeeze: fewer but bigger trades
-- Multi-source intel sub-agents for confidence overlay
+Claude Sonnet analyzes ALL market data, derivatives, intel, and portfolio
+state to make trading decisions. Mechanical stops remain as safety net.
 """
 import base64
 import json
@@ -26,7 +24,7 @@ from cryptography.hazmat.primitives import serialization
 
 import config
 from indicators import compute_all
-from strategies import analyze
+from brain import analyze as claude_analyze
 from portfolio import (
     new_state, open_position, close_position, check_stops,
     has_position, can_reenter, get_stats,
@@ -569,7 +567,7 @@ def run():
     """Single-shot agent execution."""
     start_time = time.time()
     log.info("=" * 60)
-    log.info("CryptoAgent v2.1 — Proven Algorithms (AdaptiveTrend/Squeeze)")
+    log.info("CryptoAgent v2.2 — Claude Brain (Sonnet)")
     log.info("=" * 60)
 
     # 1. Load state
@@ -639,14 +637,13 @@ def run():
     if fgi:
         log.info(f"Fear & Greed: {fgi['value']} ({fgi['classification']})")
 
-    # 6. Collect market data and run strategies for each pair
-    signals_found = []
+    # 6. Collect ALL market data for Claude brain
+    all_pair_data = {}
     actions_taken = []
 
     for pair in config.TRADING_PAIRS:
         log.info(f"--- {pair} ---")
 
-        # Get candles at multiple timeframes (PRIMARY: 6H)
         candles_6h = get_candles(pair, config.PRIMARY_TIMEFRAME, 100)
         candles_1d = get_candles(pair, config.TREND_TIMEFRAME, 60)
 
@@ -654,7 +651,6 @@ def run():
             log.warning(f"  Insufficient 6H candle data for {pair} ({len(candles_6h) if candles_6h else 0})")
             continue
 
-        # Compute indicators on 6H (primary) and 1D (trend filter)
         ind_6h = compute_all(candles_6h)
         ind_1d = compute_all(candles_1d) if candles_1d and len(candles_1d) >= 30 else {}
 
@@ -668,14 +664,12 @@ def run():
         log.info(f"  Price: ${price:,.2f} | RSI={ind_6h.get('rsi', '?')} "
                  f"ADX={ind_6h.get('adx', '?')} {squeeze_str} {mom_str}")
 
-        # Fetch on-chain data
         onchain = fetch_okx_data(pair)
         funding_str = ""
         if "funding" in onchain:
             funding_str = f" FR={onchain['funding']['current']:.4f}%"
         log.info(f"  OKX data: {len(onchain)} feeds{funding_str}")
 
-        # Fetch TradingView analysis
         tv_analysis = None
         if config.TV_ENABLED:
             tv_analysis = fetch_tradingview_analysis(pair)
@@ -683,106 +677,78 @@ def run():
                 log.info(f"  TV: {tv_analysis['RECOMMENDATION']} "
                          f"({tv_analysis['BUY']}B/{tv_analysis['SELL']}S/{tv_analysis['NEUTRAL']}N)")
 
-        # Run ALL strategies (now uses 6H + 1D multi-timeframe)
-        signal = analyze(pair, ind_6h, ind_1d, onchain, tv_analysis)
+        all_pair_data[pair] = {
+            "ind_6h": ind_6h,
+            "ind_1d": ind_1d,
+            "onchain": onchain,
+            "tv": tv_analysis,
+        }
 
-        if signal is None:
-            log.info(f"  No signal for {pair}")
-            continue
+    # 7. Call Claude brain with ALL data at once
+    signal = claude_analyze(all_pair_data, state, total_value, intel_brief, fgi)
 
-        # Apply intel overlay — boost or dampen confidence
-        if intel_brief:
-            coin = pair.split("-")[0]
-            coin_intel = intel_brief.get("coins", {}).get(coin, {})
-            intel_bias = coin_intel.get("bias", "neutral")
-            master_bias = intel_brief.get("aggregate", {}).get("bias", "neutral")
-            master_score = intel_brief.get("aggregate", {}).get("score", 0)
+    # 7b. Process Claude's position review recommendations
+    if signal and signal.get("_position_reviews"):
+        for review in signal["_position_reviews"]:
+            if review.get("action") == "close" and has_position(state, review["pair"]):
+                pair = review["pair"]
+                log.info(f"CLAUDE CLOSE: {pair} — {review.get('reason', 'thesis changed')}")
+                exit_price = get_price(pair)
+                if exit_price:
+                    for pos in state["positions"]:
+                        if pos["pair"] == pair:
+                            place_market_order(auth, pair, "SELL", base_amount=pos["qty"])
+                            state, trade = close_position(
+                                state, pair, exit_price, reason=f"claude:{review.get('reason', 'review')}"
+                            )
+                            if trade:
+                                actions_taken.append(
+                                    f"CLOSE {pair} P&L: ${trade['pnl_usd']:+,.2f} [claude:review]"
+                                )
+                            break
 
-            original_conf = signal["confidence"]
-
-            # Boost: signal aligns with intel
-            if signal["action"] == "buy" and master_bias == "bullish":
-                signal["confidence"] = min(signal["confidence"] + 0.05, 0.95)
-            elif signal["action"] == "sell" and master_bias == "bearish":
-                signal["confidence"] = min(signal["confidence"] + 0.05, 0.95)
-
-            # Per-coin boost
-            if signal["action"] == "buy" and intel_bias == "bullish":
-                signal["confidence"] = min(signal["confidence"] + 0.03, 0.95)
-
-            # Dampen: signal conflicts with strong intel
-            if signal["action"] == "buy" and master_score < -50:
-                signal["confidence"] *= 0.85
-            elif signal["action"] == "sell" and master_score > 50:
-                signal["confidence"] *= 0.85
-
-            # Fear & Greed contrarian overlay
-            if fgi:
-                if signal["action"] == "buy" and fgi["value"] < 25:
-                    signal["confidence"] = min(signal["confidence"] + 0.03, 0.95)
-                elif signal["action"] == "buy" and fgi["value"] > 80:
-                    signal["confidence"] *= 0.90
-
-            if signal["confidence"] != original_conf:
-                log.info(f"  OVERLAY adj: {original_conf:.2f} -> {signal['confidence']:.2f}")
-
-        # Check minimum confidence (already filtered in analyze(), but double-check)
-        if signal["confidence"] < config.MIN_CONFIDENCE:
-            log.info(f"  Signal below min confidence: {signal['confidence']:.2f} < {config.MIN_CONFIDENCE}")
-            continue
-
+    # 7c. Execute Claude's trade signal
+    signals_found = []
+    if signal and signal.get("action") in ("buy", "sell"):
+        pair = signal["pair"]
         signals_found.append(signal)
 
-        # Check if we already have a position
-        if signal["action"] == "buy" and has_position(state, pair):
-            log.info(f"  Already have position in {pair} — skipping")
-            continue
-
-        # Check reentry cooldown
-        if signal["action"] == "buy" and not can_reenter(state, pair):
-            log.info(f"  Reentry cooldown active for {pair}")
-            continue
-
-        # Check max open positions
-        if signal["action"] == "buy" and len(state["positions"]) >= config.MAX_OPEN_POSITIONS:
-            log.info(f"  Max positions reached ({config.MAX_OPEN_POSITIONS})")
-            continue
-
-        # Check pending buy orders (don't double up)
-        pending_pairs = {o["pair"] for o in state.get("pending_orders", []) if o["side"] == "buy"}
-        if signal["action"] == "buy" and pair in pending_pairs:
-            log.info(f"  Already have pending buy for {pair}")
-            continue
-
-        # 7. Execute signal
         if signal["action"] == "buy":
-            size_pct = signal.get("size_pct", 25) / 100.0
-            max_size = config.MAX_POSITION_PCT
-            size_pct = min(size_pct, max_size)
-            usd_amount = total_value * size_pct
+            # Safety checks
+            if has_position(state, pair):
+                log.info(f"  Already have position in {pair} — skipping")
+            elif not can_reenter(state, pair):
+                log.info(f"  Reentry cooldown active for {pair}")
+            elif len(state["positions"]) >= config.MAX_OPEN_POSITIONS:
+                log.info(f"  Max positions reached ({config.MAX_OPEN_POSITIONS})")
+            elif pair in {o["pair"] for o in state.get("pending_orders", []) if o["side"] == "buy"}:
+                log.info(f"  Already have pending buy for {pair}")
+            else:
+                price = signal.get("entry_price") or get_price(pair)
+                size_pct = signal.get("size_pct", 25) / 100.0
+                size_pct = min(size_pct, config.MAX_POSITION_PCT)
+                usd_amount = total_value * size_pct
 
-            balances = get_balances(auth)
-            available_usd = balances.get("USD", 0)
-            if usd_amount > available_usd:
-                usd_amount = available_usd * 0.95
-            if usd_amount < 5:
-                log.warning(f"  Insufficient USD: ${available_usd:.2f}")
-                continue
+                balances = get_balances(auth)
+                available_usd = balances.get("USD", 0)
+                if usd_amount > available_usd:
+                    usd_amount = available_usd * 0.95
+                if usd_amount < 5:
+                    log.warning(f"  Insufficient USD: ${available_usd:.2f}")
+                else:
+                    bid_ask = get_best_bid_ask(auth, pair)
+                    limit_price = bid_ask.get("bid") or price
 
-            # Get best bid for limit order (maker fee with post_only!)
-            bid_ask = get_best_bid_ask(auth, pair)
-            limit_price = bid_ask.get("bid") or price
-
-            order = place_limit_order(auth, pair, "BUY", limit_price, usd_amount)
-            if order:
-                order["stop_loss"] = signal.get("stop_loss")
-                order["take_profit"] = signal.get("take_profit")
-                order["atr"] = signal.get("atr")
-                state.setdefault("pending_orders", []).append(order)
-                actions_taken.append(
-                    f"LIMIT BUY {pair} ${usd_amount:.2f} @ ${limit_price:,.2f} "
-                    f"[{signal['strategy']}]"
-                )
+                    order = place_limit_order(auth, pair, "BUY", limit_price, usd_amount)
+                    if order:
+                        order["stop_loss"] = signal.get("stop_loss")
+                        order["take_profit"] = signal.get("take_profit")
+                        order["atr"] = signal.get("atr")
+                        state.setdefault("pending_orders", []).append(order)
+                        actions_taken.append(
+                            f"LIMIT BUY {pair} ${usd_amount:.2f} @ ${limit_price:,.2f} "
+                            f"[{signal['strategy']}]"
+                        )
 
         elif signal["action"] == "sell":
             if has_position(state, pair):

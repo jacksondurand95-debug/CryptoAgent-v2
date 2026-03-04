@@ -1,9 +1,8 @@
-"""CryptoAgent v2 — Proven Algorithm Configuration.
+"""CryptoAgent v2.2 — Claude Brain Configuration.
 
-Based on:
-- AdaptiveTrend paper (arXiv 2602.11708): Sharpe 2.41, 6H timeframe
-- Bollinger-Keltner Squeeze research: fewer but bigger trades
-- Fee-aware optimization: must clear 0.80% round-trip
+Claude Sonnet as trading decision engine.
+All market data fed to Claude; mechanical stops as safety net.
+Fee-aware: must clear 0.80% round-trip.
 """
 import os
 from pathlib import Path
@@ -50,7 +49,11 @@ COOLDOWN_AFTER_STOP_SEC = 60    # 1 min cooldown after stop
 # State (file-based, committed by Actions workflow)
 STATE_FILE = PROJECT_DIR / "state.json"
 
-# AI
+# AI — Claude Brain
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+CLAUDE_MODEL = "claude-sonnet-4-6-20250514"
+
+# Legacy
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 
 # TradingView
