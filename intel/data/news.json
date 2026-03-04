@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -17,
-    "bias": "bearish",
+    "score": -12,
+    "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 17,
+    "scored_articles": 16,
     "positive_score": 270,
-    "negative_score": -420
+    "negative_score": -360
   },
   "alpha_events": [
     {
@@ -18,17 +18,6 @@
       "coins": [],
       "keywords": [
         "+rate cut"
-      ]
-    },
-    {
-      "title": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "fraud"
       ]
     },
     {
@@ -76,7 +65,7 @@
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 14,
+      "articles": 12,
       "score": -50,
       "bias": "bearish"
     },
@@ -92,14 +81,6 @@
       "source": "CoinDesk",
       "sentiment": "bullish",
       "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
       "importance": "high",
       "coins": []
     },
@@ -222,7 +203,7 @@
       "coins": []
     },
     {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -230,7 +211,7 @@
       "coins": []
     },
     {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
+      "title": "SEC and CFTC relaunch \u2018Project Crypto\u2019 to harmonize digital asset regulation - JD Supra",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -351,13 +332,23 @@
       "score": 0,
       "importance": "low",
       "coins": []
+    },
+    {
+      "title": "Bitcoin could slide further on liquidity squeeze, but long-term bull case intact: Sygnum CIO",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
-    "CoinDesk": 20,
     "Decrypt": 20,
-    "Google News": 30
+    "CoinDesk": 20,
+    "Google News": 30,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -898,10 +889,17 @@
       "score": -17,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-04T00:55:06.317364+00:00",
+      "ts": 1772585706,
+      "score": -12,
+      "bias": "neutral",
+      "alpha_count": 4
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T00:24:38.871914+00:00",
-    "updated_ts": 1772583878
+    "updated_at": "2026-03-04T00:55:06.317430+00:00",
+    "updated_ts": 1772585706
   }
 }
