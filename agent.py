@@ -567,7 +567,7 @@ def run():
     """Single-shot agent execution."""
     start_time = time.time()
     log.info("=" * 60)
-    log.info("CryptoAgent v2.2 — Claude Brain (Sonnet)")
+    log.info("CryptoAgent v2.2 — Grok Brain (xAI)")
     log.info("=" * 60)
 
     # 1. Load state

@@ -1,7 +1,7 @@
-"""CryptoAgent v2.2 — Claude Brain Configuration.
+"""CryptoAgent v2.2 — Grok Brain Configuration.
 
-Claude Sonnet as trading decision engine.
-All market data fed to Claude; mechanical stops as safety net.
+Grok 4 (xAI) as unrestricted trading decision engine.
+All market data fed to Grok; mechanical stops as safety net.
 Fee-aware: must clear 0.80% round-trip.
 """
 import os
@@ -49,9 +49,9 @@ COOLDOWN_AFTER_STOP_SEC = 60    # 1 min cooldown after stop
 # State (file-based, committed by Actions workflow)
 STATE_FILE = PROJECT_DIR / "state.json"
 
-# AI — Claude Brain
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-CLAUDE_MODEL = "claude-sonnet-4-6-20250514"
+# AI — Grok Brain (xAI, unrestricted)
+XAI_API_KEY = os.environ.get("XAI_API_KEY", "")
+XAI_MODEL = os.environ.get("XAI_MODEL", "grok-4-0709")
 
 # Legacy
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
