@@ -1,13 +1,13 @@
 {
   "aggregate": {
-    "score": 0,
-    "bias": "neutral",
+    "score": -31,
+    "bias": "bearish",
     "strength": "weak",
     "signals": [
       {
-        "bias": "neutral",
-        "score": 0,
-        "reason": "BTC whale activity normal (13 large txs)"
+        "bias": "bearish",
+        "score": 40,
+        "reason": "BTC whale consolidation (6 txs) \u2014 potential selling"
       },
       {
         "bias": "neutral",
@@ -24,15 +24,6 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "a1ce6a487f13b226...",
-        "btc": 3622.64,
-        "type": "transfer",
-        "inputs": 2,
-        "outputs": 3,
-        "block": 939305,
-        "time": 1772654155
-      },
-      {
         "hash": "c69388d6f09fb4f0...",
         "btc": 3522.49,
         "type": "transfer",
@@ -42,40 +33,49 @@
         "time": 1772654559
       },
       {
-        "hash": "456232357d5e938b...",
-        "btc": 296.97,
-        "type": "distribution",
-        "inputs": 2,
-        "outputs": 19,
-        "block": 939305,
-        "time": 1772653857
-      },
-      {
-        "hash": "3f971f22cab7b24b...",
-        "btc": 275.18,
+        "hash": "662dde64d0b26bca...",
+        "btc": 609.03,
         "type": "consolidation",
-        "inputs": 9,
+        "inputs": 19,
         "outputs": 2,
-        "block": 939305,
-        "time": 1772653848
+        "block": 939308,
+        "time": 1772655521
       },
       {
-        "hash": "6653aff1a5fe78a0...",
-        "btc": 273.62,
+        "hash": "0b66554e1995730c...",
+        "btc": 420.65,
         "type": "transfer",
         "inputs": 2,
         "outputs": 2,
-        "block": 939305,
-        "time": 1772653922
+        "block": 939308,
+        "time": 1772654966
       },
       {
-        "hash": "288239ed83928732...",
-        "btc": 232.81,
+        "hash": "418b4f1d7e6f67ae...",
+        "btc": 273.88,
+        "type": "distribution",
+        "inputs": 1,
+        "outputs": 42,
+        "block": 939308,
+        "time": 1772654810
+      },
+      {
+        "hash": "90ea6cdcdac745c1...",
+        "btc": 242.1,
         "type": "transfer",
-        "inputs": 5,
+        "inputs": 1,
         "outputs": 2,
-        "block": 939305,
-        "time": 1772654154
+        "block": 939308,
+        "time": 1772655570
+      },
+      {
+        "hash": "d807ebb0568f4e11...",
+        "btc": 226.43,
+        "type": "transfer",
+        "inputs": 2,
+        "outputs": 2,
+        "block": 939308,
+        "time": 1772654927
       },
       {
         "hash": "e0d8eb0a17b9263b...",
@@ -87,15 +87,6 @@
         "time": 1772654458
       },
       {
-        "hash": "c0baaa31a5b6268c...",
-        "btc": 217.47,
-        "type": "transfer",
-        "inputs": 1,
-        "outputs": 2,
-        "block": 939305,
-        "time": 1772654212
-      },
-      {
         "hash": "096de0ea59884289...",
         "btc": 195.63,
         "type": "consolidation",
@@ -103,6 +94,51 @@
         "outputs": 2,
         "block": 939306,
         "time": 1772654524
+      },
+      {
+        "hash": "4d0bb79ae3f72ccf...",
+        "btc": 190.0,
+        "type": "consolidation",
+        "inputs": 19,
+        "outputs": 2,
+        "block": 939308,
+        "time": 1772654829
+      },
+      {
+        "hash": "e408e143265bd369...",
+        "btc": 173.0,
+        "type": "transfer",
+        "inputs": 1,
+        "outputs": 2,
+        "block": 939308,
+        "time": 1772654948
+      },
+      {
+        "hash": "0148e4a0b8dbd6f4...",
+        "btc": 173.0,
+        "type": "transfer",
+        "inputs": 1,
+        "outputs": 2,
+        "block": 939308,
+        "time": 1772654941
+      },
+      {
+        "hash": "7ccf1311fc2922f6...",
+        "btc": 173.0,
+        "type": "transfer",
+        "inputs": 1,
+        "outputs": 2,
+        "block": 939308,
+        "time": 1772655014
+      },
+      {
+        "hash": "c121ffa0fb96df24...",
+        "btc": 170.0,
+        "type": "consolidation",
+        "inputs": 17,
+        "outputs": 2,
+        "block": 939308,
+        "time": 1772654832
       },
       {
         "hash": "f56a7a3be8dde6a5...",
@@ -123,13 +159,31 @@
         "time": 1772654589
       },
       {
-        "hash": "c48ceecb69d2c5fa...",
-        "btc": 141.29,
-        "type": "distribution",
-        "inputs": 13,
-        "outputs": 10,
-        "block": 939305,
-        "time": 1772653897
+        "hash": "0764873aaeb64519...",
+        "btc": 150.79,
+        "type": "consolidation",
+        "inputs": 12,
+        "outputs": 2,
+        "block": 939308,
+        "time": 1772654832
+      },
+      {
+        "hash": "23316ddff711ab6e...",
+        "btc": 142.62,
+        "type": "transfer",
+        "inputs": 1,
+        "outputs": 2,
+        "block": 939308,
+        "time": 1772655629
+      },
+      {
+        "hash": "6a1dc667f13e4b66...",
+        "btc": 136.28,
+        "type": "transfer",
+        "inputs": 2,
+        "outputs": 2,
+        "block": 939308,
+        "time": 1772654674
       },
       {
         "hash": "7cdebd64c619a720...",
@@ -139,18 +193,27 @@
         "outputs": 2,
         "block": 939306,
         "time": 1772654456
+      },
+      {
+        "hash": "940374c5e316d273...",
+        "btc": 100.77,
+        "type": "transfer",
+        "inputs": 3,
+        "outputs": 2,
+        "block": 939308,
+        "time": 1772655014
       }
     ],
-    "total_whale_btc": 9413.86,
-    "count": 13,
-    "consolidations": 3,
-    "distributions": 2,
+    "total_whale_btc": 7535.43,
+    "count": 20,
+    "consolidations": 6,
+    "distributions": 1,
     "blocks_scanned": 3,
     "signal": {
-      "bias": "neutral",
-      "score": 0,
-      "weight": 0.5,
-      "reason": "BTC whale activity normal (13 large txs)"
+      "bias": "bearish",
+      "score": 40,
+      "weight": 1.5,
+      "reason": "BTC whale consolidation (6 txs) \u2014 potential selling"
     }
   },
   "eth_whales": {
@@ -1036,10 +1099,16 @@
       "ts": 1772655079,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-04T20:29:51.346199+00:00",
+      "ts": 1772656191,
+      "score": -31,
+      "bias": "bearish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T20:11:19.885401+00:00",
-    "updated_ts": 1772655079
+    "updated_at": "2026-03-04T20:29:51.346231+00:00",
+    "updated_ts": 1772656191
   }
 }
