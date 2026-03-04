@@ -8,15 +8,15 @@
   "okx": {
     "BTC": {
       "funding": {
-        "current_pct": 0.0008,
+        "current_pct": 0.0005,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 2997553.930000013,
-        "usd": 2042677130.490649,
-        "usd_m": 2042.7
+        "contracts": 3011493.650000013,
+        "usd": 2050791037.7262087,
+        "usd_m": 2050.8
       },
       "funding_history": [
         -0.0037,
@@ -33,24 +33,24 @@
       "neg_funding_streak": 1,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 50565871.0,
-        "sell_vol": 59111076.0,
-        "ratio": 0.855,
+        "buy_vol": 80339793.0,
+        "sell_vol": 116279922.0,
+        "ratio": 0.691,
         "aggressive_buyers": false,
-        "aggressive_sellers": false
+        "aggressive_sellers": true
       }
     },
     "ETH": {
       "funding": {
-        "current_pct": -0.0016,
+        "current_pct": -0.0022,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 6251455.570000021,
-        "usd": 1231499238.5565841,
-        "usd_m": 1231.5
+        "contracts": 6265638.2900000205,
+        "usd": 1233052552.9188442,
+        "usd_m": 1233.1
       },
       "funding_history": [
         -0.002,
@@ -67,24 +67,24 @@
       "neg_funding_streak": 1,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 55165157.0,
-        "sell_vol": 55070942.0,
-        "ratio": 1.002,
+        "buy_vol": 95184222.0,
+        "sell_vol": 102303513.0,
+        "ratio": 0.93,
         "aggressive_buyers": false,
         "aggressive_sellers": false
       }
     },
     "SOL": {
       "funding": {
-        "current_pct": 0.0014,
+        "current_pct": 0.0016,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 2592602.3200000003,
-        "usd": 222186018.82400003,
-        "usd_m": 222.2
+        "contracts": 2588534.920000001,
+        "usd": 221164423.56480005,
+        "usd_m": 221.2
       },
       "funding_history": [
         0.0072,
@@ -101,10 +101,10 @@
       "neg_funding_streak": 0,
       "pos_funding_streak": 1,
       "taker_30m": {
-        "buy_vol": 13102436.0,
-        "sell_vol": 11243212.0,
-        "ratio": 1.165,
-        "aggressive_buyers": true,
+        "buy_vol": 12402047.0,
+        "sell_vol": 13059109.0,
+        "ratio": 0.95,
+        "aggressive_buyers": false,
         "aggressive_sellers": false
       }
     }
@@ -112,7 +112,7 @@
   "bybit": {},
   "liquidation_levels": {
     "BTC": {
-      "price": 68178.1,
+      "price": 68085.9,
       "high_24h": 68952.8,
       "low_24h": 66073.8,
       "long_liquidations": {
@@ -135,7 +135,7 @@
       "magnet_distance_pct": 100
     },
     "ETH": {
-      "price": 1971.71,
+      "price": 1967.55,
       "high_24h": 2012.96,
       "low_24h": 1927.32,
       "long_liquidations": {
@@ -157,7 +157,7 @@
       "magnet_distance_pct": 100
     },
     "SOL": {
-      "price": 85.73,
+      "price": 85.4,
       "high_24h": 88.03,
       "low_24h": 82.42,
       "long_liquidations": {
@@ -180,9 +180,11 @@
   },
   "cascade_risk": {
     "BTC": {
-      "risk_score": 0,
+      "risk_score": 15,
       "risk_level": "low",
-      "risk_factors": []
+      "risk_factors": [
+        "Taker ratio=0.69 (imbalanced)"
+      ]
     },
     "ETH": {
       "risk_score": 0,
@@ -3220,10 +3222,21 @@
         "ETH": 0,
         "SOL": 0
       }
+    },
+    {
+      "timestamp": "2026-03-04T06:02:50.956276+00:00",
+      "ts": 1772604170,
+      "score": 0,
+      "bias": "neutral",
+      "cascade_risks": {
+        "BTC": 15,
+        "ETH": 0,
+        "SOL": 0
+      }
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T05:44:52.959058+00:00",
-    "updated_ts": 1772603092
+    "updated_at": "2026-03-04T06:02:50.956311+00:00",
+    "updated_ts": 1772604170
   }
 }
