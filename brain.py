@@ -234,7 +234,7 @@ def analyze(all_pair_data, state, portfolio_value, intel_brief=None, fgi=None):
                     {"role": "user", "content": context},
                 ],
             },
-            timeout=45,
+            timeout=120,
         )
 
         if resp.status_code != 200:
@@ -304,7 +304,7 @@ def analyze(all_pair_data, state, portfolio_value, intel_brief=None, fgi=None):
         log.error(f"  Raw: {content[:300]}")
         return None
     except requests.exceptions.Timeout:
-        log.error("Grok API timeout (45s)")
+        log.error("Grok API timeout (120s)")
         return None
     except Exception as e:
         log.error(f"Grok brain error: {e}")
