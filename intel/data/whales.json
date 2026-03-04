@@ -7,7 +7,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC whale activity normal (3 large txs)"
+        "reason": "BTC whale activity normal (2 large txs)"
       },
       {
         "bias": "neutral",
@@ -24,35 +24,26 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "b1ddaf1ff96e75ef...",
-        "btc": 4538.37,
+        "hash": "5a534498d8d532da...",
+        "btc": 2308.34,
         "type": "transfer",
-        "inputs": 2,
-        "outputs": 2,
-        "block": 939216,
-        "time": 1772591747
+        "inputs": 3,
+        "outputs": 3,
+        "block": 939218,
+        "time": 1772592670
       },
       {
-        "hash": "f378638e611d0fef...",
-        "btc": 835.0,
-        "type": "transfer",
-        "inputs": 1,
-        "outputs": 2,
-        "block": 939216,
-        "time": 1772592025
-      },
-      {
-        "hash": "21def4ae400fa25f...",
-        "btc": 100.1,
+        "hash": "da11e976339d3a5c...",
+        "btc": 250.25,
         "type": "distribution",
         "inputs": 1,
         "outputs": 11,
-        "block": 939215,
-        "time": 1772591465
+        "block": 939218,
+        "time": 1772593257
       }
     ],
-    "total_whale_btc": 5473.47,
-    "count": 3,
+    "total_whale_btc": 2558.59,
+    "count": 2,
     "consolidations": 0,
     "distributions": 1,
     "blocks_scanned": 3,
@@ -60,7 +51,7 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "BTC whale activity normal (3 large txs)"
+      "reason": "BTC whale activity normal (2 large txs)"
     }
   },
   "eth_whales": {
@@ -784,10 +775,16 @@
       "ts": 1772593117,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-04T03:12:40.534793+00:00",
+      "ts": 1772593960,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T02:58:37.114960+00:00",
-    "updated_ts": 1772593117
+    "updated_at": "2026-03-04T03:12:40.534825+00:00",
+    "updated_ts": 1772593960
   }
 }
