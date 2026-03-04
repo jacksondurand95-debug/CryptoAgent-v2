@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 2,
+    "score": 3,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 7.5,
+        "age_min": 7.8,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": -31,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 1.8,
+        "age_min": 20.9,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 20.1,
+        "age_min": 39.2,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,25 +36,29 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 15.1,
+        "age_min": 34.2,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -24,
+        "score": -18,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 19.7,
+        "age_min": 3.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -40,
-      "bias": "bearish",
-      "signals": 1,
+      "score": -5,
+      "bias": "neutral",
+      "signals": 2,
       "details": [
+        {
+          "bias": "bullish",
+          "reason": "News sentiment: 31 articles, score=70"
+        },
         {
           "bias": "bearish",
           "reason": "BTC whale consolidation (6 txs) \u2014 potential selling"
@@ -105,6 +109,15 @@
     },
     {
       "type": "news",
+      "title": "Trump's press on policy combining with institutional adoption for new crypto bull market: Clear Street",
+      "sentiment": "bullish",
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "type": "news",
       "title": "RedStone launches Stellar price feeds after $10M exploit highlights oracle risks",
       "sentiment": "bearish",
       "importance": "high",
@@ -118,20 +131,11 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "type": "news",
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
     }
   ],
-  "timestamp": "2026-03-04T20:31:37.323934+00:00",
+  "timestamp": "2026-03-04T20:50:45.304662+00:00",
   "_meta": {
-    "updated_at": "2026-03-04T20:31:37.324537+00:00",
-    "updated_ts": 1772656297
+    "updated_at": "2026-03-04T20:50:45.305295+00:00",
+    "updated_ts": 1772657445
   }
 }
