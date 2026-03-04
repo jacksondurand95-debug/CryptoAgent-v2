@@ -1,23 +1,5 @@
 {
-  "positions": [
-    {
-      "pair": "BTC-USD",
-      "side": "long",
-      "entry_price": 69438.05,
-      "qty": 0.0017702814897480052,
-      "usd_amount": 122.92489459919648,
-      "stop_loss": 65091.39,
-      "take_profit": 78125.19,
-      "initial_stop": 65091.39,
-      "initial_risk": 4346.6600000000035,
-      "atr": 1737.84,
-      "highest_price": 69438.05,
-      "lowest_price": 66486.49,
-      "trailing_active": false,
-      "opened_at": 1772488735.3722668,
-      "opened_at_str": "2026-03-02 21:58 UTC"
-    }
-  ],
+  "positions": [],
   "trades": [
     {
       "pair": "BTC-USD",
@@ -72,10 +54,28 @@
       "closed_at": 1772280279.5664213,
       "closed_at_str": "2026-02-28 12:04 UTC",
       "duration_min": 145.2
+    },
+    {
+      "pair": "BTC-USD",
+      "side": "long",
+      "entry_price": 69438.05,
+      "exit_price": 67509.65,
+      "qty": 0.0017702814897480052,
+      "usd_amount": 122.92489459919648,
+      "pnl_pct": -2.78,
+      "pnl_usd": -4.52,
+      "fees_usd": 1.11,
+      "reason": "claude:Original long thesis invalidated by 1D bearish trend, momentum reversal with mom14=0.0166 and mom28=-0.075, unrealized loss at -2.8% approaching 3% threshold with no catalyst for recovery in extreme fear environment",
+      "trailing_was_active": false,
+      "highest_price_seen": 69438.05,
+      "opened_at": 1772488735.3722668,
+      "closed_at": 1772599179.3522894,
+      "closed_at_str": "2026-03-04 04:39 UTC",
+      "duration_min": 1840.7
     }
   ],
   "pending_orders": [],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772597694.9829385
+  "last_updated": 1772599179.352426
 }
