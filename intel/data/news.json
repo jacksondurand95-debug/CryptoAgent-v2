@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -6,
+    "score": -9,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 15,
+    "scored_articles": 16,
     "positive_score": 330,
-    "negative_score": -380
+    "negative_score": -410
   },
   "alpha_events": [
     {
@@ -74,12 +74,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 32,
-      "score": 70,
+      "articles": 35,
+      "score": 40,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 12,
+      "articles": 13,
       "score": -10,
       "bias": "neutral"
     },
@@ -183,7 +183,17 @@
       ]
     },
     {
-      "title": "UK House of Lords press Coinbase exec on stablecoins, KYC and bank run fears",
+      "title": "Here\u2019s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "UK House of Lords presses Coinbase exec on stablecoins, KYC and bank run fears",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
       "score": -30,
@@ -221,6 +231,16 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "CoinDesk 20 performance update: Solana (SOL) gains 5.6%, leading index higher",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "SOL"
+      ]
     },
     {
       "title": "Ex-Binance communications lead joins stablecoin specialist KAST",
@@ -341,33 +361,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin holds, ether, solana slide as Mideast woes drag Asian equities to multi-year lows",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH",
-        "SOL"
-      ]
-    },
-    {
-      "title": "Ripple expands payments platform into end-to-end stablecoin infrastructure as processed volume tops $100 billion",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "Decrypt": 20,
     "Google News": 30,
-    "CoinDesk": 20
+    "CoinDesk": 20,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -1006,10 +1006,17 @@
       "score": -6,
       "bias": "neutral",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-04T14:50:18.747061+00:00",
+      "ts": 1772635818,
+      "score": -9,
+      "bias": "neutral",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T14:17:53.378069+00:00",
-    "updated_ts": 1772633873
+    "updated_at": "2026-03-04T14:50:18.747128+00:00",
+    "updated_ts": 1772635818
   }
 }
