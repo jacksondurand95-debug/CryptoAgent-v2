@@ -63,69 +63,70 @@
   "trending": {
     "trending": [
       {
-        "name": "MANTRA",
-        "symbol": "MANTRA",
-        "market_cap_rank": 323,
-        "score": 0
-      },
-      {
-        "name": "Definitive",
-        "symbol": "EDGE",
-        "market_cap_rank": 381,
-        "score": 1
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 2
-      },
-      {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
-        "score": 3
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 538,
-        "score": 4
-      },
-      {
-        "name": "MANTRA [Old]",
-        "symbol": "OM",
-        "market_cap_rank": 130,
-        "score": 5
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 145,
-        "score": 6
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 7
-      },
-      {
-        "name": "XRP",
-        "symbol": "XRP",
-        "market_cap_rank": 5,
-        "score": 8
+        "score": 0
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 107,
+        "score": 1
+      },
+      {
+        "name": "MANTRA",
+        "symbol": "MANTRA",
+        "market_cap_rank": 322,
+        "score": 2
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 3
+      },
+      {
+        "name": "Definitive",
+        "symbol": "EDGE",
+        "market_cap_rank": 388,
+        "score": 4
+      },
+      {
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 542,
+        "score": 5
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
+        "score": 6
+      },
+      {
+        "name": "Aave",
+        "symbol": "AAVE",
+        "market_cap_rank": 46,
+        "score": 7
+      },
+      {
+        "name": "MANTRA [Old]",
+        "symbol": "OM",
+        "market_cap_rank": 131,
+        "score": 8
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH"
+      "ETH",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -1011,10 +1012,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-04T10:13:27.273295+00:00",
+      "ts": 1772619207,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T09:21:49.205971+00:00",
-    "updated_ts": 1772616109
+    "updated_at": "2026-03-04T10:13:27.273339+00:00",
+    "updated_ts": 1772619207
   }
 }

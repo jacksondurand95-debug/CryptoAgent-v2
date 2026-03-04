@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 8,
+    "score": 1,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 18,
-    "positive_score": 470,
-    "negative_score": -390
+    "positive_score": 430,
+    "negative_score": -420
   },
   "alpha_events": [
     {
@@ -85,12 +85,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 33,
-      "score": 40,
-      "bias": "bullish"
+      "articles": 34,
+      "score": 0,
+      "bias": "neutral"
     },
     "ETH": {
-      "articles": 12,
+      "articles": 13,
       "score": -10,
       "bias": "neutral"
     },
@@ -220,16 +220,6 @@
       ]
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -262,6 +252,24 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "SEC and CFTC relaunch \u2018Project Crypto\u2019 to harmonize digital asset regulation - JD Supra",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin jumps above $71,000, building on its resilience to Middle East conflict",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Ray Dalio says 'there is only one gold' as bitcoin outperforms gold during worst geopolitical crisis in years",
@@ -361,23 +369,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Eric Trump\u2019s American Bitcoin buys 11,298 ASIC miners, increasing mining capacity by 12%",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Google News": 30,
-    "Decrypt": 20,
+    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "CoinDesk": 20
+    "Decrypt": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -981,10 +979,17 @@
       "score": 8,
       "bias": "neutral",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-04T10:14:03.132184+00:00",
+      "ts": 1772619243,
+      "score": 1,
+      "bias": "neutral",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T08:51:16.957283+00:00",
-    "updated_ts": 1772614276
+    "updated_at": "2026-03-04T10:14:03.132249+00:00",
+    "updated_ts": 1772619243
   }
 }
