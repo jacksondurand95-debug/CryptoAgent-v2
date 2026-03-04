@@ -7,18 +7,19 @@
       {
         "bias": "bullish",
         "score": 80,
-        "reason": "Extreme Fear (14) \u2014 contrarian BUY"
+        "reason": "Extreme Fear (10) \u2014 contrarian BUY"
       }
     ]
   },
   "fear_greed": {
-    "current": 14,
+    "current": 10,
     "classification": "Extreme Fear",
-    "avg_7d": 12.0,
-    "avg_30d": 10.1,
+    "avg_7d": 11.9,
+    "avg_30d": 10.0,
     "fear_streak": 30,
     "greed_streak": 0,
     "history_30d": [
+      10,
       14,
       10,
       14,
@@ -47,15 +48,14 @@
       9,
       12,
       14,
-      17,
-      14
+      17
     ],
     "trend": "improving",
     "signal": {
       "bias": "bullish",
       "score": 80,
       "weight": 2.0,
-      "reason": "Extreme Fear (14) \u2014 contrarian BUY"
+      "reason": "Extreme Fear (10) \u2014 contrarian BUY"
     }
   },
   "news": null,
@@ -65,68 +65,67 @@
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 531,
+        "market_cap_rank": 509,
         "score": 0
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 149,
-        "score": 1
       },
       {
         "name": "PHALA",
         "symbol": "PHA",
-        "market_cap_rank": 585,
+        "market_cap_rank": 600,
+        "score": 1
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 147,
         "score": 2
-      },
-      {
-        "name": "GMX",
-        "symbol": "GMX",
-        "market_cap_rank": 330,
-        "score": 3
-      },
-      {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
-        "score": 4
-      },
-      {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
-        "score": 5
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
-        "score": 6
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 7
+        "score": 3
+      },
+      {
+        "name": "GMX",
+        "symbol": "GMX",
+        "market_cap_rank": 334,
+        "score": 4
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
+        "score": 5
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
+        "score": 6
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
+        "score": 7
+      },
+      {
+        "name": "Sahara AI",
+        "symbol": "SAHARA",
+        "market_cap_rank": 300,
         "score": 8
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 165,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 44,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "ETH",
-      "BTC",
-      "SOL"
+      "SOL",
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -914,10 +913,17 @@
       "fgi": 14,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-04T00:24:01.868213+00:00",
+      "ts": 1772583841,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T23:12:42.625023+00:00",
-    "updated_ts": 1772579562
+    "updated_at": "2026-03-04T00:24:01.868242+00:00",
+    "updated_ts": 1772583841
   }
 }

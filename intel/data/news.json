@@ -188,14 +188,6 @@
       ]
     },
     {
-      "title": "Why Bermuda is testing a fully onchain economy instead of crypto mandates",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -204,6 +196,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Why Bermuda is testing a fully onchain economy instead of crypto mandates",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
     },
     {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
@@ -355,8 +355,8 @@
   ],
   "sources": {
     "CoinTelegraph": 20,
-    "Decrypt": 20,
     "CoinDesk": 20,
+    "Decrypt": 20,
     "Google News": 30
   },
   "history": [
@@ -891,10 +891,17 @@
       "score": -17,
       "bias": "bearish",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-04T00:24:38.871834+00:00",
+      "ts": 1772583878,
+      "score": -17,
+      "bias": "bearish",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-03T22:46:59.601574+00:00",
-    "updated_ts": 1772578019
+    "updated_at": "2026-03-04T00:24:38.871914+00:00",
+    "updated_ts": 1772583878
   }
 }
