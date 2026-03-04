@@ -63,21 +63,21 @@
   "trending": {
     "trending": [
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 532,
-        "score": 0
-      },
-      {
         "name": "Definitive",
         "symbol": "EDGE",
         "market_cap_rank": 324,
+        "score": 0
+      },
+      {
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 531,
         "score": 1
       },
       {
         "name": "Fabric Protocol",
         "symbol": "ROBO",
-        "market_cap_rank": 232,
+        "market_cap_rank": 233,
         "score": 2
       },
       {
@@ -99,15 +99,15 @@
         "score": 5
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
+        "name": "PHALA",
+        "symbol": "PHA",
+        "market_cap_rank": 619,
         "score": 6
       },
       {
-        "name": "PHALA",
-        "symbol": "PHA",
-        "market_cap_rank": 620,
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 7
       },
       {
@@ -117,14 +117,15 @@
         "score": 8
       },
       {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 46,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC"
+      "BTC",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -975,10 +976,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-04T06:25:24.103337+00:00",
+      "ts": 1772605524,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T06:16:47.893011+00:00",
-    "updated_ts": 1772605007
+    "updated_at": "2026-03-04T06:25:24.103367+00:00",
+    "updated_ts": 1772605524
   }
 }
