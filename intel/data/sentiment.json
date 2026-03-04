@@ -65,7 +65,7 @@
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
-        "market_cap_rank": 253,
+        "market_cap_rank": 261,
         "score": 0
       },
       {
@@ -81,21 +81,21 @@
         "score": 2
       },
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 584,
-        "score": 3
-      },
-      {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 3
+      },
+      {
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 582,
         "score": 4
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 282,
+        "name": "Sui",
+        "symbol": "SUI",
+        "market_cap_rank": 30,
         "score": 5
       },
       {
@@ -105,21 +105,21 @@
         "score": 6
       },
       {
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 271,
+        "score": 7
+      },
+      {
         "name": "Block Street",
         "symbol": "BSB",
-        "market_cap_rank": 726,
-        "score": 7
+        "market_cap_rank": 709,
+        "score": 8
       },
       {
         "name": "Monad",
         "symbol": "MON",
         "market_cap_rank": 156,
-        "score": 8
-      },
-      {
-        "name": "Sui",
-        "symbol": "SUI",
-        "market_cap_rank": 30,
         "score": 9
       }
     ],
@@ -1081,10 +1081,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-04T16:22:07.204089+00:00",
+      "ts": 1772641327,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T16:18:15.999085+00:00",
-    "updated_ts": 1772641095
+    "updated_at": "2026-03-04T16:22:07.204123+00:00",
+    "updated_ts": 1772641327
   }
 }
