@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 12.1,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,15 +20,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 19.2,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
         "status": "fresh",
-        "score": 4,
+        "score": 5,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 92.4,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,28 +36,28 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 28.2,
+        "age_min": 0.7,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -3,
+        "score": -6,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 66.8,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 24,
+      "score": 36,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 35 articles, score=40"
+          "reason": "News sentiment: 32 articles, score=70"
         },
         {
           "bias": "neutral",
@@ -101,13 +101,6 @@
     },
     {
       "type": "news",
-      "title": "Circle shares boosted by Middle East tensions, rising oil, fading rate cut hopes, says Mizuho",
-      "sentiment": "bullish",
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "type": "news",
       "title": "Trump urges passage of U.S. Clarity Act, attacks banks for 'undercutting' GENIUS",
       "sentiment": "bullish",
       "importance": "high",
@@ -121,11 +114,20 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "type": "news",
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
     }
   ],
-  "timestamp": "2026-03-04T13:59:44.805280+00:00",
+  "timestamp": "2026-03-04T14:17:53.522048+00:00",
   "_meta": {
-    "updated_at": "2026-03-04T13:59:44.806093+00:00",
-    "updated_ts": 1772632784
+    "updated_at": "2026-03-04T14:17:53.522674+00:00",
+    "updated_ts": 1772633873
   }
 }

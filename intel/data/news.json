@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -3,
+    "score": -6,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 15,
-    "positive_score": 350,
+    "positive_score": 330,
     "negative_score": -380
   },
   "alpha_events": [
@@ -32,17 +32,6 @@
       "coins": [],
       "keywords": [
         "ban crypto"
-      ]
-    },
-    {
-      "title": "Circle shares boosted by Middle East tensions, rising oil, fading rate cut hopes, says Mizuho",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "+rate cut"
       ]
     },
     {
@@ -85,12 +74,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
-      "score": 40,
+      "articles": 32,
+      "score": 70,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 11,
+      "articles": 12,
       "score": -10,
       "bias": "neutral"
     },
@@ -120,14 +109,6 @@
       "coins": []
     },
     {
-      "title": "Circle shares boosted by Middle East tensions, rising oil, fading rate cut hopes, says Mizuho",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Trump urges passage of U.S. Clarity Act, attacks banks for 'undercutting' GENIUS",
       "source": "CoinDesk",
       "sentiment": "bullish",
@@ -154,6 +135,14 @@
       "coins": [
         "ETH"
       ]
+    },
+    {
+      "title": "XRP price breakout targets $1.95 amid five-day ETF inflow streak",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
     },
     {
       "title": "Three Bitcoin signals show $80K is next BTC price target for bulls",
@@ -194,14 +183,12 @@
       ]
     },
     {
-      "title": "Here\u2019s what happened in crypto today",
+      "title": "UK House of Lords press Coinbase exec on stablecoins, KYC and bank run fears",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
+      "coins": []
     },
     {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
@@ -236,6 +223,48 @@
       "coins": []
     },
     {
+      "title": "Ex-Binance communications lead joins stablecoin specialist KAST",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Sui\u2019s native stablecoin goes live with promise of Treasury yield going back to the network",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Stablecoin giant Tether invests $50 million in sleep technology startup Eight Sleep",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "Trump\u2019s crypto adviser rejects Dimon on treating yield-bearing stablecoins like banks",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Market infrastructure firms warn tokenized securities face higher costs, split liquidity without interoperability",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
       "title": "Here's why bitcoin climbed through $71,000",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -246,7 +275,7 @@
       ]
     },
     {
-      "title": "Morgan Stanley taps Coinbase and BNY Mellon for custody in proposed Bitcoin ETF",
+      "title": "Morgan Stanley taps Coinbase and BNY for custody in proposed Bitcoin ETF",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -332,56 +361,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Polymarket shelves nuclear detonation markets after outcry",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin rebounds toward $70,000 as ETFs pull in $1.45 billion in five days",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
-    },
-    {
-      "title": "JP Morgan CEO Jamie Dimon says stablecoin issuers paying interest should be regulated as banks",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Donald Trump's crypto legacy in two words: Paul Atkins",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "International finance watchdog warns stablecoins are increasingly used in sanctions evasion and money laundering",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "Decrypt": 20,
     "CoinTelegraph": 20,
-    "CoinDesk": 20,
-    "Google News": 30
+    "Decrypt": 20,
+    "Google News": 30,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -1013,10 +999,17 @@
       "score": -3,
       "bias": "neutral",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-04T14:17:53.378002+00:00",
+      "ts": 1772633873,
+      "score": -6,
+      "bias": "neutral",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T12:52:56.550196+00:00",
-    "updated_ts": 1772628776
+    "updated_at": "2026-03-04T14:17:53.378069+00:00",
+    "updated_ts": 1772633873
   }
 }
