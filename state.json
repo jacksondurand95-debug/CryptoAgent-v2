@@ -74,8 +74,24 @@
       "duration_min": 1840.7
     }
   ],
-  "pending_orders": [],
+  "pending_orders": [
+    {
+      "id": "b67a40dc-5ab8-483e-ac22-c7a2d1dd92c6",
+      "client_order_id": "cd7b6233-51b6-4854-9f42-f7333a09c696",
+      "pair": "BTC-USD",
+      "side": "buy",
+      "type": "limit",
+      "price": 70834.89,
+      "qty": 0.0018676232379866312,
+      "usd": 132.29288662422684,
+      "placed_at": 1772614607.8198915,
+      "status": "pending",
+      "stop_loss": 67201.97,
+      "take_profit": null,
+      "atr": 1823.22
+    }
+  ],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772613374.508584
+  "last_updated": 1772614607.8199039
 }
