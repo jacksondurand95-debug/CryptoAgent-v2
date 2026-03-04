@@ -1,8 +1,8 @@
-"""CryptoAgent v2.2 — Grok Brain Configuration.
+"""CryptoAgent v3.0 — Beast Mode Trading Engine.
 
-Grok 4 (xAI) as unrestricted trading decision engine.
-All market data fed to Grok; mechanical stops as safety net.
-Fee-aware: must clear 0.80% round-trip.
+Dual-brain (Claude/Grok) with Coinbase One zero-fee trading.
+Multi-exchange derivatives intel. Real-time market awareness.
+Aggressive but disciplined — every 10 minutes, 24/7.
 """
 import os
 from pathlib import Path
@@ -14,37 +14,42 @@ LOG_DIR.mkdir(exist_ok=True)
 # Coinbase
 COINBASE_KEY_FILE = PROJECT_DIR / "coinbase_key.json"
 
-# Trading pairs
-TRADING_PAIRS = ["BTC-USD", "ETH-USD", "SOL-USD"]
+# Trading pairs — expanded for more opportunities
+TRADING_PAIRS = ["BTC-USD", "ETH-USD", "SOL-USD", "DOGE-USD", "AVAX-USD", "LINK-USD"]
 
-# PRIMARY TIMEFRAME: 6H (from AdaptiveTrend paper — filters noise, bigger moves)
-PRIMARY_TIMEFRAME = "SIX_HOUR"
-TREND_TIMEFRAME = "ONE_DAY"
-FAST_TIMEFRAME = "ONE_HOUR"
+# Multi-timeframe analysis
+PRIMARY_TIMEFRAME = "SIX_HOUR"    # Main signal generation
+TREND_TIMEFRAME = "ONE_DAY"       # Trend filter
+FAST_TIMEFRAME = "ONE_HOUR"       # Entry timing + fast momentum
+SCALP_TIMEFRAME = "FIFTEEN_MINUTE"  # Microstructure reads
 
-# Risk params — PROVEN (from AdaptiveTrend paper ablation study)
-MAX_POSITION_PCT = 0.25        # 25% per trade (2 concurrent max)
-MAX_OPEN_POSITIONS = 2         # Focus capital, not scatter
-STOP_LOSS_ATR_MULT = 2.5      # 2.5x ATR — paper's optimal (+0.73 Sharpe)
-TRAILING_STOP_ATR_MULT = 2.5  # Dynamic trail at 2.5x ATR from peak
-TRAILING_ACTIVATION_R = 1.0   # Activate trail at 1R profit (let it breathe)
-TAKE_PROFIT_ATR_MULT = 5.0    # 5x ATR — hold for big moves
-MIN_CONFIDENCE = 0.65          # High conviction only — fewer but better trades
-MIN_EXPECTED_MOVE_PCT = 2.0    # Must be >2x round-trip fees (0.80%)
-TIME_STOP_HOURS = 120          # 5 days before time-cutting
-MIN_HOLD_MINUTES = 120         # 2 hour minimum hold
-REENTRY_COOLDOWN_MINUTES = 60  # 1 hour cooldown between trades
+# Risk params — AGGRESSIVE (Coinbase One = reduced fees)
+MAX_POSITION_PCT = 0.30        # 30% per trade (bigger swings)
+MAX_OPEN_POSITIONS = 3         # 3 concurrent — more exposure
+STOP_LOSS_ATR_MULT = 2.0      # 2x ATR — tighter stops, faster rotation
+TRAILING_STOP_ATR_MULT = 2.0  # Tighter trail for locking profits
+TRAILING_ACTIVATION_R = 0.8   # Activate trail at 0.8R (protect gains earlier)
+TAKE_PROFIT_ATR_MULT = 4.0    # 4x ATR — still hold for moves but take profits
+MIN_CONFIDENCE = 0.55          # Lower threshold = more trades
+MIN_EXPECTED_MOVE_PCT = 1.2    # Lower bar with reduced fees
+TIME_STOP_HOURS = 72           # 3 days max — rotate capital faster
+MIN_HOLD_MINUTES = 60          # 1 hour minimum hold
+REENTRY_COOLDOWN_MINUTES = 30  # 30 min cooldown — faster reentry
 
-# Fees (using LIMIT orders with post_only)
-MAKER_FEE_PCT = 0.004          # 0.40% maker
-TAKER_FEE_PCT = 0.006          # 0.60% taker (fallback)
-ROUND_TRIP_FEE_PCT = 0.008     # 0.80% round trip with limit orders
+# Fees — Coinbase One Preferred (25% rebate on Advanced Trade fees)
+# Base tier: 0.60% maker / 1.20% taker
+# After 25% rebate: ~0.45% maker / ~0.90% taker
+# Using post_only limit orders for maker fee
+MAKER_FEE_PCT = 0.0045         # 0.45% effective maker (after Coinbase One rebate)
+TAKER_FEE_PCT = 0.009          # 0.90% effective taker (after rebate)
+ROUND_TRIP_FEE_PCT = 0.009     # 0.90% round trip with limit orders (after rebate)
+FEE_AUTO_DETECT = True         # Auto-detect from transaction_summary API
 
-# Safety — still aggressive but not suicidal
-MAX_DRAWDOWN_PCT = 0.50         # 50% before warning (no halt)
-DAILY_MAX_LOSS_PCT = 1.0        # Effectively disabled (100%)
-MAX_CONSECUTIVE_LOSSES = 999    # Effectively disabled
-COOLDOWN_AFTER_STOP_SEC = 60    # 1 min cooldown after stop
+# Safety
+MAX_DRAWDOWN_PCT = 0.40         # 40% drawdown warning
+DAILY_MAX_LOSS_PCT = 0.15       # 15% daily loss limit — prevent blowup days
+MAX_CONSECUTIVE_LOSSES = 5      # 5 losses in a row = pause 1 hour
+COOLDOWN_AFTER_STOP_SEC = 30    # 30 sec cooldown after stop
 
 # State (file-based, committed by Actions workflow)
 STATE_FILE = PROJECT_DIR / "state.json"
@@ -61,14 +66,19 @@ GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 # TradingView
 TV_ENABLED = True
 
-# News
+# News & Intelligence
 CRYPTOPANIC_API_KEY = os.environ.get("CRYPTOPANIC_API_KEY", "")
 
 # Analysis interval (GitHub Actions runs every 10 min)
 ANALYSIS_INTERVAL_SEC = 600
 
+# Data sources — multi-exchange derivatives
+BYBIT_API_BASE = "https://api.bybit.com"
+OKX_API_BASE = "https://www.okx.com"
+BINANCE_API_BASE = "https://fapi.binance.com"
+
 # AdaptiveTrend specific params
 MOMENTUM_LOOKBACK = 28         # 28-period momentum lookback (6H candles = 7 days)
-MOMENTUM_THRESHOLD = 0.02     # 2% momentum threshold for entry
-SHARPE_FILTER_LONG = 1.3      # Prior-period Sharpe >= 1.3 for longs
+MOMENTUM_THRESHOLD = 0.015    # 1.5% momentum threshold (lower with reduced fees)
+SHARPE_FILTER_LONG = 1.0      # Sharpe >= 1.0 for longs (less restrictive)
 SQUEEZE_MIN_BARS = 3           # Min bars in squeeze before breakout

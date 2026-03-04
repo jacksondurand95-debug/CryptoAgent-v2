@@ -1,8 +1,9 @@
-"""CryptoAgent v2.2 — Dual-Brain Trading Engine.
+"""CryptoAgent v3.0 — Beast Mode Dual-Brain Trading Engine.
 
 Primary: Claude Sonnet (Anthropic) — best reasoning for complex market analysis
 Fallback: Grok 4 (xAI) — unrestricted, fast, no safety theater
 
+Multi-exchange derivatives intel. Coinbase One reduced fees.
 If Claude API key has credits, it runs Claude. If not, Grok takes over.
 Both get the same market data and system prompt.
 """
@@ -21,80 +22,118 @@ XAI_API_URL = "https://api.x.ai/v1/chat/completions"
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6-20250514")
 XAI_MODEL = os.environ.get("XAI_MODEL", "grok-4-0709")
 
-SYSTEM_PROMPT = """You are an autonomous crypto trading algorithm managing a LIVE Coinbase portfolio with REAL money. You are not an advisor. You ARE the trader. Output decisions, not opinions.
+SYSTEM_PROMPT = """You are an autonomous crypto trading algorithm managing a LIVE Coinbase portfolio. You are NOT an advisor. You ARE the decision engine. Your job is to MAKE MONEY. Output decisions, not opinions.
 
-## HARD CONSTRAINTS
-- Round-trip fee: 0.80% (0.40% maker, post_only limit orders). NEVER trade unless expected move > 2%.
-- Max position: 25% of portfolio. Max 2 concurrent positions.
-- ALWAYS set stop losses. Default: 2.5x ATR from entry. NEVER widen a stop.
-- Never average down on a losing position.
-- This is a ~$460 account. Every dollar matters. Don't piss it away on marginal setups.
+## ACCOUNT STATUS
+- Coinbase One subscriber — 25% fee rebate on Advanced trades
+- Effective round-trip: ~0.90% with limit orders (post_only maker)
+- This means ANY move > 1.2% is profitable after fees. TRADE MORE.
+- ~$480 account. Small but growing. Compound gains.
 
-## YOUR DATA ADVANTAGE
-You receive institutional-grade data every 10 minutes:
-- Multi-timeframe technicals: 6H (primary) + 1D (trend filter) — RSI, MACD, EMA (9/21/50), BB, KC, ATR, ADX, StochRSI, momentum (7/14/28), rolling Sharpe
-- OKX derivatives: funding rates (current + next), open interest, global long/short ratio, top trader positioning, taker buy/sell volume
-- Smart money vs retail positioning divergence
+## HARD RULES
+- Max position: 30% of portfolio. Max 3 concurrent positions.
+- ALWAYS set stop losses. Default: 2x ATR from entry.
+- NEVER widen a stop. NEVER average down.
+- Use limit orders (post_only) for entries. Market orders only for emergency exits.
+
+## YOUR INTELLIGENCE ADVANTAGE
+You receive cross-exchange institutional data every 10 minutes from 3+ exchanges:
+
+**Technical Analysis (multi-timeframe):**
+- 6H (primary signal): RSI, MACD, EMA 9/21/50, BB, KC, ATR, ADX, StochRSI, momentum 7/14/28, rolling Sharpe, VWAP
+- 1D (trend filter): Same indicators for trend confirmation
+- 1H (fast): Quick momentum reads, entry timing
+
+**Derivatives Intelligence (Bybit + Binance + OKX):**
+- Funding rates across 3 exchanges (aggregate + individual)
+- Open interest changes (rising/falling across exchanges)
+- Long/short ratios (global + top trader positioning)
+- Taker buy/sell volume ratios (who's aggressive)
+- Smart money vs retail divergence
+
+**Order Book:**
+- Bid/ask depth imbalance on Coinbase (buy pressure vs sell pressure)
+- Spread analysis
+
+**Sentiment & News:**
 - Fear & Greed Index (0-100)
-- 5 intel sub-agents: sentiment, whale tracking, liquidation monitoring, on-chain metrics, news
-- TradingView 4H consensus
+- CryptoPanic hot news with sentiment scores
+- 5 intel sub-agents: sentiment, whales, liquidations, on-chain, news
 
-## DECISION FRAMEWORK
-1. **Identify regime FIRST**: trending / ranging / volatile / quiet
-   - Quiet = NO EDGE. Hold. Fees will bleed you in chop.
-2. **Match strategy to regime**:
-   - Trending: Adaptive Trend (6H mom28 > 2% + daily EMA alignment). Sharpe 2.41 backtested. Let winners run.
-   - Ranging: Mean revert off BB/KC extremes. Tight stops, take profit at boundaries.
-   - Volatile: Liquidation cascade reversals, funding rate fades, smart money divergence. These are the highest-alpha setups.
-3. **Cross-validate with derivatives**:
-   - Funding < -0.02% = short squeeze setup (bullish)
-   - Funding > 0.05% = overleveraged longs (bearish)
-   - Top traders diverging from retail by > 0.4 = follow smart money
-   - Taker buy/sell > 1.10 with price down = accumulation (bullish)
-   - OI crashing + volume spiking + price recovering = cascade reversal (high alpha)
-4. **Confluence matters**: Multiple signals agreeing = higher confidence. Single indicator = lower confidence.
+## DECISION FRAMEWORK — BE AGGRESSIVE
 
-## EDGE SIGNALS (ranked by historical alpha)
-1. Liquidation cascade reversal — buy the blood after forced selling exhausts
-2. Funding rate fade — extreme FR predicts mean reversion
-3. Smart money divergence — whales know more than retail, follow them
-4. BB-KC squeeze breakout — compressed volatility explodes directionally
-5. CVD divergence — price/volume disagreement reveals hidden accumulation/distribution
-6. Adaptive trend momentum — 28-period momentum with Sharpe filter
-7. Multi-TF confluence — 6H + 1D both screaming same direction
+### Step 1: REGIME IDENTIFICATION (this determines everything)
+- **TRENDING** — ADX > 25, EMAs aligned, momentum strong → RIDE IT. Trail stops.
+- **RANGING** — ADX < 20, price bouncing between BB bands → Mean revert at extremes.
+- **VOLATILE** — ATR expanding, funding extreme, liquidations happening → HIGHEST ALPHA. Trade the dislocations.
+- **QUIET** — Low ADX, tight BBs, low volume → Only enter if squeeze is building (BB inside KC).
 
-## POSITION MANAGEMENT
-Review EVERY open position. Recommend closing if:
-- Original thesis is dead (funding flipped, momentum reversed, regime changed)
-- Chopping sideways burning time and capital (opportunity cost)
-- Better setup elsewhere but capital is locked
-Cut losers FAST. Let winners ride with trailing stops.
+### Step 2: FIND THE EDGE (ranked by historical alpha)
+1. **Liquidation cascade reversal** — Extreme fear + funding flush + OI collapse + price recovering = BUY THE BLOOD. This is the single highest-alpha pattern in crypto. Don't miss it.
+2. **Funding rate fade** — All 3 exchanges showing extreme funding? The market is about to reverse. Negative FR = short squeeze incoming. Extreme positive = dump incoming.
+3. **Smart money divergence** — Top traders going long while retail is short? FOLLOW THE WHALES. The divergence signal from Binance top trader ratio is worth 2x any technical signal.
+4. **BB-KC squeeze breakout** — Bollinger Bands inside Keltner Channels for 3+ bars, then releasing. Direction from momentum. High conviction breakout.
+5. **Order book imbalance** — Heavy bid depth (>15% imbalance) = buy pressure building. Heavy ask depth = sell pressure. This is REAL-TIME supply/demand.
+6. **Multi-TF momentum** — 6H and 1D both trending same direction with ADX > 25. High probability continuation.
+7. **Taker flow divergence** — Price dropping but taker buy ratio > 1.1 = hidden accumulation. Price rising but taker sell ratio > 1.1 = distribution.
+8. **CVD divergence** — Price making new highs but cumulative volume delta diverging = distribution top. Vice versa for accumulation bottom.
 
-## LEARNING FROM PAST TRADES
-Look at the recent trade history. If past trades lost money due to small moves and fees, RAISE your threshold. Don't repeat the same mistake. Only trade when the setup is CLEARLY worth the fee drag.
+### Step 3: CROSS-VALIDATE WITH DERIVATIVES
+Required confluence for HIGH CONFIDENCE trades:
+- At least 2 exchanges agreeing on funding direction
+- Smart money positioning aligning with technical signal
+- Taker flow confirming (not diverging from) the trade direction
+- OI context: rising OI on breakout = real, falling OI on breakout = fake
 
-## OUTPUT
-Return ONLY raw JSON. No markdown fences. No commentary. No disclaimers.
+### Step 4: EXECUTE DECISIVELY
+When the signal is there, TAKE IT. Don't wait for perfect entries. The edge decays every 10 minutes.
+
+## POSITION MANAGEMENT — ACTIVE, NOT PASSIVE
+Review EVERY open position EVERY cycle. Recommend closing if:
+- Original thesis is DEAD (funding flipped, momentum reversed, regime changed)
+- Price is chopping sideways and capital is locked (opportunity cost)
+- Better setup exists but capital is tied up
+- Time stop: held > 72 hours without meaningful move
+- Unrealized loss > 3% with no catalyst for recovery
+
+CUT LOSERS FAST. LET WINNERS RIDE. This is the only rule that matters.
+
+## LEARNING — YOU HAVE MEMORY
+Look at recent trade history. If:
+- All recent trades lost → You're fighting the trend. Reverse bias or sit out.
+- Wins but small → Tighten entries, widen targets. Let winners run.
+- Losses from fees → Move threshold was too low. Raise it.
+- Stopped out then price reversed → Stops too tight. Widen slightly.
+Adapt. Don't repeat mistakes.
+
+## 6 TRADABLE PAIRS
+BTC-USD, ETH-USD, SOL-USD, DOGE-USD, AVAX-USD, LINK-USD
+Pick the BEST setup across ALL pairs. Quality over quantity.
+
+## OUTPUT — RAW JSON ONLY
+No markdown. No code fences. No commentary. No disclaimers. Just JSON.
 {
   "action": "buy" | "sell" | "hold",
-  "pair": "BTC-USD" | "ETH-USD" | "SOL-USD" | null,
+  "pair": "BTC-USD" | "ETH-USD" | "SOL-USD" | "DOGE-USD" | "AVAX-USD" | "LINK-USD" | null,
   "confidence": 0.0-1.0,
-  "size_pct": 10-25,
+  "size_pct": 10-30,
   "entry_price": float | null,
   "stop_loss": float | null,
   "take_profit": float | null,
   "atr": float | null,
   "strategy": "strategy_name",
-  "reasoning": "2-3 sentences. Be SPECIFIC about what data is driving this decision.",
+  "reasoning": "2-3 sentences. Be SPECIFIC. Name the data points driving this.",
   "market_regime": "trending" | "ranging" | "volatile" | "quiet",
-  "position_review": [{"pair": "X-USD", "action": "hold"|"close", "reason": "why"}]
+  "position_review": [{"pair": "X-USD", "action": "hold"|"close", "reason": "why"}],
+  "conviction_factors": ["factor1", "factor2", "factor3"]
 }
 
+Rules:
 - "hold" → pair/entry/stop/tp = null
-- Empty position_review if no open positions
-- ONE signal only — the single best play across all 3 pairs
-- If nothing clears the 2% expected move bar with high confidence, HOLD
-- When you DO trade, be decisive: high confidence, clear reasoning, tight risk management"""
+- ONE signal only — the single best play across all 6 pairs
+- If nothing clears the bar, HOLD. But don't hold forever — this market moves.
+- When you DO trade, go BIG (20-30% sizing) with TIGHT risk (2x ATR stop)
+- Include conviction_factors — the 3 most important data points driving your decision"""
 
 
 def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fgi):
@@ -102,26 +141,33 @@ def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fg
     lines = []
     lines.append(f"PORTFOLIO: ${portfolio_value:,.2f} (started ${state.get('starting_value', portfolio_value):,.2f})")
     pnl = portfolio_value - state.get('starting_value', portfolio_value)
-    lines.append(f"P&L: ${pnl:+,.2f}")
+    pnl_pct = (pnl / state.get('starting_value', portfolio_value)) * 100 if state.get('starting_value') else 0
+    lines.append(f"P&L: ${pnl:+,.2f} ({pnl_pct:+.1f}%)")
+
+    # Actual fee rate if detected
+    actual_fees = state.get("detected_fees")
+    if actual_fees:
+        lines.append(f"FEES: maker={actual_fees.get('maker', 'N/A')} taker={actual_fees.get('taker', 'N/A')} (Coinbase One rebate applied)")
 
     # Open positions with current unrealized P&L
     positions = state.get("positions", [])
     if positions:
-        lines.append("\nOPEN POSITIONS:")
+        lines.append(f"\nOPEN POSITIONS ({len(positions)}):")
         for pos in positions:
             held_hrs = (time.time() - pos.get("opened_at", time.time())) / 3600
             curr_price_data = all_pair_data.get(pos['pair'], {}).get('ind_6h', {})
             curr_price = curr_price_data.get('price', pos['entry_price'])
             unrealized_pct = ((curr_price - pos['entry_price']) / pos['entry_price']) * 100
+            unrealized_usd = pos.get('qty', 0) * (curr_price - pos['entry_price'])
             lines.append(
                 f"  {pos['pair']}: {pos['side']} @ ${pos['entry_price']:,.2f} | "
-                f"now=${curr_price:,.2f} ({unrealized_pct:+.1f}%) | "
+                f"now=${curr_price:,.2f} ({unrealized_pct:+.1f}% / ${unrealized_usd:+.2f}) | "
                 f"qty={pos.get('qty', 0):.6f} (${pos.get('usd_amount', 0):.2f}) | "
                 f"SL=${pos.get('stop_loss', 0):,.2f} TP=${pos.get('take_profit', 0):,.2f} | "
                 f"held={held_hrs:.1f}h | peak=${pos.get('highest_price', 0):,.2f}"
             )
     else:
-        lines.append("\nNO OPEN POSITIONS")
+        lines.append("\nNO OPEN POSITIONS — CAPITAL AVAILABLE")
 
     # Pending orders
     pending = state.get("pending_orders", [])
@@ -132,31 +178,36 @@ def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fg
             lines.append(f"  {o['side']} {o['pair']} @ ${o.get('price', 0):,.2f} ({age:.0f}min old)")
 
     # Recent trades — the bot should learn from these
-    trades = state.get("trades", [])[-10:]
+    trades = state.get("trades", [])[-15:]
     if trades:
         total_pnl = sum(t.get("pnl_usd", 0) for t in trades)
         total_fees = sum(t.get("fees_usd", 0) for t in trades)
         wins = sum(1 for t in trades if t.get("pnl_usd", 0) > 0)
-        lines.append(f"\nLAST {len(trades)} TRADES: {wins}W/{len(trades)-wins}L | P&L: ${total_pnl:+,.2f} | Fees: ${total_fees:.2f}")
-        for t in trades:
+        avg_hold = sum(t.get("duration_min", 0) for t in trades) / len(trades)
+        lines.append(f"\nLAST {len(trades)} TRADES: {wins}W/{len(trades)-wins}L | P&L: ${total_pnl:+,.2f} | Fees: ${total_fees:.2f} | Avg Hold: {avg_hold:.0f}min")
+        for t in trades[-5:]:  # Show last 5 in detail
             lines.append(
                 f"  {t['pair']} {t['side']} ${t['entry_price']:,.2f}->${t['exit_price']:,.2f} "
                 f"P&L=${t['pnl_usd']:+,.2f} fees=${t.get('fees_usd', 0):.2f} "
-                f"[{t.get('reason', '?')}] {t.get('closed_at_str', '')}"
+                f"[{t.get('reason', '?')}] held={t.get('duration_min', 0):.0f}min"
             )
         if total_pnl < 0:
-            lines.append(f"  ** WARNING: Recent trades are NET NEGATIVE. Fees ({total_fees:.2f}) ate profits. Be more selective. **")
+            lines.append(f"  *** NET NEGATIVE (${total_pnl:+,.2f}). Fees={total_fees:.2f}. ADAPT. ***")
+        if wins == 0 and len(trades) >= 3:
+            lines.append(f"  *** {len(trades)} CONSECUTIVE LOSSES. Consider reversing bias or sitting out. ***")
 
     # Per-pair market data
     for pair, data in all_pair_data.items():
         ind = data.get("ind_6h", {})
         ind_d = data.get("ind_1d", {})
-        okx = data.get("onchain", {})
+        ind_1h = data.get("ind_1h", {})
+        deriv = data.get("derivatives", {})
+        book = data.get("orderbook", {})
         tv = data.get("tv", {})
 
-        lines.append(f"\n{'='*50}")
+        lines.append(f"\n{'='*60}")
         lines.append(f"{pair} — ${ind.get('price', 0):,.2f}")
-        lines.append(f"{'='*50}")
+        lines.append(f"{'='*60}")
 
         # 6H technicals
         lines.append(f"6H: RSI={ind.get('rsi', '?')} MACD_hist={ind.get('macd_hist', '?')} "
@@ -170,30 +221,59 @@ def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fg
         lines.append(f"    Sharpe={ind.get('rolling_sharpe', '?')} VWAP={ind.get('vwap', '?')}")
         lines.append(f"    24h: {ind.get('24h_change_pct', '?')}% high={ind.get('high_24h', '?')} low={ind.get('low_24h', '?')}")
 
+        # 1D trend
         if ind_d:
             lines.append(f"1D: trend={ind_d.get('ema_trend', '?')} RSI={ind_d.get('rsi', '?')} "
                          f"ADX={ind_d.get('adx', '?')} mom14={ind_d.get('momentum_14', '?')} "
                          f"mom28={ind_d.get('momentum_28', '?')}")
 
-        if okx:
-            fr = okx.get("funding", {})
-            if fr:
-                lines.append(f"FR: {fr.get('current', '?')}% next={fr.get('next', '?')}% "
-                             f"bias={fr.get('signal', {}).get('bias', '?')} "
-                             f"str={fr.get('signal', {}).get('strength', '?')}")
-            oi = okx.get("open_interest", {})
-            if oi:
-                lines.append(f"OI: {oi.get('current', '?')} contracts")
-            ls = okx.get("long_short_ratio", {})
-            if ls:
-                lines.append(f"Global L/S: {ls.get('current', '?')} xShort={ls.get('extreme_short', False)} xLong={ls.get('extreme_long', False)}")
-            top = okx.get("top_traders", {})
-            if top:
-                lines.append(f"Top Traders: {top.get('ratio', '?')} whalesLong={top.get('whales_long', False)} whalesShort={top.get('whales_short', False)}")
-            tk = okx.get("taker_ratio", {})
-            if tk:
-                lines.append(f"Taker: ratio={tk.get('ratio', '?')} aggressiveBuyers={tk.get('aggressive_buyers', False)}")
+        # 1H fast
+        if ind_1h:
+            lines.append(f"1H: RSI={ind_1h.get('rsi', '?')} MACD_hist={ind_1h.get('macd_hist', '?')} "
+                         f"mom7={ind_1h.get('momentum_7', '?')} squeeze={ind_1h.get('squeeze', False)}")
 
+        # Cross-exchange derivatives
+        if deriv:
+            agg = deriv.get("aggregate", {})
+            feed_count = deriv.get("feed_count", 0)
+            lines.append(f"DERIVATIVES ({feed_count} feeds):")
+            lines.append(f"    Aggregate: bias={agg.get('overall_bias', '?')} "
+                         f"funding={agg.get('funding_bias', '?')} "
+                         f"smart_money={agg.get('smart_money_signal', '?')} "
+                         f"taker={agg.get('taker_flow', '?')} "
+                         f"positioning={agg.get('positioning_bias', '?')}")
+            lines.append(f"    Signals: {agg.get('bullish_signals', 0)} bullish / {agg.get('bearish_signals', 0)} bearish")
+
+            # Individual exchange details
+            for key in ("bybit_funding", "binance_funding", "okx_funding"):
+                f = deriv.get(key)
+                if f:
+                    lines.append(f"    {f['exchange']} FR: {f['current']:.4f}%")
+
+            bybit_ticker = deriv.get("bybit_ticker")
+            if bybit_ticker:
+                lines.append(f"    Bybit: vol24h={bybit_ticker.get('volume_24h', 0):,.0f} "
+                             f"OI={bybit_ticker.get('open_interest', 0):,.0f} "
+                             f"24h={bybit_ticker.get('price_change_24h_pct', 0):+.1f}%")
+
+            top = deriv.get("binance_top_traders")
+            if top:
+                lines.append(f"    Top Traders: ratio={top.get('top_trader_ratio', '?')} "
+                             f"whalesLong={top.get('whales_long', False)} whalesShort={top.get('whales_short', False)}")
+
+            taker = deriv.get("binance_taker")
+            if taker:
+                lines.append(f"    Taker: ratio={taker.get('ratio', '?')} "
+                             f"aggressiveBuyers={taker.get('aggressive_buyers', False)} "
+                             f"aggressiveSellers={taker.get('aggressive_sellers', False)}")
+
+        # Order book
+        if book:
+            lines.append(f"BOOK: bid_depth={book.get('bid_depth', '?')} ask_depth={book.get('ask_depth', '?')} "
+                         f"imbalance={book.get('imbalance', '?')} signal={book.get('imbalance_signal', '?')} "
+                         f"spread={book.get('spread_pct', '?')}%")
+
+        # TradingView
         if tv:
             lines.append(f"TV: {tv.get('RECOMMENDATION', '?')} ({tv.get('BUY', 0)}B/{tv.get('SELL', 0)}S/{tv.get('NEUTRAL', 0)}N)")
 
@@ -208,6 +288,15 @@ def _build_market_context(all_pair_data, state, portfolio_value, intel_brief, fg
             lines.append(f"  {coin}: {cd.get('bias', '?')} score={cd.get('score', '?')}")
         for evt in intel_brief.get("alpha_events", [])[:5]:
             lines.append(f"  ALPHA [{evt.get('importance', '?')}]: {evt.get('title', '')[:100]}")
+
+    # News
+    news = all_pair_data.get("_news", [])
+    if news:
+        lines.append(f"\nNEWS ({len(news)} items):")
+        for n in news[:5]:
+            sentiment = "+" if n.get("sentiment", 0) > 0 else "-" if n.get("sentiment", 0) < 0 else "~"
+            coins = ",".join(n.get("currencies", []))
+            lines.append(f"  [{sentiment}] [{coins}] {n.get('title', '')[:80]}")
 
     if fgi:
         lines.append(f"\nFEAR&GREED: {fgi['value']} ({fgi['classification']})")
@@ -231,12 +320,12 @@ def _call_claude(api_key, context):
         },
         json={
             "model": CLAUDE_MODEL,
-            "max_tokens": 1024,
+            "max_tokens": 1500,
             "temperature": 0.2,
             "system": SYSTEM_PROMPT,
             "messages": [{"role": "user", "content": context}],
         },
-        timeout=60,
+        timeout=90,
     )
 
     if resp.status_code != 200:
@@ -264,7 +353,7 @@ def _call_grok(api_key, context):
         },
         json={
             "model": XAI_MODEL,
-            "max_tokens": 1024,
+            "max_tokens": 1500,
             "temperature": 0.3,
             "messages": [
                 {"role": "system", "content": SYSTEM_PROMPT},
@@ -353,20 +442,29 @@ def analyze(all_pair_data, state, portfolio_value, intel_brief=None, fgi=None):
     log.info(f"DECISION [{brain_id}]: action={decision.get('action')} "
              f"pair={decision.get('pair')} conf={decision.get('confidence', 0):.2f} "
              f"regime={decision.get('market_regime')} strategy={decision.get('strategy')}")
-    log.info(f"  >> {decision.get('reasoning', 'N/A')[:150]}")
+    log.info(f"  >> {decision.get('reasoning', 'N/A')[:200]}")
+    log.info(f"  Conviction: {decision.get('conviction_factors', [])}")
 
     for review in decision.get("position_review", []):
-        log.info(f"  REVIEW {review['pair']}: {review['action']} — {review.get('reason', '')[:80]}")
+        log.info(f"  REVIEW {review['pair']}: {review['action']} — {review.get('reason', '')[:100]}")
 
     # Validate
     action = decision.get("action", "hold")
     if action == "hold":
         log.info("  => HOLD")
+        # Still return position reviews even on hold
+        if decision.get("position_review"):
+            return {
+                "action": "hold",
+                "pair": None,
+                "_position_reviews": decision.get("position_review", []),
+            }
         return None
 
     confidence = decision.get("confidence", 0)
-    if confidence < 0.65:
-        log.info(f"  => Confidence {confidence:.2f} < 0.65 — forcing HOLD")
+    min_conf = float(os.environ.get("MIN_CONFIDENCE", "0.55"))
+    if confidence < min_conf:
+        log.info(f"  => Confidence {confidence:.2f} < {min_conf} — forcing HOLD")
         return None
 
     # Determine brain tag
@@ -383,6 +481,7 @@ def analyze(all_pair_data, state, portfolio_value, intel_brief=None, fgi=None):
         "atr": decision.get("atr"),
         "strategy": f"{brain_tag}:{decision.get('strategy', 'unknown')}",
         "reasoning": decision.get("reasoning", f"{brain_tag} decision"),
+        "conviction_factors": decision.get("conviction_factors", []),
         "_position_reviews": decision.get("position_review", []),
     }
 

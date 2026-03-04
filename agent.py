@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""CryptoAgent v2.2 — Claude-Powered Serverless Trading Agent.
+"""CryptoAgent v3.0 — Beast Mode Serverless Trading Agent.
 
 Runs as a single shot from GitHub Actions every 10 minutes.
 State persisted to state.json (committed by Actions workflow).
 
-Claude Sonnet analyzes ALL market data, derivatives, intel, and portfolio
-state to make trading decisions. Mechanical stops remain as safety net.
+Multi-exchange derivatives intel (Bybit + Binance + OKX).
+Dual-brain AI (Claude/Grok) with Coinbase One reduced fees.
+6 trading pairs. Aggressive but disciplined.
 """
 import base64
 import json
@@ -29,6 +30,9 @@ from portfolio import (
     new_state, open_position, close_position, check_stops,
     has_position, can_reenter, get_stats,
 )
+
+# Multi-exchange data feeds
+from data_feeds import fetch_all_derivatives, fetch_coinbase_orderbook, fetch_cryptopanic_news
 
 # Intel sub-agent integration
 try:
@@ -348,117 +352,7 @@ def cancel_order(auth, order_id):
 
 # ─── DATA COLLECTION ──────────────────────────────────────────────
 
-def fetch_okx_data(pair):
-    """Fetch OKX derivatives data (funding, OI, long/short, taker volume)."""
-    base = pair.split("-")[0]
-    inst_id = f"{base}-USDT-SWAP"
-    data = {}
-
-    # Funding rate
-    try:
-        r = requests.get(
-            "https://www.okx.com/api/v5/public/funding-rate",
-            params={"instId": inst_id},
-            timeout=10,
-        )
-        resp = r.json()
-        if resp.get("data"):
-            rate = float(resp["data"][0].get("fundingRate", 0))
-            next_rate = float(resp["data"][0].get("nextFundingRate", 0))
-            data["funding"] = {
-                "current": rate * 100,
-                "next": next_rate * 100,
-                "signal": {
-                    "bias": "bullish" if rate < -0.0001 else "bearish" if rate > 0.0003 else "neutral",
-                    "strength": "strong" if abs(rate) > 0.0005 else "moderate" if abs(rate) > 0.0002 else "weak",
-                },
-                "negative_streak": 0,
-                "positive_streak": 0,
-            }
-    except Exception as e:
-        log.debug(f"OKX funding error: {e}")
-
-    # Open interest
-    try:
-        r = requests.get(
-            "https://www.okx.com/api/v5/public/open-interest",
-            params={"instType": "SWAP", "instId": inst_id},
-            timeout=10,
-        )
-        resp = r.json()
-        if resp.get("data"):
-            oi_val = float(resp["data"][0].get("oi", 0))
-            data["open_interest"] = {
-                "current": oi_val,
-                "change_2h_pct": 0,
-                "change_4h_pct": 0,
-            }
-    except Exception as e:
-        log.debug(f"OKX OI error: {e}")
-
-    # Long/Short ratio (global)
-    try:
-        r = requests.get(
-            f"https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio/{base}",
-            params={"period": "1H"},
-            timeout=10,
-        )
-        resp = r.json()
-        if resp.get("data"):
-            latest = resp["data"][0]
-            ratio = float(latest[1]) if len(latest) > 1 else 1.0
-            data["long_short_ratio"] = {
-                "current": ratio,
-                "extreme_short": ratio < 0.7,
-                "extreme_long": ratio > 1.5,
-            }
-    except Exception as e:
-        log.debug(f"OKX L/S error: {e}")
-
-    # Top trader position ratio
-    try:
-        r = requests.get(
-            f"https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio-contract-top-trader/{base}",
-            params={"period": "1H"},
-            timeout=10,
-        )
-        resp = r.json()
-        if resp.get("data"):
-            latest = resp["data"][0]
-            top_ratio = float(latest[1]) if len(latest) > 1 else 1.0
-            data["top_traders"] = {
-                "ratio": top_ratio,
-                "whales_long": top_ratio > 1.3,
-                "whales_short": top_ratio < 0.7,
-            }
-    except Exception as e:
-        log.debug(f"OKX top traders error: {e}")
-
-    # Taker buy/sell volume
-    try:
-        r = requests.get(
-            "https://www.okx.com/api/v5/rubik/stat/taker-volume",
-            params={"ccy": base, "instType": "SWAP", "period": "1H"},
-            timeout=10,
-        )
-        resp = r.json()
-        if resp.get("data"):
-            latest = resp["data"][0]
-            buy_vol = float(latest[1]) if len(latest) > 1 else 0
-            sell_vol = float(latest[2]) if len(latest) > 2 else 0
-            data["taker_buy_vol"] = buy_vol
-            data["taker_sell_vol"] = sell_vol
-            ratio = buy_vol / sell_vol if sell_vol > 0 else 1.0
-            data["taker_ratio"] = {
-                "buy_vol": buy_vol,
-                "sell_vol": sell_vol,
-                "ratio": ratio,
-                "aggressive_buyers": ratio > 1.1,
-            }
-    except Exception as e:
-        log.debug(f"OKX taker error: {e}")
-
-    return data
+    # fetch_okx_data removed — replaced by data_feeds.fetch_all_derivatives()
 
 
 def fetch_fear_greed():
@@ -567,7 +461,7 @@ def run():
     """Single-shot agent execution."""
     start_time = time.time()
     log.info("=" * 60)
-    log.info("CryptoAgent v2.2 — Grok Brain (xAI)")
+    log.info("CryptoAgent v3.0 — Beast Mode (Dual Brain)")
     log.info("=" * 60)
 
     # 1. Load state
@@ -637,15 +531,34 @@ def run():
     if fgi:
         log.info(f"Fear & Greed: {fgi['value']} ({fgi['classification']})")
 
-    # 6. Collect ALL market data for Claude brain
+    # 5d. Auto-detect fee tier
+    try:
+        fee_resp = auth.get("/api/v3/brokerage/transaction_summary")
+        detected_maker = float(fee_resp.get("maker_fee_rate", 0))
+        detected_taker = float(fee_resp.get("taker_fee_rate", 0))
+        if detected_maker > 0 or detected_taker > 0:
+            state["detected_fees"] = {"maker": detected_maker, "taker": detected_taker}
+            log.info(f"FEE TIER: maker={detected_maker:.4f} taker={detected_taker:.4f}")
+    except Exception as e:
+        log.debug(f"Fee detection failed (non-fatal): {e}")
+
+    # 6. Collect ALL market data across all pairs + exchanges
     all_pair_data = {}
     actions_taken = []
+
+    # Fetch news once (shared across pairs)
+    news = fetch_cryptopanic_news(os.environ.get("CRYPTOPANIC_API_KEY", ""))
+    if news:
+        log.info(f"NEWS: {len(news)} hot items fetched")
+        all_pair_data["_news"] = news
 
     for pair in config.TRADING_PAIRS:
         log.info(f"--- {pair} ---")
 
+        # Multi-timeframe candles
         candles_6h = get_candles(pair, config.PRIMARY_TIMEFRAME, 100)
         candles_1d = get_candles(pair, config.TREND_TIMEFRAME, 60)
+        candles_1h = get_candles(pair, config.FAST_TIMEFRAME, 50)
 
         if not candles_6h or len(candles_6h) < 30:
             log.warning(f"  Insufficient 6H candle data for {pair} ({len(candles_6h) if candles_6h else 0})")
@@ -653,6 +566,7 @@ def run():
 
         ind_6h = compute_all(candles_6h)
         ind_1d = compute_all(candles_1d) if candles_1d and len(candles_1d) >= 30 else {}
+        ind_1h = compute_all(candles_1h) if candles_1h and len(candles_1h) >= 20 else {}
 
         if not ind_6h:
             log.warning(f"  No indicators for {pair}")
@@ -664,12 +578,23 @@ def run():
         log.info(f"  Price: ${price:,.2f} | RSI={ind_6h.get('rsi', '?')} "
                  f"ADX={ind_6h.get('adx', '?')} {squeeze_str} {mom_str}")
 
-        onchain = fetch_okx_data(pair)
-        funding_str = ""
-        if "funding" in onchain:
-            funding_str = f" FR={onchain['funding']['current']:.4f}%"
-        log.info(f"  OKX data: {len(onchain)} feeds{funding_str}")
+        # Multi-exchange derivatives (Bybit + Binance + OKX in parallel)
+        derivatives = fetch_all_derivatives(pair)
+        feed_count = derivatives.get("feed_count", 0)
+        agg_bias = derivatives.get("aggregate", {}).get("overall_bias", "N/A")
+        log.info(f"  DERIVATIVES: {feed_count} feeds | bias={agg_bias}")
 
+        # Coinbase order book depth
+        orderbook = None
+        try:
+            orderbook = fetch_coinbase_orderbook(pair, auth)
+            if orderbook:
+                log.info(f"  BOOK: imbalance={orderbook.get('imbalance', 0):+.3f} "
+                         f"({orderbook.get('imbalance_signal', 'N/A')})")
+        except Exception as e:
+            log.debug(f"  Order book failed: {e}")
+
+        # TradingView
         tv_analysis = None
         if config.TV_ENABLED:
             tv_analysis = fetch_tradingview_analysis(pair)
@@ -680,14 +605,16 @@ def run():
         all_pair_data[pair] = {
             "ind_6h": ind_6h,
             "ind_1d": ind_1d,
-            "onchain": onchain,
+            "ind_1h": ind_1h,
+            "derivatives": derivatives,
+            "orderbook": orderbook,
             "tv": tv_analysis,
         }
 
-    # 7. Call Claude brain with ALL data at once
+    # 7. Call AI brain with ALL data at once (Claude primary, Grok fallback)
     signal = claude_analyze(all_pair_data, state, total_value, intel_brief, fgi)
 
-    # 7b. Process Claude's position review recommendations
+    # 7b. Process AI's position review recommendations
     if signal and signal.get("_position_reviews"):
         for review in signal["_position_reviews"]:
             if review.get("action") == "close" and has_position(state, review["pair"]):
