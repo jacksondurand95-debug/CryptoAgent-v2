@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 24.9,
+        "age_min": 34.1,
         "effective_weight": 0.9
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 10.1,
+        "age_min": 6.0,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 24.0,
+        "age_min": 68.0,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 16.8,
+        "age_min": 60.8,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -12,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 23.7,
+        "age_min": 43.4,
         "effective_weight": 1.0
       }
     }
@@ -57,23 +57,19 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 31 articles, score=-80"
+          "reason": "News sentiment: 33 articles, score=-120"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (2 large txs)"
+          "reason": "BTC whale activity normal (14 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": -44,
-      "bias": "bearish",
-      "signals": 2,
+      "score": 0,
+      "bias": "neutral",
+      "signals": 1,
       "details": [
-        {
-          "bias": "bearish",
-          "reason": "News sentiment: 12 articles, score=-50"
-        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -120,9 +116,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-04T03:22:45.166321+00:00",
+  "timestamp": "2026-03-04T04:06:48.575103+00:00",
   "_meta": {
-    "updated_at": "2026-03-04T03:22:45.166913+00:00",
-    "updated_ts": 1772594565
+    "updated_at": "2026-03-04T04:06:48.575853+00:00",
+    "updated_ts": 1772597208
   }
 }
