@@ -12,7 +12,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "TVL stable (-2.2%)"
+        "reason": "TVL stable (-2.3%)"
       },
       {
         "bias": "neutral",
@@ -22,7 +22,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC fees low (3 sat/vB) \u2014 quiet network"
+        "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
       },
       {
         "bias": "bullish",
@@ -50,32 +50,32 @@
     }
   },
   "tvl": {
-    "total_tvl_b": 93.84,
-    "week_change_pct": -2.23,
-    "month_change_pct": -10.74,
+    "total_tvl_b": 93.81,
+    "week_change_pct": -2.26,
+    "month_change_pct": -10.77,
     "top_chains": {
       "Harmony": 0.0,
+      "Mantle": 0.77,
       "Stable": 0.0,
-      "Celo": 0.03,
-      "Ink": 0.46,
       "Etherlink": 0.03,
-      "TAC": 0.0,
       "Aurora": 0.0,
+      "X Layer": 0.02,
+      "Celo": 0.03,
+      "Plasma": 2.18,
       "Corn": 0.0,
-      "Plasma": 2.19,
-      "X Layer": 0.02
+      "TAC": 0.0
     },
     "trend": "shrinking",
     "signal": {
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "TVL stable (-2.2%)"
+      "reason": "TVL stable (-2.3%)"
     }
   },
   "dex_volume": {
-    "total_24h_m": 9597.3,
-    "total_7d_m": 55799.6,
+    "total_24h_m": 9596.2,
+    "total_7d_m": 55798.5,
     "change_1d_pct": -1.1,
     "change_7d_pct": 16.3,
     "top_protocols": [
@@ -139,7 +139,7 @@
   },
   "btc_onchain": {
     "btc_fees": {
-      "fastest": 3,
+      "fastest": 1,
       "half_hour": 1,
       "hour": 1,
       "economy": 1,
@@ -149,12 +149,12 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.3,
-      "reason": "BTC fees low (3 sat/vB) \u2014 quiet network"
+      "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 25123,
-      "vsize": 22963413,
-      "total_fee": 5535071
+      "count": 22877,
+      "vsize": 22157845,
+      "total_fee": 3593451
     },
     "btc_hashrate": 911616601141.0,
     "hashrate_trend": {
@@ -665,10 +665,18 @@
       "bias": "neutral",
       "stablecoin_mcap_b": 264.83,
       "tvl_b": 93.84
+    },
+    {
+      "timestamp": "2026-03-04T00:49:57.454891+00:00",
+      "ts": 1772585397,
+      "score": 4,
+      "bias": "neutral",
+      "stablecoin_mcap_b": 264.83,
+      "tvl_b": 93.81
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T00:24:22.279984+00:00",
-    "updated_ts": 1772583862
+    "updated_at": "2026-03-04T00:49:57.454935+00:00",
+    "updated_ts": 1772585397
   }
 }
