@@ -1,14 +1,28 @@
 {
   "aggregate": {
-    "score": -10,
+    "score": 8,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 310,
+    "scored_articles": 18,
+    "positive_score": 470,
     "negative_score": -390
   },
   "alpha_events": [
+    {
+      "title": "US spot Bitcoin ETFs add $225M as BlackRock\u2019s IBIT offsets redemptions",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 120,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+blackrock",
+        "+fidelity"
+      ]
+    },
     {
       "title": "Indiana governor signs bill allowing crypto in retirement plans",
       "source": "CoinTelegraph",
@@ -71,12 +85,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 32,
-      "score": -120,
-      "bias": "bearish"
+      "articles": 33,
+      "score": 40,
+      "bias": "bullish"
     },
     "ETH": {
-      "articles": 14,
+      "articles": 12,
       "score": -10,
       "bias": "neutral"
     },
@@ -87,6 +101,16 @@
     }
   },
   "top_articles": [
+    {
+      "title": "US spot Bitcoin ETFs add $225M as BlackRock\u2019s IBIT offsets redemptions",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 120,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
     {
       "title": "Indiana governor signs bill allowing crypto in retirement plans",
       "source": "CoinTelegraph",
@@ -190,6 +214,16 @@
       "source": "Google News",
       "sentiment": "bearish",
       "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -337,33 +371,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bank of Japan expands blockchain settlement sandbox and says CBDC efforts are ongoing",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Bitcoin attempting to make a stand as global stock markets melt down on Iran war",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "CoinTelegraph": 20,
+    "Google News": 30,
     "Decrypt": 20,
-    "Google News": 30
+    "CoinTelegraph": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -960,10 +974,17 @@
       "score": -10,
       "bias": "neutral",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-04T08:51:16.957180+00:00",
+      "ts": 1772614276,
+      "score": 8,
+      "bias": "neutral",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T08:12:35.033710+00:00",
-    "updated_ts": 1772611955
+    "updated_at": "2026-03-04T08:51:16.957283+00:00",
+    "updated_ts": 1772614276
   }
 }
