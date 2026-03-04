@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -9,
+    "score": -14,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 330,
-    "negative_score": -410
+    "scored_articles": 19,
+    "positive_score": 360,
+    "negative_score": -500
   },
   "alpha_events": [
     {
@@ -35,14 +35,14 @@
       ]
     },
     {
-      "title": "Trump urges passage of U.S. Clarity Act, attacks banks for 'undercutting' GENIUS",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 50,
+      "title": "RedStone launches Stellar price feeds after $10M exploit highlights oracle risks",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
       "importance": "high",
       "coins": [],
       "keywords": [
-        "+stablecoin bill"
+        "exploit"
       ]
     },
     {
@@ -74,17 +74,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
-      "score": 40,
+      "articles": 34,
+      "score": 80,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 13,
+      "articles": 11,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 4,
+      "articles": 3,
       "score": 0,
       "bias": "neutral"
     }
@@ -109,10 +109,10 @@
       "coins": []
     },
     {
-      "title": "Trump urges passage of U.S. Clarity Act, attacks banks for 'undercutting' GENIUS",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 50,
+      "title": "RedStone launches Stellar price feeds after $10M exploit highlights oracle risks",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
       "importance": "high",
       "coins": []
     },
@@ -137,6 +137,16 @@
       ]
     },
     {
+      "title": "Bitcoin still due 'next leg down' as $73K BTC price precedes death cross",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "XRP price breakout targets $1.95 amid five-day ETF inflow streak",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
@@ -157,6 +167,14 @@
     {
       "title": "Cathie Wood\u2019s Ark loads up on Coinbase, Robinhood as stocks slide on Iran conflict",
       "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Cathie Wood's Ark Invest Buys the Dip on Coinbase and Robinhood\u2014Both Now Surging",
+      "source": "Decrypt",
       "sentiment": "bullish",
       "score": 40,
       "importance": "medium",
@@ -201,6 +219,14 @@
       "coins": []
     },
     {
+      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -231,6 +257,34 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Exodus or firewall? Blockchain analysts clash over Iran\u2019s crypto outflows",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Coinbase, Strategy lead crypto stocks higher as bitcoin spikes above $72,000",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin 'air pocket' above $72,000 could mean quick run to $80,000",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "CoinDesk 20 performance update: Solana (SOL) gains 5.6%, leading index higher",
@@ -269,7 +323,7 @@
       ]
     },
     {
-      "title": "Trump\u2019s crypto adviser rejects Dimon on treating yield-bearing stablecoins like banks",
+      "title": "Trump\u2019s crypto adviser rejects Jamie Dimon on treating yield-bearing stablecoins like banks",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -303,71 +357,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin hits one-month high near $72,000 as haven demand rises",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Kraken becomes first crypto company to secure Fed master account access: WSJ",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Strategy\u2019s STRC stock signals 1,000 BTC purchase in biggest-one day issuance since debut",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin jumps above $71,000, building on its resilience to Middle East conflict",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Ray Dalio says 'there is only one gold' as bitcoin outperforms gold during worst geopolitical crisis in years",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Over a billion flows into bitcoin ETFs, yet the price isn\u2019t rising \u2014 an analyst explains why",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
     "Google News": 30,
-    "CoinDesk": 20,
-    "CoinTelegraph": 20
+    "CoinTelegraph": 20,
+    "Decrypt": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -1013,10 +1009,17 @@
       "score": -9,
       "bias": "neutral",
       "alpha_count": 5
+    },
+    {
+      "timestamp": "2026-03-04T16:18:56.998207+00:00",
+      "ts": 1772641136,
+      "score": -14,
+      "bias": "neutral",
+      "alpha_count": 5
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T14:50:18.747128+00:00",
-    "updated_ts": 1772635818
+    "updated_at": "2026-03-04T16:18:56.998273+00:00",
+    "updated_ts": 1772641136
   }
 }

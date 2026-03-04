@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 12,
+    "score": 19,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,23 +12,23 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 16.0,
+        "age_min": 1.3,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 0,
-        "bias": "neutral",
+        "score": 31,
+        "bias": "bullish",
         "strength": "weak",
-        "age_min": 30.9,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
         "status": "fresh",
-        "score": 5,
+        "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 104.6,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,32 +36,32 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 40.7,
+        "age_min": 0.7,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -9,
+        "score": -14,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 71.9,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 24,
+      "score": 46,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 35 articles, score=40"
+          "reason": "News sentiment: 34 articles, score=80"
         },
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (40 large txs)"
+          "bias": "bullish",
+          "reason": "BTC whale distribution (8 txs) \u2014 accumulation"
         }
       ]
     },
@@ -101,8 +101,8 @@
     },
     {
       "type": "news",
-      "title": "Trump urges passage of U.S. Clarity Act, attacks banks for 'undercutting' GENIUS",
-      "sentiment": "bullish",
+      "title": "RedStone launches Stellar price feeds after $10M exploit highlights oracle risks",
+      "sentiment": "bearish",
       "importance": "high",
       "coins": []
     },
@@ -125,9 +125,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-04T16:02:12.508613+00:00",
+  "timestamp": "2026-03-04T16:18:57.146734+00:00",
   "_meta": {
-    "updated_at": "2026-03-04T16:02:12.509293+00:00",
-    "updated_ts": 1772640132
+    "updated_at": "2026-03-04T16:18:57.147505+00:00",
+    "updated_ts": 1772641137
   }
 }
