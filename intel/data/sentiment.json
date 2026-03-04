@@ -63,69 +63,69 @@
   "trending": {
     "trending": [
       {
-        "name": "Definitive",
-        "symbol": "EDGE",
+        "name": "MANTRA",
+        "symbol": "MANTRA",
         "market_cap_rank": 323,
         "score": 0
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
+        "name": "Definitive",
+        "symbol": "EDGE",
+        "market_cap_rank": 381,
         "score": 1
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 528,
-        "score": 2
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 2
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 3
       },
       {
-        "name": "PHALA",
-        "symbol": "PHA",
-        "market_cap_rank": 599,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 538,
         "score": 4
-      },
-      {
-        "name": "MANTRA",
-        "symbol": "MANTRA",
-        "market_cap_rank": 330,
-        "score": 5
       },
       {
         "name": "MANTRA [Old]",
         "symbol": "OM",
-        "market_cap_rank": 129,
-        "score": 6
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 7
+        "market_cap_rank": 130,
+        "score": 5
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 144,
+        "market_cap_rank": 145,
+        "score": 6
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 7
+      },
+      {
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 5,
         "score": 8
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 50,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL"
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -1004,10 +1004,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-04T09:21:49.205941+00:00",
+      "ts": 1772616109,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T08:18:53.055507+00:00",
-    "updated_ts": 1772612333
+    "updated_at": "2026-03-04T09:21:49.205971+00:00",
+    "updated_ts": 1772616109
   }
 }
