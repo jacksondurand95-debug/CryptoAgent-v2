@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 15.0,
+        "age_min": 13.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 13.0,
+        "age_min": 30.6,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 5,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 26.9,
+        "age_min": 44.5,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,28 +36,28 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 21.6,
+        "age_min": 39.2,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -6,
+        "score": -9,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 26.6,
+        "age_min": 11.8,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 36,
+      "score": 24,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 32 articles, score=70"
+          "reason": "News sentiment: 35 articles, score=40"
         },
         {
           "bias": "neutral",
@@ -125,9 +125,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-04T14:44:28.706786+00:00",
+  "timestamp": "2026-03-04T15:02:08.658795+00:00",
   "_meta": {
-    "updated_at": "2026-03-04T14:44:28.707515+00:00",
-    "updated_ts": 1772635468
+    "updated_at": "2026-03-04T15:02:08.659435+00:00",
+    "updated_ts": 1772636528
   }
 }
