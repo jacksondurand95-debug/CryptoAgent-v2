@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 11,
+    "score": 4,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 4.4,
+        "age_min": 16.8,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 0,
-        "bias": "neutral",
+        "score": -31,
+        "bias": "bearish",
         "strength": "weak",
-        "age_min": 3.7,
+        "age_min": 0.2,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 3.6,
+        "age_min": 15.9,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 3.9,
+        "age_min": 11.4,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,14 +44,14 @@
         "score": -10,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 3.3,
+        "age_min": 15.7,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -36,
+      "score": -46,
       "bias": "bearish",
       "signals": 2,
       "details": [
@@ -60,8 +60,8 @@
           "reason": "News sentiment: 33 articles, score=-80"
         },
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (27 large txs)"
+          "bias": "bearish",
+          "reason": "BTC whale consolidation (4 txs) \u2014 potential selling"
         }
       ]
     },
@@ -116,9 +116,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-04T04:39:02.468178+00:00",
+  "timestamp": "2026-03-04T04:51:23.454538+00:00",
   "_meta": {
-    "updated_at": "2026-03-04T04:39:02.468788+00:00",
-    "updated_ts": 1772599142
+    "updated_at": "2026-03-04T04:51:23.455207+00:00",
+    "updated_ts": 1772599883
   }
 }
