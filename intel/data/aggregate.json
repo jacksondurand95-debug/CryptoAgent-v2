@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 5,
+    "score": 11,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.8,
-    "available_sources": 4,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 21.5,
-        "effective_weight": 0.9
+        "age_min": 16.6,
+        "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": -31,
-        "bias": "bearish",
+        "score": 0,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 27.2,
+        "age_min": 2.3,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 42.9,
+        "age_min": 61.6,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 38.4,
+        "age_min": 10.7,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,14 +44,14 @@
         "score": -10,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 17.5,
+        "age_min": 36.2,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -46,
+      "score": -36,
       "bias": "bearish",
       "signals": 2,
       "details": [
@@ -60,8 +60,8 @@
           "reason": "News sentiment: 32 articles, score=-80"
         },
         {
-          "bias": "bearish",
-          "reason": "BTC whale consolidation (4 txs) \u2014 potential selling"
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (2 large txs)"
         }
       ]
     },
@@ -116,9 +116,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-04T05:18:22.384632+00:00",
+  "timestamp": "2026-03-04T05:37:02.915163+00:00",
   "_meta": {
-    "updated_at": "2026-03-04T05:18:22.385429+00:00",
-    "updated_ts": 1772601502
+    "updated_at": "2026-03-04T05:37:02.915867+00:00",
+    "updated_ts": 1772602622
   }
 }
