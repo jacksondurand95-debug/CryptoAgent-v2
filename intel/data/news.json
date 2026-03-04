@@ -60,7 +60,7 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 33,
+      "articles": 32,
       "score": -80,
       "bias": "bearish"
     },
@@ -237,6 +237,14 @@
       "coins": []
     },
     {
+      "title": "Ripple expands payments platform into end-to-end stablecoin infrastructure as processed volume tops $100 billion",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
       "title": "Polymarket shelves nuclear detonation markets after outcry",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -334,23 +342,12 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Here is why Harvard trimmed bitcoin and bought ether and why the move is bullish for crypto",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "CoinDesk": 20,
     "Decrypt": 20,
+    "CoinTelegraph": 20,
     "Google News": 30
   },
   "history": [
@@ -920,10 +917,17 @@
       "score": -10,
       "bias": "neutral",
       "alpha_count": 4
+    },
+    {
+      "timestamp": "2026-03-04T05:00:50.900658+00:00",
+      "ts": 1772600450,
+      "score": -10,
+      "bias": "neutral",
+      "alpha_count": 4
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T04:35:44.255468+00:00",
-    "updated_ts": 1772598944
+    "updated_at": "2026-03-04T05:00:50.900718+00:00",
+    "updated_ts": 1772600450
   }
 }
