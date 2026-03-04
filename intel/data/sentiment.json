@@ -65,67 +65,68 @@
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
-        "market_cap_rank": 238,
+        "market_cap_rank": 245,
         "score": 0
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 540,
-        "score": 1
-      },
-      {
-        "name": "Block Street",
-        "symbol": "BSB",
-        "market_cap_rank": 666,
-        "score": 2
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
-        "score": 3
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 1
+      },
+      {
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 554,
+        "score": 2
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 106,
+        "score": 3
+      },
+      {
+        "name": "Block Street",
+        "symbol": "BSB",
+        "market_cap_rank": 698,
         "score": 4
       },
       {
         "name": "Fabric Protocol",
         "symbol": "ROBO",
-        "market_cap_rank": 272,
+        "market_cap_rank": 271,
         "score": 5
-      },
-      {
-        "name": "MANTRA [Old]",
-        "symbol": "OM",
-        "market_cap_rank": 131,
-        "score": 6
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 7
-      },
-      {
-        "name": "Aster",
-        "symbol": "ASTER",
-        "market_cap_rank": 45,
-        "score": 8
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 6
+      },
+      {
+        "name": "MANTRA [Old]",
+        "symbol": "OM",
+        "market_cap_rank": 131,
+        "score": 7
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
+        "score": 8
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL"
+      "SOL",
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -1067,10 +1068,17 @@
       "fgi": 10,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-04T15:21:30.358538+00:00",
+      "ts": 1772637690,
+      "fgi": 10,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T14:22:55.063971+00:00",
-    "updated_ts": 1772634175
+    "updated_at": "2026-03-04T15:21:30.358567+00:00",
+    "updated_ts": 1772637690
   }
 }
