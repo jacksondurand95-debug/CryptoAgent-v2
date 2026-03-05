@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -18,
-    "bias": "bearish",
+    "score": -13,
+    "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 21,
-    "positive_score": 370,
-    "negative_score": -590
+    "positive_score": 410,
+    "negative_score": -560
   },
   "alpha_events": [
     {
@@ -86,7 +86,7 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 34,
-      "score": 30,
+      "score": 70,
       "bias": "bullish"
     },
     "ETH": {
@@ -222,6 +222,16 @@
       ]
     },
     {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Tradeweb backs crypto ECN Crossover Markets in $31M funding round",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -256,14 +266,6 @@
       "coins": []
     },
     {
-      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -286,6 +288,24 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Eric Trump, World Liberty co-founder, calls banks 'anti-American' over stablecoin fight",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Crypto bulls slam Ray Dalio's 'tired narratives' in defense of bitcoin's future",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "How this week's rout in Korean stocks might have triggered crypto's surge higher",
@@ -350,31 +370,12 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "The Protocol: New Ethereum scaling plans",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "Billions in crypto are moving in Iran. Analysts can't agree if it's war-time panic or business as usual.",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "Decrypt": 20,
     "Google News": 30,
     "CoinDesk": 20,
+    "Decrypt": 20,
     "CoinTelegraph": 20
   },
   "history": [
@@ -1070,10 +1071,17 @@
       "score": -18,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-05T00:25:35.356235+00:00",
+      "ts": 1772670335,
+      "score": -13,
+      "bias": "neutral",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-04T22:48:30.521028+00:00",
-    "updated_ts": 1772664510
+    "updated_at": "2026-03-05T00:25:35.356304+00:00",
+    "updated_ts": 1772670335
   }
 }
