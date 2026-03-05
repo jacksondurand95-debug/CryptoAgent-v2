@@ -12,7 +12,7 @@
       {
         "bias": "bullish",
         "score": 50,
-        "reason": "TVL surging +5.4%/week"
+        "reason": "TVL surging +5.0%/week"
       },
       {
         "bias": "neutral",
@@ -50,27 +50,27 @@
     }
   },
   "tvl": {
-    "total_tvl_b": 98.16,
-    "week_change_pct": 5.35,
-    "month_change_pct": -2.61,
+    "total_tvl_b": 97.87,
+    "week_change_pct": 5.04,
+    "month_change_pct": -2.9,
     "top_chains": {
       "Harmony": 0.0,
       "Stable": 0.0,
-      "Celo": 0.03,
       "Aurora": 0.0,
       "Etherlink": 0.03,
       "TAC": 0.0,
-      "Corn": 0.0,
-      "X Layer": 0.03,
+      "Unichain": 0.05,
+      "Mantle": 0.74,
       "Ink": 0.47,
-      "Mantle": 0.74
+      "Plasma": 2.01,
+      "Monad": 0.24
     },
     "trend": "growing",
     "signal": {
       "bias": "bullish",
       "score": 50,
       "weight": 1.5,
-      "reason": "TVL surging +5.4%/week"
+      "reason": "TVL surging +5.0%/week"
     }
   },
   "dex_volume": {
@@ -152,11 +152,11 @@
       "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 25920,
-      "vsize": 25953611,
-      "total_fee": 5307582
+      "count": 25210,
+      "vsize": 26438284,
+      "total_fee": 4679292
     },
-    "btc_hashrate": 1105424854927.0,
+    "btc_hashrate": 1091068687980.0,
     "hashrate_trend": {
       "current_eh": 940.2,
       "avg_7d_eh": 1000.0,
@@ -881,10 +881,18 @@
       "bias": "bullish",
       "stablecoin_mcap_b": 265.25,
       "tvl_b": 98.16
+    },
+    {
+      "timestamp": "2026-03-05T18:51:32.248991+00:00",
+      "ts": 1772736692,
+      "score": 27,
+      "bias": "bullish",
+      "stablecoin_mcap_b": 265.25,
+      "tvl_b": 97.87
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T18:38:44.831019+00:00",
-    "updated_ts": 1772735924
+    "updated_at": "2026-03-05T18:51:32.249040+00:00",
+    "updated_ts": 1772736692
   }
 }
