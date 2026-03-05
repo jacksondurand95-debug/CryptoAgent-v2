@@ -75,51 +75,51 @@
         "score": 1
       },
       {
-        "name": "MANTRA",
-        "symbol": "MANTRA",
-        "market_cap_rank": 252,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 138,
         "score": 2
       },
       {
-        "name": "Lombard",
-        "symbol": "BARD",
-        "market_cap_rank": 126,
+        "name": "MANTRA",
+        "symbol": "MANTRA",
+        "market_cap_rank": 253,
         "score": 3
-      },
-      {
-        "name": "Block Street",
-        "symbol": "BSB",
-        "market_cap_rank": 675,
-        "score": 4
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 137,
-        "score": 5
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 613,
-        "score": 6
       },
       {
         "name": "Fabric Protocol",
         "symbol": "ROBO",
-        "market_cap_rank": 280,
+        "market_cap_rank": 282,
+        "score": 4
+      },
+      {
+        "name": "Aave",
+        "symbol": "AAVE",
+        "market_cap_rank": 47,
+        "score": 5
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 43,
+        "score": 6
+      },
+      {
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 625,
         "score": 7
       },
       {
-        "name": "Sui",
-        "symbol": "SUI",
-        "market_cap_rank": 30,
+        "name": "Block Street",
+        "symbol": "BSB",
+        "market_cap_rank": 686,
         "score": 8
       },
       {
-        "name": "PHALA",
-        "symbol": "PHA",
-        "market_cap_rank": 527,
+        "name": "MANTRA [Old]",
+        "symbol": "OM",
+        "market_cap_rank": 131,
         "score": 9
       }
     ],
@@ -1220,10 +1220,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T07:25:04.763711+00:00",
+      "ts": 1772695504,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T06:27:07.442353+00:00",
-    "updated_ts": 1772692027
+    "updated_at": "2026-03-05T07:25:04.763743+00:00",
+    "updated_ts": 1772695504
   }
 }
