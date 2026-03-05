@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -12,
+    "score": -11,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 20,
-    "positive_score": 430,
+    "positive_score": 440,
     "negative_score": -570
   },
   "alpha_events": [
@@ -33,16 +33,16 @@
       ]
     },
     {
-      "title": "Crypto's new run 'has legs' says analyst citing Trump's press on policy, institutional adoption",
-      "source": "CoinDesk",
+      "title": "US Bitcoin reserve still has no plan to stack sats",
+      "source": "CoinTelegraph",
       "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
+      "score": 80,
+      "importance": "critical",
       "coins": [
         "BTC"
       ],
       "keywords": [
-        "+institutional adoption"
+        "+bitcoin reserve"
       ]
     },
     {
@@ -110,16 +110,16 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 30,
-      "score": 190,
+      "score": 200,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 12,
+      "articles": 11,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 3,
+      "articles": 1,
       "score": 0,
       "bias": "neutral"
     }
@@ -142,11 +142,11 @@
       "coins": []
     },
     {
-      "title": "Crypto's new run 'has legs' says analyst citing Trump's press on policy, institutional adoption",
-      "source": "CoinDesk",
+      "title": "US Bitcoin reserve still has no plan to stack sats",
+      "source": "CoinTelegraph",
       "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
+      "score": 80,
+      "importance": "critical",
       "coins": [
         "BTC"
       ]
@@ -271,7 +271,7 @@
       ]
     },
     {
-      "title": "NYSE-owner forges strategic partnership with OKX exchange for tokenized stocks, crypto futures",
+      "title": "New York Stock Exchange owner values crypto exchange OKX at $25 billion in new partnership",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 30,
@@ -302,6 +302,40 @@
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly all assets decline",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Core Scientific secures up to $1 billion loan facility from Morgan Stanley",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin\u2019s drawdown hasn\u2019t shaken institutional investors yet, says CoinShares",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Crypto-friendly fintech giant Revolut files for U.S. banking license",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -361,49 +395,13 @@
         "ETH",
         "SOL"
       ]
-    },
-    {
-      "title": "Bitcoin trading firm suggests a bullish trade with a key financing twist",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin tops $72,000 as ETFs pull $155 million, extending two week inflow streak",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Sky token jumps 10% after governance vote causes bullish tilt in market dynamics",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Eric Trump, World Liberty co-founder, calls banks 'anti-American' over stablecoin fight",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
-    "CoinDesk": 20,
     "Decrypt": 20,
-    "Google News": 30
+    "Google News": 30,
+    "CoinDesk": 20,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -1196,10 +1194,17 @@
       "score": -12,
       "bias": "neutral",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-05T14:19:51.628513+00:00",
+      "ts": 1772720391,
+      "score": -11,
+      "bias": "neutral",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T12:53:28.669427+00:00",
-    "updated_ts": 1772715208
+    "updated_at": "2026-03-05T14:19:51.628579+00:00",
+    "updated_ts": 1772720391
   }
 }

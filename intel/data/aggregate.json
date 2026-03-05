@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 16.7,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 24.3,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 98.8,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 32.2,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -12,
+        "score": -11,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 73.9,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 30 articles, score=190"
+          "reason": "News sentiment: 30 articles, score=200"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (19 large txs)"
+          "reason": "BTC whale activity normal (14 large txs)"
         }
       ]
     },
@@ -99,9 +99,9 @@
     },
     {
       "type": "news",
-      "title": "Crypto's new run 'has legs' says analyst citing Trump's press on policy, institutional adoption",
+      "title": "US Bitcoin reserve still has no plan to stack sats",
       "sentiment": "bullish",
-      "importance": "high",
+      "importance": "critical",
       "coins": [
         "BTC"
       ]
@@ -123,9 +123,9 @@
       "coins": []
     }
   ],
-  "timestamp": "2026-03-05T14:07:21.897938+00:00",
+  "timestamp": "2026-03-05T14:19:51.755139+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T14:07:21.898787+00:00",
-    "updated_ts": 1772719641
+    "updated_at": "2026-03-05T14:19:51.755809+00:00",
+    "updated_ts": 1772720391
   }
 }

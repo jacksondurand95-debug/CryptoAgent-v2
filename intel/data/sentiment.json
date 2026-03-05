@@ -71,31 +71,31 @@
       {
         "name": "Opinion",
         "symbol": "OPN",
-        "market_cap_rank": 291,
+        "market_cap_rank": 317,
         "score": 1
-      },
-      {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
-        "score": 2
-      },
-      {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
-        "score": 3
       },
       {
         "name": "Avantis",
         "symbol": "AVNT",
         "market_cap_rank": 417,
-        "score": 4
+        "score": 2
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
+        "score": 3
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
-        "market_cap_rank": 105,
+        "market_cap_rank": 106,
+        "score": 4
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
         "score": 5
       },
       {
@@ -107,26 +107,25 @@
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 138,
+        "market_cap_rank": 137,
         "score": 7
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 8
       },
       {
-        "name": "BNB",
-        "symbol": "BNB",
-        "market_cap_rank": 4,
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 294,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH",
-      "SOL"
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -1292,10 +1291,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T14:19:14.898632+00:00",
+      "ts": 1772720354,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T13:35:07.252089+00:00",
-    "updated_ts": 1772717707
+    "updated_at": "2026-03-05T14:19:14.898693+00:00",
+    "updated_ts": 1772720354
   }
 }
