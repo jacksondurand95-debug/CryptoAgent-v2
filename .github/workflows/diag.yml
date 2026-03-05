@@ -1,0 +1,20 @@
+name: Account Diagnostic
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q -r requirements.txt
+      - run: echo '${{ secrets.COINBASE_KEY_JSON }}' > coinbase_key.json
+      - name: Run Diagnostic
+        run: python diag.py
+      - if: always()
+        run: rm -f coinbase_key.json
