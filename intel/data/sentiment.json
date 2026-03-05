@@ -77,13 +77,13 @@
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
-        "market_cap_rank": 248,
+        "market_cap_rank": 245,
         "score": 2
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 157,
         "score": 3
       },
       {
@@ -93,40 +93,40 @@
         "score": 4
       },
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 580,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 5
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 158,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 585,
         "score": 6
       },
       {
-        "name": "River",
-        "symbol": "RIVER",
-        "market_cap_rank": 122,
+        "name": "Sui",
+        "symbol": "SUI",
+        "market_cap_rank": 30,
         "score": 7
       },
       {
         "name": "Fabric Protocol",
         "symbol": "ROBO",
-        "market_cap_rank": 289,
+        "market_cap_rank": 290,
         "score": 8
       },
       {
-        "name": "Block Street",
-        "symbol": "BSB",
-        "market_cap_rank": 688,
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 35,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH",
-      "SOL"
+      "SOL",
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -1159,10 +1159,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T00:48:39.519556+00:00",
+      "ts": 1772671719,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T00:24:52.766804+00:00",
-    "updated_ts": 1772670292
+    "updated_at": "2026-03-05T00:48:39.519598+00:00",
+    "updated_ts": 1772671719
   }
 }
