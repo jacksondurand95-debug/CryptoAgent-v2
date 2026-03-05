@@ -63,68 +63,69 @@
   "trending": {
     "trending": [
       {
+        "name": "OKB",
+        "symbol": "OKB",
+        "market_cap_rank": 41,
+        "score": 0
+      },
+      {
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 291,
+        "score": 1
+      },
+      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 0
+        "score": 2
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
+        "score": 3
       },
       {
         "name": "Avantis",
         "symbol": "AVNT",
         "market_cap_rank": 417,
-        "score": 1
+        "score": 4
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 43,
-        "score": 2
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 105,
+        "score": 5
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
+        "score": 6
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 138,
+        "score": 7
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 3
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 135,
-        "score": 4
-      },
-      {
-        "name": "Lombard",
-        "symbol": "BARD",
-        "market_cap_rank": 124,
-        "score": 5
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 632,
-        "score": 6
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 104,
-        "score": 7
-      },
-      {
-        "name": "MANTRA",
-        "symbol": "MANTRA",
-        "market_cap_rank": 267,
         "score": 8
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 157,
+        "name": "BNB",
+        "symbol": "BNB",
+        "market_cap_rank": 4,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
+      "ETH",
       "SOL"
     ],
     "market_attention": "high"
@@ -1284,10 +1285,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T13:35:07.252061+00:00",
+      "ts": 1772717707,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T12:24:37.938606+00:00",
-    "updated_ts": 1772713477
+    "updated_at": "2026-03-05T13:35:07.252089+00:00",
+    "updated_ts": 1772717707
   }
 }
