@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -15,
-    "bias": "neutral",
+    "score": -16,
+    "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 22,
-    "positive_score": 410,
+    "positive_score": 400,
     "negative_score": -600
   },
   "alpha_events": [
@@ -86,7 +86,7 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 34,
-      "score": 70,
+      "score": 100,
       "bias": "bullish"
     },
     "ETH": {
@@ -178,14 +178,6 @@
       ]
     },
     {
-      "title": "XRP price breakout targets $1.95 amid five-day ETF inflow streak",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "Inside the Ray-Ban Smart Glasses Controversy Plaguing Meta",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -274,6 +266,16 @@
       "coins": []
     },
     {
+      "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
+      "source": "Decrypt",
+      "sentiment": "neutral",
+      "score": 30,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -282,7 +284,7 @@
       "coins": []
     },
     {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -290,7 +292,7 @@
       "coins": []
     },
     {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
+      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -1083,10 +1085,17 @@
       "score": -15,
       "bias": "neutral",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-05T03:00:54.412302+00:00",
+      "ts": 1772679654,
+      "score": -16,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T00:56:35.715127+00:00",
-    "updated_ts": 1772672195
+    "updated_at": "2026-03-05T03:00:54.412375+00:00",
+    "updated_ts": 1772679654
   }
 }

@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 6,
+    "score": 12,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.8,
-    "available_sources": 4,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
-        "score": 0,
-        "bias": "neutral",
-        "strength": "weak",
-        "age_min": 43.6,
-        "effective_weight": 0.9
-      },
-      "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 15.6,
+        "age_min": 1.2,
+        "effective_weight": 3.0
+      },
+      "whales": {
+        "status": "fresh",
+        "score": 31,
+        "bias": "bullish",
+        "strength": "weak",
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 83.2,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,32 +36,32 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 33.4,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -15,
-        "bias": "neutral",
+        "score": -16,
+        "bias": "bearish",
         "strength": "weak",
-        "age_min": 78.7,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 36,
+      "score": 46,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 34 articles, score=70"
+          "reason": "News sentiment: 34 articles, score=100"
         },
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (10 large txs)"
+          "bias": "bullish",
+          "reason": "BTC whale distribution (4 txs) \u2014 accumulation"
         }
       ]
     },
@@ -133,9 +133,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-05T02:15:18.009572+00:00",
+  "timestamp": "2026-03-05T03:00:54.559265+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T02:15:18.010192+00:00",
-    "updated_ts": 1772676918
+    "updated_at": "2026-03-05T03:00:54.559915+00:00",
+    "updated_ts": 1772679654
   }
 }

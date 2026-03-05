@@ -63,68 +63,69 @@
   "trending": {
     "trending": [
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 1
+        "score": 0
       },
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
-        "market_cap_rank": 250,
+        "market_cap_rank": 249,
+        "score": 1
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 132,
         "score": 2
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
+        "score": 3
       },
       {
         "name": "Monad",
         "symbol": "MON",
-        "market_cap_rank": 157,
-        "score": 3
+        "market_cap_rank": 158,
+        "score": 4
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 621,
-        "score": 4
+        "market_cap_rank": 605,
+        "score": 5
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
+        "score": 6
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 5
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 138,
-        "score": 6
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
         "score": 7
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 47,
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 5,
         "score": 8
       },
       {
-        "name": "Jupiter",
-        "symbol": "JUP",
-        "market_cap_rank": 87,
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 289,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
+      "ETH",
       "SOL"
     ],
     "market_attention": "high"
@@ -1172,10 +1173,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T03:00:16.547499+00:00",
+      "ts": 1772679616,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T01:41:52.665469+00:00",
-    "updated_ts": 1772674912
+    "updated_at": "2026-03-05T03:00:16.547531+00:00",
+    "updated_ts": 1772679616
   }
 }
