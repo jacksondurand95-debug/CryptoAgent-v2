@@ -4,9 +4,9 @@
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 19,
-    "positive_score": 360,
-    "negative_score": -570
+    "scored_articles": 17,
+    "positive_score": 320,
+    "negative_score": -510
   },
   "alpha_events": [
     {
@@ -43,17 +43,6 @@
       ],
       "keywords": [
         "+institutional adoption"
-      ]
-    },
-    {
-      "title": "RedStone launches Stellar price feeds after $10M exploit highlights oracle risks",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "exploit"
       ]
     },
     {
@@ -97,11 +86,11 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 32,
-      "score": 130,
+      "score": 90,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 14,
+      "articles": 15,
       "score": -10,
       "bias": "neutral"
     },
@@ -137,14 +126,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "RedStone launches Stellar price feeds after $10M exploit highlights oracle risks",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
     },
     {
       "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
@@ -184,16 +165,6 @@
         "BTC",
         "ETH",
         "SOL"
-      ]
-    },
-    {
-      "title": "Bitcoin still due 'next leg down' as $73K BTC price precedes death cross",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -382,13 +353,33 @@
       "score": 0,
       "importance": "low",
       "coins": []
+    },
+    {
+      "title": "Coinbase, Strategy lead crypto stocks higher as bitcoin spikes above $72,000",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin 'air pocket' above $72,000 could mean quick run to $80,000",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
+    "Decrypt": 20,
     "CoinTelegraph": 20,
     "Google News": 30,
-    "CoinDesk": 20,
-    "Decrypt": 20
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -1118,10 +1109,17 @@
       "score": -18,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-05T05:03:37.840738+00:00",
+      "ts": 1772687017,
+      "score": -18,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T04:36:42.963385+00:00",
-    "updated_ts": 1772685402
+    "updated_at": "2026-03-05T05:03:37.840809+00:00",
+    "updated_ts": 1772687017
   }
 }
