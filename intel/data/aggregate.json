@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 10,
+    "score": 22,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 1.0,
-    "available_sources": 5,
+    "confidence": 0.8,
+    "available_sources": 4,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "fresh",
+        "status": "stale",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 3.9,
-        "effective_weight": 3.0
+        "age_min": 21.0,
+        "effective_weight": 0.9
       },
       "whales": {
         "status": "fresh",
-        "score": 0,
-        "bias": "neutral",
+        "score": 31,
+        "bias": "bullish",
         "strength": "weak",
-        "age_min": 48.9,
+        "age_min": 6.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 65.0,
+        "age_min": 82.1,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 2.5,
+        "age_min": 19.5,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,20 +44,20 @@
         "score": -10,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 29.9,
+        "age_min": 46.9,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 0,
-      "bias": "neutral",
+      "score": 40,
+      "bias": "bullish",
       "signals": 1,
       "details": [
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (27 large txs)"
+          "bias": "bullish",
+          "reason": "BTC whale distribution (5 txs) \u2014 accumulation"
         }
       ]
     },
@@ -130,9 +130,9 @@
       "coins": []
     }
   ],
-  "timestamp": "2026-03-05T21:19:42.517492+00:00",
+  "timestamp": "2026-03-05T21:36:47.210909+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T21:19:42.518042+00:00",
-    "updated_ts": 1772745582
+    "updated_at": "2026-03-05T21:36:47.211565+00:00",
+    "updated_ts": 1772746607
   }
 }
