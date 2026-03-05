@@ -22,7 +22,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+        "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
       },
       {
         "bias": "bullish",
@@ -74,10 +74,10 @@
     }
   },
   "dex_volume": {
-    "total_24h_m": 9166.5,
-    "total_7d_m": 55925.8,
+    "total_24h_m": 9161.7,
+    "total_7d_m": 55920.9,
     "change_1d_pct": 4.3,
-    "change_7d_pct": 1.9,
+    "change_7d_pct": 1.8,
     "top_protocols": [
       {
         "name": "Curve DEX",
@@ -139,7 +139,7 @@
   },
   "btc_onchain": {
     "btc_fees": {
-      "fastest": 2,
+      "fastest": 1,
       "half_hour": 1,
       "hour": 1,
       "economy": 1,
@@ -149,17 +149,17 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.3,
-      "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+      "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 29091,
-      "vsize": 32080873,
-      "total_fee": 5742040
+      "count": 32272,
+      "vsize": 32162144,
+      "total_fee": 6529376
     },
-    "btc_hashrate": 875726183773.0,
+    "btc_hashrate": 854191933353.0,
     "hashrate_trend": {
-      "current_eh": 968.6,
-      "avg_7d_eh": 1010.0,
+      "current_eh": 940.2,
+      "avg_7d_eh": 1000.0,
       "rising": false
     }
   },
@@ -785,10 +785,18 @@
       "bias": "neutral",
       "stablecoin_mcap_b": 265.76,
       "tvl_b": 98.46
+    },
+    {
+      "timestamp": "2026-03-05T00:52:06.497439+00:00",
+      "ts": 1772671926,
+      "score": 4,
+      "bias": "neutral",
+      "stablecoin_mcap_b": 265.76,
+      "tvl_b": 98.46
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T00:25:18.087076+00:00",
-    "updated_ts": 1772670318
+    "updated_at": "2026-03-05T00:52:06.497483+00:00",
+    "updated_ts": 1772671926
   }
 }
