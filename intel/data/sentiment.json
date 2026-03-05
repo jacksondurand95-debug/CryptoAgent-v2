@@ -69,57 +69,57 @@
         "score": 0
       },
       {
-        "name": "Lombard",
-        "symbol": "BARD",
-        "market_cap_rank": 122,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 666,
         "score": 1
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 43,
+        "name": "Lombard",
+        "symbol": "BARD",
+        "market_cap_rank": 126,
         "score": 2
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
-        "market_cap_rank": 106,
+        "market_cap_rank": 105,
         "score": 3
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 43,
+        "score": 4
       },
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
         "market_cap_rank": 267,
-        "score": 4
+        "score": 5
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 140,
-        "score": 5
-      },
-      {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 44,
+        "market_cap_rank": 139,
         "score": 6
       },
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 647,
+        "name": "POL (ex-MATIC)",
+        "symbol": "POL",
+        "market_cap_rank": 63,
         "score": 7
       },
       {
-        "name": "Jupiter",
-        "symbol": "JUP",
-        "market_cap_rank": 87,
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 157,
         "score": 8
       },
       {
-        "name": "pippin",
-        "symbol": "PIPPIN",
-        "market_cap_rank": 120,
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 286,
         "score": 9
       }
     ],
@@ -1262,10 +1262,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T11:19:37.782265+00:00",
+      "ts": 1772709577,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T10:22:00.120039+00:00",
-    "updated_ts": 1772706120
+    "updated_at": "2026-03-05T11:19:37.782293+00:00",
+    "updated_ts": 1772709577
   }
 }
