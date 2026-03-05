@@ -71,13 +71,13 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 590,
+        "market_cap_rank": 586,
         "score": 1
       },
       {
         "name": "Opinion",
         "symbol": "OPN",
-        "market_cap_rank": 347,
+        "market_cap_rank": 350,
         "score": 2
       },
       {
@@ -93,15 +93,15 @@
         "score": 4
       },
       {
-        "name": "Avantis",
-        "symbol": "AVNT",
-        "market_cap_rank": 424,
-        "score": 5
-      },
-      {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
+        "score": 5
+      },
+      {
+        "name": "Avantis",
+        "symbol": "AVNT",
+        "market_cap_rank": 424,
         "score": 6
       },
       {
@@ -119,7 +119,7 @@
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 136,
+        "market_cap_rank": 138,
         "score": 9
       }
     ],
@@ -1326,10 +1326,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T18:46:22.361202+00:00",
+      "ts": 1772736382,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T18:38:22.430474+00:00",
-    "updated_ts": 1772735902
+    "updated_at": "2026-03-05T18:46:22.361231+00:00",
+    "updated_ts": 1772736382
   }
 }
