@@ -11,7 +11,7 @@
       "initial_stop": 67201.97,
       "initial_risk": 3632.9199999999983,
       "atr": 1823.22,
-      "highest_price": 70834.89,
+      "highest_price": 72516.0,
       "lowest_price": 70834.89,
       "trailing_active": false,
       "opened_at": 1772676920.5600834,
@@ -95,6 +95,6 @@
   "pending_orders": [],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772680516.7441318,
+  "last_updated": 1772683374.3095717,
   "daily_losses": []
 }
