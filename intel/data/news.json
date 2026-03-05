@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -11,
+    "score": -14,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 20,
-    "positive_score": 440,
+    "scored_articles": 19,
+    "positive_score": 400,
     "negative_score": -570
   },
   "alpha_events": [
@@ -109,8 +109,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 30,
-      "score": 200,
+      "articles": 31,
+      "score": 170,
       "bias": "bullish"
     },
     "ETH": {
@@ -243,14 +243,6 @@
       "coins": []
     },
     {
-      "title": "Cathie Wood's Ark Invest Buys the Dip on Coinbase and Robinhood\u2014Both Now Surging",
-      "source": "Decrypt",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "Bitcoin holds breakout gains while crypto market turns cautious: Crypto Markets Today - CoinDesk",
       "source": "Google News",
       "sentiment": "bullish",
@@ -279,6 +271,16 @@
       "coins": []
     },
     {
+      "title": "Here\u2019s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
       "source": "Decrypt",
       "sentiment": "neutral",
@@ -290,14 +292,6 @@
     },
     {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -395,12 +389,22 @@
         "ETH",
         "SOL"
       ]
+    },
+    {
+      "title": "Bitcoin trading firm suggests a bullish trade with a key financing twist",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
     "Google News": 30,
     "CoinDesk": 20,
+    "Decrypt": 20,
     "CoinTelegraph": 20
   },
   "history": [
@@ -1201,10 +1205,17 @@
       "score": -11,
       "bias": "neutral",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-05T14:51:54.206993+00:00",
+      "ts": 1772722314,
+      "score": -14,
+      "bias": "neutral",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T14:19:51.628579+00:00",
-    "updated_ts": 1772720391
+    "updated_at": "2026-03-05T14:51:54.207069+00:00",
+    "updated_ts": 1772722314
   }
 }
