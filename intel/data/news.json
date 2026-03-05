@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -17,
-    "bias": "bearish",
+    "score": -10,
+    "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 25,
+    "scored_articles": 22,
     "positive_score": 430,
-    "negative_score": -660
+    "negative_score": -550
   },
   "alpha_events": [
     {
@@ -95,19 +95,6 @@
       ]
     },
     {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "crash"
-      ]
-    },
-    {
       "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
@@ -124,16 +111,16 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 30,
-      "score": -40,
-      "bias": "bearish"
+      "score": 10,
+      "bias": "neutral"
     },
     "ETH": {
       "articles": 12,
-      "score": -90,
+      "score": -60,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 3,
+      "articles": 4,
       "score": -80,
       "bias": "bearish"
     }
@@ -201,16 +188,6 @@
       "coins": [
         "BTC",
         "ETH"
-      ]
-    },
-    {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -341,24 +318,6 @@
       ]
     },
     {
-      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
@@ -414,13 +373,39 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly all assets decline",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Core Scientific secures up to $1 billion loan facility from Morgan Stanley",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin\u2019s drawdown hasn\u2019t shaken institutional investors yet, says CoinShares",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
+    "CoinTelegraph": 20,
     "Decrypt": 20,
     "CoinDesk": 20,
-    "Google News": 30,
-    "CoinTelegraph": 20
+    "Google News": 30
   },
   "history": [
     {
@@ -1255,10 +1240,17 @@
       "score": -17,
       "bias": "bearish",
       "alpha_count": 9
+    },
+    {
+      "timestamp": "2026-03-05T20:49:51.373531+00:00",
+      "ts": 1772743791,
+      "score": -10,
+      "bias": "neutral",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T20:14:57.964432+00:00",
-    "updated_ts": 1772741697
+    "updated_at": "2026-03-05T20:49:51.373597+00:00",
+    "updated_ts": 1772743791
   }
 }
