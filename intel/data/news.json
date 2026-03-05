@@ -284,7 +284,7 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -292,7 +292,7 @@
       "coins": []
     },
     {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -373,10 +373,10 @@
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "CoinTelegraph": 20,
     "Decrypt": 20,
-    "Google News": 30
+    "Google News": 30,
+    "CoinTelegraph": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -1092,10 +1092,17 @@
       "score": -16,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-05T03:24:23.822604+00:00",
+      "ts": 1772681063,
+      "score": -16,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T03:00:54.412375+00:00",
-    "updated_ts": 1772679654
+    "updated_at": "2026-03-05T03:24:23.822671+00:00",
+    "updated_ts": 1772681063
   }
 }
