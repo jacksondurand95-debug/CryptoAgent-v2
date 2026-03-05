@@ -30,19 +30,21 @@ TRAILING_STOP_ATR_MULT = 2.0  # 2x ATR trailing
 TRAILING_ACTIVATION_R = 0.8   # Activate trail at 0.8R
 TAKE_PROFIT_ATR_MULT = 4.0    # 4x ATR target
 MIN_CONFIDENCE = 0.60          # Higher bar = fewer, better trades
-MIN_EXPECTED_MOVE_PCT = 2.0    # Must clear fees with real profit margin
+MIN_EXPECTED_MOVE_PCT = 4.0    # Must clear 1.8% round-trip fees with margin
 TIME_STOP_HOURS = 72           # 3 days max hold
 MIN_HOLD_MINUTES = 60          # 1 hour minimum
 REENTRY_COOLDOWN_MINUTES = 30  # 30 min cooldown
 
-# Fees — Coinbase Advanced Trade (lowest tier + Coinbase One 25% rebate)
-# Base: 0.40% maker / 0.60% taker
-# After 25% rebate: 0.30% maker / 0.45% taker
-MAKER_FEE_PCT = 0.003          # 0.30% effective maker
-TAKER_FEE_PCT = 0.0045         # 0.45% effective taker
-ROUND_TRIP_FEE_PCT = 0.006     # 0.60% round trip (maker both sides)
-ROUND_TRIP_FEE_TAKER_PCT = 0.0075  # 0.75% if exit is market order
-FEE_AUTO_DETECT = True         # Override with detected rates
+# Fees — Coinbase Advanced Trade
+# IMPORTANT: These are FALLBACK rates if auto-detection fails.
+# Actual rates come from /api/v3/brokerage/transaction_summary at runtime.
+# Coinbase One (if active) = 0% maker / 0% taker
+# Intro 1 (detected 2026-03-05) = 0.60% maker / 1.20% taker
+MAKER_FEE_PCT = 0.006          # 0.60% Intro 1 maker (fallback)
+TAKER_FEE_PCT = 0.012          # 1.20% Intro 1 taker (fallback)
+ROUND_TRIP_FEE_PCT = 0.012     # 1.20% round trip (maker both sides)
+ROUND_TRIP_FEE_TAKER_PCT = 0.018   # 1.80% if exit is market order
+FEE_AUTO_DETECT = True         # Override with detected rates from API
 
 # Safety — ENFORCED
 MAX_DRAWDOWN_PCT = 0.40         # 40% drawdown halt

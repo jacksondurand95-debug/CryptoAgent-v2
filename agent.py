@@ -531,16 +531,40 @@ def run():
     if fgi:
         log.info(f"Fear & Greed: {fgi['value']} ({fgi['classification']})")
 
-    # 5d. Auto-detect fee tier
+    # 5d. Auto-detect fee tier (CRITICAL — wrong fees = guaranteed losses)
     try:
         fee_resp = auth.get("/api/v3/brokerage/transaction_summary")
-        detected_maker = float(fee_resp.get("maker_fee_rate", 0))
-        detected_taker = float(fee_resp.get("taker_fee_rate", 0))
+        fee_tier = fee_resp.get("fee_tier", {})
+        detected_maker = float(fee_tier.get("maker_fee_rate", 0))
+        detected_taker = float(fee_tier.get("taker_fee_rate", 0))
+        tier_name = fee_tier.get("pricing_tier", "UNKNOWN")
+        total_volume = fee_resp.get("total_volume", 0)
+        total_fees_paid = fee_resp.get("total_fees", 0)
+        total_balance = fee_resp.get("total_balance", "?")
+        has_promo = fee_resp.get("has_promo_fee", False)
+
         if detected_maker > 0 or detected_taker > 0:
             state["detected_fees"] = {"maker": detected_maker, "taker": detected_taker}
-            log.info(f"FEE TIER: maker={detected_maker:.4f} taker={detected_taker:.4f}")
+            round_trip_maker = detected_maker * 2
+            round_trip_taker = detected_maker + detected_taker
+            log.info(f"FEE TIER: '{tier_name}' | maker={detected_maker:.4f} ({detected_maker*100:.2f}%) | "
+                     f"taker={detected_taker:.4f} ({detected_taker*100:.2f}%) | "
+                     f"round_trip(maker)={round_trip_maker*100:.2f}% | "
+                     f"round_trip(taker)={round_trip_taker*100:.2f}%")
+            log.info(f"ACCOUNT: balance=${total_balance} | 30d_volume=${total_volume:.2f} | "
+                     f"total_fees_paid=${total_fees_paid:.2f} | promo={has_promo}")
+
+            # Warn if fees are too high for profitable trading
+            if round_trip_taker > 0.015:
+                log.warning(f"HIGH FEES: {round_trip_taker*100:.1f}% round-trip with taker exit. "
+                            f"Trades need >{round_trip_taker*100 + 1:.1f}% moves to profit. "
+                            f"Consider Coinbase One for 0% fees.")
+        else:
+            log.warning("FEE DETECTION: rates returned 0 — using config fallbacks "
+                        f"(maker={config.MAKER_FEE_PCT} taker={config.TAKER_FEE_PCT})")
     except Exception as e:
-        log.debug(f"Fee detection failed (non-fatal): {e}")
+        log.error(f"FEE DETECTION FAILED: {e} — using config fallbacks "
+                  f"(maker={config.MAKER_FEE_PCT} taker={config.TAKER_FEE_PCT})")
 
     # 6. Collect ALL market data across all pairs + exchanges
     all_pair_data = {}
