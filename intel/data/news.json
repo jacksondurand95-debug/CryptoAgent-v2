@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -16,
+    "score": -18,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 22,
-    "positive_score": 400,
-    "negative_score": -600
+    "scored_articles": 19,
+    "positive_score": 360,
+    "negative_score": -570
   },
   "alpha_events": [
     {
@@ -57,6 +57,17 @@
       ]
     },
     {
+      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "fraud"
+      ]
+    },
+    {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
@@ -85,14 +96,14 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 34,
-      "score": 100,
+      "articles": 32,
+      "score": 130,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 16,
-      "score": 30,
-      "bias": "bullish"
+      "articles": 14,
+      "score": -10,
+      "bias": "neutral"
     },
     "SOL": {
       "articles": 7,
@@ -130,6 +141,14 @@
     {
       "title": "RedStone launches Stellar price feeds after $10M exploit highlights oracle risks",
       "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
+      "source": "Decrypt",
       "sentiment": "bearish",
       "score": -60,
       "importance": "high",
@@ -202,16 +221,6 @@
       "coins": []
     },
     {
-      "title": "Corporates and Exchanges Rush to Stake Ethereum Instead of Selling",
-      "source": "Decrypt",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
       "source": "Google News",
       "sentiment": "bearish",
@@ -248,24 +257,6 @@
       "coins": []
     },
     {
-      "title": "Here\u2019s what happened in crypto today",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "UK House of Lords presses Coinbase exec on stablecoins, KYC and bank run fears",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
       "source": "Decrypt",
       "sentiment": "neutral",
@@ -285,14 +276,6 @@
     },
     {
       "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "Cryptocurrency regulation: U.S. laws and global developments - Britannica",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -370,13 +353,42 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Crypto Long & Short: Why bitcoin's quantum fears will pass just like the climate panic",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "The Protocol: New Ethereum scaling plans",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "title": "Billions in crypto are moving in Iran. Analysts can't agree if it's war-time panic or business as usual.",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "Google News": 30,
     "CoinTelegraph": 20,
-    "CoinDesk": 20
+    "Google News": 30,
+    "CoinDesk": 20,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -1099,10 +1111,17 @@
       "score": -16,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-05T04:36:42.963305+00:00",
+      "ts": 1772685402,
+      "score": -18,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T03:24:23.822671+00:00",
-    "updated_ts": 1772681063
+    "updated_at": "2026-03-05T04:36:42.963385+00:00",
+    "updated_ts": 1772685402
   }
 }

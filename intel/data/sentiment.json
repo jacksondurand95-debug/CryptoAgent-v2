@@ -63,70 +63,68 @@
   "trending": {
     "trending": [
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
         "score": 0
       },
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
-        "market_cap_rank": 249,
+        "market_cap_rank": 250,
         "score": 1
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 132,
-        "score": 2
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
-        "score": 3
-      },
-      {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 158,
-        "score": 4
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 605,
-        "score": 5
-      },
-      {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
-        "score": 6
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 7
-      },
-      {
-        "name": "XRP",
-        "symbol": "XRP",
-        "market_cap_rank": 5,
-        "score": 8
       },
       {
         "name": "Fabric Protocol",
         "symbol": "ROBO",
-        "market_cap_rank": 289,
+        "market_cap_rank": 278,
+        "score": 2
+      },
+      {
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 617,
+        "score": 3
+      },
+      {
+        "name": "Lombard",
+        "symbol": "BARD",
+        "market_cap_rank": 132,
+        "score": 4
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 131,
+        "score": 5
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
+        "score": 6
+      },
+      {
+        "name": "Dogecoin",
+        "symbol": "DOGE",
+        "market_cap_rank": 10,
+        "score": 7
+      },
+      {
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 44,
+        "score": 8
+      },
+      {
+        "name": "Block Street",
+        "symbol": "BSB",
+        "market_cap_rank": 688,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
-      "ETH",
-      "SOL"
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -1187,10 +1185,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T04:36:06.958568+00:00",
+      "ts": 1772685366,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T03:07:52.454159+00:00",
-    "updated_ts": 1772680072
+    "updated_at": "2026-03-05T04:36:06.958603+00:00",
+    "updated_ts": 1772685366
   }
 }

@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 6,
+    "score": 5,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.8,
-    "available_sources": 4,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 27.7,
-        "effective_weight": 0.9
+        "age_min": 1.2,
+        "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 1.0,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 61.7,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 54.5,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -16,
+        "score": -18,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 37.9,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,23 +57,19 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 34 articles, score=100"
+          "reason": "News sentiment: 32 articles, score=130"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (4 large txs)"
+          "reason": "BTC whale activity normal (10 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": 26,
-      "bias": "bullish",
-      "signals": 2,
+      "score": 0,
+      "bias": "neutral",
+      "signals": 1,
       "details": [
-        {
-          "bias": "bullish",
-          "reason": "News sentiment: 16 articles, score=30"
-        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -125,17 +121,15 @@
     },
     {
       "type": "news",
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
       "sentiment": "bearish",
       "importance": "high",
-      "coins": [
-        "BTC"
-      ]
+      "coins": []
     }
   ],
-  "timestamp": "2026-03-05T04:02:19.917989+00:00",
+  "timestamp": "2026-03-05T04:36:43.118153+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T04:02:19.918846+00:00",
-    "updated_ts": 1772683339
+    "updated_at": "2026-03-05T04:36:43.118715+00:00",
+    "updated_ts": 1772685403
   }
 }
