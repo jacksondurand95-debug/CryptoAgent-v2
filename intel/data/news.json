@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -25,
+    "score": -20,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 16,
-    "positive_score": 280,
-    "negative_score": -570
+    "positive_score": 320,
+    "negative_score": -540
   },
   "alpha_events": [
     {
@@ -109,8 +109,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 36,
-      "score": 110,
+      "articles": 35,
+      "score": 150,
       "bias": "bullish"
     },
     "ETH": {
@@ -244,6 +244,16 @@
       ]
     },
     {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
       "source": "Decrypt",
       "sentiment": "neutral",
@@ -262,11 +272,11 @@
       "coins": []
     },
     {
-      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
-      "source": "Google News",
+      "title": "IREN to expand processing capacity by 50%, prepares at-the-market offering",
+      "source": "CoinDesk",
       "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -390,23 +400,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Crypto Long & Short: Why bitcoin's quantum fears will pass just like the climate panic",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
     "Google News": 30,
-    "Decrypt": 20,
-    "CoinTelegraph": 20
+    "CoinDesk": 20,
+    "CoinTelegraph": 20,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -1171,10 +1171,17 @@
       "score": -25,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-05T10:16:52.746349+00:00",
+      "ts": 1772705812,
+      "score": -20,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T08:51:55.353271+00:00",
-    "updated_ts": 1772700715
+    "updated_at": "2026-03-05T10:16:52.746416+00:00",
+    "updated_ts": 1772705812
   }
 }

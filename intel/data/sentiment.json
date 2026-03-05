@@ -65,7 +65,7 @@
       {
         "name": "Lombard",
         "symbol": "BARD",
-        "market_cap_rank": 121,
+        "market_cap_rank": 122,
         "score": 0
       },
       {
@@ -81,9 +81,9 @@
         "score": 2
       },
       {
-        "name": "MANTRA",
-        "symbol": "MANTRA",
-        "market_cap_rank": 268,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 139,
         "score": 3
       },
       {
@@ -93,39 +93,38 @@
         "score": 4
       },
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 632,
+        "name": "MANTRA",
+        "symbol": "MANTRA",
+        "market_cap_rank": 270,
         "score": 5
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 139,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 44,
         "score": 6
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "pippin",
+        "symbol": "PIPPIN",
+        "market_cap_rank": 120,
         "score": 7
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 282,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 633,
         "score": 8
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 157,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
-      "ETH"
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -1249,10 +1248,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T10:16:17.929405+00:00",
+      "ts": 1772705777,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T09:23:30.653789+00:00",
-    "updated_ts": 1772702610
+    "updated_at": "2026-03-05T10:16:17.929435+00:00",
+    "updated_ts": 1772705777
   }
 }
