@@ -28,7 +28,7 @@ from indicators import compute_all
 from brain import analyze as claude_analyze
 from portfolio import (
     new_state, open_position, close_position, check_stops,
-    has_position, can_reenter, get_stats,
+    has_position, can_reenter, get_stats, check_risk_limits,
 )
 
 # Multi-exchange data feeds
@@ -611,7 +611,14 @@ def run():
             "tv": tv_analysis,
         }
 
-    # 7. Call AI brain with ALL data at once (Claude primary, Grok fallback)
+    # 6b. Check risk limits before trading
+    can_trade, risk_reason = check_risk_limits(state, total_value)
+    if not can_trade:
+        log.warning(f"RISK LIMIT: {risk_reason} — skipping trade signals")
+        save_state(state)
+        return
+
+    # 7. Call hybrid brain (quant pre-filter + LLM validation)
     signal = claude_analyze(all_pair_data, state, total_value, intel_brief, fgi)
 
     # 7b. Process AI's position review recommendations
@@ -626,7 +633,7 @@ def run():
                         if pos["pair"] == pair:
                             place_market_order(auth, pair, "SELL", base_amount=pos["qty"])
                             state, trade = close_position(
-                                state, pair, exit_price, reason=f"claude:{review.get('reason', 'review')}"
+                                state, pair, exit_price, reason=f"claude:{review.get('reason', 'review')}", is_market_exit=True
                             )
                             if trade:
                                 actions_taken.append(
