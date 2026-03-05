@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -18,
+    "score": -24,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 17,
-    "positive_score": 320,
-    "negative_score": -510
+    "positive_score": 290,
+    "negative_score": -570
   },
   "alpha_events": [
     {
@@ -43,6 +43,17 @@
       ],
       "keywords": [
         "+institutional adoption"
+      ]
+    },
+    {
+      "title": "Google warns of crypto scams using \u2018new and powerful\u2019 iPhone exploit kit",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "exploit"
       ]
     },
     {
@@ -85,17 +96,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 32,
+      "articles": 35,
       "score": 90,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 13,
+      "articles": 14,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 6,
+      "articles": 7,
       "score": 40,
       "bias": "bullish"
     }
@@ -126,6 +137,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Google warns of crypto scams using \u2018new and powerful\u2019 iPhone exploit kit",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
     },
     {
       "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
@@ -220,14 +239,6 @@
       "coins": []
     },
     {
-      "title": "MEXC expands tokenized stock offerings with new Ondo Finance listings",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": 30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
       "source": "Decrypt",
       "sentiment": "neutral",
@@ -252,6 +263,18 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Ether, solana, xrp surge 8% as crypto markets rally on easing war fears",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "ETH",
+        "SOL"
+      ]
     },
     {
       "title": "Quant firm suggests a bullish bitcoin trade with a key financing twist",
@@ -362,24 +385,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "The Protocol: New Ethereum scaling plans",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "CoinDesk": 20,
+    "Google News": 30,
     "CoinTelegraph": 20,
-    "Google News": 30
+    "Decrypt": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -1123,10 +1135,17 @@
       "score": -18,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-05T06:52:29.440987+00:00",
+      "ts": 1772693549,
+      "score": -24,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T06:19:21.766396+00:00",
-    "updated_ts": 1772691561
+    "updated_at": "2026-03-05T06:52:29.441062+00:00",
+    "updated_ts": 1772693549
   }
 }
