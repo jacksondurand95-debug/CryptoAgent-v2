@@ -3,24 +3,24 @@
     "score": 6,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.8,
-    "available_sources": 4,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 25.6,
-        "effective_weight": 0.9
+        "age_min": 1.2,
+        "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 22.1,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 98.7,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 32.7,
+        "age_min": 0.7,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -14,
+        "score": -6,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 66.3,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,19 +57,23 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 31 articles, score=170"
+          "reason": "News sentiment: 33 articles, score=210"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (4 large txs)"
+          "reason": "BTC whale activity normal (48 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 1,
+      "score": -35,
+      "bias": "bearish",
+      "signals": 2,
       "details": [
+        {
+          "bias": "bearish",
+          "reason": "News sentiment: 10 articles, score=-40"
+        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -83,13 +87,6 @@
     }
   },
   "alpha_events": [
-    {
-      "type": "news",
-      "title": "Apple iPhone Hacking Kit Used By Spies, Crypto Scams Could Have US Intelligence Origins",
-      "sentiment": "bearish",
-      "importance": "critical",
-      "coins": []
-    },
     {
       "type": "news",
       "title": "Banking Groups Slam Crypto Bank Kraken\u2019s Fed Approval as Improper, Dangerous",
@@ -121,11 +118,18 @@
       "sentiment": "bearish",
       "importance": "high",
       "coins": []
+    },
+    {
+      "type": "news",
+      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": []
     }
   ],
-  "timestamp": "2026-03-05T15:58:14.600211+00:00",
+  "timestamp": "2026-03-05T16:20:46.535575+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T15:58:14.600808+00:00",
-    "updated_ts": 1772726294
+    "updated_at": "2026-03-05T16:20:46.536246+00:00",
+    "updated_ts": 1772727646
   }
 }

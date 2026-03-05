@@ -1,26 +1,14 @@
 {
   "aggregate": {
-    "score": -14,
+    "score": -6,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 19,
-    "positive_score": 400,
-    "negative_score": -570
+    "scored_articles": 21,
+    "positive_score": 440,
+    "negative_score": -510
   },
   "alpha_events": [
-    {
-      "title": "Apple iPhone Hacking Kit Used By Spies, Crypto Scams Could Have US Intelligence Origins",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -120,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "hack",
-        "exploit"
-      ]
-    },
     {
       "title": "Banking Groups Slam Crypto Bank Kraken\u2019s Fed Approval as Improper, Dangerous",
       "source": "Decrypt",
@@ -109,14 +97,14 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 31,
-      "score": 170,
+      "articles": 33,
+      "score": 210,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 11,
-      "score": -10,
-      "bias": "neutral"
+      "articles": 10,
+      "score": -40,
+      "bias": "bearish"
     },
     "SOL": {
       "articles": 1,
@@ -125,14 +113,6 @@
     }
   },
   "top_articles": [
-    {
-      "title": "Apple iPhone Hacking Kit Used By Spies, Crypto Scams Could Have US Intelligence Origins",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -120,
-      "importance": "critical",
-      "coins": []
-    },
     {
       "title": "Banking Groups Slam Crypto Bank Kraken\u2019s Fed Approval as Improper, Dangerous",
       "source": "Decrypt",
@@ -227,6 +207,16 @@
       "coins": []
     },
     {
+      "title": "Bitcoin trader sees 'lower soon' as BTC price starts to erase $74K breakout",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Inside the Ray-Ban Smart Glasses Controversy Plaguing Meta",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -291,12 +281,48 @@
       ]
     },
     {
+      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Top Ethereum teams launch advocacy alliance for DeFi regulation - Traders Union",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Crypto for Advisors: Tokenization offers always-on global investment access",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin pulls back to near $71,000 even as software sector soars",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly all assets decline",
@@ -359,53 +385,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "IREN to expand processing capacity by 50%, prepares at-the-market offering",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin traders, alert: The rally is nearing a two-year 'make or break' price zone",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Ether, solana, xrp surge 8% as crypto markets rally on easing war fears",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH",
-        "SOL"
-      ]
-    },
-    {
-      "title": "Bitcoin trading firm suggests a bullish trade with a key financing twist",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Google News": 30,
-    "CoinDesk": 20,
     "Decrypt": 20,
-    "CoinTelegraph": 20
+    "Google News": 30,
+    "CoinTelegraph": 20,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -1212,10 +1198,17 @@
       "score": -14,
       "bias": "neutral",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-05T16:20:46.410459+00:00",
+      "ts": 1772727646,
+      "score": -6,
+      "bias": "neutral",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T14:51:54.207069+00:00",
-    "updated_ts": 1772722314
+    "updated_at": "2026-03-05T16:20:46.410523+00:00",
+    "updated_ts": 1772727646
   }
 }
