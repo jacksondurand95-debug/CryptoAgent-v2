@@ -69,45 +69,45 @@
         "score": 0
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 43,
-        "score": 1
-      },
-      {
         "name": "Avantis",
         "symbol": "AVNT",
         "market_cap_rank": 417,
-        "score": 2
+        "score": 1
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 135,
-        "score": 3
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 43,
+        "score": 2
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 4
+        "score": 3
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 104,
-        "score": 5
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 135,
+        "score": 4
       },
       {
         "name": "Lombard",
         "symbol": "BARD",
         "market_cap_rank": 124,
-        "score": 6
+        "score": 5
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
         "market_cap_rank": 632,
+        "score": 6
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 104,
         "score": 7
       },
       {
@@ -1277,10 +1277,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T12:24:37.938576+00:00",
+      "ts": 1772713477,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T12:14:03.270902+00:00",
-    "updated_ts": 1772712843
+    "updated_at": "2026-03-05T12:24:37.938606+00:00",
+    "updated_ts": 1772713477
   }
 }
