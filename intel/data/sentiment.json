@@ -63,68 +63,69 @@
   "trending": {
     "trending": [
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 106,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
-        "score": 1
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 138,
-        "score": 2
-      },
-      {
-        "name": "MANTRA",
-        "symbol": "MANTRA",
-        "market_cap_rank": 253,
-        "score": 3
-      },
-      {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 282,
-        "score": 4
-      },
-      {
-        "name": "Aave",
-        "symbol": "AAVE",
-        "market_cap_rank": 47,
-        "score": 5
+        "score": 0
       },
       {
         "name": "Pi Network",
         "symbol": "PI",
         "market_cap_rank": 43,
-        "score": 6
+        "score": 1
+      },
+      {
+        "name": "MANTRA",
+        "symbol": "MANTRA",
+        "market_cap_rank": 262,
+        "score": 2
+      },
+      {
+        "name": "Lombard",
+        "symbol": "BARD",
+        "market_cap_rank": 120,
+        "score": 3
+      },
+      {
+        "name": "Fabric Protocol",
+        "symbol": "ROBO",
+        "market_cap_rank": 283,
+        "score": 4
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 138,
+        "score": 5
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 625,
+        "market_cap_rank": 628,
+        "score": 6
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 7
       },
       {
-        "name": "Block Street",
-        "symbol": "BSB",
-        "market_cap_rank": 686,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 106,
         "score": 8
       },
       {
-        "name": "MANTRA [Old]",
-        "symbol": "OM",
-        "market_cap_rank": 131,
+        "name": "Tether Gold",
+        "symbol": "XAUT",
+        "market_cap_rank": 34,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC"
+      "BTC",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -1227,10 +1228,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T08:13:05.825263+00:00",
+      "ts": 1772698385,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T07:25:04.763743+00:00",
-    "updated_ts": 1772695504
+    "updated_at": "2026-03-05T08:13:05.825290+00:00",
+    "updated_ts": 1772698385
   }
 }

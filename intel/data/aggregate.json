@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 1.3,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 36.2,
+        "age_min": 0.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 96.6,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 43.9,
+        "age_min": 0.7,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -24,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 76.5,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -61,7 +61,7 @@
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (4 large txs)"
+          "reason": "BTC whale activity normal (12 large txs)"
         }
       ]
     },
@@ -83,7 +83,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 7 articles, score=40"
+          "reason": "News sentiment: 5 articles, score=40"
         }
       ]
     }
@@ -114,7 +114,7 @@
     },
     {
       "type": "news",
-      "title": "Google warns of crypto scams using \u2018new and powerful\u2019 iPhone exploit kit",
+      "title": "Google uncovers iOS exploit kit used in crypto phishing attacks",
       "sentiment": "bearish",
       "importance": "high",
       "coins": []
@@ -127,9 +127,9 @@
       "coins": []
     }
   ],
-  "timestamp": "2026-03-05T08:09:00.252153+00:00",
+  "timestamp": "2026-03-05T08:13:44.710862+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T08:09:00.252706+00:00",
-    "updated_ts": 1772698140
+    "updated_at": "2026-03-05T08:13:44.711717+00:00",
+    "updated_ts": 1772698424
   }
 }

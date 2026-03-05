@@ -46,7 +46,7 @@
       ]
     },
     {
-      "title": "Google warns of crypto scams using \u2018new and powerful\u2019 iPhone exploit kit",
+      "title": "Google uncovers iOS exploit kit used in crypto phishing attacks",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -60,
@@ -101,12 +101,12 @@
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 14,
+      "articles": 13,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 7,
+      "articles": 5,
       "score": 40,
       "bias": "bullish"
     }
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "title": "Google warns of crypto scams using \u2018new and powerful\u2019 iPhone exploit kit",
+      "title": "Google uncovers iOS exploit kit used in crypto phishing attacks",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -60,
@@ -265,6 +265,16 @@
       "coins": []
     },
     {
+      "title": "Bitcoin traders, alert: The rally is nearing a two-year 'make or break' price zone",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Ether, solana, xrp surge 8% as crypto markets rally on easing war fears",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -277,7 +287,7 @@
       ]
     },
     {
-      "title": "Quant firm suggests a bullish bitcoin trade with a key financing twist",
+      "title": "Bitcoin trading firm suggests a bullish trade with a key financing twist",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -375,23 +385,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Crypto Long & Short: Why bitcoin's quantum fears will pass just like the climate panic",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
+    "CoinDesk": 20,
     "Google News": 30,
     "CoinTelegraph": 20,
-    "Decrypt": 20,
-    "CoinDesk": 20
+    "Decrypt": 20
   },
   "history": [
     {
@@ -1142,10 +1142,17 @@
       "score": -24,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-05T08:13:44.566524+00:00",
+      "ts": 1772698424,
+      "score": -24,
+      "bias": "bearish",
+      "alpha_count": 7
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T06:52:29.441062+00:00",
-    "updated_ts": 1772693549
+    "updated_at": "2026-03-05T08:13:44.566592+00:00",
+    "updated_ts": 1772698424
   }
 }
