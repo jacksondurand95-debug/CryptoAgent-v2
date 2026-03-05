@@ -63,69 +63,68 @@
   "trending": {
     "trending": [
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 561,
         "score": 0
       },
       {
-        "name": "WAR",
-        "symbol": "WAR",
-        "market_cap_rank": 554,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
         "score": 1
       },
       {
         "name": "Opinion",
         "symbol": "OPN",
-        "market_cap_rank": 341,
+        "market_cap_rank": 352,
         "score": 2
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
+        "score": 3
       },
       {
         "name": "Lombard",
         "symbol": "BARD",
         "market_cap_rank": 118,
-        "score": 3
+        "score": 4
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 146,
-        "score": 4
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "market_cap_rank": 152,
         "score": 5
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 6
-      },
-      {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
-        "score": 7
       },
       {
         "name": "OKB",
         "symbol": "OKB",
         "market_cap_rank": 43,
-        "score": 8
+        "score": 6
+      },
+      {
+        "name": "Aerodrome Finance",
+        "symbol": "AERO",
+        "market_cap_rank": 124,
+        "score": 7
       },
       {
         "name": "Lighter",
         "symbol": "LIT",
-        "market_cap_rank": 138,
+        "market_cap_rank": 137,
+        "score": 8
+      },
+      {
+        "name": "Sui",
+        "symbol": "SUI",
+        "market_cap_rank": 30,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
-      "SOL"
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -1361,10 +1360,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T22:14:53.617431+00:00",
+      "ts": 1772748893,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T21:17:15.360562+00:00",
-    "updated_ts": 1772745435
+    "updated_at": "2026-03-05T22:14:53.617493+00:00",
+    "updated_ts": 1772748893
   }
 }
