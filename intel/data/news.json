@@ -1,14 +1,28 @@
 {
   "aggregate": {
-    "score": -4,
+    "score": -14,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 21,
-    "positive_score": 430,
-    "negative_score": -470
+    "positive_score": 390,
+    "negative_score": -550
   },
   "alpha_events": [
+    {
+      "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": [
+        "BTC",
+        "SOL"
+      ],
+      "keywords": [
+        "insolvency"
+      ]
+    },
     {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
@@ -95,22 +109,33 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 32,
-      "score": 130,
-      "bias": "bullish"
+      "articles": 31,
+      "score": 10,
+      "bias": "neutral"
     },
     "ETH": {
-      "articles": 12,
+      "articles": 13,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 2,
-      "score": 0,
-      "bias": "neutral"
+      "articles": 4,
+      "score": -80,
+      "bias": "bearish"
     }
   },
   "top_articles": [
+    {
+      "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
+    },
     {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
@@ -209,16 +234,6 @@
       "score": 40,
       "importance": "medium",
       "coins": []
-    },
-    {
-      "title": "Bitcoin trader sees 'lower soon' as BTC price starts to erase $74K breakout",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
     },
     {
       "title": "Inside the Ray-Ban Smart Glasses Controversy Plaguing Meta",
@@ -386,8 +401,8 @@
   ],
   "sources": {
     "CoinTelegraph": 20,
-    "Google News": 30,
     "Decrypt": 20,
+    "Google News": 30,
     "CoinDesk": 20
   },
   "history": [
@@ -1209,10 +1224,17 @@
       "score": -4,
       "bias": "neutral",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-05T19:01:21.377549+00:00",
+      "ts": 1772737281,
+      "score": -14,
+      "bias": "neutral",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T18:39:01.597559+00:00",
-    "updated_ts": 1772735941
+    "updated_at": "2026-03-05T19:01:21.377622+00:00",
+    "updated_ts": 1772737281
   }
 }
