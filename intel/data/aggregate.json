@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 9.6,
+        "age_min": 14.8,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 8.9,
+        "age_min": 20.9,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 8.8,
+        "age_min": 38.1,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 3.8,
+        "age_min": 33.1,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": -18,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 8.5,
+        "age_min": 10.9,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 32 articles, score=130"
+          "reason": "News sentiment: 32 articles, score=90"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (10 large txs)"
+          "reason": "BTC whale activity normal (4 large txs)"
         }
       ]
     },
@@ -114,22 +114,24 @@
     },
     {
       "type": "news",
-      "title": "RedStone launches Stellar price feeds after $10M exploit highlights oracle risks",
+      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
       "sentiment": "bearish",
       "importance": "high",
       "coins": []
     },
     {
       "type": "news",
-      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "sentiment": "bearish",
       "importance": "high",
-      "coins": []
+      "coins": [
+        "BTC"
+      ]
     }
   ],
-  "timestamp": "2026-03-05T04:45:12.084273+00:00",
+  "timestamp": "2026-03-05T05:14:32.756729+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T04:45:12.085075+00:00",
-    "updated_ts": 1772685912
+    "updated_at": "2026-03-05T05:14:32.757462+00:00",
+    "updated_ts": 1772687672
   }
 }
