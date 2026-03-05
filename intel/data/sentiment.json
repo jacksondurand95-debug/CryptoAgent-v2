@@ -63,15 +63,15 @@
   "trending": {
     "trending": [
       {
-        "name": "Lombard",
-        "symbol": "BARD",
-        "market_cap_rank": 122,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 0
+      },
+      {
+        "name": "Lombard",
+        "symbol": "BARD",
+        "market_cap_rank": 122,
         "score": 1
       },
       {
@@ -81,21 +81,21 @@
         "score": 2
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 139,
-        "score": 3
-      },
-      {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 106,
-        "score": 4
+        "score": 3
       },
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
-        "market_cap_rank": 270,
+        "market_cap_rank": 267,
+        "score": 4
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 140,
         "score": 5
       },
       {
@@ -105,21 +105,21 @@
         "score": 6
       },
       {
-        "name": "pippin",
-        "symbol": "PIPPIN",
-        "market_cap_rank": 120,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 647,
         "score": 7
       },
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 633,
+        "name": "Jupiter",
+        "symbol": "JUP",
+        "market_cap_rank": 87,
         "score": 8
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 157,
+        "name": "pippin",
+        "symbol": "PIPPIN",
+        "market_cap_rank": 120,
         "score": 9
       }
     ],
@@ -1255,10 +1255,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T10:22:00.120004+00:00",
+      "ts": 1772706120,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T10:16:17.929435+00:00",
-    "updated_ts": 1772705777
+    "updated_at": "2026-03-05T10:22:00.120039+00:00",
+    "updated_ts": 1772706120
   }
 }
