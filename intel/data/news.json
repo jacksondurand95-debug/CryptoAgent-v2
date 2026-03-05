@@ -90,12 +90,12 @@
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 15,
+      "articles": 13,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 7,
+      "articles": 6,
       "score": 40,
       "bias": "bullish"
     }
@@ -254,6 +254,34 @@
       "coins": []
     },
     {
+      "title": "Quant firm suggests a bullish bitcoin trade with a key financing twist",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin tops $72,000 as ETFs pull $155 million, extending two week inflow streak",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Sky token jumps 10% after governance vote causes bullish tilt in market dynamics",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
       "title": "Eric Trump, World Liberty co-founder, calls banks 'anti-American' over stablecoin fight",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -345,41 +373,13 @@
         "BTC",
         "ETH"
       ]
-    },
-    {
-      "title": "Billions in crypto are moving in Iran. Analysts can't agree if it's war-time panic or business as usual.",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Coinbase, Strategy lead crypto stocks higher as bitcoin spikes above $72,000",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin 'air pocket' above $72,000 could mean quick run to $80,000",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
     "Decrypt": 20,
+    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Google News": 30,
-    "CoinDesk": 20
+    "Google News": 30
   },
   "history": [
     {
@@ -1116,10 +1116,17 @@
       "score": -18,
       "bias": "bearish",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-05T06:19:21.766328+00:00",
+      "ts": 1772691561,
+      "score": -18,
+      "bias": "bearish",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T05:03:37.840809+00:00",
-    "updated_ts": 1772687017
+    "updated_at": "2026-03-05T06:19:21.766396+00:00",
+    "updated_ts": 1772691561
   }
 }
