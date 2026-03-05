@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 5,
+    "score": 4,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 15.0,
+        "age_min": 5.9,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 14.0,
+        "age_min": 37.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 15.5,
+        "age_min": 38.9,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 20.8,
+        "age_min": 44.2,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -18,
+        "score": -24,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 28.6,
+        "age_min": 18.8,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 32 articles, score=90"
+          "reason": "News sentiment: 35 articles, score=90"
         },
         {
           "bias": "neutral",
@@ -83,7 +83,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 6 articles, score=40"
+          "reason": "News sentiment: 7 articles, score=40"
         }
       ]
     }
@@ -114,24 +114,22 @@
     },
     {
       "type": "news",
-      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
+      "title": "Google warns of crypto scams using \u2018new and powerful\u2019 iPhone exploit kit",
       "sentiment": "bearish",
       "importance": "high",
       "coins": []
     },
     {
       "type": "news",
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
       "sentiment": "bearish",
       "importance": "high",
-      "coins": [
-        "BTC"
-      ]
+      "coins": []
     }
   ],
-  "timestamp": "2026-03-05T06:47:54.282756+00:00",
+  "timestamp": "2026-03-05T07:11:17.840879+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T06:47:54.283447+00:00",
-    "updated_ts": 1772693274
+    "updated_at": "2026-03-05T07:11:17.841703+00:00",
+    "updated_ts": 1772694677
   }
 }
