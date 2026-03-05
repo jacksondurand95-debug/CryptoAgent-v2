@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -10,
-    "bias": "neutral",
+    "score": -20,
+    "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 22,
-    "positive_score": 430,
-    "negative_score": -550
+    "scored_articles": 20,
+    "positive_score": 330,
+    "negative_score": -560
   },
   "alpha_events": [
     {
@@ -24,6 +24,19 @@
       ]
     },
     {
+      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ],
+      "keywords": [
+        "enforcement action"
+      ]
+    },
+    {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -35,27 +48,14 @@
       ]
     },
     {
-      "title": "Bitcoin ETFs pull in $462M as BTC briefly tops $73K",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+blackrock"
-      ]
-    },
-    {
-      "title": "Google uncovers iOS exploit kit used in crypto phishing attacks",
+      "title": "SEC ends case against Justin Sun with $10M settlement",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -60,
       "importance": "high",
       "coins": [],
       "keywords": [
-        "exploit"
+        "fraud"
       ]
     },
     {
@@ -110,18 +110,18 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 30,
+      "articles": 26,
+      "score": -100,
+      "bias": "bearish"
+    },
+    "ETH": {
+      "articles": 15,
       "score": 10,
       "bias": "neutral"
     },
-    "ETH": {
-      "articles": 12,
-      "score": -60,
-      "bias": "bearish"
-    },
     "SOL": {
-      "articles": 4,
-      "score": -80,
+      "articles": 5,
+      "score": -150,
       "bias": "bearish"
     }
   },
@@ -138,6 +138,16 @@
       ]
     },
     {
+      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ]
+    },
+    {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -146,17 +156,7 @@
       "coins": []
     },
     {
-      "title": "Bitcoin ETFs pull in $462M as BTC briefly tops $73K",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Google uncovers iOS exploit kit used in crypto phishing attacks",
+      "title": "SEC ends case against Justin Sun with $10M settlement",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -60,
@@ -201,6 +201,16 @@
       ]
     },
     {
+      "title": "Short seller Culper bets against ether, Tom Lee's BitMine citing 'death spiral' risk",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "Son of U.S. government contractor, accused of stealing millions in seized crypto, arrested in France",
       "source": "CoinDesk",
       "sentiment": "bullish",
@@ -220,42 +230,18 @@
       ]
     },
     {
-      "title": "Chamath Palihapitiya questions bitcoin\u2019s role as central bank reserve asset",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "ZeroHash applies for national trust bank charter to expand regulated stablecoin services",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "Trump son echoes president's anti-bank message amid stablecoin yield fight",
+      "title": "Ether\u2019s path to $2.5K may be trickier than expected: Here\u2019s why",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
       "score": 40,
       "importance": "medium",
-      "coins": []
+      "coins": [
+        "ETH"
+      ]
     },
     {
-      "title": "Inside the Ray-Ban Smart Glasses Controversy Plaguing Meta",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -40,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "Google's Gemini AI Pushed Florida Man to Suicide Amid 'Collapsing Reality', Lawsuit Alleges",
-      "source": "Decrypt",
+      "title": "Trump son echoes president's anti-bank message amid stablecoin yield fight",
+      "source": "CoinTelegraph",
       "sentiment": "bullish",
       "score": 40,
       "importance": "medium",
@@ -318,15 +304,36 @@
       ]
     },
     {
-      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
-      "source": "Google News",
+      "title": "Bitcoin miners offload 15K BTC since October, with more sales expected",
+      "source": "CoinTelegraph",
       "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
+      "score": -10,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "title": "SEC, Justin Sun reach settlement over Tron lawsuit",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
-      "title": "Ripple adds Coinbase crypto futures to its $3 trillion trading venue",
+      "title": "U.S. banking agencies say capital should be same for standard or tokenized securities",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "Ripple adds Coinbase crypto futures to its $3 trillion clearing platform",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -402,10 +409,10 @@
     }
   ],
   "sources": {
+    "Google News": 30,
     "CoinTelegraph": 20,
     "Decrypt": 20,
-    "CoinDesk": 20,
-    "Google News": 30
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -1247,10 +1254,17 @@
       "score": -10,
       "bias": "neutral",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-05T23:14:19.120574+00:00",
+      "ts": 1772752459,
+      "score": -20,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T20:49:51.373597+00:00",
-    "updated_ts": 1772743791
+    "updated_at": "2026-03-05T23:14:19.120639+00:00",
+    "updated_ts": 1772752459
   }
 }
