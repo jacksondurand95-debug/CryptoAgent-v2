@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -20,
+    "score": -16,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 320,
+    "scored_articles": 17,
+    "positive_score": 360,
     "negative_score": -540
   },
   "alpha_events": [
@@ -109,7 +109,7 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
+      "articles": 34,
       "score": 150,
       "bias": "bullish"
     },
@@ -196,6 +196,14 @@
       "coins": [
         "ETH"
       ]
+    },
+    {
+      "title": "ZeroHash applies for national trust bank charter to expand regulated stablecoin services",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
     },
     {
       "title": "Bitcoin just cleared $73,000, but skeptical traders are already bracing for a 'bull trap'",
@@ -390,23 +398,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Institutional investors may be buying the dip as traders pour $1.7 billion into spot bitcoin ETFs",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
     "Google News": 30,
     "CoinDesk": 20,
-    "CoinTelegraph": 20,
-    "Decrypt": 20
+    "Decrypt": 20,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -1178,10 +1176,17 @@
       "score": -20,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-05T10:51:26.499682+00:00",
+      "ts": 1772707886,
+      "score": -16,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T10:16:52.746416+00:00",
-    "updated_ts": 1772705812
+    "updated_at": "2026-03-05T10:51:26.499753+00:00",
+    "updated_ts": 1772707886
   }
 }
