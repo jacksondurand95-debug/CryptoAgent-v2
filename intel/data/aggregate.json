@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 12,
+    "score": 5,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 1.2,
+        "age_min": 14.9,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 31,
-        "bias": "bullish",
+        "score": 0,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 0.5,
+        "age_min": 0.3,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 0.3,
+        "age_min": 14.0,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 0.6,
+        "age_min": 6.8,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,14 +44,14 @@
         "score": -16,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 0.0,
+        "age_min": 13.7,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 46,
+      "score": 36,
       "bias": "bullish",
       "signals": 2,
       "details": [
@@ -60,8 +60,8 @@
           "reason": "News sentiment: 34 articles, score=100"
         },
         {
-          "bias": "bullish",
-          "reason": "BTC whale distribution (4 txs) \u2014 accumulation"
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (2 large txs)"
         }
       ]
     },
@@ -133,9 +133,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-05T03:00:54.559265+00:00",
+  "timestamp": "2026-03-05T03:14:37.742703+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T03:00:54.559915+00:00",
-    "updated_ts": 1772679654
+    "updated_at": "2026-03-05T03:14:37.743288+00:00",
+    "updated_ts": 1772680477
   }
 }
