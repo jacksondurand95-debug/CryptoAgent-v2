@@ -96,11 +96,15 @@
   "pending_orders": [],
   "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772746614.7491906,
+  "last_updated": 1772746892.7928789,
   "daily_losses": [
     {
       "usd": -0.7858242818841785,
       "time": 1772732628.5295947
     }
-  ]
+  ],
+  "detected_fees": {
+    "maker": 0.006,
+    "taker": 0.012
+  }
 }
