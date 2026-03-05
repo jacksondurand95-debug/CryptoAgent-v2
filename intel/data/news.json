@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -16,
-    "bias": "bearish",
+    "score": -14,
+    "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 17,
-    "positive_score": 360,
-    "negative_score": -540
+    "scored_articles": 19,
+    "positive_score": 400,
+    "negative_score": -570
   },
   "alpha_events": [
     {
@@ -109,19 +109,19 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 34,
-      "score": 150,
+      "articles": 30,
+      "score": 190,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 13,
+      "articles": 12,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 5,
-      "score": 40,
-      "bias": "bullish"
+      "articles": 3,
+      "score": 0,
+      "bias": "neutral"
     }
   },
   "top_articles": [
@@ -198,24 +198,33 @@
       ]
     },
     {
-      "title": "ZeroHash applies for national trust bank charter to expand regulated stablecoin services",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin just cleared $73,000, but skeptical traders are already bracing for a 'bull trap'",
+      "title": "Bitcoin holds above $72,000 as crypto market pauses after breakout",
       "source": "CoinDesk",
       "sentiment": "bullish",
       "score": 40,
       "importance": "medium",
       "coins": [
         "BTC",
-        "ETH",
-        "SOL"
+        "ETH"
       ]
+    },
+    {
+      "title": "Chamath Palihapitiya questions bitcoin\u2019s role as central bank reserve asset",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "ZeroHash applies for national trust bank charter to expand regulated stablecoin services",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
     },
     {
       "title": "Inside the Ray-Ban Smart Glasses Controversy Plaguing Meta",
@@ -242,20 +251,20 @@
       "coins": []
     },
     {
-      "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
+      "title": "Bitcoin holds breakout gains while crypto market turns cautious: Crypto Markets Today - CoinDesk",
       "source": "Google News",
-      "sentiment": "bearish",
-      "score": -40,
+      "sentiment": "bullish",
+      "score": 40,
       "importance": "medium",
       "coins": [
         "BTC"
       ]
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
       "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
+      "sentiment": "bearish",
+      "score": -40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -277,6 +286,32 @@
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "SEC Chair looks to \u2018future-proof\u2019 overhaul of crypto regulation - Yahoo Finance",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Trump-backed American Bitcoin board members scoop up stock following earnings",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Andreessen Horowitz crypto arm said to seek $2 billion for fifth fund: Fortune",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     },
     {
@@ -362,49 +397,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Ethereum Foundation wants the network to be the trust layer for AI",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "CEO of crypto investment firm Keyrock says bitcoin is undervalued, entering \u2018transition year\u2019",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Brian Armstrong met with Trump before the president slammed banks over crypto bill",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Crypto campaign PAC Fairshake marks first wins in 2026 U.S. congressional primaries",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "Google News": 30,
     "CoinDesk": 20,
-    "Decrypt": 20,
-    "CoinTelegraph": 20
+    "CoinTelegraph": 20,
+    "Google News": 30,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -1183,10 +1182,17 @@
       "score": -16,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-05T12:14:40.590416+00:00",
+      "ts": 1772712880,
+      "score": -14,
+      "bias": "neutral",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T10:51:26.499753+00:00",
-    "updated_ts": 1772707886
+    "updated_at": "2026-03-05T12:14:40.590496+00:00",
+    "updated_ts": 1772712880
   }
 }

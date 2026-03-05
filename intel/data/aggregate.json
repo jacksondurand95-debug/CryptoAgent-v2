@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 2.7,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 28.0,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 101.7,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 38.6,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -16,
-        "bias": "bearish",
+        "score": -14,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 66.8,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 34 articles, score=150"
+          "reason": "News sentiment: 30 articles, score=190"
         },
         {
           "bias": "neutral",
@@ -77,15 +77,9 @@
       ]
     },
     "SOL": {
-      "score": 40,
-      "bias": "bullish",
-      "signals": 1,
-      "details": [
-        {
-          "bias": "bullish",
-          "reason": "News sentiment: 5 articles, score=40"
-        }
-      ]
+      "score": 0,
+      "bias": "neutral",
+      "signals": 0
     }
   },
   "alpha_events": [
@@ -129,9 +123,9 @@
       "coins": []
     }
   ],
-  "timestamp": "2026-03-05T11:58:15.789237+00:00",
+  "timestamp": "2026-03-05T12:14:40.742002+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T11:58:15.789971+00:00",
-    "updated_ts": 1772711895
+    "updated_at": "2026-03-05T12:14:40.742540+00:00",
+    "updated_ts": 1772712880
   }
 }

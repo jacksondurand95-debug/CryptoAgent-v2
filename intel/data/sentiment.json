@@ -69,62 +69,63 @@
         "score": 0
       },
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 666,
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 43,
         "score": 1
       },
       {
-        "name": "Lombard",
-        "symbol": "BARD",
-        "market_cap_rank": 126,
+        "name": "Avantis",
+        "symbol": "AVNT",
+        "market_cap_rank": 417,
         "score": 2
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 135,
+        "score": 3
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 4
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
-        "market_cap_rank": 105,
-        "score": 3
+        "market_cap_rank": 104,
+        "score": 5
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 43,
-        "score": 4
+        "name": "Lombard",
+        "symbol": "BARD",
+        "market_cap_rank": 124,
+        "score": 6
+      },
+      {
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 632,
+        "score": 7
       },
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
         "market_cap_rank": 267,
-        "score": 5
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 139,
-        "score": 6
-      },
-      {
-        "name": "POL (ex-MATIC)",
-        "symbol": "POL",
-        "market_cap_rank": 63,
-        "score": 7
+        "score": 8
       },
       {
         "name": "Monad",
         "symbol": "MON",
         "market_cap_rank": 157,
-        "score": 8
-      },
-      {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 286,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC"
+      "BTC",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -1269,10 +1270,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T12:14:03.270868+00:00",
+      "ts": 1772712843,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T11:19:37.782293+00:00",
-    "updated_ts": 1772709577
+    "updated_at": "2026-03-05T12:14:03.270902+00:00",
+    "updated_ts": 1772712843
   }
 }
