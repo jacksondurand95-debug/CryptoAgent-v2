@@ -71,19 +71,19 @@
       {
         "name": "Opinion",
         "symbol": "OPN",
-        "market_cap_rank": 313,
+        "market_cap_rank": 312,
         "score": 1
       },
       {
-        "name": "Avantis",
-        "symbol": "AVNT",
-        "market_cap_rank": 417,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 106,
         "score": 2
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 3
       },
       {
@@ -93,15 +93,15 @@
         "score": 4
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 106,
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
         "score": 5
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "Avantis",
+        "symbol": "AVNT",
+        "market_cap_rank": 417,
         "score": 6
       },
       {
@@ -111,21 +111,22 @@
         "score": 7
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 137,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 8
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 292,
+        "name": "Lombard",
+        "symbol": "BARD",
+        "market_cap_rank": 124,
         "score": 9
       }
     ],
     "our_coins_trending": [
+      "ETH",
       "BTC",
-      "ETH"
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -1305,10 +1306,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T15:25:32.058224+00:00",
+      "ts": 1772724332,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T14:25:13.619332+00:00",
-    "updated_ts": 1772720713
+    "updated_at": "2026-03-05T15:25:32.058255+00:00",
+    "updated_ts": 1772724332
   }
 }
