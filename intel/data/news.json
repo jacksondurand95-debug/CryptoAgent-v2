@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -14,
+    "score": -12,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 19,
-    "positive_score": 400,
+    "scored_articles": 20,
+    "positive_score": 430,
     "negative_score": -570
   },
   "alpha_events": [
@@ -271,6 +271,14 @@
       ]
     },
     {
+      "title": "NYSE-owner forges strategic partnership with OKX exchange for tokenized stocks, crypto futures",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
       "source": "Decrypt",
       "sentiment": "neutral",
@@ -295,6 +303,16 @@
       "score": -30,
       "importance": "medium",
       "coins": []
+    },
+    {
+      "title": "Bitcoin takes aim at $74,000. Surprisingly, the dollar's rallying too.",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Trump-backed American Bitcoin board members scoop up stock following earnings",
@@ -379,31 +397,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "Crypto bulls slam Ray Dalio's 'tired narratives' in defense of bitcoin's future",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "How this week's rout in Korean stocks might have triggered crypto's surge higher",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Google News": 30,
-    "Decrypt": 20
+    "CoinDesk": 20,
+    "Decrypt": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -1189,10 +1189,17 @@
       "score": -14,
       "bias": "neutral",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-05T12:53:28.669365+00:00",
+      "ts": 1772715208,
+      "score": -12,
+      "bias": "neutral",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T12:14:40.590496+00:00",
-    "updated_ts": 1772712880
+    "updated_at": "2026-03-05T12:53:28.669427+00:00",
+    "updated_ts": 1772715208
   }
 }
