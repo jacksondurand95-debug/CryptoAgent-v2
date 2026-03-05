@@ -52,9 +52,10 @@ def open_position(state, pair, side, entry_price, qty, usd_amount, stop_loss, ta
         "opened_at_str": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()),
     }
     state["positions"].append(pos)
+    tp_str = f"${take_profit:,.2f}" if take_profit is not None else "None"
     log.info(
         f"OPEN: {side} {qty:.6f} {pair} @ ${entry_price:,.2f} "
-        f"SL=${stop_loss:,.2f} TP=${take_profit:,.2f} ATR=${pos['atr']:,.2f}"
+        f"SL=${stop_loss:,.2f} TP={tp_str} ATR=${pos['atr']:,.2f}"
     )
     return state
 
@@ -182,7 +183,7 @@ def check_stops(state, get_price_fn):
                 continue
 
             # TAKE PROFIT
-            if price >= pos["take_profit"]:
+            if pos["take_profit"] is not None and price >= pos["take_profit"]:
                 state, trade = close_position(state, pos["pair"], price, reason="take_profit")
                 if trade:
                     closed.append(trade)
@@ -212,7 +213,7 @@ def check_stops(state, get_price_fn):
                     closed.append(trade)
                 continue
 
-            if price <= pos["take_profit"]:
+            if pos["take_profit"] is not None and price <= pos["take_profit"]:
                 state, trade = close_position(state, pos["pair"], price, reason="take_profit")
                 if trade:
                     closed.append(trade)
