@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": -24,
+    "score": -25,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 17,
-    "positive_score": 290,
+    "scored_articles": 16,
+    "positive_score": 280,
     "negative_score": -570
   },
   "alpha_events": [
@@ -43,6 +43,19 @@
       ],
       "keywords": [
         "+institutional adoption"
+      ]
+    },
+    {
+      "title": "Bitcoin ETFs pull in $462M as BTC briefly tops $73K",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+blackrock"
       ]
     },
     {
@@ -96,8 +109,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
-      "score": 90,
+      "articles": 36,
+      "score": 110,
       "bias": "bullish"
     },
     "ETH": {
@@ -133,6 +146,16 @@
       "source": "CoinDesk",
       "sentiment": "bullish",
       "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin ETFs pull in $462M as BTC briefly tops $73K",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 60,
       "importance": "high",
       "coins": [
         "BTC"
@@ -219,24 +242,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Tradeweb backs crypto ECN Crossover Markets in $31M funding round",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": 30,
-      "importance": "medium",
-      "coins": []
     },
     {
       "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
@@ -385,13 +390,23 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Crypto Long & Short: Why bitcoin's quantum fears will pass just like the climate panic",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
     "CoinDesk": 20,
     "Google News": 30,
-    "CoinTelegraph": 20,
-    "Decrypt": 20
+    "Decrypt": 20,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -1149,10 +1164,17 @@
       "score": -24,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-05T08:51:55.353204+00:00",
+      "ts": 1772700715,
+      "score": -25,
+      "bias": "bearish",
+      "alpha_count": 8
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T08:13:44.566592+00:00",
-    "updated_ts": 1772698424
+    "updated_at": "2026-03-05T08:51:55.353271+00:00",
+    "updated_ts": 1772700715
   }
 }
