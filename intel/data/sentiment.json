@@ -81,15 +81,15 @@
         "score": 2
       },
       {
-        "name": "Block Street",
-        "symbol": "BSB",
-        "market_cap_rank": 675,
-        "score": 3
-      },
-      {
         "name": "Lombard",
         "symbol": "BARD",
         "market_cap_rank": 126,
+        "score": 3
+      },
+      {
+        "name": "Block Street",
+        "symbol": "BSB",
+        "market_cap_rank": 675,
         "score": 4
       },
       {
@@ -1213,10 +1213,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T06:27:07.442324+00:00",
+      "ts": 1772692027,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T06:18:48.961113+00:00",
-    "updated_ts": 1772691528
+    "updated_at": "2026-03-05T06:27:07.442353+00:00",
+    "updated_ts": 1772692027
   }
 }
