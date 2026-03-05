@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -13,
+    "score": -15,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 21,
+    "scored_articles": 22,
     "positive_score": 410,
-    "negative_score": -560
+    "negative_score": -600
   },
   "alpha_events": [
     {
@@ -186,6 +186,14 @@
       "coins": []
     },
     {
+      "title": "Inside the Ray-Ban Smart Glasses Controversy Plaguing Meta",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -40,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "Google's Gemini AI Pushed Florida Man to Suicide Amid 'Collapsing Reality', Lawsuit Alleges",
       "source": "Decrypt",
       "sentiment": "bullish",
@@ -360,23 +368,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Crypto Long & Short: Why bitcoin's quantum fears will pass just like the climate panic",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "Google News": 30,
     "CoinDesk": 20,
+    "CoinTelegraph": 20,
     "Decrypt": 20,
-    "CoinTelegraph": 20
+    "Google News": 30
   },
   "history": [
     {
@@ -1078,10 +1076,17 @@
       "score": -13,
       "bias": "neutral",
       "alpha_count": 6
+    },
+    {
+      "timestamp": "2026-03-05T00:56:35.715056+00:00",
+      "ts": 1772672195,
+      "score": -15,
+      "bias": "neutral",
+      "alpha_count": 6
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T00:25:35.356304+00:00",
-    "updated_ts": 1772670335
+    "updated_at": "2026-03-05T00:56:35.715127+00:00",
+    "updated_ts": 1772672195
   }
 }
