@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 5.0,
+        "age_min": 1.1,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 31,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 21.7,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 73.9,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,36 +36,44 @@
         "score": 40,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 31.2,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -14,
-        "bias": "neutral",
+        "score": -17,
+        "bias": "bearish",
         "strength": "weak",
-        "age_min": 64.1,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 40,
-      "bias": "bullish",
-      "signals": 1,
+      "score": 12,
+      "bias": "neutral",
+      "signals": 2,
       "details": [
         {
+          "bias": "bearish",
+          "reason": "News sentiment: 30 articles, score=-40"
+        },
+        {
           "bias": "bullish",
-          "reason": "BTC whale distribution (10 txs) \u2014 accumulation"
+          "reason": "BTC whale distribution (7 txs) \u2014 accumulation"
         }
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 1,
+      "score": -53,
+      "bias": "bearish",
+      "signals": 2,
       "details": [
+        {
+          "bias": "bearish",
+          "reason": "News sentiment: 12 articles, score=-90"
+        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -79,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 4 articles, score=-80"
+          "reason": "News sentiment: 3 articles, score=-80"
         }
       ]
     }
@@ -126,9 +134,9 @@
       "coins": []
     }
   ],
-  "timestamp": "2026-03-05T20:05:27.700685+00:00",
+  "timestamp": "2026-03-05T20:14:58.111390+00:00",
   "_meta": {
-    "updated_at": "2026-03-05T20:05:27.701538+00:00",
-    "updated_ts": 1772741127
+    "updated_at": "2026-03-05T20:14:58.112244+00:00",
+    "updated_ts": 1772741698
   }
 }

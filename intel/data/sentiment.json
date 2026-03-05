@@ -71,13 +71,13 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 572,
+        "market_cap_rank": 580,
         "score": 1
       },
       {
-        "name": "OKB",
-        "symbol": "OKB",
-        "market_cap_rank": 42,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
         "score": 2
       },
       {
@@ -87,44 +87,45 @@
         "score": 3
       },
       {
-        "name": "Aave",
-        "symbol": "AAVE",
-        "market_cap_rank": 45,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 4
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 140,
+        "score": 5
+      },
+      {
+        "name": "Lombard",
+        "symbol": "BARD",
+        "market_cap_rank": 116,
+        "score": 6
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
-        "score": 5
-      },
-      {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 157,
-        "score": 6
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 139,
         "score": 7
       },
       {
-        "name": "Lombard",
-        "symbol": "BARD",
-        "market_cap_rank": 118,
+        "name": "Aave",
+        "symbol": "AAVE",
+        "market_cap_rank": 44,
         "score": 8
       },
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
-        "market_cap_rank": 275,
+        "market_cap_rank": 271,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC"
+      "BTC",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -1339,10 +1340,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-05T20:14:23.000350+00:00",
+      "ts": 1772741663,
+      "fgi": 22,
+      "score": 40,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T19:34:13.714273+00:00",
-    "updated_ts": 1772739253
+    "updated_at": "2026-03-05T20:14:23.000379+00:00",
+    "updated_ts": 1772741663
   }
 }
