@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 15,
+    "score": 14,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 14.1,
+        "age_min": 14.9,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 15.9,
+        "age_min": 10.1,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 50.9,
+        "age_min": 69.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 26.6,
+        "age_min": 17.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 25,
+        "score": 19,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 20.5,
+        "age_min": 14.7,
         "effective_weight": 1.0
       }
     }
@@ -66,10 +66,14 @@
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 1,
+      "score": -53,
+      "bias": "bearish",
+      "signals": 2,
       "details": [
+        {
+          "bias": "bearish",
+          "reason": "News sentiment: 30 articles, score=-60"
+        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -109,13 +113,6 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "type": "news",
       "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
       "sentiment": "bullish",
       "importance": "critical",
@@ -132,11 +129,20 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "type": "news",
+      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
-  "timestamp": "2026-03-06T19:20:06.255406+00:00",
+  "timestamp": "2026-03-06T19:38:30.271020+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T19:20:06.256107+00:00",
-    "updated_ts": 1772824806
+    "updated_at": "2026-03-06T19:38:30.271869+00:00",
+    "updated_ts": 1772825910
   }
 }
