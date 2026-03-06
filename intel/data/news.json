@@ -3,10 +3,10 @@
     "score": 0,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 247,
-    "scored_articles": 63,
-    "positive_score": 1670,
-    "negative_score": -1670
+    "total_articles": 248,
+    "scored_articles": 65,
+    "positive_score": 1730,
+    "negative_score": -1700
   },
   "alpha_events": [
     {
@@ -39,15 +39,17 @@
       ]
     },
     {
-      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -100,
+      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 100,
       "importance": "critical",
-      "coins": [],
+      "coins": [
+        "BTC"
+      ],
       "keywords": [
-        "rate hike",
-        "liquidation"
+        "+ath",
+        "+etf inflow"
       ]
     },
     {
@@ -117,7 +119,7 @@
       ]
     },
     {
-      "title": "Record Inflows into Bitcoin ETFs Boost Market Optimism",
+      "title": "Bitcoin ETF Sees Record Inflows Amid Institutional Buying",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -143,12 +145,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 68,
-      "score": 310,
+      "articles": 69,
+      "score": 410,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 30,
+      "articles": 32,
       "score": -110,
       "bias": "bearish"
     },
@@ -181,12 +183,14 @@
       ]
     },
     {
-      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -100,
+      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 100,
       "importance": "critical",
-      "coins": []
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
@@ -240,7 +244,7 @@
       ]
     },
     {
-      "title": "Record Inflows into Bitcoin ETFs Boost Market Optimism",
+      "title": "Bitcoin ETF Sees Record Inflows Amid Institutional Buying",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -441,18 +445,18 @@
   ],
   "sources": {
     "Decrypt": 20,
-    "Crypto Briefing": 20,
-    "DL News": 20,
+    "Crypto Regulation (Google)": 20,
     "The Block": 20,
-    "CoinTelegraph": 20,
-    "NewsBTC": 10,
+    "X/Twitter (Grok)": 8,
     "Fed News (Google)": 20,
-    "CoinDesk": 20,
     "Bitcoin ETF (Google)": 20,
+    "Crypto Briefing": 20,
+    "CoinDesk": 20,
     "U.Today": 20,
     "Google News": 30,
-    "X/Twitter (Grok)": 7,
-    "Crypto Regulation (Google)": 20
+    "CoinTelegraph": 20,
+    "DL News": 20,
+    "NewsBTC": 10
   },
   "history": [
     {
@@ -1385,10 +1389,17 @@
       "score": 0,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T07:00:13.671522+00:00",
+      "ts": 1772780413,
+      "score": 0,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T06:28:07.834159+00:00",
-    "updated_ts": 1772778487
+    "updated_at": "2026-03-06T07:00:13.671703+00:00",
+    "updated_ts": 1772780413
   }
 }
