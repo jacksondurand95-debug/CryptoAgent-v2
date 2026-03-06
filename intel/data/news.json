@@ -3,10 +3,10 @@
     "score": 23,
     "bias": "bullish",
     "strength": "weak",
-    "total_articles": 248,
+    "total_articles": 247,
     "scored_articles": 63,
-    "positive_score": 2270,
-    "negative_score": -1200
+    "positive_score": 2300,
+    "negative_score": -1240
   },
   "alpha_events": [
     {
@@ -38,6 +38,18 @@
       ]
     },
     {
+      "title": "Fed rate cut bets rise after weak jobs data - Reuters",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
+      ]
+    },
+    {
       "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
@@ -50,7 +62,7 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Sparks Crypto Market Optimism",
+      "title": "Fed Rate Cut Rumors Boost Crypto Market Sentiment",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -128,35 +140,21 @@
       "keywords": [
         "bankruptcy"
       ]
-    },
-    {
-      "title": "Samson Mow Objects to Michael Saylor's Bitcoin Insufficiency Post",
-      "source": "U.Today",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+ath",
-        "+saylor"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 81,
-      "score": 680,
+      "articles": 82,
+      "score": 640,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 36,
-      "score": -40,
+      "articles": 33,
+      "score": -80,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 12,
+      "articles": 13,
       "score": -150,
       "bias": "bearish"
     }
@@ -183,6 +181,14 @@
       ]
     },
     {
+      "title": "Fed rate cut bets rise after weak jobs data - Reuters",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
+    },
+    {
       "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
@@ -191,7 +197,7 @@
       "coins": []
     },
     {
-      "title": "Fed Rate Cut Sparks Crypto Market Optimism",
+      "title": "Fed Rate Cut Rumors Boost Crypto Market Sentiment",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -289,7 +295,7 @@
       "coins": []
     },
     {
-      "title": "Bitcoin ETFs Hit Record Inflows Amid Market Rally",
+      "title": "Bitcoin ETFs See Record Inflows Amid Market Surge",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -345,14 +351,6 @@
     },
     {
       "title": "Fed's Williams says rate cuts still possible, does not address Iran war - Reuters",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -450,19 +448,19 @@
     }
   ],
   "sources": {
-    "X/Twitter (Grok)": 8,
-    "DL News": 20,
-    "Decrypt": 20,
-    "NewsBTC": 10,
-    "CoinDesk": 20,
-    "Crypto Briefing": 20,
-    "Fed News (Google)": 20,
-    "CoinTelegraph": 20,
-    "The Block": 20,
-    "U.Today": 20,
-    "Crypto Regulation (Google)": 20,
     "Bitcoin ETF (Google)": 20,
-    "Google News": 30
+    "X/Twitter (Grok)": 7,
+    "The Block": 20,
+    "Fed News (Google)": 20,
+    "Crypto Briefing": 20,
+    "U.Today": 20,
+    "NewsBTC": 10,
+    "CoinTelegraph": 20,
+    "DL News": 20,
+    "Google News": 30,
+    "Decrypt": 20,
+    "CoinDesk": 20,
+    "Crypto Regulation (Google)": 20
   },
   "history": [
     {
@@ -1549,10 +1547,17 @@
       "score": 23,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T15:54:36.929104+00:00",
+      "ts": 1772812476,
+      "score": 23,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T15:22:58.128637+00:00",
-    "updated_ts": 1772810578
+    "updated_at": "2026-03-06T15:54:36.929277+00:00",
+    "updated_ts": 1772812476
   }
 }
