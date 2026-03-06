@@ -3,10 +3,10 @@
     "score": 23,
     "bias": "bullish",
     "strength": "weak",
-    "total_articles": 247,
-    "scored_articles": 61,
-    "positive_score": 2110,
-    "negative_score": -1120
+    "total_articles": 248,
+    "scored_articles": 65,
+    "positive_score": 2310,
+    "negative_score": -1210
   },
   "alpha_events": [
     {
@@ -40,6 +40,18 @@
     {
       "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
       "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
+      ]
+    },
+    {
+      "title": "Fed Rate Cut Expectations Fuel Crypto Market Optimism",
+      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
@@ -130,35 +142,22 @@
         "+ath",
         "+saylor"
       ]
-    },
-    {
-      "title": "Bitcoin Spot ETFs See 14-Day Netflows Surge: Demand Returning?",
-      "source": "NewsBTC",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+spot etf"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 76,
-      "score": 640,
+      "articles": 78,
+      "score": 680,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 33,
+      "articles": 35,
       "score": -40,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 15,
-      "score": -120,
+      "articles": 14,
+      "score": -140,
       "bias": "bearish"
     }
   },
@@ -186,6 +185,14 @@
     {
       "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
       "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "title": "Fed Rate Cut Expectations Fuel Crypto Market Optimism",
+      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
@@ -274,6 +281,24 @@
       ]
     },
     {
+      "title": "21Shares launches first spot Polkadot ETF in US",
+      "source": "Crypto Briefing",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Record Inflows into Bitcoin ETFs Drive Market Surge",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
@@ -303,14 +328,6 @@
       ]
     },
     {
-      "title": "Suspect in alleged $46 million US Marshals crypto theft arrested in Saint Martin, FBI says",
-      "source": "The Block",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "SoFi taps BitGo to support distribution of its SoFiUSD stablecoin",
       "source": "Crypto Briefing",
       "sentiment": "bullish",
@@ -327,7 +344,7 @@
       "coins": []
     },
     {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - thestreet.com",
+      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -430,43 +447,22 @@
       "score": 50,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "The Block": 20,
-    "CoinDesk": 20,
-    "U.Today": 20,
-    "CoinTelegraph": 20,
-    "Google News": 30,
-    "Crypto Regulation (Google)": 20,
-    "Decrypt": 20,
-    "NewsBTC": 10,
-    "Bitcoin ETF (Google)": 20,
-    "DL News": 20,
-    "X/Twitter (Grok)": 7,
     "Fed News (Google)": 20,
-    "Crypto Briefing": 20
+    "NewsBTC": 10,
+    "U.Today": 20,
+    "Bitcoin ETF (Google)": 20,
+    "Crypto Briefing": 20,
+    "Crypto Regulation (Google)": 20,
+    "CoinDesk": 20,
+    "Google News": 30,
+    "X/Twitter (Grok)": 8,
+    "CoinTelegraph": 20,
+    "Decrypt": 20,
+    "The Block": 20,
+    "DL News": 20
   },
   "history": [
     {
@@ -1539,10 +1535,17 @@
       "score": 23,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T14:56:04.761038+00:00",
+      "ts": 1772808964,
+      "score": 23,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T14:24:27.758698+00:00",
-    "updated_ts": 1772807067
+    "updated_at": "2026-03-06T14:56:04.761190+00:00",
+    "updated_ts": 1772808964
   }
 }
