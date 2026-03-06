@@ -94,9 +94,9 @@
     }
   ],
   "pending_orders": [],
-  "starting_value": null,
+  "starting_value": 3455.056897350986,
   "peak_value": null,
-  "last_updated": 1772755321.475879,
+  "last_updated": 1772758415.142447,
   "daily_losses": [
     {
       "usd": -0.7858242818841785,
