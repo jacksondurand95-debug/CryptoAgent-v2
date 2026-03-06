@@ -4,9 +4,9 @@
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 248,
-    "scored_articles": 61,
+    "scored_articles": 60,
     "positive_score": 1920,
-    "negative_score": -1340
+    "negative_score": -1310
   },
   "alpha_events": [
     {
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Spark Crypto Market Volatility",
+      "title": "Fed Rate Cut Speculation Boosts Crypto Market Sentiment",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -148,7 +148,7 @@
     },
     "ETH": {
       "articles": 29,
-      "score": -10,
+      "score": 0,
       "bias": "neutral"
     },
     "SOL": {
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Spark Crypto Market Volatility",
+      "title": "Fed Rate Cut Speculation Boosts Crypto Market Sentiment",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -280,7 +280,7 @@
       "coins": []
     },
     {
-      "title": "Bitcoin ETFs See Record Inflows Amid Market Surge",
+      "title": "Bitcoin ETF Sees Record Inflows Amid Institutional Buying",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -436,19 +436,19 @@
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "Crypto Regulation (Google)": 20,
-    "DL News": 20,
-    "NewsBTC": 10,
-    "Crypto Briefing": 20,
-    "CoinTelegraph": 20,
-    "Google News": 30,
     "Decrypt": 20,
-    "U.Today": 20,
+    "Crypto Regulation (Google)": 20,
+    "X/Twitter (Grok)": 8,
     "The Block": 20,
+    "NewsBTC": 10,
+    "CoinTelegraph": 20,
+    "CoinDesk": 20,
     "Bitcoin ETF (Google)": 20,
     "Fed News (Google)": 20,
-    "X/Twitter (Grok)": 8
+    "U.Today": 20,
+    "Crypto Briefing": 20,
+    "DL News": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -1661,10 +1661,17 @@
       "score": 15,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T22:50:48.354057+00:00",
+      "ts": 1772837448,
+      "score": 15,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T22:18:25.771553+00:00",
-    "updated_ts": 1772835505
+    "updated_at": "2026-03-06T22:50:48.354228+00:00",
+    "updated_ts": 1772837448
   }
 }
