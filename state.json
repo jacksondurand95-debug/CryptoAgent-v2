@@ -125,5 +125,7 @@
   "detected_fees": {
     "maker": 0.004,
     "taker": 0.008
-  }
+  },
+  "last_portfolio_value": 1410.24,
+  "last_portfolio_update": "2026-03-06T19:21:10Z"
 }

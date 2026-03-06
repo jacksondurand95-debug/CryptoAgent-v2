@@ -34,6 +34,13 @@ from portfolio import (
 # Multi-exchange data feeds
 from data_feeds import fetch_all_derivatives, fetch_coinbase_orderbook, fetch_cryptopanic_news, fetch_macro_intel
 
+# Hyperliquid
+try:
+    from hyperliquid_exchange import HyperliquidExchange
+    HL_AVAILABLE = True
+except ImportError:
+    HL_AVAILABLE = False
+
 # Intel sub-agent integration
 try:
     from intel.aggregator import get_intel_brief
@@ -143,6 +150,7 @@ def save_state(state):
     if "trades" in state:
         state["trades"] = state["trades"][-200:]
     state["last_updated"] = time.time()
+    state["last_portfolio_value"] = portfolio_value if isinstance(portfolio_value, (int, float)) else state.get("last_portfolio_value")
     try:
         STATE_FILE.write_text(json.dumps(state, indent=2))
         log.info("State saved to state.json")
@@ -362,6 +370,17 @@ def cancel_order(auth, order_id):
 # ─── DATA COLLECTION ──────────────────────────────────────────────
 
     # fetch_okx_data removed — replaced by data_feeds.fetch_all_derivatives()
+
+
+def _hl_price_precision(price):
+    """Get decimal places for HL limit prices."""
+    if price > 10000:
+        return 1
+    if price > 100:
+        return 2
+    if price > 1:
+        return 4
+    return 6
 
 
 def fetch_fear_greed():
@@ -768,6 +787,97 @@ def run():
                                 )
                             break
 
+    # 7d. Hyperliquid execution — mirror signals on HL for lower fees
+    hl_actions = []
+    if HL_AVAILABLE and config.HYPERLIQUID_ENABLED and config.HYPERLIQUID_WALLET.get("private_key"):
+        try:
+            hl = HyperliquidExchange()
+            hl_balances = hl.get_balances()
+            if hl_balances:
+                hl_value = hl_balances.get("account_value", 0)
+                hl_available = hl_balances.get("available", 0)
+                log.info(f"HYPERLIQUID: account=${hl_value:,.2f} available=${hl_available:,.2f}")
+
+                # Check existing HL positions
+                hl_positions = hl.get_positions()
+                hl_pos_coins = {p["coin"] for p in hl_positions}
+                for pos in hl_positions:
+                    log.info(f"  HL POS: {pos['coin']} {pos['side']} size={pos['size']} "
+                             f"entry=${pos['entry_price']:,.2f} pnl=${pos['unrealized_pnl']:,.2f}")
+
+                # Execute signal on Hyperliquid if we have one
+                if signal and signal.get("action") == "buy" and signal.get("pair"):
+                    pair = signal["pair"]
+                    # Convert Coinbase pair format (BTC-USD) to HL format (BTC)
+                    coin = pair.split("-")[0]
+
+                    if coin in config.HL_TRADING_PAIRS and coin not in hl_pos_coins:
+                        price = hl.get_price(coin)
+                        if price and hl_available > 10:
+                            # Size: use HL-specific config
+                            size_pct = min(
+                                signal.get("size_pct", 25) / 100.0,
+                                config.HL_MAX_POSITION_PCT,
+                            )
+                            usd_amount = hl_value * size_pct
+                            usd_amount = min(usd_amount, hl_available * 0.95)
+
+                            if usd_amount >= 5:
+                                # Set leverage
+                                hl.set_leverage(coin, config.HYPERLIQUID_DEFAULT_LEVERAGE)
+
+                                # Calculate size in base units
+                                qty = usd_amount / price
+
+                                # Use limit order (Alo = post-only maker)
+                                book = hl.get_orderbook(coin)
+                                limit_price = book.get("best_bid") or price * 0.999
+
+                                order = hl.limit_buy(coin, round(qty, 6), round(limit_price, _hl_price_precision(price)))
+                                if order:
+                                    hl_actions.append(
+                                        f"HL BUY {coin} ${usd_amount:.2f} @ ${limit_price:,.2f} "
+                                        f"{config.HYPERLIQUID_DEFAULT_LEVERAGE}x [{signal.get('strategy', '?')}]"
+                                    )
+
+                                    # Place HL-native stop loss
+                                    sl_price = signal.get("stop_loss")
+                                    if sl_price:
+                                        hl.place_stop_loss(coin, round(qty, 6), round(sl_price, _hl_price_precision(price)), is_buy=False)
+
+                                    # Place HL-native take profit
+                                    tp_price = signal.get("take_profit")
+                                    if tp_price:
+                                        hl.place_take_profit(coin, round(qty, 6), round(tp_price, _hl_price_precision(price)), is_buy=False)
+
+                elif signal and signal.get("action") == "sell" and signal.get("pair"):
+                    pair = signal["pair"]
+                    coin = pair.split("-")[0]
+                    if coin in hl_pos_coins:
+                        result = hl.close_position(coin)
+                        if result:
+                            hl_actions.append(f"HL CLOSE {coin} [{signal.get('strategy', '?')}]")
+
+                # Process position reviews on HL too
+                if signal and signal.get("_position_reviews"):
+                    for review in signal["_position_reviews"]:
+                        if review.get("action") == "close":
+                            coin = review["pair"].split("-")[0]
+                            if coin in hl_pos_coins:
+                                result = hl.close_position(coin)
+                                if result:
+                                    hl_actions.append(f"HL CLOSE {coin} [review:{review.get('reason', '?')}]")
+
+            else:
+                log.warning("HYPERLIQUID: balance fetch failed — skipping")
+        except Exception as e:
+            log.error(f"HYPERLIQUID ERROR: {e}")
+    elif HL_AVAILABLE and config.HYPERLIQUID_ENABLED:
+        log.info("HYPERLIQUID: no private key configured — skipping")
+
+    if hl_actions:
+        actions_taken.extend(hl_actions)
+
     # 8. Save state
     save_state(state)
 
@@ -806,6 +916,8 @@ def run():
         f"Pending: {pending_count} | "
         f"Runtime: {elapsed:.1f}s"
     )
+    if hl_actions:
+        log.info(f"[HL] {' | '.join(hl_actions)}")
     log.info("=" * 60)
 
 
