@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -1,
+    "score": 2,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 247,
-    "scored_articles": 63,
-    "positive_score": 1600,
-    "negative_score": -1650
+    "total_articles": 248,
+    "scored_articles": 64,
+    "positive_score": 1700,
+    "negative_score": -1600
   },
   "alpha_events": [
     {
@@ -50,18 +50,6 @@
       "keywords": [
         "+ath",
         "+etf inflow"
-      ]
-    },
-    {
-      "title": "Fed Rate Hike Sparks Crypto Market Volatility and Liquidations",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -100,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "rate hike",
-        "liquidation"
       ]
     },
     {
@@ -118,6 +106,19 @@
       ]
     },
     {
+      "title": "Bitcoin ETF Sees Record Inflows Amid Bullish Market Sentiment",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+record inflow"
+      ]
+    },
+    {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -144,8 +145,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 66,
-      "score": 280,
+      "articles": 67,
+      "score": 300,
       "bias": "bullish"
     },
     "ETH": {
@@ -154,7 +155,7 @@
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 20,
+      "articles": 19,
       "score": -280,
       "bias": "bearish"
     }
@@ -190,14 +191,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Fed Rate Hike Sparks Crypto Market Volatility and Liquidations",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -100,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
@@ -238,6 +231,16 @@
       "importance": "high",
       "coins": [
         "SOL"
+      ]
+    },
+    {
+      "title": "Bitcoin ETF Sees Record Inflows Amid Bullish Market Sentiment",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -354,7 +357,7 @@
       "coins": []
     },
     {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
+      "title": "Fed officials signal shocking twist on interest-rate cuts - thestreet.com",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -430,28 +433,28 @@
       "coins": []
     },
     {
-      "title": "38% of altcoins near all-time lows, worse than FTX crash: Analyst",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -50,
+      "title": "Fed's Interest Rate Cut Speculation Boosts Crypto Prices",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 60,
       "importance": "high",
       "coins": []
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
-    "U.Today": 20,
     "Fed News (Google)": 20,
-    "DL News": 20,
-    "NewsBTC": 10,
+    "CoinTelegraph": 20,
+    "Google News": 30,
+    "X/Twitter (Grok)": 8,
     "CoinDesk": 20,
-    "Crypto Briefing": 20,
-    "Crypto Regulation (Google)": 20,
-    "Bitcoin ETF (Google)": 20,
-    "X/Twitter (Grok)": 7,
-    "Decrypt": 20,
     "The Block": 20,
-    "Google News": 30
+    "Decrypt": 20,
+    "Crypto Regulation (Google)": 20,
+    "NewsBTC": 10,
+    "Crypto Briefing": 20,
+    "DL News": 20,
+    "Bitcoin ETF (Google)": 20,
+    "U.Today": 20
   },
   "history": [
     {
@@ -1363,10 +1366,17 @@
       "score": -1,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T05:57:26.727603+00:00",
+      "ts": 1772776646,
+      "score": 2,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T05:31:32.346934+00:00",
-    "updated_ts": 1772775092
+    "updated_at": "2026-03-06T05:57:26.727748+00:00",
+    "updated_ts": 1772776646
   }
 }
