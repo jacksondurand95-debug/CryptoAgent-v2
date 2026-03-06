@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 4,
+    "score": 13,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 248,
-    "scored_articles": 62,
-    "positive_score": 1630,
-    "negative_score": -1480
+    "scored_articles": 65,
+    "positive_score": 1920,
+    "negative_score": -1420
   },
   "alpha_events": [
     {
@@ -36,6 +36,20 @@
       "keywords": [
         "hack",
         "exploit"
+      ]
+    },
+    {
+      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 100,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+ath",
+        "+etf inflow"
       ]
     },
     {
@@ -118,40 +132,29 @@
       ]
     },
     {
-      "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "hack"
-      ]
-    },
-    {
-      "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
-      "source": "CoinTelegraph",
+      "title": "Bitcoin ETFs See Record Inflows Amid Bullish Sentiment",
+      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
-      "score": 60,
+      "score": 70,
       "importance": "high",
       "coins": [
-        "SOL"
+        "BTC"
       ],
       "keywords": [
-        "+etf inflow"
+        "+record inflow"
       ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 70,
-      "score": 270,
+      "articles": 67,
+      "score": 500,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 30,
-      "score": -50,
-      "bias": "bearish"
+      "articles": 31,
+      "score": 10,
+      "bias": "neutral"
     },
     "SOL": {
       "articles": 18,
@@ -179,6 +182,16 @@
       "coins": [
         "BTC",
         "SOL"
+      ]
+    },
+    {
+      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 100,
+      "importance": "critical",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -240,6 +253,16 @@
       "importance": "high",
       "coins": [
         "SOL"
+      ]
+    },
+    {
+      "title": "Bitcoin ETFs See Record Inflows Amid Bullish Sentiment",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -338,14 +361,6 @@
       "coins": []
     },
     {
-      "title": "Federal Reserve holds interest rates steady after three rate cuts in 2025 - U.S. Bank",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Bitcoin ETF Inflows Hit Three-Week High: Are Institutions Returning? - Yahoo Finance",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -363,6 +378,26 @@
       "importance": "high",
       "coins": [
         "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin Clears $71K As ETF Inflows Top $225M - Yellow.com",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "ETH"
       ]
     },
     {
@@ -404,55 +439,28 @@
       "coins": []
     },
     {
-      "title": "Fed Rate Hike Sparks Crypto Market Volatility",
+      "title": "Whale Accumulations Signal Potential Altcoin Rally",
       "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "38% of altcoins near all-time lows, worse than post-FTX crash: Analyst",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
-      "source": "DL News",
       "sentiment": "bullish",
-      "score": 50,
+      "score": 60,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
     }
   ],
   "sources": {
     "Crypto Briefing": 20,
+    "X/Twitter (Grok)": 8,
+    "U.Today": 20,
+    "CoinTelegraph": 20,
+    "CoinDesk": 20,
+    "The Block": 20,
     "NewsBTC": 10,
     "DL News": 20,
     "Google News": 30,
-    "Bitcoin ETF (Google)": 20,
-    "CoinDesk": 20,
-    "U.Today": 20,
-    "The Block": 20,
-    "CoinTelegraph": 20,
-    "Fed News (Google)": 20,
-    "Crypto Regulation (Google)": 20,
     "Decrypt": 20,
-    "X/Twitter (Grok)": 8
+    "Crypto Regulation (Google)": 20,
+    "Bitcoin ETF (Google)": 20,
+    "Fed News (Google)": 20
   },
   "history": [
     {
@@ -1434,10 +1442,17 @@
       "score": 4,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T09:55:33.032396+00:00",
+      "ts": 1772790933,
+      "score": 13,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T09:23:36.102118+00:00",
-    "updated_ts": 1772789016
+    "updated_at": "2026-03-06T09:55:33.032539+00:00",
+    "updated_ts": 1772790933
   }
 }
