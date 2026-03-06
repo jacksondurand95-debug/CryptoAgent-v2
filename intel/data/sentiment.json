@@ -65,7 +65,7 @@
       {
         "name": "Lack Of Memes",
         "symbol": "MEMELESS",
-        "market_cap_rank": 853,
+        "market_cap_rank": 800,
         "score": 0
       },
       {
@@ -77,13 +77,13 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 429,
+        "market_cap_rank": 404,
         "score": 2
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 48,
         "score": 3
       },
       {
@@ -93,33 +93,33 @@
         "score": 4
       },
       {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 48,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 109,
         "score": 5
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 151,
+        "name": "Hedera",
+        "symbol": "HBAR",
+        "market_cap_rank": 25,
         "score": 6
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
+        "name": "tx",
+        "symbol": "TX",
+        "market_cap_rank": 429,
         "score": 7
       },
       {
-        "name": "Polkadot",
-        "symbol": "DOT",
-        "market_cap_rank": 38,
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 5,
         "score": 8
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 378,
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
         "score": 9
       }
     ],
@@ -1717,10 +1717,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T21:45:30.492591+00:00",
+      "ts": 1772833530,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T21:15:03.192283+00:00",
-    "updated_ts": 1772831703
+    "updated_at": "2026-03-06T21:45:30.492622+00:00",
+    "updated_ts": 1772833530
   }
 }
