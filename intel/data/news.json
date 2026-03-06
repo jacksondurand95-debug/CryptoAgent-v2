@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 3,
+    "score": 10,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 248,
     "scored_articles": 63,
-    "positive_score": 1660,
-    "negative_score": -1540
+    "positive_score": 1800,
+    "negative_score": -1420
   },
   "alpha_events": [
     {
@@ -24,7 +24,19 @@
       ]
     },
     {
-      "title": "Solv Protocol offers 10% bounty after hacker snatches $2.7M",
+      "title": "Fed Rate Cut Rumors Ignite Crypto Market Optimism",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
+      ]
+    },
+    {
+      "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -120,
@@ -127,32 +139,21 @@
       "keywords": [
         "+etf inflow"
       ]
-    },
-    {
-      "title": "SEC ends case against Justin Sun with $10M settlement",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "fraud"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 70,
-      "score": 240,
+      "articles": 71,
+      "score": 250,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 30,
-      "score": -50,
-      "bias": "bearish"
+      "articles": 31,
+      "score": 10,
+      "bias": "neutral"
     },
     "SOL": {
-      "articles": 18,
+      "articles": 19,
       "score": -280,
       "bias": "bearish"
     }
@@ -169,7 +170,15 @@
       ]
     },
     {
-      "title": "Solv Protocol offers 10% bounty after hacker snatches $2.7M",
+      "title": "Fed Rate Cut Rumors Ignite Crypto Market Optimism",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -120,
@@ -249,14 +258,6 @@
       ]
     },
     {
-      "title": "SEC ends case against Justin Sun with $10M settlement",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -315,16 +316,6 @@
       "importance": "high",
       "coins": [
         "BTC"
-      ]
-    },
-    {
-      "title": "Ex-Ripple Engineer: XRP Protocol Freeze Influenced Ethereum, Google Issues Scam Alert for iPhone Users, Shiba Inu (SHIB) Secures Binance Trading Expansion: Morning Crypto Report",
-      "source": "U.Today",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [
-        "ETH"
       ]
     },
     {
@@ -420,7 +411,7 @@
       "coins": []
     },
     {
-      "title": "Whale Accumulation Sparks Ethereum Rally Speculation",
+      "title": "Whale Accumulation of Ethereum Sparks Rally Speculation",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 60,
@@ -436,22 +427,30 @@
       "score": -50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
+      "source": "DL News",
+      "sentiment": "bullish",
+      "score": 50,
+      "importance": "high",
+      "coins": []
     }
   ],
   "sources": {
-    "NewsBTC": 10,
-    "U.Today": 20,
-    "Crypto Regulation (Google)": 20,
-    "Google News": 30,
-    "Bitcoin ETF (Google)": 20,
-    "Crypto Briefing": 20,
-    "CoinTelegraph": 20,
     "CoinDesk": 20,
+    "Crypto Regulation (Google)": 20,
     "Fed News (Google)": 20,
     "X/Twitter (Grok)": 8,
-    "Decrypt": 20,
+    "CoinTelegraph": 20,
+    "The Block": 20,
+    "NewsBTC": 10,
+    "Crypto Briefing": 20,
+    "U.Today": 20,
+    "Google News": 30,
     "DL News": 20,
-    "The Block": 20
+    "Bitcoin ETF (Google)": 20,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -1398,10 +1397,17 @@
       "score": 3,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T07:53:28.855189+00:00",
+      "ts": 1772783608,
+      "score": 10,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T07:26:55.222716+00:00",
-    "updated_ts": 1772782015
+    "updated_at": "2026-03-06T07:53:28.855332+00:00",
+    "updated_ts": 1772783608
   }
 }
