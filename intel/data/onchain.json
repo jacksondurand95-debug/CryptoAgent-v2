@@ -12,7 +12,7 @@
       {
         "bias": "bullish",
         "score": 50,
-        "reason": "TVL surging +5.6%/week"
+        "reason": "TVL surging +5.5%/week"
       },
       {
         "bias": "neutral",
@@ -22,7 +22,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+        "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
       },
       {
         "bias": "bullish",
@@ -50,9 +50,9 @@
     }
   },
   "tvl": {
-    "total_tvl_b": 98.38,
-    "week_change_pct": 5.58,
-    "month_change_pct": -2.4,
+    "total_tvl_b": 98.33,
+    "week_change_pct": 5.53,
+    "month_change_pct": -2.44,
     "top_chains": {
       "Harmony": 0.0,
       "Stable": 0.0,
@@ -70,7 +70,7 @@
       "bias": "bullish",
       "score": 50,
       "weight": 1.5,
-      "reason": "TVL surging +5.6%/week"
+      "reason": "TVL surging +5.5%/week"
     }
   },
   "dex_volume": {
@@ -139,7 +139,7 @@
   },
   "btc_onchain": {
     "btc_fees": {
-      "fastest": 2,
+      "fastest": 1,
       "half_hour": 1,
       "hour": 1,
       "economy": 1,
@@ -149,14 +149,14 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.3,
-      "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+      "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 25317,
-      "vsize": 24615620,
-      "total_fee": 3945253
+      "count": 24642,
+      "vsize": 24343476,
+      "total_fee": 3250503
     },
-    "btc_hashrate": 1139193453848.0,
+    "btc_hashrate": 1110353113244.0,
     "hashrate_trend": {
       "current_eh": 1188.4,
       "avg_7d_eh": 1025.8,
@@ -929,10 +929,18 @@
       "bias": "bullish",
       "stablecoin_mcap_b": 266.06,
       "tvl_b": 98.38
+    },
+    {
+      "timestamp": "2026-03-06T04:49:19.832377+00:00",
+      "ts": 1772772559,
+      "score": 27,
+      "bias": "bullish",
+      "stablecoin_mcap_b": 266.06,
+      "tvl_b": 98.33
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T04:35:28.663128+00:00",
-    "updated_ts": 1772771728
+    "updated_at": "2026-03-06T04:49:19.832438+00:00",
+    "updated_ts": 1772772559
   }
 }
