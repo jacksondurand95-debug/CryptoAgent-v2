@@ -65,7 +65,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 428,
+        "market_cap_rank": 444,
         "score": 0
       },
       {
@@ -75,15 +75,15 @@
         "score": 1
       },
       {
-        "name": "Sign",
-        "symbol": "SIGN",
-        "market_cap_rank": 310,
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 362,
         "score": 2
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 364,
+        "name": "Sign",
+        "symbol": "SIGN",
+        "market_cap_rank": 303,
         "score": 3
       },
       {
@@ -99,27 +99,27 @@
         "score": 5
       },
       {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 6
+      },
+      {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 107,
-        "score": 6
+        "score": 7
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 615,
-        "score": 7
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "market_cap_rank": 619,
         "score": 8
       },
       {
         "name": "Flow",
         "symbol": "FLOW",
-        "market_cap_rank": 339,
+        "market_cap_rank": 334,
         "score": 9
       }
     ],
@@ -1578,10 +1578,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T13:54:35.417679+00:00",
+      "ts": 1772805275,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T13:30:31.950291+00:00",
-    "updated_ts": 1772803831
+    "updated_at": "2026-03-06T13:54:35.417709+00:00",
+    "updated_ts": 1772805275
   }
 }
