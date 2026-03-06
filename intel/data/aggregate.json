@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 2.6,
+        "age_min": 1.4,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 28.9,
+        "age_min": 0.7,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 93.4,
+        "age_min": 0.6,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 5.3,
+        "age_min": 0.9,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 13,
+        "score": 7,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 2.2,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,19 +57,23 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 67 articles, score=500"
+          "reason": "News sentiment: 68 articles, score=270"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (9 large txs)"
+          "reason": "BTC whale activity normal (20 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 1,
+      "score": -44,
+      "bias": "bearish",
+      "signals": 2,
       "details": [
+        {
+          "bias": "bearish",
+          "reason": "News sentiment: 29 articles, score=-50"
+        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -83,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 18 articles, score=-280"
+          "reason": "News sentiment: 17 articles, score=-280"
         }
       ]
     }
@@ -110,15 +114,6 @@
     },
     {
       "type": "news",
-      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "type": "news",
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "sentiment": "bearish",
       "importance": "critical",
@@ -135,11 +130,20 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "type": "news",
+      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
-  "timestamp": "2026-03-06T09:57:42.750167+00:00",
+  "timestamp": "2026-03-06T10:13:21.615489+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T09:57:42.751003+00:00",
-    "updated_ts": 1772791062
+    "updated_at": "2026-03-06T10:13:21.616215+00:00",
+    "updated_ts": 1772792001
   }
 }
