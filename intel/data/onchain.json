@@ -32,10 +32,10 @@
     ]
   },
   "stablecoins": {
-    "total_mcap_b": 266.1,
+    "total_mcap_b": 266.13,
     "breakdown": {
-      "Tether": 183.98,
-      "USD Coin": 77.24,
+      "Tether": 184.0,
+      "USD Coin": 77.25,
       "Dai": 4.51,
       "First Digital USD": 0.37
     },
@@ -52,7 +52,7 @@
   "tvl": {
     "total_tvl_b": 98.17,
     "week_change_pct": 5.36,
-    "month_change_pct": -2.6,
+    "month_change_pct": -2.61,
     "top_chains": {
       "Harmony": 0.0,
       "Mantle": 0.74,
@@ -87,12 +87,12 @@
       {
         "name": "Balancer V1",
         "volume_24h": 0.1,
-        "change_1d": -25.2
+        "change_1d": -27.7
       },
       {
         "name": "SushiSwap",
-        "volume_24h": 0.8,
-        "change_1d": 12.3
+        "volume_24h": 1.1,
+        "change_1d": 44.0
       },
       {
         "name": "KyberSwap Classic",
@@ -117,12 +117,12 @@
       {
         "name": "Bancor V2.1",
         "volume_24h": 0.1,
-        "change_1d": -70.9
+        "change_1d": -70.6
       },
       {
         "name": "WanSwap Dex",
         "volume_24h": 0.0,
-        "change_1d": -38.6
+        "change_1d": -36.4
       },
       {
         "name": "PancakeSwap AMM",
@@ -152,11 +152,11 @@
       "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 26042,
-      "vsize": 24508750,
-      "total_fee": 3588829
+      "count": 24658,
+      "vsize": 24788443,
+      "total_fee": 3144651
     },
-    "btc_hashrate": 1095932942942.0,
+    "btc_hashrate": 1088722857791.0,
     "hashrate_trend": {
       "current_eh": 1188.4,
       "avg_7d_eh": 1025.8,
@@ -173,23 +173,23 @@
         "project": "maple",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 3026.1,
-        "apy": 4.55
+        "tvl_m": 3032.1,
+        "apy": 4.56
       },
       {
         "pool": "f981a304-bb6c-45b8-b0c5-fd2f515ad23a",
         "project": "aave-v3",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 1628.3,
-        "apy": 2.28
+        "tvl_m": 1622.9,
+        "apy": 2.29
       },
       {
         "pool": "8edfdf02-cdbb-43f7-bca6-954e5fe56813",
         "project": "maple",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 1397.1,
+        "tvl_m": 1398.9,
         "apy": 4.32
       },
       {
@@ -197,15 +197,15 @@
         "project": "aave-v3",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 1354.0,
-        "apy": 1.98
+        "tvl_m": 1349.2,
+        "apy": 1.99
       },
       {
         "pool": "a87bbade-7728-43d9-bc23-2538812be3cc",
         "project": "merkl",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 899.3,
+        "tvl_m": 898.3,
         "apy": 0.25
       },
       {
@@ -222,7 +222,15 @@
         "chain": "Base",
         "symbol": "STEAKUSDC",
         "tvl_m": 407.7,
-        "apy": 3.54
+        "apy": 3.55
+      },
+      {
+        "pool": "dd8e780e-424b-4ef5-b5ca-4e3fa483e086",
+        "project": "merkl",
+        "chain": "Ethereum",
+        "symbol": "USDT",
+        "tvl_m": 406.7,
+        "apy": 0.43
       },
       {
         "pool": "811da684-855f-434f-9bfd-52679f9707b9",
@@ -231,14 +239,6 @@
         "symbol": "USDC",
         "tvl_m": 403.4,
         "apy": 0.06
-      },
-      {
-        "pool": "dd8e780e-424b-4ef5-b5ca-4e3fa483e086",
-        "project": "merkl",
-        "chain": "Ethereum",
-        "symbol": "USDT",
-        "tvl_m": 397.3,
-        "apy": 0.44
       },
       {
         "pool": "712ce948-bd9e-4f4a-8916-b72c447f7578",
@@ -961,10 +961,18 @@
       "bias": "bullish",
       "stablecoin_mcap_b": 266.1,
       "tvl_b": 98.17
+    },
+    {
+      "timestamp": "2026-03-06T08:24:16.946371+00:00",
+      "ts": 1772785456,
+      "score": 27,
+      "bias": "bullish",
+      "stablecoin_mcap_b": 266.13,
+      "tvl_b": 98.17
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T08:11:38.031904+00:00",
-    "updated_ts": 1772784698
+    "updated_at": "2026-03-06T08:24:16.946415+00:00",
+    "updated_ts": 1772785456
   }
 }
