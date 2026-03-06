@@ -1,7 +1,7 @@
 {
   "aggregate": {
-    "score": 19,
-    "bias": "neutral",
+    "score": 28,
+    "bias": "bullish",
     "strength": "weak",
     "confidence": 0.8,
     "available_sources": 4,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 17.8,
+        "age_min": 17.3,
         "effective_weight": 0.9
       },
       "whales": {
         "status": "fresh",
-        "score": 0,
-        "bias": "neutral",
+        "score": 31,
+        "bias": "bullish",
         "strength": "weak",
-        "age_min": 20.0,
+        "age_min": 11.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 53.6,
+        "age_min": 73.2,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 0.1,
+        "age_min": 19.7,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,24 +44,24 @@
         "score": 23,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 24.3,
+        "age_min": 17.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 36,
+      "score": 46,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 78 articles, score=680"
+          "reason": "News sentiment: 81 articles, score=680"
         },
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (13 large txs)"
+          "bias": "bullish",
+          "reason": "BTC whale distribution (10 txs) \u2014 accumulation"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 35 articles, score=-40"
+          "reason": "News sentiment: 36 articles, score=-40"
         },
         {
           "bias": "neutral",
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 14 articles, score=-140"
+          "reason": "News sentiment: 12 articles, score=-150"
         }
       ]
     }
@@ -120,7 +120,7 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Cut Expectations Fuel Crypto Market Optimism",
+      "title": "Fed Rate Cut Sparks Crypto Market Optimism",
       "sentiment": "bullish",
       "importance": "critical",
       "coins": []
@@ -136,9 +136,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-06T15:20:21.324123+00:00",
+  "timestamp": "2026-03-06T15:39:58.697369+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T15:20:21.324822+00:00",
-    "updated_ts": 1772810421
+    "updated_at": "2026-03-06T15:39:58.698214+00:00",
+    "updated_ts": 1772811598
   }
 }
