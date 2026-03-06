@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 11.7,
+        "age_min": 10.9,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 14.1,
+        "age_min": 2.3,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 49.3,
+        "age_min": 65.4,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 22.4,
+        "age_min": 13.4,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 11,
+        "score": 15,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 18.2,
+        "age_min": 10.4,
         "effective_weight": 1.0
       }
     }
@@ -57,22 +57,22 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 71 articles, score=330"
+          "reason": "News sentiment: 69 articles, score=480"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (1 large txs)"
+          "reason": "BTC whale activity normal (6 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": -44,
-      "bias": "bearish",
+      "score": 53,
+      "bias": "bullish",
       "signals": 2,
       "details": [
         {
-          "bias": "bearish",
-          "reason": "News sentiment: 29 articles, score=-50"
+          "bias": "bullish",
+          "reason": "News sentiment: 33 articles, score=70"
         },
         {
           "bias": "neutral",
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 18 articles, score=-280"
+          "reason": "News sentiment: 18 articles, score=-200"
         }
       ]
     }
@@ -124,16 +124,17 @@
     },
     {
       "type": "news",
-      "title": "Vancouver Bitcoin reserve effort hits resistance from city officials",
+      "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
       "sentiment": "bullish",
       "importance": "critical",
       "coins": [
-        "BTC"
+        "BTC",
+        "SOL"
       ]
     },
     {
       "type": "news",
-      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
+      "title": "Vancouver Bitcoin reserve effort hits resistance from city officials",
       "sentiment": "bullish",
       "importance": "critical",
       "coins": [
@@ -141,9 +142,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-06T11:13:24.980606+00:00",
+  "timestamp": "2026-03-06T11:29:29.091653+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T11:13:24.981258+00:00",
-    "updated_ts": 1772795604
+    "updated_at": "2026-03-06T11:29:29.092924+00:00",
+    "updated_ts": 1772796569
   }
 }
