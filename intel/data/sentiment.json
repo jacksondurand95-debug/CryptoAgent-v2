@@ -63,33 +63,33 @@
   "trending": {
     "trending": [
       {
-        "name": "WAR",
-        "symbol": "WAR",
-        "market_cap_rank": 501,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 0
+      },
+      {
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 499,
         "score": 1
       },
       {
         "name": "Kite",
         "symbol": "KITE",
-        "market_cap_rank": 95,
+        "market_cap_rank": 96,
         "score": 2
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
-        "score": 3
       },
       {
         "name": "Opinion",
         "symbol": "OPN",
-        "market_cap_rank": 349,
+        "market_cap_rank": 343,
+        "score": 3
+      },
+      {
+        "name": "Flow",
+        "symbol": "FLOW",
+        "market_cap_rank": 326,
         "score": 4
       },
       {
@@ -99,33 +99,32 @@
         "score": 5
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
         "score": 6
       },
       {
-        "name": "Lighter",
-        "symbol": "LIT",
-        "market_cap_rank": 138,
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 158,
         "score": 7
+      },
+      {
+        "name": "Sign",
+        "symbol": "SIGN",
+        "market_cap_rank": 308,
+        "score": 8
       },
       {
         "name": "OKB",
         "symbol": "OKB",
         "market_cap_rank": 41,
-        "score": 8
-      },
-      {
-        "name": "Flow",
-        "symbol": "FLOW",
-        "market_cap_rank": 326,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
-      "SOL"
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -1536,10 +1535,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T11:16:08.561623+00:00",
+      "ts": 1772795768,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T10:51:03.496639+00:00",
-    "updated_ts": 1772794263
+    "updated_at": "2026-03-06T11:16:08.561653+00:00",
+    "updated_ts": 1772795768
   }
 }
