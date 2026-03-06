@@ -224,14 +224,16 @@ def get_candles(pair, granularity="SIX_HOUR", limit=100):
 
 
 def get_balances(auth):
-    """Get account balances."""
+    """Get account balances (available + hold = true total)."""
     data = auth.get("/api/v3/brokerage/accounts")
     balances = {}
     for acct in data.get("accounts", []):
-        bal = float(acct.get("available_balance", {}).get("value", 0))
+        available = float(acct.get("available_balance", {}).get("value", 0))
+        hold = float(acct.get("hold", {}).get("value", 0))
         cur = acct.get("available_balance", {}).get("currency", "")
-        if bal > 0 and cur:
-            balances[cur] = bal
+        total = available + hold
+        if total > 0 and cur:
+            balances[cur] = total
     return balances
 
 
