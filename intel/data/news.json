@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 26,
+    "score": 23,
     "bias": "bullish",
-    "strength": "moderate",
-    "total_articles": 240,
-    "scored_articles": 55,
-    "positive_score": 2030,
-    "negative_score": -970
+    "strength": "weak",
+    "total_articles": 247,
+    "scored_articles": 57,
+    "positive_score": 1970,
+    "negative_score": -1030
   },
   "alpha_events": [
     {
@@ -32,18 +32,6 @@
       "coins": [
         "BTC"
       ],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
-      ]
-    },
-    {
-      "title": "Fed rate cut bets rise after weak jobs data - Reuters",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
       "keywords": [
         "+fed rate cut",
         "+rate cut"
@@ -140,22 +128,33 @@
       "keywords": [
         "enforcement action"
       ]
+    },
+    {
+      "title": "BitGo CEO on its $2 billion IPO, OCC national bank charter and Morgan Stanley competition",
+      "source": "The Block",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "+institutional adoption"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 83,
-      "score": 760,
+      "articles": 85,
+      "score": 820,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 27,
+      "articles": 28,
       "score": -60,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 10,
-      "score": 50,
+      "articles": 11,
+      "score": 60,
       "bias": "bullish"
     }
   },
@@ -179,14 +178,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Fed rate cut bets rise after weak jobs data - Reuters",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
@@ -387,6 +378,24 @@
       "coins": []
     },
     {
+      "title": "Bitcoin ETF Inflows Surge to Record Levels",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Fed Rate Hike Sparks Crypto Market Volatility",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
       "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -433,31 +442,22 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
     "Bitcoin ETF (Google)": 20,
-    "CoinTelegraph": 20,
-    "DL News": 20,
-    "Crypto Briefing": 20,
     "The Block": 20,
-    "Crypto Regulation (Google)": 20,
-    "Google News": 30,
-    "Fed News (Google)": 20,
-    "U.Today": 20,
+    "CoinTelegraph": 20,
     "Decrypt": 20,
     "CoinDesk": 20,
-    "NewsBTC": 10
+    "Crypto Briefing": 20,
+    "NewsBTC": 10,
+    "DL News": 20,
+    "X/Twitter (Grok)": 7,
+    "Crypto Regulation (Google)": 20,
+    "Fed News (Google)": 20,
+    "Google News": 30,
+    "U.Today": 20
   },
   "history": [
     {
@@ -1593,10 +1593,17 @@
       "score": 26,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T18:24:03.960885+00:00",
+      "ts": 1772821443,
+      "score": 23,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T18:15:00.193459+00:00",
-    "updated_ts": 1772820900
+    "updated_at": "2026-03-06T18:24:03.961028+00:00",
+    "updated_ts": 1772821443
   }
 }
