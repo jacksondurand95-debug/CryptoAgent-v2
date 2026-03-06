@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 10,
+    "score": 15,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 240,
-    "scored_articles": 56,
-    "positive_score": 1670,
-    "negative_score": -1310
+    "total_articles": 248,
+    "scored_articles": 61,
+    "positive_score": 1920,
+    "negative_score": -1340
   },
   "alpha_events": [
     {
@@ -32,6 +32,18 @@
       "coins": [
         "BTC"
       ],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
+      ]
+    },
+    {
+      "title": "Fed Rate Cut Rumors Spark Crypto Market Volatility",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
       "keywords": [
         "+fed rate cut",
         "+rate cut"
@@ -126,34 +138,21 @@
       "keywords": [
         "collapse"
       ]
-    },
-    {
-      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -70,
-      "importance": "high",
-      "coins": [
-        "SOL"
-      ],
-      "keywords": [
-        "enforcement action"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 80,
-      "score": 630,
+      "articles": 81,
+      "score": 700,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 28,
+      "articles": 29,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 10,
+      "articles": 11,
       "score": 130,
       "bias": "bullish"
     }
@@ -178,6 +177,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Fed Rate Cut Rumors Spark Crypto Market Volatility",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
     },
     {
       "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
@@ -271,6 +278,16 @@
       "score": 70,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Bitcoin ETFs See Record Inflows Amid Market Surge",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Ex-CFO sentenced to two years after diverting $35M to crypto venture",
@@ -416,40 +433,22 @@
       "score": 50,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "XRP Whales Add Over 4.18 Billion XRP Since October Price Flash Crash",
-      "source": "U.Today",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "CoinTelegraph": 20,
-    "The Block": 20,
+    "CoinDesk": 20,
+    "Crypto Regulation (Google)": 20,
     "DL News": 20,
+    "NewsBTC": 10,
+    "Crypto Briefing": 20,
+    "CoinTelegraph": 20,
+    "Google News": 30,
+    "Decrypt": 20,
+    "U.Today": 20,
+    "The Block": 20,
     "Bitcoin ETF (Google)": 20,
     "Fed News (Google)": 20,
-    "Google News": 30,
-    "Crypto Briefing": 20,
-    "NewsBTC": 10,
-    "U.Today": 20,
-    "CoinDesk": 20,
-    "Crypto Regulation (Google)": 20
+    "X/Twitter (Grok)": 8
   },
   "history": [
     {
@@ -1655,10 +1654,17 @@
       "score": 10,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T22:18:25.771254+00:00",
+      "ts": 1772835505,
+      "score": 15,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T22:08:46.018506+00:00",
-    "updated_ts": 1772834926
+    "updated_at": "2026-03-06T22:18:25.771553+00:00",
+    "updated_ts": 1772835505
   }
 }
