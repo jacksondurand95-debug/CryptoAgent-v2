@@ -51,6 +51,15 @@
         "time": 1772838774
       },
       {
+        "hash": "34c72e7aade88b71...",
+        "btc": 584.85,
+        "type": "distribution",
+        "inputs": 2,
+        "outputs": 13,
+        "block": 939640,
+        "time": 1772839792
+      },
+      {
         "hash": "df702066722abb28...",
         "btc": 388.31,
         "type": "transfer",
@@ -60,15 +69,6 @@
         "time": 1772838650
       },
       {
-        "hash": "7c4f9c3465494a48...",
-        "btc": 279.15,
-        "type": "transfer",
-        "inputs": 1,
-        "outputs": 2,
-        "block": 939637,
-        "time": 1772838434
-      },
-      {
         "hash": "29d0c34c03113845...",
         "btc": 257.67,
         "type": "transfer",
@@ -76,15 +76,6 @@
         "outputs": 2,
         "block": 939639,
         "time": 1772838686
-      },
-      {
-        "hash": "153d1f9d5f0e3c4e...",
-        "btc": 246.92,
-        "type": "distribution",
-        "inputs": 1,
-        "outputs": 11,
-        "block": 939637,
-        "time": 1772836944
       },
       {
         "hash": "68156ee1c30ab56f...",
@@ -130,11 +121,20 @@
         "outputs": 2,
         "block": 939639,
         "time": 1772838510
+      },
+      {
+        "hash": "1090dd03b8616410...",
+        "btc": 113.29,
+        "type": "consolidation",
+        "inputs": 79,
+        "outputs": 1,
+        "block": 939640,
+        "time": 1772839893
       }
     ],
-    "total_whale_btc": 7910.39,
+    "total_whale_btc": 8082.46,
     "count": 12,
-    "consolidations": 2,
+    "consolidations": 3,
     "distributions": 4,
     "blocks_scanned": 3,
     "signal": {
@@ -1573,10 +1573,16 @@
       "ts": 1772839613,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-06T23:53:29.330854+00:00",
+      "ts": 1772841209,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T23:26:53.212547+00:00",
-    "updated_ts": 1772839613
+    "updated_at": "2026-03-06T23:53:29.330882+00:00",
+    "updated_ts": 1772841209
   }
 }
