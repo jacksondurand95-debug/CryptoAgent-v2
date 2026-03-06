@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 10,
-    "bias": "neutral",
+    "score": 16,
+    "bias": "bullish",
     "strength": "weak",
     "total_articles": 248,
-    "scored_articles": 64,
-    "positive_score": 1820,
-    "negative_score": -1450
+    "scored_articles": 66,
+    "positive_score": 2060,
+    "negative_score": -1360
   },
   "alpha_events": [
     {
@@ -21,6 +21,18 @@
       "keywords": [
         "+blackrock",
         "+spot etf"
+      ]
+    },
+    {
+      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
       ]
     },
     {
@@ -131,35 +143,22 @@
       "keywords": [
         "+spot etf"
       ]
-    },
-    {
-      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -70,
-      "importance": "high",
-      "coins": [
-        "SOL"
-      ],
-      "keywords": [
-        "enforcement action"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 70,
-      "score": 380,
+      "articles": 73,
+      "score": 490,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 35,
+      "articles": 34,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 16,
-      "score": -200,
+      "articles": 15,
+      "score": -190,
       "bias": "bearish"
     }
   },
@@ -173,6 +172,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
     },
     {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
@@ -268,6 +275,16 @@
       ]
     },
     {
+      "title": "Bitcoin ETFs See Record Inflows Amid Bullish Market Sentiment",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -284,14 +301,6 @@
       "coins": [
         "SOL"
       ]
-    },
-    {
-      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
     },
     {
       "title": "\u2018Dead\u2019 South Korean crypto fraudster resurfaces and pays back victims",
@@ -345,7 +354,7 @@
       "coins": []
     },
     {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - thestreet.com",
+      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -431,14 +440,6 @@
       "coins": []
     },
     {
-      "title": "Fed Rate Hike Triggers Widespread Crypto Market Volatility",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -451,19 +452,19 @@
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "Crypto Regulation (Google)": 20,
-    "CoinTelegraph": 20,
     "Decrypt": 20,
-    "U.Today": 20,
+    "The Block": 20,
+    "NewsBTC": 10,
     "Crypto Briefing": 20,
+    "Crypto Regulation (Google)": 20,
+    "Google News": 30,
+    "CoinTelegraph": 20,
     "X/Twitter (Grok)": 8,
     "Fed News (Google)": 20,
-    "Google News": 30,
     "DL News": 20,
+    "U.Today": 20,
     "Bitcoin ETF (Google)": 20,
-    "The Block": 20,
-    "NewsBTC": 10
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -1501,10 +1502,17 @@
       "score": 10,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T13:01:16.166922+00:00",
+      "ts": 1772802076,
+      "score": 16,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T12:23:59.522858+00:00",
-    "updated_ts": 1772799839
+    "updated_at": "2026-03-06T13:01:16.167081+00:00",
+    "updated_ts": 1772802076
   }
 }
