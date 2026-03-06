@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 20,
+    "score": 23,
     "bias": "bullish",
     "strength": "weak",
-    "total_articles": 240,
-    "scored_articles": 60,
-    "positive_score": 2040,
-    "negative_score": -1200
+    "total_articles": 247,
+    "scored_articles": 61,
+    "positive_score": 2110,
+    "negative_score": -1120
   },
   "alpha_events": [
     {
@@ -62,20 +62,6 @@
       "keywords": [
         "hack",
         "exploit"
-      ]
-    },
-    {
-      "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -80,
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "SOL"
-      ],
-      "keywords": [
-        "insolvency"
       ]
     },
     {
@@ -144,12 +130,25 @@
         "+ath",
         "+saylor"
       ]
+    },
+    {
+      "title": "Bitcoin Spot ETFs See 14-Day Netflows Surge: Demand Returning?",
+      "source": "NewsBTC",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+spot etf"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 75,
-      "score": 560,
+      "articles": 76,
+      "score": 640,
       "bias": "bullish"
     },
     "ETH": {
@@ -158,8 +157,8 @@
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 14,
-      "score": -200,
+      "articles": 15,
+      "score": -120,
       "bias": "bearish"
     }
   },
@@ -197,17 +196,6 @@
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -120,
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
-    },
-    {
-      "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -80,
       "importance": "critical",
       "coins": [
         "BTC",
@@ -339,6 +327,14 @@
       "coins": []
     },
     {
+      "title": "Fed officials signal shocking twist on interest-rate cuts - thestreet.com",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
       "title": "Bitcoin ETF Inflows Hit Three-Week High: Are Institutions Returning? - Yahoo Finance",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -458,18 +454,19 @@
     }
   ],
   "sources": {
-    "Google News": 30,
-    "NewsBTC": 10,
-    "CoinDesk": 20,
-    "Bitcoin ETF (Google)": 20,
     "The Block": 20,
+    "CoinDesk": 20,
+    "U.Today": 20,
     "CoinTelegraph": 20,
-    "DL News": 20,
-    "Crypto Briefing": 20,
+    "Google News": 30,
     "Crypto Regulation (Google)": 20,
     "Decrypt": 20,
+    "NewsBTC": 10,
+    "Bitcoin ETF (Google)": 20,
+    "DL News": 20,
+    "X/Twitter (Grok)": 7,
     "Fed News (Google)": 20,
-    "U.Today": 20
+    "Crypto Briefing": 20
   },
   "history": [
     {
@@ -1535,10 +1532,17 @@
       "score": 20,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T14:24:27.758553+00:00",
+      "ts": 1772807067,
+      "score": 23,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T14:15:49.356237+00:00",
-    "updated_ts": 1772806549
+    "updated_at": "2026-03-06T14:24:27.758698+00:00",
+    "updated_ts": 1772807067
   }
 }
