@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 16,
-    "bias": "bullish",
+    "score": 15,
+    "bias": "neutral",
     "strength": "weak",
     "total_articles": 247,
-    "scored_articles": 60,
-    "positive_score": 1950,
-    "negative_score": -1310
+    "scored_articles": 61,
+    "positive_score": 1930,
+    "negative_score": -1340
   },
   "alpha_events": [
     {
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Boost Crypto Prices Across the Board",
+      "title": "Fed Rate Cut Rumors Spark Crypto Market Optimism",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -47,19 +47,6 @@
       "keywords": [
         "+fed rate cut",
         "+rate cut"
-      ]
-    },
-    {
-      "title": "Ethereum ETF Approvals Spark Optimism for Altcoins",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 90,
-      "importance": "critical",
-      "coins": [
-        "ETH"
-      ],
-      "keywords": [
-        "+etf approval"
       ]
     },
     {
@@ -140,22 +127,33 @@
       "keywords": [
         "sec lawsuit"
       ]
+    },
+    {
+      "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "collapse"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
       "articles": 81,
-      "score": 630,
+      "score": 700,
       "bias": "bullish"
     },
     "ETH": {
       "articles": 29,
-      "score": 80,
-      "bias": "bullish"
+      "score": -10,
+      "bias": "neutral"
     },
     "SOL": {
       "articles": 11,
-      "score": 130,
+      "score": 140,
       "bias": "bullish"
     }
   },
@@ -181,22 +179,12 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Boost Crypto Prices Across the Board",
+      "title": "Fed Rate Cut Rumors Spark Crypto Market Optimism",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
       "coins": []
-    },
-    {
-      "title": "Ethereum ETF Approvals Spark Optimism for Altcoins",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 90,
-      "importance": "critical",
-      "coins": [
-        "ETH"
-      ]
     },
     {
       "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
@@ -290,6 +278,16 @@
       "score": 70,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Bitcoin ETFs See Record Inflows Amid Institutional Buying",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Ex-CFO sentenced to two years after diverting $35M to crypto venture",
@@ -438,19 +436,19 @@
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "DL News": 20,
-    "Crypto Regulation (Google)": 20,
-    "Google News": 30,
-    "X/Twitter (Grok)": 7,
-    "CoinDesk": 20,
-    "Fed News (Google)": 20,
-    "Decrypt": 20,
-    "Bitcoin ETF (Google)": 20,
     "U.Today": 20,
+    "The Block": 20,
+    "Decrypt": 20,
     "NewsBTC": 10,
+    "CoinDesk": 20,
+    "Google News": 30,
     "Crypto Briefing": 20,
-    "The Block": 20
+    "Bitcoin ETF (Google)": 20,
+    "Crypto Regulation (Google)": 20,
+    "X/Twitter (Grok)": 7,
+    "Fed News (Google)": 20,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -1677,10 +1675,17 @@
       "score": 16,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T23:48:05.654410+00:00",
+      "ts": 1772840885,
+      "score": 15,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T23:18:21.860549+00:00",
-    "updated_ts": 1772839101
+    "updated_at": "2026-03-06T23:48:05.654560+00:00",
+    "updated_ts": 1772840885
   }
 }
