@@ -71,19 +71,19 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 441,
+        "market_cap_rank": 425,
         "score": 1
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
-        "score": 2
       },
       {
         "name": "Sign",
         "symbol": "SIGN",
-        "market_cap_rank": 321,
+        "market_cap_rank": 318,
+        "score": 2
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 109,
         "score": 3
       },
       {
@@ -99,27 +99,27 @@
         "score": 5
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 374,
         "score": 6
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 379,
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
         "score": 7
+      },
+      {
+        "name": "Lighter",
+        "symbol": "LIT",
+        "market_cap_rank": 140,
+        "score": 8
       },
       {
         "name": "Monad",
         "symbol": "MON",
         "market_cap_rank": 157,
-        "score": 8
-      },
-      {
-        "name": "Lighter",
-        "symbol": "LIT",
-        "market_cap_rank": 139,
         "score": 9
       }
     ],
@@ -1621,10 +1621,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T16:13:12.376077+00:00",
+      "ts": 1772813592,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T15:51:03.263820+00:00",
-    "updated_ts": 1772812263
+    "updated_at": "2026-03-06T16:13:12.376106+00:00",
+    "updated_ts": 1772813592
   }
 }
