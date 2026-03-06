@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 8,
+    "score": 11,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 240,
-    "scored_articles": 61,
-    "positive_score": 1680,
-    "negative_score": -1390
+    "total_articles": 247,
+    "scored_articles": 66,
+    "positive_score": 1890,
+    "negative_score": -1470
   },
   "alpha_events": [
     {
@@ -21,6 +21,18 @@
       "keywords": [
         "+blackrock",
         "+spot etf"
+      ]
+    },
+    {
+      "title": "Fed Rate Cut Rumors Spark Altcoin Rally Across Markets",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
       ]
     },
     {
@@ -92,6 +104,19 @@
       ]
     },
     {
+      "title": "Bitcoin ETFs See Record Inflows Amid Market Surge",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+record inflow"
+      ]
+    },
+    {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -112,43 +137,21 @@
       "keywords": [
         "fraud"
       ]
-    },
-    {
-      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "fraud"
-      ]
-    },
-    {
-      "title": "\u2018Dead\u2019 South Korean crypto fraudster resurfaces and pays back victims",
-      "source": "DL News",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "fraud"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 67,
-      "score": 620,
+      "articles": 68,
+      "score": 690,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 27,
-      "score": -20,
-      "bias": "neutral"
+      "articles": 29,
+      "score": -70,
+      "bias": "bearish"
     },
     "SOL": {
-      "articles": 16,
+      "articles": 15,
       "score": -180,
       "bias": "bearish"
     }
@@ -163,6 +166,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Fed Rate Cut Rumors Spark Altcoin Rally Across Markets",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
     },
     {
       "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
@@ -213,6 +224,16 @@
       "importance": "high",
       "coins": [
         "SOL"
+      ]
+    },
+    {
+      "title": "Bitcoin ETFs See Record Inflows Amid Market Surge",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -335,7 +356,7 @@
       "coins": []
     },
     {
-      "title": "Oil, inflation threaten Fed interest-rate cuts under Warsh - thestreet.com",
+      "title": "Federal Reserve holds interest rates steady after three rate cuts in 2025 - U.S. Bank",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -409,37 +430,22 @@
       "score": -60,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "38% of altcoins near all-time lows, worse than FTX crash: Analyst",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
-      "source": "DL News",
-      "sentiment": "bullish",
-      "score": 50,
-      "importance": "high",
-      "coins": []
     }
   ],
   "sources": {
-    "Crypto Briefing": 20,
     "NewsBTC": 10,
-    "Bitcoin ETF (Google)": 20,
-    "CoinDesk": 20,
     "Google News": 30,
-    "The Block": 20,
-    "DL News": 20,
-    "Crypto Regulation (Google)": 20,
-    "U.Today": 20,
-    "Decrypt": 20,
+    "X/Twitter (Grok)": 7,
     "CoinTelegraph": 20,
-    "Fed News (Google)": 20
+    "CoinDesk": 20,
+    "DL News": 20,
+    "Decrypt": 20,
+    "The Block": 20,
+    "Crypto Regulation (Google)": 20,
+    "Crypto Briefing": 20,
+    "Fed News (Google)": 20,
+    "Bitcoin ETF (Google)": 20,
+    "U.Today": 20
   },
   "history": [
     {
@@ -1295,10 +1301,17 @@
       "score": 8,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T01:03:48.970451+00:00",
+      "ts": 1772759028,
+      "score": 11,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T00:30:32.824872+00:00",
-    "updated_ts": 1772757032
+    "updated_at": "2026-03-06T01:03:48.970601+00:00",
+    "updated_ts": 1772759028
   }
 }
