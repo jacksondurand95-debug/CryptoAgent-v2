@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": 20,
+    "score": 17,
     "bias": "bullish",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 59,
-    "positive_score": 1880,
+    "total_articles": 240,
+    "scored_articles": 56,
+    "positive_score": 1740,
     "negative_score": -1120
   },
   "alpha_events": [
@@ -140,8 +140,8 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 81,
-      "score": 700,
+      "articles": 82,
+      "score": 630,
       "bias": "bullish"
     },
     "ETH": {
@@ -250,16 +250,6 @@
       "score": 70,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Bitcoin ETFs See Record Inflows Amid Bullish Market Sentiment",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
     },
     {
       "title": "Bitcoin recovery meets DeFi tensions as Aave rift deepens: Finance Redefined",
@@ -372,14 +362,6 @@
       "coins": []
     },
     {
-      "title": "Fed's Interest Rate Cut Rumors Spark Crypto Market Surge",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -434,22 +416,41 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "X/Twitter (Grok)": 8,
     "U.Today": 20,
-    "Decrypt": 20,
-    "Crypto Briefing": 20,
-    "NewsBTC": 10,
-    "Bitcoin ETF (Google)": 20,
-    "CoinTelegraph": 20,
-    "The Block": 20,
-    "Fed News (Google)": 20,
-    "Crypto Regulation (Google)": 20,
     "DL News": 20,
-    "Google News": 30
+    "Bitcoin ETF (Google)": 20,
+    "The Block": 20,
+    "Crypto Briefing": 20,
+    "CoinTelegraph": 20,
+    "Crypto Regulation (Google)": 20,
+    "Decrypt": 20,
+    "Google News": 30,
+    "CoinDesk": 20,
+    "Fed News (Google)": 20,
+    "NewsBTC": 10
   },
   "history": [
     {
@@ -1613,10 +1614,17 @@
       "score": 20,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T20:10:37.859787+00:00",
+      "ts": 1772827837,
+      "score": 17,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T19:51:11.225068+00:00",
-    "updated_ts": 1772826671
+    "updated_at": "2026-03-06T20:10:37.859957+00:00",
+    "updated_ts": 1772827837
   }
 }

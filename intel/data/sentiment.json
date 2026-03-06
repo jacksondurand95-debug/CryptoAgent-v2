@@ -65,7 +65,7 @@
       {
         "name": "Lack Of Memes",
         "symbol": "MEMELESS",
-        "market_cap_rank": 865,
+        "market_cap_rank": 892,
         "score": 0
       },
       {
@@ -75,51 +75,51 @@
         "score": 1
       },
       {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 2
+      },
+      {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 391,
-        "score": 2
+        "market_cap_rank": 386,
+        "score": 3
       },
       {
         "name": "Lighter",
         "symbol": "LIT",
         "market_cap_rank": 137,
-        "score": 3
+        "score": 4
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 109,
-        "score": 4
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
         "score": 5
-      },
-      {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 156,
-        "score": 6
-      },
-      {
-        "name": "BNB",
-        "symbol": "BNB",
-        "market_cap_rank": 4,
-        "score": 7
       },
       {
         "name": "Pi Network",
         "symbol": "PI",
         "market_cap_rank": 44,
-        "score": 8
+        "score": 6
+      },
+      {
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 157,
+        "score": 7
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
         "market_cap_rank": 151,
+        "score": 8
+      },
+      {
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 376,
         "score": 9
       }
     ],
@@ -1689,10 +1689,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T20:09:41.943697+00:00",
+      "ts": 1772827781,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T19:47:48.560290+00:00",
-    "updated_ts": 1772826468
+    "updated_at": "2026-03-06T20:09:41.943733+00:00",
+    "updated_ts": 1772827781
   }
 }
