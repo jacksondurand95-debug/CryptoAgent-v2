@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 15,
+    "score": 14,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 5.8,
+        "age_min": 2.0,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 0.1,
+        "age_min": 22.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 5,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 72.5,
+        "age_min": 95.0,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 8.1,
+        "age_min": 6.5,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 21,
+        "score": 19,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 5.3,
+        "age_min": 1.5,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 75 articles, score=420"
+          "reason": "News sentiment: 78 articles, score=620"
         },
         {
           "bias": "neutral",
@@ -83,7 +83,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 15 articles, score=-190"
+          "reason": "News sentiment: 15 articles, score=-200"
         }
       ]
     }
@@ -100,14 +100,16 @@
     },
     {
       "type": "news",
-      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
+      "title": "U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%",
       "sentiment": "bullish",
       "importance": "critical",
-      "coins": []
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "type": "news",
-      "title": "Fed Rate Cut Speculations Boost Crypto Market Sentiment",
+      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
       "sentiment": "bullish",
       "importance": "critical",
       "coins": []
@@ -124,18 +126,15 @@
     },
     {
       "type": "news",
-      "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
+      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
       "sentiment": "bearish",
       "importance": "critical",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
+      "coins": []
     }
   ],
-  "timestamp": "2026-03-06T13:38:38.005966+00:00",
+  "timestamp": "2026-03-06T14:01:04.574803+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T13:38:38.006675+00:00",
-    "updated_ts": 1772804318
+    "updated_at": "2026-03-06T14:01:04.575509+00:00",
+    "updated_ts": 1772805664
   }
 }
