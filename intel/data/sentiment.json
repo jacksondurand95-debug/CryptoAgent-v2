@@ -71,7 +71,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 514,
+        "market_cap_rank": 510,
         "score": 1
       },
       {
@@ -81,33 +81,33 @@
         "score": 2
       },
       {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
+        "score": 3
+      },
+      {
         "name": "Opinion",
         "symbol": "OPN",
-        "market_cap_rank": 330,
-        "score": 3
+        "market_cap_rank": 333,
+        "score": 4
       },
       {
         "name": "Jelly-My-Jelly",
         "symbol": "JELLYJELLY",
-        "market_cap_rank": 259,
-        "score": 4
+        "market_cap_rank": 283,
+        "score": 5
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 6
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 107,
-        "score": 5
-      },
-      {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
-        "score": 6
-      },
-      {
-        "name": "MANTRA",
-        "symbol": "MANTRA",
-        "market_cap_rank": 285,
         "score": 7
       },
       {
@@ -117,14 +117,15 @@
         "score": 8
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC"
+      "BTC",
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -1472,10 +1473,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T07:49:32.714378+00:00",
+      "ts": 1772783372,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T07:23:49.010556+00:00",
-    "updated_ts": 1772781829
+    "updated_at": "2026-03-06T07:49:32.714408+00:00",
+    "updated_ts": 1772783372
   }
 }
