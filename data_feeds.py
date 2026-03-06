@@ -576,3 +576,292 @@ def fetch_cryptopanic_news(api_key=None):
     except Exception as e:
         log.debug(f"CryptoPanic error: {e}")
         return None
+
+
+# ─── MACRO / ON-CHAIN / SENTIMENT FEEDS ─────────────────────────
+
+def fetch_binance_liquidations():
+    """Binance forced liquidations — shows where the pain is."""
+    try:
+        r = requests.get(
+            "https://fapi.binance.com/fapi/v1/allForceOrders",
+            params={"limit": 50},
+            timeout=TIMEOUT,
+        )
+        rows = r.json()
+        if not rows or isinstance(rows, dict):
+            return None
+        total_long_liq = 0
+        total_short_liq = 0
+        btc_liqs = 0
+        for liq in rows:
+            qty_usd = float(liq.get("price", 0)) * float(liq.get("origQty", 0))
+            side = liq.get("side", "").upper()
+            if side == "SELL":  # long got liquidated
+                total_long_liq += qty_usd
+            elif side == "BUY":  # short got liquidated
+                total_short_liq += qty_usd
+            if "BTC" in liq.get("symbol", ""):
+                btc_liqs += 1
+        total = total_long_liq + total_short_liq
+        return {
+            "source": "binance_liquidations",
+            "count": len(rows),
+            "long_liq_usd": round(total_long_liq, 2),
+            "short_liq_usd": round(total_short_liq, 2),
+            "bias": "longs_rekt" if total_long_liq > total_short_liq * 1.5 else
+                    "shorts_rekt" if total_short_liq > total_long_liq * 1.5 else "balanced",
+            "btc_liq_count": btc_liqs,
+            "total_usd": round(total, 2),
+        }
+    except Exception as e:
+        log.debug(f"Binance liquidations error: {e}")
+        return None
+
+
+def fetch_mempool_data():
+    """Bitcoin mempool — unconfirmed txs, fee rates, congestion."""
+    try:
+        mempool_r = requests.get("https://mempool.space/api/mempool", timeout=TIMEOUT)
+        fees_r = requests.get("https://mempool.space/api/v1/fees/recommended", timeout=TIMEOUT)
+        mempool = mempool_r.json()
+        fees = fees_r.json()
+        tx_count = mempool.get("count", 0)
+        vsize = mempool.get("vsize", 0)
+        fastest = fees.get("fastestFee", 0)
+        half_hour = fees.get("halfHourFee", 0)
+        hour = fees.get("hourFee", 0)
+        return {
+            "source": "mempool_space",
+            "unconfirmed_txs": tx_count,
+            "mempool_vsize_mb": round(vsize / 1_000_000, 2) if vsize else 0,
+            "fastest_fee_sat": fastest,
+            "half_hour_fee_sat": half_hour,
+            "hour_fee_sat": hour,
+            "congested": tx_count > 50000 or fastest > 50,
+            "fee_signal": "high_activity" if fastest > 30 else "normal" if fastest > 5 else "dead",
+        }
+    except Exception as e:
+        log.debug(f"Mempool error: {e}")
+        return None
+
+
+def fetch_defillama_tvl():
+    """DeFiLlama — total TVL across chains."""
+    try:
+        r = requests.get("https://api.llama.fi/v2/chains", timeout=TIMEOUT)
+        chains = r.json()
+        if not chains or not isinstance(chains, list):
+            return None
+        total_tvl = sum(float(c.get("tvl", 0)) for c in chains)
+        top_chains = sorted(chains, key=lambda c: float(c.get("tvl", 0)), reverse=True)[:5]
+        return {
+            "source": "defillama_tvl",
+            "total_tvl_b": round(total_tvl / 1e9, 2),
+            "top_chains": [
+                {"name": c.get("name", "?"), "tvl_b": round(float(c.get("tvl", 0)) / 1e9, 2)}
+                for c in top_chains
+            ],
+        }
+    except Exception as e:
+        log.debug(f"DeFiLlama TVL error: {e}")
+        return None
+
+
+def fetch_defillama_stablecoin_flows():
+    """DeFiLlama — stablecoin market cap by chain (inflows/outflows proxy)."""
+    try:
+        r = requests.get("https://stablecoins.llama.fi/stablecoinchains", timeout=TIMEOUT)
+        data = r.json()
+        if not data or not isinstance(data, list):
+            return None
+        total_mcap = sum(float(c.get("totalCirculatingUSD", {}).get("peggedUSD", 0)) for c in data)
+        top = sorted(data, key=lambda c: float(c.get("totalCirculatingUSD", {}).get("peggedUSD", 0)), reverse=True)[:5]
+        return {
+            "source": "defillama_stablecoins",
+            "total_stablecoin_mcap_b": round(total_mcap / 1e9, 2),
+            "top_chains": [
+                {"name": c.get("name", "?"), "stables_b": round(float(c.get("totalCirculatingUSD", {}).get("peggedUSD", 0)) / 1e9, 2)}
+                for c in top
+            ],
+        }
+    except Exception as e:
+        log.debug(f"DeFiLlama stablecoin error: {e}")
+        return None
+
+
+def fetch_defillama_dex_volume():
+    """DeFiLlama — aggregated DEX volumes."""
+    try:
+        r = requests.get("https://api.llama.fi/overview/dexs", timeout=TIMEOUT)
+        data = r.json()
+        if not data:
+            return None
+        total_24h = float(data.get("total24h", 0))
+        total_change = float(data.get("change_1d", 0))
+        return {
+            "source": "defillama_dex",
+            "total_dex_volume_24h_b": round(total_24h / 1e9, 2),
+            "volume_change_1d_pct": round(total_change, 2),
+            "high_volume": total_24h > 5e9,
+        }
+    except Exception as e:
+        log.debug(f"DeFiLlama DEX error: {e}")
+        return None
+
+
+def fetch_btc_hashrate():
+    """Bitcoin hash rate — network health indicator."""
+    try:
+        r = requests.get(
+            "https://api.blockchain.info/charts/hash-rate",
+            params={"timespan": "30days", "format": "json"},
+            timeout=TIMEOUT,
+        )
+        data = r.json()
+        values = data.get("values", [])
+        if not values:
+            return None
+        current = values[-1].get("y", 0)
+        week_ago = values[-7].get("y", 0) if len(values) >= 7 else current
+        month_ago = values[0].get("y", 0)
+        return {
+            "source": "blockchain_info",
+            "hashrate_eh": round(current / 1e6, 2),  # convert to EH/s
+            "change_7d_pct": round(((current - week_ago) / week_ago) * 100, 2) if week_ago else 0,
+            "change_30d_pct": round(((current - month_ago) / month_ago) * 100, 2) if month_ago else 0,
+            "healthy": current > week_ago * 0.95,  # not dropping more than 5%
+        }
+    except Exception as e:
+        log.debug(f"BTC hashrate error: {e}")
+        return None
+
+
+def fetch_eth_gas():
+    """ETH gas prices — high gas = high on-chain activity."""
+    try:
+        r = requests.get(
+            "https://api.etherscan.io/api",
+            params={"module": "gastracker", "action": "gasoracle"},
+            timeout=TIMEOUT,
+        )
+        data = r.json()
+        result = data.get("result", {})
+        if not result or isinstance(result, str):
+            return None
+        safe = float(result.get("SafeGasPrice", 0))
+        propose = float(result.get("ProposeGasPrice", 0))
+        fast = float(result.get("FastGasPrice", 0))
+        return {
+            "source": "etherscan_gas",
+            "safe_gwei": safe,
+            "propose_gwei": propose,
+            "fast_gwei": fast,
+            "high_activity": fast > 50,
+            "signal": "bullish_activity" if fast > 40 else "normal" if fast > 10 else "low_activity",
+        }
+    except Exception as e:
+        log.debug(f"ETH gas error: {e}")
+        return None
+
+
+def fetch_gbtc_premium():
+    """GBTC premium/discount proxy via CoinGecko — ETF flow signal."""
+    try:
+        # Get BTC spot price
+        btc_r = requests.get(
+            "https://api.coingecko.com/api/v3/simple/price",
+            params={"ids": "bitcoin", "vs_currencies": "usd"},
+            timeout=TIMEOUT,
+        )
+        btc_price = btc_r.json().get("bitcoin", {}).get("usd", 0)
+        if not btc_price:
+            return None
+        # Get GBTC price (traded as wrapped token / tracked by CoinGecko)
+        gbtc_r = requests.get(
+            "https://api.coingecko.com/api/v3/simple/price",
+            params={"ids": "grayscale-bitcoin-trust", "vs_currencies": "usd"},
+            timeout=TIMEOUT,
+        )
+        gbtc_price = gbtc_r.json().get("grayscale-bitcoin-trust", {}).get("usd", 0)
+        if not gbtc_price:
+            return None
+        # GBTC holds ~0.00089 BTC per share (approximate)
+        nav_approx = btc_price * 0.00089
+        premium_pct = ((gbtc_price - nav_approx) / nav_approx) * 100 if nav_approx > 0 else 0
+        return {
+            "source": "coingecko_gbtc",
+            "btc_price": btc_price,
+            "gbtc_price": gbtc_price,
+            "nav_approx": round(nav_approx, 2),
+            "premium_pct": round(premium_pct, 2),
+            "signal": "strong_demand" if premium_pct > 2 else "discount" if premium_pct < -2 else "at_nav",
+        }
+    except Exception as e:
+        log.debug(f"GBTC premium error: {e}")
+        return None
+
+
+def fetch_coinglass_fear_greed():
+    """Coinglass Fear & Greed index — backup sentiment source."""
+    try:
+        r = requests.get(
+            "https://api.coinglass.com/api/index/fear-greed-history",
+            timeout=TIMEOUT,
+        )
+        data = r.json()
+        rows = data.get("data", [])
+        if not rows:
+            return None
+        latest = rows[-1] if isinstance(rows, list) else None
+        if not latest:
+            return None
+        value = int(latest.get("value", 50))
+        return {
+            "source": "coinglass_fgi",
+            "value": value,
+            "classification": "extreme_fear" if value <= 20 else "fear" if value <= 40 else
+                              "neutral" if value <= 60 else "greed" if value <= 80 else "extreme_greed",
+            "contrarian_signal": "bullish" if value <= 25 else "bearish" if value >= 75 else "neutral",
+        }
+    except Exception as e:
+        log.debug(f"Coinglass FGI error: {e}")
+        return None
+
+
+def fetch_macro_intel():
+    """Fetch all macro/on-chain/sentiment data in parallel.
+
+    Returns a combined dict with all available macro intelligence.
+    Non-blocking — any feed that fails is silently skipped.
+    """
+    feeds = {
+        "liquidations": fetch_binance_liquidations,
+        "mempool": fetch_mempool_data,
+        "tvl": fetch_defillama_tvl,
+        "stablecoin_flows": fetch_defillama_stablecoin_flows,
+        "dex_volume": fetch_defillama_dex_volume,
+        "btc_hashrate": fetch_btc_hashrate,
+        "eth_gas": fetch_eth_gas,
+        "gbtc_premium": fetch_gbtc_premium,
+        "coinglass_fgi": fetch_coinglass_fear_greed,
+    }
+
+    results = {}
+    futures = {}
+
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        for key, fn in feeds.items():
+            futures[key] = pool.submit(fn)
+
+        for key, future in futures.items():
+            try:
+                result = future.result(timeout=TIMEOUT + 2)
+                if result:
+                    results[key] = result
+            except Exception as e:
+                log.debug(f"Macro feed {key} failed: {e}")
+
+    results["feed_count"] = len(results)
+    log.info(f"MACRO INTEL: {len(results) - 1}/{len(feeds)} feeds loaded")
+    return results

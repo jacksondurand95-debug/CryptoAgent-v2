@@ -28,12 +28,20 @@ def _build_system_prompt(portfolio_value, fee_rate):
     """Build system prompt with dynamic portfolio value and fees."""
     return f"""You are an aggressive autonomous crypto trading algorithm. BULL RUSH MODE — $3000 deployed, put capital to work. You validate quantitative signals with a BIAS TOWARD ACTION.
 
+Your #1 job is NET PROFIT. Every decision filters through: will this make money AFTER the 0.60% maker fee?
+
 ## ACCOUNT
 - Portfolio: ${portfolio_value:,.2f}
 - Round-trip fee (limit-limit): {fee_rate*100:.2f}% | (limit-market): {fee_rate*100*1.5:.2f}%
 - Min profitable move: {fee_rate*100 + 0.5:.1f}% (fees + minimal profit)
 - Max position: 30% of portfolio. Max 4 concurrent.
 - GOAL: Deploy capital aggressively. Cash sitting idle = lost opportunity.
+
+## FEE MATH
+0.60% per side = 1.20% round trip on $900 = $10.80. A 2% move = $18 gross = $7.20 net profit. A 5% move = $45 gross = $34.20 net. TARGET 3-5% moves minimum.
+
+## EDGE DETECTION
+Look for information asymmetry — whale moves that retail hasn't priced in yet, liquidation cascades about to happen, ETF flow data that just dropped, mempool congestion spikes, stablecoin minting events. These are the 30-minute windows where alpha exists.
 
 ## YOUR ROLE
 Quant strategies have pre-filtered the market. You decide:
@@ -47,6 +55,7 @@ Quant strategies have pre-filtered the market. You decide:
 - Size up to 30% on high-confidence signals (>0.75)
 - With 4 position slots, try to stay 50-100% deployed
 - Don't be afraid of multiple positions in the same direction if the trend is strong
+- SPEED MATTERS. When you see alpha (whale buy, ETF inflow spike, liquidation cascade), SIZE UP to 30% and act. Don't wait for confirmation on time-sensitive signals.
 
 ## REJECTION CRITERIA (only reject for STRONG reasons)
 - Expected move < 1.5% (can't clear fees at all)
@@ -165,6 +174,56 @@ def _build_market_context(all_pair_data, state, portfolio_value, quant_signals, 
 
     if fgi:
         lines.append(f"FEAR&GREED: {fgi['value']} ({fgi['classification']})")
+
+    # Macro intel (on-chain, liquidations, TVL, stablecoins, gas, hashrate)
+    macro = all_pair_data.get("_macro_intel", {})
+    if macro and macro.get("feed_count", 0) > 0:
+        lines.append(f"\n=== MACRO INTEL ({macro.get('feed_count', 0)} feeds) ===")
+
+        liq = macro.get("liquidations")
+        if liq:
+            lines.append(f"  LIQUIDATIONS: {liq.get('count', 0)} recent | "
+                         f"longs_rekt=${liq.get('long_liq_usd', 0):,.0f} "
+                         f"shorts_rekt=${liq.get('short_liq_usd', 0):,.0f} | "
+                         f"bias={liq.get('bias', '?')}")
+
+        mem = macro.get("mempool")
+        if mem:
+            lines.append(f"  BTC MEMPOOL: {mem.get('unconfirmed_txs', 0)} txs | "
+                         f"fees={mem.get('fastest_fee_sat', 0)}/{mem.get('hour_fee_sat', 0)} sat/vB | "
+                         f"{mem.get('fee_signal', '?')}")
+
+        tvl = macro.get("tvl")
+        if tvl:
+            lines.append(f"  TVL: ${tvl.get('total_tvl_b', 0):.1f}B across chains")
+
+        stables = macro.get("stablecoin_flows")
+        if stables:
+            lines.append(f"  STABLECOINS: ${stables.get('total_stablecoin_mcap_b', 0):.1f}B total mcap")
+
+        dex = macro.get("dex_volume")
+        if dex:
+            lines.append(f"  DEX VOL: ${dex.get('total_dex_volume_24h_b', 0):.1f}B/24h "
+                         f"({dex.get('volume_change_1d_pct', 0):+.1f}%)")
+
+        hr = macro.get("btc_hashrate")
+        if hr:
+            lines.append(f"  BTC HASHRATE: {hr.get('hashrate_eh', 0)} EH/s "
+                         f"7d={hr.get('change_7d_pct', 0):+.1f}% "
+                         f"{'healthy' if hr.get('healthy') else 'DECLINING'}")
+
+        gas = macro.get("eth_gas")
+        if gas:
+            lines.append(f"  ETH GAS: {gas.get('fast_gwei', 0)} gwei | {gas.get('signal', '?')}")
+
+        gbtc = macro.get("gbtc_premium")
+        if gbtc:
+            lines.append(f"  GBTC: premium={gbtc.get('premium_pct', 0):+.1f}% | {gbtc.get('signal', '?')}")
+
+        cg_fgi = macro.get("coinglass_fgi")
+        if cg_fgi:
+            lines.append(f"  COINGLASS FGI: {cg_fgi.get('value', '?')} ({cg_fgi.get('classification', '?')}) "
+                         f"contrarian={cg_fgi.get('contrarian_signal', '?')}")
 
     lines.append(f"\nTIME: {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}")
     return "\n".join(lines)
@@ -298,7 +357,7 @@ def analyze(all_pair_data, state, portfolio_value, intel_brief=None, fgi=None):
         if ls:
             onchain["long_short_ratio"]["current"] = ls.get("ratio")
 
-        signal = quant_analyze(pair, ind_6h, ind_1d, onchain, tv)
+        signal = quant_analyze(pair, ind_6h, ind_1d, onchain, tv, intel_brief=intel_brief)
         if signal:
             quant_signals.append(signal)
             log.info(f"QUANT: {signal['strategy']} {signal['action'].upper()} {pair} conf={signal['confidence']:.2f}")

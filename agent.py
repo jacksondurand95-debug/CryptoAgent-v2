@@ -32,7 +32,7 @@ from portfolio import (
 )
 
 # Multi-exchange data feeds
-from data_feeds import fetch_all_derivatives, fetch_coinbase_orderbook, fetch_cryptopanic_news
+from data_feeds import fetch_all_derivatives, fetch_coinbase_orderbook, fetch_cryptopanic_news, fetch_macro_intel
 
 # Intel sub-agent integration
 try:
@@ -544,7 +544,18 @@ def run():
     if fgi:
         log.info(f"Fear & Greed: {fgi['value']} ({fgi['classification']})")
 
-    # 5d. Auto-detect fee tier (CRITICAL — wrong fees = guaranteed losses)
+    # 5d. Macro intel (on-chain, liquidations, TVL, stablecoins, etc.)
+    macro_intel = fetch_macro_intel()
+    macro_count = macro_intel.get("feed_count", 0)
+    if macro_count:
+        liq = macro_intel.get("liquidations", {})
+        if liq:
+            log.info(f"  LIQS: {liq.get('count', 0)} recent | ${liq.get('total_usd', 0):,.0f} | bias={liq.get('bias', '?')}")
+        mem = macro_intel.get("mempool", {})
+        if mem:
+            log.info(f"  MEMPOOL: {mem.get('unconfirmed_txs', 0)} txs | fastest={mem.get('fastest_fee_sat', 0)} sat/vB")
+
+    # 5e. Auto-detect fee tier (CRITICAL — wrong fees = guaranteed losses)
     try:
         fee_resp = auth.get("/api/v3/brokerage/transaction_summary")
         fee_tier = fee_resp.get("fee_tier", {})
@@ -650,6 +661,10 @@ def run():
             "orderbook": orderbook,
             "tv": tv_analysis,
         }
+
+    # Store macro intel in all_pair_data for brain context
+    if macro_intel and macro_intel.get("feed_count", 0) > 0:
+        all_pair_data["_macro_intel"] = macro_intel
 
     # 6b. Check risk limits before trading
     can_trade, risk_reason = check_risk_limits(state, total_value)
