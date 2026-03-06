@@ -145,12 +145,16 @@ def load_state():
     return new_state()
 
 
-def save_state(state):
+def save_state(state, portfolio_value=None, account_balance=None):
     """Save state to state.json in the repo (committed by Actions workflow)."""
     if "trades" in state:
         state["trades"] = state["trades"][-200:]
     state["last_updated"] = time.time()
-    state["last_portfolio_value"] = portfolio_value if isinstance(portfolio_value, (int, float)) else state.get("last_portfolio_value")
+    if isinstance(portfolio_value, (int, float)):
+        state["last_portfolio_value"] = portfolio_value
+    if isinstance(account_balance, (int, float)):
+        state["account_balance"] = account_balance
+        state["last_portfolio_update"] = datetime.now(timezone.utc).isoformat()
     try:
         STATE_FILE.write_text(json.dumps(state, indent=2))
         log.info("State saved to state.json")
@@ -584,6 +588,10 @@ def run():
         total_volume = fee_resp.get("total_volume", 0)
         total_fees_paid = fee_resp.get("total_fees", 0)
         total_balance = fee_resp.get("total_balance", "?")
+        try:
+            account_balance_usd = float(total_balance)
+        except (ValueError, TypeError):
+            account_balance_usd = None
         has_promo = fee_resp.get("has_promo_fee", False)
 
         # FULL diagnostic dump of fee response
@@ -878,8 +886,8 @@ def run():
     if hl_actions:
         actions_taken.extend(hl_actions)
 
-    # 8. Save state
-    save_state(state)
+    # 8. Save state (total_value = bot-managed, account_balance_usd = full Coinbase account)
+    save_state(state, portfolio_value=total_value, account_balance=locals().get("account_balance_usd"))
 
     # 9. Print summary
     elapsed = time.time() - start_time
