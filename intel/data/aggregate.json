@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 13,
+    "score": 14,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 1.0,
+        "age_min": 3.3,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,15 +20,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 8.8,
+        "age_min": 13.3,
         "effective_weight": 2.5
       },
       "onchain": {
         "status": "fresh",
-        "score": 4,
+        "score": 5,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 8.7,
+        "age_min": 16.2,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 8.9,
+        "age_min": 19.9,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 5,
+        "score": 10,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 8.1,
+        "age_min": 18.3,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 68 articles, score=240"
+          "reason": "News sentiment: 70 articles, score=380"
         },
         {
           "bias": "neutral",
@@ -66,14 +66,10 @@
       ]
     },
     "ETH": {
-      "score": -53,
-      "bias": "bearish",
-      "signals": 2,
+      "score": 0,
+      "bias": "neutral",
+      "signals": 1,
       "details": [
-        {
-          "bias": "bearish",
-          "reason": "News sentiment: 32 articles, score=-70"
-        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -87,7 +83,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 17 articles, score=-200"
+          "reason": "News sentiment: 16 articles, score=-200"
         }
       ]
     }
@@ -142,9 +138,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-06T12:21:12.944406+00:00",
+  "timestamp": "2026-03-06T12:42:18.457352+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T12:21:12.945261+00:00",
-    "updated_ts": 1772799672
+    "updated_at": "2026-03-06T12:42:18.458149+00:00",
+    "updated_ts": 1772800938
   }
 }
