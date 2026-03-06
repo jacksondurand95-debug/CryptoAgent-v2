@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 9,
+    "score": 11,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 64,
-    "positive_score": 1780,
-    "negative_score": -1450
+    "total_articles": 247,
+    "scored_articles": 63,
+    "positive_score": 1830,
+    "negative_score": -1420
   },
   "alpha_events": [
     {
@@ -21,6 +21,18 @@
       "keywords": [
         "+blackrock",
         "+spot etf"
+      ]
+    },
+    {
+      "title": "Fed Rate Cut Speculation Boosts Crypto Market Sentiment",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
       ]
     },
     {
@@ -39,20 +51,6 @@
       ]
     },
     {
-      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 100,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+ath",
-        "+etf inflow"
-      ]
-    },
-    {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -64,6 +62,19 @@
       ],
       "keywords": [
         "insolvency"
+      ]
+    },
+    {
+      "title": "Vancouver Bitcoin reserve effort hits resistance from city bureaucrats",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+bitcoin reserve"
       ]
     },
     {
@@ -119,7 +130,7 @@
       ]
     },
     {
-      "title": "Bitcoin ETF Sees Record Inflows Amid Bullish Market Sentiment",
+      "title": "Bitcoin ETFs See Record Inflows Amid Institutional Buying",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -130,32 +141,21 @@
       "keywords": [
         "+record inflow"
       ]
-    },
-    {
-      "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "hack"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 69,
-      "score": 420,
+      "articles": 72,
+      "score": 340,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 32,
-      "score": -80,
+      "articles": 30,
+      "score": -50,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 18,
+      "articles": 19,
       "score": -280,
       "bias": "bearish"
     }
@@ -172,6 +172,14 @@
       ]
     },
     {
+      "title": "Fed Rate Cut Speculation Boosts Crypto Market Sentiment",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
+    },
+    {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -183,16 +191,6 @@
       ]
     },
     {
-      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 100,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -201,6 +199,16 @@
       "coins": [
         "BTC",
         "SOL"
+      ]
+    },
+    {
+      "title": "Vancouver Bitcoin reserve effort hits resistance from city bureaucrats",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -244,7 +252,7 @@
       ]
     },
     {
-      "title": "Bitcoin ETF Sees Record Inflows Amid Bullish Market Sentiment",
+      "title": "Bitcoin ETFs See Record Inflows Amid Institutional Buying",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -377,16 +385,6 @@
       ]
     },
     {
-      "title": "Bitcoin Clears $71K As ETF Inflows Top $225M - Yellow.com",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Ethereum ETF Inflows Surge with $38.65M Rebound, Signaling Renewed Investor Confidence - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -442,18 +440,18 @@
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
-    "NewsBTC": 10,
-    "X/Twitter (Grok)": 8,
-    "DL News": 20,
-    "Fed News (Google)": 20,
-    "Crypto Regulation (Google)": 20,
-    "Bitcoin ETF (Google)": 20,
-    "U.Today": 20,
-    "CoinDesk": 20,
-    "Crypto Briefing": 20,
-    "Decrypt": 20,
     "The Block": 20,
+    "NewsBTC": 10,
+    "U.Today": 20,
+    "Fed News (Google)": 20,
+    "CoinDesk": 20,
+    "Decrypt": 20,
+    "DL News": 20,
+    "Crypto Briefing": 20,
+    "Crypto Regulation (Google)": 20,
+    "CoinTelegraph": 20,
+    "Bitcoin ETF (Google)": 20,
+    "X/Twitter (Grok)": 7,
     "Google News": 30
   },
   "history": [
@@ -1422,10 +1420,17 @@
       "score": 9,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T08:55:47.055625+00:00",
+      "ts": 1772787347,
+      "score": 11,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T08:20:50.876347+00:00",
-    "updated_ts": 1772785250
+    "updated_at": "2026-03-06T08:55:47.055770+00:00",
+    "updated_ts": 1772787347
   }
 }
