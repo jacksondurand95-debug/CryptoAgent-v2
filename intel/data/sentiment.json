@@ -71,19 +71,19 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 521,
+        "market_cap_rank": 522,
         "score": 1
+      },
+      {
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 344,
+        "score": 2
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 2
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
         "score": 3
       },
       {
@@ -95,19 +95,19 @@
       {
         "name": "Jelly-My-Jelly",
         "symbol": "JELLYJELLY",
-        "market_cap_rank": 254,
+        "market_cap_rank": 255,
         "score": 5
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 345,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
         "score": 6
       },
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 621,
+        "name": "MANTRA",
+        "symbol": "MANTRA",
+        "market_cap_rank": 287,
         "score": 7
       },
       {
@@ -117,9 +117,9 @@
         "score": 8
       },
       {
-        "name": "Dogecoin",
-        "symbol": "DOGE",
-        "market_cap_rank": 10,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 621,
         "score": 9
       }
     ],
@@ -1452,10 +1452,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T06:26:45.830528+00:00",
+      "ts": 1772778405,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T06:17:02.205232+00:00",
-    "updated_ts": 1772777822
+    "updated_at": "2026-03-06T06:26:45.830556+00:00",
+    "updated_ts": 1772778405
   }
 }
