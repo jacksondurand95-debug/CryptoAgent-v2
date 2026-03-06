@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 28,
-    "bias": "bullish",
+    "score": 23,
+    "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.8,
-    "available_sources": 4,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 15.4,
-        "effective_weight": 0.9
+        "age_min": 11.2,
+        "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
         "score": 31,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 9.8,
+        "age_min": 27.0,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 73.0,
+        "age_min": 90.2,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 18.2,
+        "age_min": 5.3,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 23,
+        "score": 26,
         "bias": "bullish",
-        "strength": "weak",
-        "age_min": 15.1,
+        "strength": "moderate",
+        "age_min": 1.5,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 84 articles, score=700"
+          "reason": "News sentiment: 84 articles, score=830"
         },
         {
           "bias": "bullish",
@@ -66,13 +66,13 @@
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
+      "score": -53,
+      "bias": "bearish",
       "signals": 2,
       "details": [
         {
-          "bias": "neutral",
-          "reason": "News sentiment: 31 articles, score=20"
+          "bias": "bearish",
+          "reason": "News sentiment: 28 articles, score=-60"
         },
         {
           "bias": "neutral",
@@ -81,13 +81,13 @@
       ]
     },
     "SOL": {
-      "score": -60,
-      "bias": "bearish",
+      "score": 50,
+      "bias": "bullish",
       "signals": 1,
       "details": [
         {
-          "bias": "bearish",
-          "reason": "News sentiment: 12 articles, score=-70"
+          "bias": "bullish",
+          "reason": "News sentiment: 11 articles, score=50"
         }
       ]
     }
@@ -127,18 +127,15 @@
     },
     {
       "type": "news",
-      "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
-      "sentiment": "bearish",
+      "title": "Fed Rate Cut Rumors Spark Crypto Rally Across Altcoins",
+      "sentiment": "bullish",
       "importance": "critical",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
+      "coins": []
     }
   ],
-  "timestamp": "2026-03-06T17:38:05.696436+00:00",
+  "timestamp": "2026-03-06T17:55:18.602172+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T17:38:05.697325+00:00",
-    "updated_ts": 1772818685
+    "updated_at": "2026-03-06T17:55:18.602964+00:00",
+    "updated_ts": 1772819718
   }
 }
