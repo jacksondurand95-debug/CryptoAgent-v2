@@ -3,10 +3,10 @@
     "score": 19,
     "bias": "bullish",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 60,
-    "positive_score": 2000,
-    "negative_score": -1210
+    "total_articles": 247,
+    "scored_articles": 57,
+    "positive_score": 1810,
+    "negative_score": -1120
   },
   "alpha_events": [
     {
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Fuels Crypto Rally Across Majors",
+      "title": "Macro Economic Data Boosts Crypto Sentiment with Fed Rate Cut Hopes",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -47,18 +47,6 @@
       "keywords": [
         "+fed rate cut",
         "+rate cut"
-      ]
-    },
-    {
-      "title": "Mass Liquidations Cascade in Altcoins After Flash Crash",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -90,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "liquidation",
-        "crash"
       ]
     },
     {
@@ -73,19 +61,6 @@
       ],
       "keywords": [
         "+spot etf"
-      ]
-    },
-    {
-      "title": "Vancouver Bitcoin reserve effort hits resistance from city officials",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+bitcoin reserve"
       ]
     },
     {
@@ -138,18 +113,40 @@
       "keywords": [
         "enforcement action"
       ]
+    },
+    {
+      "title": "BitGo CEO on its $2 billion IPO, OCC national bank charter and Morgan Stanley competition",
+      "source": "The Block",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "+institutional adoption"
+      ]
+    },
+    {
+      "title": "21Shares launches first spot Polkadot ETF in US",
+      "source": "Crypto Briefing",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "+institutional adoption"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 85,
-      "score": 700,
+      "articles": 84,
+      "score": 620,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 32,
-      "score": 0,
-      "bias": "neutral"
+      "articles": 30,
+      "score": -60,
+      "bias": "bearish"
     },
     "SOL": {
       "articles": 11,
@@ -179,18 +176,10 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Fuels Crypto Rally Across Majors",
+      "title": "Macro Economic Data Boosts Crypto Sentiment with Fed Rate Cut Hopes",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "title": "Mass Liquidations Cascade in Altcoins After Flash Crash",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -90,
       "importance": "critical",
       "coins": []
     },
@@ -203,16 +192,6 @@
       "coins": [
         "BTC",
         "SOL"
-      ]
-    },
-    {
-      "title": "Vancouver Bitcoin reserve effort hits resistance from city officials",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -270,7 +249,7 @@
       "coins": []
     },
     {
-      "title": "Record Inflows into Bitcoin ETFs Drive Market Surge",
+      "title": "Bitcoin ETF Sees Record Inflows Amid Market Rally",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -314,14 +293,6 @@
       "coins": []
     },
     {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Bitcoin ETF Inflows Hit Three-Week High: Are Institutions Returning? - Yahoo Finance",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -349,16 +320,6 @@
       "importance": "high",
       "coins": [
         "BTC"
-      ]
-    },
-    {
-      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "ETH"
       ]
     },
     {
@@ -433,22 +394,63 @@
       "score": -50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "title": "BTC back at $68K, XRP down 5%: why is crypto market crashing - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
-    "X/Twitter (Grok)": 8,
-    "U.Today": 20,
-    "DL News": 20,
-    "Fed News (Google)": 20,
-    "Google News": 30,
-    "NewsBTC": 10,
-    "Crypto Briefing": 20,
-    "Decrypt": 20,
-    "Crypto Regulation (Google)": 20,
+    "CoinDesk": 20,
     "Bitcoin ETF (Google)": 20,
+    "Decrypt": 20,
+    "Google News": 30,
     "The Block": 20,
-    "CoinDesk": 20
+    "X/Twitter (Grok)": 7,
+    "U.Today": 20,
+    "NewsBTC": 10,
+    "DL News": 20,
+    "CoinTelegraph": 20,
+    "Fed News (Google)": 20,
+    "Crypto Regulation (Google)": 20,
+    "Crypto Briefing": 20
   },
   "history": [
     {
@@ -1626,10 +1628,17 @@
       "score": 19,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T20:50:56.941639+00:00",
+      "ts": 1772830256,
+      "score": 19,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T20:18:38.634429+00:00",
-    "updated_ts": 1772828318
+    "updated_at": "2026-03-06T20:50:56.941799+00:00",
+    "updated_ts": 1772830256
   }
 }
