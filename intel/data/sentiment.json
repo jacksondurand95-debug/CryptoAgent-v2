@@ -71,25 +71,25 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 448,
+        "market_cap_rank": 429,
         "score": 1
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 109,
+        "score": 2
       },
       {
         "name": "Sign",
         "symbol": "SIGN",
-        "market_cap_rank": 318,
-        "score": 2
-      },
-      {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
+        "market_cap_rank": 315,
         "score": 3
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 370,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 4
       },
       {
@@ -99,34 +99,34 @@
         "score": 5
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
         "score": 6
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 109,
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 370,
         "score": 7
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 8
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 147,
-        "score": 8
-      },
-      {
-        "name": "NEAR Protocol",
-        "symbol": "NEAR",
-        "market_cap_rank": 52,
+        "market_cap_rank": 148,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL",
-      "ETH"
+      "ETH",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -1642,10 +1642,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T17:19:54.326350+00:00",
+      "ts": 1772817594,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T16:52:55.180639+00:00",
-    "updated_ts": 1772815975
+    "updated_at": "2026-03-06T17:19:54.326379+00:00",
+    "updated_ts": 1772817594
   }
 }
