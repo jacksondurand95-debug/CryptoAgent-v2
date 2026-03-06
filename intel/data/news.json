@@ -4,9 +4,9 @@
     "bias": "bullish",
     "strength": "weak",
     "total_articles": 248,
-    "scored_articles": 65,
-    "positive_score": 2310,
-    "negative_score": -1210
+    "scored_articles": 63,
+    "positive_score": 2270,
+    "negative_score": -1200
   },
   "alpha_events": [
     {
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Expectations Fuel Crypto Market Optimism",
+      "title": "Fed Rate Cut Sparks Crypto Market Optimism",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -146,18 +146,18 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 78,
+      "articles": 81,
       "score": 680,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 35,
+      "articles": 36,
       "score": -40,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 14,
-      "score": -140,
+      "articles": 12,
+      "score": -150,
       "bias": "bearish"
     }
   },
@@ -191,7 +191,7 @@
       "coins": []
     },
     {
-      "title": "Fed Rate Cut Expectations Fuel Crypto Market Optimism",
+      "title": "Fed Rate Cut Sparks Crypto Market Optimism",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -289,7 +289,7 @@
       "coins": []
     },
     {
-      "title": "Record Inflows into Bitcoin ETFs Drive Market Surge",
+      "title": "Bitcoin ETFs Hit Record Inflows Amid Market Rally",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -332,6 +332,14 @@
       "source": "Crypto Briefing",
       "sentiment": "bullish",
       "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Shiba Inu: Alert Issued as SHIB Participant Social Media Account Gets Hacked",
+      "source": "U.Today",
+      "sentiment": "bearish",
+      "score": -60,
       "importance": "high",
       "coins": []
     },
@@ -439,30 +447,22 @@
         "BTC",
         "ETH"
       ]
-    },
-    {
-      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
-      "source": "DL News",
-      "sentiment": "bullish",
-      "score": 50,
-      "importance": "high",
-      "coins": []
     }
   ],
   "sources": {
-    "Fed News (Google)": 20,
-    "NewsBTC": 10,
-    "U.Today": 20,
-    "Bitcoin ETF (Google)": 20,
-    "Crypto Briefing": 20,
-    "Crypto Regulation (Google)": 20,
-    "CoinDesk": 20,
-    "Google News": 30,
     "X/Twitter (Grok)": 8,
-    "CoinTelegraph": 20,
+    "DL News": 20,
     "Decrypt": 20,
+    "NewsBTC": 10,
+    "CoinDesk": 20,
+    "Crypto Briefing": 20,
+    "Fed News (Google)": 20,
+    "CoinTelegraph": 20,
     "The Block": 20,
-    "DL News": 20
+    "U.Today": 20,
+    "Crypto Regulation (Google)": 20,
+    "Bitcoin ETF (Google)": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -1542,10 +1542,17 @@
       "score": 23,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T15:22:58.128487+00:00",
+      "ts": 1772810578,
+      "score": 23,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T14:56:04.761190+00:00",
-    "updated_ts": 1772808964
+    "updated_at": "2026-03-06T15:22:58.128637+00:00",
+    "updated_ts": 1772810578
   }
 }
