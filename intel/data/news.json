@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 11,
+    "score": 4,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 247,
-    "scored_articles": 63,
-    "positive_score": 1830,
-    "negative_score": -1420
+    "total_articles": 248,
+    "scored_articles": 62,
+    "positive_score": 1630,
+    "negative_score": -1480
   },
   "alpha_events": [
     {
@@ -21,18 +21,6 @@
       "keywords": [
         "+blackrock",
         "+spot etf"
-      ]
-    },
-    {
-      "title": "Fed Rate Cut Speculation Boosts Crypto Market Sentiment",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
       ]
     },
     {
@@ -65,7 +53,7 @@
       ]
     },
     {
-      "title": "Vancouver Bitcoin reserve effort hits resistance from city bureaucrats",
+      "title": "Vancouver Bitcoin reserve effort hits resistance from city officials",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
       "score": 80,
@@ -130,23 +118,34 @@
       ]
     },
     {
-      "title": "Bitcoin ETFs See Record Inflows Amid Institutional Buying",
-      "source": "X/Twitter (Grok)",
+      "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "hack"
+      ]
+    },
+    {
+      "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
+      "source": "CoinTelegraph",
       "sentiment": "bullish",
-      "score": 70,
+      "score": 60,
       "importance": "high",
       "coins": [
-        "BTC"
+        "SOL"
       ],
       "keywords": [
-        "+record inflow"
+        "+etf inflow"
       ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 72,
-      "score": 340,
+      "articles": 70,
+      "score": 270,
       "bias": "bullish"
     },
     "ETH": {
@@ -155,7 +154,7 @@
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 19,
+      "articles": 18,
       "score": -280,
       "bias": "bearish"
     }
@@ -170,14 +169,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Fed Rate Cut Speculation Boosts Crypto Market Sentiment",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
@@ -202,7 +193,7 @@
       ]
     },
     {
-      "title": "Vancouver Bitcoin reserve effort hits resistance from city bureaucrats",
+      "title": "Vancouver Bitcoin reserve effort hits resistance from city officials",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
       "score": 80,
@@ -249,16 +240,6 @@
       "importance": "high",
       "coins": [
         "SOL"
-      ]
-    },
-    {
-      "title": "Bitcoin ETFs See Record Inflows Amid Institutional Buying",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -423,6 +404,14 @@
       "coins": []
     },
     {
+      "title": "Fed Rate Hike Sparks Crypto Market Volatility",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
       "title": "38% of altcoins near all-time lows, worse than post-FTX crash: Analyst",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -437,22 +426,33 @@
       "score": 50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
     }
   ],
   "sources": {
-    "The Block": 20,
-    "NewsBTC": 10,
-    "U.Today": 20,
-    "Fed News (Google)": 20,
-    "CoinDesk": 20,
-    "Decrypt": 20,
-    "DL News": 20,
     "Crypto Briefing": 20,
-    "Crypto Regulation (Google)": 20,
-    "CoinTelegraph": 20,
+    "NewsBTC": 10,
+    "DL News": 20,
+    "Google News": 30,
     "Bitcoin ETF (Google)": 20,
-    "X/Twitter (Grok)": 7,
-    "Google News": 30
+    "CoinDesk": 20,
+    "U.Today": 20,
+    "The Block": 20,
+    "CoinTelegraph": 20,
+    "Fed News (Google)": 20,
+    "Crypto Regulation (Google)": 20,
+    "Decrypt": 20,
+    "X/Twitter (Grok)": 8
   },
   "history": [
     {
@@ -1427,10 +1427,17 @@
       "score": 11,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T09:23:36.101969+00:00",
+      "ts": 1772789016,
+      "score": 4,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T08:55:47.055770+00:00",
-    "updated_ts": 1772787347
+    "updated_at": "2026-03-06T09:23:36.102118+00:00",
+    "updated_ts": 1772789016
   }
 }
