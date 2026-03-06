@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 2,
+    "score": 3,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 64,
+    "total_articles": 240,
+    "scored_articles": 62,
     "positive_score": 1700,
-    "negative_score": -1600
+    "negative_score": -1570
   },
   "alpha_events": [
     {
@@ -93,6 +93,19 @@
       ]
     },
     {
+      "title": "Bitcoin Spot ETFs See 14-Day Netflows Surge: Demand Returning?",
+      "source": "NewsBTC",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+spot etf"
+      ]
+    },
+    {
       "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -103,19 +116,6 @@
       ],
       "keywords": [
         "enforcement action"
-      ]
-    },
-    {
-      "title": "Bitcoin ETF Sees Record Inflows Amid Bullish Market Sentiment",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+record inflow"
       ]
     },
     {
@@ -146,16 +146,16 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 67,
-      "score": 300,
+      "score": 340,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 30,
+      "articles": 29,
       "score": -110,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 19,
+      "articles": 18,
       "score": -280,
       "bias": "bearish"
     }
@@ -224,6 +224,16 @@
       ]
     },
     {
+      "title": "Bitcoin Spot ETFs See 14-Day Netflows Surge: Demand Returning?",
+      "source": "NewsBTC",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -231,16 +241,6 @@
       "importance": "high",
       "coins": [
         "SOL"
-      ]
-    },
-    {
-      "title": "Bitcoin ETF Sees Record Inflows Amid Bullish Market Sentiment",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -357,7 +357,15 @@
       "coins": []
     },
     {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - thestreet.com",
+      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Federal Reserve holds interest rates steady after three rate cuts in 2025 - U.S. Bank",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -431,30 +439,21 @@
       "score": -60,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Fed's Interest Rate Cut Speculation Boosts Crypto Prices",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
     }
   ],
   "sources": {
-    "Fed News (Google)": 20,
-    "CoinTelegraph": 20,
     "Google News": 30,
-    "X/Twitter (Grok)": 8,
-    "CoinDesk": 20,
-    "The Block": 20,
-    "Decrypt": 20,
     "Crypto Regulation (Google)": 20,
+    "CoinTelegraph": 20,
+    "U.Today": 20,
+    "Fed News (Google)": 20,
+    "Bitcoin ETF (Google)": 20,
     "NewsBTC": 10,
+    "The Block": 20,
+    "CoinDesk": 20,
     "Crypto Briefing": 20,
     "DL News": 20,
-    "Bitcoin ETF (Google)": 20,
-    "U.Today": 20
+    "Decrypt": 20
   },
   "history": [
     {
@@ -1373,10 +1372,17 @@
       "score": 2,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T06:17:56.402949+00:00",
+      "ts": 1772777876,
+      "score": 3,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T05:57:26.727748+00:00",
-    "updated_ts": 1772776646
+    "updated_at": "2026-03-06T06:17:56.403092+00:00",
+    "updated_ts": 1772777876
   }
 }
