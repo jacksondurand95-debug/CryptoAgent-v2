@@ -517,8 +517,6 @@ def run():
                 exit_price = bid_ask.get("ask") or get_price(trade["pair"])
                 if exit_price:
                     place_limit_order(auth, trade["pair"], "SELL", exit_price, trade["qty"] * exit_price)
-                else:
-                    place_market_order(auth, trade["pair"], "SELL", base_amount=trade["qty"])
             except Exception as e:
                 log.error(f"Exit sell failed for {trade['pair']}: {e}")
 
