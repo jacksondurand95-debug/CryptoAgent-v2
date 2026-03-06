@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 4.2,
+        "age_min": 23.2,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 41.2,
+        "age_min": 60.2,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 16.9,
+        "age_min": 5.7,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 0,
+        "score": 3,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 10.4,
+        "age_min": 2.6,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 69 articles, score=410"
+          "reason": "News sentiment: 70 articles, score=240"
         },
         {
           "bias": "neutral",
@@ -66,13 +66,13 @@
       ]
     },
     "ETH": {
-      "score": -53,
+      "score": -44,
       "bias": "bearish",
       "signals": 2,
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 32 articles, score=-110"
+          "reason": "News sentiment: 30 articles, score=-50"
         },
         {
           "bias": "neutral",
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 19 articles, score=-280"
+          "reason": "News sentiment: 18 articles, score=-280"
         }
       ]
     }
@@ -114,15 +114,6 @@
     },
     {
       "type": "news",
-      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "type": "news",
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "sentiment": "bearish",
       "importance": "critical",
@@ -139,11 +130,20 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "type": "news",
+      "title": "Coinbase CEO Brian Armstrong and execs face shareholder lawsuit over disclosures, compliance failures",
+      "sentiment": "bearish",
+      "importance": "critical",
+      "coins": [
+        "ETH"
+      ]
     }
   ],
-  "timestamp": "2026-03-06T07:10:34.425090+00:00",
+  "timestamp": "2026-03-06T07:29:33.623873+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T07:10:34.425963+00:00",
-    "updated_ts": 1772781034
+    "updated_at": "2026-03-06T07:29:33.624569+00:00",
+    "updated_ts": 1772782173
   }
 }
