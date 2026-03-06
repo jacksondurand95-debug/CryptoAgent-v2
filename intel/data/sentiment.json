@@ -65,7 +65,7 @@
       {
         "name": "Lack Of Memes",
         "symbol": "MEMELESS",
-        "market_cap_rank": 892,
+        "market_cap_rank": 893,
         "score": 0
       },
       {
@@ -83,13 +83,13 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 386,
+        "market_cap_rank": 399,
         "score": 3
       },
       {
         "name": "Lighter",
         "symbol": "LIT",
-        "market_cap_rank": 137,
+        "market_cap_rank": 138,
         "score": 4
       },
       {
@@ -99,15 +99,15 @@
         "score": 5
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 376,
         "score": 6
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 157,
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
         "score": 7
       },
       {
@@ -117,9 +117,9 @@
         "score": 8
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 376,
+        "name": "Aster",
+        "symbol": "ASTER",
+        "market_cap_rank": 46,
         "score": 9
       }
     ],
@@ -1696,10 +1696,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T20:15:52.975790+00:00",
+      "ts": 1772828152,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T20:09:41.943733+00:00",
-    "updated_ts": 1772827781
+    "updated_at": "2026-03-06T20:15:52.975821+00:00",
+    "updated_ts": 1772828152
   }
 }
