@@ -27,17 +27,17 @@ FAST_TIMEFRAME = "ONE_HOUR"
 SCALP_TIMEFRAME = "FIFTEEN_MINUTE"
 
 # Risk params — FULL SEND MODE ($3000 deployed)
-MAX_POSITION_PCT = 0.40        # 40% per trade (~$1200) — SIZE UP
-MAX_OPEN_POSITIONS = 5         # 5 concurrent (up to $6000 notional)
-STOP_LOSS_ATR_MULT = 1.5      # Tight stops — cut losers FAST
-TRAILING_STOP_ATR_MULT = 1.8  # 1.8x ATR trailing — lock gains sooner
-TRAILING_ACTIVATION_R = 0.8   # Activate trailing earlier
-TAKE_PROFIT_ATR_MULT = 6.0    # 6x ATR target — let winners RIP
-MIN_CONFIDENCE = 0.50          # Lower bar — more trades, more action
-MIN_EXPECTED_MOVE_PCT = 2.5    # 2.5% min (was 3%) — more opportunities
-TIME_STOP_HOURS = 72           # 3 days max hold — rotate capital faster
-MIN_HOLD_MINUTES = 20          # 20 min minimum — faster exits
-REENTRY_COOLDOWN_MINUTES = 10  # 10 min cooldown — rapid reentry
+MAX_POSITION_PCT = 0.25        # 25% per trade (~$350) — controlled sizing
+MAX_OPEN_POSITIONS = 3         # 3 concurrent — concentrate on best setups
+STOP_LOSS_ATR_MULT = 2.0      # 2x ATR stops — give trades room to breathe
+TRAILING_STOP_ATR_MULT = 1.8  # 1.8x ATR trailing — lock gains
+TRAILING_ACTIVATION_R = 1.5   # Activate trailing after 1.5x risk achieved
+TAKE_PROFIT_ATR_MULT = 8.0    # 8x ATR target — let winners run far
+MIN_CONFIDENCE = 0.65          # Higher bar — quality over quantity
+MIN_EXPECTED_MOVE_PCT = 4.0    # 4% min — must clear 3x fees to be worth it
+TIME_STOP_HOURS = 48           # 2 days max hold — rotate capital
+MIN_HOLD_MINUTES = 60          # 60 min minimum — stop cutting winners early
+REENTRY_COOLDOWN_MINUTES = 30  # 30 min cooldown — avoid revenge trading
 
 # Fees — Coinbase Advanced Trade (Coinbase One does NOT cover Advanced Trade)
 # Intro 1 tier: 0.60% maker / 1.20% taker
@@ -91,3 +91,30 @@ MOMENTUM_LOOKBACK = 28
 MOMENTUM_THRESHOLD = 0.015
 SHARPE_FILTER_LONG = 1.0
 SQUEEZE_MIN_BARS = 3
+
+# ─── HYPERLIQUID ──────────────────────────────────────────────────
+HYPERLIQUID_ENABLED = True
+HYPERLIQUID_WALLET = {
+    "address": os.environ.get("HL_WALLET_ADDRESS", "0x9FD699534Bd56c378B46eE60d212949F6Ea7A4d6"),
+    "private_key": os.environ.get("HL_PRIVATE_KEY", ""),
+}
+HYPERLIQUID_DEFAULT_LEVERAGE = 3
+HYPERLIQUID_MAX_LEVERAGE = 10
+
+# Hyperliquid trading pairs (perps)
+HL_TRADING_PAIRS = [
+    "BTC", "ETH", "SOL", "DOGE", "AVAX", "LINK",
+    "PEPE", "SUI", "NEAR", "RENDER", "FET",
+    "INJ", "TIA", "SEI", "WIF", "ARB", "OP",
+]
+
+# Hyperliquid fees (way cheaper than Coinbase)
+HL_MAKER_FEE_PCT = 0.00015     # 0.015%
+HL_TAKER_FEE_PCT = 0.00045     # 0.045%
+HL_ROUND_TRIP_MAKER = 0.0003   # 0.03% round trip (limit both sides)
+HL_ROUND_TRIP_TAKER = 0.0006   # 0.06% round trip (limit entry + market exit)
+
+# Hyperliquid risk params (can be more aggressive due to lower fees)
+HL_MAX_POSITION_PCT = 0.30     # 30% per trade
+HL_MIN_EXPECTED_MOVE_PCT = 0.5 # 0.5% min (vs 2.5% on Coinbase) — fees are 40x lower
+HL_MIN_CONFIDENCE = 0.45       # Lower bar — fees don't eat you alive
