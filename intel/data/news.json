@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 16,
+    "score": 21,
     "bias": "bullish",
     "strength": "weak",
     "total_articles": 248,
-    "scored_articles": 66,
-    "positive_score": 2060,
-    "negative_score": -1360
+    "scored_articles": 65,
+    "positive_score": 2160,
+    "negative_score": -1240
   },
   "alpha_events": [
     {
@@ -24,7 +24,19 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
+      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
+      ]
+    },
+    {
+      "title": "Fed Rate Cut Speculations Boost Crypto Market Sentiment",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -130,25 +142,12 @@
         "+ath",
         "+saylor"
       ]
-    },
-    {
-      "title": "Bitcoin Spot ETFs See 14-Day Netflows Surge: Demand Returning?",
-      "source": "NewsBTC",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+spot etf"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 73,
-      "score": 490,
+      "articles": 75,
+      "score": 420,
       "bias": "bullish"
     },
     "ETH": {
@@ -174,7 +173,15 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
+      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "title": "Fed Rate Cut Speculations Boost Crypto Market Sentiment",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -275,24 +282,6 @@
       ]
     },
     {
-      "title": "Bitcoin ETFs See Record Inflows Amid Bullish Market Sentiment",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
@@ -304,14 +293,6 @@
     },
     {
       "title": "\u2018Dead\u2019 South Korean crypto fraudster resurfaces and pays back victims",
-      "source": "DL News",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Cop gets six-year prison sentence for taking $90,000 in crypto-linked bribes",
       "source": "DL News",
       "sentiment": "bearish",
       "score": -60,
@@ -449,22 +430,41 @@
         "BTC",
         "ETH"
       ]
+    },
+    {
+      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
+      "source": "DL News",
+      "sentiment": "bullish",
+      "score": 50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "The Block": 20,
-    "NewsBTC": 10,
-    "Crypto Briefing": 20,
-    "Crypto Regulation (Google)": 20,
-    "Google News": 30,
     "CoinTelegraph": 20,
-    "X/Twitter (Grok)": 8,
-    "Fed News (Google)": 20,
+    "Decrypt": 20,
     "DL News": 20,
+    "X/Twitter (Grok)": 8,
+    "CoinDesk": 20,
+    "Crypto Briefing": 20,
+    "Google News": 30,
+    "Crypto Regulation (Google)": 20,
     "U.Today": 20,
+    "NewsBTC": 10,
+    "The Block": 20,
     "Bitcoin ETF (Google)": 20,
-    "CoinDesk": 20
+    "Fed News (Google)": 20
   },
   "history": [
     {
@@ -1509,10 +1509,17 @@
       "score": 16,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T13:33:22.283522+00:00",
+      "ts": 1772804002,
+      "score": 21,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T13:01:16.167081+00:00",
-    "updated_ts": 1772802076
+    "updated_at": "2026-03-06T13:33:22.283688+00:00",
+    "updated_ts": 1772804002
   }
 }
