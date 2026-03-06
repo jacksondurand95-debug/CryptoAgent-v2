@@ -9,7 +9,7 @@ Based on:
 6. Liquidation Cascade Reversal: buy capitulation events
 7. Time-Series Momentum: 28-period lookback, multi-day holds
 
-ALL strategies target 2%+ moves to clear 0.80% round-trip fees.
+ALL strategies target 3%+ moves to clear 1.20% round-trip fees (Intro 1 tier).
 """
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed

@@ -22,18 +22,18 @@ TREND_TIMEFRAME = "ONE_DAY"
 FAST_TIMEFRAME = "ONE_HOUR"
 SCALP_TIMEFRAME = "FIFTEEN_MINUTE"
 
-# Risk params — disciplined
-MAX_POSITION_PCT = 0.25        # 25% per trade
-MAX_OPEN_POSITIONS = 3         # 3 concurrent
-STOP_LOSS_ATR_MULT = 2.0      # 2x ATR stops
+# Risk params — BULL RUSH MODE ($3000 deployed)
+MAX_POSITION_PCT = 0.30        # 30% per trade (~$900)
+MAX_OPEN_POSITIONS = 4         # 4 concurrent (up to $3600 deployed)
+STOP_LOSS_ATR_MULT = 1.8      # Tighter stops — cut losers fast
 TRAILING_STOP_ATR_MULT = 2.0  # 2x ATR trailing
-TRAILING_ACTIVATION_R = 0.8   # Activate trail at 0.8R
-TAKE_PROFIT_ATR_MULT = 4.0    # 4x ATR target
-MIN_CONFIDENCE = 0.60          # Higher bar = fewer, better trades
-MIN_EXPECTED_MOVE_PCT = 4.0    # Must clear 1.8% round-trip fees with margin
-TIME_STOP_HOURS = 72           # 3 days max hold
-MIN_HOLD_MINUTES = 60          # 1 hour minimum
-REENTRY_COOLDOWN_MINUTES = 30  # 30 min cooldown
+TRAILING_ACTIVATION_R = 1.0   # Let winners RUN before trailing kicks in
+TAKE_PROFIT_ATR_MULT = 5.0    # 5x ATR target — bigger swings to clear fees
+MIN_CONFIDENCE = 0.55          # More aggressive entry threshold
+MIN_EXPECTED_MOVE_PCT = 3.0    # Must clear 1.2-1.8% round-trip fees
+TIME_STOP_HOURS = 96           # 4 days max hold — give trades room
+MIN_HOLD_MINUTES = 30          # 30 min minimum (was 60)
+REENTRY_COOLDOWN_MINUTES = 15  # 15 min cooldown (was 30)
 
 # Fees — Coinbase Advanced Trade
 # IMPORTANT: These are FALLBACK rates if auto-detection fails.
@@ -68,8 +68,8 @@ TV_ENABLED = True
 # News
 CRYPTOPANIC_API_KEY = os.environ.get("CRYPTOPANIC_API_KEY", "")
 
-# Analysis interval
-ANALYSIS_INTERVAL_SEC = 600
+# Analysis interval — 5 min for faster signal capture
+ANALYSIS_INTERVAL_SEC = 300
 
 # Multi-exchange data
 BYBIT_API_BASE = "https://api.bybit.com"
