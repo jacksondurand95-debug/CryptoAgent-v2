@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 14,
+    "score": 15,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 6.6,
+        "age_min": 5.8,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 1.1,
+        "age_min": 0.1,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 5,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 45.8,
+        "age_min": 72.5,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 17.4,
+        "age_min": 8.1,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 16,
+        "score": 21,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 10.6,
+        "age_min": 5.3,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 73 articles, score=490"
+          "reason": "News sentiment: 75 articles, score=420"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (4 large txs)"
+          "reason": "BTC whale activity normal (18 large txs)"
         }
       ]
     },
@@ -100,7 +100,14 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
+      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "type": "news",
+      "title": "Fed Rate Cut Speculations Boost Crypto Market Sentiment",
       "sentiment": "bullish",
       "importance": "critical",
       "coins": []
@@ -124,21 +131,11 @@
         "BTC",
         "SOL"
       ]
-    },
-    {
-      "type": "news",
-      "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
     }
   ],
-  "timestamp": "2026-03-06T13:11:53.678893+00:00",
+  "timestamp": "2026-03-06T13:38:38.005966+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T13:11:53.679573+00:00",
-    "updated_ts": 1772802713
+    "updated_at": "2026-03-06T13:38:38.006675+00:00",
+    "updated_ts": 1772804318
   }
 }
