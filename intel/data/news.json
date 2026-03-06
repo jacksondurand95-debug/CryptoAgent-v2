@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 3,
+    "score": 0,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 240,
-    "scored_articles": 62,
-    "positive_score": 1700,
-    "negative_score": -1570
+    "total_articles": 247,
+    "scored_articles": 63,
+    "positive_score": 1670,
+    "negative_score": -1670
   },
   "alpha_events": [
     {
@@ -39,17 +39,15 @@
       ]
     },
     {
-      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 100,
+      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -100,
       "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
+      "coins": [],
       "keywords": [
-        "+ath",
-        "+etf inflow"
+        "rate hike",
+        "liquidation"
       ]
     },
     {
@@ -119,6 +117,19 @@
       ]
     },
     {
+      "title": "Record Inflows into Bitcoin ETFs Boost Market Optimism",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+record inflow"
+      ]
+    },
+    {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -128,34 +139,21 @@
       "keywords": [
         "hack"
       ]
-    },
-    {
-      "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "SOL"
-      ],
-      "keywords": [
-        "+etf inflow"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 67,
-      "score": 340,
+      "articles": 68,
+      "score": 310,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 29,
+      "articles": 30,
       "score": -110,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 18,
+      "articles": 19,
       "score": -280,
       "bias": "bearish"
     }
@@ -183,14 +181,12 @@
       ]
     },
     {
-      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 100,
+      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -100,
       "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
+      "coins": []
     },
     {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
@@ -241,6 +237,16 @@
       "importance": "high",
       "coins": [
         "SOL"
+      ]
+    },
+    {
+      "title": "Record Inflows into Bitcoin ETFs Boost Market Optimism",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -431,29 +437,22 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "SEC Dismisses Fraud Case Against Crypto Billionaire Justin Sun - WSJ",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
     }
   ],
   "sources": {
-    "Google News": 30,
-    "Crypto Regulation (Google)": 20,
-    "CoinTelegraph": 20,
-    "U.Today": 20,
-    "Fed News (Google)": 20,
-    "Bitcoin ETF (Google)": 20,
-    "NewsBTC": 10,
-    "The Block": 20,
-    "CoinDesk": 20,
+    "Decrypt": 20,
     "Crypto Briefing": 20,
     "DL News": 20,
-    "Decrypt": 20
+    "The Block": 20,
+    "CoinTelegraph": 20,
+    "NewsBTC": 10,
+    "Fed News (Google)": 20,
+    "CoinDesk": 20,
+    "Bitcoin ETF (Google)": 20,
+    "U.Today": 20,
+    "Google News": 30,
+    "X/Twitter (Grok)": 7,
+    "Crypto Regulation (Google)": 20
   },
   "history": [
     {
@@ -1379,10 +1378,17 @@
       "score": 3,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T06:28:07.834010+00:00",
+      "ts": 1772778487,
+      "score": 0,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T06:17:56.403092+00:00",
-    "updated_ts": 1772777876
+    "updated_at": "2026-03-06T06:28:07.834159+00:00",
+    "updated_ts": 1772778487
   }
 }
