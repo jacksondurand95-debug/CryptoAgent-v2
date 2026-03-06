@@ -1,7 +1,7 @@
 {
   "aggregate": {
-    "score": 18,
-    "bias": "neutral",
+    "score": 28,
+    "bias": "bullish",
     "strength": "weak",
     "confidence": 0.8,
     "available_sources": 4,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 16.1,
+        "age_min": 15.4,
         "effective_weight": 0.9
       },
       "whales": {
         "status": "fresh",
-        "score": 0,
-        "bias": "neutral",
+        "score": 31,
+        "bias": "bullish",
         "strength": "weak",
-        "age_min": 17.9,
+        "age_min": 9.8,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 54.5,
+        "age_min": 73.0,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,43 +36,43 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 26.6,
+        "age_min": 18.2,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 22,
+        "score": 23,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 21.8,
+        "age_min": 15.1,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 36,
+      "score": 46,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 84 articles, score=690"
+          "reason": "News sentiment: 84 articles, score=700"
         },
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (21 large txs)"
+          "bias": "bullish",
+          "reason": "BTC whale distribution (6 txs) \u2014 accumulation"
         }
       ]
     },
     "ETH": {
-      "score": -53,
-      "bias": "bearish",
+      "score": 0,
+      "bias": "neutral",
       "signals": 2,
       "details": [
         {
-          "bias": "bearish",
-          "reason": "News sentiment: 31 articles, score=-80"
+          "bias": "neutral",
+          "reason": "News sentiment: 31 articles, score=20"
         },
         {
           "bias": "neutral",
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 10 articles, score=-110"
+          "reason": "News sentiment: 12 articles, score=-70"
         }
       ]
     }
@@ -127,15 +127,18 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Cut Expectations Boost Altcoin Momentum",
-      "sentiment": "bullish",
+      "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
+      "sentiment": "bearish",
       "importance": "critical",
-      "coins": []
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
     }
   ],
-  "timestamp": "2026-03-06T17:19:32.252668+00:00",
+  "timestamp": "2026-03-06T17:38:05.696436+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T17:19:32.253591+00:00",
-    "updated_ts": 1772817572
+    "updated_at": "2026-03-06T17:38:05.697325+00:00",
+    "updated_ts": 1772818685
   }
 }
