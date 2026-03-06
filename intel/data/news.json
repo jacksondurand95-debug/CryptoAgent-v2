@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 19,
+    "score": 20,
     "bias": "bullish",
     "strength": "weak",
-    "total_articles": 247,
-    "scored_articles": 65,
-    "positive_score": 2180,
-    "negative_score": -1340
+    "total_articles": 240,
+    "scored_articles": 60,
+    "positive_score": 2040,
+    "negative_score": -1200
   },
   "alpha_events": [
     {
@@ -62,18 +62,6 @@
       "keywords": [
         "hack",
         "exploit"
-      ]
-    },
-    {
-      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -100,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "rate hike",
-        "liquidation"
       ]
     },
     {
@@ -142,21 +130,35 @@
       "keywords": [
         "bankruptcy"
       ]
+    },
+    {
+      "title": "Samson Mow Objects to Michael Saylor's Bitcoin Insufficiency Post",
+      "source": "U.Today",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+ath",
+        "+saylor"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 78,
-      "score": 620,
+      "articles": 75,
+      "score": 560,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 35,
-      "score": -10,
-      "bias": "neutral"
+      "articles": 33,
+      "score": -40,
+      "bias": "bearish"
     },
     "SOL": {
-      "articles": 15,
+      "articles": 14,
       "score": -200,
       "bias": "bearish"
     }
@@ -200,14 +202,6 @@
         "BTC",
         "SOL"
       ]
-    },
-    {
-      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -100,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
@@ -292,16 +286,6 @@
       ]
     },
     {
-      "title": "Bitcoin ETFs See Record Inflows Boosting Market Confidence",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
@@ -348,14 +332,6 @@
     },
     {
       "title": "Fed's Williams says rate cuts still possible, does not address Iran war - Reuters",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -450,22 +426,50 @@
         "BTC",
         "ETH"
       ]
+    },
+    {
+      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
+      "source": "DL News",
+      "sentiment": "bullish",
+      "score": 50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "DL News": 20,
-    "Crypto Briefing": 20,
     "Google News": 30,
-    "X/Twitter (Grok)": 7,
-    "CoinTelegraph": 20,
+    "NewsBTC": 10,
     "CoinDesk": 20,
     "Bitcoin ETF (Google)": 20,
     "The Block": 20,
+    "CoinTelegraph": 20,
+    "DL News": 20,
+    "Crypto Briefing": 20,
     "Crypto Regulation (Google)": 20,
-    "NewsBTC": 10,
-    "U.Today": 20,
-    "Fed News (Google)": 20
+    "Decrypt": 20,
+    "Fed News (Google)": 20,
+    "U.Today": 20
   },
   "history": [
     {
@@ -1524,10 +1528,17 @@
       "score": 19,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T14:15:49.356084+00:00",
+      "ts": 1772806549,
+      "score": 20,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T13:59:35.349846+00:00",
-    "updated_ts": 1772805575
+    "updated_at": "2026-03-06T14:15:49.356237+00:00",
+    "updated_ts": 1772806549
   }
 }
