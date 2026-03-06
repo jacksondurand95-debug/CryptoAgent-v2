@@ -65,7 +65,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 549,
+        "market_cap_rank": 547,
         "score": 0
       },
       {
@@ -75,21 +75,21 @@
         "score": 1
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
-        "score": 2
-      },
-      {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 107,
+        "score": 2
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
         "score": 3
       },
       {
         "name": "Opinion",
         "symbol": "OPN",
-        "market_cap_rank": 340,
+        "market_cap_rank": 338,
         "score": 4
       },
       {
@@ -99,15 +99,15 @@
         "score": 5
       },
       {
-        "name": "Lombard",
-        "symbol": "BARD",
-        "market_cap_rank": 119,
-        "score": 6
-      },
-      {
         "name": "OKB",
         "symbol": "OKB",
         "market_cap_rank": 41,
+        "score": 6
+      },
+      {
+        "name": "Lombard",
+        "symbol": "BARD",
+        "market_cap_rank": 120,
         "score": 7
       },
       {
@@ -117,15 +117,16 @@
         "score": 8
       },
       {
-        "name": "MANTRA",
-        "symbol": "MANTRA",
-        "market_cap_rank": 285,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH"
+      "ETH",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -1403,10 +1404,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T03:07:44.248262+00:00",
+      "ts": 1772766464,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T03:00:07.433899+00:00",
-    "updated_ts": 1772766007
+    "updated_at": "2026-03-06T03:07:44.248293+00:00",
+    "updated_ts": 1772766464
   }
 }
