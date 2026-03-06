@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 18,
+    "score": 14,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.8,
-    "available_sources": 4,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 16.7,
-        "effective_weight": 0.9
+        "age_min": 9.8,
+        "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 20.2,
+        "age_min": 4.0,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 23.8,
+        "age_min": 36.7,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 33.7,
+        "age_min": 12.5,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": 15,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 29.0,
+        "age_min": 9.5,
         "effective_weight": 1.0
       }
     }
@@ -109,7 +109,7 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Cut Rumors Spark Crypto Market Volatility",
+      "title": "Fed Rate Cut Speculation Boosts Crypto Market Sentiment",
       "sentiment": "bullish",
       "importance": "critical",
       "coins": []
@@ -136,9 +136,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-06T22:47:27.701120+00:00",
+  "timestamp": "2026-03-06T23:00:18.295902+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T22:47:27.702030+00:00",
-    "updated_ts": 1772837247
+    "updated_at": "2026-03-06T23:00:18.296639+00:00",
+    "updated_ts": 1772838018
   }
 }
