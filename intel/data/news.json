@@ -3,10 +3,10 @@
     "score": 26,
     "bias": "bullish",
     "strength": "moderate",
-    "total_articles": 248,
-    "scored_articles": 59,
-    "positive_score": 2230,
-    "negative_score": -1040
+    "total_articles": 240,
+    "scored_articles": 55,
+    "positive_score": 2030,
+    "negative_score": -970
   },
   "alpha_events": [
     {
@@ -52,18 +52,6 @@
     {
       "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
       "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
-      ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Spark Crypto Rally Across Altcoins",
-      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
@@ -139,21 +127,34 @@
       "keywords": [
         "+spot etf"
       ]
+    },
+    {
+      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ],
+      "keywords": [
+        "enforcement action"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 84,
-      "score": 830,
+      "articles": 83,
+      "score": 760,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 28,
+      "articles": 27,
       "score": -60,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 11,
+      "articles": 10,
       "score": 50,
       "bias": "bullish"
     }
@@ -190,14 +191,6 @@
     {
       "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
       "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "title": "Fed Rate Cut Rumors Spark Crypto Rally Across Altcoins",
-      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
@@ -279,16 +272,6 @@
       "score": 70,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Bitcoin ETFs Hit Record Inflows Amid Bullish Market Sentiment",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
     },
     {
       "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
@@ -440,21 +423,40 @@
         "BTC",
         "ETH"
       ]
+    },
+    {
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
     "Bitcoin ETF (Google)": 20,
-    "X/Twitter (Grok)": 8,
-    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "U.Today": 20,
     "DL News": 20,
     "Crypto Briefing": 20,
-    "Fed News (Google)": 20,
+    "The Block": 20,
     "Crypto Regulation (Google)": 20,
     "Google News": 30,
-    "The Block": 20,
+    "Fed News (Google)": 20,
+    "U.Today": 20,
+    "Decrypt": 20,
+    "CoinDesk": 20,
     "NewsBTC": 10
   },
   "history": [
@@ -1584,10 +1586,17 @@
       "score": 26,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T18:15:00.193302+00:00",
+      "ts": 1772820900,
+      "score": 26,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T17:53:51.345769+00:00",
-    "updated_ts": 1772819631
+    "updated_at": "2026-03-06T18:15:00.193459+00:00",
+    "updated_ts": 1772820900
   }
 }

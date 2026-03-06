@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 11.2,
+        "age_min": 1.4,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 31,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 27.0,
+        "age_min": 0.7,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 90.2,
+        "age_min": 0.6,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 5.3,
+        "age_min": 0.9,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": 26,
         "bias": "bullish",
         "strength": "moderate",
-        "age_min": 1.5,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 84 articles, score=830"
+          "reason": "News sentiment: 83 articles, score=760"
         },
         {
           "bias": "bullish",
-          "reason": "BTC whale distribution (6 txs) \u2014 accumulation"
+          "reason": "BTC whale distribution (8 txs) \u2014 accumulation"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 28 articles, score=-60"
+          "reason": "News sentiment: 27 articles, score=-60"
         },
         {
           "bias": "neutral",
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 11 articles, score=50"
+          "reason": "News sentiment: 10 articles, score=50"
         }
       ]
     }
@@ -127,15 +127,18 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Cut Rumors Spark Crypto Rally Across Altcoins",
+      "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
       "sentiment": "bullish",
       "importance": "critical",
-      "coins": []
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
     }
   ],
-  "timestamp": "2026-03-06T17:55:18.602172+00:00",
+  "timestamp": "2026-03-06T18:15:00.345724+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T17:55:18.602964+00:00",
-    "updated_ts": 1772819718
+    "updated_at": "2026-03-06T18:15:00.346457+00:00",
+    "updated_ts": 1772820900
   }
 }
