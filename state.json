@@ -1,23 +1,5 @@
 {
-  "positions": [
-    {
-      "pair": "BTC-USD",
-      "side": "long",
-      "entry_price": 71403.36,
-      "qty": 0.014451017511577634,
-      "usd_amount": 1031.851205745482,
-      "stop_loss": 68007.86,
-      "take_profit": 80334.36,
-      "initial_stop": 68007.86,
-      "initial_risk": 3395.5,
-      "atr": 1812.72,
-      "highest_price": 71403.36,
-      "lowest_price": 68726.42,
-      "trailing_active": false,
-      "opened_at": 1772767216.105778,
-      "opened_at_str": "2026-03-06 03:20 UTC"
-    }
-  ],
+  "positions": [],
   "trades": [
     {
       "pair": "BTC-USD",
@@ -109,13 +91,37 @@
       "closed_at": 1772732628.5295858,
       "closed_at_str": "2026-03-05 17:43 UTC",
       "duration_min": 928.5
+    },
+    {
+      "pair": "BTC-USD",
+      "side": "long",
+      "entry_price": 71403.36,
+      "exit_price": 68448.38,
+      "qty": 0.014451017511577634,
+      "usd_amount": 1031.851205745482,
+      "pnl_pct": -4.14,
+      "pnl_usd": -50.96,
+      "fees_usd": 8.25,
+      "fee_rate": 0.008,
+      "reason": "claude:Original long thesis invalidated by 1D bearish trend (RSI=46.75, trend=bearish) and unrealized loss at -4.1% exceeding 3% threshold with declining momentum (mom28=0.0426 weakening) and no recovery catalyst in extreme fear environment (F&G=18)",
+      "trailing_was_active": false,
+      "highest_price_seen": 71403.36,
+      "opened_at": 1772767216.105778,
+      "closed_at": 1772809263.2768288,
+      "closed_at_str": "2026-03-06 15:01 UTC",
+      "duration_min": 700.8
     }
   ],
   "pending_orders": [],
   "starting_value": 1408.09,
   "peak_value": null,
-  "last_updated": 1772808095.6072035,
-  "daily_losses": [],
+  "last_updated": 1772809263.2769125,
+  "daily_losses": [
+    {
+      "usd": -50.95727737232548,
+      "time": 1772809263.2768366
+    }
+  ],
   "detected_fees": {
     "maker": 0.004,
     "taker": 0.008
