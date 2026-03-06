@@ -8,15 +8,15 @@
   "okx": {
     "BTC": {
       "funding": {
-        "current_pct": 0.0067,
+        "current_pct": 0.0065,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 3094449.6200000187,
-        "usd": 2193098334.6864133,
-        "usd_m": 2193.1
+        "contracts": 3095529.320000018,
+        "usd": 2193677807.911213,
+        "usd_m": 2193.7
       },
       "funding_history": [
         0.0068,
@@ -33,24 +33,24 @@
       "neg_funding_streak": 0,
       "pos_funding_streak": 6,
       "taker_30m": {
-        "buy_vol": 98219751.0,
-        "sell_vol": 88662398.0,
-        "ratio": 1.108,
-        "aggressive_buyers": false,
+        "buy_vol": 73219673.0,
+        "sell_vol": 60770942.0,
+        "ratio": 1.205,
+        "aggressive_buyers": true,
         "aggressive_sellers": false
       }
     },
     "ETH": {
       "funding": {
-        "current_pct": 0.0059,
+        "current_pct": 0.0056,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 6965302.270000004,
-        "usd": 1447501256.542321,
-        "usd_m": 1447.5
+        "contracts": 6959440.070000007,
+        "usd": 1446039417.1846714,
+        "usd_m": 1446.0
       },
       "funding_history": [
         0.0063,
@@ -67,24 +67,24 @@
       "neg_funding_streak": 0,
       "pos_funding_streak": 6,
       "taker_30m": {
-        "buy_vol": 71022506.0,
-        "sell_vol": 59277878.0,
-        "ratio": 1.198,
+        "buy_vol": 56917620.0,
+        "sell_vol": 42017076.0,
+        "ratio": 1.355,
         "aggressive_buyers": true,
         "aggressive_sellers": false
       }
     },
     "SOL": {
       "funding": {
-        "current_pct": -0.0104,
+        "current_pct": -0.0107,
         "next_pct": 0.0,
         "extreme_negative": true,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 2604675.4600000004,
-        "usd": 230018889.87260005,
-        "usd_m": 230.0
+        "contracts": 2605502.190000001,
+        "usd": 230091898.39890006,
+        "usd_m": 230.1
       },
       "funding_history": [
         -0.0101,
@@ -101,18 +101,18 @@
       "neg_funding_streak": 1,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 5933990.0,
-        "sell_vol": 7256077.0,
-        "ratio": 0.818,
+        "buy_vol": 6001034.0,
+        "sell_vol": 5749526.0,
+        "ratio": 1.044,
         "aggressive_buyers": false,
-        "aggressive_sellers": true
+        "aggressive_sellers": false
       }
     }
   },
   "bybit": {},
   "liquidation_levels": {
     "BTC": {
-      "price": 70899.9,
+      "price": 70874.6,
       "high_24h": 73526.0,
       "low_24h": 70111.0,
       "long_liquidations": {
@@ -134,7 +134,7 @@
       "magnet_distance_pct": 100
     },
     "ETH": {
-      "price": 2078.62,
+      "price": 2078.04,
       "high_24h": 2163.49,
       "low_24h": 2053.0,
       "long_liquidations": {
@@ -156,7 +156,7 @@
       "magnet_distance_pct": 100
     },
     "SOL": {
-      "price": 88.33,
+      "price": 88.32,
       "high_24h": 92.9,
       "low_24h": 87.44,
       "long_liquidations": {
@@ -185,9 +185,11 @@
       "risk_factors": []
     },
     "ETH": {
-      "risk_score": 0,
+      "risk_score": 15,
       "risk_level": "low",
-      "risk_factors": []
+      "risk_factors": [
+        "Taker ratio=1.35 (imbalanced)"
+      ]
     },
     "SOL": {
       "risk_score": 0,
@@ -4859,10 +4861,21 @@
         "ETH": 0,
         "SOL": 0
       }
+    },
+    {
+      "timestamp": "2026-03-06T08:18:55.794893+00:00",
+      "ts": 1772785135,
+      "score": 0,
+      "bias": "neutral",
+      "cascade_risks": {
+        "BTC": 0,
+        "ETH": 15,
+        "SOL": 0
+      }
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T08:10:42.570667+00:00",
-    "updated_ts": 1772784642
+    "updated_at": "2026-03-06T08:18:55.794927+00:00",
+    "updated_ts": 1772785135
   }
 }
