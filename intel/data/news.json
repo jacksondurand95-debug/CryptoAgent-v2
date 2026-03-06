@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 21,
-    "bias": "bullish",
+    "score": 15,
+    "bias": "neutral",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 58,
-    "positive_score": 1940,
-    "negative_score": -1090
+    "total_articles": 247,
+    "scored_articles": 62,
+    "positive_score": 1980,
+    "negative_score": -1350
   },
   "alpha_events": [
     {
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Speculation Boosts Crypto Market Sentiment",
+      "title": "Fed Rate Cut Expectations Boost Crypto Sentiment",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -107,6 +107,28 @@
       ]
     },
     {
+      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
+      "source": "Crypto Regulation (Google)",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "sec lawsuit"
+      ]
+    },
+    {
+      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "sec lawsuit"
+      ]
+    },
+    {
       "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -116,45 +138,21 @@
       "keywords": [
         "collapse"
       ]
-    },
-    {
-      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -70,
-      "importance": "high",
-      "coins": [
-        "SOL"
-      ],
-      "keywords": [
-        "enforcement action"
-      ]
-    },
-    {
-      "title": "BitGo CEO on its $2 billion IPO, OCC national bank charter and Morgan Stanley competition",
-      "source": "The Block",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "+institutional adoption"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 83,
-      "score": 700,
+      "articles": 82,
+      "score": 740,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 30,
-      "score": 20,
-      "bias": "neutral"
+      "articles": 29,
+      "score": 50,
+      "bias": "bullish"
     },
     "SOL": {
-      "articles": 12,
+      "articles": 10,
       "score": 130,
       "bias": "bullish"
     }
@@ -181,7 +179,7 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Speculation Boosts Crypto Market Sentiment",
+      "title": "Fed Rate Cut Expectations Boost Crypto Sentiment",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
@@ -232,6 +230,22 @@
       ]
     },
     {
+      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
+      "source": "Crypto Regulation (Google)",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": []
+    },
+    {
       "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -266,7 +280,7 @@
       "coins": []
     },
     {
-      "title": "Bitcoin ETFs See Record Inflows Amid Institutional Buying",
+      "title": "Record Inflows into Bitcoin ETFs Drive Market Surge",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -274,6 +288,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Ex-CFO sentenced to two years after diverting $35M to crypto venture",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
     },
     {
       "title": "Bitcoin recovery meets DeFi tensions as Aave rift deepens: Finance Redefined",
@@ -378,6 +400,16 @@
       "coins": []
     },
     {
+      "title": "Whale Accumulation of Ethereum Sparks Price Rally",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -403,59 +435,22 @@
       "score": 50,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Florida becomes first US state to pass stablecoin framework",
-      "source": "Crypto Briefing",
-      "sentiment": "bullish",
-      "score": 50,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "XRP Whales Add Over 4.18 Billion XRP Since October Price Flash Crash",
-      "source": "U.Today",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "BTC back at $68K, XRP down 5%: why is crypto market crashing - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "NewsBTC": 10,
-    "DL News": 20,
-    "The Block": 20,
-    "X/Twitter (Grok)": 8,
-    "Decrypt": 20,
-    "U.Today": 20,
-    "Crypto Briefing": 20,
     "Google News": 30,
+    "DL News": 20,
     "Fed News (Google)": 20,
+    "The Block": 20,
+    "Bitcoin ETF (Google)": 20,
+    "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Crypto Regulation (Google)": 20,
-    "Bitcoin ETF (Google)": 20
+    "U.Today": 20,
+    "NewsBTC": 10,
+    "Crypto Briefing": 20,
+    "X/Twitter (Grok)": 7,
+    "Decrypt": 20,
+    "Crypto Regulation (Google)": 20
   },
   "history": [
     {
@@ -1647,10 +1642,17 @@
       "score": 21,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T21:49:05.373456+00:00",
+      "ts": 1772833745,
+      "score": 15,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T21:18:39.701807+00:00",
-    "updated_ts": 1772831919
+    "updated_at": "2026-03-06T21:49:05.373604+00:00",
+    "updated_ts": 1772833745
   }
 }
