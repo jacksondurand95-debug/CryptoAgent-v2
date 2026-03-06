@@ -55,14 +55,19 @@ log = logging.getLogger("agent")
 # ─── COINBASE AUTH ────────────────────────────────────────────────
 
 class CoinbaseAuth:
-    """EdDSA JWT auth for Coinbase Advanced Trade API."""
+    """JWT auth for Coinbase Advanced Trade API. Auto-detects EdDSA vs ES256."""
 
     def __init__(self):
         key_data = json.loads(config.COINBASE_KEY_FILE.read_text())
         self.key_id = key_data.get("name") or key_data.get("id", "")
         raw_pk = key_data.get("privateKey", "")
 
-        if raw_pk and "BEGIN" not in raw_pk:
+        if raw_pk and "BEGIN EC" in raw_pk:
+            # EC key (ES256) — Legacy or new Coinbase keys with Coinbase One
+            self.pem = raw_pk.encode()
+            self.algorithm = "ES256"
+        elif raw_pk and "BEGIN" not in raw_pk:
+            # Raw base64 Ed25519 key from CDP portal
             raw_bytes = base64.b64decode(raw_pk)
             ed_key = Ed25519PrivateKey.from_private_bytes(raw_bytes[:32])
             self.pem = ed_key.private_bytes(
@@ -70,8 +75,10 @@ class CoinbaseAuth:
                 format=serialization.PrivateFormat.PKCS8,
                 encryption_algorithm=serialization.NoEncryption(),
             )
+            self.algorithm = "EdDSA"
         else:
             self.pem = raw_pk.encode()
+            self.algorithm = "EdDSA"
 
     def build_jwt(self, method, path):
         uri = f"{method} api.coinbase.com{path}"
@@ -83,7 +90,7 @@ class CoinbaseAuth:
             "uri": uri,
         }
         return pyjwt.encode(
-            jwt_data, self.pem, algorithm="EdDSA",
+            jwt_data, self.pem, algorithm=self.algorithm,
             headers={"kid": self.key_id, "nonce": secrets.token_hex()},
         )
 
@@ -505,7 +512,13 @@ def run():
         )
         if trade["side"] == "long":
             try:
-                place_market_order(auth, trade["pair"], "SELL", base_amount=trade["qty"])
+                # Use limit order at ask price for exits too — 0.60% vs 1.20% market
+                bid_ask = get_best_bid_ask(auth, trade["pair"])
+                exit_price = bid_ask.get("ask") or get_price(trade["pair"])
+                if exit_price:
+                    place_limit_order(auth, trade["pair"], "SELL", exit_price, trade["qty"] * exit_price)
+                else:
+                    place_market_order(auth, trade["pair"], "SELL", base_amount=trade["qty"])
             except Exception as e:
                 log.error(f"Exit sell failed for {trade['pair']}: {e}")
 
@@ -658,9 +671,12 @@ def run():
                 if exit_price:
                     for pos in state["positions"]:
                         if pos["pair"] == pair:
-                            place_market_order(auth, pair, "SELL", base_amount=pos["qty"])
+                            # Limit order exit — half the fees vs market
+                            bid_ask = get_best_bid_ask(auth, pair)
+                            limit_exit = bid_ask.get("ask") or exit_price
+                            place_limit_order(auth, pair, "SELL", limit_exit, pos["qty"] * limit_exit)
                             state, trade = close_position(
-                                state, pair, exit_price, reason=f"claude:{review.get('reason', 'review')}", is_market_exit=True
+                                state, pair, exit_price, reason=f"claude:{review.get('reason', 'review')}", is_market_exit=False
                             )
                             if trade:
                                 actions_taken.append(

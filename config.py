@@ -35,15 +35,13 @@ TIME_STOP_HOURS = 96           # 4 days max hold — give trades room
 MIN_HOLD_MINUTES = 30          # 30 min minimum (was 60)
 REENTRY_COOLDOWN_MINUTES = 15  # 15 min cooldown (was 30)
 
-# Fees — Coinbase Advanced Trade
-# IMPORTANT: These are FALLBACK rates if auto-detection fails.
-# Actual rates come from /api/v3/brokerage/transaction_summary at runtime.
-# Coinbase One (if active) = 0% maker / 0% taker
-# Intro 1 (detected 2026-03-05) = 0.60% maker / 1.20% taker
-MAKER_FEE_PCT = 0.006          # 0.60% Intro 1 maker (fallback)
-TAKER_FEE_PCT = 0.012          # 1.20% Intro 1 taker (fallback)
-ROUND_TRIP_FEE_PCT = 0.012     # 1.20% round trip (maker both sides)
-ROUND_TRIP_FEE_TAKER_PCT = 0.018   # 1.80% if exit is market order
+# Fees — Coinbase Advanced Trade (Coinbase One does NOT cover Advanced Trade)
+# Intro 1 tier: 0.60% maker / 1.20% taker
+# STRATEGY: ALL orders are post_only limit = 0.60% guaranteed. NEVER market orders.
+MAKER_FEE_PCT = 0.006          # 0.60% — the ONLY fee we should ever pay
+TAKER_FEE_PCT = 0.012          # 1.20% — AVOID: never use market orders
+ROUND_TRIP_FEE_PCT = 0.012     # 1.20% round trip (limit both sides)
+ROUND_TRIP_FEE_TAKER_PCT = 0.012   # Same — we don't use market exits anymore
 FEE_AUTO_DETECT = True         # Override with detected rates from API
 
 # Safety — ENFORCED
