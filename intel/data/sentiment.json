@@ -63,33 +63,33 @@
   "trending": {
     "trending": [
       {
-        "name": "WAR",
-        "symbol": "WAR",
-        "market_cap_rank": 427,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 0
+      },
+      {
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 416,
         "score": 1
       },
       {
         "name": "Sign",
         "symbol": "SIGN",
-        "market_cap_rank": 307,
+        "market_cap_rank": 308,
         "score": 2
-      },
-      {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 368,
-        "score": 3
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 108,
+        "score": 3
+      },
+      {
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 368,
         "score": 4
       },
       {
@@ -99,27 +99,27 @@
         "score": 5
       },
       {
+        "name": "Lighter",
+        "symbol": "LIT",
+        "market_cap_rank": 139,
+        "score": 6
+      },
+      {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
-        "score": 6
+        "score": 7
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 616,
-        "score": 7
-      },
-      {
-        "name": "Lighter",
-        "symbol": "LIT",
-        "market_cap_rank": 139,
+        "market_cap_rank": 613,
         "score": 8
       },
       {
-        "name": "OKB",
-        "symbol": "OKB",
-        "market_cap_rank": 42,
+        "name": "Spark",
+        "symbol": "SPK",
+        "market_cap_rank": 465,
         "score": 9
       }
     ],
@@ -1591,10 +1591,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T14:21:05.006497+00:00",
+      "ts": 1772806865,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T14:14:57.773769+00:00",
-    "updated_ts": 1772806497
+    "updated_at": "2026-03-06T14:21:05.006529+00:00",
+    "updated_ts": 1772806865
   }
 }
