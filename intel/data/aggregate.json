@@ -1,7 +1,7 @@
 {
   "aggregate": {
-    "score": 18,
-    "bias": "neutral",
+    "score": 26,
+    "bias": "bullish",
     "strength": "weak",
     "confidence": 1.0,
     "available_sources": 5,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 6.0,
+        "age_min": 12.6,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 0,
-        "bias": "neutral",
+        "score": 31,
+        "bias": "bullish",
         "strength": "weak",
-        "age_min": 5.3,
+        "age_min": 8.3,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 5.1,
+        "age_min": 12.2,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,32 +36,32 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 5.4,
+        "age_min": 17.4,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 7,
+        "score": 13,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 4.6,
+        "age_min": 15.3,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 36,
+      "score": 46,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 68 articles, score=270"
+          "reason": "News sentiment: 71 articles, score=340"
         },
         {
-          "bias": "neutral",
-          "reason": "BTC whale activity normal (20 large txs)"
+          "bias": "bullish",
+          "reason": "BTC whale distribution (11 txs) \u2014 accumulation"
         }
       ]
     },
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 17 articles, score=-280"
+          "reason": "News sentiment: 18 articles, score=-280"
         }
       ]
     }
@@ -104,6 +104,13 @@
     },
     {
       "type": "news",
+      "title": "Fed Rate Cut Rumors Spark Crypto Market Rally",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "type": "news",
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "sentiment": "bearish",
       "importance": "critical",
@@ -114,6 +121,13 @@
     },
     {
       "type": "news",
+      "title": "Ripple CEO Comments on XRP's Potential ETF Approval",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "type": "news",
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "sentiment": "bearish",
       "importance": "critical",
@@ -121,29 +135,11 @@
         "BTC",
         "SOL"
       ]
-    },
-    {
-      "type": "news",
-      "title": "Vancouver Bitcoin reserve effort hits resistance from city officials",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "type": "news",
-      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
-  "timestamp": "2026-03-06T10:17:54.220849+00:00",
+  "timestamp": "2026-03-06T10:36:20.932893+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T10:17:54.221951+00:00",
-    "updated_ts": 1772792274
+    "updated_at": "2026-03-06T10:36:20.933684+00:00",
+    "updated_ts": 1772793380
   }
 }
