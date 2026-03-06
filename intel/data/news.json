@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 21,
+    "score": 19,
     "bias": "bullish",
     "strength": "weak",
-    "total_articles": 248,
+    "total_articles": 247,
     "scored_articles": 65,
-    "positive_score": 2160,
-    "negative_score": -1240
+    "positive_score": 2180,
+    "negative_score": -1340
   },
   "alpha_events": [
     {
@@ -24,20 +24,22 @@
       ]
     },
     {
-      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
-      "source": "Fed News (Google)",
+      "title": "U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%",
+      "source": "CoinDesk",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
-      "coins": [],
+      "coins": [
+        "BTC"
+      ],
       "keywords": [
         "+fed rate cut",
         "+rate cut"
       ]
     },
     {
-      "title": "Fed Rate Cut Speculations Boost Crypto Market Sentiment",
-      "source": "X/Twitter (Grok)",
+      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
+      "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
@@ -60,6 +62,18 @@
       "keywords": [
         "hack",
         "exploit"
+      ]
+    },
+    {
+      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -100,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "rate hike",
+        "liquidation"
       ]
     },
     {
@@ -128,36 +142,22 @@
       "keywords": [
         "bankruptcy"
       ]
-    },
-    {
-      "title": "Samson Mow Objects to Michael Saylor's Bitcoin Insufficiency Post",
-      "source": "U.Today",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+ath",
-        "+saylor"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 75,
-      "score": 420,
+      "articles": 78,
+      "score": 620,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 34,
+      "articles": 35,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
       "articles": 15,
-      "score": -190,
+      "score": -200,
       "bias": "bearish"
     }
   },
@@ -173,16 +173,18 @@
       ]
     },
     {
-      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
-      "source": "Fed News (Google)",
+      "title": "U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%",
+      "source": "CoinDesk",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
-      "coins": []
+      "coins": [
+        "BTC"
+      ]
     },
     {
-      "title": "Fed Rate Cut Speculations Boost Crypto Market Sentiment",
-      "source": "X/Twitter (Grok)",
+      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
+      "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
@@ -198,6 +200,14 @@
         "BTC",
         "SOL"
       ]
+    },
+    {
+      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -100,
+      "importance": "critical",
+      "coins": []
     },
     {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
@@ -279,6 +289,16 @@
       "importance": "high",
       "coins": [
         "SOL"
+      ]
+    },
+    {
+      "title": "Bitcoin ETFs See Record Inflows Boosting Market Confidence",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -430,40 +450,21 @@
         "BTC",
         "ETH"
       ]
-    },
-    {
-      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
-      "source": "DL News",
-      "sentiment": "bullish",
-      "score": 50,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "Decrypt": 20,
     "DL News": 20,
-    "X/Twitter (Grok)": 8,
-    "CoinDesk": 20,
     "Crypto Briefing": 20,
     "Google News": 30,
-    "Crypto Regulation (Google)": 20,
-    "U.Today": 20,
-    "NewsBTC": 10,
-    "The Block": 20,
+    "X/Twitter (Grok)": 7,
+    "CoinTelegraph": 20,
+    "CoinDesk": 20,
     "Bitcoin ETF (Google)": 20,
+    "The Block": 20,
+    "Crypto Regulation (Google)": 20,
+    "NewsBTC": 10,
+    "U.Today": 20,
     "Fed News (Google)": 20
   },
   "history": [
@@ -1516,10 +1517,17 @@
       "score": 21,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T13:59:35.349597+00:00",
+      "ts": 1772805575,
+      "score": 19,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T13:33:22.283688+00:00",
-    "updated_ts": 1772804002
+    "updated_at": "2026-03-06T13:59:35.349846+00:00",
+    "updated_ts": 1772805575
   }
 }
