@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 12.6,
+        "age_min": 11.6,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 31,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 8.3,
+        "age_min": 28.3,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 12.2,
+        "age_min": 32.2,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 17.4,
+        "age_min": 5.3,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 13,
+        "score": 11,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 15.3,
+        "age_min": 1.1,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 71 articles, score=340"
+          "reason": "News sentiment: 71 articles, score=330"
         },
         {
           "bias": "bullish",
@@ -104,13 +104,6 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Cut Rumors Spark Crypto Market Rally",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "type": "news",
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "sentiment": "bearish",
       "importance": "critical",
@@ -121,13 +114,6 @@
     },
     {
       "type": "news",
-      "title": "Ripple CEO Comments on XRP's Potential ETF Approval",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "type": "news",
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "sentiment": "bearish",
       "importance": "critical",
@@ -135,11 +121,29 @@
         "BTC",
         "SOL"
       ]
+    },
+    {
+      "type": "news",
+      "title": "Vancouver Bitcoin reserve effort hits resistance from city officials",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
-  "timestamp": "2026-03-06T10:36:20.932893+00:00",
+  "timestamp": "2026-03-06T10:56:21.572935+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T10:36:20.933684+00:00",
-    "updated_ts": 1772793380
+    "updated_at": "2026-03-06T10:56:21.573736+00:00",
+    "updated_ts": 1772794581
   }
 }
