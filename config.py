@@ -33,8 +33,8 @@ STOP_LOSS_ATR_MULT = 2.0      # 2x ATR stops — give trades room to breathe
 TRAILING_STOP_ATR_MULT = 1.8  # 1.8x ATR trailing — lock gains
 TRAILING_ACTIVATION_R = 1.5   # Activate trailing after 1.5x risk achieved
 TAKE_PROFIT_ATR_MULT = 8.0    # 8x ATR target — let winners run far
-MIN_CONFIDENCE = 0.65          # Higher bar — quality over quantity
-MIN_EXPECTED_MOVE_PCT = 4.0    # 4% min — must clear 3x fees to be worth it
+MIN_CONFIDENCE = 0.55          # Higher bar — quality over quantity
+MIN_EXPECTED_MOVE_PCT = 3.0    # 4% min — must clear 3x fees to be worth it
 TIME_STOP_HOURS = 48           # 2 days max hold — rotate capital
 MIN_HOLD_MINUTES = 60          # 60 min minimum — stop cutting winners early
 REENTRY_COOLDOWN_MINUTES = 30  # 30 min cooldown — avoid revenge trading
@@ -59,7 +59,7 @@ STATE_FILE = PROJECT_DIR / "state.json"
 
 # AI — Dual Brain
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6-20250514")
+CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
 XAI_API_KEY = os.environ.get("XAI_API_KEY", "")
 XAI_MODEL = os.environ.get("XAI_MODEL", "grok-4-0709")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
