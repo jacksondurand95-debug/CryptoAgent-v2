@@ -7,7 +7,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC whale activity normal (11 large txs)"
+        "reason": "BTC whale activity normal (4 large txs)"
       },
       {
         "bias": "neutral",
@@ -24,115 +24,52 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "366ca3060e6684ae...",
-        "btc": 4540.93,
+        "hash": "07b72011e6a0fd73...",
+        "btc": 1880.82,
         "type": "transfer",
-        "inputs": 2,
+        "inputs": 4,
         "outputs": 2,
-        "block": 939577,
-        "time": 1772798222
+        "block": 939585,
+        "time": 1772801396
       },
       {
-        "hash": "c4cdf7e55acc8582...",
-        "btc": 2022.29,
+        "hash": "48f0a083f237bcfd...",
+        "btc": 409.76,
         "type": "transfer",
-        "inputs": 1,
+        "inputs": 3,
         "outputs": 2,
-        "block": 939579,
-        "time": 1772798362
+        "block": 939585,
+        "time": 1772801016
       },
       {
-        "hash": "88f5e6d1c3b19491...",
-        "btc": 743.25,
-        "type": "transfer",
-        "inputs": 5,
-        "outputs": 2,
-        "block": 939577,
-        "time": 1772798256
-      },
-      {
-        "hash": "103a0b93101978cd...",
-        "btc": 708.17,
-        "type": "transfer",
-        "inputs": 1,
-        "outputs": 2,
-        "block": 939579,
-        "time": 1772798663
-      },
-      {
-        "hash": "e02bd2462b05010f...",
-        "btc": 608.25,
-        "type": "transfer",
-        "inputs": 2,
-        "outputs": 2,
-        "block": 939578,
-        "time": 1772798314
-      },
-      {
-        "hash": "5ce951acc2c292de...",
-        "btc": 500.0,
-        "type": "transfer",
-        "inputs": 1,
-        "outputs": 2,
-        "block": 939578,
-        "time": 1772798260
-      },
-      {
-        "hash": "9d49b2a1b347b83a...",
-        "btc": 333.25,
-        "type": "transfer",
-        "inputs": 1,
-        "outputs": 2,
-        "block": 939579,
-        "time": 1772798384
-      },
-      {
-        "hash": "da1754ea5ccf286b...",
-        "btc": 295.73,
+        "hash": "c1c41948ec66b494...",
+        "btc": 293.9,
         "type": "distribution",
         "inputs": 1,
-        "outputs": 18,
-        "block": 939579,
-        "time": 1772798370
+        "outputs": 21,
+        "block": 939585,
+        "time": 1772801236
       },
       {
-        "hash": "985ba0ce1fda8976...",
-        "btc": 250.86,
-        "type": "transfer",
+        "hash": "a6677479438d668e...",
+        "btc": 293.14,
+        "type": "distribution",
         "inputs": 1,
-        "outputs": 4,
-        "block": 939577,
-        "time": 1772795402
-      },
-      {
-        "hash": "c60ce0053173fe4c...",
-        "btc": 179.0,
-        "type": "transfer",
-        "inputs": 1,
-        "outputs": 3,
-        "block": 939577,
-        "time": 1772798196
-      },
-      {
-        "hash": "68e23ec839de7bd2...",
-        "btc": 176.64,
-        "type": "transfer",
-        "inputs": 1,
-        "outputs": 3,
-        "block": 939579,
-        "time": 1772798691
+        "outputs": 17,
+        "block": 939586,
+        "time": 1772801729
       }
     ],
-    "total_whale_btc": 10358.37,
-    "count": 11,
+    "total_whale_btc": 2877.62,
+    "count": 4,
     "consolidations": 0,
-    "distributions": 1,
+    "distributions": 2,
     "blocks_scanned": 3,
     "signal": {
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "BTC whale activity normal (11 large txs)"
+      "reason": "BTC whale activity normal (4 large txs)"
     }
   },
   "eth_whales": {
@@ -1402,10 +1339,16 @@
       "ts": 1772800139,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-06T13:10:46.061146+00:00",
+      "ts": 1772802646,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T12:28:59.559209+00:00",
-    "updated_ts": 1772800139
+    "updated_at": "2026-03-06T13:10:46.061173+00:00",
+    "updated_ts": 1772802646
   }
 }
