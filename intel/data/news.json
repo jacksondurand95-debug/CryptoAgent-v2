@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 23,
+    "score": 25,
     "bias": "bullish",
     "strength": "weak",
     "total_articles": 247,
-    "scored_articles": 57,
-    "positive_score": 1970,
-    "negative_score": -1030
+    "scored_articles": 55,
+    "positive_score": 1920,
+    "negative_score": -940
   },
   "alpha_events": [
     {
@@ -38,8 +38,8 @@
       ]
     },
     {
-      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
-      "source": "Fed News (Google)",
+      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
+      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
@@ -104,19 +104,6 @@
       ]
     },
     {
-      "title": "Bitcoin Spot ETFs See 14-Day Netflows Surge: Demand Returning?",
-      "source": "NewsBTC",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+spot etf"
-      ]
-    },
-    {
       "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -139,22 +126,33 @@
       "keywords": [
         "+institutional adoption"
       ]
+    },
+    {
+      "title": "21Shares launches first spot Polkadot ETF in US",
+      "source": "Crypto Briefing",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "+institutional adoption"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 85,
-      "score": 820,
+      "articles": 82,
+      "score": 810,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 28,
-      "score": -60,
-      "bias": "bearish"
+      "articles": 30,
+      "score": 0,
+      "bias": "neutral"
     },
     "SOL": {
-      "articles": 11,
-      "score": 60,
+      "articles": 9,
+      "score": 50,
       "bias": "bullish"
     }
   },
@@ -180,8 +178,8 @@
       ]
     },
     {
-      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
-      "source": "Fed News (Google)",
+      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
+      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
@@ -229,16 +227,6 @@
       ]
     },
     {
-      "title": "Bitcoin Spot ETFs See 14-Day Netflows Surge: Demand Returning?",
-      "source": "NewsBTC",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -265,13 +253,13 @@
       "coins": []
     },
     {
-      "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
-      "source": "CoinTelegraph",
+      "title": "Bitcoin ETFs See Record Inflows Boosting Market Confidence",
+      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
-      "score": 60,
+      "score": 70,
       "importance": "high",
       "coins": [
-        "SOL"
+        "BTC"
       ]
     },
     {
@@ -283,17 +271,6 @@
       "coins": []
     },
     {
-      "title": "Solv Protocol says exploit drained $2.7 million from Bitcoin yield vault",
-      "source": "The Block",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
-    },
-    {
       "title": "Shiba Inu: Alert Issued as SHIB Participant Social Media Account Gets Hacked",
       "source": "U.Today",
       "sentiment": "bearish",
@@ -303,6 +280,14 @@
     },
     {
       "title": "Fed's Williams says rate cuts still possible, does not address Iran war - Reuters",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Fed Minutes Reveal Little Appetite for Rate Cuts - WSJ",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -340,6 +325,16 @@
       ]
     },
     {
+      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "Ethereum ETF Inflows Surge with $38.65M Rebound, Signaling Renewed Investor Confidence - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -372,24 +367,6 @@
     {
       "title": "SEC Dismisses Fraud Case Against Crypto Billionaire Justin Sun - WSJ",
       "source": "Google News",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin ETF Inflows Surge to Record Levels",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Fed Rate Hike Sparks Crypto Market Volatility",
-      "source": "X/Twitter (Grok)",
       "sentiment": "bearish",
       "score": -60,
       "importance": "high",
@@ -442,22 +419,42 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
     }
   ],
   "sources": {
-    "Bitcoin ETF (Google)": 20,
-    "The Block": 20,
-    "CoinTelegraph": 20,
-    "Decrypt": 20,
-    "CoinDesk": 20,
     "Crypto Briefing": 20,
-    "NewsBTC": 10,
     "DL News": 20,
     "X/Twitter (Grok)": 7,
-    "Crypto Regulation (Google)": 20,
-    "Fed News (Google)": 20,
+    "U.Today": 20,
+    "CoinTelegraph": 20,
     "Google News": 30,
-    "U.Today": 20
+    "NewsBTC": 10,
+    "Decrypt": 20,
+    "The Block": 20,
+    "Fed News (Google)": 20,
+    "CoinDesk": 20,
+    "Crypto Regulation (Google)": 20,
+    "Bitcoin ETF (Google)": 20
   },
   "history": [
     {
@@ -1600,10 +1597,17 @@
       "score": 23,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T18:59:35.974954+00:00",
+      "ts": 1772823575,
+      "score": 25,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T18:24:03.961028+00:00",
-    "updated_ts": 1772821443
+    "updated_at": "2026-03-06T18:59:35.975116+00:00",
+    "updated_ts": 1772823575
   }
 }
