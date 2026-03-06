@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 0,
+    "score": 3,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 248,
-    "scored_articles": 65,
-    "positive_score": 1730,
-    "negative_score": -1700
+    "scored_articles": 63,
+    "positive_score": 1660,
+    "negative_score": -1540
   },
   "alpha_events": [
     {
@@ -36,20 +36,6 @@
       "keywords": [
         "hack",
         "exploit"
-      ]
-    },
-    {
-      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 100,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+ath",
-        "+etf inflow"
       ]
     },
     {
@@ -119,19 +105,6 @@
       ]
     },
     {
-      "title": "Bitcoin ETF Sees Record Inflows Amid Institutional Buying",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+record inflow"
-      ]
-    },
-    {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -141,21 +114,45 @@
       "keywords": [
         "hack"
       ]
+    },
+    {
+      "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ],
+      "keywords": [
+        "+etf inflow"
+      ]
+    },
+    {
+      "title": "SEC ends case against Justin Sun with $10M settlement",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "fraud"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 69,
-      "score": 410,
+      "articles": 70,
+      "score": 240,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 32,
-      "score": -110,
+      "articles": 30,
+      "score": -50,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 19,
+      "articles": 18,
       "score": -280,
       "bias": "bearish"
     }
@@ -180,16 +177,6 @@
       "coins": [
         "BTC",
         "SOL"
-      ]
-    },
-    {
-      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 100,
-      "importance": "critical",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -241,16 +228,6 @@
       "importance": "high",
       "coins": [
         "SOL"
-      ]
-    },
-    {
-      "title": "Bitcoin ETF Sees Record Inflows Amid Institutional Buying",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -327,14 +304,6 @@
       "source": "Crypto Briefing",
       "sentiment": "bullish",
       "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "BC.GAME offers $500,000 bounty to track wallet tied to $4.3 million exploit",
-      "source": "Crypto Briefing",
-      "sentiment": "bearish",
-      "score": -60,
       "importance": "high",
       "coins": []
     },
@@ -441,22 +410,48 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "SEC Dismisses Fraud Case Against Crypto Billionaire Justin Sun - WSJ",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Whale Accumulation Sparks Ethereum Rally Speculation",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "38% of altcoins near all-time lows, worse than post-FTX crash: Analyst",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": []
     }
   ],
   "sources": {
-    "Decrypt": 20,
+    "NewsBTC": 10,
+    "U.Today": 20,
     "Crypto Regulation (Google)": 20,
-    "The Block": 20,
-    "X/Twitter (Grok)": 8,
-    "Fed News (Google)": 20,
+    "Google News": 30,
     "Bitcoin ETF (Google)": 20,
     "Crypto Briefing": 20,
-    "CoinDesk": 20,
-    "U.Today": 20,
-    "Google News": 30,
     "CoinTelegraph": 20,
+    "CoinDesk": 20,
+    "Fed News (Google)": 20,
+    "X/Twitter (Grok)": 8,
+    "Decrypt": 20,
     "DL News": 20,
-    "NewsBTC": 10
+    "The Block": 20
   },
   "history": [
     {
@@ -1396,10 +1391,17 @@
       "score": 0,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T07:26:55.222567+00:00",
+      "ts": 1772782015,
+      "score": 3,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T07:00:13.671703+00:00",
-    "updated_ts": 1772780413
+    "updated_at": "2026-03-06T07:26:55.222716+00:00",
+    "updated_ts": 1772782015
   }
 }
