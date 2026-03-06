@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 23,
+    "score": 26,
     "bias": "bullish",
-    "strength": "weak",
+    "strength": "moderate",
     "total_articles": 248,
-    "scored_articles": 61,
+    "scored_articles": 59,
     "positive_score": 2230,
-    "negative_score": -1190
+    "negative_score": -1040
   },
   "alpha_events": [
     {
@@ -62,32 +62,15 @@
       ]
     },
     {
-      "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -120,
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "SOL"
-      ],
-      "keywords": [
-        "hack",
-        "exploit"
-      ]
-    },
-    {
-      "title": "Whale Accumulation Spotted in Ethereum as Price Eyes Breakout",
+      "title": "Fed Rate Cut Rumors Spark Crypto Rally Across Altcoins",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
-      "score": 100,
+      "score": 130,
       "importance": "critical",
-      "coins": [
-        "ETH"
-      ],
+      "coins": [],
       "keywords": [
-        "+breakout",
-        "+whale accumulation"
+        "+fed rate cut",
+        "+rate cut"
       ]
     },
     {
@@ -131,34 +114,48 @@
       ]
     },
     {
-      "title": "Coinbase CEO Brian Armstrong and execs face shareholder lawsuit over disclosures, compliance failures",
-      "source": "The Block",
-      "sentiment": "bearish",
-      "score": -80,
+      "title": "Samson Mow Objects to Michael Saylor's Bitcoin Insufficiency Post",
+      "source": "U.Today",
+      "sentiment": "bullish",
+      "score": 80,
       "importance": "critical",
       "coins": [
-        "ETH"
+        "BTC"
       ],
       "keywords": [
-        "bankruptcy"
+        "+ath",
+        "+saylor"
+      ]
+    },
+    {
+      "title": "Bitcoin Spot ETFs See 14-Day Netflows Surge: Demand Returning?",
+      "source": "NewsBTC",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+spot etf"
       ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
       "articles": 84,
-      "score": 700,
+      "score": 830,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 31,
-      "score": 20,
-      "bias": "neutral"
+      "articles": 28,
+      "score": -60,
+      "bias": "bearish"
     },
     "SOL": {
-      "articles": 12,
-      "score": -70,
-      "bias": "bearish"
+      "articles": 11,
+      "score": 50,
+      "bias": "bullish"
     }
   },
   "top_articles": [
@@ -199,25 +196,12 @@
       "coins": []
     },
     {
-      "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -120,
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
-    },
-    {
-      "title": "Whale Accumulation Spotted in Ethereum as Price Eyes Breakout",
+      "title": "Fed Rate Cut Rumors Spark Crypto Rally Across Altcoins",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
-      "score": 100,
+      "score": 130,
       "importance": "critical",
-      "coins": [
-        "ETH"
-      ]
+      "coins": []
     },
     {
       "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
@@ -251,16 +235,6 @@
       ]
     },
     {
-      "title": "Coinbase CEO Brian Armstrong and execs face shareholder lawsuit over disclosures, compliance failures",
-      "source": "The Block",
-      "sentiment": "bearish",
-      "score": -80,
-      "importance": "critical",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "Samson Mow Objects to Michael Saylor's Bitcoin Insufficiency Post",
       "source": "U.Today",
       "sentiment": "bullish",
@@ -291,12 +265,30 @@
       ]
     },
     {
+      "title": "BitGo CEO on its $2 billion IPO, OCC national bank charter and Morgan Stanley competition",
+      "source": "The Block",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": []
+    },
+    {
       "title": "21Shares launches first spot Polkadot ETF in US",
       "source": "Crypto Briefing",
       "sentiment": "bullish",
       "score": 70,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Bitcoin ETFs Hit Record Inflows Amid Bullish Market Sentiment",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
@@ -374,16 +366,6 @@
       ]
     },
     {
-      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "Ethereum ETF Inflows Surge with $38.65M Rebound, Signaling Renewed Investor Confidence - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -422,16 +404,6 @@
       "coins": []
     },
     {
-      "title": "Bitcoin ETF Inflows Hit Record Highs Amid Institutional Demand",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -449,22 +421,41 @@
       "score": 50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "XRP Whales Add Over 4.18 Billion XRP Since October Price Flash Crash",
+      "source": "U.Today",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
     }
   ],
   "sources": {
-    "U.Today": 20,
-    "CoinTelegraph": 20,
-    "NewsBTC": 10,
-    "The Block": 20,
-    "Crypto Briefing": 20,
     "Decrypt": 20,
-    "Crypto Regulation (Google)": 20,
+    "Bitcoin ETF (Google)": 20,
     "X/Twitter (Grok)": 8,
     "CoinDesk": 20,
-    "Google News": 30,
-    "Fed News (Google)": 20,
+    "CoinTelegraph": 20,
+    "U.Today": 20,
     "DL News": 20,
-    "Bitcoin ETF (Google)": 20
+    "Crypto Briefing": 20,
+    "Fed News (Google)": 20,
+    "Crypto Regulation (Google)": 20,
+    "Google News": 30,
+    "The Block": 20,
+    "NewsBTC": 10
   },
   "history": [
     {
@@ -1586,10 +1577,17 @@
       "score": 23,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T17:53:51.345621+00:00",
+      "ts": 1772819631,
+      "score": 26,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T17:23:00.122182+00:00",
-    "updated_ts": 1772817780
+    "updated_at": "2026-03-06T17:53:51.345769+00:00",
+    "updated_ts": 1772819631
   }
 }
