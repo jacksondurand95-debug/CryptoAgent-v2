@@ -14,7 +14,11 @@ LOG_DIR.mkdir(exist_ok=True)
 COINBASE_KEY_FILE = PROJECT_DIR / "coinbase_key.json"
 
 # Trading pairs
-TRADING_PAIRS = ["BTC-USD", "ETH-USD", "SOL-USD", "DOGE-USD", "AVAX-USD", "LINK-USD"]
+TRADING_PAIRS = [
+    "BTC-USD", "ETH-USD", "SOL-USD", "DOGE-USD", "AVAX-USD", "LINK-USD",
+    "PEPE-USD", "SHIB-USD", "SUI-USD", "NEAR-USD", "RENDER-USD", "FET-USD",
+    "INJ-USD", "TIA-USD", "SEI-USD", "WIF-USD",
+]
 
 # Multi-timeframe analysis
 PRIMARY_TIMEFRAME = "SIX_HOUR"
@@ -22,18 +26,18 @@ TREND_TIMEFRAME = "ONE_DAY"
 FAST_TIMEFRAME = "ONE_HOUR"
 SCALP_TIMEFRAME = "FIFTEEN_MINUTE"
 
-# Risk params — BULL RUSH MODE ($3000 deployed)
-MAX_POSITION_PCT = 0.30        # 30% per trade (~$900)
-MAX_OPEN_POSITIONS = 4         # 4 concurrent (up to $3600 deployed)
-STOP_LOSS_ATR_MULT = 1.8      # Tighter stops — cut losers fast
-TRAILING_STOP_ATR_MULT = 2.0  # 2x ATR trailing
-TRAILING_ACTIVATION_R = 1.0   # Let winners RUN before trailing kicks in
-TAKE_PROFIT_ATR_MULT = 5.0    # 5x ATR target — bigger swings to clear fees
-MIN_CONFIDENCE = 0.55          # More aggressive entry threshold
-MIN_EXPECTED_MOVE_PCT = 3.0    # Must clear 1.2-1.8% round-trip fees
-TIME_STOP_HOURS = 96           # 4 days max hold — give trades room
-MIN_HOLD_MINUTES = 30          # 30 min minimum (was 60)
-REENTRY_COOLDOWN_MINUTES = 15  # 15 min cooldown (was 30)
+# Risk params — FULL SEND MODE ($3000 deployed)
+MAX_POSITION_PCT = 0.40        # 40% per trade (~$1200) — SIZE UP
+MAX_OPEN_POSITIONS = 5         # 5 concurrent (up to $6000 notional)
+STOP_LOSS_ATR_MULT = 1.5      # Tight stops — cut losers FAST
+TRAILING_STOP_ATR_MULT = 1.8  # 1.8x ATR trailing — lock gains sooner
+TRAILING_ACTIVATION_R = 0.8   # Activate trailing earlier
+TAKE_PROFIT_ATR_MULT = 6.0    # 6x ATR target — let winners RIP
+MIN_CONFIDENCE = 0.50          # Lower bar — more trades, more action
+MIN_EXPECTED_MOVE_PCT = 2.5    # 2.5% min (was 3%) — more opportunities
+TIME_STOP_HOURS = 72           # 3 days max hold — rotate capital faster
+MIN_HOLD_MINUTES = 20          # 20 min minimum — faster exits
+REENTRY_COOLDOWN_MINUTES = 10  # 10 min cooldown — rapid reentry
 
 # Fees — Coinbase Advanced Trade (Coinbase One does NOT cover Advanced Trade)
 # Intro 1 tier: 0.60% maker / 1.20% taker
@@ -68,6 +72,14 @@ CRYPTOPANIC_API_KEY = os.environ.get("CRYPTOPANIC_API_KEY", "")
 
 # Analysis interval — 5 min for faster signal capture
 ANALYSIS_INTERVAL_SEC = 300
+
+# Underground alpha feeds — free public APIs for edge
+COINGLASS_BASE = "https://open-api.coinglass.com/public/v2"
+ARKHAM_BASE = "https://api.arkhamintelligence.com"
+DEXSCREENER_BASE = "https://api.dexscreener.com/latest"
+DEFILLAMA_BASE = "https://api.llama.fi"
+ALTERNATIVE_ME_BASE = "https://api.alternative.me"
+WHALE_ALERT_WS = "wss://ws.whale-alert.io"
 
 # Multi-exchange data
 BYBIT_API_BASE = "https://api.bybit.com"

@@ -829,6 +829,245 @@ def fetch_coinglass_fear_greed():
         return None
 
 
+# ─── UNDERGROUND ALPHA FEEDS ─────────────────────────────────────
+
+def fetch_dexscreener_trending():
+    """DexScreener — trending tokens on DEX (smart money moving before CEX)."""
+    try:
+        r = requests.get(
+            "https://api.dexscreener.com/token-boosts/latest/v1",
+            timeout=TIMEOUT,
+        )
+        if r.status_code != 200:
+            return None
+        data = r.json()
+        if not data or not isinstance(data, list):
+            return None
+        # Focus on tokens that are also on Coinbase
+        cb_symbols = {"BTC", "ETH", "SOL", "DOGE", "AVAX", "LINK", "PEPE", "SHIB",
+                       "SUI", "NEAR", "RENDER", "FET", "INJ", "TIA", "SEI", "WIF"}
+        hot = []
+        for token in data[:30]:
+            symbol = token.get("tokenAddress", "")
+            desc = token.get("description", "")
+            chain = token.get("chainId", "")
+            amount = token.get("amount", 0)
+            if amount > 100:
+                hot.append({"chain": chain, "amount": amount, "desc": desc[:60]})
+        return {
+            "source": "dexscreener_trending",
+            "boosted_tokens": len(data) if isinstance(data, list) else 0,
+            "high_activity": hot[:5],
+            "signal": "high_dex_activity" if len(hot) > 3 else "normal",
+        }
+    except Exception as e:
+        log.debug(f"DexScreener error: {e}")
+        return None
+
+
+def fetch_coingecko_trending():
+    """CoinGecko trending coins — what retail is piling into."""
+    try:
+        r = requests.get(
+            "https://api.coingecko.com/api/v3/search/trending",
+            timeout=TIMEOUT,
+        )
+        data = r.json()
+        coins = data.get("coins", [])
+        trending = []
+        for c in coins[:10]:
+            item = c.get("item", {})
+            trending.append({
+                "name": item.get("name", ""),
+                "symbol": item.get("symbol", ""),
+                "market_cap_rank": item.get("market_cap_rank"),
+                "price_btc": item.get("price_btc", 0),
+            })
+        return {
+            "source": "coingecko_trending",
+            "trending_coins": trending,
+            "count": len(trending),
+        }
+    except Exception as e:
+        log.debug(f"CoinGecko trending error: {e}")
+        return None
+
+
+def fetch_binance_long_short_global():
+    """Binance global long/short ratio — crowd positioning."""
+    try:
+        r = requests.get(
+            "https://fapi.binance.com/futures/data/globalLongShortAccountRatio",
+            params={"symbol": "BTCUSDT", "period": "1h", "limit": 5},
+            timeout=TIMEOUT,
+        )
+        data = r.json()
+        if not data or isinstance(data, dict):
+            return None
+        latest = data[0]
+        ratio = float(latest.get("longShortRatio", 1.0))
+        long_pct = float(latest.get("longAccount", 50))
+        short_pct = float(latest.get("shortAccount", 50))
+        # Check trend
+        prev_ratio = float(data[-1].get("longShortRatio", 1.0)) if len(data) > 1 else ratio
+        return {
+            "source": "binance_global_ls",
+            "long_short_ratio": round(ratio, 3),
+            "long_pct": round(long_pct, 1),
+            "short_pct": round(short_pct, 1),
+            "trend": "longs_increasing" if ratio > prev_ratio else "shorts_increasing",
+            "crowded_longs": long_pct > 65,
+            "crowded_shorts": short_pct > 55,
+            "contrarian_signal": "bearish" if long_pct > 65 else "bullish" if short_pct > 55 else "neutral",
+        }
+    except Exception as e:
+        log.debug(f"Binance global L/S error: {e}")
+        return None
+
+
+def fetch_binance_oi_change():
+    """Binance open interest changes — big OI spike = incoming volatility."""
+    try:
+        symbols = ["BTCUSDT", "ETHUSDT", "SOLUSDT", "DOGEUSDT"]
+        results = {}
+        for sym in symbols:
+            r = requests.get(
+                "https://fapi.binance.com/futures/data/openInterestHist",
+                params={"symbol": sym, "period": "1h", "limit": 5},
+                timeout=TIMEOUT,
+            )
+            data = r.json()
+            if not data or isinstance(data, dict):
+                continue
+            latest_oi = float(data[0].get("sumOpenInterestValue", 0))
+            prev_oi = float(data[-1].get("sumOpenInterestValue", 0)) if len(data) > 1 else latest_oi
+            change_pct = ((latest_oi - prev_oi) / prev_oi * 100) if prev_oi > 0 else 0
+            results[sym] = {
+                "oi_usd": round(latest_oi, 0),
+                "change_pct": round(change_pct, 2),
+                "surging": change_pct > 5,
+                "dumping": change_pct < -5,
+            }
+        if not results:
+            return None
+        return {
+            "source": "binance_oi_change",
+            "symbols": results,
+            "any_surging": any(v["surging"] for v in results.values()),
+            "any_dumping": any(v["dumping"] for v in results.values()),
+            "signal": "volatility_incoming" if any(v["surging"] or v["dumping"] for v in results.values()) else "stable",
+        }
+    except Exception as e:
+        log.debug(f"Binance OI change error: {e}")
+        return None
+
+
+def fetch_whale_transactions():
+    """Blockchain.com large BTC transactions — whale movement detection."""
+    try:
+        r = requests.get(
+            "https://blockchain.info/unconfirmed-transactions?format=json",
+            timeout=TIMEOUT,
+        )
+        data = r.json()
+        txs = data.get("txs", [])
+        large_txs = []
+        for tx in txs:
+            total_output = sum(out.get("value", 0) for out in tx.get("out", [])) / 1e8  # satoshi to BTC
+            if total_output > 10:  # > 10 BTC
+                large_txs.append({
+                    "btc_amount": round(total_output, 2),
+                    "outputs": len(tx.get("out", [])),
+                    "hash": tx.get("hash", "")[:16],
+                })
+        large_txs.sort(key=lambda x: x["btc_amount"], reverse=True)
+        whale_volume = sum(t["btc_amount"] for t in large_txs)
+        return {
+            "source": "blockchain_whale_txs",
+            "large_tx_count": len(large_txs),
+            "whale_btc_volume": round(whale_volume, 2),
+            "top_txs": large_txs[:5],
+            "whale_active": len(large_txs) > 5,
+            "signal": "heavy_whale_movement" if whale_volume > 500 else
+                      "moderate_whale_activity" if whale_volume > 100 else "quiet",
+        }
+    except Exception as e:
+        log.debug(f"Whale TX error: {e}")
+        return None
+
+
+def fetch_options_data():
+    """Deribit options data via public API — max pain and put/call ratio."""
+    try:
+        r = requests.get(
+            "https://www.deribit.com/api/v2/public/get_book_summary_by_currency",
+            params={"currency": "BTC", "kind": "option"},
+            timeout=TIMEOUT,
+        )
+        data = r.json()
+        options = data.get("result", [])
+        if not options:
+            return None
+        total_calls_oi = 0
+        total_puts_oi = 0
+        total_calls_vol = 0
+        total_puts_vol = 0
+        for opt in options:
+            name = opt.get("instrument_name", "")
+            oi = float(opt.get("open_interest", 0))
+            vol = float(opt.get("volume", 0))
+            if "-C" in name:
+                total_calls_oi += oi
+                total_calls_vol += vol
+            elif "-P" in name:
+                total_puts_oi += oi
+                total_puts_vol += vol
+        pc_ratio_oi = total_puts_oi / total_calls_oi if total_calls_oi > 0 else 1.0
+        pc_ratio_vol = total_puts_vol / total_calls_vol if total_calls_vol > 0 else 1.0
+        return {
+            "source": "deribit_options",
+            "put_call_ratio_oi": round(pc_ratio_oi, 3),
+            "put_call_ratio_vol": round(pc_ratio_vol, 3),
+            "total_calls_oi": round(total_calls_oi, 2),
+            "total_puts_oi": round(total_puts_oi, 2),
+            "sentiment": "bearish_hedging" if pc_ratio_oi > 1.2 else
+                         "bullish_positioning" if pc_ratio_oi < 0.7 else "neutral",
+            "signal": "extreme_puts" if pc_ratio_oi > 1.5 else
+                      "extreme_calls" if pc_ratio_oi < 0.5 else "balanced",
+        }
+    except Exception as e:
+        log.debug(f"Deribit options error: {e}")
+        return None
+
+
+def fetch_cmc_greed_index():
+    """CoinMarketCap-style aggregated sentiment from multiple sources."""
+    try:
+        r = requests.get(
+            "https://api.alternative.me/fng/?limit=3&format=json",
+            timeout=TIMEOUT,
+        )
+        data = r.json()
+        entries = data.get("data", [])
+        if not entries:
+            return None
+        current = entries[0]
+        value = int(current.get("value", 50))
+        prev = int(entries[1].get("value", 50)) if len(entries) > 1 else value
+        return {
+            "source": "alternative_me_fng",
+            "value": value,
+            "previous": prev,
+            "trend": "improving" if value > prev else "deteriorating" if value < prev else "stable",
+            "classification": current.get("value_classification", ""),
+            "contrarian_buy": value <= 20,
+            "contrarian_sell": value >= 80,
+        }
+    except Exception as e:
+        log.debug(f"Alt.me FNG error: {e}")
+        return None
+
+
 def fetch_macro_intel():
     """Fetch all macro/on-chain/sentiment data in parallel.
 
@@ -845,6 +1084,14 @@ def fetch_macro_intel():
         "eth_gas": fetch_eth_gas,
         "gbtc_premium": fetch_gbtc_premium,
         "coinglass_fgi": fetch_coinglass_fear_greed,
+        # Underground alpha feeds
+        "dex_trending": fetch_dexscreener_trending,
+        "trending_coins": fetch_coingecko_trending,
+        "global_long_short": fetch_binance_long_short_global,
+        "oi_changes": fetch_binance_oi_change,
+        "whale_txs": fetch_whale_transactions,
+        "options": fetch_options_data,
+        "alt_fng": fetch_cmc_greed_index,
     }
 
     results = {}
