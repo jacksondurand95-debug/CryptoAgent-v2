@@ -65,7 +65,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 480,
+        "market_cap_rank": 504,
         "score": 0
       },
       {
@@ -81,33 +81,33 @@
         "score": 2
       },
       {
-        "name": "Lombard",
-        "symbol": "BARD",
-        "market_cap_rank": 116,
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
         "score": 3
       },
       {
-        "name": "Canton",
-        "symbol": "CC",
-        "market_cap_rank": 20,
+        "name": "Lombard",
+        "symbol": "BARD",
+        "market_cap_rank": 118,
         "score": 4
+      },
+      {
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 349,
+        "score": 5
       },
       {
         "name": "OKB",
         "symbol": "OKB",
         "market_cap_rank": 41,
-        "score": 5
-      },
-      {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
         "score": 6
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 339,
+        "name": "Canton",
+        "symbol": "CC",
+        "market_cap_rank": 20,
         "score": 7
       },
       {
@@ -1382,10 +1382,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T01:00:36.704414+00:00",
+      "ts": 1772758836,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T00:28:55.456865+00:00",
-    "updated_ts": 1772756935
+    "updated_at": "2026-03-06T01:00:36.704443+00:00",
+    "updated_ts": 1772758836
   }
 }
