@@ -77,37 +77,37 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 397,
+        "market_cap_rank": 391,
         "score": 2
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
-        "score": 3
       },
       {
         "name": "Lighter",
         "symbol": "LIT",
-        "market_cap_rank": 138,
+        "market_cap_rank": 137,
+        "score": 3
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 109,
         "score": 4
-      },
-      {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 157,
-        "score": 5
-      },
-      {
-        "name": "BNB",
-        "symbol": "BNB",
-        "market_cap_rank": 4,
-        "score": 6
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
+        "score": 5
+      },
+      {
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 156,
+        "score": 6
+      },
+      {
+        "name": "BNB",
+        "symbol": "BNB",
+        "market_cap_rank": 4,
         "score": 7
       },
       {
@@ -117,9 +117,9 @@
         "score": 8
       },
       {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 48,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 151,
         "score": 9
       }
     ],
@@ -1682,10 +1682,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T19:47:48.560257+00:00",
+      "ts": 1772826468,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T19:20:55.032938+00:00",
-    "updated_ts": 1772824855
+    "updated_at": "2026-03-06T19:47:48.560290+00:00",
+    "updated_ts": 1772826468
   }
 }
