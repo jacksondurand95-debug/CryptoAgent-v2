@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 22,
+    "score": 21,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 0.8,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 22.0,
+        "age_min": 17.4,
         "effective_weight": 0.9
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 24.9,
+        "age_min": 2.1,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 26.3,
+        "age_min": 47.9,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 13.1,
+        "age_min": 8.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 5,
+        "score": -1,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 29.9,
+        "age_min": 5.7,
         "effective_weight": 1.0
       }
     }
@@ -57,11 +57,11 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 68 articles, score=540"
+          "reason": "News sentiment: 66 articles, score=280"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (7 large txs)"
+          "reason": "BTC whale activity normal (3 large txs)"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 31 articles, score=-70"
+          "reason": "News sentiment: 30 articles, score=-110"
         },
         {
           "bias": "neutral",
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 19 articles, score=-180"
+          "reason": "News sentiment: 20 articles, score=-280"
         }
       ]
     }
@@ -104,6 +104,16 @@
     },
     {
       "type": "news",
+      "title": "Solv Protocol offers 10% bounty after hacker snatches $2.7M",
+      "sentiment": "bearish",
+      "importance": "critical",
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
+    },
+    {
+      "type": "news",
       "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
       "sentiment": "bullish",
       "importance": "critical",
@@ -113,7 +123,7 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
+      "title": "Fed Rate Hike Sparks Crypto Market Volatility and Liquidations",
       "sentiment": "bearish",
       "importance": "critical",
       "coins": []
@@ -127,20 +137,11 @@
         "BTC",
         "SOL"
       ]
-    },
-    {
-      "type": "news",
-      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
-  "timestamp": "2026-03-06T05:15:39.159847+00:00",
+  "timestamp": "2026-03-06T05:37:14.709562+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T05:15:39.160659+00:00",
-    "updated_ts": 1772774139
+    "updated_at": "2026-03-06T05:37:14.710277+00:00",
+    "updated_ts": 1772775434
   }
 }
