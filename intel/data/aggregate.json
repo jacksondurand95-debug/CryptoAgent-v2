@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 25.0,
+        "age_min": 32.9,
         "effective_weight": 0.9
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 24.3,
+        "age_min": 17.2,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 5,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 23.4,
+        "age_min": 60.9,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 24.5,
+        "age_min": 30.3,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 8,
+        "score": 11,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 22.8,
+        "age_min": 27.1,
         "effective_weight": 1.0
       }
     }
@@ -57,22 +57,22 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 67 articles, score=620"
+          "reason": "News sentiment: 68 articles, score=690"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (7 large txs)"
+          "reason": "BTC whale activity normal (12 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
+      "score": -53,
+      "bias": "bearish",
       "signals": 2,
       "details": [
         {
-          "bias": "neutral",
-          "reason": "News sentiment: 27 articles, score=-20"
+          "bias": "bearish",
+          "reason": "News sentiment: 29 articles, score=-70"
         },
         {
           "bias": "neutral",
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 16 articles, score=-180"
+          "reason": "News sentiment: 15 articles, score=-180"
         }
       ]
     }
@@ -101,6 +101,13 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "type": "news",
+      "title": "Fed Rate Cut Rumors Spark Altcoin Rally Across Markets",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": []
     },
     {
       "type": "news",
@@ -129,20 +136,11 @@
         "BTC",
         "SOL"
       ]
-    },
-    {
-      "type": "news",
-      "title": "Coinbase CEO Brian Armstrong and execs face shareholder lawsuit over disclosures, compliance failures",
-      "sentiment": "bearish",
-      "importance": "critical",
-      "coins": [
-        "ETH"
-      ]
     }
   ],
-  "timestamp": "2026-03-06T00:53:22.412750+00:00",
+  "timestamp": "2026-03-06T01:30:55.346921+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T00:53:22.413599+00:00",
-    "updated_ts": 1772758402
+    "updated_at": "2026-03-06T01:30:55.347847+00:00",
+    "updated_ts": 1772760655
   }
 }
