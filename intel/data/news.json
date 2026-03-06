@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 5,
+    "score": -1,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 65,
-    "positive_score": 1730,
-    "negative_score": -1550
+    "total_articles": 247,
+    "scored_articles": 63,
+    "positive_score": 1600,
+    "negative_score": -1650
   },
   "alpha_events": [
     {
@@ -24,6 +24,21 @@
       ]
     },
     {
+      "title": "Solv Protocol offers 10% bounty after hacker snatches $2.7M",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -120,
+      "importance": "critical",
+      "coins": [
+        "BTC",
+        "SOL"
+      ],
+      "keywords": [
+        "hack",
+        "exploit"
+      ]
+    },
+    {
       "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -38,7 +53,7 @@
       ]
     },
     {
-      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
+      "title": "Fed Rate Hike Sparks Crypto Market Volatility and Liquidations",
       "source": "X/Twitter (Grok)",
       "sentiment": "bearish",
       "score": -100,
@@ -114,42 +129,33 @@
       ]
     },
     {
-      "title": "SEC ends case against Justin Sun with $10M settlement",
+      "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
       "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
+      "sentiment": "bullish",
+      "score": 60,
       "importance": "high",
-      "coins": [],
+      "coins": [
+        "SOL"
+      ],
       "keywords": [
-        "fraud"
-      ]
-    },
-    {
-      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "fraud"
+        "+etf inflow"
       ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 68,
-      "score": 540,
+      "articles": 66,
+      "score": 280,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 31,
-      "score": -70,
+      "articles": 30,
+      "score": -110,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 19,
-      "score": -180,
+      "articles": 20,
+      "score": -280,
       "bias": "bearish"
     }
   },
@@ -165,6 +171,17 @@
       ]
     },
     {
+      "title": "Solv Protocol offers 10% bounty after hacker snatches $2.7M",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -120,
+      "importance": "critical",
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
+    },
+    {
       "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -175,7 +192,7 @@
       ]
     },
     {
-      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
+      "title": "Fed Rate Hike Sparks Crypto Market Volatility and Liquidations",
       "source": "X/Twitter (Grok)",
       "sentiment": "bearish",
       "score": -100,
@@ -230,6 +247,16 @@
       "score": -60,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ]
     },
     {
       "title": "SEC ends case against Justin Sun with $10M settlement",
@@ -327,15 +354,7 @@
       "coins": []
     },
     {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - thestreet.com",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Federal Reserve holds interest rates steady after three rate cuts in 2025 - U.S. Bank",
+      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -411,16 +430,6 @@
       "coins": []
     },
     {
-      "title": "Bitcoin ETF Inflows Hit Record Highs Amid Institutional Buying",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "38% of altcoins near all-time lows, worse than FTX crash: Analyst",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -430,18 +439,18 @@
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "Fed News (Google)": 20,
-    "U.Today": 20,
-    "DL News": 20,
-    "X/Twitter (Grok)": 8,
-    "Crypto Regulation (Google)": 20,
-    "CoinDesk": 20,
-    "The Block": 20,
-    "NewsBTC": 10,
-    "Crypto Briefing": 20,
-    "Bitcoin ETF (Google)": 20,
     "CoinTelegraph": 20,
+    "U.Today": 20,
+    "Fed News (Google)": 20,
+    "DL News": 20,
+    "NewsBTC": 10,
+    "CoinDesk": 20,
+    "Crypto Briefing": 20,
+    "Crypto Regulation (Google)": 20,
+    "Bitcoin ETF (Google)": 20,
+    "X/Twitter (Grok)": 7,
+    "Decrypt": 20,
+    "The Block": 20,
     "Google News": 30
   },
   "history": [
@@ -1347,10 +1356,17 @@
       "score": 5,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T05:31:32.346787+00:00",
+      "ts": 1772775092,
+      "score": -1,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T04:45:47.571851+00:00",
-    "updated_ts": 1772772347
+    "updated_at": "2026-03-06T05:31:32.346934+00:00",
+    "updated_ts": 1772775092
   }
 }
