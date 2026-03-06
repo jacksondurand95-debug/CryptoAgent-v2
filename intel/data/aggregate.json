@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 12.7,
+        "age_min": 12.4,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 17.9,
+        "age_min": 3.3,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 50.6,
+        "age_min": 66.6,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 26.4,
+        "age_min": 15.9,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 15,
-        "bias": "neutral",
+        "score": 16,
+        "bias": "bullish",
         "strength": "weak",
-        "age_min": 23.4,
+        "age_min": 11.8,
         "effective_weight": 1.0
       }
     }
@@ -57,19 +57,23 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 81 articles, score=700"
+          "reason": "News sentiment: 81 articles, score=630"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (19 large txs)"
+          "reason": "BTC whale activity normal (12 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 1,
+      "score": 53,
+      "bias": "bullish",
+      "signals": 2,
       "details": [
+        {
+          "bias": "bullish",
+          "reason": "News sentiment: 29 articles, score=80"
+        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -109,10 +113,19 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Cut Speculation Boosts Crypto Market Sentiment",
+      "title": "Fed Rate Cut Rumors Boost Crypto Prices Across the Board",
       "sentiment": "bullish",
       "importance": "critical",
       "coins": []
+    },
+    {
+      "type": "news",
+      "title": "Ethereum ETF Approvals Spark Optimism for Altcoins",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "ETH"
+      ]
     },
     {
       "type": "news",
@@ -124,21 +137,11 @@
         "ETH",
         "SOL"
       ]
-    },
-    {
-      "type": "news",
-      "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
     }
   ],
-  "timestamp": "2026-03-06T23:14:13.439509+00:00",
+  "timestamp": "2026-03-06T23:30:11.851365+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T23:14:13.440266+00:00",
-    "updated_ts": 1772838853
+    "updated_at": "2026-03-06T23:30:11.852070+00:00",
+    "updated_ts": 1772839811
   }
 }
