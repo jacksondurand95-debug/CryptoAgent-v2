@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 15,
+    "score": 12,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 248,
-    "scored_articles": 65,
-    "positive_score": 1960,
-    "negative_score": -1370
+    "scored_articles": 64,
+    "positive_score": 1890,
+    "negative_score": -1400
   },
   "alpha_events": [
     {
@@ -21,6 +21,18 @@
       "keywords": [
         "+blackrock",
         "+spot etf"
+      ]
+    },
+    {
+      "title": "Fed Rate Cut Rumors Ignite Crypto Market Rally",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
       ]
     },
     {
@@ -130,35 +142,22 @@
       "keywords": [
         "enforcement action"
       ]
-    },
-    {
-      "title": "Record Inflows into Bitcoin ETFs Spark Bullish Momentum",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+record inflow"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
       "articles": 69,
-      "score": 480,
+      "score": 420,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 33,
-      "score": 70,
-      "bias": "bullish"
+      "articles": 30,
+      "score": -50,
+      "bias": "bearish"
     },
     "SOL": {
-      "articles": 18,
-      "score": -200,
+      "articles": 19,
+      "score": -160,
       "bias": "bearish"
     }
   },
@@ -172,6 +171,14 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Fed Rate Cut Rumors Ignite Crypto Market Rally",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
     },
     {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
@@ -257,7 +264,7 @@
       ]
     },
     {
-      "title": "Record Inflows into Bitcoin ETFs Spark Bullish Momentum",
+      "title": "Bitcoin ETFs See Record Inflows Boosting Market Confidence",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -382,26 +389,6 @@
       ]
     },
     {
-      "title": "Bitcoin Clears $71K As ETF Inflows Top $225M - Yellow.com",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "Ethereum ETF Inflows Surge with $38.65M Rebound, Signaling Renewed Investor Confidence - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -440,30 +427,39 @@
       "coins": []
     },
     {
-      "title": "Whale Accumulations in Ethereum Signal Potential Rally",
-      "source": "X/Twitter (Grok)",
+      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
+      "source": "DL News",
       "sentiment": "bullish",
-      "score": 60,
+      "score": 50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
       "importance": "high",
       "coins": [
+        "BTC",
         "ETH"
       ]
     }
   ],
   "sources": {
-    "The Block": 20,
-    "Fed News (Google)": 20,
-    "Google News": 30,
-    "Crypto Briefing": 20,
-    "DL News": 20,
-    "Bitcoin ETF (Google)": 20,
-    "Decrypt": 20,
     "NewsBTC": 10,
-    "CoinDesk": 20,
-    "U.Today": 20,
+    "Google News": 30,
+    "Fed News (Google)": 20,
     "Crypto Regulation (Google)": 20,
+    "Decrypt": 20,
+    "DL News": 20,
+    "CoinDesk": 20,
+    "X/Twitter (Grok)": 8,
+    "The Block": 20,
+    "Crypto Briefing": 20,
+    "U.Today": 20,
     "CoinTelegraph": 20,
-    "X/Twitter (Grok)": 8
+    "Bitcoin ETF (Google)": 20
   },
   "history": [
     {
@@ -1480,10 +1476,17 @@
       "score": 15,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T11:48:45.358541+00:00",
+      "ts": 1772797725,
+      "score": 12,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T11:19:03.135834+00:00",
-    "updated_ts": 1772795943
+    "updated_at": "2026-03-06T11:48:45.358773+00:00",
+    "updated_ts": 1772797725
   }
 }
