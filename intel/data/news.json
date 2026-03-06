@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 10,
+    "score": 9,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 63,
-    "positive_score": 1800,
-    "negative_score": -1420
+    "total_articles": 240,
+    "scored_articles": 60,
+    "positive_score": 1700,
+    "negative_score": -1390
   },
   "alpha_events": [
     {
@@ -24,18 +24,6 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Ignite Crypto Market Optimism",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
-      ]
-    },
-    {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -48,6 +36,20 @@
       "keywords": [
         "hack",
         "exploit"
+      ]
+    },
+    {
+      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 100,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+ath",
+        "+etf inflow"
       ]
     },
     {
@@ -143,17 +145,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 71,
-      "score": 250,
+      "articles": 70,
+      "score": 350,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 31,
-      "score": 10,
-      "bias": "neutral"
+      "articles": 30,
+      "score": -50,
+      "bias": "bearish"
     },
     "SOL": {
-      "articles": 19,
+      "articles": 18,
       "score": -280,
       "bias": "bearish"
     }
@@ -170,14 +172,6 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Ignite Crypto Market Optimism",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
-    },
-    {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -186,6 +180,16 @@
       "coins": [
         "BTC",
         "SOL"
+      ]
+    },
+    {
+      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 100,
+      "importance": "critical",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -411,16 +415,6 @@
       "coins": []
     },
     {
-      "title": "Whale Accumulation of Ethereum Sparks Rally Speculation",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "38% of altcoins near all-time lows, worse than post-FTX crash: Analyst",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -435,22 +429,32 @@
       "score": 50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "Crypto Regulation (Google)": 20,
-    "Fed News (Google)": 20,
-    "X/Twitter (Grok)": 8,
-    "CoinTelegraph": 20,
-    "The Block": 20,
-    "NewsBTC": 10,
-    "Crypto Briefing": 20,
     "U.Today": 20,
+    "The Block": 20,
+    "CoinTelegraph": 20,
     "Google News": 30,
-    "DL News": 20,
+    "Decrypt": 20,
+    "Crypto Briefing": 20,
+    "Fed News (Google)": 20,
     "Bitcoin ETF (Google)": 20,
-    "Decrypt": 20
+    "NewsBTC": 10,
+    "DL News": 20,
+    "CoinDesk": 20,
+    "Crypto Regulation (Google)": 20
   },
   "history": [
     {
@@ -1404,10 +1408,17 @@
       "score": 10,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T08:12:10.697077+00:00",
+      "ts": 1772784730,
+      "score": 9,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T07:53:28.855332+00:00",
-    "updated_ts": 1772783608
+    "updated_at": "2026-03-06T08:12:10.697245+00:00",
+    "updated_ts": 1772784730
   }
 }

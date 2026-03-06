@@ -71,31 +71,31 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 510,
+        "market_cap_rank": 493,
         "score": 1
       },
       {
-        "name": "OKB",
-        "symbol": "OKB",
-        "market_cap_rank": 41,
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 339,
         "score": 2
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
+        "score": 3
       },
       {
         "name": "Pi Network",
         "symbol": "PI",
         "market_cap_rank": 44,
-        "score": 3
-      },
-      {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 333,
         "score": 4
       },
       {
-        "name": "Jelly-My-Jelly",
-        "symbol": "JELLYJELLY",
-        "market_cap_rank": 283,
+        "name": "OKB",
+        "symbol": "OKB",
+        "market_cap_rank": 41,
         "score": 5
       },
       {
@@ -105,27 +105,27 @@
         "score": 6
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
+        "name": "Jelly-My-Jelly",
+        "symbol": "JELLYJELLY",
+        "market_cap_rank": 298,
         "score": 7
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 8
       },
       {
         "name": "Lighter",
         "symbol": "LIT",
         "market_cap_rank": 138,
-        "score": 8
-      },
-      {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH"
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -1480,10 +1480,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T08:11:14.224808+00:00",
+      "ts": 1772784674,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T07:49:32.714408+00:00",
-    "updated_ts": 1772783372
+    "updated_at": "2026-03-06T08:11:14.224843+00:00",
+    "updated_ts": 1772784674
   }
 }

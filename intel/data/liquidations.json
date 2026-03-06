@@ -14,11 +14,12 @@
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 3093075.110000018,
-        "usd": 2197032902.158783,
-        "usd_m": 2197.0
+        "contracts": 3094449.6200000187,
+        "usd": 2193098334.6864133,
+        "usd_m": 2193.1
       },
       "funding_history": [
+        0.0068,
         0.0036,
         0.0059,
         0.01,
@@ -27,30 +28,29 @@
         -0.0026,
         -0.0037,
         0.0017,
-        0.0044,
-        -0.004
+        0.0044
       ],
       "neg_funding_streak": 0,
-      "pos_funding_streak": 5,
+      "pos_funding_streak": 6,
       "taker_30m": {
-        "buy_vol": 90441144.0,
-        "sell_vol": 111356015.0,
-        "ratio": 0.812,
+        "buy_vol": 98219751.0,
+        "sell_vol": 88662398.0,
+        "ratio": 1.108,
         "aggressive_buyers": false,
-        "aggressive_sellers": true
+        "aggressive_sellers": false
       }
     },
     "ETH": {
       "funding": {
-        "current_pct": 0.0062,
+        "current_pct": 0.0059,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 6967531.3000000045,
-        "usd": 1450354347.8767009,
-        "usd_m": 1450.4
+        "contracts": 6965302.270000004,
+        "usd": 1447501256.542321,
+        "usd_m": 1447.5
       },
       "funding_history": [
         0.0063,
@@ -67,24 +67,24 @@
       "neg_funding_streak": 0,
       "pos_funding_streak": 6,
       "taker_30m": {
-        "buy_vol": 85867832.0,
-        "sell_vol": 87488625.0,
-        "ratio": 0.981,
-        "aggressive_buyers": false,
+        "buy_vol": 71022506.0,
+        "sell_vol": 59277878.0,
+        "ratio": 1.198,
+        "aggressive_buyers": true,
         "aggressive_sellers": false
       }
     },
     "SOL": {
       "funding": {
-        "current_pct": -0.0101,
+        "current_pct": -0.0104,
         "next_pct": 0.0,
         "extreme_negative": true,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 2613621.360000001,
-        "usd": 231592988.70960006,
-        "usd_m": 231.6
+        "contracts": 2604675.4600000004,
+        "usd": 230018889.87260005,
+        "usd_m": 230.0
       },
       "funding_history": [
         -0.0101,
@@ -101,9 +101,9 @@
       "neg_funding_streak": 1,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 6544443.0,
-        "sell_vol": 11646309.0,
-        "ratio": 0.562,
+        "buy_vol": 5933990.0,
+        "sell_vol": 7256077.0,
+        "ratio": 0.818,
         "aggressive_buyers": false,
         "aggressive_sellers": true
       }
@@ -112,7 +112,7 @@
   "bybit": {},
   "liquidation_levels": {
     "BTC": {
-      "price": 71002.8,
+      "price": 70899.9,
       "high_24h": 73526.0,
       "low_24h": 70111.0,
       "long_liquidations": {
@@ -134,7 +134,7 @@
       "magnet_distance_pct": 100
     },
     "ETH": {
-      "price": 2080.65,
+      "price": 2078.62,
       "high_24h": 2163.49,
       "low_24h": 2053.0,
       "long_liquidations": {
@@ -156,7 +156,7 @@
       "magnet_distance_pct": 100
     },
     "SOL": {
-      "price": 88.57,
+      "price": 88.33,
       "high_24h": 92.9,
       "low_24h": 87.44,
       "long_liquidations": {
@@ -190,11 +190,9 @@
       "risk_factors": []
     },
     "SOL": {
-      "risk_score": 15,
+      "risk_score": 0,
       "risk_level": "low",
-      "risk_factors": [
-        "Taker ratio=0.56 (imbalanced)"
-      ]
+      "risk_factors": []
     }
   },
   "history": [
@@ -4850,10 +4848,21 @@
         "ETH": 0,
         "SOL": 15
       }
+    },
+    {
+      "timestamp": "2026-03-06T08:10:42.570626+00:00",
+      "ts": 1772784642,
+      "score": 0,
+      "bias": "neutral",
+      "cascade_risks": {
+        "BTC": 0,
+        "ETH": 0,
+        "SOL": 0
+      }
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T08:00:36.995517+00:00",
-    "updated_ts": 1772784036
+    "updated_at": "2026-03-06T08:10:42.570667+00:00",
+    "updated_ts": 1772784642
   }
 }
