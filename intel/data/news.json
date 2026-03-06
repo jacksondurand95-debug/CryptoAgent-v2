@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 21,
+    "score": 22,
     "bias": "bullish",
     "strength": "weak",
     "total_articles": 248,
     "scored_articles": 61,
-    "positive_score": 2140,
-    "negative_score": -1220
+    "positive_score": 2210,
+    "negative_score": -1230
   },
   "alpha_events": [
     {
@@ -52,6 +52,18 @@
     {
       "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
       "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
+      ]
+    },
+    {
+      "title": "Fed Rate Cut Expectations Boost Altcoin Momentum",
+      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
@@ -128,35 +140,21 @@
       "keywords": [
         "bankruptcy"
       ]
-    },
-    {
-      "title": "Samson Mow Objects to Michael Saylor's Bitcoin Insufficiency Post",
-      "source": "U.Today",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+ath",
-        "+saylor"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 82,
-      "score": 650,
+      "articles": 84,
+      "score": 690,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 32,
+      "articles": 31,
       "score": -80,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 11,
+      "articles": 10,
       "score": -110,
       "bias": "bearish"
     }
@@ -193,6 +191,14 @@
     {
       "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
       "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "title": "Fed Rate Cut Expectations Boost Altcoin Momentum",
+      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 130,
       "importance": "critical",
@@ -289,6 +295,16 @@
       "coins": []
     },
     {
+      "title": "Record Inflows into Bitcoin ETFs Drive Market Surge",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
@@ -316,14 +332,6 @@
         "BTC",
         "SOL"
       ]
-    },
-    {
-      "title": "SoFi taps BitGo to support distribution of its SoFiUSD stablecoin",
-      "source": "Crypto Briefing",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
     },
     {
       "title": "Shiba Inu: Alert Issued as SHIB Participant Social Media Account Gets Hacked",
@@ -372,16 +380,6 @@
       ]
     },
     {
-      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "Ethereum ETF Inflows Surge with $38.65M Rebound, Signaling Renewed Investor Confidence - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -389,16 +387,6 @@
       "importance": "high",
       "coins": [
         "ETH"
-      ]
-    },
-    {
-      "title": "Bitcoin ETF Inflows Surge with $88 Million Rebound, Breaking 4-Day Outflow Streak - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -420,12 +408,14 @@
       "coins": []
     },
     {
-      "title": "Fed Rate Hike Sparks Macro Concerns for Crypto Markets",
+      "title": "Whale Accumulation of Ethereum Sparks Price Rally",
       "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -60,
+      "sentiment": "bullish",
+      "score": 60,
       "importance": "high",
-      "coins": []
+      "coins": [
+        "ETH"
+      ]
     },
     {
       "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
@@ -445,22 +435,30 @@
       "score": 50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "XRP Whales Add Over 4.18 Billion XRP Since October Price Flash Crash",
+      "source": "U.Today",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": []
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "Decrypt": 20,
-    "Crypto Briefing": 20,
-    "X/Twitter (Grok)": 8,
-    "Crypto Regulation (Google)": 20,
-    "NewsBTC": 10,
-    "Google News": 30,
-    "Fed News (Google)": 20,
-    "Bitcoin ETF (Google)": 20,
-    "CoinTelegraph": 20,
-    "U.Today": 20,
     "DL News": 20,
-    "The Block": 20
+    "CoinTelegraph": 20,
+    "The Block": 20,
+    "CoinDesk": 20,
+    "Bitcoin ETF (Google)": 20,
+    "Decrypt": 20,
+    "Google News": 30,
+    "Crypto Regulation (Google)": 20,
+    "U.Today": 20,
+    "Fed News (Google)": 20,
+    "X/Twitter (Grok)": 8,
+    "NewsBTC": 10,
+    "Crypto Briefing": 20
   },
   "history": [
     {
@@ -1568,10 +1566,17 @@
       "score": 21,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T16:57:42.027437+00:00",
+      "ts": 1772816262,
+      "score": 22,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T16:22:23.865674+00:00",
-    "updated_ts": 1772814143
+    "updated_at": "2026-03-06T16:57:42.027589+00:00",
+    "updated_ts": 1772816262
   }
 }
