@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 25,
+    "score": 17,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 2.5,
+        "age_min": 1.4,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 31,
-        "bias": "bullish",
+        "score": 0,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 18.6,
+        "age_min": 4.2,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 19.8,
+        "age_min": 41.2,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 22.5,
+        "age_min": 16.9,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,24 +44,24 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 21.1,
+        "age_min": 10.4,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 46,
+      "score": 36,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 68 articles, score=310"
+          "reason": "News sentiment: 69 articles, score=410"
         },
         {
-          "bias": "bullish",
-          "reason": "BTC whale distribution (7 txs) \u2014 accumulation"
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (4 large txs)"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 30 articles, score=-110"
+          "reason": "News sentiment: 32 articles, score=-110"
         },
         {
           "bias": "neutral",
@@ -114,10 +114,12 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Hike Triggers Widespread Crypto Liquidations",
-      "sentiment": "bearish",
+      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
+      "sentiment": "bullish",
       "importance": "critical",
-      "coins": []
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "type": "news",
@@ -139,9 +141,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-06T06:49:13.915988+00:00",
+  "timestamp": "2026-03-06T07:10:34.425090+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T06:49:13.916805+00:00",
-    "updated_ts": 1772779753
+    "updated_at": "2026-03-06T07:10:34.425963+00:00",
+    "updated_ts": 1772781034
   }
 }
