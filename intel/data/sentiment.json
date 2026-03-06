@@ -63,63 +63,63 @@
   "trending": {
     "trending": [
       {
-        "name": "WAR",
-        "symbol": "WAR",
-        "market_cap_rank": 508,
-        "score": 0
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 0
+      },
+      {
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 507,
         "score": 1
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
-        "market_cap_rank": 107,
+        "market_cap_rank": 108,
         "score": 2
       },
       {
         "name": "Opinion",
         "symbol": "OPN",
-        "market_cap_rank": 342,
+        "market_cap_rank": 343,
         "score": 3
+      },
+      {
+        "name": "Kite",
+        "symbol": "KITE",
+        "market_cap_rank": 93,
+        "score": 4
       },
       {
         "name": "Pi Network",
         "symbol": "PI",
         "market_cap_rank": 44,
-        "score": 4
+        "score": 5
       },
       {
         "name": "OKB",
         "symbol": "OKB",
         "market_cap_rank": 41,
-        "score": 5
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
         "score": 6
-      },
-      {
-        "name": "River",
-        "symbol": "RIVER",
-        "market_cap_rank": 113,
-        "score": 7
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 7
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 8
       },
       {
-        "name": "Kite",
-        "symbol": "KITE",
-        "market_cap_rank": 94,
+        "name": "Sui",
+        "symbol": "SUI",
+        "market_cap_rank": 30,
         "score": 9
       }
     ],
@@ -1508,10 +1508,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T09:52:22.475698+00:00",
+      "ts": 1772790742,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T09:20:55.773374+00:00",
-    "updated_ts": 1772788855
+    "updated_at": "2026-03-06T09:52:22.475735+00:00",
+    "updated_ts": 1772790742
   }
 }
