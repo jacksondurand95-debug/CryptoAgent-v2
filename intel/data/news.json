@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 8,
+    "score": 7,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 65,
-    "positive_score": 1800,
-    "negative_score": -1480
+    "total_articles": 240,
+    "scored_articles": 60,
+    "positive_score": 1630,
+    "negative_score": -1380
   },
   "alpha_events": [
     {
@@ -35,18 +35,6 @@
       "keywords": [
         "+ath",
         "+etf inflow"
-      ]
-    },
-    {
-      "title": "Fed Rate Hike Fuels Crypto Market Volatility and Liquidations",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -100,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "rate hike",
-        "liquidation"
       ]
     },
     {
@@ -134,18 +122,29 @@
       "keywords": [
         "fraud"
       ]
+    },
+    {
+      "title": "\u2018Dead\u2019 South Korean crypto fraudster resurfaces and pays back victims",
+      "source": "DL News",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "fraud"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 69,
-      "score": 570,
+      "articles": 67,
+      "score": 530,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 30,
-      "score": 50,
-      "bias": "bullish"
+      "articles": 29,
+      "score": -70,
+      "bias": "bearish"
     },
     "SOL": {
       "articles": 18,
@@ -173,14 +172,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Fed Rate Hike Fuels Crypto Market Volatility and Liquidations",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bearish",
-      "score": -100,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
@@ -363,16 +354,6 @@
       ]
     },
     {
-      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "Bitcoin Clears $71K As ETF Inflows Top $225M - Yellow.com",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -421,29 +402,45 @@
       "coins": []
     },
     {
-      "title": "Whale Accumulation of Ethereum Sparks Rally Speculation",
-      "source": "X/Twitter (Grok)",
+      "title": "38% of altcoins near all-time lows, worse than FTX crash: Analyst",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
+      "source": "DL News",
       "sentiment": "bullish",
-      "score": 60,
+      "score": 50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
       "importance": "high",
       "coins": [
+        "BTC",
         "ETH"
       ]
     }
   ],
   "sources": {
     "NewsBTC": 10,
-    "The Block": 20,
-    "Decrypt": 20,
-    "DL News": 20,
-    "X/Twitter (Grok)": 8,
-    "Bitcoin ETF (Google)": 20,
-    "CoinDesk": 20,
     "Crypto Briefing": 20,
-    "Fed News (Google)": 20,
-    "U.Today": 20,
-    "Google News": 30,
     "CoinTelegraph": 20,
+    "CoinDesk": 20,
+    "Bitcoin ETF (Google)": 20,
+    "The Block": 20,
+    "DL News": 20,
+    "U.Today": 20,
+    "Fed News (Google)": 20,
+    "Google News": 30,
+    "Decrypt": 20,
     "Crypto Regulation (Google)": 20
   },
   "history": [
@@ -1335,10 +1332,17 @@
       "score": 8,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T04:36:01.129402+00:00",
+      "ts": 1772771761,
+      "score": 7,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T03:56:38.737356+00:00",
-    "updated_ts": 1772769398
+    "updated_at": "2026-03-06T04:36:01.129558+00:00",
+    "updated_ts": 1772771761
   }
 }

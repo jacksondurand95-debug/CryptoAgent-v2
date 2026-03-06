@@ -65,7 +65,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 583,
+        "market_cap_rank": 565,
         "score": 0
       },
       {
@@ -81,15 +81,15 @@
         "score": 2
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 339,
-        "score": 3
-      },
-      {
         "name": "OKB",
         "symbol": "OKB",
         "market_cap_rank": 41,
+        "score": 3
+      },
+      {
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 325,
         "score": 4
       },
       {
@@ -105,26 +105,27 @@
         "score": 6
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 294,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 7
-      },
-      {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 45,
-        "score": 8
       },
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
         "market_cap_rank": 285,
+        "score": 8
+      },
+      {
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 45,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC"
+      "BTC",
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -1416,10 +1417,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T04:35:07.974881+00:00",
+      "ts": 1772771707,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T04:17:42.880876+00:00",
-    "updated_ts": 1772770662
+    "updated_at": "2026-03-06T04:35:07.974915+00:00",
+    "updated_ts": 1772771707
   }
 }
