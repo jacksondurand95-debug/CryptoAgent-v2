@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 25,
+    "score": 19,
     "bias": "bullish",
     "strength": "weak",
     "total_articles": 247,
-    "scored_articles": 55,
-    "positive_score": 1920,
-    "negative_score": -940
+    "scored_articles": 58,
+    "positive_score": 1820,
+    "negative_score": -1100
   },
   "alpha_events": [
     {
@@ -32,18 +32,6 @@
       "coins": [
         "BTC"
       ],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
-      ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
       "keywords": [
         "+fed rate cut",
         "+rate cut"
@@ -104,6 +92,17 @@
       ]
     },
     {
+      "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "collapse"
+      ]
+    },
+    {
       "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -147,8 +146,8 @@
     },
     "ETH": {
       "articles": 30,
-      "score": 0,
-      "bias": "neutral"
+      "score": -60,
+      "bias": "bearish"
     },
     "SOL": {
       "articles": 9,
@@ -176,14 +175,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
@@ -227,6 +218,14 @@
       ]
     },
     {
+      "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": []
+    },
+    {
       "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
       "source": "Decrypt",
       "sentiment": "bearish",
@@ -253,10 +252,20 @@
       "coins": []
     },
     {
-      "title": "Bitcoin ETFs See Record Inflows Boosting Market Confidence",
+      "title": "Record Inflows into Spot Bitcoin ETFs Boost Market Optimism",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin recovery meets DeFi tensions as Aave rift deepens: Finance Redefined",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
       "importance": "high",
       "coins": [
         "BTC"
@@ -280,14 +289,6 @@
     },
     {
       "title": "Fed's Williams says rate cuts still possible, does not address Iran war - Reuters",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Fed Minutes Reveal Little Appetite for Rate Cuts - WSJ",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -322,16 +323,6 @@
       "importance": "high",
       "coins": [
         "BTC"
-      ]
-    },
-    {
-      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "ETH"
       ]
     },
     {
@@ -373,6 +364,16 @@
       "coins": []
     },
     {
+      "title": "Massive Bitcoin Whale Accumulation Signals Bull Run",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -386,6 +387,14 @@
     {
       "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
       "source": "DL News",
+      "sentiment": "bullish",
+      "score": 50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "First US state-level stablecoin bill passes in Florida",
+      "source": "The Block",
       "sentiment": "bullish",
       "score": 50,
       "importance": "high",
@@ -429,32 +438,22 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
     }
   ],
   "sources": {
+    "Decrypt": 20,
+    "Bitcoin ETF (Google)": 20,
+    "Fed News (Google)": 20,
+    "Crypto Regulation (Google)": 20,
+    "X/Twitter (Grok)": 7,
+    "CoinDesk": 20,
+    "CoinTelegraph": 20,
     "Crypto Briefing": 20,
     "DL News": 20,
-    "X/Twitter (Grok)": 7,
-    "U.Today": 20,
-    "CoinTelegraph": 20,
-    "Google News": 30,
     "NewsBTC": 10,
-    "Decrypt": 20,
     "The Block": 20,
-    "Fed News (Google)": 20,
-    "CoinDesk": 20,
-    "Crypto Regulation (Google)": 20,
-    "Bitcoin ETF (Google)": 20
+    "U.Today": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -1604,10 +1603,17 @@
       "score": 25,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T19:23:50.709949+00:00",
+      "ts": 1772825030,
+      "score": 19,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T18:59:35.975116+00:00",
-    "updated_ts": 1772823575
+    "updated_at": "2026-03-06T19:23:50.710182+00:00",
+    "updated_ts": 1772825030
   }
 }
