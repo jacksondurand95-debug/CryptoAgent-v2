@@ -7,7 +7,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC whale activity normal (4 large txs)"
+        "reason": "BTC whale activity normal (8 large txs)"
       },
       {
         "bias": "neutral",
@@ -24,13 +24,40 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "6f208a9d459f217a...",
-        "btc": 2350.0,
-        "type": "consolidation",
-        "inputs": 45,
+        "hash": "1f174a2c98602944...",
+        "btc": 377.31,
+        "type": "transfer",
+        "inputs": 1,
         "outputs": 2,
-        "block": 939542,
-        "time": 1772779336
+        "block": 939545,
+        "time": 1772780911
+      },
+      {
+        "hash": "519473cc2c030d5c...",
+        "btc": 289.39,
+        "type": "transfer",
+        "inputs": 3,
+        "outputs": 3,
+        "block": 939545,
+        "time": 1772780948
+      },
+      {
+        "hash": "fd8a531c555935fb...",
+        "btc": 270.0,
+        "type": "distribution",
+        "inputs": 1,
+        "outputs": 14,
+        "block": 939545,
+        "time": 1772780376
+      },
+      {
+        "hash": "c79c0c7f779b0f83...",
+        "btc": 200.0,
+        "type": "transfer",
+        "inputs": 1,
+        "outputs": 1,
+        "block": 939545,
+        "time": 1772780407
       },
       {
         "hash": "488f5d2419972be0...",
@@ -39,7 +66,16 @@
         "inputs": 1,
         "outputs": 4,
         "block": 939544,
-        "time": 1772780192
+        "time": 1772780193
+      },
+      {
+        "hash": "ec295d4d8d47ff97...",
+        "btc": 179.71,
+        "type": "transfer",
+        "inputs": 1,
+        "outputs": 2,
+        "block": 939545,
+        "time": 1772780570
       },
       {
         "hash": "95ba796d08101238...",
@@ -60,16 +96,16 @@
         "time": 1772780189
       }
     ],
-    "total_whale_btc": 2864.72,
-    "count": 4,
-    "consolidations": 1,
-    "distributions": 1,
+    "total_whale_btc": 1831.13,
+    "count": 8,
+    "consolidations": 0,
+    "distributions": 2,
     "blocks_scanned": 3,
     "signal": {
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "BTC whale activity normal (4 large txs)"
+      "reason": "BTC whale activity normal (8 large txs)"
     }
   },
   "eth_whales": {
@@ -1255,10 +1291,16 @@
       "ts": 1772780783,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-06T07:29:52.816291+00:00",
+      "ts": 1772782192,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T07:06:23.910378+00:00",
-    "updated_ts": 1772780783
+    "updated_at": "2026-03-06T07:29:52.816326+00:00",
+    "updated_ts": 1772782192
   }
 }
