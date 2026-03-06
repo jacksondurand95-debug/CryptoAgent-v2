@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 22,
+    "score": 15,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 12.7,
+        "age_min": 14.1,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 31,
-        "bias": "bullish",
+        "score": 0,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 29.7,
+        "age_min": 15.9,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 29.5,
+        "age_min": 50.9,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,44 +36,40 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 5.1,
+        "age_min": 26.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 23,
+        "score": 25,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 34.6,
+        "age_min": 20.5,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 46,
+      "score": 36,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 85 articles, score=820"
+          "reason": "News sentiment: 82 articles, score=810"
         },
         {
-          "bias": "bullish",
-          "reason": "BTC whale distribution (5 txs) \u2014 accumulation"
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (15 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": -53,
-      "bias": "bearish",
-      "signals": 2,
+      "score": 0,
+      "bias": "neutral",
+      "signals": 1,
       "details": [
-        {
-          "bias": "bearish",
-          "reason": "News sentiment: 28 articles, score=-60"
-        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -81,13 +77,13 @@
       ]
     },
     "SOL": {
-      "score": 60,
+      "score": 50,
       "bias": "bullish",
       "signals": 1,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 11 articles, score=60"
+          "reason": "News sentiment: 9 articles, score=50"
         }
       ]
     }
@@ -113,7 +109,7 @@
     },
     {
       "type": "news",
-      "title": "Fed rate cut outlook: Will the Federal Reserve hold back policy rate cuts following the Taylor Rule as sig - The Economic Times",
+      "title": "Fed Rate Cut Rumors Ignite Crypto Market Surge",
       "sentiment": "bullish",
       "importance": "critical",
       "coins": []
@@ -138,9 +134,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-06T18:58:37.765131+00:00",
+  "timestamp": "2026-03-06T19:20:06.255406+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T18:58:37.765941+00:00",
-    "updated_ts": 1772823517
+    "updated_at": "2026-03-06T19:20:06.256107+00:00",
+    "updated_ts": 1772824806
   }
 }
