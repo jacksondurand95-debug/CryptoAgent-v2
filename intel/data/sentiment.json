@@ -71,7 +71,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 429,
+        "market_cap_rank": 418,
         "score": 1
       },
       {
@@ -81,52 +81,52 @@
         "score": 2
       },
       {
-        "name": "Sign",
-        "symbol": "SIGN",
-        "market_cap_rank": 315,
-        "score": 3
-      },
-      {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
-        "score": 4
-      },
-      {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 5
+        "score": 3
+      },
+      {
+        "name": "Sign",
+        "symbol": "SIGN",
+        "market_cap_rank": 310,
+        "score": 4
       },
       {
         "name": "Pi Network",
         "symbol": "PI",
         "market_cap_rank": 44,
-        "score": 6
+        "score": 5
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 370,
-        "score": 7
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
+        "score": 6
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
+        "score": 7
+      },
+      {
+        "name": "Lighter",
+        "symbol": "LIT",
+        "market_cap_rank": 143,
         "score": 8
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 148,
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 367,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH",
-      "SOL"
+      "SOL",
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -1649,10 +1649,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T17:50:01.938979+00:00",
+      "ts": 1772819401,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T17:19:54.326379+00:00",
-    "updated_ts": 1772817594
+    "updated_at": "2026-03-06T17:50:01.939009+00:00",
+    "updated_ts": 1772819401
   }
 }
