@@ -71,13 +71,13 @@
       {
         "name": "BankrCoin",
         "symbol": "BNKR",
-        "market_cap_rank": 439,
+        "market_cap_rank": 444,
         "score": 1
       },
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 412,
+        "market_cap_rank": 435,
         "score": 2
       },
       {
@@ -87,44 +87,45 @@
         "score": 3
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 156,
-        "score": 4
-      },
-      {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 49,
-        "score": 5
-      },
-      {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
-        "market_cap_rank": 109,
-        "score": 6
+        "market_cap_rank": 108,
+        "score": 4
       },
       {
         "name": "Chainlink",
         "symbol": "LINK",
         "market_cap_rank": 18,
-        "score": 7
+        "score": 5
       },
       {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 37,
-        "score": 8
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 6
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
         "market_cap_rank": 151,
+        "score": 7
+      },
+      {
+        "name": "Canton",
+        "symbol": "CC",
+        "market_cap_rank": 20,
+        "score": 8
+      },
+      {
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 48,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC"
+      "BTC",
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -1738,10 +1739,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T22:47:50.747474+00:00",
+      "ts": 1772837270,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T22:13:44.548546+00:00",
-    "updated_ts": 1772835224
+    "updated_at": "2026-03-06T22:47:50.747505+00:00",
+    "updated_ts": 1772837270
   }
 }
