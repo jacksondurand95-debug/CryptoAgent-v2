@@ -65,7 +65,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 559,
+        "market_cap_rank": 548,
         "score": 0
       },
       {
@@ -75,9 +75,9 @@
         "score": 1
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 330,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 107,
         "score": 2
       },
       {
@@ -87,9 +87,9 @@
         "score": 3
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 342,
         "score": 4
       },
       {
@@ -99,27 +99,27 @@
         "score": 5
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 6
-      },
-      {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 6
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
         "score": 7
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 107,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 151,
         "score": 8
       },
       {
-        "name": "Sign",
-        "symbol": "SIGN",
-        "market_cap_rank": 325,
+        "name": "Virtuals Protocol",
+        "symbol": "VIRTUAL",
+        "market_cap_rank": 103,
         "score": 9
       }
     ],
@@ -1432,10 +1432,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T05:28:40.213175+00:00",
+      "ts": 1772774920,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T05:02:31.070469+00:00",
-    "updated_ts": 1772773351
+    "updated_at": "2026-03-06T05:28:40.213206+00:00",
+    "updated_ts": 1772774920
   }
 }
