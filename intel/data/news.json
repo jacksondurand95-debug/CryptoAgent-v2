@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 13,
+    "score": 11,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 64,
-    "positive_score": 1910,
-    "negative_score": -1400
+    "total_articles": 247,
+    "scored_articles": 63,
+    "positive_score": 1790,
+    "negative_score": -1370
   },
   "alpha_events": [
     {
@@ -24,18 +24,6 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Spark Crypto Market Rally",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
-      ]
-    },
-    {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -48,17 +36,6 @@
       "keywords": [
         "hack",
         "exploit"
-      ]
-    },
-    {
-      "title": "Ripple CEO Comments on XRP's Potential ETF Approval",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 90,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "+etf approval"
       ]
     },
     {
@@ -139,12 +116,36 @@
       "keywords": [
         "enforcement action"
       ]
+    },
+    {
+      "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "hack"
+      ]
+    },
+    {
+      "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ],
+      "keywords": [
+        "+etf inflow"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
       "articles": 71,
-      "score": 340,
+      "score": 330,
       "bias": "bullish"
     },
     "ETH": {
@@ -170,14 +171,6 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Spark Crypto Market Rally",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
-    },
-    {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -187,14 +180,6 @@
         "BTC",
         "SOL"
       ]
-    },
-    {
-      "title": "Ripple CEO Comments on XRP's Potential ETF Approval",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 90,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
@@ -361,6 +346,14 @@
       "coins": []
     },
     {
+      "title": "Oil, inflation threaten Fed interest-rate cuts under Warsh - thestreet.com",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
       "title": "Bitcoin ETF Inflows Hit Three-Week High: Are Institutions Returning? - Yahoo Finance",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -419,7 +412,7 @@
       "coins": []
     },
     {
-      "title": "Bitcoin ETF Inflows Hit All-Time High Amid Bullish Sentiment",
+      "title": "Bitcoin ETF Inflows Hit Record Highs Amid Institutional Demand",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 60,
@@ -435,22 +428,33 @@
       "score": 50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
     }
   ],
   "sources": {
-    "Fed News (Google)": 20,
-    "Bitcoin ETF (Google)": 20,
-    "Crypto Regulation (Google)": 20,
+    "The Block": 20,
     "Decrypt": 20,
     "NewsBTC": 10,
     "Google News": 30,
-    "X/Twitter (Grok)": 8,
-    "The Block": 20,
-    "DL News": 20,
-    "CoinDesk": 20,
     "U.Today": 20,
+    "Fed News (Google)": 20,
+    "Crypto Regulation (Google)": 20,
+    "X/Twitter (Grok)": 7,
+    "CoinDesk": 20,
+    "Bitcoin ETF (Google)": 20,
     "Crypto Briefing": 20,
-    "CoinTelegraph": 20
+    "CoinTelegraph": 20,
+    "DL News": 20
   },
   "history": [
     {
@@ -1453,10 +1457,17 @@
       "score": 13,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T10:55:15.056808+00:00",
+      "ts": 1772794515,
+      "score": 11,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T10:21:01.723537+00:00",
-    "updated_ts": 1772792461
+    "updated_at": "2026-03-06T10:55:15.056962+00:00",
+    "updated_ts": 1772794515
   }
 }
