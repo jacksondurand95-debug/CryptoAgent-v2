@@ -152,11 +152,11 @@
       "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 19072,
-      "vsize": 23258016,
-      "total_fee": 2710522
+      "count": 19210,
+      "vsize": 22653618,
+      "total_fee": 2987898
     },
-    "btc_hashrate": 1153613624150.0,
+    "btc_hashrate": 1124773283546.0,
     "hashrate_trend": {
       "current_eh": 1188.4,
       "avg_7d_eh": 1025.8,
@@ -913,10 +913,18 @@
       "bias": "bullish",
       "stablecoin_mcap_b": 266.09,
       "tvl_b": 98.2
+    },
+    {
+      "timestamp": "2026-03-06T03:10:36.838657+00:00",
+      "ts": 1772766636,
+      "score": 27,
+      "bias": "bullish",
+      "stablecoin_mcap_b": 266.09,
+      "tvl_b": 98.2
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T03:00:24.697752+00:00",
-    "updated_ts": 1772766024
+    "updated_at": "2026-03-06T03:10:36.838701+00:00",
+    "updated_ts": 1772766636
   }
 }
