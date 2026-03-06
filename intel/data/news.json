@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 12,
+    "score": 5,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 64,
-    "positive_score": 1890,
-    "negative_score": -1400
+    "total_articles": 240,
+    "scored_articles": 60,
+    "positive_score": 1610,
+    "negative_score": -1420
   },
   "alpha_events": [
     {
@@ -21,18 +21,6 @@
       "keywords": [
         "+blackrock",
         "+spot etf"
-      ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Ignite Crypto Market Rally",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
       ]
     },
     {
@@ -142,22 +130,33 @@
       "keywords": [
         "enforcement action"
       ]
+    },
+    {
+      "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "hack"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 69,
-      "score": 420,
+      "articles": 68,
+      "score": 240,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 30,
-      "score": -50,
+      "articles": 32,
+      "score": -70,
       "bias": "bearish"
     },
     "SOL": {
-      "articles": 19,
-      "score": -160,
+      "articles": 17,
+      "score": -200,
       "bias": "bearish"
     }
   },
@@ -171,14 +170,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Ignite Crypto Market Rally",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
@@ -264,16 +255,6 @@
       ]
     },
     {
-      "title": "Bitcoin ETFs See Record Inflows Boosting Market Confidence",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -343,16 +324,6 @@
       "coins": []
     },
     {
-      "title": "Institutions Again Show Interest in Reaccumulating Bitcoin as ETF Inflows Surge: Glassnode",
-      "source": "U.Today",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Fed's Williams says rate cuts still possible, does not address Iran war - Reuters",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
@@ -361,7 +332,7 @@
       "coins": []
     },
     {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
+      "title": "Fed officials signal shocking twist on interest-rate cuts - thestreet.com",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -427,6 +398,17 @@
       "coins": []
     },
     {
+      "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
       "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
       "source": "DL News",
       "sentiment": "bullish",
@@ -444,21 +426,40 @@
         "BTC",
         "ETH"
       ]
+    },
+    {
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
-    "NewsBTC": 10,
-    "Google News": 30,
-    "Fed News (Google)": 20,
-    "Crypto Regulation (Google)": 20,
-    "Decrypt": 20,
-    "DL News": 20,
-    "CoinDesk": 20,
-    "X/Twitter (Grok)": 8,
-    "The Block": 20,
-    "Crypto Briefing": 20,
     "U.Today": 20,
+    "The Block": 20,
+    "NewsBTC": 10,
+    "Decrypt": 20,
+    "CoinDesk": 20,
+    "Fed News (Google)": 20,
+    "Crypto Briefing": 20,
+    "Google News": 30,
     "CoinTelegraph": 20,
+    "DL News": 20,
+    "Crypto Regulation (Google)": 20,
     "Bitcoin ETF (Google)": 20
   },
   "history": [
@@ -1483,10 +1484,17 @@
       "score": 12,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T12:13:06.050062+00:00",
+      "ts": 1772799186,
+      "score": 5,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T11:48:45.358773+00:00",
-    "updated_ts": 1772797725
+    "updated_at": "2026-03-06T12:13:06.050211+00:00",
+    "updated_ts": 1772799186
   }
 }
