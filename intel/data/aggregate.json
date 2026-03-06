@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 5.5,
+        "age_min": 1.5,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 31,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 9.1,
+        "age_min": 24.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 13.0,
+        "age_min": 28.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 20.8,
+        "age_min": 3.5,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,7 +44,7 @@
         "score": 19,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 18.0,
+        "age_min": 1.0,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 85 articles, score=700"
+          "reason": "News sentiment: 84 articles, score=620"
         },
         {
           "bias": "bullish",
@@ -66,10 +66,14 @@
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
-      "signals": 1,
+      "score": -53,
+      "bias": "bearish",
+      "signals": 2,
       "details": [
+        {
+          "bias": "bearish",
+          "reason": "News sentiment: 30 articles, score=-60"
+        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -109,15 +113,8 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Cut Fuels Crypto Rally Across Majors",
+      "title": "Macro Economic Data Boosts Crypto Sentiment with Fed Rate Cut Hopes",
       "sentiment": "bullish",
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "type": "news",
-      "title": "Mass Liquidations Cascade in Altcoins After Flash Crash",
-      "sentiment": "bearish",
       "importance": "critical",
       "coins": []
     },
@@ -130,11 +127,20 @@
         "BTC",
         "SOL"
       ]
+    },
+    {
+      "type": "news",
+      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
-  "timestamp": "2026-03-06T20:36:39.956973+00:00",
+  "timestamp": "2026-03-06T20:51:56.121135+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T20:36:39.957825+00:00",
-    "updated_ts": 1772829399
+    "updated_at": "2026-03-06T20:51:56.121985+00:00",
+    "updated_ts": 1772830316
   }
 }
