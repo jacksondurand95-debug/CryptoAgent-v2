@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 11,
+    "score": 7,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 247,
-    "scored_articles": 66,
-    "positive_score": 1890,
-    "negative_score": -1470
+    "total_articles": 248,
+    "scored_articles": 65,
+    "positive_score": 1750,
+    "negative_score": -1500
   },
   "alpha_events": [
     {
@@ -21,18 +21,6 @@
       "keywords": [
         "+blackrock",
         "+spot etf"
-      ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Spark Altcoin Rally Across Markets",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
       ]
     },
     {
@@ -61,6 +49,19 @@
       "keywords": [
         "+integration",
         "+etf inflow"
+      ]
+    },
+    {
+      "title": "Ethereum ETF Approvals Drive Renewed Interest in Layer-1 Tokens",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 90,
+      "importance": "critical",
+      "coins": [
+        "ETH"
+      ],
+      "keywords": [
+        "+etf approval"
       ]
     },
     {
@@ -104,7 +105,7 @@
       ]
     },
     {
-      "title": "Bitcoin ETFs See Record Inflows Amid Market Surge",
+      "title": "Bitcoin ETFs See Record Inflows Amid Bullish Market Sentiment",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -141,17 +142,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 68,
-      "score": 690,
+      "articles": 69,
+      "score": 650,
       "bias": "bullish"
     },
     "ETH": {
       "articles": 29,
-      "score": -70,
-      "bias": "bearish"
+      "score": 20,
+      "bias": "neutral"
     },
     "SOL": {
-      "articles": 15,
+      "articles": 17,
       "score": -180,
       "bias": "bearish"
     }
@@ -166,14 +167,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Spark Altcoin Rally Across Markets",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
@@ -193,6 +186,16 @@
       "importance": "critical",
       "coins": [
         "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum ETF Approvals Drive Renewed Interest in Layer-1 Tokens",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 90,
+      "importance": "critical",
+      "coins": [
+        "ETH"
       ]
     },
     {
@@ -227,7 +230,7 @@
       ]
     },
     {
-      "title": "Bitcoin ETFs See Record Inflows Amid Market Surge",
+      "title": "Bitcoin ETFs See Record Inflows Amid Bullish Market Sentiment",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -348,15 +351,7 @@
       "coins": []
     },
     {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Federal Reserve holds interest rates steady after three rate cuts in 2025 - U.S. Bank",
+      "title": "Fed officials signal shocking twist on interest-rate cuts - thestreet.com",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -430,22 +425,30 @@
       "score": -60,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "38% of altcoins near all-time lows, worse than FTX crash: Analyst",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": []
     }
   ],
   "sources": {
     "NewsBTC": 10,
-    "Google News": 30,
-    "X/Twitter (Grok)": 7,
-    "CoinTelegraph": 20,
-    "CoinDesk": 20,
     "DL News": 20,
-    "Decrypt": 20,
-    "The Block": 20,
-    "Crypto Regulation (Google)": 20,
-    "Crypto Briefing": 20,
-    "Fed News (Google)": 20,
+    "Google News": 30,
     "Bitcoin ETF (Google)": 20,
-    "U.Today": 20
+    "X/Twitter (Grok)": 8,
+    "CoinDesk": 20,
+    "Crypto Regulation (Google)": 20,
+    "The Block": 20,
+    "Decrypt": 20,
+    "Crypto Briefing": 20,
+    "CoinTelegraph": 20,
+    "U.Today": 20,
+    "Fed News (Google)": 20
   },
   "history": [
     {
@@ -1308,10 +1311,17 @@
       "score": 11,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T01:47:22.192221+00:00",
+      "ts": 1772761642,
+      "score": 7,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T01:03:48.970601+00:00",
-    "updated_ts": 1772759028
+    "updated_at": "2026-03-06T01:47:22.192465+00:00",
+    "updated_ts": 1772761642
   }
 }
