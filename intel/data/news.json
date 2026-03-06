@@ -1,14 +1,56 @@
 {
   "aggregate": {
-    "score": -20,
-    "bias": "bearish",
+    "score": 8,
+    "bias": "neutral",
     "strength": "weak",
-    "total_articles": 90,
-    "scored_articles": 20,
-    "positive_score": 330,
-    "negative_score": -560
+    "total_articles": 240,
+    "scored_articles": 61,
+    "positive_score": 1680,
+    "negative_score": -1390
   },
   "alpha_events": [
+    {
+      "title": "Bitcoin Spot ETFs Record $225M Inflows as BlackRock\u2019s IBIT Leads with $322M - Binance",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 140,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+blackrock",
+        "+spot etf"
+      ]
+    },
+    {
+      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 100,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+ath",
+        "+etf inflow"
+      ]
+    },
+    {
+      "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
+      "source": "Decrypt",
+      "sentiment": "bullish",
+      "score": 90,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+integration",
+        "+etf inflow"
+      ]
+    },
     {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "source": "CoinDesk",
@@ -21,6 +63,19 @@
       ],
       "keywords": [
         "insolvency"
+      ]
+    },
+    {
+      "title": "Coinbase CEO Brian Armstrong and execs face shareholder lawsuit over disclosures, compliance failures",
+      "source": "The Block",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": [
+        "ETH"
+      ],
+      "keywords": [
+        "bankruptcy"
       ]
     },
     {
@@ -70,62 +125,65 @@
       ]
     },
     {
-      "title": "38% of altcoins near all-time lows, worse than FTX crash: Analyst",
-      "source": "CoinTelegraph",
+      "title": "\u2018Dead\u2019 South Korean crypto fraudster resurfaces and pays back victims",
+      "source": "DL News",
       "sentiment": "bearish",
-      "score": -50,
+      "score": -60,
       "importance": "high",
       "coins": [],
       "keywords": [
-        "crash"
-      ]
-    },
-    {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ],
-      "keywords": [
-        "crash"
-      ]
-    },
-    {
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ],
-      "keywords": [
-        "crash"
+        "fraud"
       ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 26,
-      "score": -100,
-      "bias": "bearish"
+      "articles": 67,
+      "score": 620,
+      "bias": "bullish"
     },
     "ETH": {
-      "articles": 15,
-      "score": 10,
+      "articles": 27,
+      "score": -20,
       "bias": "neutral"
     },
     "SOL": {
-      "articles": 5,
-      "score": -150,
+      "articles": 16,
+      "score": -180,
       "bias": "bearish"
     }
   },
   "top_articles": [
+    {
+      "title": "Bitcoin Spot ETFs Record $225M Inflows as BlackRock\u2019s IBIT Leads with $322M - Binance",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 140,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 100,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
+      "source": "Decrypt",
+      "sentiment": "bullish",
+      "score": 90,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
     {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "source": "CoinDesk",
@@ -135,6 +193,16 @@
       "coins": [
         "BTC",
         "SOL"
+      ]
+    },
+    {
+      "title": "Coinbase CEO Brian Armstrong and execs face shareholder lawsuit over disclosures, compliance failures",
+      "source": "The Block",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": [
+        "ETH"
       ]
     },
     {
@@ -172,6 +240,177 @@
       "coins": []
     },
     {
+      "title": "\u2018Dead\u2019 South Korean crypto fraudster resurfaces and pays back victims",
+      "source": "DL News",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Cop gets six-year prison sentence for taking $90,000 in crypto-linked bribes",
+      "source": "DL News",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Solv Protocol says exploit drained $2.7 million from Bitcoin yield vault",
+      "source": "The Block",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
+    },
+    {
+      "title": "Suspect in alleged $46 million US Marshals crypto theft arrested in Saint Martin, FBI says",
+      "source": "The Block",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "SoFi taps BitGo to support distribution of its SoFiUSD stablecoin",
+      "source": "Crypto Briefing",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "BC.GAME offers $500,000 bounty to track wallet tied to $4.3 million exploit",
+      "source": "Crypto Briefing",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Institutions Again Show Interest in Reaccumulating Bitcoin as ETF Inflows Surge: Glassnode",
+      "source": "U.Today",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Ex-Ripple Engineer: XRP Protocol Freeze Influenced Ethereum, Google Issues Scam Alert for iPhone Users, Shiba Inu (SHIB) Secures Binance Trading Expansion: Morning Crypto Report",
+      "source": "U.Today",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "iPhone Users Warned: Crypto Scams Can Trigger \u2018Coruna\u2019 iOS Exploits",
+      "source": "NewsBTC",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Fed's Williams says rate cuts still possible, does not address Iran war - Reuters",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Oil, inflation threaten Fed interest-rate cuts under Warsh - thestreet.com",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin ETF Inflows Hit Three-Week High: Are Institutions Returning? - Yahoo Finance",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin ETF Inflow Streak Snaps With $27 Million Outflow - Bitcoin.com News",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin Clears $71K As ETF Inflows Top $225M - Yellow.com",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum ETF Inflows Surge with $38.65M Rebound, Signaling Renewed Investor Confidence - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "Bitcoin ETF Inflows Surge with $88 Million Rebound, Breaking 4-Day Outflow Streak - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Largest bitcoin ETF inflow in three months signals institutional bid is back - CoinDesk",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "SEC Dismisses Fraud Case Against Crypto Billionaire Justin Sun - WSJ",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
       "title": "38% of altcoins near all-time lows, worse than FTX crash: Analyst",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -180,239 +419,27 @@
       "coins": []
     },
     {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
+      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
+      "source": "DL News",
+      "sentiment": "bullish",
+      "score": 50,
       "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Short seller Culper bets against ether, Tom Lee's BitMine citing 'death spiral' risk",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Son of U.S. government contractor, accused of stealing millions in seized crypto, arrested in France",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
       "coins": []
-    },
-    {
-      "title": "Bitcoin holds above $72,000 as crypto market pauses after breakout",
-      "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "Ether\u2019s path to $2.5K may be trickier than expected: Here\u2019s why",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Trump son echoes president's anti-bank message amid stablecoin yield fight",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin holds breakout gains while crypto market turns cautious: Crypto Markets Today - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "New York Stock Exchange owner values crypto exchange OKX at $25 billion in new partnership",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "Here\u2019s what happened in crypto today",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Cardano's ADA Token Now Accepted at Spar Supermarkets in Switzerland",
-      "source": "Decrypt",
-      "sentiment": "neutral",
-      "score": 30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
-      "source": "Decrypt",
-      "sentiment": "neutral",
-      "score": 30,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin miners offload 15K BTC since October, with more sales expected",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -10,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "SEC, Justin Sun reach settlement over Tron lawsuit",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "U.S. banking agencies say capital should be same for standard or tokenized securities",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Ripple adds Coinbase crypto futures to its $3 trillion clearing platform",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH",
-        "SOL"
-      ]
-    },
-    {
-      "title": "Kraken's surprise Fed win may harken onslaught of crypto firms with narrow Fed access",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "CleanSpark sold 97% of February bitcoin production to fund AI pivot",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
-    },
-    {
-      "title": "Crypto for Advisors: Tokenization offers always-on global investment access",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin pulls back to near $71,000 even as software sector soars",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly all assets decline",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Core Scientific secures up to $1 billion loan facility from Morgan Stanley",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin\u2019s drawdown hasn\u2019t shaken institutional investors yet, says CoinShares",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
+    "Crypto Briefing": 20,
+    "NewsBTC": 10,
+    "Bitcoin ETF (Google)": 20,
+    "CoinDesk": 20,
     "Google News": 30,
-    "CoinTelegraph": 20,
+    "The Block": 20,
+    "DL News": 20,
+    "Crypto Regulation (Google)": 20,
+    "U.Today": 20,
     "Decrypt": 20,
-    "CoinDesk": 20
+    "CoinTelegraph": 20,
+    "Fed News (Google)": 20
   },
   "history": [
     {
@@ -1261,10 +1288,17 @@
       "score": -20,
       "bias": "bearish",
       "alpha_count": 8
+    },
+    {
+      "timestamp": "2026-03-06T00:30:32.824729+00:00",
+      "ts": 1772757032,
+      "score": 8,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T23:14:19.120639+00:00",
-    "updated_ts": 1772752459
+    "updated_at": "2026-03-06T00:30:32.824872+00:00",
+    "updated_ts": 1772757032
   }
 }

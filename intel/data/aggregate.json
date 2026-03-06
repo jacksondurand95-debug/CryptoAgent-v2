@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 9,
+    "score": 13,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 2.6,
+        "age_min": 2.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,56 +20,60 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 21.9,
+        "age_min": 1.5,
         "effective_weight": 2.5
       },
       "onchain": {
         "status": "fresh",
-        "score": 27,
-        "bias": "bullish",
+        "score": 5,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 227.2,
+        "age_min": 0.6,
         "effective_weight": 2.0
       },
       "sentiment": {
         "status": "fresh",
-        "score": 40,
+        "score": 80,
         "bias": "bullish",
-        "strength": "moderate",
-        "age_min": 32.2,
+        "strength": "strong",
+        "age_min": 1.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -20,
-        "bias": "bearish",
+        "score": 8,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 47.5,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -36,
-      "bias": "bearish",
+      "score": 36,
+      "bias": "bullish",
       "signals": 2,
       "details": [
         {
-          "bias": "bearish",
-          "reason": "News sentiment: 26 articles, score=-100"
+          "bias": "bullish",
+          "reason": "News sentiment: 67 articles, score=620"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (6 large txs)"
+          "reason": "BTC whale activity normal (7 large txs)"
         }
       ]
     },
     "ETH": {
       "score": 0,
       "bias": "neutral",
-      "signals": 1,
+      "signals": 2,
       "details": [
+        {
+          "bias": "neutral",
+          "reason": "News sentiment: 27 articles, score=-20"
+        },
         {
           "bias": "neutral",
           "reason": "No Etherscan key \u2014 ETH whale data unavailable"
@@ -83,12 +87,39 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 5 articles, score=-150"
+          "reason": "News sentiment: 16 articles, score=-180"
         }
       ]
     }
   },
   "alpha_events": [
+    {
+      "type": "news",
+      "title": "Bitcoin Spot ETFs Record $225M Inflows as BlackRock\u2019s IBIT Leads with $322M - Binance",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "type": "news",
+      "title": "How Policy Shifts, Geopolitical Tensions Are Reshaping the Bitcoin Trade",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
     {
       "type": "news",
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
@@ -101,38 +132,17 @@
     },
     {
       "type": "news",
-      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
+      "title": "Coinbase CEO Brian Armstrong and execs face shareholder lawsuit over disclosures, compliance failures",
       "sentiment": "bearish",
-      "importance": "high",
+      "importance": "critical",
       "coins": [
-        "SOL"
+        "ETH"
       ]
-    },
-    {
-      "type": "news",
-      "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "type": "news",
-      "title": "SEC ends case against Justin Sun with $10M settlement",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "type": "news",
-      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": []
     }
   ],
-  "timestamp": "2026-03-06T00:01:51.389236+00:00",
+  "timestamp": "2026-03-06T00:30:32.974045+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T00:01:51.389977+00:00",
-    "updated_ts": 1772755311
+    "updated_at": "2026-03-06T00:30:32.974727+00:00",
+    "updated_ts": 1772757032
   }
 }

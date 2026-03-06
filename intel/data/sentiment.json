@@ -1,24 +1,25 @@
 {
   "aggregate": {
-    "score": 40,
+    "score": 80,
     "bias": "bullish",
-    "strength": "moderate",
+    "strength": "strong",
     "signals": [
       {
         "bias": "bullish",
-        "score": 40,
-        "reason": "Fear (22) \u2014 lean bullish"
+        "score": 80,
+        "reason": "Extreme Fear (18) \u2014 contrarian BUY"
       }
     ]
   },
   "fear_greed": {
-    "current": 22,
+    "current": 18,
     "classification": "Extreme Fear",
-    "avg_7d": 13.4,
-    "avg_30d": 10.2,
+    "avg_7d": 14.1,
+    "avg_30d": 10.3,
     "fear_streak": 30,
     "greed_streak": 0,
     "history_30d": [
+      18,
       22,
       10,
       14,
@@ -47,15 +48,14 @@
       7,
       6,
       9,
-      12,
-      14
+      12
     ],
     "trend": "improving",
     "signal": {
       "bias": "bullish",
-      "score": 40,
-      "weight": 1.5,
-      "reason": "Fear (22) \u2014 lean bullish"
+      "score": 80,
+      "weight": 2.0,
+      "reason": "Extreme Fear (18) \u2014 contrarian BUY"
     }
   },
   "news": null,
@@ -65,7 +65,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 535,
+        "market_cap_rank": 480,
         "score": 0
       },
       {
@@ -75,33 +75,33 @@
         "score": 1
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
-        "score": 2
-      },
-      {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 107,
-        "score": 3
-      },
-      {
-        "name": "OKB",
-        "symbol": "OKB",
-        "market_cap_rank": 43,
-        "score": 4
-      },
-      {
-        "name": "Lighter",
-        "symbol": "LIT",
-        "market_cap_rank": 135,
-        "score": 5
+        "score": 2
       },
       {
         "name": "Lombard",
         "symbol": "BARD",
-        "market_cap_rank": 118,
+        "market_cap_rank": 116,
+        "score": 3
+      },
+      {
+        "name": "Canton",
+        "symbol": "CC",
+        "market_cap_rank": 20,
+        "score": 4
+      },
+      {
+        "name": "OKB",
+        "symbol": "OKB",
+        "market_cap_rank": 41,
+        "score": 5
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
         "score": 6
       },
       {
@@ -111,15 +111,15 @@
         "score": 7
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 8
-      },
-      {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 8
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 9
       }
     ],
@@ -1375,10 +1375,17 @@
       "fgi": 22,
       "score": 40,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T00:28:55.456837+00:00",
+      "ts": 1772756935,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-05T23:29:39.443292+00:00",
-    "updated_ts": 1772753379
+    "updated_at": "2026-03-06T00:28:55.456865+00:00",
+    "updated_ts": 1772756935
   }
 }
