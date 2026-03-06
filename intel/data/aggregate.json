@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "score": 7,
+    "score": 18,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 1.0,
-    "available_sources": 5,
+    "confidence": 0.8,
+    "available_sources": 4,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
+        "status": "stale",
+        "score": 0,
+        "bias": "neutral",
+        "strength": "weak",
+        "age_min": 16.4,
+        "effective_weight": 0.9
+      },
+      "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 5.9,
-        "effective_weight": 3.0
-      },
-      "whales": {
-        "status": "fresh",
-        "score": -31,
-        "bias": "bearish",
-        "strength": "weak",
-        "age_min": 5.3,
+        "age_min": 9.2,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 5.1,
+        "age_min": 12.9,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,32 +36,32 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 5.4,
+        "age_min": 17.9,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 23,
+        "score": 21,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 4.6,
+        "age_min": 15.6,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -5,
-      "bias": "neutral",
+      "score": 36,
+      "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 81 articles, score=650"
+          "reason": "News sentiment: 82 articles, score=650"
         },
         {
-          "bias": "bearish",
-          "reason": "BTC whale consolidation (9 txs) \u2014 potential selling"
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (14 large txs)"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 31 articles, score=-80"
+          "reason": "News sentiment: 32 articles, score=-80"
         },
         {
           "bias": "neutral",
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 10 articles, score=-110"
+          "reason": "News sentiment: 11 articles, score=-110"
         }
       ]
     }
@@ -136,9 +136,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-06T16:18:36.413168+00:00",
+  "timestamp": "2026-03-06T16:38:00.057393+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T16:18:36.413806+00:00",
-    "updated_ts": 1772813916
+    "updated_at": "2026-03-06T16:38:00.058042+00:00",
+    "updated_ts": 1772815080
   }
 }
