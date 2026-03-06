@@ -1,34 +1,34 @@
 {
   "aggregate": {
-    "score": 17,
+    "score": 18,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.8,
-    "available_sources": 4,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 45.9,
-        "effective_weight": 0.9
+        "age_min": 1.4,
+        "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 23.3,
+        "age_min": 0.7,
         "effective_weight": 2.5
       },
       "onchain": {
         "status": "fresh",
-        "score": 5,
-        "bias": "neutral",
+        "score": 27,
+        "bias": "bullish",
         "strength": "weak",
-        "age_min": 115.4,
+        "age_min": 0.6,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 43.3,
+        "age_min": 0.9,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 7,
+        "score": 6,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 38.0,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
@@ -57,22 +57,22 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 69 articles, score=650"
+          "reason": "News sentiment: 69 articles, score=580"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (5 large txs)"
+          "reason": "BTC whale activity normal (3 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
+      "score": -53,
+      "bias": "bearish",
       "signals": 2,
       "details": [
         {
-          "bias": "neutral",
-          "reason": "News sentiment: 29 articles, score=20"
+          "bias": "bearish",
+          "reason": "News sentiment: 28 articles, score=-70"
         },
         {
           "bias": "neutral",
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 17 articles, score=-180"
+          "reason": "News sentiment: 16 articles, score=-180"
         }
       ]
     }
@@ -122,15 +122,6 @@
     },
     {
       "type": "news",
-      "title": "Ethereum ETF Approvals Drive Renewed Interest in Layer-1 Tokens",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "type": "news",
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "sentiment": "bearish",
       "importance": "critical",
@@ -138,11 +129,20 @@
         "BTC",
         "SOL"
       ]
+    },
+    {
+      "type": "news",
+      "title": "Coinbase CEO Brian Armstrong and execs face shareholder lawsuit over disclosures, compliance failures",
+      "sentiment": "bearish",
+      "importance": "critical",
+      "coins": [
+        "ETH"
+      ]
     }
   ],
-  "timestamp": "2026-03-06T02:25:21.964513+00:00",
+  "timestamp": "2026-03-06T03:00:58.310307+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T02:25:21.965173+00:00",
-    "updated_ts": 1772763921
+    "updated_at": "2026-03-06T03:00:58.311085+00:00",
+    "updated_ts": 1772766058
   }
 }

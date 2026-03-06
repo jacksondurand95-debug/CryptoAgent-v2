@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 7,
+    "score": 6,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 65,
-    "positive_score": 1750,
-    "negative_score": -1500
+    "total_articles": 240,
+    "scored_articles": 61,
+    "positive_score": 1640,
+    "negative_score": -1440
   },
   "alpha_events": [
     {
@@ -52,19 +52,6 @@
       ]
     },
     {
-      "title": "Ethereum ETF Approvals Drive Renewed Interest in Layer-1 Tokens",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 90,
-      "importance": "critical",
-      "coins": [
-        "ETH"
-      ],
-      "keywords": [
-        "+etf approval"
-      ]
-    },
-    {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -105,19 +92,6 @@
       ]
     },
     {
-      "title": "Bitcoin ETFs See Record Inflows Amid Bullish Market Sentiment",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+record inflow"
-      ]
-    },
-    {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -138,21 +112,43 @@
       "keywords": [
         "fraud"
       ]
+    },
+    {
+      "title": "Canadian Robbed of Crypto via ATM Kiosk, Recovery Efforts Lead to Another Scam Attempt",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "fraud"
+      ]
+    },
+    {
+      "title": "\u2018Dead\u2019 South Korean crypto fraudster resurfaces and pays back victims",
+      "source": "DL News",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "fraud"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
       "articles": 69,
-      "score": 650,
+      "score": 580,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 29,
-      "score": 20,
-      "bias": "neutral"
+      "articles": 28,
+      "score": -70,
+      "bias": "bearish"
     },
     "SOL": {
-      "articles": 17,
+      "articles": 16,
       "score": -180,
       "bias": "bearish"
     }
@@ -189,16 +185,6 @@
       ]
     },
     {
-      "title": "Ethereum ETF Approvals Drive Renewed Interest in Layer-1 Tokens",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 90,
-      "importance": "critical",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -227,16 +213,6 @@
       "importance": "high",
       "coins": [
         "SOL"
-      ]
-    },
-    {
-      "title": "Bitcoin ETFs See Record Inflows Amid Bullish Market Sentiment",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
       ]
     },
     {
@@ -351,7 +327,15 @@
       "coins": []
     },
     {
-      "title": "Fed officials signal shocking twist on interest-rate cuts - thestreet.com",
+      "title": "Fed officials signal shocking twist on interest-rate cuts - Yahoo Finance",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Federal Reserve holds interest rates steady after three rate cuts in 2025 - U.S. Bank",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -433,22 +417,29 @@
       "score": -50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
+      "source": "DL News",
+      "sentiment": "bullish",
+      "score": 50,
+      "importance": "high",
+      "coins": []
     }
   ],
   "sources": {
-    "NewsBTC": 10,
-    "DL News": 20,
-    "Google News": 30,
-    "Bitcoin ETF (Google)": 20,
-    "X/Twitter (Grok)": 8,
-    "CoinDesk": 20,
-    "Crypto Regulation (Google)": 20,
-    "The Block": 20,
-    "Decrypt": 20,
-    "Crypto Briefing": 20,
-    "CoinTelegraph": 20,
     "U.Today": 20,
-    "Fed News (Google)": 20
+    "Google News": 30,
+    "Crypto Regulation (Google)": 20,
+    "DL News": 20,
+    "NewsBTC": 10,
+    "Fed News (Google)": 20,
+    "Bitcoin ETF (Google)": 20,
+    "CoinDesk": 20,
+    "Decrypt": 20,
+    "The Block": 20,
+    "CoinTelegraph": 20,
+    "Crypto Briefing": 20
   },
   "history": [
     {
@@ -1318,10 +1309,17 @@
       "score": 7,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T03:00:58.152085+00:00",
+      "ts": 1772766058,
+      "score": 6,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T01:47:22.192465+00:00",
-    "updated_ts": 1772761642
+    "updated_at": "2026-03-06T03:00:58.152243+00:00",
+    "updated_ts": 1772766058
   }
 }

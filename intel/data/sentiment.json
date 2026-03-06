@@ -65,7 +65,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 550,
+        "market_cap_rank": 549,
         "score": 0
       },
       {
@@ -81,51 +81,51 @@
         "score": 2
       },
       {
-        "name": "OKB",
-        "symbol": "OKB",
-        "market_cap_rank": 41,
-        "score": 3
-      },
-      {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 107,
-        "score": 4
+        "score": 3
       },
       {
         "name": "Opinion",
         "symbol": "OPN",
-        "market_cap_rank": 351,
+        "market_cap_rank": 340,
+        "score": 4
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 5
       },
       {
-        "name": "Canton",
-        "symbol": "CC",
-        "market_cap_rank": 20,
+        "name": "Lombard",
+        "symbol": "BARD",
+        "market_cap_rank": 119,
         "score": 6
+      },
+      {
+        "name": "OKB",
+        "symbol": "OKB",
+        "market_cap_rank": 41,
+        "score": 7
       },
       {
         "name": "Venice Token",
         "symbol": "VVV",
-        "market_cap_rank": 148,
-        "score": 7
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "market_cap_rank": 146,
         "score": 8
       },
       {
-        "name": "Lighter",
-        "symbol": "LIT",
-        "market_cap_rank": 135,
+        "name": "MANTRA",
+        "symbol": "MANTRA",
+        "market_cap_rank": 285,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL"
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -1396,10 +1396,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T03:00:07.433867+00:00",
+      "ts": 1772766007,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T01:42:02.149557+00:00",
-    "updated_ts": 1772761322
+    "updated_at": "2026-03-06T03:00:07.433899+00:00",
+    "updated_ts": 1772766007
   }
 }
