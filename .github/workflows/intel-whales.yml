@@ -2,8 +2,8 @@ name: Intel — Whale Tracker
 
 on:
   schedule:
-    # Every hour at minute 20
-    - cron: '20 * * * *'
+    # Every 30 min — BULL RUSH
+    - cron: '15,45 * * * *'
   workflow_dispatch:
 
 permissions:

@@ -2,8 +2,8 @@ name: Intel — Sentiment Agent
 
 on:
   schedule:
-    # Every hour at minute 5
-    - cron: '5 * * * *'
+    # Every 30 min — BULL RUSH
+    - cron: '5,35 * * * *'
   workflow_dispatch:
 
 permissions:

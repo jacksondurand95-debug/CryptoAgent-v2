@@ -2,8 +2,8 @@ name: Intel — News Agent
 
 on:
   schedule:
-    # Every 2 hours at minute 35
-    - cron: '35 */2 * * *'
+    # Every 30 min — BULL RUSH
+    - cron: '10,40 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -41,6 +41,8 @@ jobs:
         run: pip install -q requests
 
       - name: Run News Agent
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
         run: python intel/news_agent.py
 
       - name: Commit results
