@@ -543,6 +543,9 @@ def run():
         total_balance = fee_resp.get("total_balance", "?")
         has_promo = fee_resp.get("has_promo_fee", False)
 
+        # FULL diagnostic dump of fee response
+        log.info(f"FEE API RAW: {json.dumps(fee_resp, indent=None)[:500]}")
+
         if detected_maker > 0 or detected_taker > 0:
             state["detected_fees"] = {"maker": detected_maker, "taker": detected_taker}
             round_trip_maker = detected_maker * 2
