@@ -65,7 +65,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 461,
+        "market_cap_rank": 416,
         "score": 0
       },
       {
@@ -75,33 +75,33 @@
         "score": 1
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
+        "name": "Flow",
+        "symbol": "FLOW",
+        "market_cap_rank": 342,
         "score": 2
       },
       {
-        "name": "Flow",
-        "symbol": "FLOW",
-        "market_cap_rank": 334,
+        "name": "Kite",
+        "symbol": "KITE",
+        "market_cap_rank": 100,
         "score": 3
       },
       {
         "name": "Sign",
         "symbol": "SIGN",
-        "market_cap_rank": 314,
+        "market_cap_rank": 312,
         "score": 4
       },
       {
-        "name": "Kite",
-        "symbol": "KITE",
-        "market_cap_rank": 98,
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 353,
         "score": 5
       },
       {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 141,
         "score": 6
       },
       {
@@ -111,15 +111,15 @@
         "score": 7
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 344,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 8
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 143,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 623,
         "score": 9
       }
     ],
@@ -1564,10 +1564,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T12:54:32.743345+00:00",
+      "ts": 1772801672,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T12:22:26.430987+00:00",
-    "updated_ts": 1772799746
+    "updated_at": "2026-03-06T12:54:32.743374+00:00",
+    "updated_ts": 1772801672
   }
 }
