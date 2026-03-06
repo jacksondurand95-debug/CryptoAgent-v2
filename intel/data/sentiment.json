@@ -65,7 +65,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 465,
+        "market_cap_rank": 461,
         "score": 0
       },
       {
@@ -77,55 +77,54 @@
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
-        "market_cap_rank": 107,
+        "market_cap_rank": 108,
         "score": 2
       },
       {
         "name": "Flow",
         "symbol": "FLOW",
-        "market_cap_rank": 349,
+        "market_cap_rank": 334,
         "score": 3
       },
       {
         "name": "Sign",
         "symbol": "SIGN",
-        "market_cap_rank": 315,
+        "market_cap_rank": 314,
         "score": 4
-      },
-      {
-        "name": "Pi Network",
-        "symbol": "PI",
-        "market_cap_rank": 44,
-        "score": 5
       },
       {
         "name": "Kite",
         "symbol": "KITE",
         "market_cap_rank": 98,
+        "score": 5
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 44,
         "score": 6
-      },
-      {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 343,
-        "score": 7
-      },
-      {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
-        "score": 8
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 7
+      },
+      {
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 344,
+        "score": 8
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 143,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH",
       "SOL"
     ],
     "market_attention": "high"
@@ -1558,10 +1557,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T12:22:26.430951+00:00",
+      "ts": 1772799746,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T12:12:16.114353+00:00",
-    "updated_ts": 1772799136
+    "updated_at": "2026-03-06T12:22:26.430987+00:00",
+    "updated_ts": 1772799746
   }
 }
