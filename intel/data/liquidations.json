@@ -8,17 +8,18 @@
   "okx": {
     "BTC": {
       "funding": {
-        "current_pct": 0.0004,
+        "current_pct": -0.0005,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 2980851.250000013,
-        "usd": 2048008755.568759,
-        "usd_m": 2048.0
+        "contracts": 2981428.6200000145,
+        "usd": 2042266678.98553,
+        "usd_m": 2042.3
       },
       "funding_history": [
+        -0.0004,
         0.0068,
         0.0036,
         0.0059,
@@ -27,32 +28,32 @@
         0.0054,
         -0.0026,
         -0.0037,
-        0.0017,
-        0.0044
+        0.0017
       ],
-      "neg_funding_streak": 0,
-      "pos_funding_streak": 6,
+      "neg_funding_streak": 1,
+      "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 149366381.0,
-        "sell_vol": 193932721.0,
-        "ratio": 0.77,
+        "buy_vol": 155302031.0,
+        "sell_vol": 139145867.0,
+        "ratio": 1.116,
         "aggressive_buyers": false,
-        "aggressive_sellers": true
+        "aggressive_sellers": false
       }
     },
     "ETH": {
       "funding": {
-        "current_pct": -0.0012,
+        "current_pct": -0.0021,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 6768258.310000012,
-        "usd": 1342193000.6811724,
-        "usd_m": 1342.2
+        "contracts": 6726551.360000014,
+        "usd": 1328924392.8870428,
+        "usd_m": 1328.9
       },
       "funding_history": [
+        -0.002,
         0.0063,
         0.01,
         0.0066,
@@ -61,32 +62,32 @@
         0.0064,
         -0.0043,
         -0.002,
-        0.0038,
-        0.0052
+        0.0038
       ],
-      "neg_funding_streak": 0,
-      "pos_funding_streak": 6,
+      "neg_funding_streak": 1,
+      "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 159271382.0,
-        "sell_vol": 212865007.0,
-        "ratio": 0.748,
-        "aggressive_buyers": false,
-        "aggressive_sellers": true
+        "buy_vol": 208112311.0,
+        "sell_vol": 173970619.0,
+        "ratio": 1.196,
+        "aggressive_buyers": true,
+        "aggressive_sellers": false
       }
     },
     "SOL": {
       "funding": {
-        "current_pct": -0.0029,
+        "current_pct": -0.0033,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 2669957.200000003,
-        "usd": 226332271.84400025,
-        "usd_m": 226.3
+        "contracts": 2660980.5600000033,
+        "usd": 224879467.12560028,
+        "usd_m": 224.9
       },
       "funding_history": [
+        -0.0031,
         -0.0101,
         0.01,
         -0.0038,
@@ -95,69 +96,69 @@
         -0.0014,
         0.0029,
         0.0072,
-        -0.0124,
-        -0.0047
+        -0.0124
       ],
-      "neg_funding_streak": 1,
+      "neg_funding_streak": 2,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 14675928.0,
-        "sell_vol": 19794103.0,
-        "ratio": 0.741,
-        "aggressive_buyers": false,
-        "aggressive_sellers": true
+        "buy_vol": 15379634.0,
+        "sell_vol": 13032569.0,
+        "ratio": 1.18,
+        "aggressive_buyers": true,
+        "aggressive_sellers": false
       }
     }
   },
   "bybit": {},
   "liquidation_levels": {
     "BTC": {
-      "price": 68714.4,
-      "high_24h": 71789.4,
+      "price": 68540.3,
+      "high_24h": 71595.0,
       "low_24h": 68120.4,
       "long_liquidations": {
-        "3x": 51449.07,
-        "5x": 59585.2,
-        "10x": 65687.3
+        "3x": 51309.75,
+        "5x": 59423.85,
+        "10x": 65509.43
       },
       "short_liquidations": {
         "3x": 87421.18,
         "5x": 79700.87,
         "10x": 73910.63,
         "25x": 70436.49,
-        "50x": 69278.45
+        "50x": 69278.45,
+        "100x": 68699.42
       },
-      "nearest_long_liq": 65687.3,
-      "nearest_short_liq": 69278.45,
+      "nearest_long_liq": 65509.43,
+      "nearest_short_liq": 68699.42,
       "magnet_direction": "none",
       "magnet_target": 0,
       "magnet_distance_pct": 100
     },
     "ETH": {
-      "price": 1983.31,
+      "price": 1976.67,
       "high_24h": 2099.0,
-      "low_24h": 1970.49,
+      "low_24h": 1964.24,
       "long_liquidations": {
         "3x": 1504.28,
         "5x": 1742.17,
         "10x": 1920.59
       },
       "short_liquidations": {
-        "3x": 2528.8,
-        "5x": 2305.47,
-        "10x": 2137.98,
-        "25x": 2037.49,
-        "50x": 2003.99,
-        "100x": 1987.24
+        "3x": 2520.77,
+        "5x": 2298.16,
+        "10x": 2131.2,
+        "25x": 2031.02,
+        "50x": 1997.63,
+        "100x": 1980.94
       },
       "nearest_long_liq": 1920.59,
-      "nearest_short_liq": 1987.24,
+      "nearest_short_liq": 1980.94,
       "magnet_direction": "none",
       "magnet_target": 0,
       "magnet_distance_pct": 100
     },
     "SOL": {
-      "price": 84.76,
+      "price": 84.52,
       "high_24h": 89.8,
       "low_24h": 83.88,
       "long_liquidations": {
@@ -170,10 +171,11 @@
         "5x": 98.14,
         "10x": 91.01,
         "25x": 86.73,
-        "50x": 85.31
+        "50x": 85.31,
+        "100x": 84.59
       },
       "nearest_long_liq": 82.17,
-      "nearest_short_liq": 85.31,
+      "nearest_short_liq": 84.59,
       "magnet_direction": "none",
       "magnet_target": 0,
       "magnet_distance_pct": 100
@@ -5157,10 +5159,21 @@
         "ETH": 0,
         "SOL": 0
       }
+    },
+    {
+      "timestamp": "2026-03-06T16:01:00.174067+00:00",
+      "ts": 1772812860,
+      "score": 0,
+      "bias": "neutral",
+      "cascade_risks": {
+        "BTC": 0,
+        "ETH": 0,
+        "SOL": 0
+      }
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T15:44:55.924155+00:00",
-    "updated_ts": 1772811895
+    "updated_at": "2026-03-06T16:01:00.174103+00:00",
+    "updated_ts": 1772812860
   }
 }
