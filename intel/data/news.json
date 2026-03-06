@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 22,
+    "score": 23,
     "bias": "bullish",
     "strength": "weak",
     "total_articles": 248,
     "scored_articles": 61,
-    "positive_score": 2210,
-    "negative_score": -1230
+    "positive_score": 2230,
+    "negative_score": -1190
   },
   "alpha_events": [
     {
@@ -62,18 +62,6 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Expectations Boost Altcoin Momentum",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
-      ]
-    },
-    {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -86,6 +74,20 @@
       "keywords": [
         "hack",
         "exploit"
+      ]
+    },
+    {
+      "title": "Whale Accumulation Spotted in Ethereum as Price Eyes Breakout",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 100,
+      "importance": "critical",
+      "coins": [
+        "ETH"
+      ],
+      "keywords": [
+        "+breakout",
+        "+whale accumulation"
       ]
     },
     {
@@ -145,17 +147,17 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 84,
-      "score": 690,
+      "score": 700,
       "bias": "bullish"
     },
     "ETH": {
       "articles": 31,
-      "score": -80,
-      "bias": "bearish"
+      "score": 20,
+      "bias": "neutral"
     },
     "SOL": {
-      "articles": 10,
-      "score": -110,
+      "articles": 12,
+      "score": -70,
       "bias": "bearish"
     }
   },
@@ -197,14 +199,6 @@
       "coins": []
     },
     {
-      "title": "Fed Rate Cut Expectations Boost Altcoin Momentum",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
-    },
-    {
       "title": "Solv Protocol offers 10% bounty after $2.7M vault exploit",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -213,6 +207,16 @@
       "coins": [
         "BTC",
         "SOL"
+      ]
+    },
+    {
+      "title": "Whale Accumulation Spotted in Ethereum as Price Eyes Breakout",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 100,
+      "importance": "critical",
+      "coins": [
+        "ETH"
       ]
     },
     {
@@ -295,16 +299,6 @@
       "coins": []
     },
     {
-      "title": "Record Inflows into Bitcoin ETFs Drive Market Surge",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
@@ -380,6 +374,16 @@
       ]
     },
     {
+      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "Ethereum ETF Inflows Surge with $38.65M Rebound, Signaling Renewed Investor Confidence - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -387,6 +391,16 @@
       "importance": "high",
       "coins": [
         "ETH"
+      ]
+    },
+    {
+      "title": "Bitcoin ETF Inflows Surge with $88 Million Rebound, Breaking 4-Day Outflow Streak - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -408,13 +422,13 @@
       "coins": []
     },
     {
-      "title": "Whale Accumulation of Ethereum Sparks Price Rally",
+      "title": "Bitcoin ETF Inflows Hit Record Highs Amid Institutional Demand",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 60,
       "importance": "high",
       "coins": [
-        "ETH"
+        "BTC"
       ]
     },
     {
@@ -435,30 +449,22 @@
       "score": 50,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "XRP Whales Add Over 4.18 Billion XRP Since October Price Flash Crash",
-      "source": "U.Today",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": []
     }
   ],
   "sources": {
-    "DL News": 20,
-    "CoinTelegraph": 20,
-    "The Block": 20,
-    "CoinDesk": 20,
-    "Bitcoin ETF (Google)": 20,
-    "Decrypt": 20,
-    "Google News": 30,
-    "Crypto Regulation (Google)": 20,
     "U.Today": 20,
-    "Fed News (Google)": 20,
-    "X/Twitter (Grok)": 8,
+    "CoinTelegraph": 20,
     "NewsBTC": 10,
-    "Crypto Briefing": 20
+    "The Block": 20,
+    "Crypto Briefing": 20,
+    "Decrypt": 20,
+    "Crypto Regulation (Google)": 20,
+    "X/Twitter (Grok)": 8,
+    "CoinDesk": 20,
+    "Google News": 30,
+    "Fed News (Google)": 20,
+    "DL News": 20,
+    "Bitcoin ETF (Google)": 20
   },
   "history": [
     {
@@ -1573,10 +1579,17 @@
       "score": 22,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T17:23:00.122033+00:00",
+      "ts": 1772817780,
+      "score": 23,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T16:57:42.027589+00:00",
-    "updated_ts": 1772816262
+    "updated_at": "2026-03-06T17:23:00.122182+00:00",
+    "updated_ts": 1772817780
   }
 }
