@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 5,
+    "score": 10,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 240,
-    "scored_articles": 60,
-    "positive_score": 1610,
-    "negative_score": -1420
+    "total_articles": 248,
+    "scored_articles": 64,
+    "positive_score": 1820,
+    "negative_score": -1450
   },
   "alpha_events": [
     {
@@ -106,6 +106,20 @@
       ]
     },
     {
+      "title": "Samson Mow Objects to Michael Saylor's Bitcoin Insufficiency Post",
+      "source": "U.Today",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+ath",
+        "+saylor"
+      ]
+    },
+    {
       "title": "Bitcoin Spot ETFs See 14-Day Netflows Surge: Demand Returning?",
       "source": "NewsBTC",
       "sentiment": "bullish",
@@ -130,32 +144,21 @@
       "keywords": [
         "enforcement action"
       ]
-    },
-    {
-      "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "hack"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 68,
-      "score": 240,
+      "articles": 70,
+      "score": 380,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 32,
-      "score": -70,
-      "bias": "bearish"
+      "articles": 35,
+      "score": -10,
+      "bias": "neutral"
     },
     "SOL": {
-      "articles": 17,
+      "articles": 16,
       "score": -200,
       "bias": "bearish"
     }
@@ -232,6 +235,16 @@
       "importance": "critical",
       "coins": [
         "ETH"
+      ]
+    },
+    {
+      "title": "Samson Mow Objects to Michael Saylor's Bitcoin Insufficiency Post",
+      "source": "U.Today",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -360,6 +373,26 @@
       ]
     },
     {
+      "title": "Bitcoin Clears $71K As ETF Inflows Top $225M - Yellow.com",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "Ethereum ETF Inflows Surge with $38.65M Rebound, Signaling Renewed Investor Confidence - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -398,6 +431,14 @@
       "coins": []
     },
     {
+      "title": "Fed Rate Hike Triggers Widespread Crypto Market Volatility",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
       "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -407,60 +448,22 @@
         "BTC",
         "ETH"
       ]
-    },
-    {
-      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
-      "source": "DL News",
-      "sentiment": "bullish",
-      "score": 50,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
-    "U.Today": 20,
-    "The Block": 20,
-    "NewsBTC": 10,
-    "Decrypt": 20,
     "CoinDesk": 20,
-    "Fed News (Google)": 20,
-    "Crypto Briefing": 20,
-    "Google News": 30,
-    "CoinTelegraph": 20,
-    "DL News": 20,
     "Crypto Regulation (Google)": 20,
-    "Bitcoin ETF (Google)": 20
+    "CoinTelegraph": 20,
+    "Decrypt": 20,
+    "U.Today": 20,
+    "Crypto Briefing": 20,
+    "X/Twitter (Grok)": 8,
+    "Fed News (Google)": 20,
+    "Google News": 30,
+    "DL News": 20,
+    "Bitcoin ETF (Google)": 20,
+    "The Block": 20,
+    "NewsBTC": 10
   },
   "history": [
     {
@@ -1491,10 +1494,17 @@
       "score": 5,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T12:23:59.522711+00:00",
+      "ts": 1772799839,
+      "score": 10,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T12:13:06.050211+00:00",
-    "updated_ts": 1772799186
+    "updated_at": "2026-03-06T12:23:59.522858+00:00",
+    "updated_ts": 1772799839
   }
 }
