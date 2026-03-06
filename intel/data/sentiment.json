@@ -75,51 +75,51 @@
         "score": 1
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 344,
-        "score": 2
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 3
-      },
-      {
         "name": "OKB",
         "symbol": "OKB",
         "market_cap_rank": 41,
-        "score": 4
+        "score": 2
       },
       {
         "name": "Jelly-My-Jelly",
         "symbol": "JELLYJELLY",
-        "market_cap_rank": 255,
-        "score": 5
+        "market_cap_rank": 283,
+        "score": 3
+      },
+      {
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 343,
+        "score": 4
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 107,
-        "score": 6
+        "score": 5
       },
       {
         "name": "MANTRA",
         "symbol": "MANTRA",
-        "market_cap_rank": 287,
-        "score": 7
+        "market_cap_rank": 286,
+        "score": 6
       },
       {
         "name": "Pi Network",
         "symbol": "PI",
         "market_cap_rank": 44,
+        "score": 7
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 8
       },
       {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 621,
+        "name": "Lighter",
+        "symbol": "LIT",
+        "market_cap_rank": 138,
         "score": 9
       }
     ],
@@ -1459,10 +1459,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T06:53:43.855432+00:00",
+      "ts": 1772780023,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T06:26:45.830556+00:00",
-    "updated_ts": 1772778405
+    "updated_at": "2026-03-06T06:53:43.855463+00:00",
+    "updated_ts": 1772780023
   }
 }
