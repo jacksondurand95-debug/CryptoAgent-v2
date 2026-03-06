@@ -24,55 +24,55 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "eabffe9c7f5d60f7...",
-        "btc": 20118.82,
+        "hash": "cde98ddcc3da610c...",
+        "btc": 2308.34,
         "type": "transfer",
         "inputs": 1,
-        "outputs": 2,
-        "block": 939551,
-        "time": 1772784754
+        "outputs": 1,
+        "block": 939557,
+        "time": 1772786170
       },
       {
-        "hash": "b3b871a3fcbcfa90...",
-        "btc": 179.64,
+        "hash": "68f67a0fbabd2e52...",
+        "btc": 360.0,
         "type": "transfer",
-        "inputs": 1,
-        "outputs": 2,
-        "block": 939552,
-        "time": 1772785177
+        "inputs": 3,
+        "outputs": 4,
+        "block": 939558,
+        "time": 1772786260
       },
       {
-        "hash": "850174247496d07c...",
-        "btc": 126.66,
+        "hash": "39a6b9eca7ab3d32...",
+        "btc": 300.0,
         "type": "distribution",
         "inputs": 1,
-        "outputs": 18,
-        "block": 939551,
-        "time": 1772784373
+        "outputs": 13,
+        "block": 939558,
+        "time": 1772786358
       },
       {
-        "hash": "37be4bc3928197d4...",
-        "btc": 112.1,
-        "type": "transfer",
-        "inputs": 8,
-        "outputs": 4,
-        "block": 939551,
-        "time": 1772784519
+        "hash": "cb8f80eef5f824b2...",
+        "btc": 224.6,
+        "type": "distribution",
+        "inputs": 1,
+        "outputs": 15,
+        "block": 939558,
+        "time": 1772786755
       },
       {
-        "hash": "dddf84e68ebef3b0...",
-        "btc": 103.85,
+        "hash": "eae23e31ab944db8...",
+        "btc": 112.0,
         "type": "transfer",
         "inputs": 1,
-        "outputs": 2,
-        "block": 939552,
-        "time": 1772785107
+        "outputs": 1,
+        "block": 939557,
+        "time": 1772786174
       }
     ],
-    "total_whale_btc": 20641.07,
+    "total_whale_btc": 3304.94,
     "count": 5,
     "consolidations": 0,
-    "distributions": 1,
+    "distributions": 2,
     "blocks_scanned": 3,
     "signal": {
       "bias": "neutral",
@@ -1288,10 +1288,16 @@
       "ts": 1772785702,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-06T08:59:27.104343+00:00",
+      "ts": 1772787567,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T08:28:22.052260+00:00",
-    "updated_ts": 1772785702
+    "updated_at": "2026-03-06T08:59:27.104376+00:00",
+    "updated_ts": 1772787567
   }
 }
