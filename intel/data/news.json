@@ -3,10 +3,10 @@
     "score": 9,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 240,
-    "scored_articles": 60,
-    "positive_score": 1700,
-    "negative_score": -1390
+    "total_articles": 248,
+    "scored_articles": 64,
+    "positive_score": 1780,
+    "negative_score": -1450
   },
   "alpha_events": [
     {
@@ -119,6 +119,19 @@
       ]
     },
     {
+      "title": "Bitcoin ETF Sees Record Inflows Amid Bullish Market Sentiment",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+record inflow"
+      ]
+    },
+    {
       "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -128,30 +141,17 @@
       "keywords": [
         "hack"
       ]
-    },
-    {
-      "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "SOL"
-      ],
-      "keywords": [
-        "+etf inflow"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 70,
-      "score": 350,
+      "articles": 69,
+      "score": 420,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 30,
-      "score": -50,
+      "articles": 32,
+      "score": -80,
       "bias": "bearish"
     },
     "SOL": {
@@ -241,6 +241,16 @@
       "importance": "high",
       "coins": [
         "SOL"
+      ]
+    },
+    {
+      "title": "Bitcoin ETF Sees Record Inflows Amid Bullish Market Sentiment",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -429,32 +439,22 @@
       "score": 50,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
     }
   ],
   "sources": {
-    "U.Today": 20,
-    "The Block": 20,
     "CoinTelegraph": 20,
-    "Google News": 30,
-    "Decrypt": 20,
-    "Crypto Briefing": 20,
-    "Fed News (Google)": 20,
-    "Bitcoin ETF (Google)": 20,
     "NewsBTC": 10,
+    "X/Twitter (Grok)": 8,
     "DL News": 20,
+    "Fed News (Google)": 20,
+    "Crypto Regulation (Google)": 20,
+    "Bitcoin ETF (Google)": 20,
+    "U.Today": 20,
     "CoinDesk": 20,
-    "Crypto Regulation (Google)": 20
+    "Crypto Briefing": 20,
+    "Decrypt": 20,
+    "The Block": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -1415,10 +1415,17 @@
       "score": 9,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T08:20:50.876175+00:00",
+      "ts": 1772785250,
+      "score": 9,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T08:12:10.697245+00:00",
-    "updated_ts": 1772784730
+    "updated_at": "2026-03-06T08:20:50.876347+00:00",
+    "updated_ts": 1772785250
   }
 }
