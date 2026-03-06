@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": 11,
+    "score": 15,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 247,
-    "scored_articles": 63,
-    "positive_score": 1790,
+    "total_articles": 248,
+    "scored_articles": 65,
+    "positive_score": 1960,
     "negative_score": -1370
   },
   "alpha_events": [
@@ -50,6 +50,20 @@
       ],
       "keywords": [
         "insolvency"
+      ]
+    },
+    {
+      "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC",
+        "SOL"
+      ],
+      "keywords": [
+        "+spot etf"
       ]
     },
     {
@@ -118,44 +132,33 @@
       ]
     },
     {
-      "title": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "hack"
-      ]
-    },
-    {
-      "title": "Solana ETFs still hold \u2018impressive numbers\u2019 even as token dives 57%",
-      "source": "CoinTelegraph",
+      "title": "Record Inflows into Bitcoin ETFs Spark Bullish Momentum",
+      "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
-      "score": 60,
+      "score": 70,
       "importance": "high",
       "coins": [
-        "SOL"
+        "BTC"
       ],
       "keywords": [
-        "+etf inflow"
+        "+record inflow"
       ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 71,
-      "score": 330,
+      "articles": 69,
+      "score": 480,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 29,
-      "score": -50,
-      "bias": "bearish"
+      "articles": 33,
+      "score": 70,
+      "bias": "bullish"
     },
     "SOL": {
       "articles": 18,
-      "score": -280,
+      "score": -200,
       "bias": "bearish"
     }
   },
@@ -186,6 +189,17 @@
       "source": "CoinDesk",
       "sentiment": "bearish",
       "score": -80,
+      "importance": "critical",
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
+    },
+    {
+      "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 80,
       "importance": "critical",
       "coins": [
         "BTC",
@@ -240,6 +254,16 @@
       "importance": "high",
       "coins": [
         "SOL"
+      ]
+    },
+    {
+      "title": "Record Inflows into Bitcoin ETFs Spark Bullish Momentum",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -338,22 +362,6 @@
       "coins": []
     },
     {
-      "title": "Federal Reserve holds interest rates steady after three rate cuts in 2025 - U.S. Bank",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Oil, inflation threaten Fed interest-rate cuts under Warsh - thestreet.com",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Bitcoin ETF Inflows Hit Three-Week High: Are Institutions Returning? - Yahoo Finance",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -371,6 +379,26 @@
       "importance": "high",
       "coins": [
         "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin Clears $71K As ETF Inflows Top $225M - Yellow.com",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "ETH"
       ]
     },
     {
@@ -412,49 +440,30 @@
       "coins": []
     },
     {
-      "title": "Bitcoin ETF Inflows Hit Record Highs Amid Institutional Demand",
+      "title": "Whale Accumulations in Ethereum Signal Potential Rally",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 60,
       "importance": "high",
       "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
-      "source": "DL News",
-      "sentiment": "bullish",
-      "score": 50,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
         "ETH"
       ]
     }
   ],
   "sources": {
     "The Block": 20,
+    "Fed News (Google)": 20,
+    "Google News": 30,
+    "Crypto Briefing": 20,
+    "DL News": 20,
+    "Bitcoin ETF (Google)": 20,
     "Decrypt": 20,
     "NewsBTC": 10,
-    "Google News": 30,
-    "U.Today": 20,
-    "Fed News (Google)": 20,
-    "Crypto Regulation (Google)": 20,
-    "X/Twitter (Grok)": 7,
     "CoinDesk": 20,
-    "Bitcoin ETF (Google)": 20,
-    "Crypto Briefing": 20,
+    "U.Today": 20,
+    "Crypto Regulation (Google)": 20,
     "CoinTelegraph": 20,
-    "DL News": 20
+    "X/Twitter (Grok)": 8
   },
   "history": [
     {
@@ -1464,10 +1473,17 @@
       "score": 11,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T11:19:03.135684+00:00",
+      "ts": 1772795943,
+      "score": 15,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T10:55:15.056962+00:00",
-    "updated_ts": 1772794515
+    "updated_at": "2026-03-06T11:19:03.135834+00:00",
+    "updated_ts": 1772795943
   }
 }
