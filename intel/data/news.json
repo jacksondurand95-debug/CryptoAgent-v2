@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": 17,
+    "score": 19,
     "bias": "bullish",
     "strength": "weak",
-    "total_articles": 240,
-    "scored_articles": 56,
-    "positive_score": 1740,
-    "negative_score": -1120
+    "total_articles": 248,
+    "scored_articles": 60,
+    "positive_score": 2000,
+    "negative_score": -1210
   },
   "alpha_events": [
     {
@@ -35,6 +35,30 @@
       "keywords": [
         "+fed rate cut",
         "+rate cut"
+      ]
+    },
+    {
+      "title": "Fed Rate Cut Fuels Crypto Rally Across Majors",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
+      ]
+    },
+    {
+      "title": "Mass Liquidations Cascade in Altcoins After Flash Crash",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -90,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "liquidation",
+        "crash"
       ]
     },
     {
@@ -114,43 +138,21 @@
       "keywords": [
         "enforcement action"
       ]
-    },
-    {
-      "title": "BitGo CEO on its $2 billion IPO, OCC national bank charter and Morgan Stanley competition",
-      "source": "The Block",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "+institutional adoption"
-      ]
-    },
-    {
-      "title": "21Shares launches first spot Polkadot ETF in US",
-      "source": "Crypto Briefing",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "+institutional adoption"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 82,
-      "score": 630,
+      "articles": 85,
+      "score": 700,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 29,
-      "score": -60,
-      "bias": "bearish"
+      "articles": 32,
+      "score": 0,
+      "bias": "neutral"
     },
     "SOL": {
-      "articles": 9,
+      "articles": 11,
       "score": 50,
       "bias": "bullish"
     }
@@ -175,6 +177,22 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "Fed Rate Cut Fuels Crypto Rally Across Majors",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "title": "Mass Liquidations Cascade in Altcoins After Flash Crash",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -90,
+      "importance": "critical",
+      "coins": []
     },
     {
       "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
@@ -252,6 +270,16 @@
       "coins": []
     },
     {
+      "title": "Record Inflows into Bitcoin ETFs Drive Market Surge",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 70,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Bitcoin recovery meets DeFi tensions as Aave rift deepens: Finance Redefined",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -321,6 +349,16 @@
       "importance": "high",
       "coins": [
         "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "ETH"
       ]
     },
     {
@@ -395,62 +433,22 @@
       "score": -50,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "BTC back at $68K, XRP down 5%: why is crypto market crashing - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
+    "CoinTelegraph": 20,
+    "X/Twitter (Grok)": 8,
     "U.Today": 20,
     "DL News": 20,
+    "Fed News (Google)": 20,
+    "Google News": 30,
+    "NewsBTC": 10,
+    "Crypto Briefing": 20,
+    "Decrypt": 20,
+    "Crypto Regulation (Google)": 20,
     "Bitcoin ETF (Google)": 20,
     "The Block": 20,
-    "Crypto Briefing": 20,
-    "CoinTelegraph": 20,
-    "Crypto Regulation (Google)": 20,
-    "Decrypt": 20,
-    "Google News": 30,
-    "CoinDesk": 20,
-    "Fed News (Google)": 20,
-    "NewsBTC": 10
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -1621,10 +1619,17 @@
       "score": 17,
       "bias": "bullish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T20:18:38.634278+00:00",
+      "ts": 1772828318,
+      "score": 19,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T20:10:37.859957+00:00",
-    "updated_ts": 1772827837
+    "updated_at": "2026-03-06T20:18:38.634429+00:00",
+    "updated_ts": 1772828318
   }
 }
