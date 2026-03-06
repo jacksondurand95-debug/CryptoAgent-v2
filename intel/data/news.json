@@ -3,10 +3,10 @@
     "score": 8,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 247,
-    "scored_articles": 64,
-    "positive_score": 1750,
-    "negative_score": -1470
+    "total_articles": 248,
+    "scored_articles": 65,
+    "positive_score": 1800,
+    "negative_score": -1480
   },
   "alpha_events": [
     {
@@ -24,18 +24,6 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Fuel Crypto Market Optimism",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
-      ]
-    },
-    {
       "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -50,6 +38,18 @@
       ]
     },
     {
+      "title": "Fed Rate Hike Fuels Crypto Market Volatility and Liquidations",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -100,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "rate hike",
+        "liquidation"
+      ]
+    },
+    {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -61,6 +61,19 @@
       ],
       "keywords": [
         "insolvency"
+      ]
+    },
+    {
+      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
+      "source": "Decrypt",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+bitcoin reserve"
       ]
     },
     {
@@ -121,32 +134,21 @@
       "keywords": [
         "fraud"
       ]
-    },
-    {
-      "title": "\u2018Dead\u2019 South Korean crypto fraudster resurfaces and pays back victims",
-      "source": "DL News",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [],
-      "keywords": [
-        "fraud"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
       "articles": 69,
-      "score": 490,
+      "score": 570,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 29,
-      "score": -10,
-      "bias": "neutral"
+      "articles": 30,
+      "score": 50,
+      "bias": "bullish"
     },
     "SOL": {
-      "articles": 17,
+      "articles": 18,
       "score": -180,
       "bias": "bearish"
     }
@@ -163,14 +165,6 @@
       ]
     },
     {
-      "title": "Fed Rate Cut Rumors Fuel Crypto Market Optimism",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
-    },
-    {
       "title": "Bitcoin sees $1B ETF inflows after brutal outflow streak, setting up the clearest path to $90,000 - CryptoRank",
       "source": "Bitcoin ETF (Google)",
       "sentiment": "bullish",
@@ -181,6 +175,14 @@
       ]
     },
     {
+      "title": "Fed Rate Hike Fuels Crypto Market Volatility and Liquidations",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bearish",
+      "score": -100,
+      "importance": "critical",
+      "coins": []
+    },
+    {
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "source": "CoinDesk",
       "sentiment": "bearish",
@@ -189,6 +191,16 @@
       "coins": [
         "BTC",
         "SOL"
+      ]
+    },
+    {
+      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
+      "source": "Decrypt",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
       ]
     },
     {
@@ -307,14 +319,6 @@
       ]
     },
     {
-      "title": "iPhone Users Warned: Crypto Scams Can Trigger \u2018Coruna\u2019 iOS Exploits",
-      "source": "NewsBTC",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
       "title": "Fed's Williams says rate cuts still possible, does not address Iran war - Reuters",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
@@ -356,6 +360,16 @@
       "importance": "high",
       "coins": [
         "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
+      "source": "Bitcoin ETF (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "ETH"
       ]
     },
     {
@@ -407,7 +421,7 @@
       "coins": []
     },
     {
-      "title": "Whale Accumulation of Ethereum Signals Upcoming Rally",
+      "title": "Whale Accumulation of Ethereum Sparks Rally Speculation",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 60,
@@ -415,30 +429,22 @@
       "coins": [
         "ETH"
       ]
-    },
-    {
-      "title": "38% of altcoins near all-time lows, worse than FTX crash: Analyst",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": []
     }
   ],
   "sources": {
     "NewsBTC": 10,
-    "Google News": 30,
     "The Block": 20,
-    "CoinDesk": 20,
-    "U.Today": 20,
-    "Crypto Briefing": 20,
     "Decrypt": 20,
-    "Fed News (Google)": 20,
     "DL News": 20,
-    "Crypto Regulation (Google)": 20,
-    "CoinTelegraph": 20,
+    "X/Twitter (Grok)": 8,
     "Bitcoin ETF (Google)": 20,
-    "X/Twitter (Grok)": 7
+    "CoinDesk": 20,
+    "Crypto Briefing": 20,
+    "Fed News (Google)": 20,
+    "U.Today": 20,
+    "Google News": 30,
+    "CoinTelegraph": 20,
+    "Crypto Regulation (Google)": 20
   },
   "history": [
     {
@@ -1322,10 +1328,17 @@
       "score": 8,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-06T03:56:38.737205+00:00",
+      "ts": 1772769398,
+      "score": 8,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T03:08:55.433156+00:00",
-    "updated_ts": 1772766535
+    "updated_at": "2026-03-06T03:56:38.737356+00:00",
+    "updated_ts": 1772769398
   }
 }
