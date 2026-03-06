@@ -71,19 +71,19 @@
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
-        "market_cap_rank": 108,
+        "market_cap_rank": 109,
         "score": 1
       },
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "market_cap_rank": 48,
+        "market_cap_rank": 47,
         "score": 2
       },
       {
-        "name": "WAR",
-        "symbol": "WAR",
-        "market_cap_rank": 443,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 3
       },
       {
@@ -93,9 +93,9 @@
         "score": 4
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 638,
         "score": 5
       },
       {
@@ -105,15 +105,15 @@
         "score": 6
       },
       {
-        "name": "Chainlink",
-        "symbol": "LINK",
-        "market_cap_rank": 18,
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 451,
         "score": 7
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 150,
+        "name": "Sui",
+        "symbol": "SUI",
+        "market_cap_rank": 29,
         "score": 8
       },
       {
@@ -1754,10 +1754,17 @@
       "fgi": 18,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-06T23:44:41.808587+00:00",
+      "ts": 1772840681,
+      "fgi": 18,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T23:14:19.394335+00:00",
-    "updated_ts": 1772838859
+    "updated_at": "2026-03-06T23:44:41.808766+00:00",
+    "updated_ts": 1772840681
   }
 }
