@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 21,
+    "score": 22,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 0.8,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 17.4,
+        "age_min": 20.0,
         "effective_weight": 0.9
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 2.1,
+        "age_min": 23.9,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 27,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 47.9,
+        "age_min": 69.6,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 8.6,
+        "age_min": 6.3,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -1,
+        "score": 2,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 5.7,
+        "age_min": 1.5,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 66 articles, score=280"
+          "reason": "News sentiment: 67 articles, score=300"
         },
         {
           "bias": "neutral",
@@ -87,7 +87,7 @@
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 20 articles, score=-280"
+          "reason": "News sentiment: 19 articles, score=-280"
         }
       ]
     }
@@ -123,13 +123,6 @@
     },
     {
       "type": "news",
-      "title": "Fed Rate Hike Sparks Crypto Market Volatility and Liquidations",
-      "sentiment": "bearish",
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "type": "news",
       "title": "U.S. judge freezes BlockFills assets in dispute over 70 bitcoin with creditor Dominion Capital",
       "sentiment": "bearish",
       "importance": "critical",
@@ -137,11 +130,20 @@
         "BTC",
         "SOL"
       ]
+    },
+    {
+      "type": "news",
+      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
-  "timestamp": "2026-03-06T05:37:14.709562+00:00",
+  "timestamp": "2026-03-06T05:58:57.676951+00:00",
   "_meta": {
-    "updated_at": "2026-03-06T05:37:14.710277+00:00",
-    "updated_ts": 1772775434
+    "updated_at": "2026-03-06T05:58:57.677743+00:00",
+    "updated_ts": 1772776737
   }
 }
