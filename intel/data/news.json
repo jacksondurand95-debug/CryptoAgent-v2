@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -20,
+    "score": -17,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 26,
+    "scored_articles": 24,
     "positive_score": 470,
-    "negative_score": -800
+    "negative_score": -720
   },
   "alpha_events": [
     {
@@ -145,9 +145,9 @@
       "bias": "neutral"
     },
     "ETH": {
-      "articles": 14,
-      "score": -20,
-      "bias": "neutral"
+      "articles": 12,
+      "score": 80,
+      "bias": "bullish"
     },
     "SOL": {
       "articles": 6,
@@ -253,17 +253,6 @@
       ]
     },
     {
-      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
       "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
       "source": "Google News",
       "sentiment": "bearish",
@@ -274,13 +263,13 @@
       ]
     },
     {
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
       "score": -50,
       "importance": "high",
       "coins": [
-        "ETH"
+        "BTC"
       ]
     },
     {
@@ -348,6 +337,14 @@
       "coins": []
     },
     {
+      "title": "SEC and CFTC progress toward harmonized crypto regulation - Norton Rose Fulbright",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "SEC Chair Aligns With Trump on Need for Digital Asset Regulation Clarity - Bitcoin.com News",
       "source": "Google News",
       "sentiment": "neutral",
@@ -358,23 +355,7 @@
       ]
     },
     {
-      "title": "SEC and CFTC progress toward harmonized crypto regulation - Norton Rose Fulbright",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "EXCHANGES AND MARKET REGULATION\u2014SEC\u2019s Atkins says crypto is \u2018job one\u2019 (Mar 5, 2026) - VitalLaw.com",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -436,13 +417,33 @@
       "score": 0,
       "importance": "low",
       "coins": []
+    },
+    {
+      "title": "'No deal with Iran': Trump demands unconditional surrender, sending oil surging, bitcoin and stocks lower",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "SOL"
+      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "Google News": 30,
     "Decrypt": 20,
-    "CoinTelegraph": 20
+    "CoinTelegraph": 20,
+    "CoinDesk": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -486,10 +487,17 @@
       "score": -20,
       "bias": "bearish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T10:43:50.224719+00:00",
+      "ts": 1772880230,
+      "score": -17,
+      "bias": "bearish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T08:47:39.702017+00:00",
-    "updated_ts": 1772873259
+    "updated_at": "2026-03-07T10:43:50.224803+00:00",
+    "updated_ts": 1772880230
   }
 }
