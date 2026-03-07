@@ -7,7 +7,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC whale activity normal (4 large txs)"
+        "reason": "BTC whale activity normal (3 large txs)"
       },
       {
         "bias": "neutral",
@@ -24,52 +24,43 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "6577e942180d4db7...",
-        "btc": 1323.54,
-        "type": "transfer",
-        "inputs": 4,
-        "outputs": 2,
-        "block": 939700,
-        "time": 1772878886
-      },
-      {
-        "hash": "a18563b69d059bc0...",
-        "btc": 621.46,
-        "type": "transfer",
-        "inputs": 1,
-        "outputs": 2,
-        "block": 939698,
-        "time": 1772878204
-      },
-      {
-        "hash": "378acdcc518318bd...",
-        "btc": 174.22,
+        "hash": "cd33d8601726a1d4...",
+        "btc": 173.26,
         "type": "distribution",
         "inputs": 1,
-        "outputs": 17,
-        "block": 939699,
-        "time": 1772878804
+        "outputs": 19,
+        "block": 939706,
+        "time": 1772881348
       },
       {
-        "hash": "aef7cede14bad89d...",
-        "btc": 163.46,
+        "hash": "18667b0edf10fbd9...",
+        "btc": 162.73,
         "type": "distribution",
         "inputs": 1,
-        "outputs": 21,
-        "block": 939698,
-        "time": 1772878340
+        "outputs": 11,
+        "block": 939708,
+        "time": 1772882418
+      },
+      {
+        "hash": "8bb62aa683290a26...",
+        "btc": 102.32,
+        "type": "consolidation",
+        "inputs": 6,
+        "outputs": 2,
+        "block": 939708,
+        "time": 1772882280
       }
     ],
-    "total_whale_btc": 2282.68,
-    "count": 4,
-    "consolidations": 0,
+    "total_whale_btc": 438.31,
+    "count": 3,
+    "consolidations": 1,
     "distributions": 2,
     "blocks_scanned": 3,
     "signal": {
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "BTC whale activity normal (4 large txs)"
+      "reason": "BTC whale activity normal (3 large txs)"
     }
   },
   "eth_whales": {
@@ -151,10 +142,16 @@
       "ts": 1772879604,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-07T11:28:43.472655+00:00",
+      "ts": 1772882923,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T10:33:24.614951+00:00",
-    "updated_ts": 1772879604
+    "updated_at": "2026-03-07T11:28:43.472688+00:00",
+    "updated_ts": 1772882923
   }
 }
