@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -21,
+    "score": -18,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 26,
+    "scored_articles": 25,
     "positive_score": 480,
-    "negative_score": -850
+    "negative_score": -750
   },
   "alpha_events": [
     {
@@ -50,17 +50,6 @@
       ],
       "keywords": [
         "+bitcoin reserve"
-      ]
-    },
-    {
-      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -80,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "sec lawsuit"
       ]
     },
     {
@@ -123,14 +112,26 @@
       ]
     },
     {
-      "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
-      "source": "CoinTelegraph",
+      "title": "Bitcoin could crash by another 30% as four-year cycle gains strength, investment firm says",
+      "source": "CoinDesk",
       "sentiment": "bearish",
       "score": -50,
       "importance": "high",
       "coins": [
-        "BTC",
-        "ETH"
+        "BTC"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
+      "title": "BTC back at $68K, XRP down 5%: why is crypto market crashing - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
       ],
       "keywords": [
         "crash"
@@ -139,17 +140,17 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 34,
-      "score": -40,
-      "bias": "bearish"
+      "articles": 36,
+      "score": 10,
+      "bias": "neutral"
     },
     "ETH": {
       "articles": 12,
-      "score": -20,
-      "bias": "neutral"
+      "score": 30,
+      "bias": "bullish"
     },
     "SOL": {
-      "articles": 4,
+      "articles": 6,
       "score": 10,
       "bias": "neutral"
     }
@@ -186,14 +187,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -80,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
@@ -240,14 +233,13 @@
       "coins": []
     },
     {
-      "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
-      "source": "CoinTelegraph",
+      "title": "Bitcoin could crash by another 30% as four-year cycle gains strength, investment firm says",
+      "source": "CoinDesk",
       "sentiment": "bearish",
       "score": -50,
       "importance": "high",
       "coins": [
-        "BTC",
-        "ETH"
+        "BTC"
       ]
     },
     {
@@ -273,16 +265,6 @@
     },
     {
       "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
       "score": -50,
@@ -364,6 +346,16 @@
       "coins": []
     },
     {
+      "title": "SEC Chair Aligns With Trump on Need for Digital Asset Regulation Clarity - Bitcoin.com News",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "SEC and CFTC progress toward harmonized crypto regulation - Norton Rose Fulbright",
       "source": "Google News",
       "sentiment": "neutral",
@@ -380,14 +372,12 @@
       "coins": []
     },
     {
-      "title": "SEC Chair Aligns With Trump on Need for Digital Asset Regulation Clarity - Bitcoin.com News",
+      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
+      "coins": []
     },
     {
       "title": "BlackRock private credit fund is latest to crack, hitting crypto prices and DeFi markets",
@@ -396,6 +386,18 @@
       "score": -10,
       "importance": "low",
       "coins": []
+    },
+    {
+      "title": "Bitcoin slips below $68,000 heading into the weekend as dollar posts steepest weekly gain in a year",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "ETH",
+        "SOL"
+      ]
     },
     {
       "title": "Why bitcoin couldn't hold $70,000 despite its best week of Wall Street news in months",
@@ -437,10 +439,10 @@
     }
   ],
   "sources": {
-    "CoinDesk": 20,
-    "CoinTelegraph": 20,
     "Decrypt": 20,
-    "Google News": 30
+    "CoinTelegraph": 20,
+    "Google News": 30,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -463,10 +465,17 @@
       "score": -21,
       "bias": "bearish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T06:51:49.654231+00:00",
+      "ts": 1772866309,
+      "score": -18,
+      "bias": "bearish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T04:54:43.188324+00:00",
-    "updated_ts": 1772859283
+    "updated_at": "2026-03-07T06:51:49.654303+00:00",
+    "updated_ts": 1772866309
   }
 }
