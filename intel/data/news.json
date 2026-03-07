@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -12,
+    "score": -9,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 24,
-    "positive_score": 510,
-    "negative_score": -680
+    "scored_articles": 27,
+    "positive_score": 610,
+    "negative_score": -750
   },
   "alpha_events": [
     {
@@ -90,6 +90,19 @@
       ]
     },
     {
+      "title": "Top Wall Street minds see AI rotation ahead as bitcoin seeks role in new cycle",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+blackrock"
+      ]
+    },
+    {
       "title": "Ex-CFO sentenced to two years after diverting $35M to crypto venture",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -123,34 +136,21 @@
       "keywords": [
         "fraud"
       ]
-    },
-    {
-      "title": "Bitcoin could crash by another 30% as four-year cycle gains strength, investment firm says",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "crash"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 32,
-      "score": 150,
+      "articles": 35,
+      "score": 160,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 13,
-      "score": 80,
+      "articles": 15,
+      "score": 30,
       "bias": "bullish"
     },
     "SOL": {
-      "articles": 6,
+      "articles": 5,
       "score": 10,
       "bias": "neutral"
     }
@@ -217,6 +217,16 @@
       ]
     },
     {
+      "title": "Top Wall Street minds see AI rotation ahead as bitcoin seeks role in new cycle",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Ex-CFO sentenced to two years after diverting $35M to crypto venture",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
@@ -263,8 +273,36 @@
       ]
     },
     {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "Managing financial AI agents is the only skill you\u2019ll need to survive the AI layoffs",
       "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Prediction market Kalshi sued over Khamenei trade carveout",
+      "source": "CoinTelegraph",
       "sentiment": "bullish",
       "score": 40,
       "importance": "medium",
@@ -351,14 +389,6 @@
       "coins": []
     },
     {
-      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "Florida Senate passes state-level stablecoin bill, awaits DeSantis\u2019 signature",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -375,55 +405,25 @@
       "coins": []
     },
     {
+      "title": "Latin America\u2019s crypto user growth outpaced U.S. by 3x in 2025, report shows",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin purist Jack Dorsey says that his firm is reluctantly giving in to stablecoin craze",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "Kalshi, Polymarket seeking $20 billion valuations in fundraising talks: WSJ",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Circle moves $68 million in just 30 minutes by using its own stablecoin for internal payments",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin slips below $68,000 as dollar posts steepest weekly gain in a year",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH",
-        "SOL"
-      ]
-    },
-    {
-      "title": "Why bitcoin couldn't hold $70,000 despite its best week of Wall Street news in months",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin buyers are cashing out fast after short-lived jump to $74,000",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Binance tells Senate probe no accounts sent crypto directly to Iran",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -432,10 +432,10 @@
     }
   ],
   "sources": {
-    "Google News": 30,
-    "CoinTelegraph": 20,
+    "Decrypt": 20,
     "CoinDesk": 20,
-    "Decrypt": 20
+    "CoinTelegraph": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -528,10 +528,17 @@
       "score": -12,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T18:49:17.273430+00:00",
+      "ts": 1772909357,
+      "score": -9,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T16:44:50.949598+00:00",
-    "updated_ts": 1772901890
+    "updated_at": "2026-03-07T18:49:17.273500+00:00",
+    "updated_ts": 1772909357
   }
 }
