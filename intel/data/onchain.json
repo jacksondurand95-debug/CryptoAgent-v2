@@ -22,7 +22,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+        "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
       },
       {
         "bias": "bullish",
@@ -32,10 +32,10 @@
     ]
   },
   "stablecoins": {
-    "total_mcap_b": 266.07,
+    "total_mcap_b": 266.09,
     "breakdown": {
       "Tether": 183.94,
-      "USD Coin": 77.27,
+      "USD Coin": 77.28,
       "Dai": 4.5,
       "First Digital USD": 0.37
     },
@@ -50,20 +50,20 @@
     }
   },
   "tvl": {
-    "total_tvl_b": 96.41,
-    "week_change_pct": 2.68,
-    "month_change_pct": 6.43,
+    "total_tvl_b": 96.42,
+    "week_change_pct": 2.69,
+    "month_change_pct": 6.44,
     "top_chains": {
       "Harmony": 0.0,
-      "Aurora": 0.0,
+      "Moonbeam": 0.0,
       "Stable": 0.0,
-      "Etherlink": 0.03,
-      "Celo": 0.03,
+      "Mantle": 0.74,
       "TAC": 0.0,
-      "Plasma": 1.98,
       "Ink": 0.47,
       "Corn": 0.0,
-      "XDC": 0.0
+      "X Layer": 0.03,
+      "Unichain": 0.05,
+      "Monad": 0.25
     },
     "trend": "growing",
     "signal": {
@@ -81,8 +81,8 @@
     "top_protocols": [
       {
         "name": "Curve DEX",
-        "volume_24h": 191.9,
-        "change_1d": 71.7
+        "volume_24h": 194.5,
+        "change_1d": 74.1
       },
       {
         "name": "Balancer V1",
@@ -117,12 +117,12 @@
       {
         "name": "Bancor V2.1",
         "volume_24h": 0.1,
-        "change_1d": 10.7
+        "change_1d": 7.5
       },
       {
         "name": "WanSwap Dex",
         "volume_24h": 0.0,
-        "change_1d": -64.1
+        "change_1d": -64.4
       },
       {
         "name": "PancakeSwap AMM",
@@ -139,7 +139,7 @@
   },
   "btc_onchain": {
     "btc_fees": {
-      "fastest": 2,
+      "fastest": 1,
       "half_hour": 1,
       "hour": 1,
       "economy": 1,
@@ -149,12 +149,12 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.3,
-      "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+      "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 33240,
-      "vsize": 25590655,
-      "total_fee": 4599361
+      "count": 37497,
+      "vsize": 26361679,
+      "total_fee": 3699306
     },
     "btc_hashrate": 901260643867.0,
     "hashrate_trend": {
@@ -165,7 +165,7 @@
   },
   "eth_onchain": {},
   "yields": {
-    "avg_stable_apy": 2.13,
+    "avg_stable_apy": 2.09,
     "median_stable_apy": 1.56,
     "top_pools": [
       {
@@ -173,7 +173,7 @@
         "project": "maple",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 3026.8,
+        "tvl_m": 3026.7,
         "apy": 4.56
       },
       {
@@ -181,7 +181,7 @@
         "project": "aave-v3",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 2082.6,
+        "tvl_m": 2082.3,
         "apy": 1.53
       },
       {
@@ -189,7 +189,7 @@
         "project": "maple",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 1377.2,
+        "tvl_m": 1377.8,
         "apy": 4.27
       },
       {
@@ -197,7 +197,7 @@
         "project": "aave-v3",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 1372.8,
+        "tvl_m": 1373.9,
         "apy": 1.56
       },
       {
@@ -205,32 +205,32 @@
         "project": "merkl",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 900.1,
-        "apy": 0.23
+        "tvl_m": 907.2,
+        "apy": 0.22
       },
       {
         "pool": "d783c8df-e2ed-44b4-8317-161ccc1b5f06",
         "project": "jupiter-lend",
         "chain": "Solana",
         "symbol": "USDC",
-        "tvl_m": 541.5,
-        "apy": 4.13
+        "tvl_m": 540.5,
+        "apy": 4.16
       },
       {
         "pool": "811da684-855f-434f-9bfd-52679f9707b9",
         "project": "merkl",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 418.2,
-        "apy": 0.06
+        "tvl_m": 422.0,
+        "apy": 0.05
       },
       {
         "pool": "dd8e780e-424b-4ef5-b5ca-4e3fa483e086",
         "project": "merkl",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 415.9,
-        "apy": 0.39
+        "tvl_m": 419.5,
+        "apy": 0.38
       },
       {
         "pool": "7820bd3c-461a-4811-9f0b-1d39c1503c3f",
@@ -245,11 +245,11 @@
         "project": "spark-savings",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 354.0,
+        "tvl_m": 352.5,
         "apy": 4
       }
     ],
-    "pool_count": 313,
+    "pool_count": 311,
     "signal": {
       "bias": "bullish",
       "score": 20,
@@ -289,10 +289,18 @@
       "bias": "neutral",
       "stablecoin_mcap_b": 266.07,
       "tvl_b": 96.41
+    },
+    {
+      "timestamp": "2026-03-07T12:27:47.932707+00:00",
+      "ts": 1772886467,
+      "score": 4,
+      "bias": "neutral",
+      "stablecoin_mcap_b": 266.09,
+      "tvl_b": 96.42
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T12:08:30.847741+00:00",
-    "updated_ts": 1772885310
+    "updated_at": "2026-03-07T12:27:47.932749+00:00",
+    "updated_ts": 1772886467
   }
 }
