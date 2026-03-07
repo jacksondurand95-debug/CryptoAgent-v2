@@ -1,4 +1,5 @@
 coinbase_key.json
+.venv/
 __pycache__/
 *.pyc
 logs/

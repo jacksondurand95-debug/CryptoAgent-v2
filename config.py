@@ -15,6 +15,12 @@ LOG_DIR.mkdir(exist_ok=True)
 # Coinbase
 COINBASE_KEY_FILE = PROJECT_DIR / "coinbase_key.json"
 
+# If key file missing but COINBASE_KEY_JSON env is set (e.g. GitHub Actions or local), write it
+if not COINBASE_KEY_FILE.exists():
+    _env_key = os.environ.get("COINBASE_KEY_JSON", "").strip()
+    if _env_key:
+        COINBASE_KEY_FILE.write_text(_env_key)
+
 # Trading pairs
 TRADING_PAIRS = ["BTC-USD", "ETH-USD", "SOL-USD", "DOGE-USD", "XRP-USD", "ADA-USD"]
 
@@ -47,8 +53,9 @@ DAILY_MAX_LOSS_PCT = 1.0        # Effectively disabled (100%)
 MAX_CONSECUTIVE_LOSSES = 999    # Effectively disabled
 COOLDOWN_AFTER_STOP_SEC = 60    # 1 min cooldown after stop
 
-# State (file-based, committed by Actions workflow)
+# State (file-based, committed by Actions workflow — RESEARCH.md §2)
 STATE_FILE = PROJECT_DIR / "state.json"
+STATE_SCHEMA_VERSION = 2  # Must match portfolio.STATE_SCHEMA_VERSION
 
 # AI
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
