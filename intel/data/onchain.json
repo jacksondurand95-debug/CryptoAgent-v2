@@ -22,7 +22,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
+        "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
       },
       {
         "bias": "bullish",
@@ -32,10 +32,10 @@
     ]
   },
   "stablecoins": {
-    "total_mcap_b": 266.22,
+    "total_mcap_b": 266.19,
     "breakdown": {
       "Tether": 183.94,
-      "USD Coin": 77.41,
+      "USD Coin": 77.38,
       "Dai": 4.5,
       "First Digital USD": 0.37
     },
@@ -50,9 +50,9 @@
     }
   },
   "tvl": {
-    "total_tvl_b": 95.78,
-    "week_change_pct": 2.0,
-    "month_change_pct": 5.73,
+    "total_tvl_b": 95.74,
+    "week_change_pct": 1.96,
+    "month_change_pct": 5.68,
     "top_chains": {
       "Harmony": 0.0,
       "Mantle": 0.74,
@@ -139,7 +139,7 @@
   },
   "btc_onchain": {
     "btc_fees": {
-      "fastest": 1,
+      "fastest": 2,
       "half_hour": 1,
       "hour": 1,
       "economy": 1,
@@ -149,17 +149,17 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.3,
-      "reason": "BTC fees low (1 sat/vB) \u2014 quiet network"
+      "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 23079,
-      "vsize": 25003820,
-      "total_fee": 3203003
+      "count": 24907,
+      "vsize": 25899626,
+      "total_fee": 4845738
     },
-    "btc_hashrate": 987781665678.0,
+    "btc_hashrate": 980571580527.0,
     "hashrate_trend": {
-      "current_eh": 1051.3,
-      "avg_7d_eh": 1030.3,
+      "current_eh": 1188.4,
+      "avg_7d_eh": 1026.8,
       "rising": true
     }
   },
@@ -1089,10 +1089,18 @@
       "bias": "neutral",
       "stablecoin_mcap_b": 266.22,
       "tvl_b": 95.78
+    },
+    {
+      "timestamp": "2026-03-07T00:47:58.722245+00:00",
+      "ts": 1772844478,
+      "score": 4,
+      "bias": "neutral",
+      "stablecoin_mcap_b": 266.19,
+      "tvl_b": 95.74
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T00:24:11.286689+00:00",
-    "updated_ts": 1772843051
+    "updated_at": "2026-03-07T00:47:58.722289+00:00",
+    "updated_ts": 1772844478
   }
 }
