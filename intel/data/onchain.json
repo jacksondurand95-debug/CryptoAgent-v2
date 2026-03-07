@@ -12,7 +12,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "TVL stable (+2.0%)"
+        "reason": "TVL stable (+2.2%)"
       },
       {
         "bias": "neutral",
@@ -22,25 +22,25 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+        "reason": "BTC fees low (4 sat/vB) \u2014 quiet network"
       },
       {
         "bias": "bullish",
         "score": 20,
-        "reason": "DeFi yields depressed (2.4%) \u2014 capitulation"
+        "reason": "DeFi yields depressed (2.3%) \u2014 capitulation"
       }
     ]
   },
   "stablecoins": {
-    "total_mcap_b": 266.19,
+    "total_mcap_b": 266.2,
     "breakdown": {
-      "Tether": 183.94,
-      "USD Coin": 77.38,
+      "Tether": 183.93,
+      "USD Coin": 77.39,
       "Dai": 4.5,
       "First Digital USD": 0.37
     },
-    "week_change_pct": 0.237,
-    "month_change_pct": -0.907,
+    "week_change_pct": 0.25,
+    "month_change_pct": -0.713,
     "trend": "flat",
     "signal": {
       "bias": "neutral",
@@ -50,44 +50,44 @@
     }
   },
   "tvl": {
-    "total_tvl_b": 95.74,
-    "week_change_pct": 1.96,
-    "month_change_pct": 5.68,
+    "total_tvl_b": 95.94,
+    "week_change_pct": 2.18,
+    "month_change_pct": 5.91,
     "top_chains": {
       "Harmony": 0.0,
       "Mantle": 0.74,
       "Stable": 0.0,
-      "Ink": 0.46,
-      "Etherlink": 0.03,
       "Aurora": 0.0,
-      "BSC": 5.85,
-      "Celo": 0.03,
+      "Etherlink": 0.03,
+      "TAC": 0.0,
+      "Ink": 0.46,
+      "Plasma": 2.0,
       "X Layer": 0.03,
-      "Fraxtal": 0.03
+      "Unichain": 0.05
     },
-    "trend": "stable",
+    "trend": "growing",
     "signal": {
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "TVL stable (+2.0%)"
+      "reason": "TVL stable (+2.2%)"
     }
   },
   "dex_volume": {
-    "total_24h_m": 8164.6,
-    "total_7d_m": 57203.9,
-    "change_1d_pct": -2.1,
-    "change_7d_pct": 3.7,
+    "total_24h_m": 7642.1,
+    "total_7d_m": 61363.1,
+    "change_1d_pct": -8.4,
+    "change_7d_pct": -3.0,
     "top_protocols": [
       {
         "name": "Curve DEX",
-        "volume_24h": 148.0,
-        "change_1d": 32.4
+        "volume_24h": 140.2,
+        "change_1d": 25.4
       },
       {
         "name": "Balancer V1",
         "volume_24h": 0.1,
-        "change_1d": -28.8
+        "change_1d": -36.2
       },
       {
         "name": "SushiSwap",
@@ -111,23 +111,23 @@
       },
       {
         "name": "DODO AMM",
-        "volume_24h": 47.4,
-        "change_1d": 0
+        "volume_24h": 48.5,
+        "change_1d": 2.2
       },
       {
         "name": "Bancor V2.1",
         "volume_24h": 0.1,
-        "change_1d": -36.9
+        "change_1d": -15.3
       },
       {
         "name": "WanSwap Dex",
         "volume_24h": 0.0,
-        "change_1d": -54.6
+        "change_1d": -56.8
       },
       {
         "name": "PancakeSwap AMM",
-        "volume_24h": 27.2,
-        "change_1d": 0
+        "volume_24h": 36.8,
+        "change_1d": 35.5
       }
     ],
     "signal": {
@@ -139,8 +139,8 @@
   },
   "btc_onchain": {
     "btc_fees": {
-      "fastest": 2,
-      "half_hour": 1,
+      "fastest": 4,
+      "half_hour": 3,
       "hour": 1,
       "economy": 1,
       "minimum": 1
@@ -149,23 +149,23 @@
       "bias": "neutral",
       "score": 0,
       "weight": 0.3,
-      "reason": "BTC fees low (2 sat/vB) \u2014 quiet network"
+      "reason": "BTC fees low (4 sat/vB) \u2014 quiet network"
     },
     "btc_mempool": {
-      "count": 24907,
-      "vsize": 25899626,
-      "total_fee": 4845738
+      "count": 32091,
+      "vsize": 26310865,
+      "total_fee": 8445891
     },
-    "btc_hashrate": 980571580527.0,
+    "btc_hashrate": 944521154772.0,
     "hashrate_trend": {
-      "current_eh": 1188.4,
-      "avg_7d_eh": 1026.8,
+      "current_eh": 1051.3,
+      "avg_7d_eh": 1030.3,
       "rising": true
     }
   },
   "eth_onchain": {},
   "yields": {
-    "avg_stable_apy": 2.43,
+    "avg_stable_apy": 2.31,
     "median_stable_apy": 3.09,
     "top_pools": [
       {
@@ -173,7 +173,7 @@
         "project": "maple",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 3010.2,
+        "tvl_m": 3011.9,
         "apy": 4.56
       },
       {
@@ -181,7 +181,7 @@
         "project": "aave-v3",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 1702.3,
+        "tvl_m": 1702.7,
         "apy": 2.21
       },
       {
@@ -189,7 +189,7 @@
         "project": "maple",
         "chain": "Ethereum",
         "symbol": "USDT",
-        "tvl_m": 1377.7,
+        "tvl_m": 1378.5,
         "apy": 4.32
       },
       {
@@ -197,8 +197,8 @@
         "project": "aave-v3",
         "chain": "Ethereum",
         "symbol": "USDC",
-        "tvl_m": 1270.8,
-        "apy": 2.06
+        "tvl_m": 1374.3,
+        "apy": 1.95
       },
       {
         "pool": "a87bbade-7728-43d9-bc23-2538812be3cc",
@@ -213,8 +213,8 @@
         "project": "jupiter-lend",
         "chain": "Solana",
         "symbol": "USDC",
-        "tvl_m": 446.8,
-        "apy": 6.4
+        "tvl_m": 542.9,
+        "apy": 4.11
       },
       {
         "pool": "811da684-855f-434f-9bfd-52679f9707b9",
@@ -230,7 +230,7 @@
         "chain": "Base",
         "symbol": "STEAKUSDC",
         "tvl_m": 407.7,
-        "apy": 3.56
+        "apy": 3.57
       },
       {
         "pool": "dd8e780e-424b-4ef5-b5ca-4e3fa483e086",
@@ -249,12 +249,12 @@
         "apy": 4
       }
     ],
-    "pool_count": 313,
+    "pool_count": 312,
     "signal": {
       "bias": "bullish",
       "score": 20,
       "weight": 0.5,
-      "reason": "DeFi yields depressed (2.4%) \u2014 capitulation"
+      "reason": "DeFi yields depressed (2.3%) \u2014 capitulation"
     }
   },
   "history": [
@@ -1097,10 +1097,18 @@
       "bias": "neutral",
       "stablecoin_mcap_b": 266.19,
       "tvl_b": 95.74
+    },
+    {
+      "timestamp": "2026-03-07T03:04:16.785687+00:00",
+      "ts": 1772852656,
+      "score": 4,
+      "bias": "neutral",
+      "stablecoin_mcap_b": 266.2,
+      "tvl_b": 95.94
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T00:47:58.722289+00:00",
-    "updated_ts": 1772844478
+    "updated_at": "2026-03-07T03:04:16.785727+00:00",
+    "updated_ts": 1772852656
   }
 }
