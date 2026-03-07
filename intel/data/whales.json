@@ -7,7 +7,7 @@
       {
         "bias": "neutral",
         "score": 0,
-        "reason": "BTC whale activity normal (1 large txs)"
+        "reason": "BTC whale activity normal (4 large txs)"
       },
       {
         "bias": "neutral",
@@ -24,25 +24,52 @@
   "btc_whales": {
     "large_txs": [
       {
-        "hash": "823f74b4dcf7710a...",
+        "hash": "f688e3902b1f0d98...",
         "btc": 4546.39,
         "type": "transfer",
-        "inputs": 2,
+        "inputs": 1,
+        "outputs": 3,
+        "block": 939739,
+        "time": 1772903371
+      },
+      {
+        "hash": "95be2e318d462a75...",
+        "btc": 621.22,
+        "type": "transfer",
+        "inputs": 1,
         "outputs": 2,
-        "block": 939729,
-        "time": 1772900258
+        "block": 939740,
+        "time": 1772904168
+      },
+      {
+        "hash": "aab4c81af7d48f08...",
+        "btc": 232.22,
+        "type": "transfer",
+        "inputs": 1,
+        "outputs": 2,
+        "block": 939740,
+        "time": 1772903903
+      },
+      {
+        "hash": "c1bc4130092b8791...",
+        "btc": 160.03,
+        "type": "distribution",
+        "inputs": 1,
+        "outputs": 16,
+        "block": 939740,
+        "time": 1772903774
       }
     ],
-    "total_whale_btc": 4546.39,
-    "count": 1,
+    "total_whale_btc": 5559.86,
+    "count": 4,
     "consolidations": 0,
-    "distributions": 0,
+    "distributions": 1,
     "blocks_scanned": 3,
     "signal": {
       "bias": "neutral",
       "score": 0,
       "weight": 0.5,
-      "reason": "BTC whale activity normal (1 large txs)"
+      "reason": "BTC whale activity normal (4 large txs)"
     }
   },
   "eth_whales": {
@@ -178,10 +205,16 @@
       "ts": 1772900997,
       "score": 0,
       "bias": "neutral"
+    },
+    {
+      "timestamp": "2026-03-07T17:28:45.117261+00:00",
+      "ts": 1772904525,
+      "score": 0,
+      "bias": "neutral"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T16:29:57.998997+00:00",
-    "updated_ts": 1772900997
+    "updated_at": "2026-03-07T17:28:45.117289+00:00",
+    "updated_ts": 1772904525
   }
 }
