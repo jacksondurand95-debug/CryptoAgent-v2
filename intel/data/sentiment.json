@@ -63,15 +63,15 @@
   "trending": {
     "trending": [
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
+        "name": "Immortal Token",
+        "symbol": "IMT",
+        "market_cap_rank": 385,
         "score": 0
       },
       {
         "name": "Akash Network",
         "symbol": "AKT",
-        "market_cap_rank": 245,
+        "market_cap_rank": 238,
         "score": 1
       },
       {
@@ -81,51 +81,51 @@
         "score": 2
       },
       {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 46,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
         "score": 3
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 45,
         "score": 4
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap_rank": 2,
         "score": 5
-      },
-      {
-        "name": "WAR",
-        "symbol": "WAR",
-        "market_cap_rank": 506,
-        "score": 6
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
+        "score": 6
+      },
+      {
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
         "score": 7
       },
       {
-        "name": "Freysa AI",
-        "symbol": "FAI",
-        "market_cap_rank": 370,
+        "name": "River",
+        "symbol": "RIVER",
+        "market_cap_rank": 117,
         "score": 8
       },
       {
-        "name": "Fabric Protocol",
-        "symbol": "ROBO",
-        "market_cap_rank": 284,
+        "name": "tx",
+        "symbol": "TX",
+        "market_cap_rank": 503,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL"
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -220,10 +220,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T13:22:40.248279+00:00",
+      "ts": 1772889760,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T12:17:52.893331+00:00",
-    "updated_ts": 1772885872
+    "updated_at": "2026-03-07T13:22:40.248309+00:00",
+    "updated_ts": 1772889760
   }
 }
