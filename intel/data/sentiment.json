@@ -65,7 +65,7 @@
       {
         "name": "Immortal Token",
         "symbol": "IMT",
-        "market_cap_rank": 922,
+        "market_cap_rank": 933,
         "score": 0
       },
       {
@@ -77,7 +77,7 @@
       {
         "name": "Akash Network",
         "symbol": "AKT",
-        "market_cap_rank": 237,
+        "market_cap_rank": 244,
         "score": 2
       },
       {
@@ -87,21 +87,21 @@
         "score": 3
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
-        "score": 4
-      },
-      {
         "name": "Bittensor",
         "symbol": "TAO",
         "market_cap_rank": 46,
+        "score": 4
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 5
       },
       {
-        "name": "Freysa AI",
-        "symbol": "FAI",
-        "market_cap_rank": 325,
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 517,
         "score": 6
       },
       {
@@ -111,15 +111,15 @@
         "score": 7
       },
       {
-        "name": "WAR",
-        "symbol": "WAR",
-        "market_cap_rank": 567,
+        "name": "Freysa AI",
+        "symbol": "FAI",
+        "market_cap_rank": 378,
         "score": 8
       },
       {
-        "name": "Monad",
-        "symbol": "MON",
-        "market_cap_rank": 155,
+        "name": "Immutable",
+        "symbol": "IMX",
+        "market_cap_rank": 219,
         "score": 9
       }
     ],
@@ -206,10 +206,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T12:08:07.879231+00:00",
+      "ts": 1772885287,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T11:10:49.727255+00:00",
-    "updated_ts": 1772881849
+    "updated_at": "2026-03-07T12:08:07.879259+00:00",
+    "updated_ts": 1772885287
   }
 }
