@@ -1,11 +1,11 @@
 {
   "aggregate": {
-    "score": 15,
+    "score": 11,
     "bias": "neutral",
     "strength": "weak",
-    "total_articles": 247,
-    "scored_articles": 61,
-    "positive_score": 1930,
+    "total_articles": 240,
+    "scored_articles": 59,
+    "positive_score": 1760,
     "negative_score": -1340
   },
   "alpha_events": [
@@ -32,18 +32,6 @@
       "coins": [
         "BTC"
       ],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
-      ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Spark Crypto Market Optimism",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
       "keywords": [
         "+fed rate cut",
         "+rate cut"
@@ -138,22 +126,35 @@
       "keywords": [
         "collapse"
       ]
+    },
+    {
+      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ],
+      "keywords": [
+        "enforcement action"
+      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 81,
-      "score": 700,
+      "articles": 82,
+      "score": 670,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 29,
+      "articles": 28,
       "score": -10,
       "bias": "neutral"
     },
     "SOL": {
       "articles": 11,
-      "score": 140,
+      "score": 130,
       "bias": "bullish"
     }
   },
@@ -177,14 +178,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Spark Crypto Market Optimism",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
     },
     {
       "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
@@ -278,16 +271,6 @@
       "score": 70,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "Bitcoin ETFs See Record Inflows Amid Institutional Buying",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
     },
     {
       "title": "Ex-CFO sentenced to two years after diverting $35M to crypto venture",
@@ -433,22 +416,40 @@
       "score": 50,
       "importance": "high",
       "coins": []
+    },
+    {
+      "title": "XRP Whales Add Over 4.18 Billion XRP Since October Price Flash Crash",
+      "source": "U.Today",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
     }
   ],
   "sources": {
-    "DL News": 20,
-    "U.Today": 20,
+    "Crypto Regulation (Google)": 20,
+    "Google News": 30,
     "The Block": 20,
     "Decrypt": 20,
-    "NewsBTC": 10,
-    "CoinDesk": 20,
-    "Google News": 30,
-    "Crypto Briefing": 20,
     "Bitcoin ETF (Google)": 20,
-    "Crypto Regulation (Google)": 20,
-    "X/Twitter (Grok)": 7,
+    "CoinTelegraph": 20,
+    "Crypto Briefing": 20,
+    "U.Today": 20,
+    "DL News": 20,
+    "CoinDesk": 20,
     "Fed News (Google)": 20,
-    "CoinTelegraph": 20
+    "NewsBTC": 10
   },
   "history": [
     {
@@ -1682,10 +1683,17 @@
       "score": 15,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T00:24:44.231656+00:00",
+      "ts": 1772843084,
+      "score": 11,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-06T23:48:05.654560+00:00",
-    "updated_ts": 1772840885
+    "updated_at": "2026-03-07T00:24:44.231797+00:00",
+    "updated_ts": 1772843084
   }
 }
