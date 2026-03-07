@@ -7,18 +7,25 @@
       {
         "bias": "bullish",
         "score": 80,
-        "reason": "Extreme Fear (11) \u2014 contrarian BUY"
+        "reason": "Extreme Fear (12) \u2014 contrarian BUY"
       }
     ]
   },
   "fear_greed": {
-    "current": 11,
+    "current": 12,
     "classification": "Extreme Fear",
-    "avg_7d": 9.7,
-    "avg_30d": 10.5,
+    "avg_7d": 14.3,
+    "avg_30d": 10.3,
     "fear_streak": 30,
     "greed_streak": 0,
     "history_30d": [
+      12,
+      18,
+      22,
+      10,
+      14,
+      10,
+      14,
       11,
       13,
       11,
@@ -41,21 +48,14 @@
       14,
       7,
       6,
-      9,
-      12,
-      14,
-      17,
-      14,
-      14,
-      20,
-      16
+      9
     ],
-    "trend": "declining",
+    "trend": "improving",
     "signal": {
       "bias": "bullish",
       "score": 80,
       "weight": 2.0,
-      "reason": "Extreme Fear (11) \u2014 contrarian BUY"
+      "reason": "Extreme Fear (12) \u2014 contrarian BUY"
     }
   },
   "news": null,
@@ -63,39 +63,39 @@
   "trending": {
     "trending": [
       {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 36,
-        "score": 0
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 111,
-        "score": 1
-      },
-      {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 0
+      },
+      {
+        "name": "Pi Network",
+        "symbol": "PI",
+        "market_cap_rank": 41,
+        "score": 1
+      },
+      {
+        "name": "Freysa AI",
+        "symbol": "FAI",
+        "market_cap_rank": 333,
         "score": 2
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 109,
         "score": 3
       },
       {
-        "name": "Tether Gold",
-        "symbol": "XAUT",
-        "market_cap_rank": 35,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 48,
         "score": 4
       },
       {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 154,
+        "name": "Derive",
+        "symbol": "DRV",
+        "market_cap_rank": 408,
         "score": 5
       },
       {
@@ -105,21 +105,21 @@
         "score": 6
       },
       {
-        "name": "Terra Luna Classic",
-        "symbol": "LUNC",
-        "market_cap_rank": 159,
+        "name": "River",
+        "symbol": "RIVER",
+        "market_cap_rank": 131,
         "score": 7
       },
       {
-        "name": "XRP",
-        "symbol": "XRP",
-        "market_cap_rank": 5,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 8
       },
       {
         "name": "pippin",
         "symbol": "PIPPIN",
-        "market_cap_rank": 90,
+        "market_cap_rank": 119,
         "score": 9
       }
     ],
@@ -136,10 +136,17 @@
       "fgi": 11,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T04:31:54.961111+00:00",
+      "ts": 1772857914,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T17:27:10.145347+00:00",
-    "updated_ts": 1772299630
+    "updated_at": "2026-03-07T04:31:54.961141+00:00",
+    "updated_ts": 1772857914
   }
 }

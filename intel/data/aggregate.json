@@ -1,75 +1,78 @@
 {
   "aggregate": {
-    "score": 9,
+    "score": 10,
     "bias": "neutral",
     "strength": "weak",
-    "confidence": 0.0,
-    "available_sources": 0,
+    "confidence": 1.0,
+    "available_sources": 5,
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 9279.9,
-        "effective_weight": 0.9
+        "age_min": 1.7,
+        "effective_weight": 3.0
       },
       "whales": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 9281.9,
-        "effective_weight": 0.75
+        "age_min": 1.0,
+        "effective_weight": 2.5
       },
       "onchain": {
-        "status": "missing",
-        "score": 0,
-        "bias": "neutral"
+        "status": "fresh",
+        "score": 4,
+        "bias": "neutral",
+        "strength": "weak",
+        "age_min": 0.3,
+        "effective_weight": 2.0
       },
       "sentiment": {
-        "status": "stale",
+        "status": "fresh",
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 9281.6,
-        "effective_weight": 0.45
+        "age_min": 1.2,
+        "effective_weight": 1.5
       },
       "news": {
-        "status": "stale",
-        "score": -47,
+        "status": "fresh",
+        "score": -21,
         "bias": "bearish",
-        "strength": "moderate",
-        "age_min": 9281.9,
-        "effective_weight": 0.3
+        "strength": "weak",
+        "age_min": 0.0,
+        "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -36,
+      "score": -24,
       "bias": "bearish",
       "signals": 2,
       "details": [
         {
           "bias": "bearish",
-          "reason": "News sentiment: 37 articles, score=-290"
+          "reason": "News sentiment: 34 articles, score=-40"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (1 large txs)"
+          "reason": "BTC whale activity normal (10 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": -53,
-      "bias": "bearish",
+      "score": 0,
+      "bias": "neutral",
       "signals": 2,
       "details": [
         {
-          "bias": "bearish",
-          "reason": "News sentiment: 17 articles, score=-140"
+          "bias": "neutral",
+          "reason": "News sentiment: 12 articles, score=-20"
         },
         {
           "bias": "neutral",
@@ -86,8 +89,8 @@
   "alpha_events": [
     {
       "type": "news",
-      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
-      "sentiment": "bearish",
+      "title": "U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%",
+      "sentiment": "bullish",
       "importance": "critical",
       "coins": [
         "BTC"
@@ -95,38 +98,42 @@
     },
     {
       "type": "news",
-      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
-      "sentiment": "bearish",
+      "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
+      "sentiment": "bullish",
       "importance": "critical",
       "coins": [
-        "ETH"
+        "BTC",
+        "ETH",
+        "SOL"
       ]
     },
     {
       "type": "news",
-      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
+      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "type": "news",
+      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
       "sentiment": "bearish",
       "importance": "critical",
       "coins": []
     },
     {
       "type": "news",
-      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "type": "news",
-      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
+      "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
       "sentiment": "bearish",
       "importance": "high",
       "coins": []
     }
   ],
-  "timestamp": "2026-03-07T04:08:48.360373+00:00",
+  "timestamp": "2026-03-07T04:33:03.345999+00:00",
   "_meta": {
-    "updated_at": "2026-03-07T04:08:48.360955+00:00",
-    "updated_ts": 1772856528
+    "updated_at": "2026-03-07T04:33:03.346738+00:00",
+    "updated_ts": 1772857983
   }
 }

@@ -1,94 +1,135 @@
 {
   "aggregate": {
-    "score": -47,
+    "score": -21,
     "bias": "bearish",
-    "strength": "moderate",
+    "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 16,
-    "positive_score": 40,
-    "negative_score": -770
+    "scored_articles": 26,
+    "positive_score": 480,
+    "negative_score": -850
   },
   "alpha_events": [
     {
-      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -140,
+      "title": "U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 130,
       "importance": "critical",
       "coins": [
         "BTC"
       ],
       "keywords": [
-        "hack",
-        "bankruptcy"
+        "+fed rate cut",
+        "+rate cut"
       ]
     },
     {
-      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -90,
+      "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 80,
       "importance": "critical",
       "coins": [
-        "ETH"
+        "BTC",
+        "ETH",
+        "SOL"
       ],
       "keywords": [
-        "crypto ban"
+        "+ath",
+        "+breakout"
       ]
     },
     {
-      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
+      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
       "source": "Decrypt",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+bitcoin reserve"
+      ]
+    },
+    {
+      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
+      "source": "Google News",
       "sentiment": "bearish",
       "score": -80,
       "importance": "critical",
       "coins": [],
       "keywords": [
-        "bankruptcy"
+        "sec lawsuit"
       ]
     },
     {
-      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
-      "source": "CoinDesk",
+      "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
+      "source": "Decrypt",
       "sentiment": "bearish",
-      "score": -50,
+      "score": -70,
       "importance": "high",
       "coins": [],
       "keywords": [
-        "crash"
+        "collapse"
       ]
     },
     {
-      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
+      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ],
+      "keywords": [
+        "enforcement action"
+      ]
+    },
+    {
+      "title": "Ex-CFO sentenced to two years after diverting $35M to crypto venture",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
-      "score": -50,
+      "score": -60,
       "importance": "high",
       "coins": [],
       "keywords": [
-        "crash"
+        "fraud"
       ]
     },
     {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
-      "source": "Google News",
+      "title": "Bitcoin recovery meets DeFi tensions as Aave rift deepens: Finance Redefined",
+      "source": "CoinTelegraph",
       "sentiment": "bearish",
-      "score": -50,
+      "score": -60,
       "importance": "high",
       "coins": [
         "BTC"
       ],
       "keywords": [
-        "crash"
+        "exploit"
       ]
     },
     {
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "title": "SEC Dismisses Fraud Case Against Crypto Billionaire Justin Sun - WSJ",
       "source": "Google News",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "fraud"
+      ]
+    },
+    {
+      "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
+      "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -50,
       "importance": "high",
       "coins": [
+        "BTC",
         "ETH"
       ],
       "keywords": [
@@ -98,65 +139,147 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 37,
-      "score": -290,
+      "articles": 34,
+      "score": -40,
       "bias": "bearish"
     },
     "ETH": {
-      "articles": 17,
-      "score": -140,
-      "bias": "bearish"
+      "articles": 12,
+      "score": -20,
+      "bias": "neutral"
     },
     "SOL": {
-      "articles": 10,
-      "score": 0,
+      "articles": 4,
+      "score": 10,
       "bias": "neutral"
     }
   },
   "top_articles": [
     {
-      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -140,
+      "title": "U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 130,
       "importance": "critical",
       "coins": [
         "BTC"
       ]
     },
     {
-      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -90,
+      "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 80,
       "importance": "critical",
       "coins": [
-        "ETH"
+        "BTC",
+        "ETH",
+        "SOL"
       ]
     },
     {
-      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
+      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
       "source": "Decrypt",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
+      "source": "Google News",
       "sentiment": "bearish",
       "score": -80,
       "importance": "critical",
       "coins": []
     },
     {
-      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
-      "source": "CoinDesk",
+      "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
+      "source": "Decrypt",
       "sentiment": "bearish",
-      "score": -50,
+      "score": -70,
       "importance": "high",
       "coins": []
     },
     {
-      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
+      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -70,
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ]
+    },
+    {
+      "title": "Ex-CFO sentenced to two years after diverting $35M to crypto venture",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin recovery meets DeFi tensions as Aave rift deepens: Finance Redefined",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "SEC Dismisses Fraud Case Against Crypto Billionaire Justin Sun - WSJ",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -50,
       "importance": "high",
-      "coins": []
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "title": "BTC back at $68K, XRP down 5%: why is crypto market crashing - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Crypto Market Crash: Top Analyst Reveals What\u2019s Next For Bitcoin, Ethereum and XRP - TradingView",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
     },
     {
       "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
@@ -169,20 +292,36 @@
       ]
     },
     {
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
+      "title": "Managing financial AI agents is the only skill you\u2019ll need to survive the AI layoffs",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin price drops to near $68K as US jobs weakness fails to rescue bulls",
+      "source": "CoinTelegraph",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
       "coins": [
-        "ETH"
+        "BTC"
       ]
     },
     {
-      "title": "Bitcoin sets up potential short squeeze as 'funding rate' plunges to three month low",
-      "source": "CoinDesk",
-      "sentiment": "bearish",
-      "score": -40,
+      "title": "Kalshi Sued Over Refusing to Pay Out Prediction Market After Iran Leader's Death",
+      "source": "Decrypt",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin holds breakout gains while crypto market turns cautious: Crypto Markets Today - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
       "importance": "medium",
       "coins": [
         "BTC"
@@ -199,16 +338,6 @@
       ]
     },
     {
-      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
-      "source": "Google News",
-      "sentiment": "bullish",
-      "score": 40,
-      "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -219,25 +348,23 @@
       ]
     },
     {
-      "title": "Bitcoin manipulation claims face pushback as ETFs snap 5-week outflow run: Finance Redefined",
+      "title": "Pakistan's parliament passes the Virtual Assets Act of 2026",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
-      "coins": [
-        "BTC"
-      ]
+      "coins": []
     },
     {
-      "title": "Trump Orders Federal Agencies to Dump 'Woke' Anthropic AI After Pentagon Dispute",
-      "source": "Decrypt",
+      "title": "Tokenized RWAs buck the slump as 1inch-Ondo volumes top $2.5B",
+      "source": "CoinTelegraph",
       "sentiment": "neutral",
-      "score": -30,
+      "score": 30,
       "importance": "medium",
       "coins": []
     },
     {
-      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
+      "title": "SEC and CFTC progress toward harmonized crypto regulation - Norton Rose Fulbright",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -245,7 +372,7 @@
       "coins": []
     },
     {
-      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
+      "title": "EXCHANGES AND MARKET REGULATION\u2014SEC\u2019s Atkins says crypto is \u2018job one\u2019 (Mar 5, 2026) - VitalLaw.com",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
@@ -253,15 +380,25 @@
       "coins": []
     },
     {
-      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "title": "SEC Chair Aligns With Trump on Need for Digital Asset Regulation Clarity - Bitcoin.com News",
       "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "BlackRock private credit fund is latest to crack, hitting crypto prices and DeFi markets",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": -10,
+      "importance": "low",
       "coins": []
     },
     {
-      "title": "Former Mt. Gox CEO proposed a rewrite of bitcoin's code to recover $5 billion in stolen funds. Gets quickly shutdown",
+      "title": "Why bitcoin couldn't hold $70,000 despite its best week of Wall Street news in months",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -271,7 +408,7 @@
       ]
     },
     {
-      "title": "Suspected insiders make over $1.2 million on Polymarket by betting on U.S.'s Iran strike",
+      "title": "Bitcoin buyers are cashing out fast after short-lived jump to $74,000",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -281,7 +418,7 @@
       ]
     },
     {
-      "title": "XRP tumbles 9% as break below $1.36 wipes out relief rally",
+      "title": "Binance tells Senate probe no accounts sent crypto directly to Iran",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -289,18 +426,7 @@
       "coins": []
     },
     {
-      "title": "Bitcoin's five-month slide: why BTC is set for worst losing streak since 2018",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "Bitcoin could see further downside risks as Iran attacks U.S. bases across Middle East",
+      "title": "'No deal with Iran': Trump demands unconditional surrender, sending oil surging, bitcoin and stocks lower",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -308,94 +434,11 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "Oil-linked futures on Hyperliquid surge 5% after U.S.-Israel strike on Iran",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin nears $63,000 as U.S. and Israel launch strikes on Iran",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin slides to $65,000 in weekend sell-off, with solana, XRP, dogecoin down 6%",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
-    },
-    {
-      "title": "U.S. Senate Democrats asked Treasury, DOJ to probe Binance's illicit finance controls",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Coinbase\u2019s head of litigation says states are 'gaslighting' on prediction markets",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Citi and Morgan Stanley expand bitcoin and crypto custody, trading and tokenization efforts",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin's rebound cancelled as U.S. stocks fall, gold surges, amid mounting macro risks",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Vitalik Buterin reveals his bold new plan to fix Ethereum\u2019s scaling problem",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Barclays looks for tech provider for new blockchain settlement engine: Bloomberg",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
     }
   ],
   "sources": {
-    "Decrypt": 20,
     "CoinTelegraph": 20,
+    "Decrypt": 20,
     "Google News": 30,
     "CoinDesk": 20
   },
@@ -406,10 +449,17 @@
       "score": -47,
       "bias": "bearish",
       "alpha_count": 7
+    },
+    {
+      "timestamp": "2026-03-07T04:33:03.203007+00:00",
+      "ts": 1772857983,
+      "score": -21,
+      "bias": "bearish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-02-28T17:26:53.727829+00:00",
-    "updated_ts": 1772299613
+    "updated_at": "2026-03-07T04:33:03.203078+00:00",
+    "updated_ts": 1772857983
   }
 }
