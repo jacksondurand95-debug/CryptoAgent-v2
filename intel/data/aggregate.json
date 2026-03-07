@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 10,
+    "score": 11,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 18.8,
+        "age_min": 14.7,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 15.4,
+        "age_min": 33.2,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 19.0,
+        "age_min": 36.7,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,29 +36,25 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 26.9,
+        "age_min": 44.7,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -21,
+        "score": -18,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 112.1,
+        "age_min": 12.7,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -24,
-      "bias": "bearish",
-      "signals": 2,
+      "score": 0,
+      "bias": "neutral",
+      "signals": 1,
       "details": [
-        {
-          "bias": "bearish",
-          "reason": "News sentiment: 34 articles, score=-40"
-        },
         {
           "bias": "neutral",
           "reason": "BTC whale activity normal (4 large txs)"
@@ -66,13 +62,13 @@
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
+      "score": 26,
+      "bias": "bullish",
       "signals": 2,
       "details": [
         {
-          "bias": "neutral",
-          "reason": "News sentiment: 12 articles, score=-20"
+          "bias": "bullish",
+          "reason": "News sentiment: 12 articles, score=30"
         },
         {
           "bias": "neutral",
@@ -118,22 +114,24 @@
     },
     {
       "type": "news",
-      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
-      "sentiment": "bearish",
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "type": "news",
       "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
       "sentiment": "bearish",
       "importance": "high",
       "coins": []
+    },
+    {
+      "type": "news",
+      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": [
+        "SOL"
+      ]
     }
   ],
-  "timestamp": "2026-03-07T06:46:48.118736+00:00",
+  "timestamp": "2026-03-07T07:04:33.349768+00:00",
   "_meta": {
-    "updated_at": "2026-03-07T06:46:48.119497+00:00",
-    "updated_ts": 1772866008
+    "updated_at": "2026-03-07T07:04:33.350359+00:00",
+    "updated_ts": 1772867073
   }
 }
