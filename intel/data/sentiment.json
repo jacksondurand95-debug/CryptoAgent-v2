@@ -71,7 +71,7 @@
       {
         "name": "WAR",
         "symbol": "WAR",
-        "market_cap_rank": 483,
+        "market_cap_rank": 482,
         "score": 1
       },
       {
@@ -87,46 +87,45 @@
         "score": 3
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 4
-      },
-      {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 4
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
         "score": 5
       },
       {
-        "name": "PAX Gold",
-        "symbol": "PAXG",
-        "market_cap_rank": 37,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 639,
         "score": 6
-      },
-      {
-        "name": "Freysa AI",
-        "symbol": "FAI",
-        "market_cap_rank": 332,
-        "score": 7
       },
       {
         "name": "Pi Network",
         "symbol": "PI",
         "market_cap_rank": 41,
+        "score": 7
+      },
+      {
+        "name": "Freysa AI",
+        "symbol": "FAI",
+        "market_cap_rank": 332,
         "score": 8
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "PAX Gold",
+        "symbol": "PAXG",
+        "market_cap_rank": 37,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL",
-      "ETH"
+      "SOL"
     ],
     "market_attention": "high"
   },
@@ -1768,10 +1767,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T00:46:35.829821+00:00",
+      "ts": 1772844395,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T00:23:49.615948+00:00",
-    "updated_ts": 1772843029
+    "updated_at": "2026-03-07T00:46:35.829849+00:00",
+    "updated_ts": 1772844395
   }
 }
