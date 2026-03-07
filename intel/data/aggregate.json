@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 18,
+    "score": 19,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 8.1,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 31,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 29.7,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 112.4,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,32 +36,32 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 47.5,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -22,
-        "bias": "bearish",
+        "score": -15,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 75.2,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 26,
+      "score": 46,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
-          "bias": "neutral",
-          "reason": "News sentiment: 33 articles, score=20"
+          "bias": "bullish",
+          "reason": "News sentiment: 33 articles, score=150"
         },
         {
           "bias": "bullish",
-          "reason": "BTC whale distribution (4 txs) \u2014 accumulation"
+          "reason": "BTC whale distribution (13 txs) \u2014 accumulation"
         }
       ]
     },
@@ -98,6 +98,15 @@
     },
     {
       "type": "news",
+      "title": "Those who cheered U.S. Bitcoin reserve have spent year watching Trump's order languish",
+      "sentiment": "bullish",
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "type": "news",
       "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
       "sentiment": "bullish",
       "importance": "critical",
@@ -122,20 +131,11 @@
       "sentiment": "bearish",
       "importance": "high",
       "coins": []
-    },
-    {
-      "type": "news",
-      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
-      "sentiment": "bearish",
-      "importance": "high",
-      "coins": [
-        "SOL"
-      ]
     }
   ],
-  "timestamp": "2026-03-07T15:58:54.672573+00:00",
+  "timestamp": "2026-03-07T16:06:47.104131+00:00",
   "_meta": {
-    "updated_at": "2026-03-07T15:58:54.673271+00:00",
-    "updated_ts": 1772899134
+    "updated_at": "2026-03-07T16:06:47.104674+00:00",
+    "updated_ts": 1772899607
   }
 }

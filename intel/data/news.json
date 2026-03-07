@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -22,
-    "bias": "bearish",
+    "score": -15,
+    "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 25,
-    "positive_score": 430,
-    "negative_score": -780
+    "positive_score": 510,
+    "negative_score": -730
   },
   "alpha_events": [
     {
@@ -21,6 +21,19 @@
       "keywords": [
         "+fed rate cut",
         "+rate cut"
+      ]
+    },
+    {
+      "title": "Those who cheered U.S. Bitcoin reserve have spent year watching Trump's order languish",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 80,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "+bitcoin reserve"
       ]
     },
     {
@@ -123,26 +136,13 @@
       "keywords": [
         "crash"
       ]
-    },
-    {
-      "title": "BTC back at $68K, XRP down 5%: why is crypto market crashing - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "crash"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
       "articles": 33,
-      "score": 20,
-      "bias": "neutral"
+      "score": 150,
+      "bias": "bullish"
     },
     "ETH": {
       "articles": 14,
@@ -161,6 +161,16 @@
       "source": "CoinDesk",
       "sentiment": "bullish",
       "score": 130,
+      "importance": "critical",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Those who cheered U.S. Bitcoin reserve have spent year watching Trump's order languish",
+      "source": "CoinDesk",
+      "sentiment": "bullish",
+      "score": 80,
       "importance": "critical",
       "coins": [
         "BTC"
@@ -244,16 +254,6 @@
     },
     {
       "title": "BTC back at $68K, XRP down 5%: why is crypto market crashing - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
       "source": "Google News",
       "sentiment": "bearish",
       "score": -50,
@@ -385,6 +385,14 @@
       "coins": []
     },
     {
+      "title": "Circle moves $68 million in just 30 minutes by using its own stablecoin for internal payments",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
       "title": "Bitcoin slips below $68,000 as dollar posts steepest weekly gain in a year",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -423,23 +431,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "'No deal with Iran': Trump demands unconditional surrender, sending oil surging, bitcoin and stocks lower",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
     }
   ],
   "sources": {
     "Decrypt": 20,
-    "Google News": 30,
     "CoinDesk": 20,
-    "CoinTelegraph": 20
+    "CoinTelegraph": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -518,10 +516,17 @@
       "score": -22,
       "bias": "bearish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T16:06:46.975427+00:00",
+      "ts": 1772899606,
+      "score": -15,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T14:43:42.186475+00:00",
-    "updated_ts": 1772894622
+    "updated_at": "2026-03-07T16:06:46.975496+00:00",
+    "updated_ts": 1772899606
   }
 }

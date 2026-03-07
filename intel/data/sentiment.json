@@ -77,49 +77,49 @@
       {
         "name": "Pi Network",
         "symbol": "PI",
-        "market_cap_rank": 40,
+        "market_cap_rank": 41,
         "score": 2
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
-        "score": 3
-      },
-      {
-        "name": "Immutable",
-        "symbol": "IMX",
-        "market_cap_rank": 222,
-        "score": 4
-      },
-      {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 374,
-        "score": 5
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 6
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
-        "score": 7
+        "score": 3
+      },
+      {
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 375,
+        "score": 4
+      },
+      {
+        "name": "Immutable",
+        "symbol": "IMX",
+        "market_cap_rank": 223,
+        "score": 5
+      },
+      {
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 725,
+        "score": 6
       },
       {
         "name": "Bittensor",
         "symbol": "TAO",
         "market_cap_rank": 45,
+        "score": 7
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 8
       },
       {
-        "name": "XRP",
-        "symbol": "XRP",
-        "market_cap_rank": 5,
+        "name": "Canton",
+        "symbol": "CC",
+        "market_cap_rank": 20,
         "score": 9
       }
     ],
@@ -248,10 +248,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T16:06:09.421268+00:00",
+      "ts": 1772899569,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T15:11:27.884222+00:00",
-    "updated_ts": 1772896287
+    "updated_at": "2026-03-07T16:06:09.421299+00:00",
+    "updated_ts": 1772899569
   }
 }
