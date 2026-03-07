@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 0.6,
+        "age_min": 1.2,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 26.1,
+        "age_min": 0.4,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 90.5,
+        "age_min": 0.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,32 +36,32 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 35.7,
+        "age_min": 0.6,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -22,
+        "score": -20,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 65.8,
+        "age_min": 0.0,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": -18,
+      "score": 0,
       "bias": "neutral",
       "signals": 2,
       "details": [
         {
-          "bias": "bearish",
-          "reason": "News sentiment: 34 articles, score=-30"
+          "bias": "neutral",
+          "reason": "News sentiment: 33 articles, score=20"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (8 large txs)"
+          "reason": "BTC whale activity normal (13 large txs)"
         }
       ]
     },
@@ -72,7 +72,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 13 articles, score=80"
+          "reason": "News sentiment: 12 articles, score=80"
         },
         {
           "bias": "neutral",
@@ -133,9 +133,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-07T13:58:19.253083+00:00",
+  "timestamp": "2026-03-07T14:06:47.184688+00:00",
   "_meta": {
-    "updated_at": "2026-03-07T13:58:19.253668+00:00",
-    "updated_ts": 1772891899
+    "updated_at": "2026-03-07T14:06:47.185467+00:00",
+    "updated_ts": 1772892407
   }
 }

@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -22,
+    "score": -20,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 25,
+    "scored_articles": 24,
     "positive_score": 430,
-    "negative_score": -780
+    "negative_score": -730
   },
   "alpha_events": [
     {
@@ -140,12 +140,12 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 34,
-      "score": -30,
-      "bias": "bearish"
+      "articles": 33,
+      "score": 20,
+      "bias": "neutral"
     },
     "ETH": {
-      "articles": 13,
+      "articles": 12,
       "score": 80,
       "bias": "bullish"
     },
@@ -244,16 +244,6 @@
     },
     {
       "title": "BTC back at $68K, XRP down 5%: why is crypto market crashing - TradingView",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
       "source": "Google News",
       "sentiment": "bearish",
       "score": -50,
@@ -433,13 +423,23 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "SOL"
+      ]
     }
   ],
   "sources": {
-    "CoinDesk": 20,
     "Decrypt": 20,
     "CoinTelegraph": 20,
-    "Google News": 30
+    "Google News": 30,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -504,10 +504,17 @@
       "score": -22,
       "bias": "bearish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T14:06:47.036917+00:00",
+      "ts": 1772892407,
+      "score": -20,
+      "bias": "bearish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T12:52:33.761652+00:00",
-    "updated_ts": 1772887953
+    "updated_at": "2026-03-07T14:06:47.036987+00:00",
+    "updated_ts": 1772892407
   }
 }
