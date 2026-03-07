@@ -8,15 +8,15 @@
   "okx": {
     "BTC": {
       "funding": {
-        "current_pct": 0.0028,
+        "current_pct": 0.0021,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 3020311.0100000133,
-        "usd": 2044146491.5680091,
-        "usd_m": 2044.1
+        "contracts": 3024648.1700000134,
+        "usd": 2047532554.0333393,
+        "usd_m": 2047.5
       },
       "funding_history": [
         -0.0001,
@@ -33,24 +33,24 @@
       "neg_funding_streak": 2,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 175614661.0,
-        "sell_vol": 136541583.0,
-        "ratio": 1.286,
-        "aggressive_buyers": true,
-        "aggressive_sellers": false
+        "buy_vol": 50857486.0,
+        "sell_vol": 72509016.0,
+        "ratio": 0.701,
+        "aggressive_buyers": false,
+        "aggressive_sellers": true
       }
     },
     "ETH": {
       "funding": {
-        "current_pct": -0.0025,
+        "current_pct": -0.0021,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 6802664.880000018,
-        "usd": 1343662367.0976033,
-        "usd_m": 1343.7
+        "contracts": 6807154.350000017,
+        "usd": 1344875870.6208034,
+        "usd_m": 1344.9
       },
       "funding_history": [
         -0.0019,
@@ -67,24 +67,24 @@
       "neg_funding_streak": 2,
       "pos_funding_streak": 0,
       "taker_30m": {
-        "buy_vol": 52728755.0,
-        "sell_vol": 62364593.0,
-        "ratio": 0.845,
+        "buy_vol": 35504297.0,
+        "sell_vol": 50590646.0,
+        "ratio": 0.702,
         "aggressive_buyers": false,
         "aggressive_sellers": true
       }
     },
     "SOL": {
       "funding": {
-        "current_pct": -0.0014,
+        "current_pct": -0.0019,
         "next_pct": 0.0,
         "extreme_negative": false,
         "extreme_positive": false
       },
       "open_interest": {
-        "contracts": 2718673.460000003,
-        "usd": 228613251.2514003,
-        "usd_m": 228.6
+        "contracts": 2717059.8200000026,
+        "usd": 228396048.46920022,
+        "usd_m": 228.4
       },
       "funding_history": [
         0.0007,
@@ -101,18 +101,18 @@
       "neg_funding_streak": 0,
       "pos_funding_streak": 1,
       "taker_30m": {
-        "buy_vol": 4868769.0,
-        "sell_vol": 4933190.0,
-        "ratio": 0.987,
+        "buy_vol": 2217525.0,
+        "sell_vol": 4502209.0,
+        "ratio": 0.493,
         "aggressive_buyers": false,
-        "aggressive_sellers": false
+        "aggressive_sellers": true
       }
     }
   },
   "bybit": {},
   "liquidation_levels": {
     "BTC": {
-      "price": 67679.9,
+      "price": 67694.9,
       "high_24h": 71158.0,
       "low_24h": 67406.5,
       "long_liquidations": {
@@ -135,7 +135,7 @@
       "magnet_distance_pct": 100
     },
     "ETH": {
-      "price": 1975.01,
+      "price": 1976.17,
       "high_24h": 2086.66,
       "low_24h": 1954.0,
       "long_liquidations": {
@@ -157,7 +157,7 @@
       "magnet_distance_pct": 100
     },
     "SOL": {
-      "price": 84.09,
+      "price": 84.08,
       "high_24h": 88.86,
       "low_24h": 83.56,
       "long_liquidations": {
@@ -192,9 +192,11 @@
       "risk_factors": []
     },
     "SOL": {
-      "risk_score": 0,
+      "risk_score": 15,
       "risk_level": "low",
-      "risk_factors": []
+      "risk_factors": [
+        "Taker ratio=0.49 (imbalanced)"
+      ]
     }
   },
   "history": [
@@ -329,10 +331,21 @@
         "ETH": 0,
         "SOL": 0
       }
+    },
+    {
+      "timestamp": "2026-03-07T07:42:38.150517+00:00",
+      "ts": 1772869358,
+      "score": 0,
+      "bias": "neutral",
+      "cascade_risks": {
+        "BTC": 0,
+        "ETH": 0,
+        "SOL": 15
+      }
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T07:27:02.368433+00:00",
-    "updated_ts": 1772868422
+    "updated_at": "2026-03-07T07:42:38.150564+00:00",
+    "updated_ts": 1772869358
   }
 }
