@@ -60,7 +60,10 @@ class CoinbaseAuth:
         self.key_id = key_data.get("name") or key_data.get("id", "")
         raw_pk = key_data.get("privateKey", "")
 
-        if raw_pk and "BEGIN" not in raw_pk:
+        if raw_pk and "BEGIN EC" in raw_pk:
+            self.pem = raw_pk.encode()
+            self.algorithm = "ES256"
+        elif raw_pk and "BEGIN" not in raw_pk:
             raw_bytes = base64.b64decode(raw_pk)
             ed_key = Ed25519PrivateKey.from_private_bytes(raw_bytes[:32])
             self.pem = ed_key.private_bytes(
@@ -68,8 +71,10 @@ class CoinbaseAuth:
                 format=serialization.PrivateFormat.PKCS8,
                 encryption_algorithm=serialization.NoEncryption(),
             )
+            self.algorithm = "EdDSA"
         else:
             self.pem = raw_pk.encode()
+            self.algorithm = "EdDSA"
 
     def build_jwt(self, method, path):
         uri = f"{method} api.coinbase.com{path}"
