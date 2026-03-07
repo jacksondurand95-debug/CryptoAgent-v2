@@ -709,6 +709,162 @@ def strategy_multi_tf_confluence(pair, ind_6h, ind_1d, onchain_data, tv_analysis
     return None
 
 
+# ─── STRATEGY 8: RSI MEAN REVERSION ──────────────────────────────
+# Buy oversold bounces, sell overbought rejections.
+# Active when trend strategies have no signal — keeps capital working.
+
+def strategy_rsi_mean_reversion(pair, ind_6h, ind_1d, onchain_data, tv_analysis):
+    """RSI mean reversion — buy oversold, sell overbought."""
+    price = ind_6h.get("price", 0)
+    atr = ind_6h.get("atr", 0) or (price * 0.025)
+    rsi = ind_6h.get("rsi")
+    vol_ratio = ind_6h.get("vol_ratio", 1.0) or 1.0
+
+    if not price or not atr or rsi is None:
+        return None
+
+    # BUY: RSI oversold (<30) with volume
+    if rsi < 30:
+        confidence = 0.65
+
+        if rsi < 25:
+            confidence += 0.05
+        if rsi < 20:
+            confidence += 0.05
+        if vol_ratio > 1.5:
+            confidence += 0.03
+
+        # Funding rate alignment (negative = shorts paying = bounce likely)
+        funding = onchain_data.get("funding", {})
+        fr = funding.get("current", 0)
+        if fr is not None and fr < 0:
+            confidence += 0.03
+
+        # MACD turning up
+        macd_hist = ind_6h.get("macd_hist", 0)
+        prev_macd_hist = ind_6h.get("prev_macd_hist", 0)
+        if macd_hist and prev_macd_hist and macd_hist > prev_macd_hist:
+            confidence += 0.03
+
+        confidence = min(confidence, 0.80)
+
+        # Tighter stops for mean reversion (1.5x ATR)
+        stop = round(price - 1.5 * atr, 2)
+        target = round(price + 3.0 * atr, 2)
+
+        return {
+            "action": "buy",
+            "pair": pair,
+            "confidence": confidence,
+            "size_pct": 35,
+            "entry_price": price,
+            "stop_loss": stop,
+            "take_profit": target,
+            "atr": atr,
+            "strategy": "rsi_mean_reversion",
+            "reasoning": (
+                f"OVERSOLD BOUNCE: RSI={rsi:.0f} vol={vol_ratio:.1f}x "
+                f"FR={fr:.4f}%" if fr else f"OVERSOLD BOUNCE: RSI={rsi:.0f} vol={vol_ratio:.1f}x"
+            ),
+        }
+
+    # SELL: RSI overbought (>70)
+    if rsi > 70:
+        confidence = 0.65
+        if rsi > 75:
+            confidence += 0.05
+        if rsi > 80:
+            confidence += 0.05
+
+        confidence = min(confidence, 0.80)
+
+        return {
+            "action": "sell",
+            "pair": pair,
+            "confidence": confidence,
+            "size_pct": 35,
+            "entry_price": price,
+            "stop_loss": round(price + 1.5 * atr, 2),
+            "take_profit": round(price - 3.0 * atr, 2),
+            "atr": atr,
+            "strategy": "rsi_mean_reversion",
+            "reasoning": f"OVERBOUGHT: RSI={rsi:.0f} vol={vol_ratio:.1f}x",
+        }
+
+    return None
+
+
+# ─── STRATEGY 9: TV CONSENSUS ───────────────────────────────────
+# When TradingView has strong consensus across 26 indicators, trade it.
+
+def strategy_tv_consensus(pair, ind_6h, ind_1d, onchain_data, tv_analysis):
+    """Trade strong TradingView consensus signals."""
+    if not tv_analysis:
+        return None
+
+    price = ind_6h.get("price", 0)
+    atr = ind_6h.get("atr", 0) or (price * 0.025)
+
+    if not price or not atr:
+        return None
+
+    rec = tv_analysis.get("RECOMMENDATION", "")
+    buy_count = tv_analysis.get("BUY", 0)
+    sell_count = tv_analysis.get("SELL", 0)
+    total = buy_count + sell_count + tv_analysis.get("NEUTRAL", 0)
+
+    if total == 0:
+        return None
+
+    # STRONG BUY: 15+ buy indicators
+    if rec == "STRONG_BUY" or buy_count >= 15:
+        confidence = 0.68
+        if buy_count >= 18:
+            confidence += 0.05
+        if buy_count >= 20:
+            confidence += 0.05
+
+        confidence = min(confidence, 0.85)
+
+        return {
+            "action": "buy",
+            "pair": pair,
+            "confidence": confidence,
+            "size_pct": 35,
+            "entry_price": price,
+            "stop_loss": round(price - config.STOP_LOSS_ATR_MULT * atr, 2),
+            "take_profit": round(price + config.TAKE_PROFIT_ATR_MULT * atr, 2),
+            "atr": atr,
+            "strategy": "tv_consensus",
+            "reasoning": f"TV STRONG BUY: {buy_count}B/{sell_count}S rec={rec}",
+        }
+
+    # STRONG SELL: 15+ sell indicators
+    if rec == "STRONG_SELL" or sell_count >= 15:
+        confidence = 0.68
+        if sell_count >= 18:
+            confidence += 0.05
+        if sell_count >= 20:
+            confidence += 0.05
+
+        confidence = min(confidence, 0.85)
+
+        return {
+            "action": "sell",
+            "pair": pair,
+            "confidence": confidence,
+            "size_pct": 35,
+            "entry_price": price,
+            "stop_loss": round(price + config.STOP_LOSS_ATR_MULT * atr, 2),
+            "take_profit": round(price - config.TAKE_PROFIT_ATR_MULT * atr, 2),
+            "atr": atr,
+            "strategy": "tv_consensus",
+            "reasoning": f"TV STRONG SELL: {sell_count}S/{buy_count}B rec={rec}",
+        }
+
+    return None
+
+
 # ─── MAIN ANALYZER ──────────────────────────────────────────────
 
 ALL_STRATEGIES = [
@@ -719,6 +875,8 @@ ALL_STRATEGIES = [
     strategy_cvd_divergence,
     strategy_liquidation_cascade,
     strategy_multi_tf_confluence,
+    strategy_rsi_mean_reversion,
+    strategy_tv_consensus,
 ]
 
 
