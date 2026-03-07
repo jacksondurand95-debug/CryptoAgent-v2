@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 6.8,
+        "age_min": 6.4,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 31,
         "bias": "bullish",
         "strength": "weak",
-        "age_min": 1.7,
+        "age_min": 21.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 5.3,
+        "age_min": 25.1,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 17.5,
+        "age_min": 37.2,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -12,
+        "score": -9,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 107.6,
+        "age_min": 2.9,
         "effective_weight": 1.0
       }
     }
@@ -57,7 +57,7 @@
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 32 articles, score=150"
+          "reason": "News sentiment: 35 articles, score=160"
         },
         {
           "bias": "bullish",
@@ -66,13 +66,13 @@
       ]
     },
     "ETH": {
-      "score": 53,
+      "score": 26,
       "bias": "bullish",
       "signals": 2,
       "details": [
         {
           "bias": "bullish",
-          "reason": "News sentiment: 13 articles, score=80"
+          "reason": "News sentiment: 15 articles, score=30"
         },
         {
           "bias": "neutral",
@@ -133,9 +133,9 @@
       "coins": []
     }
   ],
-  "timestamp": "2026-03-07T18:32:24.601462+00:00",
+  "timestamp": "2026-03-07T18:52:09.675097+00:00",
   "_meta": {
-    "updated_at": "2026-03-07T18:32:24.602211+00:00",
-    "updated_ts": 1772908344
+    "updated_at": "2026-03-07T18:52:09.675803+00:00",
+    "updated_ts": 1772909529
   }
 }
