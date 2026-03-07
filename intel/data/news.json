@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -17,
+    "score": -20,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 24,
+    "scored_articles": 26,
     "positive_score": 470,
-    "negative_score": -720
+    "negative_score": -800
   },
   "alpha_events": [
     {
@@ -145,9 +145,9 @@
       "bias": "neutral"
     },
     "ETH": {
-      "articles": 12,
-      "score": 30,
-      "bias": "bullish"
+      "articles": 14,
+      "score": -20,
+      "bias": "neutral"
     },
     "SOL": {
       "articles": 6,
@@ -274,6 +274,16 @@
       ]
     },
     {
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
       "title": "Managing financial AI agents is the only skill you\u2019ll need to survive the AI layoffs",
       "source": "CoinDesk",
       "sentiment": "bullish",
@@ -364,6 +374,14 @@
       "coins": []
     },
     {
+      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "Florida Senate passes state-level stablecoin bill, awaits DeSantis\u2019 signature",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -418,33 +436,13 @@
       "score": 0,
       "importance": "low",
       "coins": []
-    },
-    {
-      "title": "'No deal with Iran': Trump demands unconditional surrender, sending oil surging, bitcoin and stocks lower",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "SOL"
-      ]
     }
   ],
   "sources": {
-    "CoinTelegraph": 20,
     "CoinDesk": 20,
+    "Google News": 30,
     "Decrypt": 20,
-    "Google News": 30
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -481,10 +479,17 @@
       "score": -17,
       "bias": "bearish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T08:47:39.701948+00:00",
+      "ts": 1772873259,
+      "score": -20,
+      "bias": "bearish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T08:07:29.711362+00:00",
-    "updated_ts": 1772870849
+    "updated_at": "2026-03-07T08:47:39.702017+00:00",
+    "updated_ts": 1772873259
   }
 }
