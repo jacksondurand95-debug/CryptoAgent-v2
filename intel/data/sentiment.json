@@ -65,25 +65,25 @@
       {
         "name": "Immortal Token",
         "symbol": "IMT",
-        "market_cap_rank": 243,
+        "market_cap_rank": 922,
         "score": 0
-      },
-      {
-        "name": "Akash Network",
-        "symbol": "AKT",
-        "market_cap_rank": 246,
-        "score": 1
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
         "market_cap_rank": 1,
+        "score": 1
+      },
+      {
+        "name": "Akash Network",
+        "symbol": "AKT",
+        "market_cap_rank": 237,
         "score": 2
       },
       {
         "name": "Pi Network",
         "symbol": "PI",
-        "market_cap_rank": 41,
+        "market_cap_rank": 40,
         "score": 3
       },
       {
@@ -93,33 +93,33 @@
         "score": 4
       },
       {
-        "name": "Freysa AI",
-        "symbol": "FAI",
-        "market_cap_rank": 315,
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 46,
         "score": 5
       },
       {
-        "name": "Sui",
-        "symbol": "SUI",
-        "market_cap_rank": 29,
+        "name": "Freysa AI",
+        "symbol": "FAI",
+        "market_cap_rank": 325,
         "score": 6
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 144,
-        "score": 7
       },
       {
         "name": "Solana",
         "symbol": "SOL",
         "market_cap_rank": 7,
+        "score": 7
+      },
+      {
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 567,
         "score": 8
       },
       {
-        "name": "Immutable",
-        "symbol": "IMX",
-        "market_cap_rank": 219,
+        "name": "Monad",
+        "symbol": "MON",
+        "market_cap_rank": 155,
         "score": 9
       }
     ],
@@ -199,10 +199,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T11:10:49.727225+00:00",
+      "ts": 1772881849,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T10:11:24.777738+00:00",
-    "updated_ts": 1772878284
+    "updated_at": "2026-03-07T11:10:49.727255+00:00",
+    "updated_ts": 1772881849
   }
 }
