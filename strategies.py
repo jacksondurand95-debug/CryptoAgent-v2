@@ -110,7 +110,7 @@ def strategy_adaptive_trend(pair, ind_6h, ind_1d, onchain_data, tv_analysis):
 
     # ── SELL signal when momentum turns negative on open position ──
     if mom_14 < -config.MOMENTUM_THRESHOLD and mom_7 < 0:
-        confidence = 0.60
+        confidence = 0.65
         if mom_28 < 0:
             confidence += 0.05
         if ema_trend_6h == "bearish":
@@ -723,13 +723,13 @@ def strategy_rsi_mean_reversion(pair, ind_6h, ind_1d, onchain_data, tv_analysis)
     if not price or not atr or rsi is None:
         return None
 
-    # BUY: RSI oversold (<30) with volume
-    if rsi < 30:
+    # BUY: RSI oversold (<40) with volume — wider net for entries
+    if rsi < 40:
         confidence = 0.65
 
-        if rsi < 25:
+        if rsi < 30:
             confidence += 0.05
-        if rsi < 20:
+        if rsi < 25:
             confidence += 0.05
         if vol_ratio > 1.5:
             confidence += 0.03
@@ -768,8 +768,8 @@ def strategy_rsi_mean_reversion(pair, ind_6h, ind_1d, onchain_data, tv_analysis)
             ),
         }
 
-    # SELL: RSI overbought (>70)
-    if rsi > 70:
+    # SELL: RSI overbought (>65)
+    if rsi > 65:
         confidence = 0.65
         if rsi > 75:
             confidence += 0.05
@@ -816,8 +816,8 @@ def strategy_tv_consensus(pair, ind_6h, ind_1d, onchain_data, tv_analysis):
     if total == 0:
         return None
 
-    # STRONG BUY: 15+ buy indicators
-    if rec == "STRONG_BUY" or buy_count >= 15:
+    # STRONG BUY: 13+ buy indicators
+    if rec in ("STRONG_BUY", "BUY") or buy_count >= 13:
         confidence = 0.68
         if buy_count >= 18:
             confidence += 0.05
@@ -839,8 +839,8 @@ def strategy_tv_consensus(pair, ind_6h, ind_1d, onchain_data, tv_analysis):
             "reasoning": f"TV STRONG BUY: {buy_count}B/{sell_count}S rec={rec}",
         }
 
-    # STRONG SELL: 15+ sell indicators
-    if rec == "STRONG_SELL" or sell_count >= 15:
+    # STRONG SELL: 13+ sell indicators
+    if rec in ("STRONG_SELL", "SELL") or sell_count >= 13:
         confidence = 0.68
         if sell_count >= 18:
             confidence += 0.05
