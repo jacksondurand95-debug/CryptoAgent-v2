@@ -81,7 +81,7 @@ class CoinbaseAuth:
             "uri": uri,
         }
         return pyjwt.encode(
-            jwt_data, self.pem, algorithm="EdDSA",
+            jwt_data, self.pem, algorithm=self.algorithm,
             headers={"kid": self.key_id, "nonce": secrets.token_hex()},
         )
 
