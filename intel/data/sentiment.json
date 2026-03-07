@@ -71,7 +71,7 @@
       {
         "name": "Akash Network",
         "symbol": "AKT",
-        "market_cap_rank": 241,
+        "market_cap_rank": 243,
         "score": 1
       },
       {
@@ -87,21 +87,21 @@
         "score": 3
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 375,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 4
-      },
-      {
-        "name": "Immutable",
-        "symbol": "IMX",
-        "market_cap_rank": 223,
-        "score": 5
       },
       {
         "name": "Power Protocol",
         "symbol": "POWER",
-        "market_cap_rank": 725,
+        "market_cap_rank": 724,
+        "score": 5
+      },
+      {
+        "name": "Immutable",
+        "symbol": "IMX",
+        "market_cap_rank": 221,
         "score": 6
       },
       {
@@ -111,9 +111,9 @@
         "score": 7
       },
       {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 375,
         "score": 8
       },
       {
@@ -255,10 +255,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T16:12:40.810244+00:00",
+      "ts": 1772899960,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T16:06:09.421299+00:00",
-    "updated_ts": 1772899569
+    "updated_at": "2026-03-07T16:12:40.810272+00:00",
+    "updated_ts": 1772899960
   }
 }
