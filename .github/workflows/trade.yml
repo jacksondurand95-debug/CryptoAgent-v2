@@ -51,7 +51,9 @@ jobs:
         run: python intel/aggregator.py || echo "Aggregator not critical — continuing"
 
       - name: Write Coinbase key
-        run: echo '${{ secrets.COINBASE_KEY_JSON }}' > coinbase_key.json
+        env:
+          COINBASE_KEY_JSON: ${{ secrets.COINBASE_KEY_JSON }}
+        run: printenv COINBASE_KEY_JSON > coinbase_key.json
 
       - name: Run Trading Agent
         env:
