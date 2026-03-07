@@ -63,63 +63,63 @@
   "trending": {
     "trending": [
       {
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "market_cap_rank": 1,
+        "name": "Immortal Token",
+        "symbol": "IMT",
+        "market_cap_rank": 243,
         "score": 0
       },
       {
         "name": "Akash Network",
         "symbol": "AKT",
-        "market_cap_rank": 248,
+        "market_cap_rank": 246,
         "score": 1
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap_rank": 1,
+        "score": 2
       },
       {
         "name": "Pi Network",
         "symbol": "PI",
         "market_cap_rank": 41,
-        "score": 2
-      },
-      {
-        "name": "Freysa AI",
-        "symbol": "FAI",
-        "market_cap_rank": 321,
         "score": 3
-      },
-      {
-        "name": "Immortal Token",
-        "symbol": "IMT",
-        "market_cap_rank": 742,
-        "score": 4
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 5
-      },
-      {
-        "name": "Morpho",
-        "symbol": "MORPHO",
-        "market_cap_rank": 66,
-        "score": 6
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 7
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
         "market_cap_rank": 108,
+        "score": 4
+      },
+      {
+        "name": "Freysa AI",
+        "symbol": "FAI",
+        "market_cap_rank": 315,
+        "score": 5
+      },
+      {
+        "name": "Sui",
+        "symbol": "SUI",
+        "market_cap_rank": 29,
+        "score": 6
+      },
+      {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 144,
+        "score": 7
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 8
       },
       {
-        "name": "River",
-        "symbol": "RIVER",
-        "market_cap_rank": 137,
+        "name": "Immutable",
+        "symbol": "IMX",
+        "market_cap_rank": 219,
         "score": 9
       }
     ],
@@ -192,10 +192,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T10:11:24.777710+00:00",
+      "ts": 1772878284,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T09:14:42.285489+00:00",
-    "updated_ts": 1772874882
+    "updated_at": "2026-03-07T10:11:24.777738+00:00",
+    "updated_ts": 1772878284
   }
 }
