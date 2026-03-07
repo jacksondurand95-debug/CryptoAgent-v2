@@ -69,57 +69,57 @@
         "score": 0
       },
       {
-        "name": "Akash Network",
-        "symbol": "AKT",
-        "market_cap_rank": 243,
-        "score": 1
-      },
-      {
         "name": "Pi Network",
         "symbol": "PI",
         "market_cap_rank": 41,
+        "score": 1
+      },
+      {
+        "name": "Akash Network",
+        "symbol": "AKT",
+        "market_cap_rank": 243,
         "score": 2
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 3
-      },
-      {
-        "name": "Pudgy Penguins",
-        "symbol": "PENGU",
-        "market_cap_rank": 108,
-        "score": 4
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 724,
-        "score": 5
-      },
-      {
-        "name": "Immutable",
-        "symbol": "IMX",
-        "market_cap_rank": 221,
-        "score": 6
       },
       {
         "name": "Bittensor",
         "symbol": "TAO",
         "market_cap_rank": 45,
+        "score": 3
+      },
+      {
+        "name": "Immutable",
+        "symbol": "IMX",
+        "market_cap_rank": 221,
+        "score": 4
+      },
+      {
+        "name": "Zcash",
+        "symbol": "ZEC",
+        "market_cap_rank": 30,
+        "score": 5
+      },
+      {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
+        "score": 6
+      },
+      {
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 5,
         "score": 7
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 375,
+        "name": "Power Protocol",
+        "symbol": "POWER",
+        "market_cap_rank": 716,
         "score": 8
       },
       {
-        "name": "Canton",
-        "symbol": "CC",
-        "market_cap_rank": 20,
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
         "score": 9
       }
     ],
@@ -262,10 +262,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T17:11:07.853489+00:00",
+      "ts": 1772903467,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T16:12:40.810272+00:00",
-    "updated_ts": 1772899960
+    "updated_at": "2026-03-07T17:11:07.853518+00:00",
+    "updated_ts": 1772903467
   }
 }
