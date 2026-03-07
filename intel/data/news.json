@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -15,
+    "score": -12,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 25,
+    "scored_articles": 24,
     "positive_score": 510,
-    "negative_score": -730
+    "negative_score": -680
   },
   "alpha_events": [
     {
@@ -140,13 +140,13 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 33,
+      "articles": 32,
       "score": 150,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 14,
-      "score": 30,
+      "articles": 13,
+      "score": 80,
       "bias": "bullish"
     },
     "SOL": {
@@ -263,16 +263,6 @@
       ]
     },
     {
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "Managing financial AI agents is the only skill you\u2019ll need to survive the AI layoffs",
       "source": "CoinDesk",
       "sentiment": "bullish",
@@ -385,6 +375,14 @@
       "coins": []
     },
     {
+      "title": "Kalshi, Polymarket seeking $20 billion valuations in fundraising talks: WSJ",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
       "title": "Circle moves $68 million in just 30 minutes by using its own stablecoin for internal payments",
       "source": "CoinDesk",
       "sentiment": "neutral",
@@ -434,10 +432,10 @@
     }
   ],
   "sources": {
-    "Decrypt": 20,
-    "CoinDesk": 20,
+    "Google News": 30,
     "CoinTelegraph": 20,
-    "Google News": 30
+    "CoinDesk": 20,
+    "Decrypt": 20
   },
   "history": [
     {
@@ -523,10 +521,17 @@
       "score": -15,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T16:44:50.949530+00:00",
+      "ts": 1772901890,
+      "score": -12,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T16:06:46.975496+00:00",
-    "updated_ts": 1772899606
+    "updated_at": "2026-03-07T16:44:50.949598+00:00",
+    "updated_ts": 1772901890
   }
 }
