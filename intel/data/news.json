@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -18,
+    "score": -17,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 25,
-    "positive_score": 480,
-    "negative_score": -750
+    "scored_articles": 24,
+    "positive_score": 470,
+    "negative_score": -720
   },
   "alpha_events": [
     {
@@ -338,14 +338,6 @@
       "coins": []
     },
     {
-      "title": "Tokenized RWAs buck the slump as 1inch-Ondo volumes top $2.5B",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": 30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "SEC Chair Aligns With Trump on Need for Digital Asset Regulation Clarity - Bitcoin.com News",
       "source": "Google News",
       "sentiment": "neutral",
@@ -372,10 +364,10 @@
       "coins": []
     },
     {
-      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
-      "source": "Google News",
+      "title": "Florida Senate passes state-level stablecoin bill, awaits DeSantis\u2019 signature",
+      "source": "CoinTelegraph",
       "sentiment": "neutral",
-      "score": -30,
+      "score": 20,
       "importance": "medium",
       "coins": []
     },
@@ -436,13 +428,23 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "SOL"
+      ]
     }
   ],
   "sources": {
-    "Decrypt": 20,
     "CoinTelegraph": 20,
-    "Google News": 30,
-    "CoinDesk": 20
+    "CoinDesk": 20,
+    "Decrypt": 20,
+    "Google News": 30
   },
   "history": [
     {
@@ -472,10 +474,17 @@
       "score": -18,
       "bias": "bearish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T08:07:29.711291+00:00",
+      "ts": 1772870849,
+      "score": -17,
+      "bias": "bearish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T06:51:49.654303+00:00",
-    "updated_ts": 1772866309
+    "updated_at": "2026-03-07T08:07:29.711362+00:00",
+    "updated_ts": 1772870849
   }
 }
