@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 19,
+    "score": 11,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,15 +12,15 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 13.2,
+        "age_min": 9.4,
         "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
-        "score": 31,
-        "bias": "bullish",
+        "score": 0,
+        "bias": "neutral",
         "strength": "weak",
-        "age_min": 50.2,
+        "age_min": 4.5,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 292.3,
+        "age_min": 306.8,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,7 +36,7 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 8.2,
+        "age_min": 22.6,
         "effective_weight": 1.5
       },
       "news": {
@@ -44,14 +44,14 @@
         "score": -13,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 36.1,
+        "age_min": 50.6,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 46,
+      "score": 36,
       "bias": "bullish",
       "signals": 2,
       "details": [
@@ -60,8 +60,8 @@
           "reason": "News sentiment: 33 articles, score=70"
         },
         {
-          "bias": "bullish",
-          "reason": "BTC whale distribution (15 txs) \u2014 accumulation"
+          "bias": "neutral",
+          "reason": "BTC whale activity normal (8 large txs)"
         }
       ]
     },
@@ -133,9 +133,9 @@
       "coins": []
     }
   ],
-  "timestamp": "2026-03-07T23:19:23.537996+00:00",
+  "timestamp": "2026-03-07T23:33:51.318550+00:00",
   "_meta": {
-    "updated_at": "2026-03-07T23:19:23.538726+00:00",
-    "updated_ts": 1772925563
+    "updated_at": "2026-03-07T23:33:51.319340+00:00",
+    "updated_ts": 1772926431
   }
 }
