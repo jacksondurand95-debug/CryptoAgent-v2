@@ -12,8 +12,8 @@ name: Intel — Combined (Private Repo)
 
 on:
   schedule:
-    # Every 2 hours — fits ~2000 min/month budget with trading agent
-    - cron: '0 */2 * * *'
+    # Every 3 hours — optimized for free tier with unlimited minutes
+    - cron: '0 */3 * * *'
   workflow_dispatch:
 
 permissions:

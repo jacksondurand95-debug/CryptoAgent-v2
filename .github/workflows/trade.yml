@@ -2,7 +2,7 @@ name: CryptoAgent v2
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/10 * * * *'  # Every 10 minutes - optimized for free tier
   workflow_dispatch:
 
 permissions:
