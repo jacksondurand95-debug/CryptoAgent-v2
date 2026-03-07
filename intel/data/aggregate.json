@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 10,
+    "score": 11,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 1.0,
@@ -12,7 +12,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 11.4,
+        "age_min": 7.4,
         "effective_weight": 3.0
       },
       "whales": {
@@ -20,7 +20,7 @@
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 2.5,
+        "age_min": 15.1,
         "effective_weight": 2.5
       },
       "onchain": {
@@ -28,7 +28,7 @@
         "score": 4,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 148.7,
+        "age_min": 161.3,
         "effective_weight": 2.0
       },
       "sentiment": {
@@ -36,15 +36,15 @@
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 24.5,
+        "age_min": 37.1,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": -20,
+        "score": -17,
         "bias": "bearish",
         "strength": "weak",
-        "age_min": 108.3,
+        "age_min": 4.6,
         "effective_weight": 1.0
       }
     }
@@ -62,13 +62,13 @@
       ]
     },
     "ETH": {
-      "score": 0,
-      "bias": "neutral",
+      "score": 53,
+      "bias": "bullish",
       "signals": 2,
       "details": [
         {
-          "bias": "neutral",
-          "reason": "News sentiment: 14 articles, score=-20"
+          "bias": "bullish",
+          "reason": "News sentiment: 12 articles, score=80"
         },
         {
           "bias": "neutral",
@@ -129,9 +129,9 @@
       ]
     }
   ],
-  "timestamp": "2026-03-07T10:35:55.096257+00:00",
+  "timestamp": "2026-03-07T10:48:28.200310+00:00",
   "_meta": {
-    "updated_at": "2026-03-07T10:35:55.096853+00:00",
-    "updated_ts": 1772879755
+    "updated_at": "2026-03-07T10:48:28.200789+00:00",
+    "updated_ts": 1772880508
   }
 }
