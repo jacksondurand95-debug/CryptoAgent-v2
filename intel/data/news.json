@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -21,
+    "score": -22,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 24,
+    "scored_articles": 25,
     "positive_score": 430,
-    "negative_score": -750
+    "negative_score": -780
   },
   "alpha_events": [
     {
@@ -361,6 +361,14 @@
       "coins": []
     },
     {
+      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "Florida Senate passes state-level stablecoin bill, awaits DeSantis\u2019 signature",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -425,23 +433,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "SOL"
-      ]
     }
   ],
   "sources": {
     "CoinDesk": 20,
+    "Decrypt": 20,
     "CoinTelegraph": 20,
-    "Google News": 30,
-    "Decrypt": 20
+    "Google News": 30
   },
   "history": [
     {
@@ -499,10 +497,17 @@
       "score": -21,
       "bias": "bearish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T12:52:33.761579+00:00",
+      "ts": 1772887953,
+      "score": -22,
+      "bias": "bearish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T12:08:47.505094+00:00",
-    "updated_ts": 1772885327
+    "updated_at": "2026-03-07T12:52:33.761652+00:00",
+    "updated_ts": 1772887953
   }
 }
