@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -9,
+    "score": -8,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
     "scored_articles": 27,
     "positive_score": 610,
-    "negative_score": -750
+    "negative_score": -730
   },
   "alpha_events": [
     {
@@ -140,13 +140,13 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 35,
+      "articles": 33,
       "score": 160,
       "bias": "bullish"
     },
     "ETH": {
       "articles": 15,
-      "score": 30,
+      "score": 80,
       "bias": "bullish"
     },
     "SOL": {
@@ -283,16 +283,6 @@
       ]
     },
     {
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "Managing financial AI agents is the only skill you\u2019ll need to survive the AI layoffs",
       "source": "CoinDesk",
       "sentiment": "bullish",
@@ -363,6 +353,14 @@
       "coins": []
     },
     {
+      "title": "SEC submits guidance on crypto regulation to the White House - Digital Watch Observatory",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "SEC and CFTC progress toward harmonized crypto regulation - Norton Rose Fulbright",
       "source": "Google News",
       "sentiment": "neutral",
@@ -405,7 +403,7 @@
       "coins": []
     },
     {
-      "title": "Latin America\u2019s crypto user growth outpaced U.S. by 3x in 2025, report shows",
+      "title": "Trump's cyber strategy vows to 'support the security' of cryptocurrencies and blockchain",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -413,17 +411,15 @@
       "coins": []
     },
     {
-      "title": "Bitcoin purist Jack Dorsey says that his firm is reluctantly giving in to stablecoin craze",
+      "title": "The Multibillion-dollar shift turning prediction markets into a professional hedging tool",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
       "importance": "low",
-      "coins": [
-        "BTC"
-      ]
+      "coins": []
     },
     {
-      "title": "Kalshi, Polymarket seeking $20 billion valuations in fundraising talks: WSJ",
+      "title": "Latin America\u2019s crypto user growth outpaced U.S. by 3x in 2025, report shows",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -432,10 +428,10 @@
     }
   ],
   "sources": {
-    "Decrypt": 20,
+    "Google News": 30,
     "CoinDesk": 20,
     "CoinTelegraph": 20,
-    "Google News": 30
+    "Decrypt": 20
   },
   "history": [
     {
@@ -535,10 +531,17 @@
       "score": -9,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T20:43:04.331841+00:00",
+      "ts": 1772916184,
+      "score": -8,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T18:49:17.273500+00:00",
-    "updated_ts": 1772909357
+    "updated_at": "2026-03-07T20:43:04.331900+00:00",
+    "updated_ts": 1772916184
   }
 }
