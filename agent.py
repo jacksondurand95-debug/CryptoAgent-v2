@@ -220,14 +220,25 @@ def get_candles(pair, granularity="SIX_HOUR", limit=100):
 
 
 def get_balances(auth):
-    """Get account balances."""
-    data = auth.get("/api/v3/brokerage/accounts")
+    """Get account balances from both v3 and v2 APIs for full picture."""
     balances = {}
+    # v3 Advanced Trade accounts
+    data = auth.get("/api/v3/brokerage/accounts")
     for acct in data.get("accounts", []):
         bal = float(acct.get("available_balance", {}).get("value", 0))
         cur = acct.get("available_balance", {}).get("currency", "")
         if bal > 0 and cur:
             balances[cur] = bal
+    # v2 wallet accounts (catches assets not in Advanced Trade portfolio)
+    try:
+        v2_data = auth.get("/v2/accounts", params={"limit": 100})
+        for acct in v2_data.get("data", []):
+            bal = float(acct.get("balance", {}).get("amount", 0))
+            cur = acct.get("balance", {}).get("currency", "")
+            if bal > 0 and cur and cur not in balances:
+                balances[cur] = bal
+    except Exception:
+        pass  # v2 may fail on some API key scopes — v3 is the fallback
     return balances
 
 
