@@ -65,7 +65,7 @@
       {
         "name": "Immortal Token",
         "symbol": "IMT",
-        "market_cap_rank": 901,
+        "market_cap_rank": 905,
         "score": 0
       },
       {
@@ -99,9 +99,9 @@
         "score": 5
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "Opinion",
+        "symbol": "OPN",
+        "market_cap_rank": 385,
         "score": 6
       },
       {
@@ -111,22 +111,21 @@
         "score": 7
       },
       {
-        "name": "Opinion",
-        "symbol": "OPN",
-        "market_cap_rank": 385,
+        "name": "Immutable",
+        "symbol": "IMX",
+        "market_cap_rank": 220,
         "score": 8
       },
       {
-        "name": "Immutable",
-        "symbol": "IMX",
-        "market_cap_rank": 219,
+        "name": "Lighter",
+        "symbol": "LIT",
+        "market_cap_rank": 136,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "ETH",
-      "SOL"
+      "ETH"
     ],
     "market_attention": "high"
   },
@@ -235,10 +234,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T14:11:52.801603+00:00",
+      "ts": 1772892712,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T14:06:09.293164+00:00",
-    "updated_ts": 1772892369
+    "updated_at": "2026-03-07T14:11:52.801635+00:00",
+    "updated_ts": 1772892712
   }
 }
