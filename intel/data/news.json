@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -20,
+    "score": -22,
     "bias": "bearish",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 24,
+    "scored_articles": 25,
     "positive_score": 430,
-    "negative_score": -730
+    "negative_score": -780
   },
   "alpha_events": [
     {
@@ -145,12 +145,12 @@
       "bias": "neutral"
     },
     "ETH": {
-      "articles": 12,
-      "score": 80,
+      "articles": 14,
+      "score": 30,
       "bias": "bullish"
     },
     "SOL": {
-      "articles": 7,
+      "articles": 6,
       "score": 10,
       "bias": "neutral"
     }
@@ -260,6 +260,16 @@
       "importance": "high",
       "coins": [
         "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "ETH"
       ]
     },
     {
@@ -375,7 +385,7 @@
       "coins": []
     },
     {
-      "title": "Bitcoin slips below $68,000 heading into the weekend as dollar posts steepest weekly gain in a year",
+      "title": "Bitcoin slips below $68,000 as dollar posts steepest weekly gain in a year",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -423,23 +433,13 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": [
-        "SOL"
-      ]
     }
   ],
   "sources": {
     "Decrypt": 20,
-    "CoinTelegraph": 20,
     "Google News": 30,
-    "CoinDesk": 20
+    "CoinDesk": 20,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -511,10 +511,17 @@
       "score": -20,
       "bias": "bearish",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T14:43:42.186410+00:00",
+      "ts": 1772894622,
+      "score": -22,
+      "bias": "bearish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T14:06:47.036987+00:00",
-    "updated_ts": 1772892407
+    "updated_at": "2026-03-07T14:43:42.186475+00:00",
+    "updated_ts": 1772894622
   }
 }
