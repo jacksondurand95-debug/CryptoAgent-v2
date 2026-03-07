@@ -245,16 +245,15 @@ def get_balances(auth):
 def get_total_usd_value(auth):
     """Get total portfolio value in USD."""
     balances = get_balances(auth)
-    total = balances.get("USD", 0.0)
+    total = balances.get("USD", 0.0) + balances.get("USDC", 0.0)
     for cur, amt in balances.items():
-        if cur == "USD":
+        if cur in ("USD", "USDC"):
             continue
         price = get_price(f"{cur}-USD")
         if price and price > 0:
             total += amt * price
         else:
-            log.warning(f"Price fetch failed for {cur}-USD")
-            return None
+            log.warning(f"Price fetch failed for {cur}-USD — skipping dust")
     return total
 
 
@@ -778,11 +777,11 @@ def run():
             usd_amount = total_value * size_pct
 
             balances = get_balances(auth)
-            available_usd = balances.get("USD", 0)
+            available_usd = balances.get("USD", 0) + balances.get("USDC", 0)
             if usd_amount > available_usd:
                 usd_amount = available_usd * 0.95
             if usd_amount < 5:
-                log.warning(f"  Insufficient USD: ${available_usd:.2f}")
+                log.warning(f"  Insufficient USD+USDC: ${available_usd:.2f}")
                 continue
 
             # Get best bid for limit order (maker fee with post_only!)

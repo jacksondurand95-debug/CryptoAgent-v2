@@ -16,7 +16,7 @@ LOG_DIR.mkdir(exist_ok=True)
 COINBASE_KEY_FILE = PROJECT_DIR / "coinbase_key.json"
 
 # Trading pairs
-TRADING_PAIRS = ["BTC-USD", "ETH-USD", "SOL-USD"]
+TRADING_PAIRS = ["BTC-USD", "ETH-USD", "SOL-USD", "DOGE-USD", "XRP-USD", "ADA-USD"]
 
 # PRIMARY TIMEFRAME: 6H (from AdaptiveTrend paper — filters noise, bigger moves)
 PRIMARY_TIMEFRAME = "SIX_HOUR"
@@ -24,8 +24,8 @@ TREND_TIMEFRAME = "ONE_DAY"
 FAST_TIMEFRAME = "ONE_HOUR"
 
 # Risk params — PROVEN (from AdaptiveTrend paper ablation study)
-MAX_POSITION_PCT = 0.25        # 25% per trade (2 concurrent max)
-MAX_OPEN_POSITIONS = 2         # Focus capital, not scatter
+MAX_POSITION_PCT = 0.40        # 40% per trade — put capital to work
+MAX_OPEN_POSITIONS = 3         # 3 concurrent positions
 STOP_LOSS_ATR_MULT = 2.5      # 2.5x ATR — paper's optimal (+0.73 Sharpe)
 TRAILING_STOP_ATR_MULT = 2.5  # Dynamic trail at 2.5x ATR from peak
 TRAILING_ACTIVATION_R = 1.0   # Activate trail at 1R profit (let it breathe)
