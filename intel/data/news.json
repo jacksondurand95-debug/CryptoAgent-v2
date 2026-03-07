@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -8,
+    "score": -13,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 27,
+    "scored_articles": 29,
     "positive_score": 610,
-    "negative_score": -730
+    "negative_score": -840
   },
   "alpha_events": [
     {
@@ -141,12 +141,12 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 33,
-      "score": 160,
+      "score": 70,
       "bias": "bullish"
     },
     "ETH": {
       "articles": 15,
-      "score": 80,
+      "score": 40,
       "bias": "bullish"
     },
     "SOL": {
@@ -263,6 +263,24 @@
       ]
     },
     {
+      "title": "Crypto Fear and Greed Index falls back down to 'extreme fear' levels",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin price news: BTC in deep bear market, could crash by another 30%, investment firm says - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
       "title": "BTC back at $68K, XRP down 5%: why is crypto market crashing - TradingView",
       "source": "Google News",
       "sentiment": "bearish",
@@ -273,7 +291,7 @@
       ]
     },
     {
-      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
       "source": "Google News",
       "sentiment": "bearish",
       "score": -50,
@@ -307,6 +325,17 @@
       "coins": []
     },
     {
+      "title": "Crypto Market Down Today: Bitcoin Price Falls to $68K as $302M Liquidations Hit BTC, ETH, XRP - Coinpedia",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
       "title": "Bitcoin holds breakout gains while crypto market turns cautious: Crypto Markets Today - CoinDesk",
       "source": "Google News",
       "sentiment": "bullish",
@@ -327,14 +356,6 @@
       ]
     },
     {
-      "title": "Kalshi, Polymarket eye $20B valuations in potential fundraising: WSJ",
-      "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
       "title": "Here\u2019s what happened in crypto today",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
@@ -345,7 +366,7 @@
       ]
     },
     {
-      "title": "Pakistan's parliament passes the Virtual Assets Act of 2026",
+      "title": "Kalshi, Polymarket eye $20B valuations in potential fundraising: WSJ",
       "source": "CoinTelegraph",
       "sentiment": "neutral",
       "score": -30,
@@ -369,6 +390,14 @@
       "coins": []
     },
     {
+      "title": "EXCHANGES AND MARKET REGULATION\u2014SEC\u2019s Atkins says crypto is \u2018job one\u2019 (Mar 5, 2026) - VitalLaw.com",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "SEC Chair Aligns With Trump on Need for Digital Asset Regulation Clarity - Bitcoin.com News",
       "source": "Google News",
       "sentiment": "neutral",
@@ -377,14 +406,6 @@
       "coins": [
         "BTC"
       ]
-    },
-    {
-      "title": "EXCHANGES AND MARKET REGULATION\u2014SEC\u2019s Atkins says crypto is \u2018job one\u2019 (Mar 5, 2026) - VitalLaw.com",
-      "source": "Google News",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
     },
     {
       "title": "Florida Senate passes state-level stablecoin bill, awaits DeSantis\u2019 signature",
@@ -403,23 +424,7 @@
       "coins": []
     },
     {
-      "title": "Trump's cyber strategy vows to 'support the security' of cryptocurrencies and blockchain",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "The Multibillion-dollar shift turning prediction markets into a professional hedging tool",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Latin America\u2019s crypto user growth outpaced U.S. by 3x in 2025, report shows",
+      "title": "Coinbase says new U.S. tax-reporting rules for crypto are cluttered, confusing",
       "source": "CoinDesk",
       "sentiment": "neutral",
       "score": 0,
@@ -428,10 +433,10 @@
     }
   ],
   "sources": {
-    "Google News": 30,
     "CoinDesk": 20,
-    "CoinTelegraph": 20,
-    "Decrypt": 20
+    "Decrypt": 20,
+    "Google News": 30,
+    "CoinTelegraph": 20
   },
   "history": [
     {
@@ -538,10 +543,17 @@
       "score": -8,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T22:43:15.600599+00:00",
+      "ts": 1772923395,
+      "score": -13,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T20:43:04.331900+00:00",
-    "updated_ts": 1772916184
+    "updated_at": "2026-03-07T22:43:15.600674+00:00",
+    "updated_ts": 1772923395
   }
 }
