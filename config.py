@@ -26,27 +26,27 @@ TREND_TIMEFRAME = "ONE_DAY"
 FAST_TIMEFRAME = "ONE_HOUR"
 SCALP_TIMEFRAME = "FIFTEEN_MINUTE"
 
-# Risk params — FULL SEND MODE ($3000 deployed)
-MAX_POSITION_PCT = 0.25        # 25% per trade (~$350) — controlled sizing
-MAX_OPEN_POSITIONS = 3         # 3 concurrent — concentrate on best setups
-STOP_LOSS_ATR_MULT = 2.0      # 2x ATR stops — give trades room to breathe
-TRAILING_STOP_ATR_MULT = 1.8  # 1.8x ATR trailing — lock gains
-TRAILING_ACTIVATION_R = 1.5   # Activate trailing after 1.5x risk achieved
-TAKE_PROFIT_ATR_MULT = 8.0    # 8x ATR target — let winners run far
-MIN_CONFIDENCE = 0.55          # Higher bar — quality over quantity
-MIN_EXPECTED_MOVE_PCT = 3.0    # 4% min — must clear 3x fees to be worth it
-TIME_STOP_HOURS = 48           # 2 days max hold — rotate capital
-MIN_HOLD_MINUTES = 60          # 60 min minimum — stop cutting winners early
-REENTRY_COOLDOWN_MINUTES = 30  # 30 min cooldown — avoid revenge trading
+# Risk params — OPTIMIZED FOR HIGH FEES (detected 0.4-0.8%)
+MAX_POSITION_PCT = 0.20        # 20% per trade — conservative sizing given fees
+MAX_OPEN_POSITIONS = 2         # 2 concurrent — focus on highest conviction only
+STOP_LOSS_ATR_MULT = 2.5      # 2.5x ATR stops — wider to avoid fee churn
+TRAILING_STOP_ATR_MULT = 2.0  # 2x ATR trailing — lock gains with room
+TRAILING_ACTIVATION_R = 2.0   # Activate trailing after 2x risk — offset fees
+TAKE_PROFIT_ATR_MULT = 10.0   # 10x ATR target — need bigger wins vs fees
+MIN_CONFIDENCE = 0.65          # Higher bar (was 0.55) — quality over quantity
+MIN_EXPECTED_MOVE_PCT = 4.0    # 4% min (was 3%) — must clear 5x round-trip fees
+TIME_STOP_HOURS = 72           # 3 days max hold — reduce position churn
+MIN_HOLD_MINUTES = 120         # 2 hour minimum — reduce fee-heavy flips
+REENTRY_COOLDOWN_MINUTES = 60  # 60 min cooldown — avoid overtrading
 
-# Fees — Coinbase Advanced Trade (Coinbase One does NOT cover Advanced Trade)
-# Intro 1 tier: 0.60% maker / 1.20% taker
-# STRATEGY: ALL orders are post_only limit = 0.60% guaranteed. NEVER market orders.
-MAKER_FEE_PCT = 0.006          # 0.60% — the ONLY fee we should ever pay
-TAKER_FEE_PCT = 0.012          # 1.20% — AVOID: never use market orders
-ROUND_TRIP_FEE_PCT = 0.012     # 1.20% round trip (limit both sides)
-ROUND_TRIP_FEE_TAKER_PCT = 0.012   # Same — we don't use market exits anymore
-FEE_AUTO_DETECT = True         # Override with detected rates from API
+# Fees — Coinbase Advanced Trade (DETECTED: 0.4% maker / 0.8% taker)
+# Real detected tier: higher than expected
+# STRATEGY: ALL orders are post_only limit = minimize fees. NEVER market orders.
+MAKER_FEE_PCT = 0.004          # 0.40% — detected actual maker rate
+TAKER_FEE_PCT = 0.008          # 0.80% — detected actual taker rate
+ROUND_TRIP_FEE_PCT = 0.008     # 0.80% round trip (limit both sides)
+ROUND_TRIP_FEE_TAKER_PCT = 0.012   # 1.20% if forced to use market exit
+FEE_AUTO_DETECT = True         # Override with detected rates from API - CRITICAL
 
 # Safety — ENFORCED
 MAX_DRAWDOWN_PCT = 0.40         # 40% drawdown halt
@@ -70,8 +70,8 @@ TV_ENABLED = True
 # News
 CRYPTOPANIC_API_KEY = os.environ.get("CRYPTOPANIC_API_KEY", "")
 
-# Analysis interval — 5 min for faster signal capture
-ANALYSIS_INTERVAL_SEC = 300
+# Analysis interval — 10 min optimized for workflow schedule
+ANALYSIS_INTERVAL_SEC = 600
 
 # Underground alpha feeds — free public APIs for edge
 COINGLASS_BASE = "https://open-api.coinglass.com/public/v2"
