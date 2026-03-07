@@ -1,14 +1,30 @@
 {
   "aggregate": {
-    "score": 13,
-    "bias": "neutral",
+    "score": 16,
+    "bias": "bullish",
     "strength": "weak",
     "total_articles": 248,
-    "scored_articles": 63,
-    "positive_score": 1900,
-    "negative_score": -1390
+    "scored_articles": 65,
+    "positive_score": 2130,
+    "negative_score": -1420
   },
   "alpha_events": [
+    {
+      "title": "Vitalik Buterin Says Ethereum Should Be Bolder, Here\u2019s Why",
+      "source": "NewsBTC",
+      "sentiment": "bullish",
+      "score": 160,
+      "importance": "critical",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "keywords": [
+        "+ath",
+        "+etf inflow",
+        "+short squeeze"
+      ]
+    },
     {
       "title": "Bitcoin Spot ETFs Record $225M Inflows as BlackRock\u2019s IBIT Leads with $322M - Binance",
       "source": "Bitcoin ETF (Google)",
@@ -38,6 +54,18 @@
       ]
     },
     {
+      "title": "Fed Rate Cut Rumors Spark Crypto Market Optimism",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": [],
+      "keywords": [
+        "+fed rate cut",
+        "+rate cut"
+      ]
+    },
+    {
       "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
@@ -51,20 +79,6 @@
       "keywords": [
         "+ath",
         "+breakout"
-      ]
-    },
-    {
-      "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "SOL"
-      ],
-      "keywords": [
-        "+spot etf"
       ]
     },
     {
@@ -126,39 +140,37 @@
       "keywords": [
         "collapse"
       ]
-    },
-    {
-      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -70,
-      "importance": "high",
-      "coins": [
-        "SOL"
-      ],
-      "keywords": [
-        "enforcement action"
-      ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 84,
-      "score": 660,
+      "articles": 85,
+      "score": 700,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 31,
-      "score": 50,
+      "articles": 32,
+      "score": 210,
       "bias": "bullish"
     },
     "SOL": {
-      "articles": 11,
-      "score": 130,
+      "articles": 10,
+      "score": 50,
       "bias": "bullish"
     }
   },
   "top_articles": [
+    {
+      "title": "Vitalik Buterin Says Ethereum Should Be Bolder, Here\u2019s Why",
+      "source": "NewsBTC",
+      "sentiment": "bullish",
+      "score": 160,
+      "importance": "critical",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
     {
       "title": "Bitcoin Spot ETFs Record $225M Inflows as BlackRock\u2019s IBIT Leads with $322M - Binance",
       "source": "Bitcoin ETF (Google)",
@@ -180,6 +192,14 @@
       ]
     },
     {
+      "title": "Fed Rate Cut Rumors Spark Crypto Market Optimism",
+      "source": "X/Twitter (Grok)",
+      "sentiment": "bullish",
+      "score": 130,
+      "importance": "critical",
+      "coins": []
+    },
+    {
       "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
       "source": "CoinTelegraph",
       "sentiment": "bullish",
@@ -188,17 +208,6 @@
       "coins": [
         "BTC",
         "ETH",
-        "SOL"
-      ]
-    },
-    {
-      "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC",
         "SOL"
       ]
     },
@@ -273,7 +282,7 @@
       "coins": []
     },
     {
-      "title": "Bitcoin ETF Sees Record Inflows Amid Wall Street Frenzy",
+      "title": "Bitcoin ETFs See Record Inflows Boosting Market",
       "source": "X/Twitter (Grok)",
       "sentiment": "bullish",
       "score": 70,
@@ -318,6 +327,14 @@
     },
     {
       "title": "Fed's Williams says rate cuts still possible, does not address Iran war - Reuters",
+      "source": "Fed News (Google)",
+      "sentiment": "bullish",
+      "score": 60,
+      "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Fed Governor Miran says job losses in February add to the case for more interest rate cuts - CNBC",
       "source": "Fed News (Google)",
       "sentiment": "bullish",
       "score": 60,
@@ -395,7 +412,7 @@
       ]
     },
     {
-      "title": "SEC Dismisses Fraud Case Against Crypto Billionaire Justin Sun - wsj.com",
+      "title": "SEC Dismisses Fraud Case Against Crypto Billionaire Justin Sun - WSJ",
       "source": "Google News",
       "sentiment": "bearish",
       "score": -60,
@@ -420,38 +437,22 @@
       "score": 50,
       "importance": "high",
       "coins": []
-    },
-    {
-      "title": "First US state-level stablecoin bill passes in Florida",
-      "source": "The Block",
-      "sentiment": "bullish",
-      "score": 50,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Florida becomes first US state to pass stablecoin framework",
-      "source": "Crypto Briefing",
-      "sentiment": "bullish",
-      "score": 50,
-      "importance": "high",
-      "coins": []
     }
   ],
   "sources": {
-    "DL News": 20,
-    "CoinTelegraph": 20,
-    "X/Twitter (Grok)": 8,
-    "NewsBTC": 10,
     "Decrypt": 20,
-    "Crypto Regulation (Google)": 20,
-    "Fed News (Google)": 20,
     "The Block": 20,
+    "CoinDesk": 20,
+    "X/Twitter (Grok)": 8,
     "Bitcoin ETF (Google)": 20,
-    "U.Today": 20,
+    "NewsBTC": 10,
+    "DL News": 20,
+    "Fed News (Google)": 20,
     "Google News": 30,
     "Crypto Briefing": 20,
-    "CoinDesk": 20
+    "U.Today": 20,
+    "CoinTelegraph": 20,
+    "Crypto Regulation (Google)": 20
   },
   "history": [
     {
@@ -1706,10 +1707,17 @@
       "score": 13,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-07T03:02:15.700298+00:00",
+      "ts": 1772852535,
+      "score": 16,
+      "bias": "bullish",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T01:46:55.179024+00:00",
-    "updated_ts": 1772848015
+    "updated_at": "2026-03-07T03:02:15.700466+00:00",
+    "updated_ts": 1772852535
   }
 }
