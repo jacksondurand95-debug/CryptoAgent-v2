@@ -2,7 +2,7 @@ name: CryptoAgent v2
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # Every 10 minutes - optimized for free tier
+    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -55,8 +55,6 @@ jobs:
 
       - name: Run Trading Agent
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
           CRYPTOPANIC_API_KEY: ${{ secrets.CRYPTOPANIC_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python agent.py

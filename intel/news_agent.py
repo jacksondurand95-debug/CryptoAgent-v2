@@ -29,44 +29,25 @@ from utils import retry_get, load_data, save_data
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(message)s")
 log = logging.getLogger("news")
 
-# RSS feeds — all free, no auth. SCRUB EVERYTHING.
+# RSS feeds — all free, no auth
 RSS_FEEDS = {
     "CoinDesk": "https://www.coindesk.com/arc/outboundfeeds/rss/",
     "CoinTelegraph": "https://cointelegraph.com/rss",
     "Decrypt": "https://decrypt.co/feed",
     "Bitcoin Magazine": "https://bitcoinmagazine.com/feed",
     "The Defiant": "https://thedefiant.io/feed",
-    "DL News": "https://www.dlnews.com/arc/outboundfeeds/rss/",
-    "Blockworks": "https://blockworks.co/feed",
-    "The Block": "https://www.theblock.co/rss.xml",
-    "Crypto Briefing": "https://cryptobriefing.com/feed/",
-    "U.Today": "https://u.today/rss",
-    "NewsBTC": "https://www.newsbtc.com/feed/",
-    "BeInCrypto": "https://beincrypto.com/feed/",
-    # Macro feeds that move crypto
-    "Fed News (Google)": "https://news.google.com/rss/search?q=federal+reserve+interest+rate&hl=en-US",
-    "Crypto Regulation (Google)": "https://news.google.com/rss/search?q=crypto+regulation+SEC+2026&hl=en-US",
-    "Bitcoin ETF (Google)": "https://news.google.com/rss/search?q=bitcoin+ETF+inflow+outflow&hl=en-US",
 }
 
 # Keywords that affect crypto prices
 MAJOR_BULLISH_KEYWORDS = {
     "etf approved": 90, "etf approval": 90, "institutional adoption": 70,
     "blackrock": 60, "fidelity": 60, "spot etf": 80,
-    "fed rate cut": 70, "rate cut": 60, "dovish": 50, "pause rate": 50,
-    "stablecoin bill": 50, "crypto friendly": 50, "pro crypto": 50,
+    "fed rate cut": 70, "rate cut": 60, "dovish": 50,
+    "stablecoin bill": 50, "crypto friendly": 50,
     "bitcoin reserve": 80, "strategic reserve": 80,
-    "mass adoption": 60, "billion investment": 70, "billion buy": 70,
+    "mass adoption": 60, "billion investment": 70,
     "all time high": 50, "ath": 40, "breakout": 40,
     "partnership": 30, "integration": 30,
-    # Bottom signals — these fire when market is capitulating (BULLISH contrarian)
-    "capitulation": 40, "bottom signal": 50, "oversold": 40,
-    "accumulation zone": 50, "smart money buying": 60,
-    "etf inflow": 60, "record inflow": 70, "net inflow": 50,
-    "whale accumulation": 60, "microstrategy buy": 50, "saylor": 40,
-    "treasury buy": 70, "sovereign buy": 80,
-    "hash rate ath": 40, "miner capitulation over": 50,
-    "short squeeze": 60, "liquidation cascade": 50,
 }
 
 MAJOR_BEARISH_KEYWORDS = {
@@ -270,69 +251,6 @@ def detect_alpha_events(articles):
     return alpha_events[:10]
 
 
-def fetch_x_sentiment_via_grok(api_key):
-    """Use Grok (which has live X/Twitter access) to get crypto Twitter sentiment.
-
-    Grok sees real-time tweets. We ask it to summarize what crypto Twitter is saying.
-    Returns list of synthetic articles from X sentiment.
-    """
-    import requests as req
-    try:
-        resp = req.post(
-            "https://api.x.ai/v1/chat/completions",
-            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-            json={
-                "model": os.environ.get("XAI_MODEL", "grok-3-mini-fast"),
-                "max_tokens": 800,
-                "temperature": 0.1,
-                "messages": [
-                    {"role": "system", "content": "You are a crypto market analyst monitoring X/Twitter in real-time. Output JSON only."},
-                    {"role": "user", "content": """Scan crypto Twitter right now. What are the top 5-8 trending narratives/events being discussed?
-
-For each, output: title (headline style), sentiment (bullish/bearish/neutral), coins mentioned, importance (critical/high/medium/low).
-
-Focus on: whale moves, ETF flows, regulatory news, exchange issues, macro events, liquidation cascades, notable trader calls.
-
-JSON format:
-{"tweets": [{"title": "...", "sentiment": "bullish", "coins": ["BTC"], "importance": "high"}]}"""},
-                ],
-            },
-            timeout=30,
-        )
-        if resp.status_code != 200:
-            log.warning(f"Grok X scrape failed: {resp.status_code}")
-            return []
-
-        content = resp.json()["choices"][0]["message"]["content"]
-        # Parse JSON from response
-        content = content.strip()
-        if content.startswith("```"):
-            content = content.split("\n", 1)[1] if "\n" in content else content[3:]
-        if content.endswith("```"):
-            content = content[:-3]
-        if content.startswith("json"):
-            content = content[4:]
-
-        data = json.loads(content.strip())
-        articles = []
-        for tweet in data.get("tweets", []):
-            articles.append({
-                "title": tweet.get("title", ""),
-                "description": f"X/Twitter: {tweet.get('title', '')}",
-                "source": "X/Twitter (Grok)",
-                "link": "",
-                "published": "",
-                "coins_mentioned": tweet.get("coins", []),
-                "_importance": tweet.get("importance", "medium"),
-                "_sentiment": tweet.get("sentiment", "neutral"),
-            })
-        log.info(f"X/Twitter: {len(articles)} narratives from Grok")
-        return articles
-    except Exception as e:
-        log.warning(f"Grok X scrape error: {e}")
-        return []
-
-
 def run():
     """Main execution."""
     log.info("=" * 50)
@@ -354,14 +272,6 @@ def run():
     # Google News
     google_articles = fetch_google_news_crypto()
     all_articles.extend(google_articles)
-
-    # X/Twitter via Grok — real-time crypto CT sentiment
-    xai_key = os.environ.get("XAI_API_KEY", "")
-    if xai_key:
-        x_articles = fetch_x_sentiment_via_grok(xai_key)
-        all_articles.extend(x_articles)
-    else:
-        log.info("No XAI_API_KEY — skipping X/Twitter scrape")
 
     log.info(f"Total articles fetched: {len(all_articles)}")
 

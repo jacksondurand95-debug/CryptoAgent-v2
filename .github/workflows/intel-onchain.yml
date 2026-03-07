@@ -2,8 +2,8 @@ name: Intel — On-Chain Agent
 
 on:
   schedule:
-    # Every 2 hours — BULL RUSH
-    - cron: '15 */2 * * *'
+    # Every 6 hours at minute 15
+    - cron: '15 */6 * * *'
   workflow_dispatch:
 
 permissions:

@@ -24,19 +24,15 @@ API_BASE = "https://api.coinbase.com/api/v3/brokerage"
 
 
 class CoinbaseAuth:
-    """JWT auth for Coinbase Advanced Trade API. Auto-detects EdDSA vs ES256."""
+    """Custom auth using EdDSA JWT (CDP portal keys use Ed25519, not ES256)."""
 
     def __init__(self):
         key_data = json.loads(config.COINBASE_KEY_FILE.read_text())
         self.key_id = key_data.get("name") or key_data.get("id", "")
         raw_pk = key_data.get("privateKey", "")
 
-        if raw_pk and "BEGIN EC" in raw_pk:
-            # EC key (ES256)
-            self.pem = raw_pk.encode()
-            self.algorithm = "ES256"
-        elif raw_pk and "BEGIN" not in raw_pk:
-            # Raw base64 Ed25519 key from CDP portal
+        # Convert raw base64 to Ed25519 PEM if needed
+        if raw_pk and "BEGIN" not in raw_pk:
             raw_bytes = base64.b64decode(raw_pk)
             ed_key = Ed25519PrivateKey.from_private_bytes(raw_bytes[:32])
             self.pem = ed_key.private_bytes(
@@ -44,13 +40,11 @@ class CoinbaseAuth:
                 format=serialization.PrivateFormat.PKCS8,
                 encryption_algorithm=serialization.NoEncryption(),
             )
-            self.algorithm = "EdDSA"
         else:
             self.pem = raw_pk.encode()
-            self.algorithm = "EdDSA"
 
     def build_jwt(self, method, path):
-        """Build JWT for API request — auto-selects EdDSA or ES256."""
+        """Build EdDSA JWT for API request."""
         uri = f"{method} api.coinbase.com{path}"
         jwt_data = {
             "sub": self.key_id,
@@ -60,7 +54,7 @@ class CoinbaseAuth:
             "uri": uri,
         }
         return pyjwt.encode(
-            jwt_data, self.pem, algorithm=self.algorithm,
+            jwt_data, self.pem, algorithm="EdDSA",
             headers={"kid": self.key_id, "nonce": secrets.token_hex()},
         )
 

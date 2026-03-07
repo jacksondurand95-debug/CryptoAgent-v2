@@ -1,458 +1,403 @@
 {
   "aggregate": {
-    "score": 16,
-    "bias": "bullish",
-    "strength": "weak",
-    "total_articles": 248,
-    "scored_articles": 65,
-    "positive_score": 2130,
-    "negative_score": -1420
+    "score": -47,
+    "bias": "bearish",
+    "strength": "moderate",
+    "total_articles": 90,
+    "scored_articles": 16,
+    "positive_score": 40,
+    "negative_score": -770
   },
   "alpha_events": [
     {
-      "title": "Vitalik Buterin Says Ethereum Should Be Bolder, Here\u2019s Why",
-      "source": "NewsBTC",
-      "sentiment": "bullish",
-      "score": 160,
+      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -140,
       "importance": "critical",
       "coins": [
-        "BTC",
+        "BTC"
+      ],
+      "keywords": [
+        "hack",
+        "bankruptcy"
+      ]
+    },
+    {
+      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -90,
+      "importance": "critical",
+      "coins": [
         "ETH"
       ],
       "keywords": [
-        "+ath",
-        "+etf inflow",
-        "+short squeeze"
+        "crypto ban"
       ]
     },
     {
-      "title": "Bitcoin Spot ETFs Record $225M Inflows as BlackRock\u2019s IBIT Leads with $322M - Binance",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 140,
+      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -80,
       "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
+      "coins": [],
       "keywords": [
-        "+blackrock",
-        "+spot etf"
+        "bankruptcy"
       ]
     },
     {
-      "title": "U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%",
+      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
       "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
-      ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Spark Crypto Market Optimism",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "+fed rate cut",
-        "+rate cut"
-      ]
-    },
-    {
-      "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "ETH",
-        "SOL"
-      ],
-      "keywords": [
-        "+ath",
-        "+breakout"
-      ]
-    },
-    {
-      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
-      "source": "Decrypt",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+bitcoin reserve"
-      ]
-    },
-    {
-      "title": "Samson Mow Objects to Michael Saylor's Bitcoin Insufficiency Post",
-      "source": "U.Today",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ],
-      "keywords": [
-        "+ath",
-        "+saylor"
-      ]
-    },
-    {
-      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
-      "source": "Crypto Regulation (Google)",
       "sentiment": "bearish",
-      "score": -80,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "sec lawsuit"
-      ]
-    },
-    {
-      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -80,
-      "importance": "critical",
-      "coins": [],
-      "keywords": [
-        "sec lawsuit"
-      ]
-    },
-    {
-      "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -70,
+      "score": -50,
       "importance": "high",
       "coins": [],
       "keywords": [
-        "collapse"
+        "crash"
+      ]
+    },
+    {
+      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ],
+      "keywords": [
+        "crash"
+      ]
+    },
+    {
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ],
+      "keywords": [
+        "crash"
       ]
     }
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 85,
-      "score": 700,
-      "bias": "bullish"
+      "articles": 37,
+      "score": -290,
+      "bias": "bearish"
     },
     "ETH": {
-      "articles": 32,
-      "score": 210,
-      "bias": "bullish"
+      "articles": 17,
+      "score": -140,
+      "bias": "bearish"
     },
     "SOL": {
       "articles": 10,
-      "score": 50,
-      "bias": "bullish"
+      "score": 0,
+      "bias": "neutral"
     }
   },
   "top_articles": [
     {
-      "title": "Vitalik Buterin Says Ethereum Should Be Bolder, Here\u2019s Why",
-      "source": "NewsBTC",
-      "sentiment": "bullish",
-      "score": 160,
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
-    },
-    {
-      "title": "Bitcoin Spot ETFs Record $225M Inflows as BlackRock\u2019s IBIT Leads with $322M - Binance",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 140,
+      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
+      "source": "CoinTelegraph",
+      "sentiment": "bearish",
+      "score": -140,
       "importance": "critical",
       "coins": [
         "BTC"
       ]
     },
     {
-      "title": "U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%",
+      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -90,
+      "importance": "critical",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
+      "source": "Decrypt",
+      "sentiment": "bearish",
+      "score": -80,
+      "importance": "critical",
+      "coins": []
+    },
+    {
+      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
       "source": "CoinDesk",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Fed Rate Cut Rumors Spark Crypto Market Optimism",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 130,
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
-      "source": "CoinTelegraph",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "ETH",
-        "SOL"
-      ]
-    },
-    {
-      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
-      "source": "Decrypt",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Samson Mow Objects to Michael Saylor's Bitcoin Insufficiency Post",
-      "source": "U.Today",
-      "sentiment": "bullish",
-      "score": 80,
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
-      "source": "Crypto Regulation (Google)",
       "sentiment": "bearish",
-      "score": -80,
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "title": "SEC Lawsuit Dismissal Sparks Outrage: Warren Warns Agency Must Not Become Trump\u2019s Puppet - CryptoRank",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -80,
-      "importance": "critical",
-      "coins": []
-    },
-    {
-      "title": "CFO Gets Prison Time After Losing $35 Million of Company Money in Crypto Side Hustle",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -70,
+      "score": -50,
       "importance": "high",
       "coins": []
     },
     {
-      "title": "SEC Moves to Settle Justin Sun Case With $10M Penalty for BitTorrent Owner",
-      "source": "Decrypt",
-      "sentiment": "bearish",
-      "score": -70,
-      "importance": "high",
-      "coins": [
-        "SOL"
-      ]
-    },
-    {
-      "title": "BitGo CEO on its $2 billion IPO, OCC national bank charter and Morgan Stanley competition",
-      "source": "The Block",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "21Shares launches first spot Polkadot ETF in US",
-      "source": "Crypto Briefing",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin ETFs See Record Inflows Boosting Market",
-      "source": "X/Twitter (Grok)",
-      "sentiment": "bullish",
-      "score": 70,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Ex-CFO sentenced to two years after diverting $35M to crypto venture",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin recovery meets DeFi tensions as Aave rift deepens: Finance Redefined",
-      "source": "CoinTelegraph",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "\u2018Dead\u2019 South Korean crypto fraudster resurfaces and pays back victims",
-      "source": "DL News",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Shiba Inu: Alert Issued as SHIB Participant Social Media Account Gets Hacked",
-      "source": "U.Today",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Fed's Williams says rate cuts still possible, does not address Iran war - Reuters",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Fed Governor Miran says job losses in February add to the case for more interest rate cuts - CNBC",
-      "source": "Fed News (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Bitcoin ETF Inflows Hit Three-Week High: Are Institutions Returning? - Yahoo Finance",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin ETF Inflow Streak Snaps With $27 Million Outflow - Bitcoin.com News",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin Clears $71K As ETF Inflows Top $225M - Yellow.com",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Ethereum ETF Inflows Surge: U.S. Spot Funds Rebound with $169M Stunning Influx - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Ethereum ETF Inflows Surge with $38.65M Rebound, Signaling Renewed Investor Confidence - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "Largest bitcoin ETF inflow in three months signals institutional bid is back - CoinDesk",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "Bitcoin ETF Inflows Surge with $88 Million Rebound, Breaking 4-Day Outflow Streak - CryptoRank",
-      "source": "Bitcoin ETF (Google)",
-      "sentiment": "bullish",
-      "score": 60,
-      "importance": "high",
-      "coins": [
-        "BTC"
-      ]
-    },
-    {
-      "title": "SEC Dismisses Fraud Case Against Crypto Billionaire Justin Sun - WSJ",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -60,
-      "importance": "high",
-      "coins": []
-    },
-    {
-      "title": "Was $74K a bull trap? Bitcoin traders diverge on 2022 crash repeating",
+      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
       "source": "CoinTelegraph",
       "sentiment": "bearish",
       "score": -50,
       "importance": "high",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin Price Crashes to $75,000 Range As Broader Crypto Market Sells-Off - Bitcoin Magazine",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -50,
+      "importance": "high",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "Bitcoin sets up potential short squeeze as 'funding rate' plunges to three month low",
+      "source": "CoinDesk",
+      "sentiment": "bearish",
+      "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Crypto market volatility triggers $2.5 billion in bitcoin liquidations - Reuters",
+      "source": "Google News",
+      "sentiment": "bearish",
+      "score": -40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Forget 'Digital Gold': Traders are fleeing to stablecoins as bitcoin's $75,000 slide creates a market-wide bloodbath - CoinDesk",
+      "source": "Google News",
+      "sentiment": "bullish",
+      "score": 40,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Here\u2019s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin manipulation claims face pushback as ETFs snap 5-week outflow run: Finance Redefined",
+      "source": "CoinTelegraph",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Trump Orders Federal Agencies to Dump 'Woke' Anthropic AI After Pentagon Dispute",
+      "source": "Decrypt",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "SEC-CFTC Harmonization and Digital Asset Regulation: What Stakeholders Need to Know - Husch Blackwell",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "SEC and CFTC Launch \u201cProject Crypto\u201d to Unite US Regulation - Yahoo Finance",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Crypto regulation in 2026: SEC\u2019s ambitious agenda meets a more empowered CFTC - The Block",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
+      "title": "Former Mt. Gox CEO proposed a rewrite of bitcoin's code to recover $5 billion in stolen funds. Gets quickly shutdown",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Suspected insiders make over $1.2 million on Polymarket by betting on U.S.'s Iran strike",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "XRP tumbles 9% as break below $1.36 wipes out relief rally",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin's five-month slide: why BTC is set for worst losing streak since 2018",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": [
         "BTC",
         "ETH"
       ]
     },
     {
-      "title": "Russia plots stablecoin bill to capitalise on \u2018colossal potential\u2019",
-      "source": "DL News",
-      "sentiment": "bullish",
-      "score": 50,
-      "importance": "high",
+      "title": "Bitcoin could see further downside risks as Iran attacks U.S. bases across Middle East",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Oil-linked futures on Hyperliquid surge 5% after U.S.-Israel strike on Iran",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Bitcoin nears $63,000 as U.S. and Israel launch strikes on Iran",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin slides to $65,000 in weekend sell-off, with solana, XRP, dogecoin down 6%",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC",
+        "SOL"
+      ]
+    },
+    {
+      "title": "U.S. Senate Democrats asked Treasury, DOJ to probe Binance's illicit finance controls",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Coinbase\u2019s head of litigation says states are 'gaslighting' on prediction markets",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Citi and Morgan Stanley expand bitcoin and crypto custody, trading and tokenization efforts",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Bitcoin's rebound cancelled as U.S. stocks fall, gold surges, amid mounting macro risks",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Vitalik Buterin reveals his bold new plan to fix Ethereum\u2019s scaling problem",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": [
+        "ETH"
+      ]
+    },
+    {
+      "title": "Barclays looks for tech provider for new blockchain settlement engine: Bloomberg",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
       "coins": []
     }
   ],
   "sources": {
     "Decrypt": 20,
-    "The Block": 20,
-    "CoinDesk": 20,
-    "X/Twitter (Grok)": 8,
-    "Bitcoin ETF (Google)": 20,
-    "NewsBTC": 10,
-    "DL News": 20,
-    "Fed News (Google)": 20,
-    "Google News": 30,
-    "Crypto Briefing": 20,
-    "U.Today": 20,
     "CoinTelegraph": 20,
-    "Crypto Regulation (Google)": 20
+    "Google News": 30,
+    "CoinDesk": 20
   },
   "history": [
     {
@@ -461,1263 +406,10 @@
       "score": -47,
       "bias": "bearish",
       "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-02-28T18:08:29.536735+00:00",
-      "ts": 1772302109,
-      "score": -47,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-02-28T18:48:24.429186+00:00",
-      "ts": 1772304504,
-      "score": -47,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-02-28T20:07:04.442162+00:00",
-      "ts": 1772309224,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-02-28T20:42:46.508382+00:00",
-      "ts": 1772311366,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-02-28T22:06:29.356419+00:00",
-      "ts": 1772316389,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-02-28T22:42:18.672245+00:00",
-      "ts": 1772318538,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-01T01:02:00.044446+00:00",
-      "ts": 1772326920,
-      "score": -47,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-01T03:06:12.043421+00:00",
-      "ts": 1772334372,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-01T03:33:30.243345+00:00",
-      "ts": 1772336010,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-01T04:41:22.214917+00:00",
-      "ts": 1772340082,
-      "score": -47,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-01T05:07:23.138380+00:00",
-      "ts": 1772341643,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-01T06:17:50.349149+00:00",
-      "ts": 1772345870,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-01T06:51:56.750605+00:00",
-      "ts": 1772347916,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-01T08:08:52.143919+00:00",
-      "ts": 1772352532,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-01T08:46:47.315111+00:00",
-      "ts": 1772354807,
-      "score": -42,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-01T10:07:25.753968+00:00",
-      "ts": 1772359645,
-      "score": -45,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-01T10:44:26.071090+00:00",
-      "ts": 1772361866,
-      "score": -42,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-01T12:10:23.655859+00:00",
-      "ts": 1772367023,
-      "score": -41,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-01T12:52:13.819928+00:00",
-      "ts": 1772369533,
-      "score": -41,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-01T14:07:36.523795+00:00",
-      "ts": 1772374056,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-01T14:44:02.435812+00:00",
-      "ts": 1772376242,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-01T16:08:00.259856+00:00",
-      "ts": 1772381280,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-01T16:45:11.972908+00:00",
-      "ts": 1772383511,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-01T18:08:44.992374+00:00",
-      "ts": 1772388524,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-01T18:49:18.962439+00:00",
-      "ts": 1772390958,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-01T20:07:14.481352+00:00",
-      "ts": 1772395634,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-01T20:43:46.785520+00:00",
-      "ts": 1772397826,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-01T22:06:54.405942+00:00",
-      "ts": 1772402814,
-      "score": -40,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-01T22:43:46.988386+00:00",
-      "ts": 1772405026,
-      "score": -40,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-02T00:24:41.911602+00:00",
-      "ts": 1772411081,
-      "score": -40,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-02T00:56:06.839919+00:00",
-      "ts": 1772412966,
-      "score": -40,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-02T03:01:50.703640+00:00",
-      "ts": 1772420510,
-      "score": -36,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-02T03:26:01.919555+00:00",
-      "ts": 1772421961,
-      "score": -26,
-      "bias": "bearish",
-      "alpha_count": 3
-    },
-    {
-      "timestamp": "2026-03-02T04:37:46.500677+00:00",
-      "ts": 1772426266,
-      "score": -35,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-02T05:05:27.253152+00:00",
-      "ts": 1772427927,
-      "score": -35,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-02T06:22:09.443616+00:00",
-      "ts": 1772432529,
-      "score": -34,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-02T06:53:12.501047+00:00",
-      "ts": 1772434392,
-      "score": -34,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-02T08:15:55.682879+00:00",
-      "ts": 1772439355,
-      "score": -34,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-02T08:51:57.074121+00:00",
-      "ts": 1772441517,
-      "score": -29,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-02T10:19:46.346760+00:00",
-      "ts": 1772446786,
-      "score": -29,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-02T10:51:29.184798+00:00",
-      "ts": 1772448689,
-      "score": -22,
-      "bias": "bearish",
-      "alpha_count": 4
-    },
-    {
-      "timestamp": "2026-03-02T12:14:09.418215+00:00",
-      "ts": 1772453649,
-      "score": -29,
-      "bias": "bearish",
-      "alpha_count": 4
-    },
-    {
-      "timestamp": "2026-03-02T12:53:11.141063+00:00",
-      "ts": 1772455991,
-      "score": -29,
-      "bias": "bearish",
-      "alpha_count": 4
-    },
-    {
-      "timestamp": "2026-03-02T14:19:52.406759+00:00",
-      "ts": 1772461192,
-      "score": -41,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-02T14:51:28.908390+00:00",
-      "ts": 1772463088,
-      "score": -41,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-02T16:15:43.411602+00:00",
-      "ts": 1772468143,
-      "score": -44,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-02T16:52:37.778335+00:00",
-      "ts": 1772470357,
-      "score": -46,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-02T18:16:43.931280+00:00",
-      "ts": 1772475403,
-      "score": -43,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-02T18:52:34.740705+00:00",
-      "ts": 1772477554,
-      "score": -43,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-02T20:11:22.141850+00:00",
-      "ts": 1772482282,
-      "score": -38,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-02T20:49:49.811615+00:00",
-      "ts": 1772484589,
-      "score": -46,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-02T22:46:49.298287+00:00",
-      "ts": 1772491609,
-      "score": -47,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-03T00:26:08.438098+00:00",
-      "ts": 1772497568,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-03T00:57:06.222022+00:00",
-      "ts": 1772499426,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-03T03:03:48.919967+00:00",
-      "ts": 1772507028,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-03T03:27:37.468897+00:00",
-      "ts": 1772508457,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-03T04:37:10.710519+00:00",
-      "ts": 1772512630,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-03T05:04:24.809186+00:00",
-      "ts": 1772514264,
-      "score": -50,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-03T06:19:30.566348+00:00",
-      "ts": 1772518770,
-      "score": -46,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-03T06:52:29.620752+00:00",
-      "ts": 1772520749,
-      "score": -46,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-03T08:14:15.912800+00:00",
-      "ts": 1772525655,
-      "score": -46,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-03T08:51:37.471037+00:00",
-      "ts": 1772527897,
-      "score": -39,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-03T10:16:11.305272+00:00",
-      "ts": 1772532971,
-      "score": -34,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-03T10:51:12.768544+00:00",
-      "ts": 1772535072,
-      "score": -39,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-03T12:13:51.124665+00:00",
-      "ts": 1772540031,
-      "score": -32,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-03T12:53:03.363443+00:00",
-      "ts": 1772542383,
-      "score": -34,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-03T14:19:17.259108+00:00",
-      "ts": 1772547557,
-      "score": -22,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-03T14:52:08.993942+00:00",
-      "ts": 1772549528,
-      "score": -24,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-03T16:52:35.369121+00:00",
-      "ts": 1772556755,
-      "score": -12,
-      "bias": "neutral",
-      "alpha_count": 4
-    },
-    {
-      "timestamp": "2026-03-03T18:17:53.267295+00:00",
-      "ts": 1772561873,
-      "score": -12,
-      "bias": "neutral",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-03T18:54:23.191766+00:00",
-      "ts": 1772564063,
-      "score": -19,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-03T20:10:56.599776+00:00",
-      "ts": 1772568656,
-      "score": -17,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-03T20:47:46.470163+00:00",
-      "ts": 1772570866,
-      "score": -17,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-03T22:08:52.944910+00:00",
-      "ts": 1772575732,
-      "score": -25,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-03T22:46:59.601512+00:00",
-      "ts": 1772578019,
-      "score": -17,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-04T00:24:38.871834+00:00",
-      "ts": 1772583878,
-      "score": -17,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-04T00:55:06.317364+00:00",
-      "ts": 1772585706,
-      "score": -12,
-      "bias": "neutral",
-      "alpha_count": 4
-    },
-    {
-      "timestamp": "2026-03-04T02:59:03.536149+00:00",
-      "ts": 1772593143,
-      "score": -12,
-      "bias": "neutral",
-      "alpha_count": 4
-    },
-    {
-      "timestamp": "2026-03-04T03:23:27.971369+00:00",
-      "ts": 1772594607,
-      "score": -12,
-      "bias": "neutral",
-      "alpha_count": 4
-    },
-    {
-      "timestamp": "2026-03-04T04:35:44.255389+00:00",
-      "ts": 1772598944,
-      "score": -10,
-      "bias": "neutral",
-      "alpha_count": 4
-    },
-    {
-      "timestamp": "2026-03-04T05:00:50.900658+00:00",
-      "ts": 1772600450,
-      "score": -10,
-      "bias": "neutral",
-      "alpha_count": 4
-    },
-    {
-      "timestamp": "2026-03-04T06:17:27.135270+00:00",
-      "ts": 1772605047,
-      "score": -17,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-04T06:52:11.020325+00:00",
-      "ts": 1772607131,
-      "score": -17,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-04T08:12:35.033630+00:00",
-      "ts": 1772611955,
-      "score": -10,
-      "bias": "neutral",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-04T08:51:16.957180+00:00",
-      "ts": 1772614276,
-      "score": 8,
-      "bias": "neutral",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-04T10:14:03.132184+00:00",
-      "ts": 1772619243,
-      "score": 1,
-      "bias": "neutral",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-04T10:50:19.634022+00:00",
-      "ts": 1772621419,
-      "score": 1,
-      "bias": "neutral",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-04T12:13:30.750545+00:00",
-      "ts": 1772626410,
-      "score": -2,
-      "bias": "neutral",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-04T12:52:56.550126+00:00",
-      "ts": 1772628776,
-      "score": -3,
-      "bias": "neutral",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-04T14:17:53.378002+00:00",
-      "ts": 1772633873,
-      "score": -6,
-      "bias": "neutral",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-04T14:50:18.747061+00:00",
-      "ts": 1772635818,
-      "score": -9,
-      "bias": "neutral",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-04T16:18:56.998207+00:00",
-      "ts": 1772641136,
-      "score": -14,
-      "bias": "neutral",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-04T16:52:06.130315+00:00",
-      "ts": 1772643126,
-      "score": -14,
-      "bias": "neutral",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-04T18:16:34.313809+00:00",
-      "ts": 1772648194,
-      "score": -13,
-      "bias": "neutral",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-04T18:52:42.132143+00:00",
-      "ts": 1772650362,
-      "score": -13,
-      "bias": "neutral",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-04T20:11:55.839855+00:00",
-      "ts": 1772655115,
-      "score": -24,
-      "bias": "bearish",
-      "alpha_count": 5
-    },
-    {
-      "timestamp": "2026-03-04T20:47:48.351193+00:00",
-      "ts": 1772657268,
-      "score": -18,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-04T22:48:30.520957+00:00",
-      "ts": 1772664510,
-      "score": -18,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-05T00:25:35.356235+00:00",
-      "ts": 1772670335,
-      "score": -13,
-      "bias": "neutral",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-05T00:56:35.715056+00:00",
-      "ts": 1772672195,
-      "score": -15,
-      "bias": "neutral",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-05T03:00:54.412302+00:00",
-      "ts": 1772679654,
-      "score": -16,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-05T03:24:23.822604+00:00",
-      "ts": 1772681063,
-      "score": -16,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-05T04:36:42.963305+00:00",
-      "ts": 1772685402,
-      "score": -18,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-05T05:03:37.840738+00:00",
-      "ts": 1772687017,
-      "score": -18,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-05T06:19:21.766328+00:00",
-      "ts": 1772691561,
-      "score": -18,
-      "bias": "bearish",
-      "alpha_count": 6
-    },
-    {
-      "timestamp": "2026-03-05T06:52:29.440987+00:00",
-      "ts": 1772693549,
-      "score": -24,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-05T08:13:44.566524+00:00",
-      "ts": 1772698424,
-      "score": -24,
-      "bias": "bearish",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-05T08:51:55.353204+00:00",
-      "ts": 1772700715,
-      "score": -25,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-05T10:16:52.746349+00:00",
-      "ts": 1772705812,
-      "score": -20,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-05T10:51:26.499682+00:00",
-      "ts": 1772707886,
-      "score": -16,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-05T12:14:40.590416+00:00",
-      "ts": 1772712880,
-      "score": -14,
-      "bias": "neutral",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-05T12:53:28.669365+00:00",
-      "ts": 1772715208,
-      "score": -12,
-      "bias": "neutral",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-05T14:19:51.628513+00:00",
-      "ts": 1772720391,
-      "score": -11,
-      "bias": "neutral",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-05T14:51:54.206993+00:00",
-      "ts": 1772722314,
-      "score": -14,
-      "bias": "neutral",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-05T16:20:46.410459+00:00",
-      "ts": 1772727646,
-      "score": -6,
-      "bias": "neutral",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-05T18:39:01.597489+00:00",
-      "ts": 1772735941,
-      "score": -4,
-      "bias": "neutral",
-      "alpha_count": 7
-    },
-    {
-      "timestamp": "2026-03-05T19:01:21.377549+00:00",
-      "ts": 1772737281,
-      "score": -14,
-      "bias": "neutral",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-05T20:14:57.964360+00:00",
-      "ts": 1772741697,
-      "score": -17,
-      "bias": "bearish",
-      "alpha_count": 9
-    },
-    {
-      "timestamp": "2026-03-05T20:49:51.373531+00:00",
-      "ts": 1772743791,
-      "score": -10,
-      "bias": "neutral",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-05T23:14:19.120574+00:00",
-      "ts": 1772752459,
-      "score": -20,
-      "bias": "bearish",
-      "alpha_count": 8
-    },
-    {
-      "timestamp": "2026-03-06T00:30:32.824729+00:00",
-      "ts": 1772757032,
-      "score": 8,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T01:03:48.970451+00:00",
-      "ts": 1772759028,
-      "score": 11,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T01:47:22.192221+00:00",
-      "ts": 1772761642,
-      "score": 7,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T03:00:58.152085+00:00",
-      "ts": 1772766058,
-      "score": 6,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T03:08:55.432997+00:00",
-      "ts": 1772766535,
-      "score": 8,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T03:56:38.737205+00:00",
-      "ts": 1772769398,
-      "score": 8,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T04:36:01.129402+00:00",
-      "ts": 1772771761,
-      "score": 7,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T04:45:47.571704+00:00",
-      "ts": 1772772347,
-      "score": 5,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T05:31:32.346787+00:00",
-      "ts": 1772775092,
-      "score": -1,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T05:57:26.727603+00:00",
-      "ts": 1772776646,
-      "score": 2,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T06:17:56.402949+00:00",
-      "ts": 1772777876,
-      "score": 3,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T06:28:07.834010+00:00",
-      "ts": 1772778487,
-      "score": 0,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T07:00:13.671522+00:00",
-      "ts": 1772780413,
-      "score": 0,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T07:26:55.222567+00:00",
-      "ts": 1772782015,
-      "score": 3,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T07:53:28.855189+00:00",
-      "ts": 1772783608,
-      "score": 10,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T08:12:10.697077+00:00",
-      "ts": 1772784730,
-      "score": 9,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T08:20:50.876175+00:00",
-      "ts": 1772785250,
-      "score": 9,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T08:55:47.055625+00:00",
-      "ts": 1772787347,
-      "score": 11,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T09:23:36.101969+00:00",
-      "ts": 1772789016,
-      "score": 4,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T09:55:33.032396+00:00",
-      "ts": 1772790933,
-      "score": 13,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T10:13:21.468969+00:00",
-      "ts": 1772792001,
-      "score": 7,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T10:21:01.723394+00:00",
-      "ts": 1772792461,
-      "score": 13,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T10:55:15.056808+00:00",
-      "ts": 1772794515,
-      "score": 11,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T11:19:03.135684+00:00",
-      "ts": 1772795943,
-      "score": 15,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T11:48:45.358541+00:00",
-      "ts": 1772797725,
-      "score": 12,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T12:13:06.050062+00:00",
-      "ts": 1772799186,
-      "score": 5,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T12:23:59.522711+00:00",
-      "ts": 1772799839,
-      "score": 10,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T13:01:16.166922+00:00",
-      "ts": 1772802076,
-      "score": 16,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T13:33:22.283522+00:00",
-      "ts": 1772804002,
-      "score": 21,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T13:59:35.349597+00:00",
-      "ts": 1772805575,
-      "score": 19,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T14:15:49.356084+00:00",
-      "ts": 1772806549,
-      "score": 20,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T14:24:27.758553+00:00",
-      "ts": 1772807067,
-      "score": 23,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T14:56:04.761038+00:00",
-      "ts": 1772808964,
-      "score": 23,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T15:22:58.128487+00:00",
-      "ts": 1772810578,
-      "score": 23,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T15:54:36.929104+00:00",
-      "ts": 1772812476,
-      "score": 23,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T16:14:03.168600+00:00",
-      "ts": 1772813643,
-      "score": 23,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T16:22:23.865526+00:00",
-      "ts": 1772814143,
-      "score": 21,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T16:57:42.027437+00:00",
-      "ts": 1772816262,
-      "score": 22,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T17:23:00.122033+00:00",
-      "ts": 1772817780,
-      "score": 23,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T17:53:51.345621+00:00",
-      "ts": 1772819631,
-      "score": 26,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T18:15:00.193302+00:00",
-      "ts": 1772820900,
-      "score": 26,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T18:24:03.960885+00:00",
-      "ts": 1772821443,
-      "score": 23,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T18:59:35.974954+00:00",
-      "ts": 1772823575,
-      "score": 25,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T19:23:50.709949+00:00",
-      "ts": 1772825030,
-      "score": 19,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T19:51:11.224893+00:00",
-      "ts": 1772826671,
-      "score": 20,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T20:10:37.859787+00:00",
-      "ts": 1772827837,
-      "score": 17,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T20:18:38.634278+00:00",
-      "ts": 1772828318,
-      "score": 19,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T20:50:56.941639+00:00",
-      "ts": 1772830256,
-      "score": 19,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T21:18:39.701659+00:00",
-      "ts": 1772831919,
-      "score": 21,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T21:49:05.373456+00:00",
-      "ts": 1772833745,
-      "score": 15,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T22:08:46.018352+00:00",
-      "ts": 1772834926,
-      "score": 10,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T22:18:25.771254+00:00",
-      "ts": 1772835505,
-      "score": 15,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T22:50:48.354057+00:00",
-      "ts": 1772837448,
-      "score": 15,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T23:18:21.860399+00:00",
-      "ts": 1772839101,
-      "score": 16,
-      "bias": "bullish",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-06T23:48:05.654410+00:00",
-      "ts": 1772840885,
-      "score": 15,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-07T00:24:44.231656+00:00",
-      "ts": 1772843084,
-      "score": 11,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-07T00:47:57.368643+00:00",
-      "ts": 1772844477,
-      "score": 15,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-07T01:46:55.178876+00:00",
-      "ts": 1772848015,
-      "score": 13,
-      "bias": "neutral",
-      "alpha_count": 10
-    },
-    {
-      "timestamp": "2026-03-07T03:02:15.700298+00:00",
-      "ts": 1772852535,
-      "score": 16,
-      "bias": "bullish",
-      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T03:02:15.700466+00:00",
-    "updated_ts": 1772852535
+    "updated_at": "2026-02-28T17:26:53.727829+00:00",
+    "updated_ts": 1772299613
   }
 }

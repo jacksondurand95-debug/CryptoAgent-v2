@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""CryptoAgent v3.0 — Beast Mode Serverless Trading Agent.
+"""CryptoAgent v2.1 — Proven Algorithm Serverless Trading Agent.
 
 Runs as a single shot from GitHub Actions every 10 minutes.
 State persisted to state.json (committed by Actions workflow).
 
-Multi-exchange derivatives intel (Bybit + Binance + OKX).
-Dual-brain AI (Claude/Grok) with Coinbase One reduced fees.
-6 trading pairs. Aggressive but disciplined.
+Based on:
+- AdaptiveTrend (arXiv 2602.11708): Sharpe 2.41, 6H timeframe
+- Bollinger-Keltner Squeeze: fewer but bigger trades
+- Multi-source intel sub-agents for confidence overlay
 """
 import base64
 import json
@@ -25,21 +26,11 @@ from cryptography.hazmat.primitives import serialization
 
 import config
 from indicators import compute_all
-from brain import analyze as claude_analyze
+from strategies import analyze
 from portfolio import (
     new_state, open_position, close_position, check_stops,
-    has_position, can_reenter, get_stats, check_risk_limits,
+    has_position, can_reenter, get_stats,
 )
-
-# Multi-exchange data feeds
-from data_feeds import fetch_all_derivatives, fetch_coinbase_orderbook, fetch_cryptopanic_news, fetch_macro_intel
-
-# Hyperliquid
-try:
-    from hyperliquid_exchange import HyperliquidExchange
-    HL_AVAILABLE = True
-except ImportError:
-    HL_AVAILABLE = False
 
 # Intel sub-agent integration
 try:
@@ -62,19 +53,14 @@ log = logging.getLogger("agent")
 # ─── COINBASE AUTH ────────────────────────────────────────────────
 
 class CoinbaseAuth:
-    """JWT auth for Coinbase Advanced Trade API. Auto-detects EdDSA vs ES256."""
+    """EdDSA JWT auth for Coinbase Advanced Trade API."""
 
     def __init__(self):
         key_data = json.loads(config.COINBASE_KEY_FILE.read_text())
         self.key_id = key_data.get("name") or key_data.get("id", "")
         raw_pk = key_data.get("privateKey", "")
 
-        if raw_pk and "BEGIN EC" in raw_pk:
-            # EC key (ES256) — Legacy or new Coinbase keys with Coinbase One
-            self.pem = raw_pk.encode()
-            self.algorithm = "ES256"
-        elif raw_pk and "BEGIN" not in raw_pk:
-            # Raw base64 Ed25519 key from CDP portal
+        if raw_pk and "BEGIN" not in raw_pk:
             raw_bytes = base64.b64decode(raw_pk)
             ed_key = Ed25519PrivateKey.from_private_bytes(raw_bytes[:32])
             self.pem = ed_key.private_bytes(
@@ -82,10 +68,8 @@ class CoinbaseAuth:
                 format=serialization.PrivateFormat.PKCS8,
                 encryption_algorithm=serialization.NoEncryption(),
             )
-            self.algorithm = "EdDSA"
         else:
             self.pem = raw_pk.encode()
-            self.algorithm = "EdDSA"
 
     def build_jwt(self, method, path):
         uri = f"{method} api.coinbase.com{path}"
@@ -97,7 +81,7 @@ class CoinbaseAuth:
             "uri": uri,
         }
         return pyjwt.encode(
-            jwt_data, self.pem, algorithm=self.algorithm,
+            jwt_data, self.pem, algorithm="EdDSA",
             headers={"kid": self.key_id, "nonce": secrets.token_hex()},
         )
 
@@ -145,16 +129,11 @@ def load_state():
     return new_state()
 
 
-def save_state(state, portfolio_value=None, account_balance=None):
+def save_state(state):
     """Save state to state.json in the repo (committed by Actions workflow)."""
     if "trades" in state:
         state["trades"] = state["trades"][-200:]
     state["last_updated"] = time.time()
-    if isinstance(portfolio_value, (int, float)):
-        state["last_portfolio_value"] = portfolio_value
-    if isinstance(account_balance, (int, float)):
-        state["account_balance"] = account_balance
-        state["last_portfolio_update"] = datetime.now(timezone.utc).isoformat()
     try:
         STATE_FILE.write_text(json.dumps(state, indent=2))
         log.info("State saved to state.json")
@@ -236,16 +215,14 @@ def get_candles(pair, granularity="SIX_HOUR", limit=100):
 
 
 def get_balances(auth):
-    """Get account balances (available + hold = true total)."""
+    """Get account balances."""
     data = auth.get("/api/v3/brokerage/accounts")
     balances = {}
     for acct in data.get("accounts", []):
-        available = float(acct.get("available_balance", {}).get("value", 0))
-        hold = float(acct.get("hold", {}).get("value", 0))
+        bal = float(acct.get("available_balance", {}).get("value", 0))
         cur = acct.get("available_balance", {}).get("currency", "")
-        total = available + hold
-        if total > 0 and cur:
-            balances[cur] = total
+        if bal > 0 and cur:
+            balances[cur] = bal
     return balances
 
 
@@ -373,18 +350,117 @@ def cancel_order(auth, order_id):
 
 # ─── DATA COLLECTION ──────────────────────────────────────────────
 
-    # fetch_okx_data removed — replaced by data_feeds.fetch_all_derivatives()
+def fetch_okx_data(pair):
+    """Fetch OKX derivatives data (funding, OI, long/short, taker volume)."""
+    base = pair.split("-")[0]
+    inst_id = f"{base}-USDT-SWAP"
+    data = {}
 
+    # Funding rate
+    try:
+        r = requests.get(
+            "https://www.okx.com/api/v5/public/funding-rate",
+            params={"instId": inst_id},
+            timeout=10,
+        )
+        resp = r.json()
+        if resp.get("data"):
+            rate = float(resp["data"][0].get("fundingRate", 0))
+            next_rate = float(resp["data"][0].get("nextFundingRate", 0))
+            data["funding"] = {
+                "current": rate * 100,
+                "next": next_rate * 100,
+                "signal": {
+                    "bias": "bullish" if rate < -0.0001 else "bearish" if rate > 0.0003 else "neutral",
+                    "strength": "strong" if abs(rate) > 0.0005 else "moderate" if abs(rate) > 0.0002 else "weak",
+                },
+                "negative_streak": 0,
+                "positive_streak": 0,
+            }
+    except Exception as e:
+        log.debug(f"OKX funding error: {e}")
 
-def _hl_price_precision(price):
-    """Get decimal places for HL limit prices."""
-    if price > 10000:
-        return 1
-    if price > 100:
-        return 2
-    if price > 1:
-        return 4
-    return 6
+    # Open interest
+    try:
+        r = requests.get(
+            "https://www.okx.com/api/v5/public/open-interest",
+            params={"instType": "SWAP", "instId": inst_id},
+            timeout=10,
+        )
+        resp = r.json()
+        if resp.get("data"):
+            oi_val = float(resp["data"][0].get("oi", 0))
+            data["open_interest"] = {
+                "current": oi_val,
+                "change_2h_pct": 0,
+                "change_4h_pct": 0,
+            }
+    except Exception as e:
+        log.debug(f"OKX OI error: {e}")
+
+    # Long/Short ratio (global)
+    try:
+        r = requests.get(
+            f"https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio/{base}",
+            params={"period": "1H"},
+            timeout=10,
+        )
+        resp = r.json()
+        if resp.get("data"):
+            latest = resp["data"][0]
+            ratio = float(latest[1]) if len(latest) > 1 else 1.0
+            data["long_short_ratio"] = {
+                "current": ratio,
+                "extreme_short": ratio < 0.7,
+                "extreme_long": ratio > 1.5,
+            }
+    except Exception as e:
+        log.debug(f"OKX L/S error: {e}")
+
+    # Top trader position ratio
+    try:
+        r = requests.get(
+            f"https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio-contract-top-trader/{base}",
+            params={"period": "1H"},
+            timeout=10,
+        )
+        resp = r.json()
+        if resp.get("data"):
+            latest = resp["data"][0]
+            top_ratio = float(latest[1]) if len(latest) > 1 else 1.0
+            data["top_traders"] = {
+                "ratio": top_ratio,
+                "whales_long": top_ratio > 1.3,
+                "whales_short": top_ratio < 0.7,
+            }
+    except Exception as e:
+        log.debug(f"OKX top traders error: {e}")
+
+    # Taker buy/sell volume
+    try:
+        r = requests.get(
+            "https://www.okx.com/api/v5/rubik/stat/taker-volume",
+            params={"ccy": base, "instType": "SWAP", "period": "1H"},
+            timeout=10,
+        )
+        resp = r.json()
+        if resp.get("data"):
+            latest = resp["data"][0]
+            buy_vol = float(latest[1]) if len(latest) > 1 else 0
+            sell_vol = float(latest[2]) if len(latest) > 2 else 0
+            data["taker_buy_vol"] = buy_vol
+            data["taker_sell_vol"] = sell_vol
+            ratio = buy_vol / sell_vol if sell_vol > 0 else 1.0
+            data["taker_ratio"] = {
+                "buy_vol": buy_vol,
+                "sell_vol": sell_vol,
+                "ratio": ratio,
+                "aggressive_buyers": ratio > 1.1,
+            }
+    except Exception as e:
+        log.debug(f"OKX taker error: {e}")
+
+    return data
 
 
 def fetch_fear_greed():
@@ -493,7 +569,7 @@ def run():
     """Single-shot agent execution."""
     start_time = time.time()
     log.info("=" * 60)
-    log.info("CryptoAgent v3.0 — Beast Mode (Dual Brain)")
+    log.info("CryptoAgent v2.1 — Proven Algorithms (AdaptiveTrend/Squeeze)")
     log.info("=" * 60)
 
     # 1. Load state
@@ -537,11 +613,7 @@ def run():
         )
         if trade["side"] == "long":
             try:
-                # Use limit order at ask price for exits too — 0.60% vs 1.20% market
-                bid_ask = get_best_bid_ask(auth, trade["pair"])
-                exit_price = bid_ask.get("ask") or get_price(trade["pair"])
-                if exit_price:
-                    place_limit_order(auth, trade["pair"], "SELL", exit_price, trade["qty"] * exit_price)
+                place_market_order(auth, trade["pair"], "SELL", base_amount=trade["qty"])
             except Exception as e:
                 log.error(f"Exit sell failed for {trade['pair']}: {e}")
 
@@ -567,84 +639,24 @@ def run():
     if fgi:
         log.info(f"Fear & Greed: {fgi['value']} ({fgi['classification']})")
 
-    # 5d. Macro intel (on-chain, liquidations, TVL, stablecoins, etc.)
-    macro_intel = fetch_macro_intel()
-    macro_count = macro_intel.get("feed_count", 0)
-    if macro_count:
-        liq = macro_intel.get("liquidations", {})
-        if liq:
-            log.info(f"  LIQS: {liq.get('count', 0)} recent | ${liq.get('total_usd', 0):,.0f} | bias={liq.get('bias', '?')}")
-        mem = macro_intel.get("mempool", {})
-        if mem:
-            log.info(f"  MEMPOOL: {mem.get('unconfirmed_txs', 0)} txs | fastest={mem.get('fastest_fee_sat', 0)} sat/vB")
-
-    # 5e. Auto-detect fee tier (CRITICAL — wrong fees = guaranteed losses)
-    try:
-        fee_resp = auth.get("/api/v3/brokerage/transaction_summary")
-        fee_tier = fee_resp.get("fee_tier", {})
-        detected_maker = float(fee_tier.get("maker_fee_rate", 0))
-        detected_taker = float(fee_tier.get("taker_fee_rate", 0))
-        tier_name = fee_tier.get("pricing_tier", "UNKNOWN")
-        total_volume = fee_resp.get("total_volume", 0)
-        total_fees_paid = fee_resp.get("total_fees", 0)
-        total_balance = fee_resp.get("total_balance", "?")
-        try:
-            account_balance_usd = float(total_balance)
-        except (ValueError, TypeError):
-            account_balance_usd = None
-        has_promo = fee_resp.get("has_promo_fee", False)
-
-        # FULL diagnostic dump of fee response
-        log.info(f"FEE API RAW: {json.dumps(fee_resp, indent=None)[:500]}")
-
-        if detected_maker > 0 or detected_taker > 0:
-            state["detected_fees"] = {"maker": detected_maker, "taker": detected_taker}
-            round_trip_maker = detected_maker * 2
-            round_trip_taker = detected_maker + detected_taker
-            log.info(f"FEE TIER: '{tier_name}' | maker={detected_maker:.4f} ({detected_maker*100:.2f}%) | "
-                     f"taker={detected_taker:.4f} ({detected_taker*100:.2f}%) | "
-                     f"round_trip(maker)={round_trip_maker*100:.2f}% | "
-                     f"round_trip(taker)={round_trip_taker*100:.2f}%")
-            log.info(f"ACCOUNT: balance=${total_balance} | 30d_volume=${total_volume:.2f} | "
-                     f"total_fees_paid=${total_fees_paid:.2f} | promo={has_promo}")
-
-            # Warn if fees are too high for profitable trading
-            if round_trip_taker > 0.015:
-                log.warning(f"HIGH FEES: {round_trip_taker*100:.1f}% round-trip with taker exit. "
-                            f"Trades need >{round_trip_taker*100 + 1:.1f}% moves to profit. "
-                            f"Consider Coinbase One for 0% fees.")
-        else:
-            log.warning("FEE DETECTION: rates returned 0 — using config fallbacks "
-                        f"(maker={config.MAKER_FEE_PCT} taker={config.TAKER_FEE_PCT})")
-    except Exception as e:
-        log.error(f"FEE DETECTION FAILED: {e} — using config fallbacks "
-                  f"(maker={config.MAKER_FEE_PCT} taker={config.TAKER_FEE_PCT})")
-
-    # 6. Collect ALL market data across all pairs + exchanges
-    all_pair_data = {}
+    # 6. Collect market data and run strategies for each pair
+    signals_found = []
     actions_taken = []
-
-    # Fetch news once (shared across pairs)
-    news = fetch_cryptopanic_news(os.environ.get("CRYPTOPANIC_API_KEY", ""))
-    if news:
-        log.info(f"NEWS: {len(news)} hot items fetched")
-        all_pair_data["_news"] = news
 
     for pair in config.TRADING_PAIRS:
         log.info(f"--- {pair} ---")
 
-        # Multi-timeframe candles
+        # Get candles at multiple timeframes (PRIMARY: 6H)
         candles_6h = get_candles(pair, config.PRIMARY_TIMEFRAME, 100)
         candles_1d = get_candles(pair, config.TREND_TIMEFRAME, 60)
-        candles_1h = get_candles(pair, config.FAST_TIMEFRAME, 50)
 
         if not candles_6h or len(candles_6h) < 30:
             log.warning(f"  Insufficient 6H candle data for {pair} ({len(candles_6h) if candles_6h else 0})")
             continue
 
+        # Compute indicators on 6H (primary) and 1D (trend filter)
         ind_6h = compute_all(candles_6h)
         ind_1d = compute_all(candles_1d) if candles_1d and len(candles_1d) >= 30 else {}
-        ind_1h = compute_all(candles_1h) if candles_1h and len(candles_1h) >= 20 else {}
 
         if not ind_6h:
             log.warning(f"  No indicators for {pair}")
@@ -656,23 +668,14 @@ def run():
         log.info(f"  Price: ${price:,.2f} | RSI={ind_6h.get('rsi', '?')} "
                  f"ADX={ind_6h.get('adx', '?')} {squeeze_str} {mom_str}")
 
-        # Multi-exchange derivatives (Bybit + Binance + OKX in parallel)
-        derivatives = fetch_all_derivatives(pair)
-        feed_count = derivatives.get("feed_count", 0)
-        agg_bias = derivatives.get("aggregate", {}).get("overall_bias", "N/A")
-        log.info(f"  DERIVATIVES: {feed_count} feeds | bias={agg_bias}")
+        # Fetch on-chain data
+        onchain = fetch_okx_data(pair)
+        funding_str = ""
+        if "funding" in onchain:
+            funding_str = f" FR={onchain['funding']['current']:.4f}%"
+        log.info(f"  OKX data: {len(onchain)} feeds{funding_str}")
 
-        # Coinbase order book depth
-        orderbook = None
-        try:
-            orderbook = fetch_coinbase_orderbook(pair, auth)
-            if orderbook:
-                log.info(f"  BOOK: imbalance={orderbook.get('imbalance', 0):+.3f} "
-                         f"({orderbook.get('imbalance_signal', 'N/A')})")
-        except Exception as e:
-            log.debug(f"  Order book failed: {e}")
-
-        # TradingView
+        # Fetch TradingView analysis
         tv_analysis = None
         if config.TV_ENABLED:
             tv_analysis = fetch_tradingview_analysis(pair)
@@ -680,94 +683,106 @@ def run():
                 log.info(f"  TV: {tv_analysis['RECOMMENDATION']} "
                          f"({tv_analysis['BUY']}B/{tv_analysis['SELL']}S/{tv_analysis['NEUTRAL']}N)")
 
-        all_pair_data[pair] = {
-            "ind_6h": ind_6h,
-            "ind_1d": ind_1d,
-            "ind_1h": ind_1h,
-            "derivatives": derivatives,
-            "orderbook": orderbook,
-            "tv": tv_analysis,
-        }
+        # Run ALL strategies (now uses 6H + 1D multi-timeframe)
+        signal = analyze(pair, ind_6h, ind_1d, onchain, tv_analysis)
 
-    # Store macro intel in all_pair_data for brain context
-    if macro_intel and macro_intel.get("feed_count", 0) > 0:
-        all_pair_data["_macro_intel"] = macro_intel
+        if signal is None:
+            log.info(f"  No signal for {pair}")
+            continue
 
-    # 6b. Check risk limits before trading
-    can_trade, risk_reason = check_risk_limits(state, total_value)
-    if not can_trade:
-        log.warning(f"RISK LIMIT: {risk_reason} — skipping trade signals")
-        save_state(state)
-        return
+        # Apply intel overlay — boost or dampen confidence
+        if intel_brief:
+            coin = pair.split("-")[0]
+            coin_intel = intel_brief.get("coins", {}).get(coin, {})
+            intel_bias = coin_intel.get("bias", "neutral")
+            master_bias = intel_brief.get("aggregate", {}).get("bias", "neutral")
+            master_score = intel_brief.get("aggregate", {}).get("score", 0)
 
-    # 7. Call hybrid brain (quant pre-filter + LLM validation)
-    signal = claude_analyze(all_pair_data, state, total_value, intel_brief, fgi)
+            original_conf = signal["confidence"]
 
-    # 7b. Process AI's position review recommendations
-    if signal and signal.get("_position_reviews"):
-        for review in signal["_position_reviews"]:
-            if review.get("action") == "close" and has_position(state, review["pair"]):
-                pair = review["pair"]
-                log.info(f"CLAUDE CLOSE: {pair} — {review.get('reason', 'thesis changed')}")
-                exit_price = get_price(pair)
-                if exit_price:
-                    for pos in state["positions"]:
-                        if pos["pair"] == pair:
-                            # Limit order exit — half the fees vs market
-                            bid_ask = get_best_bid_ask(auth, pair)
-                            limit_exit = bid_ask.get("ask") or exit_price
-                            place_limit_order(auth, pair, "SELL", limit_exit, pos["qty"] * limit_exit)
-                            state, trade = close_position(
-                                state, pair, exit_price, reason=f"claude:{review.get('reason', 'review')}", is_market_exit=False
-                            )
-                            if trade:
-                                actions_taken.append(
-                                    f"CLOSE {pair} P&L: ${trade['pnl_usd']:+,.2f} [claude:review]"
-                                )
-                            break
+            # Boost: signal aligns with intel
+            if signal["action"] == "buy" and master_bias == "bullish":
+                signal["confidence"] = min(signal["confidence"] + 0.05, 0.95)
+            elif signal["action"] == "sell" and master_bias == "bearish":
+                signal["confidence"] = min(signal["confidence"] + 0.05, 0.95)
 
-    # 7c. Execute Claude's trade signal
-    signals_found = []
-    if signal and signal.get("action") in ("buy", "sell"):
-        pair = signal["pair"]
+            # Per-coin boost
+            if signal["action"] == "buy" and intel_bias == "bullish":
+                signal["confidence"] = min(signal["confidence"] + 0.03, 0.95)
+
+            # Dampen: signal conflicts with strong intel
+            if signal["action"] == "buy" and master_score < -50:
+                signal["confidence"] *= 0.85
+            elif signal["action"] == "sell" and master_score > 50:
+                signal["confidence"] *= 0.85
+
+            # Fear & Greed contrarian overlay
+            if fgi:
+                if signal["action"] == "buy" and fgi["value"] < 25:
+                    signal["confidence"] = min(signal["confidence"] + 0.03, 0.95)
+                elif signal["action"] == "buy" and fgi["value"] > 80:
+                    signal["confidence"] *= 0.90
+
+            if signal["confidence"] != original_conf:
+                log.info(f"  OVERLAY adj: {original_conf:.2f} -> {signal['confidence']:.2f}")
+
+        # Check minimum confidence (already filtered in analyze(), but double-check)
+        if signal["confidence"] < config.MIN_CONFIDENCE:
+            log.info(f"  Signal below min confidence: {signal['confidence']:.2f} < {config.MIN_CONFIDENCE}")
+            continue
+
         signals_found.append(signal)
 
+        # Check if we already have a position
+        if signal["action"] == "buy" and has_position(state, pair):
+            log.info(f"  Already have position in {pair} — skipping")
+            continue
+
+        # Check reentry cooldown
+        if signal["action"] == "buy" and not can_reenter(state, pair):
+            log.info(f"  Reentry cooldown active for {pair}")
+            continue
+
+        # Check max open positions
+        if signal["action"] == "buy" and len(state["positions"]) >= config.MAX_OPEN_POSITIONS:
+            log.info(f"  Max positions reached ({config.MAX_OPEN_POSITIONS})")
+            continue
+
+        # Check pending buy orders (don't double up)
+        pending_pairs = {o["pair"] for o in state.get("pending_orders", []) if o["side"] == "buy"}
+        if signal["action"] == "buy" and pair in pending_pairs:
+            log.info(f"  Already have pending buy for {pair}")
+            continue
+
+        # 7. Execute signal
         if signal["action"] == "buy":
-            # Safety checks
-            if has_position(state, pair):
-                log.info(f"  Already have position in {pair} — skipping")
-            elif not can_reenter(state, pair):
-                log.info(f"  Reentry cooldown active for {pair}")
-            elif len(state["positions"]) >= config.MAX_OPEN_POSITIONS:
-                log.info(f"  Max positions reached ({config.MAX_OPEN_POSITIONS})")
-            elif pair in {o["pair"] for o in state.get("pending_orders", []) if o["side"] == "buy"}:
-                log.info(f"  Already have pending buy for {pair}")
-            else:
-                price = signal.get("entry_price") or get_price(pair)
-                size_pct = signal.get("size_pct", 25) / 100.0
-                size_pct = min(size_pct, config.MAX_POSITION_PCT)
-                usd_amount = total_value * size_pct
+            size_pct = signal.get("size_pct", 25) / 100.0
+            max_size = config.MAX_POSITION_PCT
+            size_pct = min(size_pct, max_size)
+            usd_amount = total_value * size_pct
 
-                balances = get_balances(auth)
-                available_usd = balances.get("USD", 0)
-                if usd_amount > available_usd:
-                    usd_amount = available_usd * 0.95
-                if usd_amount < 5:
-                    log.warning(f"  Insufficient USD: ${available_usd:.2f}")
-                else:
-                    bid_ask = get_best_bid_ask(auth, pair)
-                    limit_price = bid_ask.get("bid") or price
+            balances = get_balances(auth)
+            available_usd = balances.get("USD", 0)
+            if usd_amount > available_usd:
+                usd_amount = available_usd * 0.95
+            if usd_amount < 5:
+                log.warning(f"  Insufficient USD: ${available_usd:.2f}")
+                continue
 
-                    order = place_limit_order(auth, pair, "BUY", limit_price, usd_amount)
-                    if order:
-                        order["stop_loss"] = signal.get("stop_loss")
-                        order["take_profit"] = signal.get("take_profit")
-                        order["atr"] = signal.get("atr")
-                        state.setdefault("pending_orders", []).append(order)
-                        actions_taken.append(
-                            f"LIMIT BUY {pair} ${usd_amount:.2f} @ ${limit_price:,.2f} "
-                            f"[{signal['strategy']}]"
-                        )
+            # Get best bid for limit order (maker fee with post_only!)
+            bid_ask = get_best_bid_ask(auth, pair)
+            limit_price = bid_ask.get("bid") or price
+
+            order = place_limit_order(auth, pair, "BUY", limit_price, usd_amount)
+            if order:
+                order["stop_loss"] = signal.get("stop_loss")
+                order["take_profit"] = signal.get("take_profit")
+                order["atr"] = signal.get("atr")
+                state.setdefault("pending_orders", []).append(order)
+                actions_taken.append(
+                    f"LIMIT BUY {pair} ${usd_amount:.2f} @ ${limit_price:,.2f} "
+                    f"[{signal['strategy']}]"
+                )
 
         elif signal["action"] == "sell":
             if has_position(state, pair):
@@ -795,99 +810,8 @@ def run():
                                 )
                             break
 
-    # 7d. Hyperliquid execution — mirror signals on HL for lower fees
-    hl_actions = []
-    if HL_AVAILABLE and config.HYPERLIQUID_ENABLED and config.HYPERLIQUID_WALLET.get("private_key"):
-        try:
-            hl = HyperliquidExchange()
-            hl_balances = hl.get_balances()
-            if hl_balances:
-                hl_value = hl_balances.get("account_value", 0)
-                hl_available = hl_balances.get("available", 0)
-                log.info(f"HYPERLIQUID: account=${hl_value:,.2f} available=${hl_available:,.2f}")
-
-                # Check existing HL positions
-                hl_positions = hl.get_positions()
-                hl_pos_coins = {p["coin"] for p in hl_positions}
-                for pos in hl_positions:
-                    log.info(f"  HL POS: {pos['coin']} {pos['side']} size={pos['size']} "
-                             f"entry=${pos['entry_price']:,.2f} pnl=${pos['unrealized_pnl']:,.2f}")
-
-                # Execute signal on Hyperliquid if we have one
-                if signal and signal.get("action") == "buy" and signal.get("pair"):
-                    pair = signal["pair"]
-                    # Convert Coinbase pair format (BTC-USD) to HL format (BTC)
-                    coin = pair.split("-")[0]
-
-                    if coin in config.HL_TRADING_PAIRS and coin not in hl_pos_coins:
-                        price = hl.get_price(coin)
-                        if price and hl_available > 10:
-                            # Size: use HL-specific config
-                            size_pct = min(
-                                signal.get("size_pct", 25) / 100.0,
-                                config.HL_MAX_POSITION_PCT,
-                            )
-                            usd_amount = hl_value * size_pct
-                            usd_amount = min(usd_amount, hl_available * 0.95)
-
-                            if usd_amount >= 5:
-                                # Set leverage
-                                hl.set_leverage(coin, config.HYPERLIQUID_DEFAULT_LEVERAGE)
-
-                                # Calculate size in base units
-                                qty = usd_amount / price
-
-                                # Use limit order (Alo = post-only maker)
-                                book = hl.get_orderbook(coin)
-                                limit_price = book.get("best_bid") or price * 0.999
-
-                                order = hl.limit_buy(coin, round(qty, 6), round(limit_price, _hl_price_precision(price)))
-                                if order:
-                                    hl_actions.append(
-                                        f"HL BUY {coin} ${usd_amount:.2f} @ ${limit_price:,.2f} "
-                                        f"{config.HYPERLIQUID_DEFAULT_LEVERAGE}x [{signal.get('strategy', '?')}]"
-                                    )
-
-                                    # Place HL-native stop loss
-                                    sl_price = signal.get("stop_loss")
-                                    if sl_price:
-                                        hl.place_stop_loss(coin, round(qty, 6), round(sl_price, _hl_price_precision(price)), is_buy=False)
-
-                                    # Place HL-native take profit
-                                    tp_price = signal.get("take_profit")
-                                    if tp_price:
-                                        hl.place_take_profit(coin, round(qty, 6), round(tp_price, _hl_price_precision(price)), is_buy=False)
-
-                elif signal and signal.get("action") == "sell" and signal.get("pair"):
-                    pair = signal["pair"]
-                    coin = pair.split("-")[0]
-                    if coin in hl_pos_coins:
-                        result = hl.close_position(coin)
-                        if result:
-                            hl_actions.append(f"HL CLOSE {coin} [{signal.get('strategy', '?')}]")
-
-                # Process position reviews on HL too
-                if signal and signal.get("_position_reviews"):
-                    for review in signal["_position_reviews"]:
-                        if review.get("action") == "close":
-                            coin = review["pair"].split("-")[0]
-                            if coin in hl_pos_coins:
-                                result = hl.close_position(coin)
-                                if result:
-                                    hl_actions.append(f"HL CLOSE {coin} [review:{review.get('reason', '?')}]")
-
-            else:
-                log.warning("HYPERLIQUID: balance fetch failed — skipping")
-        except Exception as e:
-            log.error(f"HYPERLIQUID ERROR: {e}")
-    elif HL_AVAILABLE and config.HYPERLIQUID_ENABLED:
-        log.info("HYPERLIQUID: no private key configured — skipping")
-
-    if hl_actions:
-        actions_taken.extend(hl_actions)
-
-    # 8. Save state (total_value = bot-managed, account_balance_usd = full Coinbase account)
-    save_state(state, portfolio_value=total_value, account_balance=locals().get("account_balance_usd"))
+    # 8. Save state
+    save_state(state)
 
     # 9. Print summary
     elapsed = time.time() - start_time
@@ -924,8 +848,6 @@ def run():
         f"Pending: {pending_count} | "
         f"Runtime: {elapsed:.1f}s"
     )
-    if hl_actions:
-        log.info(f"[HL] {' | '.join(hl_actions)}")
     log.info("=" * 60)
 
 

@@ -9,7 +9,7 @@ Based on:
 6. Liquidation Cascade Reversal: buy capitulation events
 7. Time-Series Momentum: 28-period lookback, multi-day holds
 
-ALL strategies target 3%+ moves to clear 1.20% round-trip fees (Intro 1 tier).
+ALL strategies target 2%+ moves to clear 0.80% round-trip fees.
 """
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -709,252 +709,6 @@ def strategy_multi_tf_confluence(pair, ind_6h, ind_1d, onchain_data, tv_analysis
     return None
 
 
-# ─── STRATEGY 8: WHALE FRONT-RUN ────────────────────────────────
-# Detect whale positioning via derivatives BEFORE it hits spot price.
-# OI spike + aggressive taker buying + flat spot = imminent move.
-
-def strategy_whale_front_run(pair, ind_6h, ind_1d, onchain_data, tv_analysis):
-    """Front-run whale moves: OI spike + taker buy surge + flat spot price."""
-    price = ind_6h.get("price", 0)
-    atr = ind_6h.get("atr", 0) or (price * 0.025)
-
-    if not price or not atr:
-        return None
-
-    # Check OI spike (>3% in one reading)
-    oi = onchain_data.get("open_interest", {})
-    oi_change = oi.get("change_4h_pct", 0) or oi.get("change_2h_pct", 0) or 0
-
-    if abs(oi_change) < 3.0:
-        return None  # Need sudden OI spike
-
-    # Check taker buy volume ratio > 1.15
-    taker = onchain_data.get("taker_ratio", {})
-    buy_vol = taker.get("buy_vol", 0)
-    sell_vol = taker.get("sell_vol", 0)
-    taker_ratio = buy_vol / sell_vol if sell_vol and sell_vol > 0 else 1.0
-
-    # Check price hasn't moved yet (< 0.5% in last hour / recent candle)
-    change_pct = abs(ind_6h.get("24h_change_pct", 5) or 5)  # Use 24h as proxy
-
-    # Determine direction from OI + taker data
-    if oi_change > 3.0 and taker_ratio > 1.15 and change_pct < 3.0:
-        # BULLISH whale positioning: OI up + aggressive buying + spot flat
-        confidence = 0.75
-
-        # Stronger OI spike = more confidence
-        if oi_change > 5.0:
-            confidence += 0.05
-        if oi_change > 8.0:
-            confidence += 0.05
-
-        # Stronger taker buy ratio
-        if taker_ratio > 1.25:
-            confidence += 0.05
-        if taker_ratio > 1.40:
-            confidence += 0.03
-
-        # Smart money confirmation
-        top_traders = onchain_data.get("top_traders", {})
-        if top_traders.get("whales_long"):
-            confidence += 0.05
-
-        # Funding not overheated
-        funding = onchain_data.get("funding", {})
-        fr = funding.get("current", 0)
-        if fr is not None and fr < 0.03:
-            confidence += 0.02
-
-        confidence = min(confidence, 0.92)
-
-        # Tight stop (1.5x ATR), wide target (5x ATR)
-        stop = round(price - 1.5 * atr, 2)
-        target = round(price + 5.0 * atr, 2)
-
-        return {
-            "action": "buy",
-            "pair": pair,
-            "confidence": confidence,
-            "size_pct": 30,  # Size up — high conviction
-            "entry_price": price,
-            "stop_loss": stop,
-            "take_profit": target,
-            "atr": atr,
-            "strategy": "whale_front_run",
-            "reasoning": (
-                f"WHALE FRONT-RUN: OI +{oi_change:.1f}% taker_ratio={taker_ratio:.2f} "
-                f"spot_change={change_pct:.1f}% — whales positioning before spot moves"
-            ),
-        }
-
-    elif oi_change > 3.0 and taker_ratio < 0.85 and change_pct < 3.0:
-        # BEARISH whale positioning: OI up + aggressive selling + spot flat
-        confidence = 0.75
-
-        if oi_change > 5.0:
-            confidence += 0.05
-        if taker_ratio < 0.75:
-            confidence += 0.05
-
-        top_traders = onchain_data.get("top_traders", {})
-        if top_traders.get("whales_short"):
-            confidence += 0.05
-
-        confidence = min(confidence, 0.90)
-
-        stop = round(price + 1.5 * atr, 2)
-        target = round(price - 5.0 * atr, 2)
-
-        return {
-            "action": "sell",
-            "pair": pair,
-            "confidence": confidence,
-            "size_pct": 30,
-            "entry_price": price,
-            "stop_loss": stop,
-            "take_profit": target,
-            "atr": atr,
-            "strategy": "whale_front_run",
-            "reasoning": (
-                f"WHALE FRONT-RUN SHORT: OI +{oi_change:.1f}% taker_ratio={taker_ratio:.2f} "
-                f"spot_change={change_pct:.1f}% — whales shorting before drop"
-            ),
-        }
-
-    return None
-
-
-# ─── STRATEGY 9: ETF FLOW MOMENTUM ─────────────────────────────
-# Catches ETF inflow/outflow announcements before market prices them.
-# Uses news intel alpha events for ETF-related signals.
-
-def strategy_etf_flow_momentum(pair, ind_6h, ind_1d, onchain_data, tv_analysis, intel_brief=None):
-    """Trade ETF flow announcements before the market fully prices them."""
-    # Only applies to BTC (ETF flows are BTC-specific)
-    if "BTC" not in pair:
-        return None
-
-    price = ind_6h.get("price", 0)
-    atr = ind_6h.get("atr", 0) or (price * 0.025)
-
-    if not price or not atr or not intel_brief:
-        return None
-
-    # Check for ETF-related alpha events in news
-    alpha_events = intel_brief.get("alpha_events", [])
-    etf_keywords = ("etf", "blackrock", "fidelity", "grayscale", "inflow", "outflow",
-                    "spot bitcoin", "ibit", "gbtc", "ark 21shares", "bitwise")
-
-    etf_events = []
-    for evt in alpha_events:
-        title = (evt.get("title", "") or "").lower()
-        if any(kw in title for kw in etf_keywords):
-            etf_events.append(evt)
-
-    if not etf_events:
-        # Also check coin-level sentiment from intel
-        coins = intel_brief.get("coins", {})
-        btc_intel = coins.get("BTC", {})
-        btc_score = btc_intel.get("score", 0) if isinstance(btc_intel, dict) else 0
-        # Need strong BTC-specific sentiment AND it should be ETF-driven
-        # Without explicit ETF events, skip
-        return None
-
-    # Determine ETF sentiment direction
-    bullish_score = 0
-    bearish_score = 0
-    for evt in etf_events:
-        sentiment = evt.get("sentiment", "neutral")
-        score = abs(evt.get("score", 0))
-        if sentiment == "bullish":
-            bullish_score += score
-        elif sentiment == "bearish":
-            bearish_score += score
-
-    if bullish_score == 0 and bearish_score == 0:
-        return None
-
-    # Daily trend filter — don't fight a strong downtrend on ETF news alone
-    daily_trend = ind_1d.get("ema_trend", "mixed") if ind_1d else "mixed"
-
-    if bullish_score > bearish_score and daily_trend != "bearish":
-        confidence = 0.70
-
-        # Scale by event strength
-        if bullish_score > 100:
-            confidence += 0.10
-        elif bullish_score > 60:
-            confidence += 0.05
-
-        # Multiple ETF events = stronger signal
-        if len(etf_events) >= 2:
-            confidence += 0.05
-
-        # Daily trend alignment boost
-        if daily_trend == "bullish":
-            confidence += 0.05
-
-        # Derivatives confirmation (smart money already positioning?)
-        agg = onchain_data.get("open_interest", {})
-        oi_change = agg.get("change_4h_pct", 0) or 0
-        if oi_change > 2:
-            confidence += 0.03  # Smart money front-running too
-
-        confidence = min(confidence, 0.90)
-
-        stop = round(price - config.STOP_LOSS_ATR_MULT * atr, 2)
-        target = round(price + config.TAKE_PROFIT_ATR_MULT * atr, 2)
-
-        return {
-            "action": "buy",
-            "pair": pair,
-            "confidence": confidence,
-            "size_pct": 25,
-            "entry_price": price,
-            "stop_loss": stop,
-            "take_profit": target,
-            "atr": atr,
-            "strategy": "etf_flow_momentum",
-            "reasoning": (
-                f"ETF FLOW BUY: {len(etf_events)} ETF events, "
-                f"bull_score={bullish_score} daily={daily_trend} "
-                f"'{etf_events[0].get('title', '')[:60]}'"
-            ),
-        }
-
-    elif bearish_score > bullish_score and daily_trend != "bullish":
-        confidence = 0.65  # Lower confidence on bearish ETF (outflows less predictive)
-
-        if bearish_score > 100:
-            confidence += 0.10
-        elif bearish_score > 60:
-            confidence += 0.05
-
-        if daily_trend == "bearish":
-            confidence += 0.05
-
-        confidence = min(confidence, 0.85)
-
-        return {
-            "action": "sell",
-            "pair": pair,
-            "confidence": confidence,
-            "size_pct": 25,
-            "entry_price": price,
-            "stop_loss": round(price + config.STOP_LOSS_ATR_MULT * atr, 2),
-            "take_profit": round(price - config.TAKE_PROFIT_ATR_MULT * atr, 2),
-            "atr": atr,
-            "strategy": "etf_flow_momentum",
-            "reasoning": (
-                f"ETF FLOW SELL: {len(etf_events)} ETF events, "
-                f"bear_score={bearish_score} daily={daily_trend} "
-                f"'{etf_events[0].get('title', '')[:60]}'"
-            ),
-        }
-
-    return None
-
-
 # ─── MAIN ANALYZER ──────────────────────────────────────────────
 
 ALL_STRATEGIES = [
@@ -965,12 +719,10 @@ ALL_STRATEGIES = [
     strategy_cvd_divergence,
     strategy_liquidation_cascade,
     strategy_multi_tf_confluence,
-    strategy_whale_front_run,
-    strategy_etf_flow_momentum,
 ]
 
 
-def analyze(pair, ind_6h, ind_1d=None, onchain_data=None, tv_analysis=None, intel_brief=None):
+def analyze(pair, ind_6h, ind_1d=None, onchain_data=None, tv_analysis=None):
     """Run ALL strategies in parallel, return the best signal.
 
     Args:
@@ -995,16 +747,9 @@ def analyze(pair, ind_6h, ind_1d=None, onchain_data=None, tv_analysis=None, inte
     with ThreadPoolExecutor(max_workers=len(ALL_STRATEGIES)) as executor:
         futures = {}
         for strat_fn in ALL_STRATEGIES:
-            # Pass intel_brief to strategies that accept it
-            if strat_fn.__name__ == "strategy_etf_flow_momentum":
-                future = executor.submit(
-                    strat_fn, pair, ind_6h, ind_1d, onchain_data, tv_analysis,
-                    intel_brief=intel_brief
-                )
-            else:
-                future = executor.submit(
-                    strat_fn, pair, ind_6h, ind_1d, onchain_data, tv_analysis
-                )
+            future = executor.submit(
+                strat_fn, pair, ind_6h, ind_1d, onchain_data, tv_analysis
+            )
             futures[future] = strat_fn.__name__
 
         for future in as_completed(futures):

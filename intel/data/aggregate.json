@@ -1,6 +1,6 @@
 {
   "aggregate": {
-    "score": 17,
+    "score": 9,
     "bias": "neutral",
     "strength": "weak",
     "confidence": 0.8,
@@ -8,71 +8,68 @@
     "total_sources": 5,
     "per_source": {
       "liquidations": {
-        "status": "stale",
+        "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 46.4,
-        "effective_weight": 0.9
+        "age_min": 0.3,
+        "effective_weight": 3.0
       },
       "whales": {
         "status": "fresh",
         "score": 0,
         "bias": "neutral",
         "strength": "weak",
-        "age_min": 36.0,
+        "age_min": 2.4,
         "effective_weight": 2.5
       },
       "onchain": {
-        "status": "fresh",
-        "score": 4,
-        "bias": "neutral",
-        "strength": "weak",
-        "age_min": 104.8,
-        "effective_weight": 2.0
+        "status": "missing",
+        "score": 0,
+        "bias": "neutral"
       },
       "sentiment": {
         "status": "fresh",
         "score": 80,
         "bias": "bullish",
         "strength": "strong",
-        "age_min": 51.9,
+        "age_min": 2.1,
         "effective_weight": 1.5
       },
       "news": {
         "status": "fresh",
-        "score": 13,
-        "bias": "neutral",
-        "strength": "weak",
-        "age_min": 45.9,
+        "score": -47,
+        "bias": "bearish",
+        "strength": "moderate",
+        "age_min": 2.4,
         "effective_weight": 1.0
       }
     }
   },
   "coins": {
     "BTC": {
-      "score": 36,
-      "bias": "bullish",
+      "score": -36,
+      "bias": "bearish",
       "signals": 2,
       "details": [
         {
-          "bias": "bullish",
-          "reason": "News sentiment: 84 articles, score=660"
+          "bias": "bearish",
+          "reason": "News sentiment: 37 articles, score=-290"
         },
         {
           "bias": "neutral",
-          "reason": "BTC whale activity normal (4 large txs)"
+          "reason": "BTC whale activity normal (1 large txs)"
         }
       ]
     },
     "ETH": {
-      "score": 44,
-      "bias": "bullish",
+      "score": -53,
+      "bias": "bearish",
       "signals": 2,
       "details": [
         {
-          "bias": "bullish",
-          "reason": "News sentiment: 31 articles, score=50"
+          "bias": "bearish",
+          "reason": "News sentiment: 17 articles, score=-140"
         },
         {
           "bias": "neutral",
@@ -81,22 +78,16 @@
       ]
     },
     "SOL": {
-      "score": 60,
-      "bias": "bullish",
-      "signals": 1,
-      "details": [
-        {
-          "bias": "bullish",
-          "reason": "News sentiment: 11 articles, score=130"
-        }
-      ]
+      "score": 0,
+      "bias": "neutral",
+      "signals": 0
     }
   },
   "alpha_events": [
     {
       "type": "news",
-      "title": "Bitcoin Spot ETFs Record $225M Inflows as BlackRock\u2019s IBIT Leads with $322M - Binance",
-      "sentiment": "bullish",
+      "title": "Mt. Gox's former CEO floats hard fork to recover 80K hacked Bitcoin",
+      "sentiment": "bearish",
       "importance": "critical",
       "coins": [
         "BTC"
@@ -104,47 +95,38 @@
     },
     {
       "type": "news",
-      "title": "U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%",
-      "sentiment": "bullish",
+      "title": "Elizabeth Warren, OCC Chief Spar Over Trump-Linked Crypto Bank Bid",
+      "sentiment": "bearish",
       "importance": "critical",
       "coins": [
-        "BTC"
+        "ETH"
       ]
     },
     {
       "type": "news",
-      "title": "Price predictions 3/6: BTC, ETH, BNB, XRP, SOL, DOGE, ADA, BCH, HYPE, XMR",
-      "sentiment": "bullish",
+      "title": "Jane Street Lawsuit Fuels Late Double-Digit Pop in Terra Luna Classic",
+      "sentiment": "bearish",
       "importance": "critical",
-      "coins": [
-        "BTC",
-        "ETH",
-        "SOL"
-      ]
+      "coins": []
     },
     {
       "type": "news",
-      "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": [
-        "BTC",
-        "SOL"
-      ]
+      "title": "Crypto community fear of Iran choking oil supply and crashing markets may be overblown",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": []
     },
     {
       "type": "news",
-      "title": "Vancouver Moves to Close Bitcoin Reserve Proposal After Legal Review",
-      "sentiment": "bullish",
-      "importance": "critical",
-      "coins": [
-        "BTC"
-      ]
+      "title": "Figure Technology stock crashes 20% following mixed Q4 earnings",
+      "sentiment": "bearish",
+      "importance": "high",
+      "coins": []
     }
   ],
-  "timestamp": "2026-03-07T02:32:48.171073+00:00",
+  "timestamp": "2026-02-28T17:29:14.837189+00:00",
   "_meta": {
-    "updated_at": "2026-03-07T02:32:48.172025+00:00",
-    "updated_ts": 1772850768
+    "updated_at": "2026-02-28T17:29:14.837842+00:00",
+    "updated_ts": 1772299754
   }
 }

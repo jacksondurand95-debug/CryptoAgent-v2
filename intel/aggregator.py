@@ -29,13 +29,13 @@ SOURCE_WEIGHTS = {
     "news": 1.0,           # Noise, but alpha events can be critical
 }
 
-# Maximum age in seconds before we consider data stale — BULL RUSH timing
+# Maximum age in seconds before we consider data stale
 MAX_AGE = {
-    "liquidations": 900,    # 15 min (runs every 10)
-    "whales": 3600,         # 1 hour (runs every 30min)
-    "onchain": 10800,       # 3 hours (runs every 2h)
-    "sentiment": 3600,      # 1 hour (runs every 30min)
-    "news": 3600,           # 1 hour (runs every 30min)
+    "liquidations": 1200,   # 20 min (runs every 15)
+    "whales": 7200,         # 2 hours (runs every hour)
+    "onchain": 28800,       # 8 hours (runs every 6h)
+    "sentiment": 7200,      # 2 hours (runs every hour)
+    "news": 14400,          # 4 hours (runs every 2h)
 }
 
 

@@ -54,79 +54,10 @@
       "closed_at": 1772280279.5664213,
       "closed_at_str": "2026-02-28 12:04 UTC",
       "duration_min": 145.2
-    },
-    {
-      "pair": "BTC-USD",
-      "side": "long",
-      "entry_price": 69438.05,
-      "exit_price": 67509.65,
-      "qty": 0.0017702814897480052,
-      "usd_amount": 122.92489459919648,
-      "pnl_pct": -2.78,
-      "pnl_usd": -4.52,
-      "fees_usd": 1.11,
-      "reason": "claude:Original long thesis invalidated by 1D bearish trend, momentum reversal with mom14=0.0166 and mom28=-0.075, unrealized loss at -2.8% approaching 3% threshold with no catalyst for recovery in extreme fear environment",
-      "trailing_was_active": false,
-      "highest_price_seen": 69438.05,
-      "opened_at": 1772488735.3722668,
-      "closed_at": 1772599179.3522894,
-      "closed_at_str": "2026-03-04 04:39 UTC",
-      "duration_min": 1840.7
-    },
-    {
-      "pair": "BTC-USD",
-      "side": "long",
-      "entry_price": 70834.89,
-      "exit_price": 70945.39,
-      "qty": 0.0018676232379866312,
-      "usd_amount": 132.29288662422684,
-      "pnl_pct": 0.16,
-      "pnl_usd": -0.79,
-      "fees_usd": 0.99,
-      "fee_rate": 0.0075,
-      "reason": "claude:Original long thesis invalidated by 1D bearish trend and momentum on 6H mom28=0.0605 not strong enough to counter; unrealized at +0.0% after 15.5h with no meaningful move in extreme fear environment (F&G=22) lacking recovery catalyst",
-      "trailing_was_active": false,
-      "highest_price_seen": 73340.0,
-      "opened_at": 1772676920.5600834,
-      "closed_at": 1772732628.5295858,
-      "closed_at_str": "2026-03-05 17:43 UTC",
-      "duration_min": 928.5
-    },
-    {
-      "pair": "BTC-USD",
-      "side": "long",
-      "entry_price": 71403.36,
-      "exit_price": 68448.38,
-      "qty": 0.014451017511577634,
-      "usd_amount": 1031.851205745482,
-      "pnl_pct": -4.14,
-      "pnl_usd": -50.96,
-      "fees_usd": 8.25,
-      "fee_rate": 0.008,
-      "reason": "claude:Original long thesis invalidated by 1D bearish trend (RSI=46.75, trend=bearish) and unrealized loss at -4.1% exceeding 3% threshold with declining momentum (mom28=0.0426 weakening) and no recovery catalyst in extreme fear environment (F&G=18)",
-      "trailing_was_active": false,
-      "highest_price_seen": 71403.36,
-      "opened_at": 1772767216.105778,
-      "closed_at": 1772809263.2768288,
-      "closed_at_str": "2026-03-06 15:01 UTC",
-      "duration_min": 700.8
     }
   ],
   "pending_orders": [],
-  "starting_value": 3000.0,
+  "starting_value": 459.5940776208467,
   "peak_value": null,
-  "last_updated": 1772850792.9649646,
-  "daily_losses": [
-    {
-      "usd": -50.95727737232548,
-      "time": 1772809263.2768366
-    }
-  ],
-  "detected_fees": {
-    "maker": 0.004,
-    "taker": 0.008
-  },
-  "last_portfolio_value": 1410.24,
-  "account_balance": 3288.01,
-  "last_portfolio_update": "2026-03-06T19:21:10Z"
+  "last_updated": 1772299761.6621025
 }
