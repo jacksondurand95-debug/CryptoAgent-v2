@@ -71,7 +71,7 @@
       {
         "name": "Freysa AI",
         "symbol": "FAI",
-        "market_cap_rank": 320,
+        "market_cap_rank": 310,
         "score": 1
       },
       {
@@ -81,9 +81,9 @@
         "score": 2
       },
       {
-        "name": "River",
-        "symbol": "RIVER",
-        "market_cap_rank": 136,
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "market_cap_rank": 108,
         "score": 3
       },
       {
@@ -95,38 +95,36 @@
       {
         "name": "Opinion",
         "symbol": "OPN",
-        "market_cap_rank": 416,
+        "market_cap_rank": 390,
         "score": 5
       },
       {
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "market_cap_rank": 2,
+        "name": "River",
+        "symbol": "RIVER",
+        "market_cap_rank": 139,
         "score": 6
       },
       {
-        "name": "Banana For Scale",
-        "symbol": "BANANAS31",
-        "market_cap_rank": 333,
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 484,
         "score": 7
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 8
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
         "market_cap_rank": 16,
+        "score": 8
+      },
+      {
+        "name": "MANTRA",
+        "symbol": "MANTRA",
+        "market_cap_rank": 305,
         "score": 9
       }
     ],
     "our_coins_trending": [
-      "BTC",
-      "ETH",
-      "SOL"
+      "BTC"
     ],
     "market_attention": "high"
   },
@@ -165,10 +163,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-07T07:17:01.160879+00:00",
+      "ts": 1772867821,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T06:19:53.043535+00:00",
-    "updated_ts": 1772864393
+    "updated_at": "2026-03-07T07:17:01.160928+00:00",
+    "updated_ts": 1772867821
   }
 }
