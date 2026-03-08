@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -13,
+    "score": -15,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 29,
+    "scored_articles": 31,
     "positive_score": 610,
-    "negative_score": -840
+    "negative_score": -890
   },
   "alpha_events": [
     {
@@ -141,13 +141,13 @@
   "coin_sentiment": {
     "BTC": {
       "articles": 33,
-      "score": 70,
+      "score": 100,
       "bias": "bullish"
     },
     "ETH": {
       "articles": 15,
-      "score": 40,
-      "bias": "bullish"
+      "score": -10,
+      "bias": "neutral"
     },
     "SOL": {
       "articles": 5,
@@ -291,13 +291,13 @@
       ]
     },
     {
-      "title": "Bitcoin crashes below $80K again as investors panic - thestreet.com",
+      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
       "source": "Google News",
       "sentiment": "bearish",
       "score": -50,
       "importance": "high",
       "coins": [
-        "BTC"
+        "ETH"
       ]
     },
     {
@@ -374,6 +374,14 @@
       "coins": []
     },
     {
+      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
+      "source": "Google News",
+      "sentiment": "neutral",
+      "score": -30,
+      "importance": "medium",
+      "coins": []
+    },
+    {
       "title": "SEC submits guidance on crypto regulation to the White House - Digital Watch Observatory",
       "source": "Google News",
       "sentiment": "neutral",
@@ -416,27 +424,21 @@
       "coins": []
     },
     {
-      "title": "BlackRock private credit fund is latest to crack, hitting crypto prices and DeFi markets",
-      "source": "CoinDesk",
+      "title": "Bitcoin fails to sustain breakout momentum as rate hikes beckon: Crypto Markets Today - CoinDesk",
+      "source": "Google News",
       "sentiment": "neutral",
-      "score": -10,
-      "importance": "low",
-      "coins": []
-    },
-    {
-      "title": "Coinbase says new U.S. tax-reporting rules for crypto are cluttered, confusing",
-      "source": "CoinDesk",
-      "sentiment": "neutral",
-      "score": 0,
-      "importance": "low",
-      "coins": []
+      "score": -20,
+      "importance": "medium",
+      "coins": [
+        "BTC"
+      ]
     }
   ],
   "sources": {
     "CoinDesk": 20,
-    "Decrypt": 20,
+    "CoinTelegraph": 20,
     "Google News": 30,
-    "CoinTelegraph": 20
+    "Decrypt": 20
   },
   "history": [
     {
@@ -550,10 +552,17 @@
       "score": -13,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-08T00:21:46.210830+00:00",
+      "ts": 1772929306,
+      "score": -15,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T22:43:15.600674+00:00",
-    "updated_ts": 1772923395
+    "updated_at": "2026-03-08T00:21:46.210903+00:00",
+    "updated_ts": 1772929306
   }
 }

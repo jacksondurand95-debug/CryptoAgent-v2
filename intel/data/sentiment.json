@@ -14,11 +14,12 @@
   "fear_greed": {
     "current": 12,
     "classification": "Extreme Fear",
-    "avg_7d": 14.3,
-    "avg_30d": 10.3,
+    "avg_7d": 14.0,
+    "avg_30d": 10.4,
     "fear_streak": 30,
     "greed_streak": 0,
     "history_30d": [
+      12,
       12,
       18,
       22,
@@ -47,8 +48,7 @@
       9,
       14,
       7,
-      6,
-      9
+      6
     ],
     "trend": "improving",
     "signal": {
@@ -87,39 +87,39 @@
         "score": 3
       },
       {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "market_cap_rank": 146,
         "score": 4
       },
       {
-        "name": "Bittensor",
-        "symbol": "TAO",
-        "market_cap_rank": 48,
+        "name": "Derive",
+        "symbol": "DRV",
+        "market_cap_rank": 401,
         "score": 5
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap_rank": 7,
+        "score": 6
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "market_cap_rank": 16,
+        "score": 7
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
-        "score": 6
-      },
-      {
-        "name": "Dogecoin",
-        "symbol": "DOGE",
-        "market_cap_rank": 10,
-        "score": 7
-      },
-      {
-        "name": "Power Protocol",
-        "symbol": "POWER",
-        "market_cap_rank": 742,
         "score": 8
       },
       {
-        "name": "MANTRA",
-        "symbol": "MANTRA",
-        "market_cap_rank": 303,
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap_rank": 5,
         "score": 9
       }
     ],
@@ -312,10 +312,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-08T00:20:56.594623+00:00",
+      "ts": 1772929256,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-07T23:11:13.630850+00:00",
-    "updated_ts": 1772925073
+    "updated_at": "2026-03-08T00:20:56.594655+00:00",
+    "updated_ts": 1772929256
   }
 }
