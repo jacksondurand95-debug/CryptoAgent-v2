@@ -1,12 +1,12 @@
 {
   "aggregate": {
-    "score": -15,
+    "score": -10,
     "bias": "neutral",
     "strength": "weak",
     "total_articles": 90,
-    "scored_articles": 31,
+    "scored_articles": 28,
     "positive_score": 610,
-    "negative_score": -890
+    "negative_score": -770
   },
   "alpha_events": [
     {
@@ -140,14 +140,14 @@
   ],
   "coin_sentiment": {
     "BTC": {
-      "articles": 33,
-      "score": 100,
+      "articles": 32,
+      "score": 140,
       "bias": "bullish"
     },
     "ETH": {
-      "articles": 15,
-      "score": -10,
-      "bias": "neutral"
+      "articles": 13,
+      "score": 80,
+      "bias": "bullish"
     },
     "SOL": {
       "articles": 5,
@@ -291,16 +291,6 @@
       ]
     },
     {
-      "title": "Ethereum Crashes To $4,100 As Senate Democrats Take Aim At DeFi - Benzinga",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -50,
-      "importance": "high",
-      "coins": [
-        "ETH"
-      ]
-    },
-    {
       "title": "Managing financial AI agents is the only skill you\u2019ll need to survive the AI layoffs",
       "source": "CoinDesk",
       "sentiment": "bullish",
@@ -323,17 +313,6 @@
       "score": 40,
       "importance": "medium",
       "coins": []
-    },
-    {
-      "title": "Crypto Market Down Today: Bitcoin Price Falls to $68K as $302M Liquidations Hit BTC, ETH, XRP - Coinpedia",
-      "source": "Google News",
-      "sentiment": "bearish",
-      "score": -40,
-      "importance": "medium",
-      "coins": [
-        "BTC",
-        "ETH"
-      ]
     },
     {
       "title": "Bitcoin holds breakout gains while crypto market turns cautious: Crypto Markets Today - CoinDesk",
@@ -368,14 +347,6 @@
     {
       "title": "Kalshi, Polymarket eye $20B valuations in potential fundraising: WSJ",
       "source": "CoinTelegraph",
-      "sentiment": "neutral",
-      "score": -30,
-      "importance": "medium",
-      "coins": []
-    },
-    {
-      "title": "U.S. Court Case Puts DeFi to the Test: Will Regulation Hinder Innovation? - Bitget",
-      "source": "Google News",
       "sentiment": "neutral",
       "score": -30,
       "importance": "medium",
@@ -432,11 +403,35 @@
       "coins": [
         "BTC"
       ]
+    },
+    {
+      "title": "BlackRock private credit fund is latest to crack, hitting crypto prices and DeFi markets",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": -10,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Coinbase says new U.S. tax-reporting rules for crypto are cluttered, confusing",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
+    },
+    {
+      "title": "Trump's cyber strategy vows to 'support the security' of cryptocurrencies and blockchain",
+      "source": "CoinDesk",
+      "sentiment": "neutral",
+      "score": 0,
+      "importance": "low",
+      "coins": []
     }
   ],
   "sources": {
-    "CoinDesk": 20,
     "CoinTelegraph": 20,
+    "CoinDesk": 20,
     "Google News": 30,
     "Decrypt": 20
   },
@@ -559,10 +554,17 @@
       "score": -15,
       "bias": "neutral",
       "alpha_count": 10
+    },
+    {
+      "timestamp": "2026-03-08T00:56:50.327612+00:00",
+      "ts": 1772931410,
+      "score": -10,
+      "bias": "neutral",
+      "alpha_count": 10
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-08T00:21:46.210903+00:00",
-    "updated_ts": 1772929306
+    "updated_at": "2026-03-08T00:56:50.327689+00:00",
+    "updated_ts": 1772931410
   }
 }
