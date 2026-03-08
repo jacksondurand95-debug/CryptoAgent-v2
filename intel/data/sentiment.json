@@ -71,61 +71,60 @@
       {
         "name": "Akash Network",
         "symbol": "AKT",
-        "market_cap_rank": 244,
+        "market_cap_rank": 241,
         "score": 1
       },
       {
         "name": "Pi Network",
         "symbol": "PI",
-        "market_cap_rank": 40,
+        "market_cap_rank": 41,
         "score": 2
+      },
+      {
+        "name": "WAR",
+        "symbol": "WAR",
+        "market_cap_rank": 525,
+        "score": 3
       },
       {
         "name": "Pudgy Penguins",
         "symbol": "PENGU",
-        "market_cap_rank": 108,
-        "score": 3
-      },
-      {
-        "name": "Venice Token",
-        "symbol": "VVV",
-        "market_cap_rank": 146,
+        "market_cap_rank": 109,
         "score": 4
-      },
-      {
-        "name": "Derive",
-        "symbol": "DRV",
-        "market_cap_rank": 401,
-        "score": 5
-      },
-      {
-        "name": "Solana",
-        "symbol": "SOL",
-        "market_cap_rank": 7,
-        "score": 6
-      },
-      {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "market_cap_rank": 16,
-        "score": 7
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
         "market_cap_rank": 2,
+        "score": 5
+      },
+      {
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "market_cap_rank": 48,
+        "score": 6
+      },
+      {
+        "name": "Convex Finance",
+        "symbol": "CVX",
+        "market_cap_rank": 174,
+        "score": 7
+      },
+      {
+        "name": "Derive",
+        "symbol": "DRV",
+        "market_cap_rank": 390,
         "score": 8
       },
       {
-        "name": "XRP",
-        "symbol": "XRP",
-        "market_cap_rank": 5,
+        "name": "MANTRA",
+        "symbol": "MANTRA",
+        "market_cap_rank": 285,
         "score": 9
       }
     ],
     "our_coins_trending": [
       "BTC",
-      "SOL",
       "ETH"
     ],
     "market_attention": "high"
@@ -319,10 +318,17 @@
       "fgi": 12,
       "score": 80,
       "bias": "bullish"
+    },
+    {
+      "timestamp": "2026-03-08T00:50:19.305464+00:00",
+      "ts": 1772931019,
+      "fgi": 12,
+      "score": 80,
+      "bias": "bullish"
     }
   ],
   "_meta": {
-    "updated_at": "2026-03-08T00:20:56.594655+00:00",
-    "updated_ts": 1772929256
+    "updated_at": "2026-03-08T00:50:19.305495+00:00",
+    "updated_ts": 1772931019
   }
 }
